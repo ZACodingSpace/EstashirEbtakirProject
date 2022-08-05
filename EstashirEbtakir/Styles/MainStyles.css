@@ -1,0 +1,1660 @@
+﻿/* General Styles Start */
+:root {
+    --Purple-Mountain-Majesty: #8378A8;
+    --Lavender-Floral: #AD88F1;
+    --Bright-Lilac: #D08DEE;
+    --French-Pink: #FE799D;
+    --Melon: #FDB29B;
+    --Silver-Sand: #BEC3CC;
+    --Alice-Blue: #EEF3FC;
+    --Ghost-White: #F6F9FF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--Ghost-White);
+}
+
+    /* General Styles Ends */
+
+    /* Master Page Styles Start */
+    /* Nav. Bar Styles Start */
+
+    body nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 990;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        body nav .nav-sections-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+/* Logo */
+nav .nav-sections-container .logo-img-container {
+    position: fixed;
+    top: 0;
+    z-index: 991;
+    box-shadow: -3px -3px 6px #FFFFFF, 3px 3px 6px #BEC3CC;
+    border-radius: 0 0 10px 10px;
+}
+
+.nav-sections-container .logo-img-container .web-logo {
+    border-radius: 0 0 10px 10px;
+}
+
+
+nav .nav-sections-container .nav-rows-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+    background-color: var(--Ghost-White);
+}
+
+/* Line1 Start */
+
+.nav-sections-container .nav-rows-container .nav-line1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--Ghost-White);
+}
+
+.nav-line1 .sign-up-container .sign-up-button {
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    font-size: max(0.5vw, 3vh);
+    background-color: var(--Ghost-White);
+}
+
+    .nav-line1 .sign-up-container .sign-up-button:hover {
+        background-color: var(--Purple-Mountain-Majesty);
+        color: var(--Ghost-White);
+    }
+
+/* Line1 End */
+
+/* Line2 Start */
+
+.nav-sections-container .nav-rows-container .nav-line2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Alice-Blue);
+}
+
+.nav-rows-container .nav-line2 .nav-item-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    padding: 0 10rem 0 0 !important;
+    margin: 0 !important;
+}
+
+.nav-item-container .nav-item .nav-link {
+    font-size: max(0.5vw, 3vh);
+}
+
+    .nav-item-container .nav-item .nav-link:hover {
+        background-color: var(--Ghost-White);
+    }
+
+.nav-item-container .nav-item .dropdown-item-container {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 0px 0px 5px 5px;
+    white-space: nowrap;
+    padding: 0;
+    background-color: var(--Ghost-White);
+}
+
+.nav-item .dropdown-item-container .dropdown-items:hover {
+    background-color: var(--Alice-Blue);
+    border-radius: 5px;
+}
+
+.dropdown-item-container .dropdown-items .dropdown-link {
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    font-size: max(0.5vw, 3vh);
+}
+
+/* Nav. Bar Styles End */
+
+.behined-navbar {
+    height: max(13vw, 11vh);
+    width: 100%;
+    margin: 0;
+}
+
+/* Footer Styles Start */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Ghost-White);
+    box-shadow: 0px -2px 4px #BEC3CC;
+    z-index: 998;
+}
+
+    footer .left-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+        footer .left-section .social-media-icons-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+.left-section .social-media-icons-container .social-media-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+    background-color: var(--Ghost-White);
+}
+
+    .left-section .social-media-icons-container .social-media-icon:hover {
+        background-color: var(--Purple-Mountain-Majesty);
+    }
+
+.social-media-icons-container .social-media-icon img {
+    width: 50%;
+    filter: invert(58%) sepia(17%) saturate(743%) hue-rotate(213deg) brightness(82%) contrast(91%);
+}
+
+.left-section .social-media-icons-container .social-media-icon:hover img {
+    filter: invert(99%) sepia(95%) saturate(3184%) hue-rotate(179deg) brightness(113%) contrast(101%);
+}
+
+/* Footer Styles End */
+/* Master Page Styles End */
+
+/*******************************************************************************/
+
+
+/*زهرة*/
+/* Home Page Styles Start */
+
+/* Carousel (slideshow) Start */
+.carousel-inner .carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background-color: #000;
+}
+
+.carousel-item:hover .overlay {
+    opacity: 0.5;
+}
+
+.carousel-item .carousel-caption .slide-button {
+    color: #000;
+    border-radius: 5px;
+    background-color: var(--Ghost-White);
+    text-decoration: none;
+    font-size: max(0.5vw, 3vh);
+}
+
+
+    .carousel-item .carousel-caption .slide-button:hover {
+        color: #000;
+        border-radius: 5px;
+        background-color: var(--Purple-Mountain-Majesty);
+        cursor: pointer;
+    }
+
+/* Carousel (slideshow) End */
+
+.description-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .description-container .row {
+        box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+        border-radius: 5px;
+        background-color: var(--Ghost-White);
+    }
+
+        .description-container .row .description-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+.description-section .IL-description {
+    font-size: max(1vw, 3.5vh);
+}
+
+
+
+/* Tabs Sections Styles Start */
+
+.sections-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs-content-container .project-card-container .project-card,
+.tabs-content-container .idea-card-container .idea-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--Ghost-White);
+}
+
+.project-card-container .project-card .project-logo-container {
+    border-radius: 5px 5px 0 0;
+}
+
+.project-card .project-logo-container .Project-logo {
+    height: 25vh;
+    width: 100vh;
+    border-radius: 5px 5px 0 0;
+}
+
+.project-card-container .project-card .project-information-container {
+    text-align: right;
+}
+
+.project-information-container .college-name-container .college-label,
+.project-information-container .major-information-container .major-label,
+.project-card .crad-button-container .details-button,
+.idea-card .crad-button-container .details-button {
+    font-weight: bold;
+    font-size: max(1vw, 2vh);
+}
+
+.project-information-container .college-name-container .college-name,
+.project-information-container .major-information-container .major-name {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-card-container .project-card .crad-button-container,
+.idea-card-container .idea-card .crad-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card .crad-button-container .details-button,
+.idea-card .crad-button-container .details-button {
+    width: 8vw;
+    height: 2.5vw;
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+}
+
+.project-card .crad-button-container .details-button {
+    background-color: var(--French-Pink);
+}
+
+/* Projects section home page Styles End */
+
+
+/*******************************************************************************/
+
+.tabs-content-container .arrow-section-container {
+    /* background-color: #FDB29B; */
+}
+
+    .tabs-content-container .arrow-section-container .arrow-container {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        /* background-color: #AD88F1; */
+        text-decoration: none;
+    }
+
+.arrow-section-container .arrow-container .fa-arrow-left-long {
+    color: red;
+}
+
+
+.arrow-label {
+    color: var(--Purple-Mountain-Majesty);
+}
+
+.idea-card-container .idea-card .idea-logo-container {
+    border-radius: 5px 5px 0 0;
+}
+
+.idea-card .idea-logo-container .idea-logo {
+    height: 25vh;
+    width: 100vh;
+    border-radius: 50%;
+    background-color: var(--Ghost-White);
+    box-shadow: inset -5px -5px 10px #FFFFFF, inset 5px 5px 10px #AD88F1;
+}
+
+.idea-card-container .idea-card .idea-description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.idea-card .idea-description-container .idea-description {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.idea-card .crad-button-container .details-button {
+    background-color: var(--Lavender-Floral);
+}
+
+/* Home Page Styles End */
+
+/*الجوهرة*/
+/* Add Participation and Event */
+/*******************************************************************************/
+.add-Participation-Event {
+    margin: 2vh;
+    padding: 2vh;
+    width: 100%;
+}
+
+.radio-butyons {
+    text-align:center ;
+    width: 100%;
+}
+    .radio-butyons label {
+        width: 300px;
+        height: 40px;
+        text-decoration: none;
+        
+    }
+    .radio-butyons label1 {
+        width: 300px;
+        height: 40px;
+        text-decoration: none;
+    }
+.add-form {
+    margin: 2vh;
+    padding: 2vh;
+    width: 100%;
+    text-align: center;
+}
+
+.add-Participation-Event button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
+    border-radius: 10px;
+    background-color: #FE799D;
+    text-align: center;
+}
+
+.add-Participation-Event h1 {
+    color: #8378A8;
+    font-weight: bold;
+}
+
+.add-form input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    box-shadow: inset 4px 4px 8px #BEC3CC;
+    border-radius: 5px;
+}
+
+.add-form label {
+    width: 300px;
+    height: 40px;
+    text-decoration: none;
+}
+
+/*******************************************************************************/
+
+/*سارة والجوهرة*/
+/* Sign-Up/Log-In Page Styles Start */
+/* Sign-Up */
+.sign-up-form {
+    box-sizing: border-box;
+    box-shadow: -4px 0px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    text-align: center;
+    width: 400px;
+    margin-right: 350px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-radius: 42px;
+}
+
+.sign-in-sign-up-page, .sign-up-sign-up-page {
+    display: inline;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    padding: 6px 6px 1px 6px;
+    position: relative;
+}
+
+.sign-in-sign-up-page {
+    margin-right: 450px;
+    box-shadow: inset 0px -4px 8px #BEC3CC;
+    text-decoration: none;
+    color: black;
+    right: 5px;
+}
+
+.sign-up-sign-up-page {
+    box-shadow: inset 0px 4px 8px #BEC3CC;
+   
+}
+
+
+.sign-up-form .student-faculty {
+    padding-right: 15px;
+    width: fit-content;
+}
+
+
+    .sign-up-form .student-faculty .student-faculty-no,
+    .sign-up-form .student-faculty .student-faculty-yes {
+        padding-left: 60%;
+    }
+
+    .sign-up-form .student-faculty .student-faculty-no {
+        position: relative;
+        bottom: 15px;
+        left: 8px;
+    }
+
+
+.student-faculty .ID {
+    position: relative;
+    right: 50px;
+    bottom: 22px;
+    padding: 5px;
+    visibility: hidden;
+}
+
+.sign-up-form .place, .student-faculty .ID {
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    border: none;
+    width: 200px;
+    height: 20px;
+    padding: 15px;
+}
+
+.sign-up-form .submit {
+    font-size: 18px;
+    background-color: #8378A8;
+    padding: 2px 10px;
+    border: none;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+/*Sign-in*/
+
+.sign-in-form {
+    text-align: center;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin-right: 350px;
+    margin-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: -4px 0px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    border-radius: 42px;
+}
+
+.sign-in-sign-in-page, .sign-up-sign-in-page {
+    display: inline;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    padding: 6px 6px 1px 6px;
+    position: relative;
+}
+
+.sign-in-sign-in-page {
+    margin-right: 450px;
+    box-shadow: inset 0px 4px 8px #BEC3CC;
+}
+
+.sign-up-sign-in-page {
+    box-shadow: inset 0px -4px 8px #BEC3CC;
+    text-decoration: none;
+    color: black;
+    left: 5px;
+}
+
+
+    .sign-in-form .place {
+        box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+        border: none;
+        width: 200px;
+        height: 20px;
+        padding: 15px;
+
+    }
+
+.sign-in-form .submit {
+    margin-right: 10px;
+    background-color: #8378A8;
+    border-color: #8378A8;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    padding: 2px 10px;
+    width: fit-content;
+}
+
+
+    .sign-in-form .forget {
+        padding-right: 10px;
+    }
+
+/*Get-password*/
+
+.get-password-form {
+    box-sizing: border-box;
+    box-shadow: -4px 0px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    padding-top: 25px;
+    text-align: center;
+    width: 500px;
+    margin-right: 350px;
+    margin-bottom: 50px;
+    border-radius: 42px;
+}
+
+.get-password-form .get-password {
+    font-size: 20px;
+    color: #9A4E93;
+}
+
+
+.get-password-form .place {
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    border: none;
+    width: 200px;
+    height: 20px;
+    padding: 15px;
+}
+
+    .get-password-form .send {
+        font-size: 18px;
+        margin-bottom: 40px;
+        background-color: #8378A8;
+        border: none;
+        border-radius: 10px;
+        padding: 2px 10px;
+        width: fit-content;
+    }
+
+
+/*Change-password*/
+.form-change-password {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 400px;
+    height: 310px;
+    margin: 5px 350px 35px 0px ;
+    box-shadow: -4px 0px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    border-radius: 42px;
+}
+
+    .form-change-password .change-password {
+        font-size: 20px;
+        color: #9A4E93;
+    }
+
+.new-password label, .confirm-password label {
+    padding: 5px;
+    width: fit-content;
+    position: relative;
+    bottom: 40px;
+}
+
+
+.new-password .place, .confirm-password .place {
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    border: none;
+    width: 200px;
+    height: 20px;
+    position: relative;
+    bottom: 40px;
+    padding: 15px;
+}
+
+.send-password {
+    font-size: 18px;
+    background-color: #8378A8;
+    padding:0px 3px;
+    border: none;
+    border-radius:20px;
+    width: 100px;
+   
+}
+/*********************************************************************/
+
+/*Password-changed*/
+.password-changed {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.password-changed .changed {
+    font-size: 20px;
+    color: #9A4E93;
+}
+
+.password-changed .send {
+    font-size: 18px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    padding: 2px 10px;
+    background-color: #8378A8;
+    border: none;
+    border-radius: 10px;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    }
+/*About-us*/
+body .about {
+    font-size: 20px;
+    padding-right: 50px;
+    text-align: right;
+}
+
+body .about-article {
+    padding-top: 15px;
+    width: 550px;
+    height: 300px;
+    line-height: 22px;
+    word-spacing: 2px;
+    margin-left: auto;
+    margin-right: 80px;
+    padding-right: 15px;
+    text-align: right;
+    font-size: 20px;
+}
+
+body .about-logo {
+    max-width: 330px;
+    max-height: 330px;
+    position: relative;
+    top: -250px;
+    right: 620px;
+}
+
+/********/
+/*Events قسم الفعاليات*/
+
+
+.event-page h1 {
+    color: #9A4E93;
+    text-align: center;
+    margin-right: 15%;
+    width: 800px;
+}
+
+.event-page .sections {
+    margin-right: 430px;
+    width: 800px;
+    position: relative;
+}
+
+.events {
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 8px #BEC3CC;
+    width: 80px;
+    padding: 6px 6px 1px 6px;
+    margin-right: 20px;
+}
+
+.event-page .participation, .event-page .achievements {
+    box-sizing: border-box;
+    box-shadow: inset 0px -4px 8px #BEC3CC;
+    padding: 6px 6px 1px 6px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.event-page .participation {
+    left: 5px;
+}
+
+.event-page .achievements {
+    left: 10px;
+
+}
+
+.event-page .welcome {
+    text-align: center;
+    font-size: 13px;   
+}
+
+
+.event-detail {
+    margin: 2vh;
+    padding: 2vh;
+    width: 20vw;
+    height: 20vw;
+    box-shadow: -10px -10px 20px #ffffff, 10px 10px 4px #bec3cc;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+
+}
+
+.event-page .nums {
+    position: relative;
+    right: 500px;
+    bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.event-page .num1 {
+    box-sizing: border-box;
+    box-shadow: inset 0px -4px 8px #BEC3CC;
+   padding: 0px 3px;
+    
+}
+
+
+.event-page .container {
+    width: 600px;
+    height: 280px;
+    border: 0.5px solid #9A4E93;
+}
+.event-page .event-name{
+    font-weight: bold;
+}
+.event-page .event-image{
+    margin-right: 50px;
+    width: 100px;
+    height: 100px;
+    border: 0.5px solid #9A4E93; 
+}
+
+.event-page .details {
+  
+    padding: 1px 6px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.search-events {
+    width: 90%;
+    text-align: left;
+    margin-right: 80px;
+}
+
+    .search-events  button, .event-detail .details {
+        width: 8vw;
+        height: 3vw;
+        border: none;
+        box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px #bec3cc;
+        border-radius: 10px;
+        background-color: #9A4E93;
+    }
+
+/*****************/
+/*Participation قسم المشاركات*/
+
+
+.participation-page h1 {
+    color: #9A4E93;
+    text-align: center;
+    margin-right: 15%;
+    width: 800px;
+}
+
+.participation-page .sections {
+    margin-right: 430px;
+    width: 800px;
+    position: relative;
+}
+
+.participation-page .events {
+    margin-right: 20px;
+}
+
+.participation-page .events, .participation-page .achievements {
+    box-sizing: border-box;
+    box-shadow: inset 0px -4px 8px #BEC3CC;
+    padding: 6px 6px 1px 6px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.participation-page .participation {
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 8px #BEC3CC;
+    width: 80px;
+    padding: 6px 6px 1px 6px;
+    position: relative;
+    left: 5px;
+    
+}
+
+.participation-page .achievements {
+    left: 10px;
+}
+
+.participation-page .welcome {
+    text-align: center;
+    font-size: 13px;
+}
+
+
+.participation-detail {
+    margin: 2vh;
+    padding: 2vh;
+    width: 20vw;
+    height: 20vw;
+    box-shadow: -10px -10px 20px #ffffff, 10px 10px 4px #bec3cc;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.participation-page .nums {
+    position: relative;
+    right: 500px;
+    bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.participation-page .num1 {
+    box-sizing: border-box;
+    box-shadow: inset 0px -4px 8px #BEC3CC;
+    padding: 0px 3px;
+}
+
+
+.participation-page .container {
+    width: 600px;
+    height: 300px;
+    border: 0.5px solid #9A4E93;
+}
+
+.participation-page .participation-name {
+    font-weight: bold;
+}
+
+.participation-page .participation-image {
+    margin-right: 50px;
+    width: 100px;
+    height: 100px;
+    border: 0.5px solid #9A4E93;
+}
+
+.participation-page .details {
+    padding: 1px 6px;
+    text-decoration: none;
+    color: black;
+}
+
+.search-participation {
+    width: 90%;
+    text-align: left;
+    margin-right: 80px;
+}
+
+    .search-participation button, .participation-detail .details {
+        width: 8vw;
+        height: 3vw;
+        border: none;
+        box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px #bec3cc;
+        border-radius: 10px;
+        background-color: #9A4E93;
+    }
+
+/*****************/
+/*Achievements قسم الإنجازات*/
+
+.achievement-page h1 {
+    color: #9A4E93;
+    text-align: center;
+    margin-right: 15%;
+    width: 800px;
+}
+
+.achievement-page .sections {
+    margin-right: 430px;
+    width: 800px;
+    position: relative;
+}
+
+.achievement-page .events {
+    margin-right: 20px;
+}
+
+.achievement-page .events, .achievement-page .participation {
+    box-sizing: border-box;
+    box-shadow: inset 0px -4px 8px #BEC3CC;
+    padding: 6px 6px 1px 6px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.achievement-page .participation {
+    width: 80px;
+    padding: 6px 6px 1px 6px;
+    position: relative;
+    left: 5px;
+}
+
+.achievement-page .achievements {
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 8px #BEC3CC;
+    width: 80px;
+    padding: 6px 6px 1px 6px;
+    position: relative;
+    left: 10px;
+}
+
+.achievement-page .welcome {
+    text-align: center;
+    font-size: 13px;
+}
+
+
+.achievement-detail {
+    margin: 2vh;
+    padding: 2vh;
+    width: 20vw;
+    height: 20vw;
+    box-shadow: -10px -10px 20px #ffffff, 10px 10px 4px #bec3cc;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.achievement-page .nums {
+    position: relative;
+    right: 500px;
+    bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.achievement-page .num1 {
+    box-sizing: border-box;
+    box-shadow: inset 0px -4px 8px #BEC3CC;
+    padding: 0px 3px;
+}
+
+
+.achievement-page .container {
+    width: 600px;
+    height: 280px;
+    border: 0.5px solid #9A4E93;
+}
+
+.achievement-page .achievement-name {
+    font-weight: bold;
+}
+
+.achievement-page .achievement-image {
+    margin-right: 50px;
+    width: 100px;
+    height: 100px;
+    border: 0.5px solid #9A4E93;
+}
+
+.achievement-page .details {
+    padding: 1px 6px;
+    text-decoration: none;
+    color: black;
+}
+
+.search-achievement {
+    width: 90%;
+    text-align: left;
+    margin-right: 80px;
+}
+
+    .search-achievement button, .achievement-detail .details {
+        width: 8vw;
+        height: 3vw;
+        border: none;
+        box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px #bec3cc;
+        border-radius: 10px;
+        background-color: #9A4E93;
+    }
+
+
+/*******************************************************************************/
+
+
+/*مريم ورهف*/
+/* Profile Pages Styles Start */
+
+
+.side_bar {
+    position: relative;
+    top: -40px;
+    left: 0%;
+    width: 300px;
+    height: 120vh;
+    background: #EEF3FC;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+    .side_bar .title {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+        .side_bar .title .logo {
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: #31344b;
+
+        }
+
+    .side_bar ul {
+        margin-top: 35px;
+        list-style: none;
+    }
+
+        .side_bar ul a {
+            color: #31344b;
+            text-decoration: none;
+            display: block;
+            margin-top: 12px;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 10px 25px;
+            border-radius: 6px;
+            box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+
+        .side_bar ul i {
+            margin-right: 10px;
+        }
+
+        .side_bar ul a:hover:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+        }
+
+        .side_bar ul a:hover:before {
+            border-radius: 6px;
+        }
+
+
+        .side_bar ul a:hover {
+            color: #8378A8;
+        }
+
+.bars {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+}
+
+.profile_path {
+    position: relative;
+
+    align-items: center;
+    
+    color: #BEC3CC;
+    text-align: center;
+
+    left: 60px;
+
+}
+
+.TextField1 {
+    background: #EEF3FC;
+    border: #EEF3FC;
+
+    text-align: center;
+
+
+}
+
+.TextField2 {
+    background: #EEF3FC;
+    border: #EEF3FC;
+    text-align: right;
+}
+
+
+
+.profile_container {
+    position: relative;
+    bottom: 650px;
+    left: -400px;
+    width: 400px;
+    height: 100%;
+    background: #EEF3FC;
+    padding: 12px;
+    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
+    border-radius: 20px;
+}
+
+
+/* Profile Pages Styles End */
+
+
+/*******************************************************************************/
+
+
+/*duaa*/
+/* Ideas section home page Styles Start */
+
+.project-idea {
+    padding: 2vh;
+    background-color: #F6F9FF;
+}
+
+.search-idea-bar {
+    width: 100%;
+    padding: 2vh;
+    display: flex;
+}
+
+.search-idea {
+    width: 90%;
+    text-align: right;
+}
+
+
+.idea input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    box-shadow: inset 4px 4px 8px #BEC3CC;
+    border-radius: 5px;
+}
+
+.idea button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
+    border-radius: 10px;
+    background-color: #AD88F1;
+}
+
+.idea .idea-name {
+    color: black;
+    font-weight: bold;
+}
+
+.idea-area {
+    width: 100%;
+}
+
+    .idea-area .idea-card {
+        margin: 2vh;
+        padding: 2vh;
+        width: 250px;
+        height: 300px;
+        box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 4px #BEC3CC;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+
+/* Ideas section home page Styles End */
+
+
+/*******************************************************************************/
+
+
+/*أفنان*/
+/* Consulting section home page Styles Start */
+
+
+.consultingPage {
+    padding: 2vh;
+    background-color: #F6F9FF;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 2vh;
+    display: flex;
+}
+
+.consultingPage input {
+    width: 20vw;
+    height: 5vh;
+    border: none;
+    box-shadow: inset 4px 4px 8px #BEC3CC;
+    border-radius: 5px;
+}
+
+.search-consultants {
+    width: 90%;
+    text-align: left;
+}
+
+button.b1 {
+    width: 7vw;
+    height: 5vh;
+    border: none;
+    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
+    border-radius: 10px;
+    background-color: #D08DEE;
+}
+
+button.b2 {
+    display: inline-block;
+    height: 5vh;
+    border: none;
+    background: #F6F9FF;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+}
+
+button.b3 {
+    display: inline-block;
+    height: 5vh;
+    border: none;
+    background: #F6F9FF;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+}
+
+
+button.b4 {
+    width: 10vh;
+    height: 4vh;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #AD88F1 0%, #D08DEE 100%);
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+}
+
+button.b5 {
+    width: 10vh;
+    height: 4vh;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #AD88F1 0%, #D08DEE 100%);
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+}
+
+.consultingPage h1 {
+    color: #8378A8;
+    font-weight: bold;
+}
+
+.consultingPage h3 {
+    font-weight: bold;
+}
+
+.consultants-cards {
+    margin: 2vh;
+    padding: 2vh;
+    width: 30vh;
+    height: 50vh;
+    box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 4px #BEC3CC;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(to top, #F6F9FF,70%,#D08DEE 30%);
+}
+
+div.card-header {
+    margin: 2vh;
+    padding: 2vh;
+    width: 30vh;
+    height: 25vh;
+    box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 4px #BEC3CC;
+    border-radius: 10px;
+    background: #D08DEE;
+}
+
+.top-card {
+    position: relative;
+    width: 19vh;
+    height: 18vh;
+    background: linear-gradient(317.44deg, rgba(255, 255, 255, 0.01) 17.14%, rgba(255, 255, 255, 0) 50%), linear-gradient(139.13deg, rgba(190, 195, 204, 0.5) 15.9%, rgba(190, 195, 204, 0) 45.15%), #F6F9FF;
+    border: 20px solid #D08DEE;
+    border-radius: 500px;
+    left: -3vh;
+    top: -2vh;
+}
+
+    .top-card img {
+        width: 14vh;
+        height: 13vh;
+    }
+
+
+/* Consulting section home page Styles End */
+
+
+/*******************************************************************************/
+
+
+/*بدور نياف */
+/* Consultation Booking Styles Start */
+
+
+/* Consultation Booking Styles End */
+
+
+/*******************************************************************************/
+
+
+/*ريناد*/
+/* Projects section home page Styles Start */
+
+.project {
+    padding: 2vh;
+    background-color: #F6F9FF;
+}
+
+.search-add-bar {
+    width: 100%;
+    padding: 2vh;
+    display: flex;
+}
+
+.search-project {
+    width: 90%;
+    text-align: left;
+}
+
+.project input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    box-shadow: inset 4px 4px 8px #BEC3CC;
+    border-radius: 5px;
+}
+
+.project h1 {
+    color: #8378A8;
+    font-weight: bold;
+}
+
+.project h3 {
+    font-weight: bold;
+}
+
+.project-area {
+    width: 100%;
+}
+
+.project-area .project-card {
+    margin: 2vh;
+    padding: 2vh;
+    width: 30vh;
+    height: 30vh;
+    box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 4px #BEC3CC;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Projects section home page Styles End */
+
+
+/*******************************************************************************/
+
+
+/*ريناد*/
+/* Add Project section page Styles Start */
+.add-project-area {
+    margin: 2%;
+    padding: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.add-project-form {
+    margin: 2%;
+    padding: 5%;
+    width: 90%;
+    justify-items: center;
+    display: grid;
+    box-shadow: 5px 5px 10px #BEC3CC;
+}
+
+.project-btn {
+    margin: 0.5%;
+    padding: 0.5%;
+    width: max-content;
+    border: none;
+    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
+    border-radius: 30%;
+    background-color: #FE799D;
+    text-align: center;
+}
+
+
+    .add-project-area h1 {
+        color: #8378A8;
+        font-weight: bold;
+    }
+
+    .add-project-form input {
+        width: 20vw;
+        height: 5vh;
+        border: none;
+        box-shadow: inset 4px 4px 8px #BEC3CC;
+        border-radius: 5px;
+    }
+
+.add-project-form label {
+    width: 10vw;
+    height: 5vh;
+    text-decoration: none;
+}
+
+/* Add Project section page Styles End */
+
+
+/*******************************************************************************/
+
+
+/*ريناد*/
+/* Browse Project section page Styles Start */
+
+.browse-project-area {
+    margin: 5% 10%;
+    padding: 2vh;
+    width: 80%;
+    box-shadow: 5px 5px 10px #BEC3CC;
+}
+
+.browse-project-info {
+    margin: 2vh;
+    padding: 2vh;
+    width: 100%;
+    
+}
+
+.browse-project-area h1 {
+    text-align: center;
+    color: #8378A8;
+    font-weight: bold;
+}
+
+.browse-project-info h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* Browse Project section page Styles End */
+
+
+/*******************************************************************************/
+
+/*ريناد*/
+/* Edit/Delet Project section page Styles Start */
+
+.edit-delete-project-area {
+    margin: 5% 10%;
+    padding: 2vh;
+    width: 80%;
+    box-shadow: 5px 5px 10px #BEC3CC;
+}
+
+.edit-delete-project-info {
+    margin: 2vh;
+    padding: 2vh;
+    width: 100%;
+}
+
+.edit-delete-project-area h1 {
+    text-align: center;
+    color: #8378A8;
+    font-weight: bold;
+}
+
+.edit-delete-project-info h4 {
+    padding: 1vh;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.edit-delete-project-info input {
+    width: 17vw;
+    height: 5vh;
+    border: none;
+    box-shadow: inset 4px 4px 8px #BEC3CC;
+    border-radius: 5px;
+}
+
+.about-project {
+    width: 30vw;
+    height: 20vh;
+    border: none;
+    box-shadow: inset 4px 4px 8px #BEC3CC;
+    border-radius: 5px;
+}
+
+
+/* Edit/Delete Project section page Styles End */
+/*******************************************************************************/
+/* shahad*/
+.buttons .buttonl {
+    background-color: #8378A8;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 11px 11px;
+    text-transform: capitalize;
+    font-weight: 300;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.buttons {
+    margin-right: 800px;
+    position: relative;
+   
+}
+
+
+
+.textarea {
+    background: #F6F9FF;
+    box-shadow: inset -3px -3px 10px #FFFFFF, inset 5px 5px 10px #BEC3CC;
+    border-radius: 10px;
+    border: none;
+}
+
+    
+.topic {
+    background: #F6F9FF;
+    box-shadow: inset -3px -3px 10px #FFFFFF, inset 5px 5px 10px #BEC3CC;
+    border: none;
+}
+
+
+.add-idea {
+    padding-right: 50px;
+}
+
+
+/*******************************************************************************/
