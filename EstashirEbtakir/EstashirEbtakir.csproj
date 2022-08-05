@@ -70,6 +70,7 @@
     <Content Include="AboutUs.aspx" />
     <Content Include="AddIdea.aspx" />
     <Content Include="AddParticipationEventAchievement.aspx" />
+    <Content Include="AddProjectPage.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
     <Content Include="Icons\instagram.png" />
@@ -122,6 +123,13 @@
     </Compile>
     <Compile Include="AddParticipationEventAchievement.aspx.designer.cs">
       <DependentUpon>AddParticipationEventAchievement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddProjectPage.aspx.cs">
+      <DependentUpon>AddProjectPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddProjectPage.aspx.designer.cs">
+      <DependentUpon>AddProjectPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
