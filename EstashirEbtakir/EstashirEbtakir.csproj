@@ -67,8 +67,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="AddIdea.aspx" />
+    <Content Include="AddParticipationEventAchievement.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
+    <Content Include="Icons\instagram.png" />
+    <Content Include="Icons\snapchat.png" />
+    <Content Include="Icons\twitter.png" />
+    <Content Include="Icons\youtube.png" />
     <Content Include="Images\Consultancy.jpg" />
     <Content Include="Images\DataTransfer.png" />
     <Content Include="Images\EventsActivities.jpg" />
@@ -86,9 +93,36 @@
     <Content Include="Images\ProjectLogo5.jpg" />
     <Content Include="Images\Projects.jpg" />
     <Content Include="Images\Statistics.jpg" />
+    <Content Include="Scripts\all.min.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\MainScripts.js" />
+    <Content Include="Styles\all.min.css" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\MainStyles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddIdea.aspx.cs">
+      <DependentUpon>AddIdea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddIdea.aspx.designer.cs">
+      <DependentUpon>AddIdea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddParticipationEventAchievement.aspx.cs">
+      <DependentUpon>AddParticipationEventAchievement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddParticipationEventAchievement.aspx.designer.cs">
+      <DependentUpon>AddParticipationEventAchievement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -111,12 +145,22 @@
   <ItemGroup>
     <Content Include="MainMasterPage.Master" />
     <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Styles\bootstrap.min.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+    <Content Include="webfonts\fa-v4compatibility.ttf" />
+    <Content Include="webfonts\fa-v4compatibility.woff2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
