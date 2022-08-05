@@ -11,7 +11,7 @@ namespace EstashirEbtakir
 {
 
 
-    public partial class AddProjectPage
+    public partial class AddProject
     {
 
         /// <summary>
