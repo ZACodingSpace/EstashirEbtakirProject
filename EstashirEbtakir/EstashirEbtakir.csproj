@@ -101,7 +101,7 @@
     <Content Include="Images\Projects.jpg" />
     <Content Include="Images\Statistics.jpg" />
     <Content Include="LogIn.aspx" />
-    <Content Include="ParticipationEventAchievementHomePage.aspx" />
+    <Content Include="ParticipationsEventsAchievementsHomePage.aspx" />
     <Content Include="PasswordChanged.aspx" />
     <Content Include="ProjectDetails.aspx" />
     <Content Include="ProjectsSectionHomePage.aspx" />
@@ -211,12 +211,12 @@
     <Compile Include="MainMasterPage.Master.designer.cs">
       <DependentUpon>MainMasterPage.Master</DependentUpon>
     </Compile>
-    <Compile Include="ParticipationEventAchievementHomePage.aspx.cs">
-      <DependentUpon>ParticipationEventAchievementHomePage.aspx</DependentUpon>
+    <Compile Include="ParticipationsEventsAchievementsHomePage.aspx.cs">
+      <DependentUpon>ParticipationsEventsAchievementsHomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ParticipationEventAchievementHomePage.aspx.designer.cs">
-      <DependentUpon>ParticipationEventAchievementHomePage.aspx</DependentUpon>
+    <Compile Include="ParticipationsEventsAchievementsHomePage.aspx.designer.cs">
+      <DependentUpon>ParticipationsEventsAchievementsHomePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="PasswordChanged.aspx.cs">
       <DependentUpon>PasswordChanged.aspx</DependentUpon>
