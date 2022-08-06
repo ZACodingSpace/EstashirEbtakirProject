@@ -72,6 +72,10 @@
     <Content Include="AddParticipationEventAchievement.aspx" />
     <Content Include="AddProject.aspx" />
     <Content Include="AdminProfile.aspx" />
+    <Content Include="App_Data\EstashirEbtakirDatabase.mdf" />
+    <Content Include="App_Data\EstashirEbtakirDatabase_log.ldf">
+      <DependentUpon>EstashirEbtakirDatabase.mdf</DependentUpon>
+    </Content>
     <Content Include="ChangePassword.aspx" />
     <Content Include="ConsultationsSectionHomePage.aspx" />
     <Content Include="EditDeleteProject.aspx" />
@@ -283,7 +287,6 @@
     <Content Include="webfonts\fa-v4compatibility.woff2" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
