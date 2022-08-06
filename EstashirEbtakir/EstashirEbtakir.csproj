@@ -72,12 +72,17 @@
     <Content Include="AddParticipationEventAchievement.aspx" />
     <Content Include="AddProject.aspx" />
     <Content Include="AdminProfile.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="ConsultationsSectionHomePage.aspx" />
+    <Content Include="EditDeleteProject.aspx" />
+    <Content Include="GetPassword.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
     <Content Include="Icons\instagram.png" />
     <Content Include="Icons\snapchat.png" />
     <Content Include="Icons\twitter.png" />
     <Content Include="Icons\youtube.png" />
+    <Content Include="IdeasSectionHomePage.aspx" />
     <Content Include="Images\Consultancy.jpg" />
     <Content Include="Images\DataTransfer.png" />
     <Content Include="Images\EventsActivities.jpg" />
@@ -95,12 +100,20 @@
     <Content Include="Images\ProjectLogo5.jpg" />
     <Content Include="Images\Projects.jpg" />
     <Content Include="Images\Statistics.jpg" />
+    <Content Include="LogIn.aspx" />
+    <Content Include="ParticipationEventAchievementHomePage.aspx" />
+    <Content Include="PasswordChanged.aspx" />
+    <Content Include="ProjectDetails.aspx" />
+    <Content Include="ProjectsSectionHomePage.aspx" />
     <Content Include="Scripts\all.min.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\MainScripts.js" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="SignUpLogInPage.aspx" />
     <Content Include="Styles\all.min.css" />
     <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\MainStyles.css" />
+    <Content Include="UserProfile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +152,34 @@
     <Compile Include="AdminProfile.aspx.designer.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultationsSectionHomePage.aspx.cs">
+      <DependentUpon>ConsultationsSectionHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultationsSectionHomePage.aspx.designer.cs">
+      <DependentUpon>ConsultationsSectionHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditDeleteProject.aspx.cs">
+      <DependentUpon>EditDeleteProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditDeleteProject.aspx.designer.cs">
+      <DependentUpon>EditDeleteProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetPassword.aspx.cs">
+      <DependentUpon>GetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetPassword.aspx.designer.cs">
+      <DependentUpon>GetPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -149,6 +190,20 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="IdeasSectionHomePage.aspx.cs">
+      <DependentUpon>IdeasSectionHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IdeasSectionHomePage.aspx.designer.cs">
+      <DependentUpon>IdeasSectionHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MainMasterPage.Master.cs">
       <DependentUpon>MainMasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -156,7 +211,56 @@
     <Compile Include="MainMasterPage.Master.designer.cs">
       <DependentUpon>MainMasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="ParticipationEventAchievementHomePage.aspx.cs">
+      <DependentUpon>ParticipationEventAchievementHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParticipationEventAchievementHomePage.aspx.designer.cs">
+      <DependentUpon>ParticipationEventAchievementHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordChanged.aspx.cs">
+      <DependentUpon>PasswordChanged.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasswordChanged.aspx.designer.cs">
+      <DependentUpon>PasswordChanged.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectDetails.aspx.cs">
+      <DependentUpon>ProjectDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectDetails.aspx.designer.cs">
+      <DependentUpon>ProjectDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectsSectionHomePage.aspx.cs">
+      <DependentUpon>ProjectsSectionHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectsSectionHomePage.aspx.designer.cs">
+      <DependentUpon>ProjectsSectionHomePage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpLogInPage.aspx.cs">
+      <DependentUpon>SignUpLogInPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUpLogInPage.aspx.designer.cs">
+      <DependentUpon>SignUpLogInPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MainMasterPage.Master" />
