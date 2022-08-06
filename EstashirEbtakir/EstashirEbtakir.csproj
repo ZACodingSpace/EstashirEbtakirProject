@@ -229,6 +229,13 @@
     <Compile Include="PasswordChanged.aspx.designer.cs">
       <DependentUpon>PasswordChanged.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ProfileMasterPage.Master.cs">
+      <DependentUpon>ProfileMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfileMasterPage.Master.designer.cs">
+      <DependentUpon>ProfileMasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="ProjectDetails.aspx.cs">
       <DependentUpon>ProjectDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -271,6 +278,7 @@
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Styles\bootstrap.min.css.map" />
+    <Content Include="ProfileMasterPage.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

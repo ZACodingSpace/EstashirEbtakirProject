@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ProfileMasterPage.master.cs" Inherits="EstashirEbtakir.ProfileMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <!-- Bootstrap v5.2.0 - CSS -->
+    <link href="Styles/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome v6.1.2 - CSS -->
+    <link href="Styles/all.min.css" rel="stylesheet" />
+    <!-- Main Style Sheet -->
+    <link href="Styles/MainStyles.css" rel="stylesheet" />
+    <!-- Google Fonts "Scheherazade" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body dir="rtl">
+    <nav>
+        <div class="nav-sections-container">
+            <div class="row nav-rows-container">
+
+                <!-- Nav. bar first line -->
+                <div class="nav-line1">
+                    <div class="sign-up-container p-lg-2">
+                        <a href="signIn.aspx" class="sign-up-button btn  ps-lg-5 pe-lg-5">تسجيل الدخول </a>
+                    </div>
+                </div>
+
+                <!-- Nav. bar second line -->
+                <div class="nav-line2">
+                    <ul class="nav-item-container">
+
+                        <li class="nav-item">
+                            <a class="nav-link ps-lg-3 pe-lg-3 pt-xl-3 pb-xl-3 pt-lg-2 pb-lg-2 ms-lg-3" href="Home.aspx">الرئيسية</a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link ps-lg-3 pe-lg-3 pt-xl-3 pb-xl-3 pt-lg-2 pb-lg-2 ms-lg-5 me-lg-3" href="AboutUs.aspx">من نحن</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-menu-button ps-lg-3 pe-lg-3 pt-xl-3 pb-xl-3 pt-lg-2 pb-lg-2 ms-lg-3" href="#">الأقسام
+                <i class="fa-solid fa-caret-down pe-lg-3"></i>
+                            </a>
+                            <ul class="dropdown-item-container" style="display: none;">
+                                <li class="dropdown-items p-lg-2">
+                                    <a class="dropdown-link" href="ProjectsSectionHomePage.aspx">قسم المشاريع</a>
+                                </li>
+                                <li class="dropdown-items p-lg-2">
+                                    <a class="dropdown-link" href="#">قسم المشاركات والإنجازات</a>
+                                </li>
+                                <li class="dropdown-items p-lg-2">
+                                    <a class="dropdown-link" href="IdeasSectionHomePage.aspx">قسم الأفكار</a>
+                                </li>
+                                <li class="dropdown-items p-lg-2">
+                                    <a class="dropdown-link" href="ConsultingSectionHomePage.aspx">قسم الاستشارات</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Logo -->
+            <div class="logo-img-container col-lg-2 col-md-3 col-5 me-md-5 me-sm-1 ">
+                <img class="img-fluid web-logo" src="Images/Logo.jpg" alt="Logo">
+            </div>
+
+        </div>
+    </nav>
+
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+
+    <footer class="row">
+        <div class="col-9">
+            <h6 class="copyright">معمل ابتكارات التعلم الإلكتروني &copy;2022
+            </h6>
+        </div>
+        <div class="col-2 left-section">
+            <div class="social-media-icons-container">
+
+                <a href="https://www.instagram.com/kau_elearning/" class="social-media-icon mt-1 mb-1 me-2 ms-2 pt-2 pb-2">
+                    <img src="Icons/instagram.png" alt="youtube"></a>
+
+                <a href="https://elearning.kau.edu.sa/Pages-snapchat.aspx"
+                    class="social-media-icon mt-1 mb-1 me-2 ms-2 pt-2 pb-2">
+                    <img src="Icons/snapchat.png" alt="youtube"></a>
+
+                <a href="https://twitter.com/kau_elearning" class="social-media-icon mt-1 mb-1 me-2 ms-2 pt-2 pb-2">
+                    <img src="Icons/twitter.png" alt="twitter"></a>
+
+                <a href="https://www.youtube.com/user/DeanshipOfElearning"
+                    class="social-media-icon mt-1 mb-1 me-2 ms-2 pt-2 pb-2">
+                    <img src="Icons/youtube.png" alt="youtube"></a>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap v5.2.0 - JavaScript -->
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome v6.1.2 - JavaScript -->
+    <script src="Scripts/all.min.js"></script>
+    <!-- Main Java Script File -->
+    <script src="Scripts/MainScripts.js"></script>
+</body>
+</html>
