@@ -1096,73 +1096,78 @@ body .about-logo {
 /* Profile Pages Styles Start */
 
 
-.side_bar {
-    position: relative;
-    left: 0%;
-    width: 300px;
-    height: 120vh;
-    background: #EEF3FC;
-    padding: 12px;
-    transition: all 0.3s ease;
+.profile-page-content-container {
+    display: flex;
+    align-items: center;
 }
 
-    .side_bar .title {
+    .profile-page-content-container .side-bar {
+        height: 100%;
+        background: #EEF3FC;
+        transition: all 0.3s ease;
+        padding: 25vh 0 20vh 0;
+    }
+
+.side-bar .title {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    .side-bar .title .logo {
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 600;
+        color: #31344b;
     }
 
-        .side_bar .title .logo {
-            display:flex;
-            flex-direction: column;
-            align-items:center;
-            justify-content: center;
-            font-size: 18px;
-            font-weight: 600;
-            color: #31344b;
+.side-bar ul {
+    margin-top: 35px;
+    list-style: none;
+}
 
-        }
-
-    .side_bar ul {
-        margin-top: 35px;
-        list-style: none;
+    .side-bar ul a {
+        color: #31344b;
+        text-decoration: none;
+        display: block;
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 10px 25px;
+        border-radius: 6px;
+        box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+        position: relative;
+        transition: all 0.2s ease;
     }
 
-        .side_bar ul a {
-            color: #31344b;
-            text-decoration: none;
-            display: block;
-            margin-top: 12px;
-            font-size: 18px;
-            font-weight: 400;
-            padding: 10px 25px;
-            border-radius: 6px;
-            box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
-            position: relative;
-            transition: all 0.2s ease;
-        }
+    .side-bar ul i {
+        margin-right: 10px;
+    }
 
-        .side_bar ul i {
-            margin-right: 10px;
-        }
+    .side-bar ul a:hover:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: inset -2px -2px 7px #ffffff, inset 3px 3px 5px #ceced1;
+    }
 
-        .side_bar ul a:hover:before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
-        }
-
-        .side_bar ul a:hover:before {
-            border-radius: 6px;
-        }
+    .side-bar ul a:hover:before {
+        border-radius: 4px;
+    }
 
 
-        .side_bar ul a:hover {
-            color: #8378A8;
-        }
+    .side-bar ul a:hover {
+        color: #000;
+    }
+
+.active {
+    background-color: #8378A8;
+}
 
 .bars {
     position: absolute;
@@ -1170,46 +1175,54 @@ body .about-logo {
     top: 20px;
 }
 
-.profile_path {
-    position: relative;
-
-    align-items: center;
-    
-    color: #BEC3CC;
-    text-align: center;
-
-    left: 60px;
-
+.space {
+    height: max(13vw, 11vh);
 }
 
-.TextField1 {
+.profile-path {
+    align-items: center;
+    color: #BEC3CC;
+    text-align: right;
+    height: 5vh;
+    padding-right: 8vh;
+}
+
+.profile-page-content-container .left-side {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 0 0 20vh;
+}
+
+.text-field1 {
     background: #EEF3FC;
     border: #EEF3FC;
-
     text-align: center;
-
-
 }
 
-.TextField2 {
+.text-field2 {
     background: #EEF3FC;
     border: #EEF3FC;
     text-align: right;
 }
 
-
-
-.profile_container {
-    position: relative;
-    bottom: 650px;
-    left: -400px;
-    width: 400px;
+.profile-tab-content-container {
+    display: flex;
+    justify-content: center;
     height: 100%;
-    background: #EEF3FC;
-    padding: 12px;
-    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
-    border-radius: 20px;
+    padding-top: 5vh;
 }
+
+    .profile-tab-content-container .profile-container {
+        bottom: 650px;
+        left: -400px;
+        width: 75vh;
+        height: 40vh;
+        background: #EEF3FC;
+        padding: 12px;
+        box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
+        border-radius: 20px;
+    }
 
 
 /* Profile Pages Styles End */
