@@ -1479,14 +1479,14 @@ div.card-header {
 .add-project-area {
     margin: 2%;
     padding: 2%;
-    width: 100%;
-    text-align: center;
+    width: 100%;  
 }
 
 .add-project-form {
     margin: 2%;
     padding: 5%;
     width: 90%;
+    text-align: center;
     justify-items: center;
     display: grid;
     box-shadow: 5px 5px 10px #BEC3CC;
@@ -1503,11 +1503,17 @@ div.card-header {
     text-align: center;
 }
 
+edit-delete-project-btn {
+    width: 90%;
+    text-align: center;
+    justify-items: center;
+}
 
-    .add-project-area h1 {
-        color: #8378A8;
-        font-weight: bold;
-    }
+.add-project-area h1 {
+    color: #8378A8;
+    font-weight: bold;
+    text-align: center;
+}
 
     .add-project-form input {
         width: 20vw;

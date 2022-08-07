@@ -17,7 +17,7 @@
 
             <div class="search-project">
 
-                <input type="search" name="search-feild" value="البحث" />
+                <input type="search" name="search-feild" value="البحث" id="searchP" runat="server"/>
                 <button class="project-btn">بحث</button>
                 <button class="project-btn">تصفية</button>
 
