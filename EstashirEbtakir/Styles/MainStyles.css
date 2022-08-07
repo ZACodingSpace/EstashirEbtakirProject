@@ -1162,7 +1162,11 @@ body .about-logo {
 
 
     .side-bar ul a:hover {
-        color: #8378A8;
+        color: #000;
+    }
+
+    .active {
+        background-color: #AD88F1;
     }
 
 .bars {
@@ -1187,7 +1191,7 @@ body .about-logo {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 5vh 0 0 0;
+    padding: 5vh 0 0 20vh;
 }
 
 .text-field1 {

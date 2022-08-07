@@ -16,7 +16,7 @@
                 </div>
             </div>
             <ul>
-                <li><a href="#"><i class="fas fa-id-card"></i> معلومات الحساب </a></li>
+                <li><a class="active" href="#"><i class="fas fa-id-card"></i> معلومات الحساب </a></li>
                 <li><a href="#"><i class="fas fa-lightbulb"></i> الأفكار </a></li>
                 <li><a href="#"><i class="fas fa-file-alt"></i> المشاريع </a></li>
                 <li><a href="#"><i class="fas fa-comments"></i> الاستشارات </a></li>
@@ -26,7 +26,7 @@
 
         <div class="left-side col-9 m-0">
 
-            <div class="profile-path">الرئيسية/الملف الشخصي/معلومات الحساب</div>
+            <div class="profile-path">الرئيسية/ الملف الشخصي/ معلومات الحساب</div>
 
             <div class="profile-tab-content-container">
 
