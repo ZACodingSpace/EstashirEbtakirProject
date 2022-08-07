@@ -1153,11 +1153,11 @@ body .about-logo {
         left: 0;
         right: 0;
         bottom: 0;
-        box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+        box-shadow: inset -2px -2px 7px #ffffff, inset 3px 3px 5px #ceced1;
     }
 
     .side-bar ul a:hover:before {
-        border-radius: 6px;
+        border-radius: 4px;
     }
 
 
@@ -1165,9 +1165,9 @@ body .about-logo {
         color: #000;
     }
 
-    .active {
-        background-color: #AD88F1;
-    }
+.active {
+    background-color: #8378A8;
+}
 
 .bars {
     position: absolute;
