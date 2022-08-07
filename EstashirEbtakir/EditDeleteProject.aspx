@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="EditDeleteProject.aspx.cs" Inherits="EstashirEbtakir.EditDeleteProject" %>
+﻿<%@ Page Title="ادارة مشروع" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="EditDeleteProject.aspx.cs" Inherits="EstashirEbtakir.EditDeleteProject" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
