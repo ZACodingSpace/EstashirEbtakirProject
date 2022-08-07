@@ -24,7 +24,7 @@
             <input type="text" id="majorP" runat="server"/>
 
             <h4>المشرف</h4>
-            <input type="text"/>
+            <input type="text" id="supervisorP" runat="server"/>
 
             <h4>الدرجة</h4>
             <input type="text" id="gradeP"  runat="server"/>

@@ -22,6 +22,9 @@
             <h4>التخصص</h4>
             <p id="majorP" runat="server">---</p>
 
+            <h4>الدرجة</h4>
+            <p id="gradeP" runat="server">---</p>
+
             <h4>ملف المشروع</h4>
             <button class="project-btn">تحميل</button>
 

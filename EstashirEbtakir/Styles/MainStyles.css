@@ -1422,18 +1422,18 @@ div.card-header {
 /* Projects section home page Styles Start */
 
 .project {
-    padding: 2vh;
+    margin: 5%;
     background-color: #F6F9FF;
 }
 
 .search-add-bar {
     width: 100%;
-    padding: 2vh;
+    
     display: flex;
 }
 
 .search-project {
-    width: 90%;
+    width: 100%;
     text-align: left;
 }
 
@@ -1455,7 +1455,7 @@ div.card-header {
 }
 
 .project-area {
-    width: 100%;
+    width: 10%;
 }
 
 .project-area .project-card {
