@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="ProjectsSectionHomePage.aspx.cs" Inherits="EstashirEbtakir.ProjectsSectionHomePage" %>
+﻿<%@ Page Title="المشاريع" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="ProjectsSectionHomePage.aspx.cs" Inherits="EstashirEbtakir.ProjectsSectionHomePage" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -17,7 +17,7 @@
 
             <div class="search-project">
 
-                <input type="search" name="search-feild" value="البحث" />
+                <input type="search" name="search-feild" value="البحث" id="searchP" runat="server"/>
                 <button class="project-btn">بحث</button>
                 <button class="project-btn">تصفية</button>
 
@@ -37,31 +37,31 @@
 
               <!-- First Section of the card -->
               <div class="project-logo-container row m-0">
-                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 1.jpg" alt="Logo">
+                <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo1.jpg" alt="Logo">
               </div>
 
               <!-- Second Section of the card -->
               <div class="project-name-container row mt-3">
-                <h3 class="project-name">اسم المشروع</h3>
+                <h3 class="project-name" id="nameP" runat="server">اسم المشروع</h3>
               </div>
 
               <!-- Third Section of the card -->
               <div class="project-information-container row mt-3 pe-2">
                 <div class="college-name-container row">
                   <h6 class="college-label col-4">الكلية</h6>
-                  <h6 class="college-name col-8">كلية الحاسبات وتقنية المعلومات</h6>
+                  <h6 class="college-name col-8" id="collegeP" runat="server">كلية الحاسبات وتقنية المعلومات</h6>
                 </div>
 
                 <!-- Forth Section of the card -->
                 <div class="major-information-container row">
                   <h6 class="major-label col-4">التخصص</h6>
-                  <h6 class="major-name col-8">تقنية المعلومات</h6>
+                  <h6 class="major-name col-8" id="majorP" runat="server">تقنية المعلومات</h6>
                 </div>
               </div>
 
               <!-- Last Section of the card -->
               <div class="crad-button-container row mt-4 mb-3">
-                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
+                <button class="details-button" formaction="ProjectDetails.aspx">تفاصيل</button>
               </div>
 
             </div>
@@ -74,7 +74,7 @@
 
               <!-- First Section of the card -->
               <div class="project-logo-container row m-0">
-                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 3.jpg" alt="Logo">
+                <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo3.jpg" alt="Logo">
               </div>
 
               <!-- Second Section of the card -->
@@ -98,7 +98,7 @@
 
               <!-- Last Section of the card -->
               <div class="crad-button-container row mt-4 mb-3">
-                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
+                <button class="details-button" formaction="ProjectDetails.aspx">تفاصيل</button>
               </div>
 
             </div>
@@ -111,7 +111,7 @@
 
               <!-- First Section of the card -->
               <div class="project-logo-container row m-0">
-                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 2.jpg" alt="Logo">
+                <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo2.jpg" alt="Logo">
               </div>
 
               <!-- Second Section of the card -->
@@ -135,7 +135,7 @@
 
               <!-- Last Section of the card -->
               <div class="crad-button-container row mt-4 mb-3">
-                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
+                <button class="details-button" formaction="ProjectDetails.aspx">تفاصيل</button>
               </div>
 
             </div>
@@ -148,7 +148,7 @@
 
               <!-- First Section of the card -->
               <div class="project-logo-container row m-0">
-                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 4.jpg" alt="Logo">
+                <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo4.jpg" alt="Logo">
               </div>
 
               <!-- Second Section of the card -->
@@ -172,7 +172,7 @@
 
               <!-- Last Section of the card -->
               <div class="crad-button-container row mt-4 mb-3">
-                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
+                <button class="details-button" formaction="ProjectDetails.aspx">تفاصيل</button>
               </div>
 
             </div>
@@ -185,7 +185,7 @@
 
               <!-- First Section of the card -->
               <div class="project-logo-container row m-0">
-                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 2.jpg" alt="Logo">
+                <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo2.jpg" alt="Logo">
               </div>
 
               <!-- Second Section of the card -->
@@ -209,7 +209,7 @@
 
               <!-- Last Section of the card -->
               <div class="crad-button-container row mt-4 mb-3">
-                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
+                <button class="details-button" formaction="ProjectDetails.aspx">تفاصيل</button>
               </div>
 
             </div>
@@ -222,7 +222,7 @@
 
               <!-- First Section of the card -->
               <div class="project-logo-container row m-0">
-                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 4.jpg" alt="Logo">
+                <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo4.jpg" alt="Logo">
               </div>
 
               <!-- Second Section of the card -->
@@ -246,7 +246,7 @@
 
               <!-- Last Section of the card -->
               <div class="crad-button-container row mt-4 mb-3">
-                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
+                <button class="details-button" formaction="ProjectDetails.aspx">تفاصيل</button>
               </div>
 
             </div>
@@ -259,7 +259,7 @@
 
               <!-- First Section of the card -->
               <div class="project-logo-container row m-0">
-                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 3.jpg" alt="Logo">
+                <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo3.jpg" alt="Logo">
               </div>
 
               <!-- Second Section of the card -->
@@ -283,7 +283,7 @@
 
               <!-- Last Section of the card -->
               <div class="crad-button-container row mt-4 mb-3">
-                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
+                <button class="details-button" formaction="ProjectDetails.aspx">تفاصيل</button>
               </div>
 
             </div>
@@ -296,7 +296,7 @@
 
               <!-- First Section of the card -->
               <div class="project-logo-container row m-0">
-                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 1.jpg" alt="Logo">
+                <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo1.jpg" alt="Logo">
               </div>
 
               <!-- Second Section of the card -->
@@ -314,13 +314,13 @@
                 <!-- Forth Section of the card -->
                 <div class="major-information-container row">
                   <h6 class="major-label col-4">التخصص</h6>
-                  <h6 class="major-name col-8">تقنية المعلومات</h6>
+                  <h6 class="major-name col-8" >تقنية المعلومات</h6>
                 </div>
               </div>
 
               <!-- Last Section of the card -->
               <div class="crad-button-container row mt-4 mb-3">
-                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
+                <button class="details-button" formaction="ProjectDetails.aspx">تفاصيل</button>
               </div>
 
             </div>
@@ -333,7 +333,7 @@
 
               <!-- First Section of the card -->
               <div class="project-logo-container row m-0">
-                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 4.jpg" alt="Logo">
+                <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo4.jpg" alt="Logo">
               </div>
 
               <!-- Second Section of the card -->
@@ -357,7 +357,7 @@
 
               <!-- Last Section of the card -->
               <div class="crad-button-container row mt-4 mb-3">
-                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
+                <button class="details-button" formaction="ProjectDetails.aspx">تفاصيل</button>
               </div>
 
             </div>
