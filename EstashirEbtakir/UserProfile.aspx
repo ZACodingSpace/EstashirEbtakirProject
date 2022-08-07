@@ -17,9 +17,9 @@
             </div>
             <ul>
                 <li><a class="active" href="#"><i class="fas fa-id-card"></i> معلومات الحساب </a></li>
-                <li><a href="#"><i class="fas fa-lightbulb"></i> الأفكار </a></li>
-                <li><a href="#"><i class="fas fa-file-alt"></i> المشاريع </a></li>
-                <li><a href="#"><i class="fas fa-comments"></i> الاستشارات </a></li>
+                <li><a href="#"><i class="fas fa-lightbulb"></i> أفكاري </a></li>
+                <li><a href="#"><i class="fas fa-calendar-check"></i> مواعيدي </a></li>
+                <li><a href="#"><i class="fas fa-file-alt"></i> مشاريعي </a></li>
                 <li><a href="#"><i class="fas fa-award"></i> الترقية لمستشار </a></li>
             </ul>
         </div>
