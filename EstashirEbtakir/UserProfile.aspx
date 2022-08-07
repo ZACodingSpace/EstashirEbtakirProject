@@ -4,32 +4,58 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-     <div class="profile_path">الرئيسية/الملف الشخصي/معلومات الحساب</div>
-    <div class="side_bar">
-        <div class="title">
-            <div class="logo">
-                <img src="Images/profile-icon.png" alt="..." />
-                <input id="Text1" type="text" class="TextField1" placeholder="الاسم الثنائي" readonly/>
-                <input id="Text2" type="text" class="TextField1" placeholder="نوع المستخدم" readonly/>
+    <div class="profile-page-content-container row p-0 m-0">
+        <div class="side-bar col-3 m-0">
+            <div class="title">
+                <div class="logo">
+                    <img src="Images/ProfileIcon.png" alt="..." />
+                    <input id="Text1" type="text" class="text-field1" placeholder="الاسم الثنائي" readonly />
+                    <input id="Text2" type="text" class="text-field1" placeholder="نوع المستخدم" readonly />
+                </div>
             </div>
+            <ul>
+                <li><a class="active" href="#"><i class="fas fa-id-card"></i> معلومات الحساب </a></li>
+                <li><a href="#"><i class="fas fa-lightbulb"></i> أفكاري </a></li>
+                <li><a href="#"><i class="fas fa-calendar-check"></i> مواعيدي </a></li>
+                <li><a href="#"><i class="fas fa-file-alt"></i> مشاريعي </a></li>
+                <li><a href="#"><i class="fas fa-award"></i> الترقية لمستشار </a></li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="#"><i class="fas fa-id-card"></i> معلومات الحساب </a></li>
-            <li><a href="#"><i class="fas fa-lightbulb"></i> الأفكار </a></li>
-            <li><a href="#"><i class="fas fa-file-alt"></i> المشاريع</a></li>
-            <li><a href="#"><i class="fas fa-comments"></i> الاستشارات </a></li>
-            <li><a href="#"><i class="fas fa-award"></i> الترقية لمستشار </a></li>
-        </ul>
+
+        <div class="left-side col-9 m-0">
+
+            <div class="profile-path">الرئيسية/ الملف الشخصي/ معلومات الحساب</div>
+
+            <div class="profile-tab-content-container">
+
+                <div class="profile-container">
+                    <p>
+                        الاسم:
+                        <input id="Text3" type="text" class="text-field2" placeholder="الاسم الثنائي" readonly />
+                    </p>
+                    <p>
+                        البريد الإلكتروني:
+                        <input id="Text4" type="text" class="text-field2" placeholder="example@gmail.com"
+                            readonly />
+                    </p>
+                    <p>
+                        رقم الجوال:
+                        <input id="Text5" type="text" class="text-field2" placeholder="05xxxxxxxx" />
+                        <a href="#">تعديل
+                        </a>
+                    </p>
+                    <p>
+                        الرقم الجامعي:
+                        <input id="Text6" type="text" class="text-field2" placeholder="2220000" readonly />
+                    </p>
+                    <a href="#"><i class="fas fa-lock"></i> تغيير كلمة المرور </a>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div class="profile_container">
-        <p>الاسم: <input id="Text3" type="text" class="TextField2" placeholder="الاسم الثنائي" readonly/></p> 
-        <p>البريد الإلكتروني: <input id="Text4" type="text" class="TextField2" placeholder="example@gmail.com" readonly/></p>
-        <p>رقم الجوال: <input id="Text5" type="text" class="TextField2" placeholder="05xxxxxxxx"/>   <a href="#">تعديل       </a></p>
-        <p>الرقم الجامعي: <input id="Text6" type="text" class="TextField2" placeholder="2220000" readonly/></p>
-        <a href="#"><i class="fas fa-lock"></i> تغيير كلمة المرور </a>
-    </div>
+
 
 </asp:Content>
