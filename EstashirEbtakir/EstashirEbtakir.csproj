@@ -69,6 +69,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
+    <Content Include="AcceptIdeaPage.aspx" />
+    <Content Include="AcceptProjectPage.aspx" />
     <Content Include="AddIdea.aspx" />
     <Content Include="AddParticipationEventAchievement.aspx" />
     <Content Include="AddProject.aspx" />
@@ -136,6 +138,20 @@
     </Compile>
     <Compile Include="AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptIdeaPage.aspx.cs">
+      <DependentUpon>AcceptIdeaPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcceptIdeaPage.aspx.designer.cs">
+      <DependentUpon>AcceptIdeaPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptProjectPage.aspx.cs">
+      <DependentUpon>AcceptProjectPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcceptProjectPage.aspx.designer.cs">
+      <DependentUpon>AcceptProjectPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="AddIdea.aspx.cs">
       <DependentUpon>AddIdea.aspx</DependentUpon>
