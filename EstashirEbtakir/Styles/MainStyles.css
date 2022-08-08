@@ -1276,8 +1276,36 @@ body .about-logo {
 
 
 /* Ideas section home page Styles End */
+.save-adminData {
+    width: 7vw;
+    height: 5vh;
+    border: none;
+    background: #D08DEE;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+}
 
+/*******************************************************************************/
+/*أفنان*/
+/*Admin data page Styles Start */
 
+/*Admin data page Styles End */
+/*******************************************************************************/
+
+/*أفنان*/
+/*Statistic page Style Start*/
+.stat-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--Ghost-White);
+}
+
+/*Statistic page Style End*/
 /*******************************************************************************/
 
 
