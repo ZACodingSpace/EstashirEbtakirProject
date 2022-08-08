@@ -30,8 +30,6 @@
             <label for="abstrac">نبذة عن الفكرة</label>
 
 
-
-
             <label for="fil">تحميل المرفقات</label>
             <a href="test_file.zip" download>تحميل</a>
         </div>
