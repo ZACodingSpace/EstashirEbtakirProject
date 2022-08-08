@@ -122,6 +122,8 @@
     <Content Include="Styles\MainStyles.css" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config" />
+    <Content Include="AdminData.aspx" />
+    <Content Include="StatisticsPage.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutUs.aspx.cs">
@@ -288,6 +290,20 @@
     </Compile>
     <Compile Include="UserProfile.aspx.designer.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminData.aspx.cs">
+      <DependentUpon>AdminData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminData.aspx.designer.cs">
+      <DependentUpon>AdminData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsPage.aspx.cs">
+      <DependentUpon>StatisticsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticsPage.aspx.designer.cs">
+      <DependentUpon>StatisticsPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

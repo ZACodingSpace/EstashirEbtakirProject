@@ -144,7 +144,7 @@
                     <!-- Cards -->
 
                     <!-- Project Card -->
-                    <div class="project-card-container col p-xl-4 p-lg-3">
+                    <div class="project-card-container col p-xl-4 p-lg-3" >
                         <div class="project-card p-lg-1">
 
                             <!-- First Section of the card -->
