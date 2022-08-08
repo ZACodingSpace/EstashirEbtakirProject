@@ -20,6 +20,22 @@
             <label for="aboutP">نبذة عن المشروع</label>
             <textarea class="about-project" id="aboutP" runat="server"></textarea>
 
+            <label for="technDropDownList">التقنية المستخدمة</label>
+            <asp:DropDownList ID="technDropDownList" runat="server">
+                <asp:ListItem></asp:ListItem>
+                <asp:ListItem>الذكاء الإصطناعي</asp:ListItem>
+                <asp:ListItem>تحليل البيانات و الروبوتيك</asp:ListItem>
+                <asp:ListItem>الواقع الافتراضي</asp:ListItem>
+                <asp:ListItem>الواقع المعزز</asp:ListItem>
+                <asp:ListItem>واجهات التحكم والتفاعل الطبيعي</asp:ListItem>
+                <asp:ListItem>العرض التجسيمي</asp:ListItem>
+                <asp:ListItem>الطباعة ثلاثية الأبعاد</asp:ListItem>
+                <asp:ListItem>استديو انتاج الوسائط المتعددة</asp:ListItem>
+                <asp:ListItem>كتب الكترونية</asp:ListItem>
+                <asp:ListItem>تطبيقات جوال مدعمة بالواقع المعزز</asp:ListItem>
+                <asp:ListItem>أخرى</asp:ListItem>
+            </asp:DropDownList>
+
             <label for="collegeP">الكلية</label>
             <input type="text" id="collegeP" runat="server"/>
 
