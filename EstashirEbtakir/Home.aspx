@@ -290,16 +290,6 @@
                         </div>
                     </div>
 
-
-
-                    <!-- Projects Section Button -->
-                    <div class="arrow-section-container row w-100 mt-5">
-                        <a class="arrow-container" href="ProjectsSectionHomePage.aspx">
-                            <h5 class="arrow-label p-xl-2">الانتقال إلى قسم المشاريع</h5>
-                            <i class="fa-solid fa-arrow-left-long px-lg-2"></i>
-                        </a>
-                    </div>
-
                 </div>
             </div>
 
@@ -310,137 +300,8 @@
 
                     <!-- Cards -->
 
-                    <!-- Project Card -->
-                    <div class="idea-card-container col p-xl-4 p-lg-3">
-                        <div class="idea-card p-lg-1">
-
-                            <!-- First Section of the card -->
-                            <div class="idea-logo-container row m-0 p-3 ps-5 pe-5">
-                                <img class="idea-logo img-fluid p-5" src="Images/lightbulb.png" alt="Logo">
-                            </div>
-
-                            <!-- Second Section of the card -->
-                            <div class="idea-name-container row">
-                                <h3 class="idea-name">عنوان الفكرة</h3>
-                            </div>
-
-
-                            <!-- Third Section of the card -->
-                            <div class="idea-description-container">
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
-                            </div>
-
-                            <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="#">عرض الفكرة</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Project Card -->
-                    <div class="idea-card-container col p-xl-4 p-lg-3">
-                        <div class="idea-card p-lg-1">
-
-                            <!-- First Section of the card -->
-                            <div class="idea-logo-container row m-0 p-3 ps-5 pe-5">
-                                <img class="idea-logo img-fluid p-5" src="Images/lightbulb.png" alt="Logo">
-                            </div>
-
-                            <!-- Second Section of the card -->
-                            <div class="idea-name-container row">
-                                <h3 class="idea-name">عنوان الفكرة</h3>
-                            </div>
-
-
-                            <!-- Third Section of the card -->
-                            <div class="idea-description-container">
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
-                            </div>
-
-                            <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="#">عرض الفكرة</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Project Card -->
-                    <div class="idea-card-container col p-xl-4 p-lg-3">
-                        <div class="idea-card p-lg-1">
-
-                            <!-- First Section of the card -->
-                            <div class="idea-logo-container row m-0 p-3 ps-5 pe-5">
-                                <img class="idea-logo img-fluid p-5" src="Images/lightbulb.png" alt="Logo">
-                            </div>
-
-                            <!-- Second Section of the card -->
-                            <div class="idea-name-container row">
-                                <h3 class="idea-name">عنوان الفكرة</h3>
-                            </div>
-
-
-                            <!-- Third Section of the card -->
-                            <div class="idea-description-container">
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
-                            </div>
-
-                            <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="#">عرض الفكرة</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Project Card -->
-                    <div class="idea-card-container col p-xl-4 p-lg-3">
-                        <div class="idea-card p-lg-1">
-
-                            <!-- First Section of the card -->
-                            <div class="idea-logo-container row m-0 p-3 ps-5 pe-5">
-                                <img class="idea-logo img-fluid p-5" src="Images/lightbulb.png" alt="Logo">
-                            </div>
-
-                            <!-- Second Section of the card -->
-                            <div class="idea-name-container row">
-                                <h3 class="idea-name">عنوان الفكرة</h3>
-                            </div>
-
-
-                            <!-- Third Section of the card -->
-                            <div class="idea-description-container">
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
-                            </div>
-
-                            <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="#">عرض الفكرة</button>
-                            </div>
-
-                        </div>
-                    </div>
 
                 </div>
-
-
-
-                <!-- ***************************************************************** -->
-
-                <!------------------------------------------ Project Sction ------------------------------------>
-
-                <div class="arrow-section-container row w-100 mt-5">
-                    <a class="arrow-container" href="IdeasSectionHomePage.aspx">
-                        <h5 class="arrow-label p-xl-2">الانتقال إلى قسم الأفكار المقترحة</h5>
-                        <i class="fa-solid fa-arrow-left-long px-lg-2"></i>
-                    </a>
-                </div>
-
             </div>
 
 
@@ -451,50 +312,6 @@
 
                     <!-- Cards -->
 
-                    <!-- Project Card -->
-                    <div class="project-card-container col p-xl-4 p-lg-3">
-                        <div class="project-card p-lg-1">
-
-                            <!-- First Section of the card -->
-                            <div class="project-logo-container row m-0">
-                                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 4.jpg" alt="Logo">
-                            </div>
-
-                            <!-- Second Section of the card -->
-                            <div class="project-name-container row mt-3">
-                                <h3>اسم المشروع</h3>
-                            </div>
-
-                            <!-- Third Section of the card -->
-                            <div class="project-information-container row mt-3 pe-2">
-                                <div class="college-name-container row">
-                                    <h6 class="college-label col-4">الكلية</h6>
-                                    <h6 class="college-name col-8">كلية الحاسبات وتقنية المعلومات</h6>
-                                </div>
-
-                                <!-- Forth Section of the card -->
-                                <div class="major-information-container row">
-                                    <h6 class="major-label col-4">التخصص</h6>
-                                    <h6 class="major-name col-8">تقنية المعلومات</h6>
-                                </div>
-                            </div>
-
-                            <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!------------------------------------------ Project Sction ------------------------------------>
-
-                    <div class="arrow-section-container row w-100 mt-5">
-                        <a class="arrow-container" href="ConsultingSectionHomePage.aspx">
-                            <h5 class="arrow-label p-xl-2">الانتقال إلى قسم الاستشارات</h5>
-                            <i class="fa-solid fa-arrow-left-long px-lg-2"></i>
-                        </a>
-                    </div>
 
                 </div>
             </div>
@@ -506,54 +323,12 @@
 
                     <!-- Cards -->
 
-                    <!-- Event or Activity Card -->
-                    <div class="project-card-container col p-xl-4 p-lg-3">
-                        <div class="project-card p-lg-1">
-
-                            <!-- First Section of the card -->
-                            <div class="project-logo-container row m-0">
-                                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 3.jpg" alt="Logo">
-                            </div>
-
-                            <!-- Second Section of the card -->
-                            <div class="project-name-container row mt-3">
-                                <h3 class="project-name">اسم المشروع</h3>
-                            </div>
-
-                            <!-- Third Section of the card -->
-                            <div class="project-information-container row mt-3 pe-2">
-                                <div class="college-name-container row">
-                                    <h6 class="college-label col-4">الكلية</h6>
-                                    <h6 class="college-name col-8">كلية الحاسبات وتقنية المعلومات</h6>
-                                </div>
-
-                                <!-- Forth Section of the card -->
-                                <div class="major-information-container row">
-                                    <h6 class="major-label col-4">التخصص</h6>
-                                    <h6 class="major-name col-8">تقنية المعلومات</h6>
-                                </div>
-                            </div>
-
-                            <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Events & Activities Section Button -->
-                    <div class="arrow-section-container row w-100 mt-5">
-                        <a class="arrow-container" href="#">
-                            <h5 class="arrow-label p-xl-2">الانتقال إلى قسم المشاريع</h5>
-                            <i class="fa-solid fa-arrow-left-long px-lg-2"></i>
-                        </a>
-                    </div>
 
                 </div>
             </div>
-        </div>
 
+
+        </div>
     </div>
 
 </asp:Content>
