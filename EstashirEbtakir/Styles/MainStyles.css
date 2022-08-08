@@ -546,7 +546,10 @@ footer {
 }
 
 .radio-butyons {
-    text-align:center ;
+   /* position: absolute;
+    margin-left: 50px;
+    margin-bottom: 40px;*/
+    text-align: center;
     width: 100%;
 }
     .radio-butyons label {
@@ -595,6 +598,50 @@ footer {
     height: 40px;
     text-decoration: none;
 }
+/* Accepte project and idea pages */
+/*******************************************************************************/
+.Accept {
+    margin: 2vh;
+    padding: 2vh;
+    width: 100%;
+}
+
+.accepForm {
+    margin: 2vh;
+    padding: 2vh;
+    width: 100%;
+    text-align: justify-all;
+}
+
+.Accept button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
+    border-radius: 10px;
+    background-color: #FE799D;
+    text-align: center;
+}
+
+.Accept h1 {
+    color: #8378A8;
+    font-weight: bold;
+}
+
+.accepForm input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    box-shadow: inset 4px 4px 8px #BEC3CC;
+    border-radius: 5px;
+}
+   
+.accepForm label {
+    width: 300px;
+    height: 40px;
+    text-decoration: none;
+}
+
 
 /*******************************************************************************/
 
@@ -1247,8 +1294,23 @@ body .about-logo {
         background-color: #9A4E93;
     }
 
+/*******************************************************************************/
+
+
+/*مريم */
+/* My Ideas Pages Styles Start */
+
+/* My Ideas Pages Styles End */
 
 /*******************************************************************************/
+
+/*مريم */
+/* My Appointment Pages Styles Start */
+
+/* My Appointment Pages Styles End */
+
+/*******************************************************************************/
+
 
 
 /*مريم ورهف*/
