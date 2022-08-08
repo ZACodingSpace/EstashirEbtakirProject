@@ -39,3 +39,32 @@ remove_fields.onclick = function () {
 
     }
 }
+
+    function text(x) {
+        if (x == 0)
+            document.getElementById('ID').style.visibility = "visible";
+        else
+            document.getElementById('ID').style.visibility = "hidden";
+        return;
+
+    }
+})
+
+
+
+
+
+/* Shahad*/
+
+function myFunction() {
+    let text = "هل أنت متأكد من حذف هذة الفكرة نهائيا ؟ ";
+    if (confirm(text) == true) {
+        text = "نعم";
+    } else {
+        text = "لا";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+
+/*******************************************************************************/
+
