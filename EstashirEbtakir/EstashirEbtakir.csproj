@@ -105,6 +105,8 @@
     <Content Include="Images\ProjectLogo5.jpg" />
     <Content Include="Images\Projects.jpg" />
     <Content Include="Images\Statistics.jpg" />
+    <Content Include="MyAppointmentsPage.aspx" />
+    <Content Include="MyIdeasPage.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="ParticipationsEventsAchievementsHomePage.aspx" />
     <Content Include="PasswordChanged.aspx" />
@@ -203,6 +205,20 @@
     </Compile>
     <Compile Include="IdeasSectionHomePage.aspx.designer.cs">
       <DependentUpon>IdeasSectionHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAppointmentsPage.aspx.cs">
+      <DependentUpon>MyAppointmentsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAppointmentsPage.aspx.designer.cs">
+      <DependentUpon>MyAppointmentsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyIdeasPage.aspx.cs">
+      <DependentUpon>MyIdeasPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyIdeasPage.aspx.designer.cs">
+      <DependentUpon>MyIdeasPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="SignIn.aspx.cs">
       <DependentUpon>SignIn.aspx</DependentUpon>
