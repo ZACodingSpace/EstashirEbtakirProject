@@ -50,7 +50,6 @@
         <br /><br />
     </div>
     <asp:Button ID="Button1" runat="server" Text="إنشاء حساب" onclick="Registration_Click" />
-    <!--<label > <input class="submit" type="submit" value="إنشاء حساب" /> </label> -->
 </div>
 
 </asp:Content>
