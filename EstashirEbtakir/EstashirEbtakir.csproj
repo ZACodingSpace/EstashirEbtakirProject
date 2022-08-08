@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -104,7 +105,7 @@
     <Content Include="Images\ProjectLogo5.jpg" />
     <Content Include="Images\Projects.jpg" />
     <Content Include="Images\Statistics.jpg" />
-    <Content Include="LogIn.aspx" />
+    <Content Include="SignIn.aspx" />
     <Content Include="ParticipationsEventsAchievementsHomePage.aspx" />
     <Content Include="PasswordChanged.aspx" />
     <Content Include="ProjectDetails.aspx" />
@@ -203,12 +204,12 @@
     <Compile Include="IdeasSectionHomePage.aspx.designer.cs">
       <DependentUpon>IdeasSectionHomePage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="LogIn.aspx.cs">
-      <DependentUpon>LogIn.aspx</DependentUpon>
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LogIn.aspx.designer.cs">
-      <DependentUpon>LogIn.aspx</DependentUpon>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainMasterPage.Master.cs">
       <DependentUpon>MainMasterPage.Master</DependentUpon>
