@@ -43,7 +43,7 @@
     <div class="student-faculty" >
         <p >هل أنت منسوب في جامعة الملك عبدالعزيز؟</p>
         <label class="student-faculty-yes"> <input type="radio"  name="std-faculty" value="yes"/> نعم </label>
-        <input class="ID" placeholder="الرقم الجامعي/الرقم الوظيفي ">
+        <input class="ID" placeholder="الرقم الجامعي/الرقم الوظيفي " id="uniID" runat="server">
         <br>
         <label class="student-faculty-no"> <input type="radio" name="std-faculty" value="no"/> لا </label>
         <br /><br />
