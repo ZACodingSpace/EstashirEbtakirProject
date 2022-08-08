@@ -11,31 +11,31 @@
 
 <div class="sign-up-form">
     <div class="data">
-
+        <div> <asp:Label ID="Lbmsg" runat="server" Text="" ForeColor="Red"></asp:Label></div>
         <div class="first-name">
         <label>الاسم الأول  </label><br />
-        <input class="place" type="text" name="firstName" required/> <br /> <br />
+        <input class="place" type="text" runat="server" name="firstName" required id="firstname" /> <br /> <br />
         </div>
 
         <div class="last-name">
         <label>الاسم الأخير  </label><br />
-        <input class="place" type="text" name="lastName" required/> <br /> <br />
+        <input class="place" type="text" runat="server" name="lastName" required id="lastname" /> <br /> <br />
         </div>
 
         <div class="email">
         <label>البريد الإلكتروني  </label> <br />
-        <input class="place" type="email" name="email" required/> <br /> <br />
+        <input class="place" type="email" runat="server" name="email" required id="Email" /> <br /> <br />
         </div>
 
         <div class="password">
         <label>كلمة المرور  </label> <br />
-        <input class="place" type="password" name="password" required/> <br /> <br />
+        <input class="place" type="password" runat="server" name="password" required id="Password" /> <br /> <br />
         </div>
 
         <br />
         <div class="confirm-password-sign-up">
         <label>تأكيد كلمة المرور  </label> <br />
-        <input class="place" type="password" name="confirm-password" required/> <br />
+        <input class="place" type="password" runat="server" name="confirm-password" required id="Password2" /> <br />
         </div>
     </div>
 
@@ -48,7 +48,8 @@
         <label class="student-faculty-no"> <input type="radio" name="std-faculty" value="no"/> لا </label>
         <br /><br />
     </div>
-    <label > <input class="submit" type="submit" value="إنشاء حساب" /> </label>
+    <asp:Button ID="Button1" runat="server" Text="إنشاء حساب" onclick="Registration_Click" />
+    <!--<label > <input class="submit" type="submit" value="إنشاء حساب" /> </label> -->
 </div>
 
 </asp:Content>
