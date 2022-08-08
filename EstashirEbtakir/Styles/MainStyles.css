@@ -655,7 +655,7 @@ footer {
     }
 
 
-.student-faculty .ID {
+.student-faculty #ID {
     position: relative;
     right: 50px;
     bottom: 22px;
@@ -663,7 +663,7 @@ footer {
     visibility: hidden;
 }
 
-.sign-up-form .place, .student-faculty .ID {
+.sign-up-form .place, .student-faculty #ID {
     box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
     border: none;
@@ -936,7 +936,7 @@ body .about-logo {
 .event-detail {
     margin: 2vh;
     padding: 2vh;
-    width: 20vw;
+    width: 16vw;
     height: 20vw;
     box-shadow: -10px -10px 20px #ffffff, 10px 10px 4px #bec3cc;
     border-radius: 10px;
@@ -944,6 +944,16 @@ body .about-logo {
     position: relative;
 
 }
+
+    .event-detail:hover .event-name, .event-detail:hover .details {
+        display: inline-block;
+    }
+
+    .event-detail:hover{
+        opacity: 0.4;
+    }
+
+
 
 .event-page .nums {
     position: relative;
@@ -956,7 +966,7 @@ body .about-logo {
 .event-page .num1 {
     box-sizing: border-box;
     box-shadow: inset 0px -4px 8px #BEC3CC;
-   padding: 0px 3px;
+    padding: 0px 3px;
     
 }
 
@@ -966,21 +976,30 @@ body .about-logo {
     height: 280px;
     border: 0.5px solid #9A4E93;
 }
-.event-page .event-name{
+.event-page .event-name {
     font-weight: bold;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 75px;
+    right: 25px;
+    color: white;
+    display: none;
+   
 }
-.event-page .event-image{
-    margin-right: 50px;
-    width: 100px;
-    height: 100px;
-    border: 0.5px solid #9A4E93; 
+.event-image{
+    width: 100%;
+    height: 100%;
 }
 
 .event-page .details {
-  
-    padding: 1px 6px;
+    padding: 0px 6px;
     text-decoration: none;
     color: black;
+    line-height: 25px;
+    position: absolute;
+    top: 120px;
+    right: 45px;
+    display: none;
 
 }
 
@@ -990,14 +1009,14 @@ body .about-logo {
     margin-right: 80px;
 }
 
-    .search-events  button, .event-detail .details {
-        width: 8vw;
-        height: 3vw;
-        border: none;
-        box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px #bec3cc;
-        border-radius: 10px;
-        background-color: #9A4E93;
-    }
+.search-events  button, .event-detail .details {
+    width: 8vw;
+    height: 3vw;
+    border: none;
+    box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px #bec3cc;
+    border-radius: 10px;
+    background-color: #9A4E93;
+}
 
 /*****************/
 /*Participation قسم المشاركات*/
