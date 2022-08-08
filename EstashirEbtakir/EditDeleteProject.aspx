@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="EditDeleteProject.aspx.cs" Inherits="EstashirEbtakir.EditDeleteProject" %>
+﻿<%@ Page Title="ادارة مشروع" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="EditDeleteProject.aspx.cs" Inherits="EstashirEbtakir.EditDeleteProject" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -24,7 +24,7 @@
             <input type="text" id="majorP" runat="server"/>
 
             <h4>المشرف</h4>
-            <input type="text"/>
+            <input type="text" id="supervisorP" runat="server"/>
 
             <h4>الدرجة</h4>
             <input type="text" id="gradeP"  runat="server"/>
