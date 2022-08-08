@@ -54,12 +54,11 @@
                     <div class="welcome">مرحبا بكم في قسم الفعاليات....هنا يتم عرض الفعاليات التي أقامها معمل الابتكارات بجامعة الملك عبدالعزيز</div>
 
                     <div class="event-detail">
-                        <div>صورة للفعالية</div>
-                        <div class="event-image"></div>
+                         <img src="Images/event1.jpeg" class="event-image" alt="logo"/>
 
                         <div class="event-name">اسم الفعالية </div>
-                        <br />
-                        <a href="#" class="details">تفاصيل</a>
+                        
+                        <a href="#" class="details">تفاصيل</a> 
 
                     </div>
                 </div>

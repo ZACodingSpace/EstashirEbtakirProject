@@ -69,6 +69,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
+    <Content Include="AcceptIdeaPage.aspx" />
+    <Content Include="AcceptProjectPage.aspx" />
     <Content Include="AddIdea.aspx" />
     <Content Include="AddParticipationEventAchievement.aspx" />
     <Content Include="AddProject.aspx" />
@@ -87,6 +89,8 @@
     <Content Include="Icons\snapchat.png" />
     <Content Include="Icons\twitter.png" />
     <Content Include="Icons\youtube.png" />
+    <Content Include="IdeasDetails.aspx" />
+    <Content Include="IdeasEditdelete.aspx" />
     <Content Include="IdeasSectionHomePage.aspx" />
     <Content Include="Images\Consultancy.jpg" />
     <Content Include="Images\DataTransfer.png" />
@@ -105,6 +109,10 @@
     <Content Include="Images\ProjectLogo5.jpg" />
     <Content Include="Images\Projects.jpg" />
     <Content Include="Images\Statistics.jpg" />
+    <Content Include="MyAppointmentsPage.aspx" />
+    <Content Include="MyIdeasPage.aspx" />
+    <Content Include="MyProjectsPage.aspx" />
+    <Content Include="PromotingToConsaltantPage.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="ParticipationsEventsAchievementsHomePage.aspx" />
     <Content Include="PasswordChanged.aspx" />
@@ -120,6 +128,8 @@
     <Content Include="Styles\MainStyles.css" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config" />
+    <Content Include="AdminData.aspx" />
+    <Content Include="StatisticsPage.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutUs.aspx.cs">
@@ -128,6 +138,20 @@
     </Compile>
     <Compile Include="AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptIdeaPage.aspx.cs">
+      <DependentUpon>AcceptIdeaPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcceptIdeaPage.aspx.designer.cs">
+      <DependentUpon>AcceptIdeaPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptProjectPage.aspx.cs">
+      <DependentUpon>AcceptProjectPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcceptProjectPage.aspx.designer.cs">
+      <DependentUpon>AcceptProjectPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="AddIdea.aspx.cs">
       <DependentUpon>AddIdea.aspx</DependentUpon>
@@ -195,12 +219,54 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="IdeasDetails.aspx.cs">
+      <DependentUpon>IdeasDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IdeasDetails.aspx.designer.cs">
+      <DependentUpon>IdeasDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IdeasEditdelete.aspx.cs">
+      <DependentUpon>IdeasEditdelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IdeasEditdelete.aspx.designer.cs">
+      <DependentUpon>IdeasEditdelete.aspx</DependentUpon>
+    </Compile>
     <Compile Include="IdeasSectionHomePage.aspx.cs">
       <DependentUpon>IdeasSectionHomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="IdeasSectionHomePage.aspx.designer.cs">
       <DependentUpon>IdeasSectionHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAppointmentsPage.aspx.cs">
+      <DependentUpon>MyAppointmentsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAppointmentsPage.aspx.designer.cs">
+      <DependentUpon>MyAppointmentsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyIdeasPage.aspx.cs">
+      <DependentUpon>MyIdeasPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyIdeasPage.aspx.designer.cs">
+      <DependentUpon>MyIdeasPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyProjectsPage.aspx.cs">
+      <DependentUpon>MyProjectsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyProjectsPage.aspx.designer.cs">
+      <DependentUpon>MyProjectsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PromotingToConsaltantPage.aspx.cs">
+      <DependentUpon>PromotingToConsaltantPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PromotingToConsaltantPage.aspx.designer.cs">
+      <DependentUpon>PromotingToConsaltantPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="SignIn.aspx.cs">
       <DependentUpon>SignIn.aspx</DependentUpon>
@@ -272,6 +338,20 @@
     </Compile>
     <Compile Include="UserProfile.aspx.designer.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminData.aspx.cs">
+      <DependentUpon>AdminData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminData.aspx.designer.cs">
+      <DependentUpon>AdminData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsPage.aspx.cs">
+      <DependentUpon>StatisticsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StatisticsPage.aspx.designer.cs">
+      <DependentUpon>StatisticsPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
