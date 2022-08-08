@@ -2,6 +2,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    
 </asp:Content>
 
 
@@ -42,10 +43,10 @@
     <br />
     <div class="student-faculty" >
         <p >هل أنت منسوب في جامعة الملك عبدالعزيز؟</p>
-        <label class="student-faculty-yes"> <input type="radio"  name="std-faculty" value="yes"/> نعم </label>
-        <input class="ID" placeholder="الرقم الجامعي/الرقم الوظيفي ">
+        <label class="student-faculty-yes"> <input type="radio"  name="std-faculty" value="yes" onclick="text(0)"/> نعم </label>
+        <input id="ID" placeholder="الرقم الجامعي/الرقم الوظيفي ">
         <br>
-        <label class="student-faculty-no"> <input type="radio" name="std-faculty" value="no"/> لا </label>
+        <label class="student-faculty-no"> <input type="radio" name="std-faculty" value="no" onclick="text(1)"/> لا </label>
         <br /><br />
     </div>
     <asp:Button ID="Button1" runat="server" Text="إنشاء حساب" onclick="Registration_Click" />
