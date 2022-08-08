@@ -14,3 +14,22 @@ dropdown_menu_button.addEventListener("click", function () {
     }
 
 })
+
+
+
+
+
+/* Shahad*/
+
+function myFunction() {
+    let text = "هل أنت متأكد من حذف هذة الفكرة نهائيا ؟ ";
+    if (confirm(text) == true) {
+        text = "نعم";
+    } else {
+        text = "لا";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+
+/*******************************************************************************/
+
