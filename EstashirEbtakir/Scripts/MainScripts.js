@@ -14,6 +14,8 @@ dropdown_menu_button.addEventListener("click", function () {
     }
 
 })
+
+
 var admin_data = document.getElementById('admin_data');
 var add_more_fields = document.getElementById('add_more_fields');
 var remove_fields = document.getElementById('remove_fields');
@@ -30,6 +32,8 @@ add_more_fields.onclick = function () {
     admin_data.appendChild(newFieldd);
     admin_data.appendChild(newFielddd);
 }
+
+
 remove_fields.onclick = function () {
     var input_tags = admin_data.getElementsByTagName('input');
     if (input_tags.length = 3) {
@@ -48,8 +52,6 @@ remove_fields.onclick = function () {
         return;
 
     }
-})
-
 
 
 
