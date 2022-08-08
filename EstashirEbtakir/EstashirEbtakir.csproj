@@ -87,6 +87,8 @@
     <Content Include="Icons\snapchat.png" />
     <Content Include="Icons\twitter.png" />
     <Content Include="Icons\youtube.png" />
+    <Content Include="IdeasDetails.aspx" />
+    <Content Include="IdeasEditdelete.aspx" />
     <Content Include="IdeasSectionHomePage.aspx" />
     <Content Include="Images\Consultancy.jpg" />
     <Content Include="Images\DataTransfer.png" />
@@ -198,6 +200,20 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IdeasDetails.aspx.cs">
+      <DependentUpon>IdeasDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IdeasDetails.aspx.designer.cs">
+      <DependentUpon>IdeasDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IdeasEditdelete.aspx.cs">
+      <DependentUpon>IdeasEditdelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IdeasEditdelete.aspx.designer.cs">
+      <DependentUpon>IdeasEditdelete.aspx</DependentUpon>
     </Compile>
     <Compile Include="IdeasSectionHomePage.aspx.cs">
       <DependentUpon>IdeasSectionHomePage.aspx</DependentUpon>
