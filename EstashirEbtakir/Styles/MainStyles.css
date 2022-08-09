@@ -1655,6 +1655,49 @@ body .about-logo {
 
 
 /* Ideas section home page Styles End */
+/*******************************************************************************/
+/*أفنان*/
+/*Statistic page Styles Start */
+.sections-tabs-stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FirstQuestions-list {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border-radius: 0.5vh;
+    width: 19vw;
+    height: 4.6vh;
+    margin-left:10vh;
+
+}
+.SecondQuestion-list {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border-radius: 0.5vh;
+    width: 19vw;
+    height: 4.6vh;
+    margin-bottom: 5vh;
+}
+.section-heading {
+    margin-top:3vh;
+}
+.charts-container {
+    position: relative;
+    top: -80px;
+    margin: 5% 10%;
+    width: 80%;
+    box-shadow: 5px 5px 10px #BEC3CC;
+    height: 70vh;
+    border-radius: 4vh;
+}
+.project-stat {
+    margin-top: 3vh;
+    text-align: center;
+}
+/*Admin data page Styles End */
 .save-adminData {
     width: 7vw;
     height: 5vh;
@@ -1663,43 +1706,14 @@ body .about-logo {
     box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
     border-radius: 5px;
 }
-
-/*******************************************************************************/
-/*أفنان*/
-/*Admin data page Styles Start */
-.sections-tabs-stat {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.question-list {
-    position: relative;
-    left: 30px;
-    border: 3px solid #73AD21;
-}
-/*Admin data page Styles End */
 /*******************************************************************************/
 /*أفنان*/
 /*Statistic page Style Start*/
-.Statistic-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-    border-radius: 5px;
-    text-align: center;
-    background-color: var(--Ghost-White);
-}
 
-/*Statistic page Style End*/
+/*Admin data page Style End*/
 /*******************************************************************************/
-
-
 /*أفنان*/
 /* Consulting section home page Styles Start */
-
-
 .consultingPage {
     padding: 2vh;
     background-color: #F6F9FF;
