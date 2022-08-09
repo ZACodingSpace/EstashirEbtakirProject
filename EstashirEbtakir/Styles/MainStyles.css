@@ -533,8 +533,133 @@ footer {
 
 /* Specific Styles for Each Section End*/
 
+/*************************************SignUP/LogIn Page Styles Start ******************************************/
+
+.signUp-logIn-page-content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+    .signUp-logIn-page-content .signUp-logIn-content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        /* SignUp & LogIn Page Styles End */
+
+        /* Tabs Style */
+
+        .signUp-logIn-page-content .signUp-logIn-content-container .nav-tabs {
+            width: 40vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Tabs Contents Styles Start */
+
+        .signUp-logIn-page-content .signUp-logIn-content-container .tab-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50vh;
+            box-shadow: -4px 0px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+            border-radius: 10px;
+            background-color: var(--Ghost-White);
+        }
+
+.tab-content .logIn-content-container .logIn-form,
+.tab-content .signUp-content-container .signUp-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logIn-content-container .logIn-form .data,
+.signUp-content-container .signUp-form .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
+.logIn-form .data > *,
+.signUp-form .data > *,
+.logIn-content-container .logIn-form .logIn-button-container,
+.signUp-content-container .signUp-form .signUp-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-weight: bold;
+}
+
+.logIn-form .data .inputPlace,
+.signUp-form .data .inputPlace,
+.user-type-container .stu-dr-yes .inputPlace {
+    width: 30vh;
+    height: 4.5vh;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+    font-weight: lighter;
+    background-color: var(--Ghost-White);
+}
+
+
+.logIn-form .data .error-msg-place,
+.signUp-form .data .error-msg-place {
+    width: 40vh;
+    height: 3vh;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-weight: lighter;
+    color: red;
+}
+
+
+/* Form Second Section */
+.signUp-content-container .signUp-form .user-type-container {
+    width: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.signUp-form .user-type-container .stu-dr-yes,
+.signUp-form .user-type-container .stu-dr-no {
+    display: flex;
+    font-weight: bold;
+}
+
+.user-type-container .stu-dr-yes .inputPlace {
+    height: 3vh;
+    border-radius: 3px;
+}
+
+.logIn-form .logIn-button-container .logIn-button,
+.signUp-form .signUp-button-container .signUp-button {
+    height: 2.5vw;
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+    background-color: var(--Purple-Mountain-Majesty);
+    color: var(--Ghost-White);
+}
+
+    .logIn-form .logIn-button-container .logIn-button:hover,
+    .signUp-form .signUp-button-container .signUp-button:hover {
+        background-color: #958cb1;
+        transition: width 10s;
+    }
+
+/*************************************SignUP/LogIn Page Styles End ******************************************/
 
 /*الجوهرة*/
 /* Add Participation and Event */
