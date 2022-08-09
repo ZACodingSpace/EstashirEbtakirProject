@@ -105,6 +105,7 @@ namespace EstashirEbtakir
             {
                 Lbmsg.Text = "البريد الإلكتروني مسجل مسبقًا";
             }
+            con.Close();
 
         }
     }
