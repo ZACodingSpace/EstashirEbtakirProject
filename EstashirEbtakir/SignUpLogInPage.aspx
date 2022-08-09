@@ -55,8 +55,8 @@
             </div>
 
             <div class="logIn-button-container mt-5">
-              <asp:Button id="logInButton" class="logIn-button p-0 ps-xl-5 pe-xl-5 ps-lg-4 pe-lg-4" runat="server" Text="تسجيل الدخول" onclick="login_Click" />
-            </div>
+                <asp:Button id="logInButton" class="logIn-button p-0 ps-xl-5 pe-xl-5 ps-lg-4 pe-lg-4" runat="server" Text="تسجيل الدخول"/> 
+              </div>
 
             <div class="question mt-4">
               <a href="Get-password.aspx" class="forget">هل نسيت كلمة المرور؟</a>
@@ -139,7 +139,7 @@
             </div>
 
             <div class="signUp-button-container m-0 p-0 mt-5">
-              <asp:Button id="signUpButton" class="signUp-button p-0 ps-xl-5 pe-xl-5 ps-lg-4 pe-lg-4" runat="server" Text="إنشاء حساب" onclick="Registration_Click" />
+                <asp:Button id="signUpButton" class="signUp-button p-0 ps-xl-5 pe-xl-5 ps-lg-4 pe-lg-4" runat="server" Text="إنشاء حساب"/>          
             </div>
           </div>
 
