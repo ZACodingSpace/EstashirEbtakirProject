@@ -22,7 +22,8 @@
         </div>
        
         
-         <input class="send-password" type="submit" value="تأكيد">
+         <!-- <input class="send-password" type="submit" value="تأكيد"> -->
+        <asp:Button ID="Button1" runat="server" Text="تغيير"  onclick="ChangePass_Click"/>
         <!--Redirect to "Password-changed.aspx" -->
        
 
