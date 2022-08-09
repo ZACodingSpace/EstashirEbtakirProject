@@ -12,7 +12,7 @@
                 <div class="logo">
                     <img src="Images/ProfileIcon.png" alt="..." />
                     <input id="Fname" runat="server" type="text" class="text-field1" placeholder="الاسم الثنائي" readonly />
-                    <input id="Lname" runat="server" type="text" class="text-field1" placeholder="نوع المستخدم" readonly />
+                    <input id="job" runat="server" type="text" class="text-field1" placeholder="نوع المستخدم" readonly />
                 </div>
             </div>
             <ul>
