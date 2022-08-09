@@ -36,19 +36,22 @@ namespace EstashirEbtakir
             string email = Email.Value;
             string pass = Password.Value;
             string pass2 = Password2.Value;
-            string universityid = uniID.Value;
+            //string universityid = uniID.Value;
             Session["id"] = "";
 
             string str = getConstring();
             con = new SqlConnection(str);
             con.Open();
-            SqlCommand cmd = new SqlCommand("select * from OurUser where Email='" + email.Trim() + "'", con);
-            SqlDataReader reader;
-            SqlCommand cmd2 = new SqlCommand("INSERT INTO OurUser(User_ID,Fname, Lname,Password,Email) VALUES(@ID,@FirstName, @LastName, @Pass, @Email)",con);
-            reader = cmd.ExecuteReader();
-            if (!reader.Read())
+            SqlDataAdapter sda = new SqlDataAdapter("select * from OurUser where Email='" + email.Trim() + "'", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            //SqlCommand cmd = new SqlCommand("select * from OurUser where Email='" + email.Trim() + "'", con);
+            //SqlDataReader reader;
+            SqlCommand cmd2 = new SqlCommand("INSERT INTO OurUser(Fname, Lname,Password,Email) VALUES(@FirstName, @LastName, @Pass, @Email)",con);
+            //reader = cmd.ExecuteReader();
+            if (dt.Rows.Count ==0)
             {
-                reader.Close();
+                //reader.Close();
                 //cmd.Cancel();
                 if (pass == pass2)
                 {
@@ -61,13 +64,14 @@ namespace EstashirEbtakir
                             {
                                 if((Regex.Match(pass, @"(?=.[!@#$%^&])").Success))
                                 {
-                                    cmd2.Parameters.AddWithValue("@ID", 7);
+                                    //cmd2.Parameters.AddWithValue("@ID", 7);
                                     cmd2.Parameters.AddWithValue("@FirstName", firstname.Value);
                                     cmd2.Parameters.AddWithValue("@LastName", lastname.Value);
                                     cmd2.Parameters.AddWithValue("@Pass", Password.Value);
                                     cmd2.Parameters.AddWithValue("@Email", Email.Value);
                                     //cmd2.Parameters.AddWithValue("@UniID", uniID.Value);
                                     cmd2.ExecuteNonQuery();
+                                    Lbmsg.Text = "تم تسجيلك بنجاح";
                                 }
                                 else
                                 {
