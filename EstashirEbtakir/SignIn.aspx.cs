@@ -22,7 +22,7 @@ namespace EstashirEbtakir
             if (!IsPostBack)
             {
                 Session.Remove("error");
-                Session["id"] = Email.Value;
+                Session["id"] = "";
             }
         }
         public string getConstring()
@@ -40,15 +40,7 @@ namespace EstashirEbtakir
             string str = getConstring();
             con = new SqlConnection(str);
             con.Open();
-            //string query = "select * from OurUser Where Email='" + email.Trim() + "'and Password '" + pass.Trim() + "'";
             SqlCommand cmd = new SqlCommand("select * from OurUser where Email='" + email.Trim() + "'", con);
-            //SqlDataAdapter sda = new SqlDataAdapter(query, con);
-            //DataTable dt = new DataTable();
-            //sda.Fill(dt);
-            /*if(dt.Rows.Count == 1)
-            {
-                Response.Redirect("Home.aspx");
-            }*/
 
             SqlDataReader reader;
             reader = cmd.ExecuteReader();
@@ -62,16 +54,13 @@ namespace EstashirEbtakir
 
                 if (userEmail == email && userpassword == pass)
                 {
-                    Console.WriteLine("I am here");
+                    
                     Response.Redirect("Home.aspx");
                     Session["id"] = user_id;
                     Session["name"] = username;
                 }
                 else
                 {
-                    // Session["error"] = "كلمة المرور غير صحيحة";
-
-                    //MessageBox.Show("كلمة المرور غير صحيحة");
                     Lbmsg.Text = "كلمة المرور غير صحيحة";
 
                 }
@@ -79,8 +68,6 @@ namespace EstashirEbtakir
             else
             {
                 Lbmsg.Text = "البريد الإلكتروني غير صحيح";
-                // Session["error"] = "البريد الإلكتروني غير صحيح";
-                //MessageBox.Show("البريد الإلكتروني غير صحيح");
             }
             
             con.Close();

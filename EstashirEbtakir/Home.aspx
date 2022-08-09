@@ -115,21 +115,21 @@
             </li>
 
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="events-activities-tab" data-bs-toggle="tab" data-bs-target="#events-activities"
-                    type="button" role="tab" aria-controls="events-activities" aria-selected="false">
-                    الفعاليات والمشاركات</button>
-            </li>
-
-            <li class="nav-item" role="presentation">
                 <button class="nav-link" id="ideas-tab" data-bs-toggle="tab" data-bs-target="#ideas" type="button" role="tab"
                     aria-controls="ideas" aria-selected="false">
-                    الأفكارالمقترحة</button>
+                    الأفكار المقترحة</button>
             </li>
 
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="consultancies-tab" data-bs-toggle="tab" data-bs-target="#consultancies"
                     type="button" role="tab" aria-controls="consultancies" aria-selected="false">
                     الاستشارات</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="events-activities-tab" data-bs-toggle="tab" data-bs-target="#events-activities"
+                    type="button" role="tab" aria-controls="events-activities" aria-selected="false">
+                    الفعاليات والإنجازات</button>
             </li>
 
         </ul>
@@ -144,36 +144,36 @@
                     <!-- Cards -->
 
                     <!-- Project Card -->
-                    <div class="project-card-container col p-xl-4 p-lg-3">
-                        <div class="project-card p-lg-1">
+                    <div class="project-card-container col p-xl-3 p-lg-2">
+                        <div class="project-card">
 
                             <!-- First Section of the card -->
                             <div class="project-logo-container row m-0">
-                                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 1.jpg" alt="Logo">
+                                <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_1.jpg" alt="Logo">
                             </div>
 
                             <!-- Second Section of the card -->
                             <div class="project-name-container row mt-3">
-                                <h3 class="project-name">اسم المشروع</h3>
+                                <h3 class="project-name" id="nameP" runat="server">اسم المشروع</h3>
                             </div>
 
                             <!-- Third Section of the card -->
-                            <div class="project-information-container row mt-3 pe-2">
-                                <div class="college-name-container row">
-                                    <h6 class="college-label col-4">الكلية</h6>
-                                    <h6 class="college-name col-8">كلية الحاسبات وتقنية المعلومات</h6>
+                            <div class="project-information-container row mt-3 p-0">
+                                <div class="college-name-container row p-0">
+                                    <h6 class="college-label col-4 p-0">الكلية</h6>
+                                    <h6 class="college-name col-8" id="collegeP" runat="server">كلية الحاسبات وتقنية المعلومات</h6>
                                 </div>
 
                                 <!-- Forth Section of the card -->
-                                <div class="major-information-container row">
-                                    <h6 class="major-label col-4">التخصص</h6>
-                                    <h6 class="major-name col-8">تقنية المعلومات</h6>
+                                <div class="major-information-container row p-0">
+                                    <h6 class="major-label col-4 p-0">التخصص</h6>
+                                    <h6 class="major-name col-8" id="majorP" runat="server">تقنية المعلومات</h6>
                                 </div>
                             </div>
 
                             <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
+                            <div class="card-button-container row mt-4 mb-3">
+                                <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="ProjectDetails.aspx">تفاصيل</button>
                             </div>
 
                         </div>
@@ -181,36 +181,36 @@
 
 
                     <!-- Project Card -->
-                    <div class="project-card-container col p-xl-4 p-lg-3">
-                        <div class="project-card p-lg-1">
+                    <div class="project-card-container col p-xl-3 p-lg-2">
+                        <div class="project-card">
 
                             <!-- First Section of the card -->
                             <div class="project-logo-container row m-0">
-                                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 3.jpg" alt="Logo">
+                                <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_6.jpg" alt="Logo">
                             </div>
 
                             <!-- Second Section of the card -->
                             <div class="project-name-container row mt-3">
-                                <h3 class="project-name">اسم المشروع</h3>
+                                <h3 class="project-name" id="H1" runat="server">اسم المشروع</h3>
                             </div>
 
                             <!-- Third Section of the card -->
-                            <div class="project-information-container row mt-3 pe-2">
-                                <div class="college-name-container row">
-                                    <h6 class="college-label col-4">الكلية</h6>
-                                    <h6 class="college-name col-8">كلية الحاسبات وتقنية المعلومات</h6>
+                            <div class="project-information-container row mt-3 p-0">
+                                <div class="college-name-container row p-0">
+                                    <h6 class="college-label col-4 p-0">الكلية</h6>
+                                    <h6 class="college-name col-8" id="H2" runat="server">كلية الحاسبات وتقنية المعلومات</h6>
                                 </div>
 
                                 <!-- Forth Section of the card -->
-                                <div class="major-information-container row">
-                                    <h6 class="major-label col-4">التخصص</h6>
-                                    <h6 class="major-name col-8">تقنية المعلومات</h6>
+                                <div class="major-information-container row p-0">
+                                    <h6 class="major-label col-4 p-0">التخصص</h6>
+                                    <h6 class="major-name col-8" id="H3" runat="server">تقنية المعلومات</h6>
                                 </div>
                             </div>
 
                             <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
+                            <div class="card-button-container row mt-4 mb-3">
+                                <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="ProjectDetails.aspx">تفاصيل</button>
                             </div>
 
                         </div>
@@ -218,36 +218,36 @@
 
 
                     <!-- Project Card -->
-                    <div class="project-card-container col p-xl-4 p-lg-3">
-                        <div class="project-card p-lg-1">
+                    <div class="project-card-container col p-xl-3 p-lg-2">
+                        <div class="project-card">
 
                             <!-- First Section of the card -->
                             <div class="project-logo-container row m-0">
-                                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 2.jpg" alt="Logo">
+                                <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_3.jpg" alt="Logo">
                             </div>
 
                             <!-- Second Section of the card -->
                             <div class="project-name-container row mt-3">
-                                <h3 class="project-name">اسم المشروع</h3>
+                                <h3 class="project-name" id="H4" runat="server">اسم المشروع</h3>
                             </div>
 
                             <!-- Third Section of the card -->
-                            <div class="project-information-container row mt-3 pe-2">
-                                <div class="college-name-container row">
-                                    <h6 class="college-label col-4">الكلية</h6>
-                                    <h6 class="college-name col-8">كلية الحاسبات وتقنية المعلومات</h6>
+                            <div class="project-information-container row mt-3 p-0">
+                                <div class="college-name-container row p-0">
+                                    <h6 class="college-label col-4 p-0">الكلية</h6>
+                                    <h6 class="college-name col-8" id="H5" runat="server">كلية الحاسبات وتقنية المعلومات</h6>
                                 </div>
 
                                 <!-- Forth Section of the card -->
-                                <div class="major-information-container row">
-                                    <h6 class="major-label col-4">التخصص</h6>
-                                    <h6 class="major-name col-8">تقنية المعلومات</h6>
+                                <div class="major-information-container row p-0">
+                                    <h6 class="major-label col-4 p-0">التخصص</h6>
+                                    <h6 class="major-name col-8" id="H6" runat="server">تقنية المعلومات</h6>
                                 </div>
                             </div>
 
                             <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
+                            <div class="card-button-container row mt-4 mb-3">
+                                <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="ProjectDetails.aspx">تفاصيل</button>
                             </div>
 
                         </div>
@@ -255,101 +255,39 @@
 
 
                     <!-- Project Card -->
-                    <div class="project-card-container col p-xl-4 p-lg-3">
-                        <div class="project-card p-lg-1">
+                    <div class="project-card-container col p-xl-3 p-lg-2">
+                        <div class="project-card">
 
                             <!-- First Section of the card -->
                             <div class="project-logo-container row m-0">
-                                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 4.jpg" alt="Logo">
+                                <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_5.jpg" alt="Logo">
                             </div>
 
                             <!-- Second Section of the card -->
                             <div class="project-name-container row mt-3">
-                                <h3 class="project-name">اسم المشروع</h3>
+                                <h3 class="project-name" id="H7" runat="server">اسم المشروع</h3>
                             </div>
 
                             <!-- Third Section of the card -->
-                            <div class="project-information-container row mt-3 pe-2">
-                                <div class="college-name-container row">
-                                    <h6 class="college-label col-4">الكلية</h6>
-                                    <h6 class="college-name col-8">كلية الحاسبات وتقنية المعلومات</h6>
+                            <div class="project-information-container row mt-3 p-0">
+                                <div class="college-name-container row p-0">
+                                    <h6 class="college-label col-4 p-0">الكلية</h6>
+                                    <h6 class="college-name col-8" id="H8" runat="server">كلية الحاسبات وتقنية المعلومات</h6>
                                 </div>
 
                                 <!-- Forth Section of the card -->
-                                <div class="major-information-container row">
-                                    <h6 class="major-label col-4">التخصص</h6>
-                                    <h6 class="major-name col-8">تقنية المعلومات</h6>
+                                <div class="major-information-container row p-0">
+                                    <h6 class="major-label col-4 p-0">التخصص</h6>
+                                    <h6 class="major-name col-8" id="H9" runat="server">تقنية المعلومات</h6>
                                 </div>
                             </div>
 
                             <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
+                            <div class="card-button-container row mt-4 mb-3">
+                                <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="ProjectDetails.aspx">تفاصيل</button>
                             </div>
 
                         </div>
-                    </div>
-
-
-                    <!-- Projects Section Button -->
-                    <div class="arrow-section-container row w-100 mt-5">
-                        <a class="arrow-container" href="ProjectsSectionHomePage.aspx">
-                            <h5 class="arrow-label p-xl-2">الانتقال إلى قسم المشاريع</h5>
-                            <i class="fa-solid fa-arrow-left-long px-lg-2"></i>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-
-            <!------------------------------------------ Events & Activities Section ------------------------------------>
-            <div class="tab-pane fade" id="events-activities" role="tabpanel" aria-labelledby="events-activities-tab">
-                <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5">
-
-                    <!-- Cards -->
-
-                    <!-- Event or Activity Card -->
-                    <div class="project-card-container col p-xl-4 p-lg-3">
-                        <div class="project-card p-lg-1">
-
-                            <!-- First Section of the card -->
-                            <div class="project-logo-container row m-0">
-                                <img class="Project-logo img-fluid p-0" src="Images/Project Logo 3.jpg" alt="Logo">
-                            </div>
-
-                            <!-- Second Section of the card -->
-                            <div class="project-name-container row mt-3">
-                                <h3 class="project-name">اسم المشروع</h3>
-                            </div>
-
-                            <!-- Third Section of the card -->
-                            <div class="project-information-container row mt-3 pe-2">
-                                <div class="college-name-container row">
-                                    <h6 class="college-label col-4">الكلية</h6>
-                                    <h6 class="college-name col-8">كلية الحاسبات وتقنية المعلومات</h6>
-                                </div>
-
-                                <!-- Forth Section of the card -->
-                                <div class="major-information-container row">
-                                    <h6 class="major-label col-4">التخصص</h6>
-                                    <h6 class="major-name col-8">تقنية المعلومات</h6>
-                                </div>
-                            </div>
-
-                            <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Events & Activities Section Button -->
-                    <div class="arrow-section-container row w-100 mt-5">
-                        <a class="arrow-container" href="#">
-                            <h5 class="arrow-label p-xl-2">الانتقال إلى قسم المشاريع</h5>
-                            <i class="fa-solid fa-arrow-left-long px-lg-2"></i>
-                        </a>
                     </div>
 
                 </div>
@@ -362,191 +300,356 @@
 
                     <!-- Cards -->
 
-                    <!-- Project Card -->
-                    <div class="idea-card-container col p-xl-4 p-lg-3">
+                    <!-- Idea Card -->
+                    <div class="idea-card-container col p-xl-3 p-lg-2">
                         <div class="idea-card p-lg-1">
 
                             <!-- First Section of the card -->
-                            <div class="idea-logo-container row m-0 p-3 ps-5 pe-5">
-                                <img class="idea-logo img-fluid p-5" src="Images/lightbulb.png" alt="Logo">
+                            <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
+                                <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Images/Lightbulb.png" alt="Logo">
                             </div>
 
                             <!-- Second Section of the card -->
                             <div class="idea-name-container row">
-                                <h3 class="idea-name">عنوان الفكرة</h3>
+                                <h3 class="idea-name">الفكرة الأولى</h3>
                             </div>
-
 
                             <!-- Third Section of the card -->
                             <div class="idea-description-container">
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
+                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة </p>
                             </div>
 
                             <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="#">عرض الفكرة</button>
+                            <div class="card-button-container row mt-4 mb-3">
+                                <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">عرض الفكرة</button>
                             </div>
 
                         </div>
                     </div>
 
-                    <!-- Project Card -->
-                    <div class="idea-card-container col p-xl-4 p-lg-3">
+                    <!-- Idea Card -->
+                    <div class="idea-card-container col p-xl-3 p-lg-2">
                         <div class="idea-card p-lg-1">
 
                             <!-- First Section of the card -->
-                            <div class="idea-logo-container row m-0 p-3 ps-5 pe-5">
-                                <img class="idea-logo img-fluid p-5" src="Images/lightbulb.png" alt="Logo">
+                            <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
+                                <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Images/Lightbulb.png" alt="Logo">
                             </div>
+                            <!-- ps-xl-4 pe-xl-4  ps-lg-3 pe-lg-3 -->
 
                             <!-- Second Section of the card -->
                             <div class="idea-name-container row">
-                                <h3 class="idea-name">عنوان الفكرة</h3>
+                                <h3 class="idea-name">الفكرة الثانية</h3>
                             </div>
 
 
                             <!-- Third Section of the card -->
                             <div class="idea-description-container">
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
+                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة </p>
                             </div>
 
                             <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="#">عرض الفكرة</button>
+                            <div class="card-button-container row mt-4 mb-3">
+                                <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">عرض الفكرة</button>
                             </div>
 
                         </div>
                     </div>
 
-                    <!-- Project Card -->
-                    <div class="idea-card-container col p-xl-4 p-lg-3">
+
+                    <!-- Idea Card -->
+                    <div class="idea-card-container col p-xl-3 p-lg-2">
                         <div class="idea-card p-lg-1">
 
                             <!-- First Section of the card -->
-                            <div class="idea-logo-container row m-0 p-3 ps-5 pe-5">
-                                <img class="idea-logo img-fluid p-5" src="Images/lightbulb.png" alt="Logo">
+                            <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
+                                <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Images/Lightbulb.png" alt="Logo">
                             </div>
+                            <!-- ps-xl-4 pe-xl-4  ps-lg-3 pe-lg-3 -->
 
                             <!-- Second Section of the card -->
                             <div class="idea-name-container row">
-                                <h3 class="idea-name">عنوان الفكرة</h3>
+                                <h3 class="idea-name">الفكرة الثالثة</h3>
                             </div>
 
 
                             <!-- Third Section of the card -->
                             <div class="idea-description-container">
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
+                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة </p>
                             </div>
 
                             <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="#">عرض الفكرة</button>
+                            <div class="card-button-container row mt-4 mb-3">
+                                <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">عرض الفكرة</button>
                             </div>
 
                         </div>
                     </div>
 
-                    <!-- Project Card -->
-                    <div class="idea-card-container col p-xl-4 p-lg-3">
+
+                    <!-- Idea Card -->
+                    <div class="idea-card-container col p-xl-3 p-lg-2">
                         <div class="idea-card p-lg-1">
 
                             <!-- First Section of the card -->
-                            <div class="idea-logo-container row m-0 p-3 ps-5 pe-5">
-                                <img class="idea-logo img-fluid p-5" src="Images/lightbulb.png" alt="Logo">
+                            <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
+                                <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Images/Lightbulb.png" alt="Logo">
                             </div>
+                            <!-- ps-xl-4 pe-xl-4  ps-lg-3 pe-lg-3 -->
 
                             <!-- Second Section of the card -->
                             <div class="idea-name-container row">
-                                <h3 class="idea-name">عنوان الفكرة</h3>
+                                <h3 class="idea-name">الفكرة الرابعة</h3>
                             </div>
 
 
                             <!-- Third Section of the card -->
                             <div class="idea-description-container">
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
-                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة kkjhjhjmmnjالمضافة </p>
+                                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة </p>
                             </div>
 
                             <!-- Last Section of the card -->
-                            <div class="crad-button-container row mt-4 mb-3">
-                                <button class="details-button" formaction="#">عرض الفكرة</button>
+                            <div class="card-button-container row mt-4 mb-3">
+                                <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">عرض الفكرة</button>
                             </div>
 
                         </div>
                     </div>
 
                 </div>
-
-
-
-                <!-- ***************************************************************** -->
-
-                <!------------------------------------------ Project Sction ------------------------------------>
-
-                <div class="arrow-section-container row w-100 mt-5">
-                    <a class="arrow-container" href="IdeasSectionHomePage.aspx">
-                        <h5 class="arrow-label p-xl-2">الانتقال إلى قسم الأفكار المقترحة</h5>
-                        <i class="fa-solid fa-arrow-left-long px-lg-2"></i>
-                    </a>
-                </div>
-
             </div>
-        </div>
 
 
-        <!------------------------------------------ Consultancies Section ------------------------------------>
-        <div class="tab-pane fade" id="consultancies" role="tabpanel" aria-labelledby="consultancies-tab">
-            <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5">
-                <!-- Project Card -->
-                <div class="project-card-container col p-xl-4 p-lg-3">
-                    <div class="project-card p-lg-1">
 
-                        <!-- First Section of the card -->
-                        <div class="project-logo-container row m-0">
-                            <img class="Project-logo img-fluid p-0" src="Images/Project Logo 4.jpg" alt="Logo">
-                        </div>
+            <!------------------------------------------ Consultancies Section ------------------------------------>
+            <div class="tab-pane fade" id="consultancies" role="tabpanel" aria-labelledby="consultancies-tab">
+                <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5">
 
-                        <!-- Second Section of the card -->
-                        <div class="project-name-container row mt-3">
-                            <h3>اسم المشروع</h3>
-                        </div>
+                    <!-- Cards -->
 
-                        <!-- Third Section of the card -->
-                        <div class="project-information-container row mt-3 pe-2">
-                            <div class="college-name-container row">
-                                <h6 class="college-label col-4">الكلية</h6>
-                                <h6 class="college-name col-8">كلية الحاسبات وتقنية المعلومات</h6>
+                    <!-- Consultation Card -->
+                    <div class="consultation-card-container col p-xl-3 p-lg-2">
+
+                        <div class="consultation-card">
+
+                            <!-- First Section of the card -->
+                            <div class="counselor-img-container row m-0 pt-xl-4 ps-xl-4 pe-xl-4 pt-lg-3 ps-lg-3 pe-lg-3">
+                                <img class="counselor-img img-fluid p-3" src="Images/Profile_Icon.png" alt="Logo">
                             </div>
 
-                            <!-- Forth Section of the card -->
-                            <div class="major-information-container row">
-                                <h6 class="major-label col-4">التخصص</h6>
-                                <h6 class="major-name col-8">تقنية المعلومات</h6>
+                            <!-- Second Section of the card -->
+                            <div class="counselor-name-container row mt-5">
+                                <h3 class="counselor-name mt-xl-4 mt-lg-3">د. عفراء عطية</h3>
                             </div>
-                        </div>
 
-                        <!-- Last Section of the card -->
-                        <div class="crad-button-container row mt-4 mb-3">
-                            <button class="details-button" formaction="BrowsProject.aspx">تفاصيل</button>
+
+                            <!-- Third Section of the card -->
+                            <div class="counselor-information-container p-0 m-0">
+                                <p class="counselor-information m-0 p-0">أستاذ مساعد - قسم تقنية المعلومات</p>
+                                <p class="counselor-information m-0 p-0">كلية الحاسبات وتقنيةالمعلومات</p>
+                            </div>
+
+                            <!-- Last Section of the card -->
+                            <div class="card-button-container row m-0 p-0 mt-4 mb-3">
+                                <button class="consultation-details-button col-4 p-0 ps-2 pe-2" formaction="BrowsProject.aspx">تفاصيل</button>
+                                <button class="consultation-booking-button col-4 p-0 ps-2 pe-2" formaction="BrowsProject.aspx">احجز</button>
+                            </div>
+
                         </div>
 
                     </div>
+
+
+                    <!-- Consultation Card -->
+                    <div class="consultation-card-container col p-xl-3 p-lg-2">
+
+                        <div class="consultation-card">
+
+                            <!-- First Section of the card -->
+                            <div class="counselor-img-container row m-0 pt-xl-4 ps-xl-4 pe-xl-4 pt-lg-3 ps-lg-3 pe-lg-3">
+                                <img class="counselor-img img-fluid p-3" src="Images/Profile_Icon.png" alt="Logo">
+                            </div>
+
+
+                            <!-- Second Section of the card -->
+                            <div class="counselor-name-container row mt-5">
+                                <h3 class="counselor-name mt-xl-4 mt-lg-3">د. منار سلامة</h3>
+                            </div>
+
+
+                            <!-- Third Section of the card -->
+                            <div class="counselor-information-container p-0 m-0">
+                                <p class="counselor-information m-0 p-0">أستاذ مشارك - قسم علوم الحاسب</p>
+                                <p class="counselor-information m-0 p-0">كلية الحاسبات وتقنيةالمعلومات</p>
+                            </div>
+
+                            <!-- Last Section of the card -->
+                            <div class="card-button-container row m-0 p-0 mt-4 mb-3">
+                                <button class="consultation-details-button col-4 p-0 ps-2 pe-2" formaction="BrowsProject.aspx">تفاصيل</button>
+                                <button class="consultation-booking-button col-4 p-0 ps-2 pe-2" formaction="BrowsProject.aspx">احجز</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Consultation Card -->
+                    <div class="consultation-card-container col p-xl-3 p-lg-2">
+
+                        <div class="consultation-card">
+
+                            <!-- First Section of the card -->
+                            <div class="counselor-img-container row m-0 pt-xl-4 ps-xl-4 pe-xl-4 pt-lg-3 ps-lg-3 pe-lg-3">
+                                <img class="counselor-img img-fluid p-3" src="Images/Profile_Icon.png" alt="Logo">
+                            </div>
+
+
+                            <!-- Second Section of the card -->
+                            <div class="counselor-name-container row mt-5">
+                                <h3 class="counselor-name mt-xl-4 mt-lg-3">أ. حنان الأحمدي</h3>
+                            </div>
+
+
+                            <!-- Third Section of the card -->
+                            <div class="counselor-information-container p-0 m-0">
+                                <p class="counselor-information m-0 p-0">محاضر - قسم علوم الحاسب</p>
+                                <p class="counselor-information m-0 p-0">كلية الحاسبات وتقنيةالمعلومات</p>
+                            </div>
+
+                            <!-- Last Section of the card -->
+                            <div class="card-button-container row m-0 p-0 mt-4 mb-3">
+                                <button class="consultation-details-button col-4 p-0 ps-2 pe-2" formaction="BrowsProject.aspx">تفاصيل</button>
+                                <button class="consultation-booking-button col-4 p-0 ps-2 pe-2" formaction="BrowsProject.aspx">احجز</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Consultation Card -->
+                    <div class="consultation-card-container col p-xl-3 p-lg-2">
+
+                        <div class="consultation-card">
+
+                            <!-- First Section of the card -->
+                            <div class="counselor-img-container row m-0 pt-xl-4 ps-xl-4 pe-xl-4 pt-lg-3 ps-lg-3 pe-lg-3">
+                                <img class="counselor-img img-fluid p-3" src="Images/Profile_Icon.png" alt="Logo">
+                            </div>
+
+
+                            <!-- Second Section of the card -->
+                            <div class="counselor-name-container row mt-5">
+                                <h3 class="counselor-name mt-xl-4 mt-lg-3">د. هند بيطار</h3>
+                            </div>
+
+
+                            <!-- Third Section of the card -->
+                            <div class="counselor-information-container p-0 m-0">
+                                <p class="counselor-information m-0 p-0">أستاذ مساعد - قسم نظم معلومات</p>
+                                <p class="counselor-information m-0 p-0">كلية الحاسبات وتقنيةالمعلومات</p>
+                            </div>
+
+                            <!-- Last Section of the card -->
+                            <div class="card-button-container row m-0 p-0 mt-4 mb-3">
+                                <button class="consultation-details-button col-4 p-0 ps-2 pe-2" formaction="BrowsProject.aspx">تفاصيل</button>
+                                <button class="consultation-booking-button col-4 p-0 ps-2 pe-2" formaction="BrowsProject.aspx">احجز</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
-
-                <!------------------------------------------ Project Sction ------------------------------------>
-
-                <div class="arrow-section-container row w-100 mt-5">
-                    <a class="arrow-container" href="ConsultingSectionHomePage.aspx">
-                        <h5 class="arrow-label p-xl-2">الانتقال إلى قسم الاستشارات</h5>
-                        <i class="fa-solid fa-arrow-left-long px-lg-2"></i>
-                    </a>
-                </div>
-
             </div>
-        </div>
 
+
+            <!------------------------------------------ Events & Activities Section ------------------------------------>
+            <div class="tab-pane fade" id="events-activities" role="tabpanel" aria-labelledby="events-activities-tab">
+                <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5">
+
+                    <!-- Cards -->
+
+                    <!-- Event Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_1.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">اسم الفعالية</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Event Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_2.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">اسم الفعالية</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Event Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_3.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">اسم الفعالية</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Event Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_4.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">اسم الفعالية</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
     </div>
+
 </asp:Content>

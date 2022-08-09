@@ -14,6 +14,8 @@ dropdown_menu_button.addEventListener("click", function () {
     }
 
 })
+
+
 var admin_data = document.getElementById('admin_data');
 var add_more_fields = document.getElementById('add_more_fields');
 var remove_fields = document.getElementById('remove_fields');
@@ -32,6 +34,8 @@ add_more_fields.onclick = function () {
     admin_data.appendChild(newFielddd);
 
 }
+
+
 remove_fields.onclick = function () {
     var input_tags = admin_data.getElementsByTagName('input');
     if (input_tags.length = 3) {
@@ -41,3 +45,30 @@ remove_fields.onclick = function () {
 
     }
 }
+
+    function text(x) {
+        if (x == 0)
+            document.getElementById('ID').style.visibility = "visible";
+        else
+            document.getElementById('ID').style.visibility = "hidden";
+        return;
+
+    }
+
+
+
+
+/* Shahad*/
+
+function myFunction() {
+    let text = "هل أنت متأكد من حذف هذة الفكرة نهائيا ؟ ";
+    if (confirm(text) == true) {
+        text = "نعم";
+    } else {
+        text = "لا";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+
+/*******************************************************************************/
+
