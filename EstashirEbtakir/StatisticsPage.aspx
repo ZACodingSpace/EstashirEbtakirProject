@@ -4,25 +4,19 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    <div class="sections-tabs row p-lg-5">
+    <div class="sections-tabs-stat row p-lg-5">
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
 
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button"
-                    role="tab" aria-controls="projects" aria-selected="true">
-                    المشاريع</button>
-            </li>
-
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="events-activities-tab" data-bs-toggle="tab" data-bs-target="#events-activities"
-                    type="button" role="tab" aria-controls="events-activities" aria-selected="false">
+                <button class="nav-link" id="events-activities-stat" data-bs-toggle="tab" data-bs-target="#events-questions"
+                    type="button" role="tab" aria-controls="events-questions" aria-selected="false">
                     الفعاليات والمشاركات</button>
             </li>
 
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="ideas-tab" data-bs-toggle="tab" data-bs-target="#ideas" type="button" role="tab"
-                    aria-controls="ideas" aria-selected="false">
+                <button class="nav-link" id="ideas-tab-stat" data-bs-toggle="tab" data-bs-target="#ideas-questions" type="button" role="tab"
+                    aria-controls="ideas-questions" aria-selected="false">
                     الأفكارالمقترحة</button>
             </li>
 
@@ -32,14 +26,41 @@
                     الاستشارات</button>
             </li>
         </ul>
+          <div class="tab-pane fade show activsee" id="events-questions" role="tabpanel" aria-labelledby="events-activities-stat">             
+         <div class="dropdownList-container">
+            <select name="question-list">
+                <option vaule="option1">عدد الفعاليات التي اقيمت</option>
+                <option vaule="option1">عدد المشاركات</option>
+            </select>
+             <br />
+             <br />
+             <select name="question-list">
+                <option vaule="option1">خلال السنة الماضية</option>
+                <option vaule="option1">خلال الستة اشهر الماضية</option>
+                <option vaule="option1">خلال الشهر الماضي</option>
+            </select>
+        </div>
+            </div>
+
+         <div class="tab-pane fade show activsee" id="ideas-questions" role="tabpanel" aria-labelledby="ideas-tab-stat">        
+         <div class="dropdownList-container">
+            <select name="question-list">
+                <option vaule="option1">عدد الافكار المقترحة</option>
+            </select>
+             <br />
+             <br />
+             <select name="question-list">
+                <option vaule="option1">خلال السنة الماضية</option>
+                <option vaule="option1">خلال الستة اشهر الماضية</option>
+                <option vaule="option1">خلال الشهر الماضي</option>
+            </select>
         </div>
 
-
-    <div class="stat-cards">
-        <asp:DropDownList ID="DropDownList1" runat="server">hjhjhj</asp:DropDownList>
-        <asp:DropDownList ID="DropDownList2" runat="server"></asp:DropDownList>
+            </div>
 
 
     </div>
+
+
 
 </asp:Content>

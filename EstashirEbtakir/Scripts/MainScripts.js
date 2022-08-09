@@ -26,9 +26,11 @@ add_more_fields.onclick = function () {
     var newFielddd = document.createElement('input');
     newFielddd.setAttribute('type', 'number');
     newFielddd.setAttribute('placeholder', 'السعر');
+    newField.style.float = 'left'
     admin_data.appendChild(newField);
     admin_data.appendChild(newFieldd);
     admin_data.appendChild(newFielddd);
+
 }
 remove_fields.onclick = function () {
     var input_tags = admin_data.getElementsByTagName('input');
