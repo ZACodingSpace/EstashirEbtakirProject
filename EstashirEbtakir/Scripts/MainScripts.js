@@ -48,9 +48,9 @@ remove_fields.onclick = function () {
 
     function text(x) {
         if (x == 0)
-            document.getElementById('ID').style.visibility = "visible";
+            document.getElementById('idNumber').style.visibility = "visible";
         else
-            document.getElementById('ID').style.visibility = "hidden";
+            document.getElementById('idNumber').style.visibility = "hidden";
         return;
 
     }

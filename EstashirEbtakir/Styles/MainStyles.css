@@ -609,20 +609,23 @@ footer {
     font-weight: lighter;
     background-color: var(--Ghost-White);
 }
+    .user-type-container .stu-dr-yes .inputPlace{
+        visibility: hidden;
+    }
 
 
-.logIn-form .data .error-msg-place,
-.signUp-form .data .error-msg-place {
-    width: 40vh;
-    height: 3vh;
-    display: block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: center;
-    font-weight: lighter;
-    color: red;
-}
+    .logIn-form .data .error-msg-place,
+    .signUp-form .data .error-msg-place {
+        width: 40vh;
+        height: 3vh;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        font-weight: lighter;
+        color: red;
+    }
 
 
 /* Form Second Section */
