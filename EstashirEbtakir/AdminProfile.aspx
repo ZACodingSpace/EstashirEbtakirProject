@@ -11,8 +11,8 @@
             <div class="title">
                 <div class="logo">
                     <img src="Images/ProfileIcon.png" alt="..." />
-                    <input id="Text1" type="text" class="text-field1" placeholder="الاسم الثنائي" readonly />
-                    <input id="Text2" type="text" class="text-field1" placeholder="نوع المستخدم" readonly />
+                    <input id="Fname" runat="server" type="text" class="text-field1" placeholder="الاسم الثنائي" readonly />
+                    <input id="job" runat="server" type="text" class="text-field1" placeholder="نوع المستخدم" readonly />
                 </div>
             </div>
             <ul>
@@ -34,11 +34,11 @@
                 <div class="profile-container">
                     <p>
                         الاسم:
-                        <input id="Text3" type="text" class="text-field2" placeholder="الاسم الثنائي" readonly />
+                        <input id="name" runat="server" type="text" class="text-field2" placeholder="الاسم الثنائي" readonly />
                     </p>
                     <p>
                         البريد الإلكتروني:
-                        <input id="Text4" type="text" class="text-field2" placeholder="example@gmail.com"
+                        <input id="email" runat="server" type="text" class="text-field2" placeholder="example@gmail.com"
                             readonly />
                     </p>
                     <p>
@@ -49,7 +49,7 @@
                     </p>
                     <p>
                         الرقم الوظيفي:
-                        <input id="Text6" type="text" class="text-field2" placeholder="2220000" readonly />
+                        <input id="adminID" runat="server" type="text" class="text-field2" placeholder="2220000" readonly />
                     </p>
                     <a href="#"><i class="fas fa-lock"></i> تغيير كلمة المرور </a>
                 </div>
