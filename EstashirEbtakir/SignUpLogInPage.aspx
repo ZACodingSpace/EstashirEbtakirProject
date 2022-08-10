@@ -55,7 +55,7 @@
             </div>
 
             <div class="logIn-button-container mt-5">
-                <asp:Button id="logInButton" class="logIn-button p-0 ps-xl-5 pe-xl-5 ps-lg-4 pe-lg-4" runat="server" Text="تسجيل الدخول"/> 
+                <asp:Button id="logInButton" onclick="login_Click" class="logIn-button p-0 ps-xl-5 pe-xl-5 ps-lg-4 pe-lg-4" runat="server" Text="تسجيل الدخول" /> 
               </div>
 
             <div class="question mt-4">
@@ -139,7 +139,7 @@
             </div>
 
             <div class="signUp-button-container m-0 p-0 mt-5">
-                <asp:Button id="signUpButton" class="signUp-button p-0 ps-xl-5 pe-xl-5 ps-lg-4 pe-lg-4" runat="server" Text="إنشاء حساب"/>          
+                <asp:Button id="signUpButton" OnClick="Registration_Click" class="signUp-button p-0 ps-xl-5 pe-xl-5 ps-lg-4 pe-lg-4" runat="server" Text="إنشاء حساب"/>          
             </div>
           </div>
 
