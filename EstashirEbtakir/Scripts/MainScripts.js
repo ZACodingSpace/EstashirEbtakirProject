@@ -46,6 +46,7 @@ remove_fields.onclick = function () {
     }
 }
 
+/*
     function text(x) {
         if (x == 0)
             document.getElementById('idNumber').style.visibility = "visible";
@@ -53,8 +54,8 @@ remove_fields.onclick = function () {
             document.getElementById('idNumber').style.visibility = "hidden";
         return;
 
-    }
-
+}
+*/
 
 
 

@@ -704,10 +704,13 @@ footer {
     background-color: var(--Ghost-White);
 }
 
-.user-type-container .stu-dr-yes .inputPlace {
+.user-type-container .inputPlace {
     visibility: hidden;
 }
 
+input:checked + .inputPlace  {
+    visibility: visible;
+}
 
 .logIn-form .data .error-msg-place,
 .signUp-form .data .error-msg-place {

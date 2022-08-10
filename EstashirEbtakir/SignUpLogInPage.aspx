@@ -125,7 +125,7 @@
 
               <asp:Label id="stuDrYesLabel" class="stu-dr-yes" runat="server">
                 <input id="stuDrYesRadioButton" class="stuDr-RadioButton ms-2" runat="server" type="radio"
-                  name="stuDrRadioButton" value="yes" onclick="text(0)"/>
+                  name="stuDrRadioButton" value="yes" />
                 نعم
                 <input id="idNumber" class="inputPlace me-3" runat="server" type="text" name="idNumber"
                   placeholder="الرقم الوظيفي/الجامعي" required />
@@ -133,7 +133,7 @@
 
               <asp:Label id="stuDrNoLabel" class="stu-dr-no mt-3" runat="server">
                 <input id="stuDrNoRadioButton" class="stuDr-RadioButton ms-2" runat="server" type="radio"
-                  name="stuDrRadioButton" value="no" onclick="text(1)" />
+                  name="stuDrRadioButton" value="no"/>
                 لا
               </asp:Label>
             </div>
