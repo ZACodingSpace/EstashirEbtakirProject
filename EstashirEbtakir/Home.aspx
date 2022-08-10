@@ -50,7 +50,7 @@
                 <img src="Images/Events & Activities.jpg" class="d-block w-100" style="height: 70vh;" alt="...">
                 <div class="overlay"></div>
                 <div class="carousel-caption d-none d-md-flex flex-column h-50 align-items-start">
-                    <a href="#" class="slide-button p-lg-2">الفعاليات والمشاركات</a>
+                    <a href="ParticipationsEventsAchievementsHomePage.aspx" class="slide-button p-lg-2">الفعاليات والمشاركات</a>
                 </div>
             </div>
 
@@ -89,7 +89,7 @@
     <div class="description-container mt-lg-5 mb-lg-5 ps-lg-5 pe-lg-5">
         <div class="row">
             <div class="logo-section col-3 p-0 m-0">
-                <img class="img-fluid w-75" src="Images/Innovation Lab Logo.png" alt="">
+                <img class="img-fluid w-75" src="Images/Innovation_Lab_Logo.png" alt="">
             </div>
             <div class="description-section col-9 p-0 m-0">
                 <p class="IL-description">
