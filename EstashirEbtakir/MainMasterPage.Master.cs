@@ -13,8 +13,16 @@ namespace EstashirEbtakir
         SqlConnection con;
         protected void Page_Load(object sender, EventArgs e)
         {
-            userInformationContainer.Visible = false;
-            signUpContainer.Visible = true;
+            if (Session["id"] != "true")
+            {
+                userInformationContainer.Visible = false;
+                signUpContainer.Visible = true;
+            }
+            else
+            {
+                userInformationContainer.Visible = true;
+                signUpContainer.Visible = false;
+            }
         }
     }
 }
