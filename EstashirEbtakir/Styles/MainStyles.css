@@ -1697,19 +1697,78 @@ body .about-logo {
     margin-top: 3vh;
     text-align: center;
 }
-/*Admin data page Styles End */
-.save-adminData {
+/*Statistic page Styles End */
+
+/*adminData page Styles Start */
+.Admin-Page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-data-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-controls-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save-adminData-container{
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.save-adminData { 
     width: 7vw;
     height: 5vh;
     border: none;
     background: #D08DEE;
     box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
     border-radius: 5px;
+    margin-right: 2vh;
 }
-/*******************************************************************************/
-/*أفنان*/
-/*Statistic page Style Start*/
 
+.admin-controls {
+    margin-bottom: 2vh;
+    margin-right: 2vh;
+   
+}
+
+.select-division {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border-radius: 0.5vh;
+    width: 22vw;
+    height: 6vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+.admin_data {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border-radius: 0.5vh;
+    width: 22vw;
+    height: 6vh;
+    margin-bottom: 1vh;
+    display: block;
+}
+    .admin_data[type=number] {
+        background: #FFFFFF;
+        box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+        border-radius: 0.5vh;
+        width: 22vw;
+        height: 6vh;
+        margin-bottom: 3vh;
+        display: block;
+    }
 /*Admin data page Style End*/
 /*******************************************************************************/
 /*أفنان*/
