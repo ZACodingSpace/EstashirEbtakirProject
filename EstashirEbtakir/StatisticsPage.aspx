@@ -3,21 +3,20 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-
-    <div class="sections-tabs-stat row p-lg-5">
+    <div class="sections-tabs row p-lg-5">
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
 
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="events-activities-stat" data-bs-toggle="tab" data-bs-target="#events-questions"
-                    type="button" role="tab" aria-controls="events-questions" aria-selected="false">
-                    الفعاليات والمشاركات</button>
+                <button class="nav-link active" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button"
+                    role="tab" aria-controls="projects" aria-selected="true">
+                    المشاريع</button>
             </li>
 
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="ideas-tab-stat" data-bs-toggle="tab" data-bs-target="#ideas-questions" type="button" role="tab"
-                    aria-controls="ideas-questions" aria-selected="false">
-                    الأفكارالمقترحة</button>
+                <button class="nav-link" id="ideas-tab" data-bs-toggle="tab" data-bs-target="#ideas" type="button" role="tab"
+                    aria-controls="ideas" aria-selected="false">
+                    الأفكار المقترحة</button>
             </li>
 
             <li class="nav-item" role="presentation">
@@ -25,41 +24,86 @@
                     type="button" role="tab" aria-controls="consultancies" aria-selected="false">
                     الاستشارات</button>
             </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="events-activities-tab" data-bs-toggle="tab" data-bs-target="#events-activities"
+                    type="button" role="tab" aria-controls="events-activities" aria-selected="false">
+                    الفعاليات والإنجازات</button>
+            </li>
+
         </ul>
-          <div class="tab-pane fade show activsee" id="events-questions" role="tabpanel" aria-labelledby="events-activities-stat">             
-         <div class="dropdownList-container">
-            <select name="question-list">
-                <option vaule="option1">عدد الفعاليات التي اقيمت</option>
-                <option vaule="option1">عدد المشاركات</option>
-            </select>
-             <br />
-             <br />
-             <select name="question-list">
-                <option vaule="option1">خلال السنة الماضية</option>
-                <option vaule="option1">خلال الستة اشهر الماضية</option>
-                <option vaule="option1">خلال الشهر الماضي</option>
-            </select>
-        </div>
+
+
+        <div class="tab-content" id="myTabContent">
+
+            <!------------------------------------------ Projects Section ------------------------------------>
+            <div class="tab-pane fade show active" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+                <div class="statistics-header">
+                    <h2 class="section-heading">احصائيات المشاريع</h2>
+                </div>
+                <div class="project-stat">
+                    <select class="SecondQuestion-list">
+                        <option vaule="option1">خلال السنة الماضية</option>
+                        <option vaule="option1">خلال الستة اشهر الماضية</option>
+                        <option vaule="option1">خلال الشهر الماضي</option>
+                    </select>
+                </div>
+                <div class="charts-container"></div>
             </div>
 
-         <div class="tab-pane fade show activsee" id="ideas-questions" role="tabpanel" aria-labelledby="ideas-tab-stat">        
-         <div class="dropdownList-container">
-            <select name="question-list">
-                <option vaule="option1">عدد الافكار المقترحة</option>
-            </select>
-             <br />
-             <br />
-             <select name="question-list">
-                <option vaule="option1">خلال السنة الماضية</option>
-                <option vaule="option1">خلال الستة اشهر الماضية</option>
-                <option vaule="option1">خلال الشهر الماضي</option>
-            </select>
-        </div>
+            <!------------------------------------------ Ideas Section ------------------------------------>
+            <div class="tab-pane fade" id="ideas" role="tabpanel" aria-labelledby="ideas-tab">
+                <div class="statistics-header">
+                    <h2 class="section-heading">احصائيات الأفكار</h2>
+                </div>
+                <div class="project-stat">
+
+                    <select class="SecondQuestion-list">
+                        <option vaule="option1">خلال السنة الماضية</option>
+                        <option vaule="option1">خلال الستة اشهر الماضية</option>
+                        <option vaule="option1">خلال الشهر الماضي</option>
+                    </select>
+
+                </div>
+                <div class="charts-container"></div>
             </div>
 
 
+
+            <!------------------------------------------ Consultancies Section ------------------------------------>
+            <div class="tab-pane fade" id="consultancies" role="tabpanel" aria-labelledby="consultancies-tab">
+                <div class="statistics-header">
+                    <h2 class="section-heading">احصائيات الاستشارات</h2>
+                </div>
+                <div class="project-stat">
+
+                    <select class="SecondQuestion-list">
+                        <option vaule="option1">خلال السنة الماضية</option>
+                        <option vaule="option1">خلال الستة اشهر الماضية</option>
+                        <option vaule="option1">خلال الشهر الماضي</option>
+                    </select>
+                </div>
+                <div class="charts-container"></div>
+            </div>
+
+
+            <!------------------------------------------ Events & Activities Section ------------------------------------>
+            <div class="tab-pane fade" id="events-activities" role="tabpanel" aria-labelledby="events-activities-tab">
+                <div class="statistics-header">
+                    <h2 class="section-heading">احصائيات الفعاليات والمشاركات</h2>
+                </div>
+                <div class="project-stat">
+                    <select class="SecondQuestion-list">
+                        <option vaule="option1">خلال السنة الماضية</option>
+                        <option vaule="option1">خلال الستة اشهر الماضية</option>
+                        <option vaule="option1">خلال الشهر الماضي</option>
+                    </select>
+                </div>
+                <div class="charts-container"></div>
+            </div>
+
+        </div>
     </div>
-
 
 
 </asp:Content>
