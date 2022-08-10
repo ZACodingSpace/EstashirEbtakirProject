@@ -27,14 +27,14 @@ namespace EstashirEbtakir
             string constr = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             return constr;
         }
-        int ID = int.Parse (HttpContext.Current.Session.SessionID);
+        int SID = int.Parse (HttpContext.Current.Session.SessionID);
         protected void ChangePass_Click(object sender, EventArgs e)
         {
             string str = getConstring();
             con = new SqlConnection(str);
             con.Open();
-            //SqlDataAdapter sda = new SqlDataAdapter("select * from OurUser where Email='" + email.Trim() + "'", con);
-            //DataTable dt = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter("select * from OurUser where User_ID='" + SID + "'", con);
+            DataTable dt = new DataTable();
             //sda.Fill(dt); 
 
         }

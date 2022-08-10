@@ -14,33 +14,35 @@ namespace EstashirEbtakir {
     public partial class UserProfile : System.Web.UI.Page {
         SqlConnection con;
         protected void Page_Load(object sender, EventArgs e) {
-
-            // set database connection
-            con = new SqlConnection(GetConstring());
-            con.Open();
-
-            // get the session id ( admin id )
-            //string sessionIDstr = HttpContext.Current.Session.SessionID;
-            int sessionID = int.Parse((string)Session["id"]);
-
-            // get admin info from DB
-            SqlCommand cmd = new SqlCommand("select * from OurUser where User_ID='" + sessionID + "'", con);
-            SqlDataReader reader = cmd.ExecuteReader();
-
-            if (reader.Read())
+            try
             {
-                // display admin info
-                
+                // set database connection
+                con = new SqlConnection(GetConstring());
+                con.Open();
 
-                uniID.Attributes.Add("placeholder", reader["University_ID"].ToString());
-                name.Attributes.Add("placeholder", reader.GetString(1) + " " + reader.GetString(2));
-                name2.Attributes.Add("placeholder", reader.GetString(1) + " " + reader.GetString(2));
-                email.Attributes.Add("placeholder", reader.GetString(4));
-                phone.Attributes.Add("placeholder", reader["Phone"].ToString());
-                job.Attributes.Add("placeholder", reader.GetString(7));
+                // get the session id ( admin id )
+                //string sessionIDstr = HttpContext.Current.Session["id"];
+                int sessionID = int.Parse((string)Session["id"]);
 
+                // get admin info from DB
+                SqlCommand cmd = new SqlCommand("select * from OurUser where User_ID='" + sessionID + "'", con);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    // display user info
+                    uniID.Attributes.Add("placeholder", reader["University_ID"].ToString());
+                    name.Attributes.Add("placeholder", reader.GetString(1) + " " + reader.GetString(2));
+                    name2.Attributes.Add("placeholder", reader.GetString(1) + " " + reader.GetString(2));
+                    email.Attributes.Add("placeholder", reader.GetString(4));
+                    phone.Attributes.Add("placeholder", reader["Phone"].ToString());
+                    job.Attributes.Add("placeholder", reader.GetString(7));
+
+                }
+            } catch (Exception ex) {
+                con.Close();
             }
-            con.Close();
+            
         }
 
         public string GetConstring() {

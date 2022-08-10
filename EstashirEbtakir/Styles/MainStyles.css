@@ -1775,52 +1775,124 @@ body .about-logo {
 
 
 /* Ideas section home page Styles End */
-.save-adminData {
-    width: 7vw;
-    height: 5vh;
-    border: none;
-    background: #D08DEE;
-    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
-    border-radius: 5px;
-}
-
 /*******************************************************************************/
 /*أفنان*/
-/*Admin data page Styles Start */
+/*Statistic page Styles Start */
 .sections-tabs-stat {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.question-list {
-    position: relative;
-    left: 30px;
-    border: 3px solid #73AD21;
+.FirstQuestions-list {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border-radius: 0.5vh;
+    width: 19vw;
+    height: 4.6vh;
+    margin-left:10vh;
+
 }
-/*Admin data page Styles End */
-/*******************************************************************************/
-/*أفنان*/
-/*Statistic page Style Start*/
-.Statistic-cards {
+.SecondQuestion-list {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border-radius: 0.5vh;
+    width: 19vw;
+    height: 4.6vh;
+    margin-bottom: 5vh;
+}
+.section-heading {
+    margin-top:3vh;
+}
+.charts-container {
+    position: relative;
+    top: -80px;
+    margin: 5% 10%;
+    width: 80%;
+    box-shadow: 5px 5px 10px #BEC3CC;
+    height: 70vh;
+    border-radius: 4vh;
+}
+.project-stat {
+    margin-top: 3vh;
+    text-align: center;
+}
+/*Statistic page Styles End */
+
+/*adminData page Styles Start */
+.Admin-Page {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-    border-radius: 5px;
-    text-align: center;
-    background-color: var(--Ghost-White);
+}
+.admin-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-data-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-controls-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/*Statistic page Style End*/
+.save-adminData-container{
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.save-adminData { 
+    width: 7vw;
+    height: 5vh;
+    border: none;
+    background: #D08DEE;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+    margin-right: 2vh;
+}
+
+.admin-controls {
+    margin-bottom: 2vh;
+    margin-right: 2vh;
+   
+}
+
+.select-division {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border-radius: 0.5vh;
+    width: 22vw;
+    height: 6vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+.admin_data {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border-radius: 0.5vh;
+    width: 22vw;
+    height: 6vh;
+    margin-bottom: 1vh;
+    display: block;
+}
+    .admin_data[type=number] {
+        background: #FFFFFF;
+        box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+        border-radius: 0.5vh;
+        width: 22vw;
+        height: 6vh;
+        margin-bottom: 3vh;
+        display: block;
+    }
+/*Admin data page Style End*/
 /*******************************************************************************/
-
-
 /*أفنان*/
 /* Consulting section home page Styles Start */
-
-
 .consultingPage {
     padding: 2vh;
     background-color: #F6F9FF;
