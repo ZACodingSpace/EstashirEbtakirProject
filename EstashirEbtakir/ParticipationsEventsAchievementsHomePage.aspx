@@ -7,153 +7,412 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <!-- Tabs Section -->
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-
-        <!-- Events Tab -->
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button" role="tab" aria-controls="events" aria-selected="true">الفعاليات</button>
-        </li>
-
-        <!-- Participations Tab -->
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="participations-tab" data-bs-toggle="tab" data-bs-target="#participations" type="button" role="tab" aria-controls="participations" aria-selected="false">المشاركات</button>
-        </li>
-
-        <!-- Achievements Tab -->
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="achievements-tab" data-bs-toggle="tab" data-bs-target="#achievements" type="button" role="tab" aria-controls="achievements" aria-selected="false">الإنجازات</button>
-        </li>
-    </ul>
 
 
-    <!-- Tabs contents section -->
-    <div class="tab-content" id="myTabContent">
 
-        <!-- events content section -->
-        <div class="tab-pane fade show active" id="events" role="tabpanel" aria-labelledby="events-tab">
+    <!-- Sections -->
+    <div class="sections-tabs row p-lg-5">
 
-            <div class="event-page">
-                <h1>قسم الفعاليات والمشاركات والإنجازات</h1>
+        <!-- Tabs Names -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
 
-                <div class="search-events">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button"
+                    role="tab" aria-controls="events" aria-selected="true">
+                    الفعاليات</button>
+            </li>
 
-                    <input type="search" name="search-feild" value="البحث" />
-                    <button>بحث</button>
-                    <button>تصفية</button>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="participations-tab" data-bs-toggle="tab" data-bs-target="#participations" type="button" role="tab"
+                    aria-controls="participations" aria-selected="false">
+                    المشاركات</button>
+            </li>
 
-                </div>
-                <br>
-                <div class="sections">
-                    <span class="events">الفعاليات</span>
-                    <a href="Participation.aspx" class="participation">المشاركات</a>
-                    <a href="Achievement.aspx" class="achievements">الإنجازات</a>
-                </div>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="achievements-tab" data-bs-toggle="tab" data-bs-target="#achievements"
+                    type="button" role="tab" aria-controls="achievements" aria-selected="false">
+                    الإنجازات</button>
+            </li>
 
-                <div class="container">
-                    <div class="welcome">مرحبا بكم في قسم الفعاليات....هنا يتم عرض الفعاليات التي أقامها معمل الابتكارات بجامعة الملك عبدالعزيز</div>
+        </ul>
 
-                    <div class="event-detail">
-                         <img src="Images/event1.jpeg" class="event-image" alt="logo"/>
+        <!-- Tabs Contents -->
+        <div class="tab-content" id="myTabContent">
 
-                        <div class="event-name">اسم الفعالية </div>
-                        
-                        <a href="#" class="details">تفاصيل</a> 
+            <!------------------------------------------ Events Section ------------------------------------>
+            <div class="tab-pane fade show active" id="events" role="tabpanel" aria-labelledby="events-tab">
+                <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5">
 
+                    <!-- Cards -->
+
+                    <!-- Event Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_2.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">اسم الفعالية</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="nums">
-                    <span class="before">السابق</span>
-                    <span class="num1">1</span>
-                    <span class="after">التالي</span>
+
+
+                    <!-- Event Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_4.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">اسم الفعالية</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Event Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_2.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">اسم الفعالية</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                 
+                    <!-- Event Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_4.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">اسم الفعالية</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Event Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_2.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">اسم الفعالية</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-        </div>
 
 
-        <!-- participations content section -->
-        <div class="tab-pane fade" id="participations" role="tabpanel" aria-labelledby="participations-tab">
+            <!------------------------------------------ Participations Section ------------------------------------>
+            <div class="tab-pane fade" id="participations" role="tabpanel" aria-labelledby="participations-tab">
+                <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5">
 
-            <div class="participation-page">
-                <h1>قسم الفعاليات والمشاركات والإنجازات</h1>
+                    <!-- Cards -->
 
-                <div class="search-participation">
+                    <!-- Participation Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
 
-                    <input type="search" name="search-feild" value="البحث" />
-                    <button>بحث</button>
-                    <button>تصفية</button>
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_3.jpg" alt="Logo">
 
-                </div>
-                <br>
-                <div class="sections">
-                    <a href="Event.aspx" class="events">الفعاليات</a>
-                    <span class="participation">المشاركات</span>
-                    <a href="Achievement.aspx" class="achievements">الإنجازات</a>
-                </div>
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">المشاركات</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
 
-                <div class="container">
-                    <div class="welcome">مرحبا بكم في قسم المشاركات....هنا يتم عرض المشاركات التي شارك بها معمل الابتكارات بجامعة الملك عبدالعزيز</div>
-
-                    <div class="participation-detail">
-                        <div>صورة</div>
-                        <div class="participation-image"></div>
-
-                        <div class="participation-name">عنوان </div>
-                        <br />
-                        <a href="#" class="details">تفاصيل</a>
-
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="nums">
-                    <span class="before">السابق</span>
-                    <span class="num1">1</span>
-                    <span class="after">التالي</span>
+
+                    <!-- Participation Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_5.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">المشاركات</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+              
+                    <!-- Participation Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_3.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">المشاركات</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Participation Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_5.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">المشاركات</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- Participation Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_3.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">المشاركات</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                    <!-- Event Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_5.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">المشاركات</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Event Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_3.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">المشاركات</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-        </div>
 
 
-        <!-- achievements content section -->
-        <div class="tab-pane fade" id="achievements" role="tabpanel" aria-labelledby="achievements">
-            <div class="achievement-page">
-                <h1>قسم الفعاليات والمشاركات والإنجازات</h1>
 
-                <div class="search-participation">
+            <!------------------------------------------ Achievements Section ------------------------------------>
+            <div class="tab-pane fade" id="achievements" role="tabpanel" aria-labelledby="achievements-tab">
+                <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5">
 
-                    <input type="search" name="search-feild" value="البحث" />
-                    <button>بحث</button>
-                    <button>تصفية</button>
+                    <!-- Cards -->
 
-                </div>
-                <br>
-                <div class="sections">
-                    <a href="Event.aspx" class="events">الفعاليات</a>
-                    <a href="Participation.aspx" class="participation">المشاركات</a>
-                    <span class="achievements">الإنجازات</span>
-                </div>
+                    <!-- Achievement Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
 
-                <div class="container">
-                    <div class="welcome">مرحبا بكم في قسم الإنجازات....هنا يتم عرض الإنجازات التي قام بها معمل الابتكارات بجامعة الملك عبدالعزيز</div>
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_6.jpg" alt="Logo">
 
-                    <div class="achievement-detail">
-                        <div>صورة</div>
-                        <div class="achievement-image"></div>
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">الإنجاز الأول</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
 
-                        <div class="achievement-name">عنوان </div>
-                        <br />
-                        <a href="#" class="details">تفاصيل</a>
-
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="nums">
-                    <span class="before">السابق</span>
-                    <span class="num1">1</span>
-                    <span class="after">التالي</span>
+
+                    <!-- Achievement Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_1.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">الإنجاز الثاني</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Achievement Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_6.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">الإنجاز الثالث</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Achievement Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_1.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">الإنجاز الرابع</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Achievement Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_6.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">الإنجاز الخامس</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Achievement Card -->
+                    <div class="event-card-container col p-xl-3 p-lg-2">
+                        <div class="event-card p-lg-1 p-0 m-0">
+
+                            <div class="event-img-container row m-0 p-0">
+                                <img class="event-img p-0 m-0" src="Images/Event_Img_1.jpg" alt="Logo">
+
+                                <div class="overlay-content-container">
+                                    <div class="event-name-container">
+                                        <h3 class="event-name">الإنجاز السادس</h3>
+                                    </div>
+                                    <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+
         </div>
     </div>
+
 
 </asp:Content>

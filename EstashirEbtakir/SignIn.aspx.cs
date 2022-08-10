@@ -56,8 +56,10 @@ namespace EstashirEbtakir
                 {
                     
                     Response.Redirect("Home.aspx");
+                    
                     Session["id"] = user_id;
                     Session["name"] = username;
+                    //Response.Redirect("UserProfile.aspx");
                 }
                 else
                 {
