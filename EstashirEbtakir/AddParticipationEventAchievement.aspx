@@ -24,11 +24,10 @@
             <label for="p-name"> اسم الفعالية/المشاركة</label>
             <input type="text" id="p-name" />
 
-            <label for="p-about">إضافة وصف</label>
+            <label for="p-about">إضافة نبذة</label>
             <input type="text" id="p-about" />
 
-            <label for="p-college">اليوم</label>
-            <input type="text" id="p-college" />
+            
 
             <label for="p-department">التاريخ</label>
             <input type="text" id="p-department" />
@@ -36,7 +35,10 @@
             <label for="p-supervisor">المشرف</label>
             <input type="text" id="p-supervisor" />
 
-            <label for="p-file">إرفاق صور أو ملفات</label>
+            <label for="p-file">إرفاق صور</label>
+            <input type="file" id="pp-file" />
+
+            <label for="p-file">إرفاق ملفات</label>
             <input type="file" id="p-file" />
 
         </div>

@@ -704,10 +704,13 @@ footer {
     background-color: var(--Ghost-White);
 }
 
-.user-type-container .stu-dr-yes .inputPlace {
+.user-type-container .inputPlace {
     visibility: hidden;
 }
 
+input:checked + .inputPlace  {
+    visibility: visible;
+}
 
 .logIn-form .data .error-msg-place,
 .signUp-form .data .error-msg-place {
@@ -1552,12 +1555,15 @@ body .about-logo {
 /*مريم */
 /* My Ideas Pages Styles Start */
 
+
+
 /* My Ideas Pages Styles End */
 
 /*******************************************************************************/
 
 /*مريم */
 /* My Appointment Pages Styles Start */
+ 
 
 /* My Appointment Pages Styles End */
 
