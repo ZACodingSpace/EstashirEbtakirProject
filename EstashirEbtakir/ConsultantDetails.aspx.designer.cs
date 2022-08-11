@@ -11,7 +11,7 @@ namespace EstashirEbtakir
 {
 
 
-    public partial class MyProjectsPage
+    public partial class consultantDetailes
     {
     }
 }
