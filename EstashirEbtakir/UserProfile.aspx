@@ -44,14 +44,13 @@
                         رقم الجوال:
                         <input id="phone" runat="server" type="text" class="text-field2" placeholder="05xxxxxxxx" />
                         <!-- تغيير الى بوتون -->
-                        <a href="#">تعديل
-                        </a>
+                        <button id="editPhone" runat="server" onclick="EditPhone">تعديل</button>
                     </p>
                     <p>
                         الرقم الجامعي:
                         <input id="uniID" runat="server" type="text" class="text-field2" placeholder="2220000" readonly />
                     </p>
-                    <a href="#"><i class="fas fa-lock"></i> تغيير كلمة المرور </a>
+                    <a href="ChangePassword.aspx"><i class="fas fa-lock"></i> تغيير كلمة المرور </a>
                 </div>
             </div>
 

@@ -14,8 +14,7 @@ namespace EstashirEbtakir {
     public partial class UserProfile : System.Web.UI.Page {
         SqlConnection con;
         protected void Page_Load(object sender, EventArgs e) {
-            try
-            {
+            try {
                 // set database connection
                 con = new SqlConnection(GetConstring());
                 con.Open();
@@ -28,8 +27,7 @@ namespace EstashirEbtakir {
                 SqlCommand cmd = new SqlCommand("select * from OurUser where User_ID='" + sessionID + "'", con);
                 SqlDataReader reader = cmd.ExecuteReader();
 
-                if (reader.Read())
-                {
+                if (reader.Read()) {
                     // display user info
                     uniID.Attributes.Add("placeholder", reader["University_ID"].ToString());
                     name.Attributes.Add("placeholder", reader.GetString(1) + " " + reader.GetString(2));
