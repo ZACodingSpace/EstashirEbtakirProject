@@ -38,12 +38,20 @@ namespace EstashirEbtakir {
 
                 }
             } catch (Exception ex) {
+                Console.WriteLine(ex.Message);
                 con.Close();
             }
             
         }
 
-        public string GetConstring() {
+        protected void EditPhone_Click(object sender, EventArgs e) {
+            
+            string phoneNum = phone.Value;
+            
+
+        }
+
+            public string GetConstring() {
             string constr = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             return constr;
         }
