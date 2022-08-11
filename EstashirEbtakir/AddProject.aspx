@@ -6,6 +6,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="add-project-container">
        <div class="add-project-area">
            
         <a class="project-btn" href="ProjectsSectionHomePage.aspx">رجوع</a>
@@ -20,6 +21,7 @@
             <label for="aboutP">نبذة عن المشروع</label>
             <textarea class="about-project" id="aboutP" runat="server"></textarea>
 
+            <!-- change to check list -->
             <label for="technDropDownList">التقنية المستخدمة</label>
             <asp:DropDownList ID="technDropDownList" runat="server">
                 <asp:ListItem></asp:ListItem>
@@ -35,6 +37,9 @@
                 <asp:ListItem>تطبيقات جوال مدعمة بالواقع المعزز</asp:ListItem>
                 <asp:ListItem>أخرى</asp:ListItem>
             </asp:DropDownList>
+
+            <label for="gradeP">صورة</label>
+            <input type="file" id="img" runat="server"/>
 
             <label for="collegeP">الكلية</label>
             <input type="text" id="collegeP" runat="server"/>
@@ -56,5 +61,5 @@
         <button class="project-btn" onclick="">اضافة</button>
         <button class="project-btn" formaction="ProjectsSectionHomePage.aspx">الغاء</button>
 </div>
-    </div>
+    </div></div>
 </asp:Content>

@@ -55,9 +55,11 @@ namespace EstashirEbtakir
                 if (userEmail == email && userpassword == pass)
                 {
                     
-                    Response.Redirect("Home.aspx");
+                    //Response.Redirect("Home.aspx");
+                    
                     Session["id"] = user_id;
                     Session["name"] = username;
+                    Response.Redirect("UserProfile.aspx");
                 }
                 else
                 {

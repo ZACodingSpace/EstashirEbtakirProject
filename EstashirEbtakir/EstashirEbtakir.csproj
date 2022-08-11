@@ -69,8 +69,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
-    <Content Include="AcceptIdeaPage.aspx" />
-    <Content Include="AcceptProjectPage.aspx" />
+    <Content Include="AcceptIdeas.aspx" />
+    <Content Include="AcceptProjects.aspx" />
     <Content Include="AddIdea.aspx" />
     <Content Include="AddParticipationEventAchievement.aspx" />
     <Content Include="AddProject.aspx" />
@@ -80,6 +80,7 @@
       <DependentUpon>EstashirEbtakirDatabase.mdf</DependentUpon>
     </Content>
     <Content Include="ChangePassword.aspx" />
+    <Content Include="ConsultantDetails.aspx" />
     <Content Include="ConsultationsSectionHomePage.aspx" />
     <Content Include="EditDeleteProject.aspx" />
     <Content Include="GetPassword.aspx" />
@@ -95,19 +96,26 @@
     <Content Include="Images\Consultancy.jpg" />
     <Content Include="Images\DataTransfer.png" />
     <Content Include="Images\EventsActivities.jpg" />
+    <Content Include="Images\Event_Img_1.jpg" />
+    <Content Include="Images\Event_Img_2.jpg" />
+    <Content Include="Images\Event_Img_3.jpg" />
+    <Content Include="Images\Event_Img_4.jpg" />
+    <Content Include="Images\Event_Img_5.jpg" />
+    <Content Include="Images\Event_Img_6.jpg" />
     <Content Include="Images\FilterList.png" />
     <Content Include="Images\Ideas.jpg" />
-    <Content Include="Images\InnovationLabLogo.png" />
+    <Content Include="Images\Innovation_Lab_Logo.png" />
     <Content Include="Images\Lightbulb.png" />
     <Content Include="Images\Logo.jpg" />
     <Content Include="Images\Logo2.png" />
-    <Content Include="Images\ProfileIcon.png" />
-    <Content Include="Images\ProjectLogo1.jpg" />
-    <Content Include="Images\ProjectLogo2.jpg" />
-    <Content Include="Images\ProjectLogo3.jpg" />
-    <Content Include="Images\ProjectLogo4.jpg" />
-    <Content Include="Images\ProjectLogo5.jpg" />
+    <Content Include="Images\Profile_Icon.png" />
     <Content Include="Images\Projects.jpg" />
+    <Content Include="Images\Project_Logo_1.jpg" />
+    <Content Include="Images\Project_Logo_2.jpg" />
+    <Content Include="Images\Project_Logo_3.jpg" />
+    <Content Include="Images\Project_Logo_4.jpg" />
+    <Content Include="Images\Project_Logo_5.jpg" />
+    <Content Include="Images\Project_Logo_6.jpg" />
     <Content Include="Images\Statistics.jpg" />
     <Content Include="MyAppointmentsPage.aspx" />
     <Content Include="MyIdeasPage.aspx" />
@@ -139,19 +147,19 @@
     <Compile Include="AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AcceptIdeaPage.aspx.cs">
-      <DependentUpon>AcceptIdeaPage.aspx</DependentUpon>
+    <Compile Include="AcceptIdeas.aspx.cs">
+      <DependentUpon>AcceptIdeas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AcceptIdeaPage.aspx.designer.cs">
-      <DependentUpon>AcceptIdeaPage.aspx</DependentUpon>
+    <Compile Include="AcceptIdeas.aspx.designer.cs">
+      <DependentUpon>AcceptIdeas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AcceptProjectPage.aspx.cs">
-      <DependentUpon>AcceptProjectPage.aspx</DependentUpon>
+    <Compile Include="AcceptProjects.aspx.cs">
+      <DependentUpon>AcceptProjects.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AcceptProjectPage.aspx.designer.cs">
-      <DependentUpon>AcceptProjectPage.aspx</DependentUpon>
+    <Compile Include="AcceptProjects.aspx.designer.cs">
+      <DependentUpon>AcceptProjects.aspx</DependentUpon>
     </Compile>
     <Compile Include="AddIdea.aspx.cs">
       <DependentUpon>AddIdea.aspx</DependentUpon>
@@ -187,6 +195,13 @@
     </Compile>
     <Compile Include="ChangePassword.aspx.designer.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultantDetails.aspx.cs">
+      <DependentUpon>ConsultantDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultantDetails.aspx.designer.cs">
+      <DependentUpon>ConsultantDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConsultationsSectionHomePage.aspx.cs">
       <DependentUpon>ConsultationsSectionHomePage.aspx</DependentUpon>

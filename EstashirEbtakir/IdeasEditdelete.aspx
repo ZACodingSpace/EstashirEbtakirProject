@@ -3,18 +3,19 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <div class="Editdelete-Idea-container">
     <div class="Editdelete-idea">
 
         <h4><b>إسم الفكرة</b></h4>
 
-        <textarea class="topic" name="textarea" cols="50" maxlength="80"></textarea>
+        <textarea class="topic" name="textarea " cols="50" maxlength="80"></textarea>
 
 
 
         <h4><b>النبذة</b></h4>
 
         <div action="file:///C:/form/submit">
-            <textarea class="textarea" name="comment" rows="11" cols="150"></textarea>
+            <textarea class="textarea" name="textarea " rows="11" cols="150"></textarea>
             <br>
             <div class="buttons">
                 <input type="submit" onclick="alert(' تم حفظ التعديلات')"  class="buttonl" name="submitInfo" value="حفظ">
@@ -35,5 +36,5 @@
 
         </div>
     </div>
-
+        </div>
 </asp:Content>

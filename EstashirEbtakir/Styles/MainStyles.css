@@ -92,6 +92,73 @@ nav .nav-sections-container .nav-rows-container {
         color: var(--Ghost-White);
     }
 
+.nav-rows-container .nav-line1 .user-information-container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-line1 .user-information-container .notification-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-information-container .notification-icon-container .fa-bell {
+    font-size: max(0.5vw, 3vh);
+    color: var(--Bright-Lilac);
+}
+
+
+.nav-line1 .user-information-container .profile-user-name-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.user-information-container .profile-user-name-container .profile-user-name {
+    text-decoration: none;
+    color: #000;
+    font-size: max(0.5vw, 3vh);
+}
+
+.nav-line1 .user-information-container .user-profile-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-information-container .user-profile-img-container .user-profile-img {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    background-color: var(--Ghost-White);
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+}
+
+.nav-line1 .user-information-container .user-dropdown-container {
+    display: flex;
+    justify-content: center;
+}
+
+.user-dropdown-container .btn-group .btn {
+    background-color: var(--Ghost-White);
+    border: none;
+    color: #000;
+    border-radius: 0;
+}
+
+.user-dropdown-container .btn-group .dropdown-menu {
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 0px 0px 5px 5px;
+    white-space: nowrap;
+    background-color: var(--Ghost-White);
+}
+
+.btn-group .dropdown-menu .dropdown-item-container {
+    text-align: right;
+}
+
 /* Line1 End */
 
 /* Line2 Start */
@@ -270,13 +337,40 @@ footer {
 
 /* Tabs Sections Styles Start */
 
-/* General Styles for Cards Start*/
+/* Tabs Styles */
 
 .sections-tabs {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+    .sections-tabs .nav-tabs {
+        display: flex;
+        justify-content: center;
+    }
+
+.nav-tabs .nav-item .nav-link,
+.log-in-form .question .forget {
+    text-decoration: none;
+    color: #000;
+}
+
+    .nav-tabs .nav-item .nav-link.active {
+        background-color: #F6F9FF;
+        box-shadow: inset 0px 1px 2px #BEC3CC;
+        border-radius: 3px 3px 0px 0px;
+    }
+
+.nav-tabs .nav-item .nav-link {
+    background-color: #F6F9FF;
+    box-shadow: inset 0px -1px 2px #BEC3CC;
+    border-radius: 3px 3px 0px 0px;
+}
+
+
+/* General Styles for Cards Start*/
+
 
 .tabs-content-container .project-card-container .project-card,
 .tabs-content-container .idea-card-container .idea-card,
@@ -501,7 +595,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity 0.25s;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
 }
 
     .event-card .event-img-container .overlay-content-container > * {
@@ -533,8 +627,140 @@ footer {
 
 /* Specific Styles for Each Section End*/
 
+/*************************************SignUP/LogIn Page Styles Start ******************************************/
+
+.signUp-logIn-page-content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+    .signUp-logIn-page-content .signUp-logIn-content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        /* SignUp & LogIn Page Styles End */
+
+        /* Tabs Style */
+
+        .signUp-logIn-page-content .signUp-logIn-content-container .nav-tabs {
+            width: 40vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Tabs Contents Styles Start */
+
+        .signUp-logIn-page-content .signUp-logIn-content-container .tab-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50vh;
+            box-shadow: -4px 0px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+            border-radius: 10px;
+            background-color: var(--Ghost-White);
+        }
+
+.tab-content .logIn-content-container .logIn-form,
+.tab-content .signUp-content-container .signUp-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logIn-content-container .logIn-form .data,
+.signUp-content-container .signUp-form .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
+.logIn-form .data > *,
+.signUp-form .data > *,
+.logIn-content-container .logIn-form .logIn-button-container,
+.signUp-content-container .signUp-form .signUp-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-weight: bold;
+}
+
+.logIn-form .data .inputPlace,
+.signUp-form .data .inputPlace,
+.user-type-container .stu-dr-yes .inputPlace {
+    width: 30vh;
+    height: 4.5vh;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+    font-weight: lighter;
+    background-color: var(--Ghost-White);
+}
+
+.user-type-container .inputPlace {
+    visibility: hidden;
+}
+
+input:checked + .inputPlace  {
+    visibility: visible;
+}
+
+.logIn-form .data .error-msg-place,
+.signUp-form .data .error-msg-place {
+    width: 40vh;
+    height: 3vh;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-weight: lighter;
+    color: red;
+}
+
+
+/* Form Second Section */
+.signUp-content-container .signUp-form .user-type-container {
+    width: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.signUp-form .user-type-container .stu-dr-yes,
+.signUp-form .user-type-container .stu-dr-no {
+    display: flex;
+    font-weight: bold;
+}
+
+.user-type-container .stu-dr-yes .inputPlace {
+    height: 3vh;
+    border-radius: 3px;
+}
+
+.logIn-form .logIn-button-container .logIn-button,
+.signUp-form .signUp-button-container .signUp-button {
+    height: 2.5vw;
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+    background-color: var(--Purple-Mountain-Majesty);
+    color: var(--Ghost-White);
+}
+
+    .logIn-form .logIn-button-container .logIn-button:hover,
+    .signUp-form .signUp-button-container .signUp-button:hover {
+        background-color: #958cb1;
+        transition: width 10s;
+    }
+
+/*************************************SignUP/LogIn Page Styles End ******************************************/
 
 /*الجوهرة*/
 /* Add Participation and Event */
@@ -546,23 +772,25 @@ footer {
 }
 
 .radio-butyons {
-   /* position: absolute;
+    /* position: absolute;
     margin-left: 50px;
     margin-bottom: 40px;*/
     text-align: center;
     width: 100%;
 }
+
     .radio-butyons label {
         width: 300px;
         height: 40px;
         text-decoration: none;
-        
     }
+
     .radio-butyons label1 {
         width: 300px;
         height: 40px;
         text-decoration: none;
     }
+
 .add-form {
     margin: 2vh;
     padding: 2vh;
@@ -598,8 +826,17 @@ footer {
     height: 40px;
     text-decoration: none;
 }
-/* Accepte project and idea pages */
+/* Accepte projects and ideas pages */
 /*******************************************************************************/
+
+
+.containerAccept {
+    display: flex;
+}
+
+    .containerAccept .left-content-container {
+    }
+
 .Accept {
     margin: 2vh;
     padding: 2vh;
@@ -607,13 +844,14 @@ footer {
 }
 
 .accepForm {
-    margin: 2vh;
+    margin: 0.5vh;
     padding: 2vh;
     width: 100%;
     text-align: justify-all;
 }
 
-.Accept button {
+.Accept .accepBtn {
+    display: flex;
     width: 100px;
     height: 40px;
     border: none;
@@ -628,21 +866,38 @@ footer {
     font-weight: bold;
 }
 
-.accepForm input {
+/*.accepForm input {
     width: 300px;
     height: 40px;
     border: none;
     box-shadow: inset 4px 4px 8px #BEC3CC;
     border-radius: 5px;
 }
-   
+    */
 .accepForm label {
     width: 300px;
-    height: 40px;
+    /* height: 40px;*/
     text-decoration: none;
 }
 
+.profileAccept {
+    display: flex;
+    justify-content: center;
+    /* height: 100%;*/
+    padding-top: 5vh;
+    padding: 20vh;
+}
 
+    .profileAccept .profileAcceptcontainer {
+        bottom: 650px;
+        left: -400px;
+        width: 100vh;
+        /*height: 70vh;*/
+    background: #EEF3FC;
+    padding: 12px;
+    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
+    border-radius: 20px;
+}
 /*******************************************************************************/
 
 /*سارة والجوهرة*/
@@ -680,7 +935,6 @@ footer {
 
 .sign-up-sign-up-page {
     box-shadow: inset 0px 4px 8px #BEC3CC;
-   
 }
 
 
@@ -767,15 +1021,14 @@ footer {
 }
 
 
-    .sign-in-form .place {
-        box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 9px;
-        border: none;
-        width: 200px;
-        height: 20px;
-        padding: 15px;
-
-    }
+.sign-in-form .place {
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    border: none;
+    width: 200px;
+    height: 20px;
+    padding: 15px;
+}
 
 .sign-in-form .submit {
     margin-right: 10px;
@@ -790,45 +1043,49 @@ footer {
 }
 
 
-    .sign-in-form .forget {
-        padding-right: 10px;
-    }
+.sign-in-form .forget {
+    padding-right: 10px;
+}
 
 /*Get-password*/
+
+.get-password-container {
+    min-height: 70vh;
+}
 
 .get-password-form {
     box-sizing: border-box;
     box-shadow: -4px 0px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-    padding-top: 25px;
+    padding-top: 8vh;
     text-align: center;
-    width: 500px;
-    margin-right: 350px;
-    margin-bottom: 50px;
-    border-radius: 42px;
+    width: 75vh;
+    margin-right: 50vh;
+    margin-top:9vh;
+    border-radius: 4vh;
 }
 
-.get-password-form .get-password {
-    font-size: 20px;
-    color: #9A4E93;
-}
+    .get-password-form .get-password {
+        font-size: 3.5vh;
+        color: #9A4E93;
+    }
 
 
-.get-password-form .place {
-    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 9px;
-    border: none;
-    width: 200px;
-    height: 20px;
-    padding: 15px;
-}
+    .get-password-form .place {
+        box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 3vh;
+        border: none;
+        width: 37vh;
+        height: 3vh;
+        padding: 2.6vh;
+    }
 
     .get-password-form .send {
-        font-size: 18px;
-        margin-bottom: 40px;
+        font-size: 2.5vh;
+        margin-bottom: 7vh;
         background-color: #8378A8;
         border: none;
-        border-radius: 10px;
-        padding: 2px 10px;
+        border-radius:1vw;
+        padding: 1vh 3vh;
         width: fit-content;
     }
 
@@ -840,7 +1097,7 @@ footer {
     text-align: center;
     width: 400px;
     height: 310px;
-    margin: 5px 350px 35px 0px ;
+    margin: 5px 350px 35px 0px;
     box-shadow: -4px 0px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
     border-radius: 42px;
 }
@@ -872,36 +1129,39 @@ footer {
 .send-password {
     font-size: 18px;
     background-color: #8378A8;
-    padding:0px 3px;
+    padding: 0px 3px;
     border: none;
-    border-radius:20px;
+    border-radius: 20px;
     width: 100px;
-   
 }
 /*********************************************************************/
 
 /*Password-changed*/
+
+.passwordChanged-container {
+    margin-top:20vh;
+    min-height:50vh;
+}
 .password-changed {
     text-align: center;
-    margin-bottom: 200px;
 }
 
-.password-changed .changed {
-    font-size: 20px;
-    color: #9A4E93;
-}
+    .password-changed .changed {
+        font-size: 4vh;
+        color: #9A4E93;
+    }
 
-.password-changed .send {
-    font-size: 18px;
-    margin-bottom: 50px;
-    margin-right: 20px;
-    padding: 2px 10px;
-    background-color: #8378A8;
-    border: none;
-    border-radius: 10px;
-    width: fit-content;
-    text-decoration: none;
-    color: black;
+    .password-changed .send {
+        font-size: 3vh;
+       
+        margin-right: 1vh;
+        padding: 0.5vh 3vh;
+        background-color: #8378A8;
+        border: none;
+        border-radius: 1.5vh;
+        width: fit-content;
+        text-decoration: none;
+        color: black;
     }
 /*About-us*/
 body .about {
@@ -971,12 +1231,11 @@ body .about-logo {
 
 .event-page .achievements {
     left: 10px;
-
 }
 
 .event-page .welcome {
     text-align: center;
-    font-size: 13px;   
+    font-size: 13px;
 }
 
 
@@ -989,14 +1248,13 @@ body .about-logo {
     border-radius: 10px;
     text-align: center;
     position: relative;
-
 }
 
     .event-detail:hover .event-name, .event-detail:hover .details {
         display: inline-block;
     }
 
-    .event-detail:hover{
+    .event-detail:hover {
         opacity: 0.4;
     }
 
@@ -1014,7 +1272,6 @@ body .about-logo {
     box-sizing: border-box;
     box-shadow: inset 0px -4px 8px #BEC3CC;
     padding: 0px 3px;
-    
 }
 
 
@@ -1023,6 +1280,7 @@ body .about-logo {
     height: 280px;
     border: 0.5px solid #9A4E93;
 }
+
 .event-page .event-name {
     font-weight: bold;
     font-size: 1.3rem;
@@ -1031,9 +1289,9 @@ body .about-logo {
     right: 25px;
     color: white;
     display: none;
-   
 }
-.event-image{
+
+.event-image {
     width: 100%;
     height: 100%;
 }
@@ -1047,7 +1305,6 @@ body .about-logo {
     top: 120px;
     right: 45px;
     display: none;
-
 }
 
 .search-events {
@@ -1056,14 +1313,14 @@ body .about-logo {
     margin-right: 80px;
 }
 
-.search-events  button, .event-detail .details {
-    width: 8vw;
-    height: 3vw;
-    border: none;
-    box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px #bec3cc;
-    border-radius: 10px;
-    background-color: #9A4E93;
-}
+    .search-events button, .event-detail .details {
+        width: 8vw;
+        height: 3vw;
+        border: none;
+        box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px #bec3cc;
+        border-radius: 10px;
+        background-color: #9A4E93;
+    }
 
 /*****************/
 /*Participation قسم المشاركات*/
@@ -1102,7 +1359,6 @@ body .about-logo {
     padding: 6px 6px 1px 6px;
     position: relative;
     left: 5px;
-    
 }
 
 .participation-page .achievements {
@@ -1300,12 +1556,15 @@ body .about-logo {
 /*مريم */
 /* My Ideas Pages Styles Start */
 
+
+
 /* My Ideas Pages Styles End */
 
 /*******************************************************************************/
 
 /*مريم */
 /* My Appointment Pages Styles Start */
+ 
 
 /* My Appointment Pages Styles End */
 
@@ -1323,6 +1582,7 @@ body .about-logo {
 }
 
     .profile-page-content-container .side-bar {
+        width: 100%;
         height: 100%;
         background: #EEF3FC;
         transition: all 0.3s ease;
@@ -1530,43 +1790,134 @@ body .about-logo {
 
 
 /* Ideas section home page Styles End */
-.save-adminData {
+/*******************************************************************************/
+
+/*أفنان*/
+/*Statistic page Styles Start */
+statidticsPage-container{
+    min-height: 100vh;
+}
+.sections-tabs-stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FirstQuestions-list {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border-radius: 0.5vh;
+    width: 19vw;
+    height: 4.6vh;
+    margin-left:10vh;
+
+}
+.SecondQuestion-list {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border-radius: 0.5vh;
+    width: 19vw;
+    height: 4.6vh;
+    margin-bottom: 5vh;
+}
+.section-heading {
+    margin-top:3vh;
+}
+.charts-container {
+    position: relative;
+    top: -80px;
+    margin: 5% 10%;
+    width: 80%;
+    box-shadow: 5px 5px 10px #BEC3CC;
+    height: 70vh;
+    border-radius: 4vh;
+}
+.project-stat {
+    margin-top: 3vh;
+    text-align: center;
+}
+/*Statistic page Styles End */
+/*******************************************************************************/
+
+/*adminData page Styles Start */
+.Admin-Page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-data-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin-controls-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save-adminData-container{
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.save-adminData { 
     width: 7vw;
     height: 5vh;
     border: none;
     background: #D08DEE;
     box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
     border-radius: 5px;
+    margin-right: 2vh;
 }
 
-/*******************************************************************************/
-/*أفنان*/
-/*Admin data page Styles Start */
-
-/*Admin data page Styles End */
-/*******************************************************************************/
-
-/*أفنان*/
-/*Statistic page Style Start*/
-.stat-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-    border-radius: 5px;
-    text-align: center;
-    background-color: var(--Ghost-White);
+.admin-controls {
+    margin-bottom: 2vh;
+    margin-right: 2vh;
+   
 }
 
-/*Statistic page Style End*/
+.select-division {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border-radius: 0.5vh;
+    width: 22vw;
+    height: 6vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+.admin_data {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border-radius: 0.5vh;
+    width: 22vw;
+    height: 6vh;
+    margin-bottom: 1vh;
+    display: block;
+}
+    .admin_data[type=number] {
+        background: #FFFFFF;
+        box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+        border-radius: 0.5vh;
+        width: 22vw;
+        height: 6vh;
+        margin-bottom: 3vh;
+        display: block;
+    }
+/*Admin data page Style End*/
 /*******************************************************************************/
 
 
 /*أفنان*/
 /* Consulting section home page Styles Start */
-
-
+.consultingPage-container {
+    min-height: 100vh;
+}
 .consultingPage {
     padding: 2vh;
     background-color: #F6F9FF;
@@ -1683,26 +2034,69 @@ div.card-header {
         height: 13vh;
     }
 
-
 /* Consulting section home page Styles End */
-
-
 /*******************************************************************************/
 
 
+/* Consultant Details Styles Start*/
+.consultantDetails-container {
+    position: relative;
+    margin: 3% 6.6%;
+    width: 80vw;
+    box-shadow: 5px 5px 10px #BEC3CC;
+    height: 80vh;
+    border-radius: 4vh;
+    min-height: 100vh;
+}
+.consultantDetails {
+    padding: 3%;
+}
+
+/*  <input type="date" name="consultantDate[]" class="consultantDate" size="50" placeholder="Date">
+.consultantDate[type=date] {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border: none;
+    border-radius: 0.5vh;
+    width: 22vw;
+    height: 6vh;
+    margin-top: 5%;
+    margin-right: 3%;
+}*/
+.Calendar1 {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border: none;
+    border-radius: 0.5vh;
+    height: 27vh;
+    width: 25vw;
+    margin-right: 3%;
+    top: -133px;
+}
+.consultantDate-container {
+    display: inline-block;
+    margin-top: 11%;
+    margin-right: 9%;
+
+}
+.consultantTime-container {
+    display: inline-block;
+    box-shadow: 5px 5px 10px #BEC3CC;
+    height: 27vh;
+    width: 25vw;
+    border-radius: 4vh;
+    margin-right: 30vh;
+}
+
+
+/* Consultant Details Styles End*/
+/*******************************************************************************/
 /*بدور نياف */
 /* Consultation Booking Styles Start */
-
-
 /* Consultation Booking Styles End */
-
-
 /*******************************************************************************/
-
-
 /*ريناد*/
 /* Projects section home page Styles Start */
-
 .project {
     margin: 5%;
     background-color: #F6F9FF;
@@ -1710,7 +2104,6 @@ div.card-header {
 
 .search-add-bar {
     width: 100%;
-    
     display: flex;
 }
 
@@ -1740,15 +2133,15 @@ div.card-header {
     width: 10%;
 }
 
-.project-area .project-card {
-    margin: 2vh;
-    padding: 2vh;
-    width: 30vh;
-    height: 30vh;
-    box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 4px #BEC3CC;
-    border-radius: 10px;
-    text-align: center;
-}
+    .project-area .project-card {
+        margin: 2vh;
+        padding: 2vh;
+        width: 30vh;
+        height: 30vh;
+        box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 4px #BEC3CC;
+        border-radius: 10px;
+        text-align: center;
+    }
 
 /* Projects section home page Styles End */
 
@@ -1758,10 +2151,13 @@ div.card-header {
 
 /*ريناد*/
 /* Add Project section page Styles Start */
+.add-project-container {
+    min-height: 100vh;
+}
 .add-project-area {
     margin: 2%;
     padding: 2%;
-    width: 100%;  
+    width: 100%;
 }
 
 .add-project-form {
@@ -1797,13 +2193,13 @@ edit-delete-project-btn {
     text-align: center;
 }
 
-    .add-project-form input {
-        width: 20vw;
-        height: 5vh;
-        border: none;
-        box-shadow: inset 4px 4px 8px #BEC3CC;
-        border-radius: 5px;
-    }
+.add-project-form input {
+    width: 20vw;
+    height: 5vh;
+    border: none;
+    box-shadow: inset 4px 4px 8px #BEC3CC;
+    border-radius: 5px;
+}
 
 .add-project-form label {
     width: 10vw;
@@ -1831,7 +2227,6 @@ edit-delete-project-btn {
     margin: 2vh;
     padding: 2vh;
     width: 100%;
-    
 }
 
 .browse-project-area h1 {
@@ -1901,27 +2296,34 @@ edit-delete-project-btn {
 
 
 /* Shahad*/
+
+
+.addIdea-container {
+    min-height: 85vh;
+}
+
 .buttons .buttonl {
     background-color: #8378A8;
     color: black;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 2.5vh;
     text-decoration: none;
-    padding: 11px 11px;
+    padding: 1vw 2vh;
     text-transform: capitalize;
     font-weight: 300;
-    border-radius: 10px;
+    border-radius: 1vw;
     border: none;
-    width: 100px;
-    margin-right: 20px;
+    width: 12vh;
+    height:7vh;
+    margin-right: 2vh;
 }
 
 .buttons {
-    margin-right: 800px;
+    margin-right: 55vh;
     position: relative;
-   
+    margin-top:10vh;
 }
 
 
@@ -1929,11 +2331,13 @@ edit-delete-project-btn {
 .textarea {
     background: #F6F9FF;
     box-shadow: inset -3px -3px 10px #FFFFFF, inset 5px 5px 10px #BEC3CC;
-    border-radius: 10px;
+    border-radius: 1.5vh;
     border: none;
 }
 
-    
+
+
+
 .topic {
     background: #F6F9FF;
     box-shadow: inset -3px -3px 10px #FFFFFF, inset 5px 5px 10px #BEC3CC;
@@ -1942,30 +2346,37 @@ edit-delete-project-btn {
 
 
 .add-idea {
-    padding-right: 50px;
+    padding-right: 10vh;
+}
+
+.Editdelete-Idea-container {
+    min-height: 85vh;
+}
+.Editdelete-idea {
+    padding-right: 10vh;
+    position: relative;
 }
 
 
-.Editdelete-idea {
-    padding-right: 50px;
-    position: relative; 
-
+.delete {
+    margin-right:4%;
+    margin-top: -7vh;
 }
 .deleteButton {
     background-color: #8378A8;
     color: black;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
+    font-size: 2.5vh;
     text-decoration: none;
-    padding: 11px 11px;
+    padding: 1vw 2vh;
     text-transform: capitalize;
     font-weight: 300;
-    border-radius: 10px;
+    border-radius: 1vw;
     border: none;
-    width: 100px;
-    margin-left: 50px;
+    width: 12vh;
+    height: 7vh;
+    margin-right: -18vh;
 }
 
 /*******************************************************************************/
