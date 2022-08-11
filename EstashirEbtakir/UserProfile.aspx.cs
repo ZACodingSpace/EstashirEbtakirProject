@@ -19,9 +19,9 @@ namespace EstashirEbtakir {
                 con = new SqlConnection(GetConstring());
                 con.Open();
 
-                // get the session id ( admin id )
+                // get the session id ( user id )
                 //string sessionIDstr = HttpContext.Current.Session["id"];
-                int sessionID = int.Parse((string)Session["id"]);
+                int sessionID = int.Parse( (string) Session["id"]);
 
                 // get admin info from DB
                 SqlCommand cmd = new SqlCommand("select * from OurUser where User_ID='" + sessionID + "'", con);
@@ -38,12 +38,45 @@ namespace EstashirEbtakir {
 
                 }
             } catch (Exception ex) {
+                Console.WriteLine(ex.Message);
                 con.Close();
             }
             
         }
 
-        public string GetConstring() {
+        protected void EditPhone_Click(object sender, EventArgs e) {
+
+            try {
+                testchange.Text = "";
+                string phoneNum = phone.Value;
+
+                // check from phone number format
+                if (Regex.Match(phoneNum, @"^[0-9]{ 10}$").Success) { 
+                    // set database connection
+                    con = new SqlConnection(GetConstring());
+                    con.Open();
+
+                    // get the session id ( user id )
+                    int sessionID = int.Parse( (string) Session["id"]);
+
+                    // get admin info from DB
+                    SqlCommand cmd = new SqlCommand("UPDATE OurUser SET Phone='" + phoneNum + "' WHERE User_ID='" + sessionID + "'", con);
+                    cmd.ExecuteNonQuery();
+
+                    //for test
+                    testchange.Text = phoneNum + " - " + sessionID;
+                } else {
+                    testchange.Text = "رقم جوال غير صحيح";
+                }
+                
+            } catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+                con.Close();
+            }
+
+        }
+
+            public string GetConstring() {
             string constr = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             return constr;
         }
