@@ -27,7 +27,7 @@
 
     </div>
 
-    <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5">
+    <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5 p-5 ">
 
         <!-- Cards -->
 
@@ -37,7 +37,7 @@
 
                 <!-- First Section of the card -->
                 <div class="project-logo-container row m-0">
-                    <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo4.jpg" alt="Logo">
+                    <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_1.jpg" alt="Logo">
                 </div>
 
                 <!-- Second Section of the card -->
@@ -74,7 +74,7 @@
 
                 <!-- First Section of the card -->
                 <div class="project-logo-container row m-0">
-                    <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo2.jpg" alt="Logo">
+                    <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_2.jpg" alt="Logo">
                 </div>
 
                 <!-- Second Section of the card -->
@@ -111,7 +111,7 @@
 
                 <!-- First Section of the card -->
                 <div class="project-logo-container row m-0">
-                    <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo1.jpg" alt="Logo">
+                    <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_3.jpg" alt="Logo">
                 </div>
 
                 <!-- Second Section of the card -->
@@ -148,7 +148,7 @@
 
                 <!-- First Section of the card -->
                 <div class="project-logo-container row m-0">
-                    <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo3.jpg" alt="Logo">
+                    <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_4.jpg" alt="Logo">
                 </div>
 
                 <!-- Second Section of the card -->
@@ -185,7 +185,7 @@
 
                 <!-- First Section of the card -->
                 <div class="project-logo-container row m-0">
-                    <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo2.jpg" alt="Logo">
+                    <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_5.jpg" alt="Logo">
                 </div>
 
                 <!-- Second Section of the card -->
@@ -221,7 +221,7 @@
 
                 <!-- First Section of the card -->
                 <div class="project-logo-container row m-0">
-                    <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo3.jpg" alt="Logo">
+                    <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_6.jpg" alt="Logo">
                 </div>
 
                 <!-- Second Section of the card -->
@@ -258,7 +258,7 @@
 
                 <!-- First Section of the card -->
                 <div class="project-logo-container row m-0">
-                    <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo1.jpg" alt="Logo">
+                    <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_1.jpg" alt="Logo">
                 </div>
 
                 <!-- Second Section of the card -->
@@ -295,7 +295,7 @@
 
                 <!-- First Section of the card -->
                 <div class="project-logo-container row m-0">
-                    <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo3.jpg" alt="Logo">
+                    <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_2.jpg" alt="Logo">
                 </div>
 
                 <!-- Second Section of the card -->
@@ -332,7 +332,7 @@
 
                 <!-- First Section of the card -->
                 <div class="project-logo-container row m-0">
-                    <img class="Project-logo img-fluid p-0" src="Images/ProjectLogo1.jpg" alt="Logo">
+                    <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_3.jpg" alt="Logo">
                 </div>
 
                 <!-- Second Section of the card -->
