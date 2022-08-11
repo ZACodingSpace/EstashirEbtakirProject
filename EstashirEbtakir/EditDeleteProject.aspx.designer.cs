@@ -33,6 +33,15 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlTextArea aboutP;
 
         /// <summary>
+        /// img control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile img;
+
+        /// <summary>
         /// collegeP control.
         /// </summary>
         /// <remarks>
