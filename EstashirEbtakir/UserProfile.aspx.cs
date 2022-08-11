@@ -19,9 +19,9 @@ namespace EstashirEbtakir {
                 con = new SqlConnection(GetConstring());
                 con.Open();
 
-                // get the session id ( admin id )
+                // get the session id ( user id )
                 //string sessionIDstr = HttpContext.Current.Session["id"];
-                int sessionID = int.Parse((string)Session["id"]);
+                int sessionID = int.Parse( (string) Session["id"]);
 
                 // get admin info from DB
                 SqlCommand cmd = new SqlCommand("select * from OurUser where User_ID='" + sessionID + "'", con);
@@ -45,9 +45,29 @@ namespace EstashirEbtakir {
         }
 
         protected void EditPhone_Click(object sender, EventArgs e) {
-            
-            string phoneNum = phone.Value;
-            
+
+            try {
+                string phoneNum = phone.Value;
+                if (Regex.Match(phoneNum, "^\\+?[1-9][0-9]{7,14}$").Success) { 
+                    // set database connection
+                    con = new SqlConnection(GetConstring());
+                    con.Open();
+
+                    // get the session id ( user id )
+                    int sessionID = int.Parse( (string) Session["id"]);
+
+                    // get admin info from DB
+                    SqlCommand cmd = new SqlCommand("UPDATE OurUser SET Phone='" + phoneNum + "' WHERE User_ID='" + sessionID + "'", con);
+                    cmd.ExecuteNonQuery();
+
+                    //for test
+                    testchange.Text = phoneNum + " - " + sessionID;
+                }
+                
+            } catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+                con.Close();
+            }
 
         }
 
