@@ -6,9 +6,10 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="addIdea-container">
     <div class="add-idea">
 
-        <h4><b>إسم الفكرة</b></h4>
+        <h4 class="ideaName"><b>إسم الفكرة</b></h4>
 
         <textarea class="topic" name="textarea" cols="50" maxlength="80"></textarea>
 
@@ -45,5 +46,5 @@
 
 
         </div>
-    </div>
+    </div>  </div>
 </asp:Content>
