@@ -45,8 +45,7 @@
                         رقم الجوال:
                         <input id="phone" runat="server" type="text" class="text-field2"/>
                         <asp:Button ID="editPhone" runat="server" Text="تعديل" onclick="EditPhone_Click"/>
-                        
-<asp:Label ID="testchange" runat="server" Text="" ForeColor="Red"></asp:Label>
+                        <asp:Label ID="testchange" runat="server" Text="" ForeColor="Red"></asp:Label>
                     </p>
                     
                     
