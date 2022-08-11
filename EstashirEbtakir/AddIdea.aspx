@@ -20,18 +20,33 @@
             <textarea class="textarea" name="comment" rows="11" cols="150"></textarea>
             <br>
 
-              <div action="#">
-                <label for="lang">التقنية المستخدمه</label>
-                <select name="التقنية المستخدمه" id="lang">
-                <option value="كتب الكترونية او تطبيقات جوال مدعمة بالواقع المعزز"> كتب الكترونية او الواقع المعزز</option>
-                <option value="واجهات التحكم والتفاعل الطبيعي">واجهات التحكم والتفاعل الطبيعي</option>
-                <option value="الواقع الافتراضي و الواقع المعزز">الواقع الافتراضي والمعزز</option>
-                <option value="الذكاء الإصطناعي، تحليل البيانات و الروبوتيك">الذكاء الإصطناعي و تحليل البيانات و الروبوتيك</option>
-                <option value="العرض التجسيمي و الطباعة ثلاثية الأبعاد">العرض التجسيمي و الطباعة ثلاثية الأبعاد</option>
-                <option value="استديو انتاج الوسائط المتعددة">استديو انتاج الوسائط المتعددة</option>
+                            <h4>التقنية الممكن استخدامها لتنفيذ الفكره :</h4>
+        
+            
+            <div >
+                <input type="checkbox" id="AI" name="AI" value="Artificial">
+                <label for="AI"> الذكاء الإصطناعي</label><br>
+                <input type="checkbox" id="data2" name="data2" value="data">
+                <label for="data2"> تحليل البيانات و الروبوتيك</label><br>
+                <input type="checkbox" id="VR" name="VR" value="VR1">
+                <label for="VR"> الواقع الافتراضي</label><br>
+                <input type="checkbox" id="inter" name="inter" value="inter1">
+                <label for="inter"> واجهات التحكم والتفاعل الطبيعي</label><br>
+                 <input type="checkbox" id="pre" name="pre" value="pre1">
+                <label for="pre"> العرض التجسيمي</label><br>
+                <input type="checkbox" id="print" name="print" value="print1">
+                <label for="print"> الطباعة ثلاثية الأبعاد</label><br>
+                <input type="checkbox" id="Studio" name="Studio" value="Studio1">
+                <label for="Studio"> استديو انتاج الوسائط المتعددة</label><br>
+                <input type="checkbox" id="Books" name="Books" value="Books1">
+                <label for="Books"> كتب الكترونية</label><br>
+                 <input type="checkbox" id="AR" name="AR" value="AR1">
+                <label for="AR"> اتطبيقات جوال مدعمة بالواقع المعزز</label><br>
+                <input type="checkbox" id="Other" name="Other" value="Other1">
+                <label for="Other"> لا اعلم</label><br>
+                
+            </div>
 
-                 </select>
-               </div>
 
             <div class="buttons">
                 <input type="submit" onclick="alert(' تم ارسال الفكرة, بإنتظار قبول الاضافة')"  class="buttonl" name="submitInfo" value="إضافة">
