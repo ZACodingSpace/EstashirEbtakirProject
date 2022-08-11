@@ -47,8 +47,11 @@ namespace EstashirEbtakir {
         protected void EditPhone_Click(object sender, EventArgs e) {
 
             try {
+                testchange.Text = "";
                 string phoneNum = phone.Value;
-                if (Regex.Match(phoneNum, "^\\+?[1-9][0-9]{7,14}$").Success) { 
+
+                // check from phone number format
+                if (Regex.Match(phoneNum, @"^[0-9]{ 10}$").Success) { 
                     // set database connection
                     con = new SqlConnection(GetConstring());
                     con.Open();
@@ -62,6 +65,8 @@ namespace EstashirEbtakir {
 
                     //for test
                     testchange.Text = phoneNum + " - " + sessionID;
+                } else {
+                    testchange.Text = "رقم جوال غير صحيح";
                 }
                 
             } catch (Exception ex) {
