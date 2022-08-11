@@ -15,13 +15,13 @@ namespace EstashirEbtakir
     {
 
         /// <summary>
-        /// Fname control.
+        /// name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Fname;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText name;
 
         /// <summary>
         /// job control.
@@ -33,13 +33,13 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlInputText job;
 
         /// <summary>
-        /// name control.
+        /// name2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText name;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText name2;
 
         /// <summary>
         /// email control.
@@ -51,12 +51,39 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlInputText email;
 
         /// <summary>
-        /// adminID control.
+        /// phone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText adminID;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText phone;
+
+        /// <summary>
+        /// editPhone control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button editPhone;
+
+        /// <summary>
+        /// testchange control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label testchange;
+
+        /// <summary>
+        /// uniID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText uniID;
     }
 }

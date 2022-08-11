@@ -41,17 +41,19 @@
                             readonly />
                     </p>
                     <p>
+                        <!-- placeholder="05xxxxxxxx" -->
                         رقم الجوال:
-                        <input id="phone" runat="server" type="text" class="text-field2" placeholder="05xxxxxxxx" />
-                        <!-- تغيير الى بوتون -->
-                        <a href="#">تعديل
-                        </a>
+                        <input id="phone" runat="server" type="text" class="text-field2"/>
+                        <asp:Button ID="editPhone" runat="server" Text="تعديل" onclick="EditPhone_Click"/>
+                        <asp:Label ID="testchange" runat="server" Text="" ForeColor="Red"></asp:Label>
                     </p>
+                    
+                    
                     <p>
                         الرقم الجامعي:
                         <input id="uniID" runat="server" type="text" class="text-field2" placeholder="2220000" readonly />
                     </p>
-                    <a href="#"><i class="fas fa-lock"></i> تغيير كلمة المرور </a>
+                    <a href="ChangePassword.aspx"><i class="fas fa-lock"></i> تغيير كلمة المرور </a>
                 </div>
             </div>
 
