@@ -844,13 +844,14 @@ input:checked + .inputPlace  {
 }
 
 .accepForm {
-    margin: 2vh;
+    margin: 0.5vh;
     padding: 2vh;
     width: 100%;
     text-align: justify-all;
 }
 
-.Accept button {
+.Accept .accepBtn {
+    display: flex;
     width: 100px;
     height: 40px;
     border: none;
@@ -865,24 +866,24 @@ input:checked + .inputPlace  {
     font-weight: bold;
 }
 
-.accepForm input {
+/*.accepForm input {
     width: 300px;
     height: 40px;
     border: none;
     box-shadow: inset 4px 4px 8px #BEC3CC;
     border-radius: 5px;
 }
-
+    */
 .accepForm label {
     width: 300px;
-    height: 40px;
+    /* height: 40px;*/
     text-decoration: none;
 }
 
 .profileAccept {
     display: flex;
     justify-content: center;
-    height: 100%;
+    /* height: 100%;*/
     padding-top: 5vh;
     padding: 20vh;
 }
@@ -891,12 +892,12 @@ input:checked + .inputPlace  {
         bottom: 650px;
         left: -400px;
         width: 100vh;
-        height: 70vh;
-        background: #EEF3FC;
-        padding: 12px;
-        box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
-        border-radius: 20px;
-    }
+        /*height: 70vh;*/
+    background: #EEF3FC;
+    padding: 12px;
+    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
+    border-radius: 20px;
+}
 /*******************************************************************************/
 
 /*سارة والجوهرة*/
@@ -1048,39 +1049,43 @@ input:checked + .inputPlace  {
 
 /*Get-password*/
 
+.get-password-container {
+    min-height: 70vh;
+}
+
 .get-password-form {
     box-sizing: border-box;
     box-shadow: -4px 0px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-    padding-top: 25px;
+    padding-top: 8vh;
     text-align: center;
-    width: 500px;
-    margin-right: 350px;
-    margin-bottom: 50px;
-    border-radius: 42px;
+    width: 75vh;
+    margin-right: 50vh;
+    margin-top:9vh;
+    border-radius: 4vh;
 }
 
     .get-password-form .get-password {
-        font-size: 20px;
+        font-size: 3.5vh;
         color: #9A4E93;
     }
 
 
     .get-password-form .place {
         box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 9px;
+        border-radius: 3vh;
         border: none;
-        width: 200px;
-        height: 20px;
-        padding: 15px;
+        width: 37vh;
+        height: 3vh;
+        padding: 2.6vh;
     }
 
     .get-password-form .send {
-        font-size: 18px;
-        margin-bottom: 40px;
+        font-size: 2.5vh;
+        margin-bottom: 7vh;
         background-color: #8378A8;
         border: none;
-        border-radius: 10px;
-        padding: 2px 10px;
+        border-radius:1vw;
+        padding: 1vh 3vh;
         width: fit-content;
     }
 
@@ -1132,24 +1137,28 @@ input:checked + .inputPlace  {
 /*********************************************************************/
 
 /*Password-changed*/
+
+.passwordChanged-container {
+    margin-top:20vh;
+    min-height:50vh;
+}
 .password-changed {
     text-align: center;
-    margin-bottom: 200px;
 }
 
     .password-changed .changed {
-        font-size: 20px;
+        font-size: 4vh;
         color: #9A4E93;
     }
 
     .password-changed .send {
-        font-size: 18px;
-        margin-bottom: 50px;
-        margin-right: 20px;
-        padding: 2px 10px;
+        font-size: 3vh;
+       
+        margin-right: 1vh;
+        padding: 0.5vh 3vh;
         background-color: #8378A8;
         border: none;
-        border-radius: 10px;
+        border-radius: 1.5vh;
         width: fit-content;
         text-decoration: none;
         color: black;
@@ -1782,8 +1791,12 @@ body .about-logo {
 
 /* Ideas section home page Styles End */
 /*******************************************************************************/
+
 /*أفنان*/
 /*Statistic page Styles Start */
+statidticsPage-container{
+    min-height: 100vh;
+}
 .sections-tabs-stat {
     display: flex;
     align-items: center;
@@ -1824,6 +1837,7 @@ body .about-logo {
     text-align: center;
 }
 /*Statistic page Styles End */
+/*******************************************************************************/
 
 /*adminData page Styles Start */
 .Admin-Page {
@@ -1897,8 +1911,13 @@ display: flex;
     }
 /*Admin data page Style End*/
 /*******************************************************************************/
+
+
 /*أفنان*/
 /* Consulting section home page Styles Start */
+.consultingPage-container {
+    min-height: 100vh;
+}
 .consultingPage {
     padding: 2vh;
     background-color: #F6F9FF;
@@ -2015,26 +2034,69 @@ div.card-header {
         height: 13vh;
     }
 
-
 /* Consulting section home page Styles End */
-
-
 /*******************************************************************************/
 
 
+/* Consultant Details Styles Start*/
+.consultantDetails-container {
+    position: relative;
+    margin: 3% 6.6%;
+    width: 80vw;
+    box-shadow: 5px 5px 10px #BEC3CC;
+    height: 80vh;
+    border-radius: 4vh;
+    min-height: 100vh;
+}
+.consultantDetails {
+    padding: 3%;
+}
+
+/*  <input type="date" name="consultantDate[]" class="consultantDate" size="50" placeholder="Date">
+.consultantDate[type=date] {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border: none;
+    border-radius: 0.5vh;
+    width: 22vw;
+    height: 6vh;
+    margin-top: 5%;
+    margin-right: 3%;
+}*/
+.Calendar1 {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border: none;
+    border-radius: 0.5vh;
+    height: 27vh;
+    width: 25vw;
+    margin-right: 3%;
+    top: -133px;
+}
+.consultantDate-container {
+    display: inline-block;
+    margin-top: 11%;
+    margin-right: 9%;
+
+}
+.consultantTime-container {
+    display: inline-block;
+    box-shadow: 5px 5px 10px #BEC3CC;
+    height: 27vh;
+    width: 25vw;
+    border-radius: 4vh;
+    margin-right: 30vh;
+}
+
+
+/* Consultant Details Styles End*/
+/*******************************************************************************/
 /*بدور نياف */
 /* Consultation Booking Styles Start */
-
-
 /* Consultation Booking Styles End */
-
-
 /*******************************************************************************/
-
-
 /*ريناد*/
 /* Projects section home page Styles Start */
-
 .project {
     margin: 5%;
     background-color: #F6F9FF;
@@ -2089,6 +2151,9 @@ div.card-header {
 
 /*ريناد*/
 /* Add Project section page Styles Start */
+.add-project-container {
+    min-height: 100vh;
+}
 .add-project-area {
     margin: 2%;
     padding: 2%;
@@ -2231,26 +2296,34 @@ edit-delete-project-btn {
 
 
 /* Shahad*/
+
+
+.addIdea-container {
+    min-height: 85vh;
+}
+
 .buttons .buttonl {
     background-color: #8378A8;
     color: black;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 2.5vh;
     text-decoration: none;
-    padding: 11px 11px;
+    padding: 1vw 2vh;
     text-transform: capitalize;
     font-weight: 300;
-    border-radius: 10px;
+    border-radius: 1vw;
     border: none;
-    width: 100px;
-    margin-right: 20px;
+    width: 12vh;
+    height:7vh;
+    margin-right: 2vh;
 }
 
 .buttons {
-    margin-right: 800px;
+    margin-right: 55vh;
     position: relative;
+    margin-top:10vh;
 }
 
 
@@ -2258,9 +2331,11 @@ edit-delete-project-btn {
 .textarea {
     background: #F6F9FF;
     box-shadow: inset -3px -3px 10px #FFFFFF, inset 5px 5px 10px #BEC3CC;
-    border-radius: 10px;
+    border-radius: 1.5vh;
     border: none;
 }
+
+
 
 
 .topic {
@@ -2271,30 +2346,37 @@ edit-delete-project-btn {
 
 
 .add-idea {
-    padding-right: 50px;
+    padding-right: 10vh;
 }
 
-
+.Editdelete-Idea-container {
+    min-height: 85vh;
+}
 .Editdelete-idea {
-    padding-right: 50px;
+    padding-right: 10vh;
     position: relative;
 }
 
+
+.delete {
+    margin-right:4%;
+    margin-top: -7vh;
+}
 .deleteButton {
     background-color: #8378A8;
     color: black;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
+    font-size: 2.5vh;
     text-decoration: none;
-    padding: 11px 11px;
+    padding: 1vw 2vh;
     text-transform: capitalize;
     font-weight: 300;
-    border-radius: 10px;
+    border-radius: 1vw;
     border: none;
-    width: 100px;
-    margin-left: 50px;
+    width: 12vh;
+    height: 7vh;
+    margin-right: -18vh;
 }
 
 /*******************************************************************************/
