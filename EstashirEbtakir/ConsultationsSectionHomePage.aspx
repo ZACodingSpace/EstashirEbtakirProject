@@ -6,6 +6,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+      <div class="consultingPage-container">
     <div class="consultingPage">
        <p>الرئيسية / الأقسام/ الاستشارات</p>
         <h1>الاستشارات</h1>
@@ -297,5 +298,5 @@
                     </div>
 
     </div>
-
+          </div>
 </asp:Content>

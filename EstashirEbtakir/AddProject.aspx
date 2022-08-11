@@ -6,6 +6,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="add-project-container">
        <div class="add-project-area">
            
         <a class="project-btn" href="ProjectsSectionHomePage.aspx">رجوع</a>
@@ -60,5 +61,5 @@
         <button class="project-btn" onclick="">اضافة</button>
         <button class="project-btn" formaction="ProjectsSectionHomePage.aspx">الغاء</button>
 </div>
-    </div>
+    </div></div>
 </asp:Content>

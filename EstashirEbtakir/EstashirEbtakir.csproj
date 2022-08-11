@@ -80,6 +80,7 @@
       <DependentUpon>EstashirEbtakirDatabase.mdf</DependentUpon>
     </Content>
     <Content Include="ChangePassword.aspx" />
+    <Content Include="ConsultantDetails.aspx" />
     <Content Include="ConsultationsSectionHomePage.aspx" />
     <Content Include="EditDeleteProject.aspx" />
     <Content Include="GetPassword.aspx" />
@@ -194,6 +195,13 @@
     </Compile>
     <Compile Include="ChangePassword.aspx.designer.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultantDetails.aspx.cs">
+      <DependentUpon>ConsultantDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultantDetails.aspx.designer.cs">
+      <DependentUpon>ConsultantDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConsultationsSectionHomePage.aspx.cs">
       <DependentUpon>ConsultationsSectionHomePage.aspx</DependentUpon>
