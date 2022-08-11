@@ -11,6 +11,7 @@ using System.Configuration;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Windows;
 
 namespace EstashirEbtakir
 {
@@ -22,7 +23,7 @@ namespace EstashirEbtakir
             if (!IsPostBack)
             {
                 Session.Remove("error");
-                Session["id"] = "";
+                Session["id"] =null;
             }
         }
 
@@ -34,33 +35,41 @@ namespace EstashirEbtakir
 
         protected void login_Click(object sender, EventArgs e)
         {
-            string email = logInEmail.Text;
-            string pass = logInPassword.Text;
+            string email = emailInputPlace.Value;
+            string pass = passwordInputPlace.Value;
             Session["id"] = "";
 
             string str = getConstring();
             con = new SqlConnection(str);
             con.Open();
-            SqlCommand cmd = new SqlCommand("select * from OurUser where Email='" + email.Trim() + "'", con);
+            //SqlCommand cmd = new SqlCommand("select * from OurUser where Email='" + email.Trim() + "'", con);
 
-            SqlDataReader reader;
-            reader = cmd.ExecuteReader();
+            //SqlDataReader reader;
+            //reader = cmd.ExecuteReader();
 
-            if (reader.Read())
+            SqlDataAdapter sda = new SqlDataAdapter("select * from OurUser where Email='" + email.Trim() + "'", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            logInPasswordEmsg.Text = "" + dt.Rows.Count;
+            if (dt.Rows.Count ==1)
             {
-                string userEmail = reader.GetString(4);
+                /*string userEmail = reader.GetString(4);
                 string user_id = "" + reader.GetInt32(0);
                 string username = reader.GetString(1);
-                string userpassword = reader.GetString(3);
-
+                string userpassword = reader.GetString(3);*/
+                int user_id= (Int32)dt.Rows[0].ItemArray[0];
+                string userEmail = (string)dt.Rows[0].ItemArray[4];
+                string username= (string)dt.Rows[0].ItemArray[1]+" "+(string)dt.Rows[0].ItemArray[2];
+                string userpassword = (string)dt.Rows[0].ItemArray[3];
                 if (userEmail == email && userpassword == pass)
                 {
-
-                    Response.Redirect("Home.aspx");
-
                     Session["id"] = user_id;
                     Session["name"] = username;
                     //Response.Redirect("UserProfile.aspx");
+                    //MessageBox.Show(Session["id"] + " ");
+                    Response.Redirect("Home.aspx");
+
+                    
                 }
                 else
                 {
@@ -73,7 +82,7 @@ namespace EstashirEbtakir
                 logInEmailEmsg.Text = "البريد الإلكتروني غير صحيح";
             }
 
-            con.Close();
+           con.Close();
 
         }
 
@@ -85,7 +94,7 @@ namespace EstashirEbtakir
             string pass = password1.Value;
             string pass2 = confPasswordInputPlace.Value;
             //string universityid = uniID.Value;
-            Session["id"] = "";
+            //Session["id"] = null;
 
             string str = getConstring();
             con = new SqlConnection(str);
