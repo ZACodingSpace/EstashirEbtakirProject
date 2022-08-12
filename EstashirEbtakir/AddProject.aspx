@@ -22,21 +22,19 @@
             <textarea class="about-project" id="aboutP" runat="server"></textarea>
 
             <!-- change to check list -->
-            <label for="technDropDownList">التقنية المستخدمة</label>
-            <asp:DropDownList ID="technDropDownList" runat="server">
-                <asp:ListItem></asp:ListItem>
-                <asp:ListItem>الذكاء الإصطناعي</asp:ListItem>
-                <asp:ListItem>تحليل البيانات و الروبوتيك</asp:ListItem>
-                <asp:ListItem>الواقع الافتراضي</asp:ListItem>
-                <asp:ListItem>الواقع المعزز</asp:ListItem>
-                <asp:ListItem>واجهات التحكم والتفاعل الطبيعي</asp:ListItem>
-                <asp:ListItem>العرض التجسيمي</asp:ListItem>
-                <asp:ListItem>الطباعة ثلاثية الأبعاد</asp:ListItem>
-                <asp:ListItem>استديو انتاج الوسائط المتعددة</asp:ListItem>
-                <asp:ListItem>كتب الكترونية</asp:ListItem>
-                <asp:ListItem>تطبيقات جوال مدعمة بالواقع المعزز</asp:ListItem>
-                <asp:ListItem>أخرى</asp:ListItem>
-            </asp:DropDownList>
+          <div class="project-tech-check-list">
+                <label for="lang">التقنية المستخدمه</label>
+                <select name="التقنية المستخدمه" id="lang">
+
+                    <option value="كتب الكترونية او تطبيقات جوال مدعمة بالواقع المعزز">كتب الكترونية او الواقع المعزز</option>
+                    <option value="واجهات التحكم والتفاعل الطبيعي">واجهات التحكم والتفاعل الطبيعي</option>
+                    <option value="الواقع الافتراضي و الواقع المعزز">الواقع الافتراضي والمعزز</option>
+                    <option value="الذكاء الإصطناعي، تحليل البيانات و الروبوتيك">الذكاء الإصطناعي و تحليل البيانات و الروبوتيك</option>
+                    <option value="العرض التجسيمي و الطباعة ثلاثية الأبعاد">العرض التجسيمي و الطباعة ثلاثية الأبعاد</option>
+                    <option value="استديو انتاج الوسائط المتعددة">استديو انتاج الوسائط المتعددة</option>
+
+                </select>
+            </div>
 
             <label for="gradeP">صورة</label>
             <input type="file" id="img" runat="server"/>

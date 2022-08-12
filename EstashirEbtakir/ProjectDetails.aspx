@@ -15,16 +15,27 @@
         <div class="browse-project-info">
             <h4>نبذة عن المشروع</h4>
             <p id="aboutP" runat="server">هنا ناخذ النبذة من الداتابيس</p>
+            
+            <h4>التقنيات المستخدمة</h4>
+            <p id="techP"></p>
+
+            <!-- نعرض الصورة؟ -->
+            <h4>صورة</h4>
+            <img id="imgP" src="#"/> 
 
             <h4>الكلية</h4>
             <p id="collegeP" runat="server">---</p>
 
             <h4>التخصص</h4>
             <p id="majorP" runat="server">---</p>
+            
+            <h4>المشرف</h4>
+            <p id="supervisorP" runat="server">---</p>
 
             <h4>الدرجة</h4>
             <p id="gradeP" runat="server">---</p>
 
+            <!-- يحمل الملف -->
             <h4>ملف المشروع</h4>
             <button class="project-btn">تحميل</button>
 
