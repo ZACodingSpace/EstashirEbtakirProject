@@ -2294,8 +2294,187 @@ edit-delete-project-btn {
 /* Edit/Delete Project section page Styles End */
 /*******************************************************************************/
 
+/**************************************Add Idea Page Styles Start*************************************/
+.add-idea-page-content {
+    min-height: 100vh;
+}
 
-/* Shahad*/
+    .add-idea-page-content .add-idea-links-container {
+        display: flex;
+    }
+
+        .add-idea-page-content .add-idea-links-container > * {
+            text-decoration: none;
+            color: var(--Silver-Sand);
+            font-size: max(1vw, 2vh);
+        }
+
+        .add-idea-page-content .add-idea-links-container .active-link {
+            color: var(--Purple-Mountain-Majesty)
+        }
+
+
+    .add-idea-page-content .idea-name-container .idea-name,
+    .add-idea-page-content .idea-description-container .idea-description-label,
+    .add-idea-page-content .innovation-lab-technologies .innovation-lab-technologies-header {
+        font-size: max(1vw, 3.5vh);
+    }
+
+    .add-idea-page-content .idea-name-container .idea-name-field {
+        width: 50vh;
+        height: 5vh;
+        border-radius: 5px;
+        border: none;
+        box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+        background-color: var(--Ghost-White);
+    }
+
+    .add-idea-page-content .idea-description-container .idea-description-textarea {
+        width: 90vw;
+        border-radius: 5px;
+        border: none;
+        box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+        background-color: var(--Ghost-White);
+    }
+
+    .add-idea-page-content .innovation-lab-technologies {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+.innovation-lab-technologies .idea-checkbox-list-container {
+    display: flex;
+    justify-content: center;
+}
+
+    .innovation-lab-technologies .idea-checkbox-list-container .technology-list-item-container {
+        justify-content: center;
+    }
+
+.idea-checkbox-list-container .technology-list-item-container .technology-container {
+    height: 15vh;
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+    background-color: var(--Ghost-White);
+}
+
+
+.technology-list-item-container .technology-container .technology-checkbox-label {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.technology-container .technology-checkbox-label .technology-checkbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.technology-checkbox-label .technology-inner-container {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.technology-checkbox-label .technology-checkbox:checked ~ .technology-inner-container {
+    border: none;
+    box-shadow: inset 0px 2px 4px #BEC3CC;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.technology-checkbox-label .technology-inner-container .technology-name {
+    font-size: max(1vw, 2vh);
+    user-select: none;
+}
+
+.technology-checkbox-label .technology-checkbox:checked ~ .technology-inner-container .technology-name {
+    color: var(--Purple-Mountain-Majesty);
+}
+
+.technology-checkbox-label .technology-inner-container .tickmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 20px solid;
+    border-color: transparent;
+    display: none;
+}
+
+    .technology-checkbox-label .technology-inner-container .tickmark:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 20px;
+        height: 10px;
+        border: 3px solid;
+        border-color: transparent transparent #8378A8 #8378A8;
+        transform: rotate(-45deg);
+    }
+
+.technology-checkbox-label .technology-checkbox:checked ~ .technology-inner-container .tickmark {
+    display: block;
+}
+
+
+.technology-list-item-container .technology-container .technology-details-button-container {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technology-container .technology-details-button-container .technology-details-button {
+    width: 10vh;
+    text-decoration: none;
+    text-align: center;
+    font-size: max(1vw, 2vh);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BEC3CC;
+    border-radius: 3px;
+    background-color: var(--Purple-Mountain-Majesty);
+}
+
+.add-idea-page-content .add-idea-page-buttons-container {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+    .add-idea-page-content .add-idea-page-buttons-container .add-idea-button,
+    .add-idea-page-content .add-idea-page-buttons-container .cancel-idea-button {
+        height: 4vh;
+        width: 10vh;
+        text-decoration: none;
+        text-align: center;
+        font-size: max(1vw, 2vh);
+        color: #000;
+        font-weight: bold;
+        border: none;
+        box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BEC3CC;
+        border-radius: 5px;
+        background-color: var(--Purple-Mountain-Majesty);
+    }
+
+/**************************************Add Idea Page Styles End*************************************/
+
+/* Shahad */
 
 
 .addIdea-container {
