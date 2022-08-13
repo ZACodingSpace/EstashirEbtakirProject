@@ -335,6 +335,187 @@ footer {
 
 /* Home Page Styles End */
 
+/**************************************Events, Participations, & Achievements Pages Styles Start*************************************/
+
+.events-page-header-container,
+.participations-page-header-container,
+.achievements-page-header-container {
+    display: flex;
+    justify-content: center;
+}
+
+    .events-page-header-container .events-links-container,
+    .participations-page-header-container .participations-links-container,
+    .achievements-page-header-container .achievements-links-container {
+        display: flex;
+    }
+
+        .events-page-header-container .events-links-container > *,
+        .participations-page-header-container .participations-links-container > *,
+        .achievements-page-header-container .achievements-links-container > * {
+            text-decoration: none;
+            color: var(--Silver-Sand);
+            font-size: max(1vw, 2vh);
+        }
+
+        .events-page-header-container .events-links-container .active-link,
+        .participations-page-header-container .participations-links-container .active-link,
+        .achievements-page-header-container .achievements-links-container .active-link {
+            color: var(--Melon);
+        }
+
+    .events-page-header-container .events-subsections-tabs-container,
+    .participations-page-header-container .participations-subsections-tabs-container,
+    .achievements-page-header-container .achievements-subsections-tabs-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .events-page-header-container .events-subsections-tabs-container .subsections-tabs-container,
+        .participations-page-header-container .participations-subsections-tabs-container .subsections-tabs-container,
+        .achievements-page-header-container .achievements-subsections-tabs-container .subsections-tabs-container {
+            height: 8vh;
+            width: 50vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-radius: 40px;
+            background-color: var(--Alice-Blue);
+        }
+
+.events-subsections-tabs-container .subsections-tabs-container .subsection-name-container,
+.participations-subsections-tabs-container .subsections-tabs-container .subsection-name-container,
+.achievements-subsections-tabs-container .subsections-tabs-container .subsection-name-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subsections-tabs-container .subsection-name-container .subsection-name {
+    height: 5vh;
+    width: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-size: max(1vw, 3vh);
+    border: none;
+    border-radius: 20px;
+}
+
+    .subsections-tabs-container .subsection-name-container .subsection-name.active {
+        background-color: var(--Melon);
+    }
+
+.events-description-container .events-page-name-container .events-page-name,
+.participations-description-container .participations-page-name-container .participations-page-name,
+.achievements-description-container .achievements-page-name-container .achievements-page-name {
+    font-size: max(2vw, 4vh);
+    color: var(--Melon);
+}
+
+.events-description-container .events-page-description-container .events-page-description,
+.participations-description-container .participations-page-description-container .participations-page-description,
+.achievements-description-container .achievements-page-description-container .achievements-page-description {
+    font-size: max(1vw, 2vh);
+}
+
+
+.events-page-header-container .search-bar-and-buttons-container,
+.participations-page-header-container .search-bar-and-buttons-container,
+.achievements-page-header-container .search-bar-and-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.events-search-bar-container .events-serach-bar .events-search-button,
+.search-bar-and-buttons-container .events-search-bar-container .sort-events,
+.search-bar-and-buttons-container .events-search-bar-container .filter-events,
+.participations-search-bar-container .participations-serach-bar .participations-search-button,
+.search-bar-and-buttons-container .participations-search-bar-container .sort-participations,
+.search-bar-and-buttons-container .participations-search-bar-container .filter-participations,
+.achievements-search-bar-container .achievements-serach-bar .achievements-search-button,
+.search-bar-and-buttons-container .achievements-search-bar-container .sort-achievements,
+.search-bar-and-buttons-container .achievements-search-bar-container .filter-achievements {
+    background-color: var(--Melon);
+}
+
+.search-bar-and-buttons-container .events-search-bar-container,
+.search-bar-and-buttons-container .participations-search-bar-container,
+.search-bar-and-buttons-container .achievements-search-bar-container {
+    display: flex;
+    justify-content: left;
+}
+
+    .search-bar-and-buttons-container .events-search-bar-container .events-serach-bar,
+    .search-bar-and-buttons-container .participations-search-bar-container .participations-serach-bar,
+    .search-bar-and-buttons-container .achievements-search-bar-container .achievements-serach-bar {
+        display: flex;
+    }
+
+.events-search-bar-container .events-serach-bar .events-form-control,
+.participations-search-bar-container .participations-serach-bar .participations-form-control,
+.achievements-search-bar-container .achievements-serach-bar .achievements-form-control {
+    width: 40vh;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+    color: #000;
+    background-color: var(--Ghost-White);
+}
+
+.events-search-bar-container .events-serach-bar .events-search-button,
+.participations-search-bar-container .participations-serach-bar .participations-search-button,
+.achievements-search-bar-container .achievements-serach-bar .achievements-search-button {
+    font-weight: bold;
+    font-size: max(1vw, 2vh);
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px 0 0 5px;
+}
+
+
+.search-bar-and-buttons-container .events-search-bar-container .sort-events,
+.search-bar-and-buttons-container .events-search-bar-container .filter-events,
+.search-bar-and-buttons-container .participations-search-bar-container .sort-participations,
+.search-bar-and-buttons-container .participations-search-bar-container .filter-participations,
+.search-bar-and-buttons-container .achievements-search-bar-container .sort-achievements,
+.search-bar-and-buttons-container .achievements-search-bar-container .filter-achievements {
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 3px;
+}
+
+
+
+.events-search-bar-container .sort-events .fa-sort,
+.events-search-bar-container .filter-events .fa-filter,
+.participations-search-bar-container .sort-participations .fa-sort,
+.participations-search-bar-container .filter-participations .fa-filter,
+.achievements-search-bar-container .sort-achievements .fa-sort,
+.achievements-search-bar-container .filter-achievements .fa-filter {
+    font-size: max(1vw, 3.5vh);
+    color: #000;
+}
+
+/* كود مؤقت */
+
+.page-link {
+    border: none;
+    color: #000;
+    background-color: var(--Ghost-White);
+}
+
+
+/**************************************Events, Participations, & Achievements Pages Styles End*************************************/
+
 /* Tabs Sections Styles Start */
 
 /* Tabs Styles */

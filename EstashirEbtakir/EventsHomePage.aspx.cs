@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace EstashirEbtakir
 {
-    public partial class ParticipationsEventsAchievementsHomePage : System.Web.UI.Page
+    public partial class EventsHomePage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
