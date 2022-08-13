@@ -335,8 +335,13 @@ footer {
 
 /* Home Page Styles End */
 
+/**************************************Ideas, Consultations, & Project Pages Styles Start*************************************/
 /**************************************Events, Participations, & Achievements Pages Styles Start*************************************/
 
+
+.ideas-page-header-container,
+.consultations-page-header-container,
+.projects-page-header-container,
 .events-page-header-container,
 .participations-page-header-container,
 .achievements-page-header-container {
@@ -344,12 +349,24 @@ footer {
     justify-content: center;
 }
 
+
+    .ideas-page-header-container .ideas-links-container,
+    .consultations-page-header-container .consultations-links-container,
+    .projects-page-header-container .projects-links-container {
+        display: flex;
+    }
+
     .events-page-header-container .events-links-container,
     .participations-page-header-container .participations-links-container,
     .achievements-page-header-container .achievements-links-container {
         display: flex;
+        padding-right: 10rem;
     }
 
+
+        .ideas-page-header-container .ideas-links-container > *,
+        .consultations-page-header-container .consultations-links-container > *,
+        .projects-page-header-container .projects-links-container > *,
         .events-page-header-container .events-links-container > *,
         .participations-page-header-container .participations-links-container > *,
         .achievements-page-header-container .achievements-links-container > * {
@@ -358,11 +375,23 @@ footer {
             font-size: max(1vw, 2vh);
         }
 
-        .events-page-header-container .events-links-container .active-link,
-        .participations-page-header-container .participations-links-container .active-link,
-        .achievements-page-header-container .achievements-links-container .active-link {
-            color: var(--Melon);
-        }
+    .ideas-page-header-container .ideas-links-container .active-link {
+        color: var(--Purple-Mountain-Majesty);
+    }
+
+    .consultations-page-header-container .consultations-links-container .active-link {
+        color: var(--Lavender-Floral);
+    }
+
+    .projects-page-header-container .projects-links-container .active-link {
+        color: var(--French-Pink);
+    }
+
+    .events-page-header-container .events-links-container .active-link,
+    .participations-page-header-container .participations-links-container .active-link,
+    .achievements-page-header-container .achievements-links-container .active-link {
+        color: var(--Melon);
+    }
 
     .events-page-header-container .events-subsections-tabs-container,
     .participations-page-header-container .participations-subsections-tabs-container,
@@ -410,6 +439,21 @@ footer {
         background-color: var(--Melon);
     }
 
+.ideas-description-container .ideas-page-name-container .ideas-page-name {
+    font-size: max(2vw, 4vh);
+    color: var(--Purple-Mountain-Majesty);
+}
+
+.consultations-description-container .consultations-page-name-container .consultations-page-name {
+    font-size: max(2vw, 4vh);
+    color: var(--Lavender-Floral);
+}
+
+.projects-description-container .projects-page-name-container .projects-page-name {
+    font-size: max(2vw, 4vh);
+    color: var(--French-Pink);
+}
+
 .events-description-container .events-page-name-container .events-page-name,
 .participations-description-container .participations-page-name-container .participations-page-name,
 .achievements-description-container .achievements-page-name-container .achievements-page-name {
@@ -417,18 +461,65 @@ footer {
     color: var(--Melon);
 }
 
+.ideas-description-container .ideas-page-description-container .ideas-page-description,
+.consultations-description-container .consultations-page-description-container .consultations-page-description,
+.projects-description-container .projects-page-description-container .projects-page-description,
 .events-description-container .events-page-description-container .events-page-description,
 .participations-description-container .participations-page-description-container .participations-page-description,
 .achievements-description-container .achievements-page-description-container .achievements-page-description {
     font-size: max(1vw, 2vh);
 }
 
+.ideas-page-description-area .search-bar-and-buttons-container,
+.consultations-page-description-area .search-bar-and-buttons-container,
+.projects-page-description-area .search-bar-and-buttons-container {
+    display: flex;
+    justify-content: center;
+}
 
 .events-page-header-container .search-bar-and-buttons-container,
 .participations-page-header-container .search-bar-and-buttons-container,
 .achievements-page-header-container .search-bar-and-buttons-container {
     display: flex;
     justify-content: flex-end;
+}
+
+.ideas-page-description-area .search-bar-and-buttons-container .add-idea-button-container,
+.consultations-page-description-area .search-bar-and-buttons-container .book-consultation-button-container,
+.projects-page-description-area .search-bar-and-buttons-container .add-project-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-and-buttons-container .add-idea-button-container .add-idea-button,
+.search-bar-and-buttons-container .book-consultation-button-container .book-consultation-button,
+.search-bar-and-buttons-container .add-project-button-container .add-project-button {
+    font-weight: bold;
+    font-size: max(1vw, 2vh);
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+}
+
+.search-bar-and-buttons-container .add-idea-button-container .add-idea-button,
+.ideas-search-bar-container .ideas-serach-bar .ideas-search-button,
+.search-bar-and-buttons-container .ideas-search-bar-container .sort-ideas,
+.search-bar-and-buttons-container .ideas-search-bar-container .filter-ideas {
+    background-color: var(--Purple-Mountain-Majesty);
+}
+
+.search-bar-and-buttons-container .book-consultation-button-container .book-consultation-button,
+.consultations-search-bar-container .consultations-serach-bar .consultations-search-button,
+.search-bar-and-buttons-container .consultations-search-bar-container .sort-consultations,
+.search-bar-and-buttons-container .consultations-search-bar-container .filter-consultations {
+    background-color: var(--Lavender-Floral);
+}
+
+.search-bar-and-buttons-container .add-project-button-container .add-project-button,
+.projects-search-bar-container .projects-serach-bar .projects-search-button,
+.search-bar-and-buttons-container .projects-search-bar-container .sort-projects,
+.search-bar-and-buttons-container .projects-search-bar-container .filter-projects {
+    background-color: var(--French-Pink);
 }
 
 .events-search-bar-container .events-serach-bar .events-search-button,
@@ -443,6 +534,9 @@ footer {
     background-color: var(--Melon);
 }
 
+.search-bar-and-buttons-container .ideas-search-bar-container,
+.search-bar-and-buttons-container .consultations-search-bar-container,
+.search-bar-and-buttons-container .projects-search-bar-container,
 .search-bar-and-buttons-container .events-search-bar-container,
 .search-bar-and-buttons-container .participations-search-bar-container,
 .search-bar-and-buttons-container .achievements-search-bar-container {
@@ -450,15 +544,22 @@ footer {
     justify-content: left;
 }
 
+    .search-bar-and-buttons-container .ideas-search-bar-container .ideas-serach-bar,
+    .search-bar-and-buttons-container .consultations-search-bar-container .consultations-serach-bar,
+    .search-bar-and-buttons-container .projects-search-bar-container .projects-serach-bar,
     .search-bar-and-buttons-container .events-search-bar-container .events-serach-bar,
     .search-bar-and-buttons-container .participations-search-bar-container .participations-serach-bar,
     .search-bar-and-buttons-container .achievements-search-bar-container .achievements-serach-bar {
         display: flex;
     }
 
+.ideas-search-bar-container .ideas-serach-bar .ideas-form-control,
+.consultations-search-bar-container .consultations-serach-bar .consultations-form-control,
+.projects-search-bar-container .projects-serach-bar .projects-form-control,
 .events-search-bar-container .events-serach-bar .events-form-control,
 .participations-search-bar-container .participations-serach-bar .participations-form-control,
 .achievements-search-bar-container .achievements-serach-bar .achievements-form-control {
+    height: 5vh;
     width: 40vh;
     border-radius: 0 5px 5px 0;
     border: none;
@@ -467,9 +568,13 @@ footer {
     background-color: var(--Ghost-White);
 }
 
+.ideas-search-bar-container .ideas-serach-bar .ideas-search-button,
+.consultations-search-bar-container .consultations-serach-bar .consultations-search-button,
+.projects-search-bar-container .projects-serach-bar .projects-search-button,
 .events-search-bar-container .events-serach-bar .events-search-button,
 .participations-search-bar-container .participations-serach-bar .participations-search-button,
 .achievements-search-bar-container .achievements-serach-bar .achievements-search-button {
+    height: 5vh;
     font-weight: bold;
     font-size: max(1vw, 2vh);
     border: none;
@@ -477,7 +582,12 @@ footer {
     border-radius: 5px 0 0 5px;
 }
 
-
+.search-bar-and-buttons-container .ideas-search-bar-container .sort-ideas,
+.search-bar-and-buttons-container .ideas-search-bar-container .filter-ideas,
+.search-bar-and-buttons-container .consultations-search-bar-container .sort-consultations,
+.search-bar-and-buttons-container .consultations-search-bar-container .filter-consultations,
+.search-bar-and-buttons-container .projects-search-bar-container .sort-projects,
+.search-bar-and-buttons-container .projects-search-bar-container .filter-projects,
 .search-bar-and-buttons-container .events-search-bar-container .sort-events,
 .search-bar-and-buttons-container .events-search-bar-container .filter-events,
 .search-bar-and-buttons-container .participations-search-bar-container .sort-participations,
@@ -493,8 +603,12 @@ footer {
     border-radius: 3px;
 }
 
-
-
+.ideas-search-bar-container .sort-ideas .fa-sort,
+.ideas-search-bar-container .filter-ideas .fa-filter,
+.consultations-search-bar-container .sort-consultations .fa-sort,
+.consultations-search-bar-container .filter-consultations .fa-filter,
+.projects-search-bar-container .sort-projects .fa-sort,
+.projects-search-bar-container .filter-projects .fa-filter,
 .events-search-bar-container .sort-events .fa-sort,
 .events-search-bar-container .filter-events .fa-filter,
 .participations-search-bar-container .sort-participations .fa-sort,
@@ -505,6 +619,7 @@ footer {
     color: #000;
 }
 
+
 /* كود مؤقت */
 
 .page-link {
@@ -513,7 +628,7 @@ footer {
     background-color: var(--Ghost-White);
 }
 
-
+/**************************************Ideas, Consultations, & Project Pages Styles End*************************************/
 /**************************************Events, Participations, & Achievements Pages Styles End*************************************/
 
 /* Tabs Sections Styles Start */
@@ -660,7 +775,7 @@ footer {
 }
 
 .project-card .card-button-container .project-details-button {
-    background-color: var(--Lavender-Floral);
+    background-color: var(--French-Pink);
 }
 
 
@@ -674,7 +789,7 @@ footer {
     width: 25vh;
     border-radius: 50%;
     background-color: var(--Ghost-White);
-    box-shadow: inset -5px -5px 10px #FFFFFF, inset 5px 5px 10px #D08DEE;
+    box-shadow: inset -5px -5px 10px #FFFFFF, inset 5px 5px 10px #8378A8;
 }
 
 
@@ -696,7 +811,7 @@ footer {
 }
 
 .idea-card .card-button-container .idea-details-button {
-    background-color: var(--Bright-Lilac);
+    background-color: var(--Purple-Mountain-Majesty);
 }
 
 /* Consultations */
@@ -706,14 +821,14 @@ footer {
     border-radius: 5px 5px 0 0;
     width: 100%;
     height: 25vh;
-    background-color: var(--French-Pink);
+    background-color: var(--Lavender-Floral);
 }
 
 .consultation-card .counselor-img-container .counselor-img {
     height: 30vh;
     width: 30vh;
     border: #121111;
-    border: 15px solid #FE799D;
+    border: 15px solid #AD88F1;
     border-radius: 50%;
     background-color: var(--Ghost-White);
     box-shadow: inset -5px -5px 10px #FFFFFF, inset 5px 5px 10px #BEC3CC;
@@ -743,7 +858,7 @@ footer {
 
 .consultation-card .card-button-container .consultation-details-button,
 .consultation-card .card-button-container .consultation-booking-button {
-    background-color: var(--French-Pink);
+    background-color: var(--Lavender-Floral);
 }
 
 /* Events */
