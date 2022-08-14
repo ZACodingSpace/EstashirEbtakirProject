@@ -60,7 +60,7 @@
                                 <label for="particit">اسماء الأعضاء المشاركين</label>
                             </div>
                     </div>
-                    <div class="accepForm row ">
+                    <div class="accepForm row">
 
                         <div class="col-6">
 
@@ -94,14 +94,12 @@
             </div>
         </div>
 
-        <div class="accepBtn">
-            <div class="col-6">
-                <asp:Button class="accepBtn" ID="Button3" runat="server" Text="قبول الفكرة" />
-            </div>
-
-            <div class="col-6">
-                <asp:Button class="accepBtn" ID="Button4" runat="server" Text="رفض الفكرة" />
-            </div>
+        <div class="accepBtn row m-0 p-0 mt-4 mb-3">
+            
+                <asp:Button class="accepBtn p-0 ps-2 pe-2" ID="Button3" runat="server" Text="قبول الفكرة" />
+           
+                <asp:Button class="accepBtn p-0 ps-2 pe-2" ID="Button4" runat="server" Text="رفض الفكرة" />
+            
         </div>
 
 

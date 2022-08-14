@@ -134,11 +134,11 @@
 
                             <div class="accepBtn">
                                
-                                    <div class="col-6">
+                                    <div class="col-19">
                                         <asp:Button class="accepBtn" ID="Button2" runat="server" Text="رفض المشروع" />
                                     </div>
 
-                                    <div class="col-6">
+                                    <div class="col-1">
                                         <asp:Button class="accepBtn" ID="Button1" runat="server" Text="قبول المشروع" />
                                     </div>
                                 

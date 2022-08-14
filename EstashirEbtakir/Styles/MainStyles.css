@@ -851,7 +851,12 @@ input:checked + .inputPlace  {
 }
 
 .Accept .accepBtn {
+    float: left;
+    margin-right: 5px;
     display: flex;
+    /**display:inline-block;*/
+    flex-direction: row;
+    /*margin: 0.5vh;*/
     width: 100px;
     height: 40px;
     border: none;
