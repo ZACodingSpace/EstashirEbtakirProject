@@ -54,5 +54,47 @@ namespace EstashirEbtakir
             }
             
         }
+
+        protected void MyIdea_Click(object sender, EventArgs e)
+        {
+            string type = (string)Session["Type"];
+            if (type == "User")
+            {
+                Response.Redirect("MyIdeasPage.aspx");
+            }
+            else
+            {
+                Response.Redirect("AdminProfile.aspx");
+            }
+
+        }
+
+        protected void MyProject_Click(object sender, EventArgs e)
+        {
+            string type = (string)Session["Type"];
+            if (type == "User")
+            {
+                Response.Redirect("MyProjectsPage.aspx");
+            }
+            else
+            {
+                Response.Redirect("AdminProfile.aspx");
+            }
+
+        }
+
+        protected void Myappointment_Click(object sender, EventArgs e)
+        {
+            string type = (string)Session["Type"];
+            if (type == "User")
+            {
+                Response.Redirect("MyAppointmentsPage.aspx");
+            }
+            else
+            {
+                Response.Redirect("AdminProfile.aspx");
+            }
+
+        }
     }    
 }
