@@ -37,6 +37,9 @@ namespace EstashirEbtakir {
                     job.Attributes.Add("placeholder", reader.GetString(7));
 
                 }
+
+                con.Close();
+
             } catch (Exception ex) {
                 Console.WriteLine(ex.Message);
                 con.Close();
@@ -47,28 +50,21 @@ namespace EstashirEbtakir {
         protected void EditPhone_Click(object sender, EventArgs e) {
 
             try {
-                testchange.Text = "";
                 string phoneNum = phone.Value;
-
                 // check from phone number format
-                if (Regex.Match(phoneNum, @"^[0-9]{ 10}$").Success) { 
+ 
                     // set database connection
                     con = new SqlConnection(GetConstring());
                     con.Open();
 
                     // get the session id ( user id )
-                    int sessionID = int.Parse( (string) Session["id"]);
+                    //int sessionID = int.Parse( (string) Session["id"]);
 
                     // get admin info from DB
-                    SqlCommand cmd = new SqlCommand("UPDATE OurUser SET Phone='" + phoneNum + "' WHERE User_ID='" + Session["id"] + "'", con);
+                    SqlCommand cmd = new SqlCommand("UPDATE OurUser SET Phone=" + phoneNum + " WHERE User_ID='" + Session["id"] + "'", con);
                     cmd.ExecuteNonQuery();
 
-                    //for test
-                    testchange.Text = phoneNum + " - " + sessionID;
-                } else {
-                    testchange.Text = "رقم جوال غير صحيح";
-                }
-                
+                con.Close();
             } catch (Exception ex) {
                 Console.WriteLine(ex.Message);
                 con.Close();
