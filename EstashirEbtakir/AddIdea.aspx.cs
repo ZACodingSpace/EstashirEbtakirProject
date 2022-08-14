@@ -18,7 +18,7 @@ namespace EstashirEbtakir
     public partial class AddIdea : System.Web.UI.Page
     {
         SqlConnection con;
-        int ID;
+        //int ID;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
