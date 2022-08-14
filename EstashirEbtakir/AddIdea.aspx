@@ -39,7 +39,7 @@
                     <div class="technology-container col-lg-10 col-md-11 m-0 p-0">
 
                         <label class="technology-checkbox-label" for="VRtech">
-                            <input class="technology-checkbox" type="checkbox" id="VRtech" runat="server">
+                            <input class="technology-checkbox" type="checkbox" id="VRtech" runat="server" checked="checkBox1_Checked">
                             <span class="technology-inner-container">
                                 <span class="tickmark"></span>
                                 <span class="technology-name">نظارات الواقع الافتراضي</span>
@@ -241,7 +241,7 @@
         </div>
 
         <div class="add-idea-page-buttons-container m-lg-0 mt-md-5">
-            <button class="add-idea-button m-1 me-xl-4 me-lg-3" id="addIdeaButton" runat="server">إضافة</button>
+            <button class="add-idea-button m-1 me-xl-4 me-lg-3" id="addIdeaButton" onclick="add_Click" runat="server">إضافة</button>
             <button formaction="" class="cancel-idea-button m-1 ms-xl-4 ms-lg-3" id="cancelIdeaButton" runat="server">إلغاء</button>
         </div>
 
