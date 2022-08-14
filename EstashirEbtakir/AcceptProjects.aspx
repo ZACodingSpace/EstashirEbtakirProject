@@ -4,29 +4,28 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="containerAccept row">
 
-        <div class="profile-page-content-container col-3 row p-0 m-0">
-            <div class="side-bar col-3 m-0">
-                <div class="title">
-                    <div class="logo">
-                        <img src="Images/Profile_Icon.png" alt="..." />
-                        <input id="Text1" type="text" class="text-field1" placeholder="الاسم الثنائي" readonly />
-                        <input id="Text2" type="text" class="text-field1" placeholder="نوع المستخدم" readonly />
-                    </div>
+    <div class="profile-page-content-container row p-0 m-0">
+        <div class="side-bar col-3 m-0">
+            <div class="title">
+                <div class="logo">
+                    <img src="Images/Profile_Icon.png" alt="..." />
+                    <input id="Text1" type="text" class="text-field1" placeholder="الاسم الثنائي" readonly />
+                    <input id="Text2" type="text" class="text-field1" placeholder="نوع المستخدم" readonly />
                 </div>
-                <ul>
-                    <li><a href="#"><i class="fas fa-id-card"></i>معلومات الحساب </a></li>
-                    <li><a href="#"><i class="fa fa-line-chart"></i>الإحصائيات </a></li>
-                    <li><a href="#"><i class="fas fa-lightbulb"></i>الأفكار </a></li>
-                    <li><a class="active" href="#"><i class="fas fa-file-alt"></i>المشاريع </a></li>
-                    <li><a href="#"><i class="fas fa-comments"></i>الاستشارات </a></li>
-                    <li><a href="#"><i class="fas fa-check-square"></i>طلبات الترقية </a></li>
-                </ul>
             </div>
+            <ul>
+                <li><a href="#"><i class="fas fa-id-card"></i>معلومات الحساب </a></li>
+                <li><a href="#"><i class="fa fa-line-chart"></i>الإحصائيات </a></li>
+                <li><a href="#"><i class="fas fa-lightbulb"></i>الأفكار </a></li>
+                <li><a class="active" href="#"><i class="fas fa-file-alt"></i>المشاريع </a></li>
+                <li><a href="#"><i class="fas fa-comments"></i>الاستشارات </a></li>
+                <li><a href="#"><i class="fas fa-check-square"></i>طلبات الترقية </a></li>
+            </ul>
         </div>
+
         <div class="left-content-container col-9">
-            <div class="row behined-navbar"></div>
+            <div class="row behined-navbar-profile"></div>
 
             <div class="profile-path">الرئيسية/ الملف الشخصي/ معلومات الحساب</div>
 
@@ -132,16 +131,16 @@
                             </div>
 
 
-                            <div class="accepBtn">
-                               
-                                    <div class="col-19">
-                                        <asp:Button class="accepBtn" ID="Button2" runat="server" Text="رفض المشروع" />
-                                    </div>
+                            <div class="accepBtns-container">
 
-                                    <div class="col-1">
-                                        <asp:Button class="accepBtn" ID="Button1" runat="server" Text="قبول المشروع" />
-                                    </div>
-                                
+                                <div class="accepBtn-container m-1 me-xl-4 me-lg-3 p-lg-2">
+                                    <asp:Button class="accepBtn m-1" ID="Button2" runat="server" Text="رفض المشروع" />
+                                </div>
+
+                                <div class="accepBtn-container m-1 me-xl-4 me-lg-3 p-lg-2">
+                                    <asp:Button class="accepBtn m-1" ID="Button1" runat="server" Text="قبول المشروع" />
+                                </div>
+
                             </div>
 
                         </div>
@@ -152,7 +151,6 @@
             </div>
         </div>
 
-
-
+    </div>
 
 </asp:Content>

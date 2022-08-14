@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <div class="statidticsPage-container">
     <div class="sections-tabs row p-lg-5">
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -44,11 +45,16 @@
                 <div class="project-stat">
                     <select class="SecondQuestion-list">
                         <option vaule="option1">خلال السنة الماضية</option>
-                        <option vaule="option1">خلال الستة اشهر الماضية</option>
-                        <option vaule="option1">خلال الشهر الماضي</option>
+                        <option vaule="option1">اخر ستة اشهر</option>
+                        <option vaule="option1">اخر شهر</option>
+                        <option vaule="option1">جميعها</option>
                     </select>
                 </div>
-                <div class="charts-container"></div>
+                <div class="charts-container">
+                    <canvas id="projectChart">
+
+                    </canvas>
+                </div>
             </div>
 
             <!------------------------------------------ Ideas Section ------------------------------------>
@@ -105,5 +111,42 @@
         </div>
     </div>
 
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+  const labels = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'My First dataset',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  };
+
+  const config = {
+    type: 'line',
+    data: data,
+    options: {}
+  };
+    </script>
+
+    <script>
+        const myChart = new Chart(
+            document.getElementById('projectChart'),
+            config
+        );
+    </script>
+ 
 
 </asp:Content>

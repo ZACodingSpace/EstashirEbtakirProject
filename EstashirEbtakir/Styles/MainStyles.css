@@ -335,6 +335,302 @@ footer {
 
 /* Home Page Styles End */
 
+/**************************************Ideas, Consultations, & Project Pages Styles Start*************************************/
+/**************************************Events, Participations, & Achievements Pages Styles Start*************************************/
+
+
+.ideas-page-header-container,
+.consultations-page-header-container,
+.projects-page-header-container,
+.events-page-header-container,
+.participations-page-header-container,
+.achievements-page-header-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+    .ideas-page-header-container .ideas-links-container,
+    .consultations-page-header-container .consultations-links-container,
+    .projects-page-header-container .projects-links-container {
+        display: flex;
+    }
+
+    .events-page-header-container .events-links-container,
+    .participations-page-header-container .participations-links-container,
+    .achievements-page-header-container .achievements-links-container {
+        display: flex;
+        padding-right: 10rem;
+    }
+
+
+        .ideas-page-header-container .ideas-links-container > *,
+        .consultations-page-header-container .consultations-links-container > *,
+        .projects-page-header-container .projects-links-container > *,
+        .events-page-header-container .events-links-container > *,
+        .participations-page-header-container .participations-links-container > *,
+        .achievements-page-header-container .achievements-links-container > * {
+            text-decoration: none;
+            color: var(--Silver-Sand);
+            font-size: max(1vw, 2vh);
+        }
+
+    .ideas-page-header-container .ideas-links-container .active-link {
+        color: var(--Purple-Mountain-Majesty);
+    }
+
+    .consultations-page-header-container .consultations-links-container .active-link {
+        color: var(--Lavender-Floral);
+    }
+
+    .projects-page-header-container .projects-links-container .active-link {
+        color: var(--French-Pink);
+    }
+
+    .events-page-header-container .events-links-container .active-link,
+    .participations-page-header-container .participations-links-container .active-link,
+    .achievements-page-header-container .achievements-links-container .active-link {
+        color: var(--Melon);
+    }
+
+    .events-page-header-container .events-subsections-tabs-container,
+    .participations-page-header-container .participations-subsections-tabs-container,
+    .achievements-page-header-container .achievements-subsections-tabs-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .events-page-header-container .events-subsections-tabs-container .subsections-tabs-container,
+        .participations-page-header-container .participations-subsections-tabs-container .subsections-tabs-container,
+        .achievements-page-header-container .achievements-subsections-tabs-container .subsections-tabs-container {
+            height: 8vh;
+            width: 50vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-radius: 40px;
+            background-color: var(--Alice-Blue);
+        }
+
+.events-subsections-tabs-container .subsections-tabs-container .subsection-name-container,
+.participations-subsections-tabs-container .subsections-tabs-container .subsection-name-container,
+.achievements-subsections-tabs-container .subsections-tabs-container .subsection-name-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subsections-tabs-container .subsection-name-container .subsection-name {
+    height: 5vh;
+    width: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-size: max(1vw, 3vh);
+    border: none;
+    border-radius: 20px;
+}
+
+    .subsections-tabs-container .subsection-name-container .subsection-name.active {
+        background-color: var(--Melon);
+    }
+
+.ideas-description-container .ideas-page-name-container .ideas-page-name {
+    font-size: max(2vw, 4vh);
+    color: var(--Purple-Mountain-Majesty);
+}
+
+.consultations-description-container .consultations-page-name-container .consultations-page-name {
+    font-size: max(2vw, 4vh);
+    color: var(--Lavender-Floral);
+}
+
+.projects-description-container .projects-page-name-container .projects-page-name {
+    font-size: max(2vw, 4vh);
+    color: var(--French-Pink);
+}
+
+.events-description-container .events-page-name-container .events-page-name,
+.participations-description-container .participations-page-name-container .participations-page-name,
+.achievements-description-container .achievements-page-name-container .achievements-page-name {
+    font-size: max(2vw, 4vh);
+    color: var(--Melon);
+}
+
+.ideas-description-container .ideas-page-description-container .ideas-page-description,
+.consultations-description-container .consultations-page-description-container .consultations-page-description,
+.projects-description-container .projects-page-description-container .projects-page-description,
+.events-description-container .events-page-description-container .events-page-description,
+.participations-description-container .participations-page-description-container .participations-page-description,
+.achievements-description-container .achievements-page-description-container .achievements-page-description {
+    font-size: max(1vw, 2vh);
+}
+
+.ideas-page-description-area .search-bar-and-buttons-container,
+.consultations-page-description-area .search-bar-and-buttons-container,
+.projects-page-description-area .search-bar-and-buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.events-page-header-container .search-bar-and-buttons-container,
+.participations-page-header-container .search-bar-and-buttons-container,
+.achievements-page-header-container .search-bar-and-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ideas-page-description-area .search-bar-and-buttons-container .add-idea-button-container,
+.consultations-page-description-area .search-bar-and-buttons-container .book-consultation-button-container,
+.projects-page-description-area .search-bar-and-buttons-container .add-project-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-and-buttons-container .add-idea-button-container .add-idea-button,
+.search-bar-and-buttons-container .book-consultation-button-container .book-consultation-button,
+.search-bar-and-buttons-container .add-project-button-container .add-project-button {
+    font-weight: bold;
+    font-size: max(1vw, 2vh);
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+}
+
+.search-bar-and-buttons-container .add-idea-button-container .add-idea-button,
+.ideas-search-bar-container .ideas-serach-bar .ideas-search-button,
+.search-bar-and-buttons-container .ideas-search-bar-container .sort-ideas,
+.search-bar-and-buttons-container .ideas-search-bar-container .filter-ideas {
+    background-color: var(--Purple-Mountain-Majesty);
+}
+
+.search-bar-and-buttons-container .book-consultation-button-container .book-consultation-button,
+.consultations-search-bar-container .consultations-serach-bar .consultations-search-button,
+.search-bar-and-buttons-container .consultations-search-bar-container .sort-consultations,
+.search-bar-and-buttons-container .consultations-search-bar-container .filter-consultations {
+    background-color: var(--Lavender-Floral);
+}
+
+.search-bar-and-buttons-container .add-project-button-container .add-project-button,
+.projects-search-bar-container .projects-serach-bar .projects-search-button,
+.search-bar-and-buttons-container .projects-search-bar-container .sort-projects,
+.search-bar-and-buttons-container .projects-search-bar-container .filter-projects {
+    background-color: var(--French-Pink);
+}
+
+.events-search-bar-container .events-serach-bar .events-search-button,
+.search-bar-and-buttons-container .events-search-bar-container .sort-events,
+.search-bar-and-buttons-container .events-search-bar-container .filter-events,
+.participations-search-bar-container .participations-serach-bar .participations-search-button,
+.search-bar-and-buttons-container .participations-search-bar-container .sort-participations,
+.search-bar-and-buttons-container .participations-search-bar-container .filter-participations,
+.achievements-search-bar-container .achievements-serach-bar .achievements-search-button,
+.search-bar-and-buttons-container .achievements-search-bar-container .sort-achievements,
+.search-bar-and-buttons-container .achievements-search-bar-container .filter-achievements {
+    background-color: var(--Melon);
+}
+
+.search-bar-and-buttons-container .ideas-search-bar-container,
+.search-bar-and-buttons-container .consultations-search-bar-container,
+.search-bar-and-buttons-container .projects-search-bar-container,
+.search-bar-and-buttons-container .events-search-bar-container,
+.search-bar-and-buttons-container .participations-search-bar-container,
+.search-bar-and-buttons-container .achievements-search-bar-container {
+    display: flex;
+    justify-content: left;
+}
+
+    .search-bar-and-buttons-container .ideas-search-bar-container .ideas-serach-bar,
+    .search-bar-and-buttons-container .consultations-search-bar-container .consultations-serach-bar,
+    .search-bar-and-buttons-container .projects-search-bar-container .projects-serach-bar,
+    .search-bar-and-buttons-container .events-search-bar-container .events-serach-bar,
+    .search-bar-and-buttons-container .participations-search-bar-container .participations-serach-bar,
+    .search-bar-and-buttons-container .achievements-search-bar-container .achievements-serach-bar {
+        display: flex;
+    }
+
+.ideas-search-bar-container .ideas-serach-bar .ideas-form-control,
+.consultations-search-bar-container .consultations-serach-bar .consultations-form-control,
+.projects-search-bar-container .projects-serach-bar .projects-form-control,
+.events-search-bar-container .events-serach-bar .events-form-control,
+.participations-search-bar-container .participations-serach-bar .participations-form-control,
+.achievements-search-bar-container .achievements-serach-bar .achievements-form-control {
+    height: 5vh;
+    width: 40vh;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+    color: #000;
+    background-color: var(--Ghost-White);
+}
+
+.ideas-search-bar-container .ideas-serach-bar .ideas-search-button,
+.consultations-search-bar-container .consultations-serach-bar .consultations-search-button,
+.projects-search-bar-container .projects-serach-bar .projects-search-button,
+.events-search-bar-container .events-serach-bar .events-search-button,
+.participations-search-bar-container .participations-serach-bar .participations-search-button,
+.achievements-search-bar-container .achievements-serach-bar .achievements-search-button {
+    height: 5vh;
+    font-weight: bold;
+    font-size: max(1vw, 2vh);
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar-and-buttons-container .ideas-search-bar-container .sort-ideas,
+.search-bar-and-buttons-container .ideas-search-bar-container .filter-ideas,
+.search-bar-and-buttons-container .consultations-search-bar-container .sort-consultations,
+.search-bar-and-buttons-container .consultations-search-bar-container .filter-consultations,
+.search-bar-and-buttons-container .projects-search-bar-container .sort-projects,
+.search-bar-and-buttons-container .projects-search-bar-container .filter-projects,
+.search-bar-and-buttons-container .events-search-bar-container .sort-events,
+.search-bar-and-buttons-container .events-search-bar-container .filter-events,
+.search-bar-and-buttons-container .participations-search-bar-container .sort-participations,
+.search-bar-and-buttons-container .participations-search-bar-container .filter-participations,
+.search-bar-and-buttons-container .achievements-search-bar-container .sort-achievements,
+.search-bar-and-buttons-container .achievements-search-bar-container .filter-achievements {
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 3px;
+}
+
+.ideas-search-bar-container .sort-ideas .fa-sort,
+.ideas-search-bar-container .filter-ideas .fa-filter,
+.consultations-search-bar-container .sort-consultations .fa-sort,
+.consultations-search-bar-container .filter-consultations .fa-filter,
+.projects-search-bar-container .sort-projects .fa-sort,
+.projects-search-bar-container .filter-projects .fa-filter,
+.events-search-bar-container .sort-events .fa-sort,
+.events-search-bar-container .filter-events .fa-filter,
+.participations-search-bar-container .sort-participations .fa-sort,
+.participations-search-bar-container .filter-participations .fa-filter,
+.achievements-search-bar-container .sort-achievements .fa-sort,
+.achievements-search-bar-container .filter-achievements .fa-filter {
+    font-size: max(1vw, 3.5vh);
+    color: #000;
+}
+
+
+/* كود مؤقت */
+
+.page-link {
+    border: none;
+    color: #000;
+    background-color: var(--Ghost-White);
+}
+
+/**************************************Ideas, Consultations, & Project Pages Styles End*************************************/
+/**************************************Events, Participations, & Achievements Pages Styles End*************************************/
+
 /* Tabs Sections Styles Start */
 
 /* Tabs Styles */
@@ -479,7 +775,7 @@ footer {
 }
 
 .project-card .card-button-container .project-details-button {
-    background-color: var(--Lavender-Floral);
+    background-color: var(--French-Pink);
 }
 
 
@@ -493,7 +789,7 @@ footer {
     width: 25vh;
     border-radius: 50%;
     background-color: var(--Ghost-White);
-    box-shadow: inset -5px -5px 10px #FFFFFF, inset 5px 5px 10px #D08DEE;
+    box-shadow: inset -5px -5px 10px #FFFFFF, inset 5px 5px 10px #8378A8;
 }
 
 
@@ -515,7 +811,7 @@ footer {
 }
 
 .idea-card .card-button-container .idea-details-button {
-    background-color: var(--Bright-Lilac);
+    background-color: var(--Purple-Mountain-Majesty);
 }
 
 /* Consultations */
@@ -525,14 +821,14 @@ footer {
     border-radius: 5px 5px 0 0;
     width: 100%;
     height: 25vh;
-    background-color: var(--French-Pink);
+    background-color: var(--Lavender-Floral);
 }
 
 .consultation-card .counselor-img-container .counselor-img {
     height: 30vh;
     width: 30vh;
     border: #121111;
-    border: 15px solid #FE799D;
+    border: 15px solid #AD88F1;
     border-radius: 50%;
     background-color: var(--Ghost-White);
     box-shadow: inset -5px -5px 10px #FFFFFF, inset 5px 5px 10px #BEC3CC;
@@ -562,7 +858,7 @@ footer {
 
 .consultation-card .card-button-container .consultation-details-button,
 .consultation-card .card-button-container .consultation-booking-button {
-    background-color: var(--French-Pink);
+    background-color: var(--Lavender-Floral);
 }
 
 /* Events */
@@ -850,26 +1146,34 @@ input:checked + .inputPlace  {
     text-align: justify-all;
 }
 
-.Accept .accepBtn {
-    float: left;
-    margin-right: 5px;
+.accepBtns-container{
+    
     display: flex;
-    /**display:inline-block;*/
-    flex-direction: row;
-    /*margin: 0.5vh;*/
-    width: 100px;
-    height: 40px;
-    border: none;
-    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
-    border-radius: 10px;
-    background-color: #FE799D;
-    text-align: center;
+    justify-content:flex-end;
 }
 
-.Accept h1 {
-    color: #8378A8;
-    font-weight: bold;
-}
+    .accepBtns-container .accepBtn-container {
+       
+        font-weight: bold;
+        font-size: max(1vw, 2vh);
+        border: none;
+        box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+        border-radius: 5px;
+        background-color: #FE799D;
+    }
+        .accepBtns-container .accepBtn-container .accepBtn {
+           
+            font-weight: bold;
+            font-size: max(1vw, 2vh);
+            border: none;
+            background-color: #FE799D;
+        }
+
+
+        .Accept h1 {
+            color: #8378A8;
+            font-weight: bold;
+        }
 
 /*.accepForm input {
     width: 300px;
@@ -1054,39 +1358,43 @@ input:checked + .inputPlace  {
 
 /*Get-password*/
 
+.get-password-container {
+    min-height: 70vh;
+}
+
 .get-password-form {
     box-sizing: border-box;
     box-shadow: -4px 0px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-    padding-top: 25px;
+    padding-top: 8vh;
     text-align: center;
-    width: 500px;
-    margin-right: 350px;
-    margin-bottom: 50px;
-    border-radius: 42px;
+    width: 75vh;
+    margin-right: 50vh;
+    margin-top:9vh;
+    border-radius: 4vh;
 }
 
     .get-password-form .get-password {
-        font-size: 20px;
+        font-size: 3.5vh;
         color: #9A4E93;
     }
 
 
     .get-password-form .place {
         box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 9px;
+        border-radius: 3vh;
         border: none;
-        width: 200px;
-        height: 20px;
-        padding: 15px;
+        width: 37vh;
+        height: 3vh;
+        padding: 2.6vh;
     }
 
     .get-password-form .send {
-        font-size: 18px;
-        margin-bottom: 40px;
+        font-size: 2.5vh;
+        margin-bottom: 7vh;
         background-color: #8378A8;
         border: none;
-        border-radius: 10px;
-        padding: 2px 10px;
+        border-radius:1vw;
+        padding: 1vh 3vh;
         width: fit-content;
     }
 
@@ -1138,24 +1446,28 @@ input:checked + .inputPlace  {
 /*********************************************************************/
 
 /*Password-changed*/
+
+.passwordChanged-container {
+    margin-top:20vh;
+    min-height:50vh;
+}
 .password-changed {
     text-align: center;
-    margin-bottom: 200px;
 }
 
     .password-changed .changed {
-        font-size: 20px;
+        font-size: 4vh;
         color: #9A4E93;
     }
 
     .password-changed .send {
-        font-size: 18px;
-        margin-bottom: 50px;
-        margin-right: 20px;
-        padding: 2px 10px;
+        font-size: 3vh;
+       
+        margin-right: 1vh;
+        padding: 0.5vh 3vh;
         background-color: #8378A8;
         border: none;
-        border-radius: 10px;
+        border-radius: 1.5vh;
         width: fit-content;
         text-decoration: none;
         color: black;
@@ -1579,7 +1891,7 @@ body .about-logo {
 }
 
     .profile-page-content-container .side-bar {
-        width: 100%;
+  
         height: 100%;
         background: #EEF3FC;
         transition: all 0.3s ease;
@@ -1601,24 +1913,35 @@ body .about-logo {
         color: #31344b;
     }
 
+.title .logo img{
+
+    height: 30vh;
+}
+
 .side-bar ul {
     margin-top: 35px;
     list-style: none;
 }
 
-    .side-bar ul a {
-        color: #31344b;
-        text-decoration: none;
-        display: block;
-        margin-top: 12px;
-        font-size: 18px;
-        font-weight: 400;
-        padding: 10px 25px;
-        border-radius: 6px;
-        box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
-        position: relative;
-        transition: all 0.2s ease;
-    }
+.behined-navbar-profile {
+    height: max(3vw, 5vh);
+    width: 100%;
+    margin: 0;
+}
+
+.side-bar ul a {
+    color: #31344b;
+    text-decoration: none;
+    display: block;
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 25px;
+    border-radius: 6px;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+    position: relative;
+    transition: all 0.2s ease;
+}
 
     .side-bar ul i {
         margin-right: 10px;
@@ -1788,8 +2111,12 @@ body .about-logo {
 
 /* Ideas section home page Styles End */
 /*******************************************************************************/
+
 /*أفنان*/
 /*Statistic page Styles Start */
+statidticsPage-container{
+    min-height: 100vh;
+}
 .sections-tabs-stat {
     display: flex;
     align-items: center;
@@ -1830,6 +2157,7 @@ body .about-logo {
     text-align: center;
 }
 /*Statistic page Styles End */
+/*******************************************************************************/
 
 /*adminData page Styles Start */
 .Admin-Page {
@@ -1903,8 +2231,13 @@ display: flex;
     }
 /*Admin data page Style End*/
 /*******************************************************************************/
+
+
 /*أفنان*/
 /* Consulting section home page Styles Start */
+.consultingPage-container {
+    min-height: 100vh;
+}
 .consultingPage {
     padding: 2vh;
     background-color: #F6F9FF;
@@ -2021,26 +2354,69 @@ div.card-header {
         height: 13vh;
     }
 
-
 /* Consulting section home page Styles End */
-
-
 /*******************************************************************************/
 
 
+/* Consultant Details Styles Start*/
+.consultantDetails-container {
+    position: relative;
+    margin: 3% 6.6%;
+    width: 80vw;
+    box-shadow: 5px 5px 10px #BEC3CC;
+    height: 80vh;
+    border-radius: 4vh;
+    min-height: 100vh;
+}
+.consultantDetails {
+    padding: 3%;
+}
+
+/*  <input type="date" name="consultantDate[]" class="consultantDate" size="50" placeholder="Date">
+.consultantDate[type=date] {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border: none;
+    border-radius: 0.5vh;
+    width: 22vw;
+    height: 6vh;
+    margin-top: 5%;
+    margin-right: 3%;
+}*/
+.Calendar1 {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
+    border: none;
+    border-radius: 0.5vh;
+    height: 27vh;
+    width: 25vw;
+    margin-right: 3%;
+    top: -133px;
+}
+.consultantDate-container {
+    display: inline-block;
+    margin-top: 11%;
+    margin-right: 9%;
+
+}
+.consultantTime-container {
+    display: inline-block;
+    box-shadow: 5px 5px 10px #BEC3CC;
+    height: 27vh;
+    width: 25vw;
+    border-radius: 4vh;
+    margin-right: 30vh;
+}
+
+
+/* Consultant Details Styles End*/
+/*******************************************************************************/
 /*بدور نياف */
 /* Consultation Booking Styles Start */
-
-
 /* Consultation Booking Styles End */
-
-
 /*******************************************************************************/
-
-
 /*ريناد*/
 /* Projects section home page Styles Start */
-
 .project {
     margin: 5%;
     background-color: #F6F9FF;
@@ -2095,6 +2471,9 @@ div.card-header {
 
 /*ريناد*/
 /* Add Project section page Styles Start */
+.add-project-container {
+    min-height: 100vh;
+}
 .add-project-area {
     margin: 2%;
     padding: 2%;
@@ -2235,28 +2614,215 @@ edit-delete-project-btn {
 /* Edit/Delete Project section page Styles End */
 /*******************************************************************************/
 
+/**************************************Add Idea Page Styles Start*************************************/
+.add-idea-page-content {
+    min-height: 100vh;
+}
 
-/* Shahad*/
+    .add-idea-page-content .add-idea-links-container {
+        display: flex;
+    }
+
+        .add-idea-page-content .add-idea-links-container > * {
+            text-decoration: none;
+            color: var(--Silver-Sand);
+            font-size: max(1vw, 2vh);
+        }
+
+        .add-idea-page-content .add-idea-links-container .active-link {
+            color: var(--Purple-Mountain-Majesty)
+        }
+
+
+    .add-idea-page-content .idea-name-container .idea-name,
+    .add-idea-page-content .idea-description-container .idea-description-label,
+    .add-idea-page-content .innovation-lab-technologies .innovation-lab-technologies-header {
+        font-size: max(1vw, 3.5vh);
+    }
+
+    .add-idea-page-content .idea-name-container .idea-name-field {
+        width: 50vh;
+        height: 5vh;
+        border-radius: 5px;
+        border: none;
+        box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+        background-color: var(--Ghost-White);
+    }
+
+    .add-idea-page-content .idea-description-container .idea-description-textarea {
+        width: 90vw;
+        border-radius: 5px;
+        border: none;
+        box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+        background-color: var(--Ghost-White);
+    }
+
+    .add-idea-page-content .innovation-lab-technologies {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+.innovation-lab-technologies .idea-checkbox-list-container {
+    display: flex;
+    justify-content: center;
+}
+
+    .innovation-lab-technologies .idea-checkbox-list-container .technology-list-item-container {
+        justify-content: center;
+    }
+
+.idea-checkbox-list-container .technology-list-item-container .technology-container {
+    height: 15vh;
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+    background-color: var(--Ghost-White);
+}
+
+
+.technology-list-item-container .technology-container .technology-checkbox-label {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.technology-container .technology-checkbox-label .technology-checkbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.technology-checkbox-label .technology-inner-container {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.technology-checkbox-label .technology-checkbox:checked ~ .technology-inner-container {
+    border: none;
+    box-shadow: inset 0px 2px 4px #BEC3CC;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.technology-checkbox-label .technology-inner-container .technology-name {
+    font-size: max(1vw, 2vh);
+    user-select: none;
+}
+
+.technology-checkbox-label .technology-checkbox:checked ~ .technology-inner-container .technology-name {
+    color: var(--Purple-Mountain-Majesty);
+}
+
+.technology-checkbox-label .technology-inner-container .tickmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 20px solid;
+    border-color: transparent;
+    display: none;
+}
+
+    .technology-checkbox-label .technology-inner-container .tickmark:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 20px;
+        height: 10px;
+        border: 3px solid;
+        border-color: transparent transparent #8378A8 #8378A8;
+        transform: rotate(-45deg);
+    }
+
+.technology-checkbox-label .technology-checkbox:checked ~ .technology-inner-container .tickmark {
+    display: block;
+}
+
+
+.technology-list-item-container .technology-container .technology-details-button-container {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.technology-container .technology-details-button-container .technology-details-button {
+    width: 10vh;
+    text-decoration: none;
+    text-align: center;
+    font-size: max(1vw, 2vh);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BEC3CC;
+    border-radius: 3px;
+    background-color: var(--Purple-Mountain-Majesty);
+}
+
+.add-idea-page-content .add-idea-page-buttons-container {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+    .add-idea-page-content .add-idea-page-buttons-container .add-idea-button,
+    .add-idea-page-content .add-idea-page-buttons-container .cancel-idea-button {
+        height: 4vh;
+        width: 10vh;
+        text-decoration: none;
+        text-align: center;
+        font-size: max(1vw, 2vh);
+        color: #000;
+        font-weight: bold;
+        border: none;
+        box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BEC3CC;
+        border-radius: 5px;
+        background-color: var(--Purple-Mountain-Majesty);
+    }
+
+/**************************************Add Idea Page Styles End*************************************/
+
+/* Shahad */
+
+
+.addIdea-container {
+    min-height: 85vh;
+}
+
 .buttons .buttonl {
     background-color: #8378A8;
     color: black;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 2.5vh;
     text-decoration: none;
-    padding: 11px 11px;
+    padding: 1vw 2vh;
     text-transform: capitalize;
     font-weight: 300;
-    border-radius: 10px;
+    border-radius: 1vw;
     border: none;
-    width: 100px;
-    margin-right: 20px;
+    width: 12vh;
+    height:7vh;
+    margin-right: 2vh;
 }
 
 .buttons {
-    margin-right: 800px;
+    margin-right: 55vh;
     position: relative;
+    margin-top:10vh;
 }
 
 
@@ -2264,9 +2830,11 @@ edit-delete-project-btn {
 .textarea {
     background: #F6F9FF;
     box-shadow: inset -3px -3px 10px #FFFFFF, inset 5px 5px 10px #BEC3CC;
-    border-radius: 10px;
+    border-radius: 1.5vh;
     border: none;
 }
+
+
 
 
 .topic {
@@ -2277,30 +2845,37 @@ edit-delete-project-btn {
 
 
 .add-idea {
-    padding-right: 50px;
+    padding-right: 10vh;
 }
 
-
+.Editdelete-Idea-container {
+    min-height: 85vh;
+}
 .Editdelete-idea {
-    padding-right: 50px;
+    padding-right: 10vh;
     position: relative;
 }
 
+
+.delete {
+    margin-right:4%;
+    margin-top: -7vh;
+}
 .deleteButton {
     background-color: #8378A8;
     color: black;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
+    font-size: 2.5vh;
     text-decoration: none;
-    padding: 11px 11px;
+    padding: 1vw 2vh;
     text-transform: capitalize;
     font-weight: 300;
-    border-radius: 10px;
+    border-radius: 1vw;
     border: none;
-    width: 100px;
-    margin-left: 50px;
+    width: 12vh;
+    height: 7vh;
+    margin-right: -18vh;
 }
 
 /*******************************************************************************/
