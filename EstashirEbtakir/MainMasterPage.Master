@@ -73,7 +73,6 @@
                                         <li class="dropdown-item-container"><a href="MyAppointmentsPage.aspx" class="dropdown-item">الاستشارت</a></li>
 
                                         <li class="dropdown-item-container">
-                                           <!--<a href="Home.aspx" class="dropdown-item" runat="server" onclick="logout_Click" type="button">تسجيل الخروج</a>-->
                                             <asp:Button ID="Button1" class="dropdown-item" runat="server" onclick="logout_Click" Text="تسجيل خروج" /> 
                                         </li>
 
@@ -116,7 +115,7 @@
                                     </li>
 
                                     <li class="dropdown-items p-lg-2">
-                                        <a class="dropdown-link" href="ParticipationsEventsAchievementsHomePage.aspx">الفعاليات والإنجازات</a>
+                                        <a class="dropdown-link" href="EventsHomePage.aspx">الفعاليات والإنجازات</a>
                                     </li>
 
                                 </ul>

@@ -71,6 +71,7 @@
     <Content Include="AboutUs.aspx" />
     <Content Include="AcceptIdeas.aspx" />
     <Content Include="AcceptProjects.aspx" />
+    <Content Include="AchievementsHomePage.aspx" />
     <Content Include="AddIdea.aspx" />
     <Content Include="AddParticipationEventAchievement.aspx" />
     <Content Include="AddProject.aspx" />
@@ -83,10 +84,12 @@
     <Content Include="ConsultantDetails.aspx" />
     <Content Include="ConsultationsSectionHomePage.aspx" />
     <Content Include="EditDeleteProject.aspx" />
+    <Content Include="EventsHomePage.aspx" />
     <Content Include="GetPassword.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
     <Content Include="Icons\instagram.png" />
+    <Content Include="Icons\Lightbulb.png" />
     <Content Include="Icons\snapchat.png" />
     <Content Include="Icons\twitter.png" />
     <Content Include="Icons\youtube.png" />
@@ -105,7 +108,6 @@
     <Content Include="Images\FilterList.png" />
     <Content Include="Images\Ideas.jpg" />
     <Content Include="Images\Innovation_Lab_Logo.png" />
-    <Content Include="Images\Lightbulb.png" />
     <Content Include="Images\Logo.jpg" />
     <Content Include="Images\Logo2.png" />
     <Content Include="Images\Profile_Icon.png" />
@@ -120,9 +122,9 @@
     <Content Include="MyAppointmentsPage.aspx" />
     <Content Include="MyIdeasPage.aspx" />
     <Content Include="MyProjectsPage.aspx" />
+    <Content Include="ParticipationsHomePage.aspx" />
     <Content Include="PromotingToConsaltantPage.aspx" />
     <Content Include="SignIn.aspx" />
-    <Content Include="ParticipationsEventsAchievementsHomePage.aspx" />
     <Content Include="PasswordChanged.aspx" />
     <Content Include="ProjectDetails.aspx" />
     <Content Include="ProjectsSectionHomePage.aspx" />
@@ -160,6 +162,13 @@
     </Compile>
     <Compile Include="AcceptProjects.aspx.designer.cs">
       <DependentUpon>AcceptProjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AchievementsHomePage.aspx.cs">
+      <DependentUpon>AchievementsHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AchievementsHomePage.aspx.designer.cs">
+      <DependentUpon>AchievementsHomePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="AddIdea.aspx.cs">
       <DependentUpon>AddIdea.aspx</DependentUpon>
@@ -216,6 +225,13 @@
     </Compile>
     <Compile Include="EditDeleteProject.aspx.designer.cs">
       <DependentUpon>EditDeleteProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventsHomePage.aspx.cs">
+      <DependentUpon>EventsHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventsHomePage.aspx.designer.cs">
+      <DependentUpon>EventsHomePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="GetPassword.aspx.cs">
       <DependentUpon>GetPassword.aspx</DependentUpon>
@@ -276,6 +292,13 @@
     <Compile Include="MyProjectsPage.aspx.designer.cs">
       <DependentUpon>MyProjectsPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ParticipationsHomePage.aspx.cs">
+      <DependentUpon>ParticipationsHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParticipationsHomePage.aspx.designer.cs">
+      <DependentUpon>ParticipationsHomePage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PromotingToConsaltantPage.aspx.cs">
       <DependentUpon>PromotingToConsaltantPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -296,13 +319,6 @@
     </Compile>
     <Compile Include="MainMasterPage.Master.designer.cs">
       <DependentUpon>MainMasterPage.Master</DependentUpon>
-    </Compile>
-    <Compile Include="ParticipationsEventsAchievementsHomePage.aspx.cs">
-      <DependentUpon>ParticipationsEventsAchievementsHomePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ParticipationsEventsAchievementsHomePage.aspx.designer.cs">
-      <DependentUpon>ParticipationsEventsAchievementsHomePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="PasswordChanged.aspx.cs">
       <DependentUpon>PasswordChanged.aspx</DependentUpon>

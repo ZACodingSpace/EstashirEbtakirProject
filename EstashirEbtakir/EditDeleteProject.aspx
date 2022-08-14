@@ -16,6 +16,12 @@
 
             <h4>نبذة عن المشروع</h4>
             <textarea class="about-project" id="aboutP" runat="server"></textarea>
+                       
+            <h4>التقنيات المستخدمة</h4>
+            <p id="techP"></p>
+            
+            <h4>صورة</h4>
+            <input type="file" id="img" runat="server"/>
 
             <h4>الكلية</h4>
             <input type="text" id="collegeP" runat="server"/>

@@ -50,7 +50,7 @@
                 <img src="Images/Events & Activities.jpg" class="d-block w-100" style="height: 70vh;" alt="...">
                 <div class="overlay"></div>
                 <div class="carousel-caption d-none d-md-flex flex-column h-50 align-items-start">
-                    <a href="ParticipationsEventsAchievementsHomePage.aspx" class="slide-button p-lg-2">الفعاليات والمشاركات</a>
+                    <a href="EventsHomePage.aspx" class="slide-button p-lg-2">الفعاليات والمشاركات</a>
                 </div>
             </div>
 
