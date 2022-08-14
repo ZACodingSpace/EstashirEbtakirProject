@@ -60,7 +60,7 @@
               </div>
 
             <div class="question mt-4">
-              <a href="Get-password.aspx" class="forget">هل نسيت كلمة المرور؟</a>
+              <a href="GetPassword.aspx" class="forget">هل نسيت كلمة المرور؟</a>
             </div>
 
           </div>
