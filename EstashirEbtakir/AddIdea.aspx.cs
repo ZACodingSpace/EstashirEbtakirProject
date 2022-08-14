@@ -52,14 +52,70 @@ namespace EstashirEbtakir
            
             if (VRtech.Checked == true)
             {
-                cmdTech.Parameters.AddWithValue("@userID", Session["id"]);
-                cmdTech.Parameters.AddWithValue("@IdeaName", ideaName);
-                cmdTech.Parameters.AddWithValue("@Brief", brief);
-                cmdTech.Parameters.AddWithValue("@State", 0);
+                cmdTech.Parameters.AddWithValue("@TechName", "نظارات الواقع الافتراضي");
+                cmdTech.Parameters.AddWithValue("@Type", "I");
+                cmdTech.Parameters.AddWithValue("@Idea_ID", brief);
             }
-           
-
-
+            if (ARtech.Checked == true)
+            {
+                cmdTech.Parameters.AddWithValue("@TechName", "تقنية الواقع المعزز");
+                cmdTech.Parameters.AddWithValue("@Type", "I");
+                cmdTech.Parameters.AddWithValue("@Idea_ID", brief);
+            }
+            if (Leaptech.Checked == true)
+            {
+                cmdTech.Parameters.AddWithValue("@TechName", "واجهات التفاعل الطبيعية");
+                cmdTech.Parameters.AddWithValue("@Type", "I");
+                cmdTech.Parameters.AddWithValue("@Idea_ID", brief);
+            }
+            if (secondlifetech.Checked == true)
+            {
+                cmdTech.Parameters.AddWithValue("@TechName", "العوالم الافتراضية");
+                cmdTech.Parameters.AddWithValue("@Type", "I");
+                cmdTech.Parameters.AddWithValue("@Idea_ID", brief);
+            }
+            if (AItech.Checked == true)
+            {
+                cmdTech.Parameters.AddWithValue("@TechName", "الذكاء الاصطناعي وتحليل البيانات");
+                cmdTech.Parameters.AddWithValue("@Type", "I");
+                cmdTech.Parameters.AddWithValue("@Idea_ID", brief);
+            }
+            if (robottech.Checked == true)
+            {
+                cmdTech.Parameters.AddWithValue("@TechName", "الروبوتيك");
+                cmdTech.Parameters.AddWithValue("@Type", "I");
+                cmdTech.Parameters.AddWithValue("@Idea_ID", brief);
+            }
+            if (hologramtech.Checked == true)
+            {
+                cmdTech.Parameters.AddWithValue("@TechName", "منصة العرض ثلاثية الأبعاد");
+                cmdTech.Parameters.AddWithValue("@Type", "I");
+                cmdTech.Parameters.AddWithValue("@Idea_ID", brief);
+            }
+            if (soundstudio.Checked == true)
+            {
+                cmdTech.Parameters.AddWithValue("@TechName", "استديو انتاج الصوت");
+                cmdTech.Parameters.AddWithValue("@Type", "I");
+                cmdTech.Parameters.AddWithValue("@Idea_ID", brief);
+            }
+            if (threeDprinttech.Checked == true)
+            {
+                cmdTech.Parameters.AddWithValue("@TechName", "طابعة ثلاثية الأبعاد");
+                cmdTech.Parameters.AddWithValue("@Type", "I");
+                cmdTech.Parameters.AddWithValue("@Idea_ID", brief);
+            }
+            if (virtualTours.Checked == true)
+            {
+                cmdTech.Parameters.AddWithValue("@TechName", "الجولات الافتراضية والمشاهد البانورامية");
+                cmdTech.Parameters.AddWithValue("@Type", "I");
+                cmdTech.Parameters.AddWithValue("@Idea_ID", brief);
+            }
+            if (eyeTrack.Checked == true)
+            {
+                cmdTech.Parameters.AddWithValue("@TechName", "جهاز تعقب حركة العين");
+                cmdTech.Parameters.AddWithValue("@Type", "I");
+                cmdTech.Parameters.AddWithValue("@Idea_ID", brief);
+            }
 
         }
         
