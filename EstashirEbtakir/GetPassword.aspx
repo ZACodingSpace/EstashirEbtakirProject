@@ -6,6 +6,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="get-password-container">
      <div class="get-password-form" >
           <div class="get-password" >استعادة كلمة المرور</div> 
         <br><br>
@@ -15,5 +16,5 @@
         </div>
         <br><br><br>
         <input class="send" type="submit" value="ارسال">
-    </div>
+    </div></div>
 </asp:Content>

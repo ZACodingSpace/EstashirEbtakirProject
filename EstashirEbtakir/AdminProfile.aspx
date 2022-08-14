@@ -11,7 +11,7 @@
             <div class="title">
                 <div class="logo">
                     <img src="Images/ProfileIcon.png" alt="..." />
-                    <input id="Fname" runat="server" type="text" class="text-field1" placeholder="الاسم الثنائي" readonly />
+                    <input id="name" runat="server" type="text" class="text-field1" placeholder="الاسم الثنائي" readonly />
                     <input id="job" runat="server" type="text" class="text-field1" placeholder="نوع المستخدم" readonly />
                 </div>
             </div>
@@ -34,24 +34,23 @@
                 <div class="profile-container">
                     <p>
                         الاسم:
-                        <input id="name" runat="server" type="text" class="text-field2" placeholder="الاسم الثنائي" readonly />
+                        <input id="name2" runat="server" type="text" class="text-field2" placeholder="الاسم الثنائي" readonly />
                     </p>
                     <p>
                         البريد الإلكتروني:
-                        <input id="email" runat="server" type="text" class="text-field2" placeholder="example@gmail.com"
-                            readonly />
+                        <input id="email" runat="server" type="text" class="text-field2" placeholder="example@gmail.com" readonly />
                     </p>
                     <p>
                         رقم الجوال:
-                        <input id="Text5" type="text" class="text-field2" placeholder="05xxxxxxxx" />
-                        <a href="#">تعديل
-                        </a>
+                        <input id="phone" runat="server" type="text" class="text-field2"/>
+                        <asp:Button ID="editPhone" runat="server" Text="تعديل" onclick="EditPhone_Click"/>
+                        <asp:Label ID="testchange" runat="server" Text="" ForeColor="Red"></asp:Label>
                     </p>
                     <p>
                         الرقم الوظيفي:
-                        <input id="adminID" runat="server" type="text" class="text-field2" placeholder="2220000" readonly />
+                        <input id="uniID" runat="server" type="text" class="text-field2" placeholder="2220000" readonly />
                     </p>
-                    <a href="#"><i class="fas fa-lock"></i> تغيير كلمة المرور </a>
+                    <a href="ChangePassword.aspx"><i class="fas fa-lock"></i> تغيير كلمة المرور </a>
                 </div>
             </div>
 

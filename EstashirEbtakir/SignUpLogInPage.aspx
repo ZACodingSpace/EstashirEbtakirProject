@@ -41,14 +41,14 @@
 
               <div class="logIn-email-container">
                 <asp:Label id="logInEmail" class="logIn-email" runat="server">البريد الالكتروني</asp:Label>
-                <input id="emailInputPlace" class="inputPlace mt-1" runat="server" type="email" name="logInEmail" required />
+                <input id="emailInputPlace" class="inputPlace mt-1" runat="server" type="email" name="logInEmail" />
                 <asp:Label id="logInEmailEmsg" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
               </div>
 
               <div class="logIn-password-container mt-3">
                 <asp:Label id="logInPassword" class="logIn-password" runat="server">كلمة المرور</asp:Label>
                 <input id="passwordInputPlace" class="inputPlace mt-1" runat="server" type="password" name="logInPassword"
-                  required />
+                   />
                 <asp:Label id="logInPasswordEmsg" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
               </div>
 
@@ -56,6 +56,7 @@
 
             <div class="logIn-button-container mt-5">
                 <asp:Button id="logInButton" onclick="login_Click" class="logIn-button p-0 ps-xl-5 pe-xl-5 ps-lg-4 pe-lg-4" runat="server" Text="تسجيل الدخول" /> 
+               
               </div>
 
             <div class="question mt-4">
@@ -74,34 +75,34 @@
             <div class="data m-0 p-0 pt-3">
 
               <div class="general-msg-error-container">
-                <asp:Label id="Label1" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
+                <asp:Label id="generalErorrMsg" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
               </div>
 
               <div class="signUp-Fname-container">
                 <asp:Label id="signUpFname" class="signUp-Fname" runat="server">الاسم الأول</asp:Label>
                 <input id="fNameInputPlace" class="inputPlace mt-1" runat="server" type="text" name="signUpFname"
-                  required />
+                   />
                 <asp:Label id="signUpFnameEmsg" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
               </div>
 
               <div class="signUp-Lname-container mt-3">
                 <asp:Label id="signUpLname" class="signUp-Lname" runat="server">الاسم الأخير</asp:Label>
                 <input id="lNameInputPlace" class="inputPlace mt-1" runat="server" type="text" name="signUpLname"
-                  required />
+                   />
                 <asp:Label id="signUpLnameEmsg" class="error-msg-place mt-1" runat="server" ForeColor="Red"></asp:Label>
               </div>
 
               <div class="signUp-email-container mt-3">
                 <asp:Label id="signUpEmail" class="signUp-email" runat="server">البريد الالكتروني</asp:Label>
                 <input id="email1" class="inputPlace mt-1" runat="server" type="email" name="signUpEmail"
-                  required />
+                   />
                 <asp:Label id="signUpEmailEmsg" class="error-msg-place mt-1" runat="server" ForeColor="Red"></asp:Label>
               </div>
 
               <div class="signUp-password-container mt-3">
                 <asp:Label id="signUpPassword" class="signUp-password" runat="server">كلمة المرور</asp:Label>
                 <input id="password1" class="inputPlace mt-1 mt-1" runat="server" type="password"
-                  name="signUpPassword" required />
+                  name="signUpPassword"  />
                 <asp:Label id="signUpPasswordEmsg" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
               </div>
 
@@ -109,7 +110,7 @@
                 <asp:Label id="signUpConfPassword" class="signUp-confPassword" runat="server">تأكيد كلمة المرور
                 </asp:Label>
                 <input id="confPasswordInputPlace" class="inputPlace mt-1" runat="server" type="password"
-                  name="signUpConfPassword" required />
+                  name="signUpConfPassword"  />
                 <asp:Label id="signUpConfPasswordEmsg" class="error-msg-place mt-1" runat="server" ForeColor="Red">
                 </asp:Label>
               </div>
@@ -128,7 +129,7 @@
                   name="stuDrRadioButton" value="yes" />
                 نعم
                 <input id="idNumber" class="inputPlace me-3" runat="server" type="text" name="idNumber"
-                  placeholder="الرقم الوظيفي/الجامعي" required />
+                  placeholder="الرقم الوظيفي/الجامعي"  />
               </asp:Label>
 
               <asp:Label id="stuDrNoLabel" class="stu-dr-no mt-3" runat="server">
