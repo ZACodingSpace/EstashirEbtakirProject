@@ -96,13 +96,16 @@ namespace EstashirEbtakir
 
         protected void Registration_Click(object sender, EventArgs e)
         {
-            //int universityid;
             string Fname = fNameInputPlace.Value;
             string Lname = lNameInputPlace.Value;
             string email = email1.Value;
             string pass = password1.Value;
             string pass2 = confPasswordInputPlace.Value;
             string universityid = "";
+            if (stuDrYesRadioButton.Checked == true)
+            {
+                universityid = idNumber.Value;
+            }
             signUpFnameEmsg.Text = "";
             signUpLnameEmsg.Text = "";
             signUpEmailEmsg.Text = "";
@@ -134,20 +137,13 @@ namespace EstashirEbtakir
                 signUpConfPasswordEmsg.Text = "لم يتم تأكيد كلمة المرور";
                 generalErorrMsg.Text = "الرجاء تعبئة جميع الحقول";
             }
+            else if(stuDrYesRadioButton.Checked == true && universityid.Length < 1)
+            {
+                generalErorrMsg.Text = "الرجاء تعبئة جميع الحقول";
+            }
             else
             {
-                if (stuDrYesRadioButton.Value == "yes")
-                {
-
-                    universityid = stuDrNoLabel.Text;
-                    if (universityid.Length < 1)
-                    {
-                        generalErorrMsg.Text = stuDrYesRadioButton.Value;
-                        //generalErorrMsg.Text = "الرجاء تعبئة جميع الحقول";
-                        //Page_Load(sender, e);
-                    }
-                }
-
+                
                 string str = getConstring();
                 con = new SqlConnection(str);
                 con.Open();
