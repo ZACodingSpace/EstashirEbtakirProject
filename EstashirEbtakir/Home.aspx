@@ -465,20 +465,30 @@
 
               <!-- Second Section of the card -->
               <div class="project-name-container row mt-3">
-                <h3 class="project-name" id="nameP" runat="server">اسم المشروع</h3>
+                <h3>
+                    <asp:Label ID="ProjName" runat="server" Text=""></asp:Label>
+                </h3>
               </div>
 
               <!-- Third Section of the card -->
               <div class="project-information-container row mt-3 p-0">
                 <div class="college-name-container row p-0">
                   <h6 class="college-label col-4 p-0">الكلية</h6>
-                  <h6 class="college-name col-8" id="collegeP" runat="server">كلية الحاسبات وتقنية المعلومات</h6>
+                  <h6 class="college-name col-8" id="collegeP" runat="server">
+                    
+                      <asp:Label ID="CollegeName" runat="server" Text="Remove This Text" ></asp:Label>
+                
+                  </h6>
                 </div>
 
                 <!-- Forth Section of the card -->
                 <div class="major-information-container row p-0">
                   <h6 class="major-label col-4 p-0">التخصص</h6>
-                  <h6 class="major-name col-8" id="majorP" runat="server">تقنية المعلومات</h6>
+                  <h6 class="major-name col-8" id="majorP" runat="server">
+                      
+                      <asp:Label ID="MajorName" runat="server" Text="" ></asp:Label>
+                
+                  </h6>
                 </div>
               </div>
 
