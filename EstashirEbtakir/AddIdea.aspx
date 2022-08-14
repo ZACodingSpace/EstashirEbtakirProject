@@ -39,7 +39,7 @@
                     <div class="technology-container col-lg-10 col-md-11 m-0 p-0">
 
                         <label class="technology-checkbox-label" for="VRtech">
-                            <input class="technology-checkbox" type="checkbox" id="VRtech" runat="server" checked="checkBox1_Checked">
+                            <input class="technology-checkbox" type="checkbox" id="VRtech" runat="server">
                             <span class="technology-inner-container">
                                 <span class="tickmark"></span>
                                 <span class="technology-name">نظارات الواقع الافتراضي</span>
