@@ -45,26 +45,24 @@ namespace EstashirEbtakir
             cmd.Parameters.AddWithValue("@IdeaName", ideaName);
             cmd.Parameters.AddWithValue("@Brief", brief);
             cmd.Parameters.AddWithValue("@State", 0);
-            //cmd2.Parameters.AddWithValue("@UniID", uniID.Value);
             cmd.ExecuteNonQuery();
-            SqlCommand cmd2 = new SqlCommand("SELECT IDENT_CURRENT(OurIdea)", con);
+            //SqlCommand cmd2 = new SqlCommand("SELECT IDENT_CURRENT(OurIdea)", con);
             //ID = cmd2.ExecuteReader();
+            SqlCommand cmdTech = new SqlCommand("INSERT INTO Technologies(tech_name, type, ID) VALUES(@TechName,@Type, @Idea_ID)", con);
+           
+            if (VRtech.Checked == true)
+            {
+                cmdTech.Parameters.AddWithValue("@userID", Session["id"]);
+                cmdTech.Parameters.AddWithValue("@IdeaName", ideaName);
+                cmdTech.Parameters.AddWithValue("@Brief", brief);
+                cmdTech.Parameters.AddWithValue("@State", 0);
+            }
+           
+
+
 
         }
-        protected void checkBox1_Checked(object sender, EventArgs e)
-        {
-        }
-
-        protected void checkBox2_Checked(object sender, EventArgs e)
-        {
-        }
-
-        protected void checkBox3_Checked(object sender, EventArgs e)
-        {
-        }
-
-        protected void checkBox4_Checked(object sender, EventArgs e)
-        {
-        }
+        
+        
     }
 }
