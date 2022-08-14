@@ -30,19 +30,29 @@ namespace EstashirEbtakir
             }
             else
             {
-                //MessageBox.Show(Session["id"]+" ");
                 userInformationContainer.Visible = true;
-                profileUserLinkButton.Text = "   "+(string)Session["name"]+"  ";
+                profileUserLinkButton.Text = "   " + (string)Session["name"] + "  ";
                 signUpContainer.Visible = false;
             }
         }
+
         protected void logout_Click(object sender, EventArgs e)
         {
             Session.Clear();
-            //MessageBox.Show( "تم تسجيل خروجك بنجاح ");
-            //Page_Load(sender,e);
             Response.Redirect("Home.aspx");
         }
-
+        protected void profile_Click(object sender, EventArgs e)
+        {
+            string type = (string)Session["Type"];
+            if (type == "User")
+            {
+                Response.Redirect("UserProfile.aspx");
+            }
+            else
+            {
+                Response.Redirect("AdminProfile.aspx");
+            }
+            
         }
+    }    
 }
