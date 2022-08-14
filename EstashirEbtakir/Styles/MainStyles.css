@@ -274,10 +274,10 @@ footer {
 /*******************************************************************************/
 
 
-/*زهرة*/
-/* Home Page Styles Start */
+/**************************************Home Page Styles Start*************************************/
 
 /* Carousel (slideshow) Start */
+
 .carousel-inner .carousel-item .overlay {
     position: absolute;
     top: 0;
@@ -305,11 +305,19 @@ footer {
     .carousel-item .carousel-caption .slide-button:hover {
         color: #000;
         border-radius: 5px;
-        background-color: var(--Purple-Mountain-Majesty);
+        background-color: var(--Bright-Lilac);
         cursor: pointer;
     }
 
+.carousel .carousel-control-prev:hover,
+.carousel .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 /* Carousel (slideshow) End */
+
+
+/* Innovation Lab Description Styles Start */
 
 .description-container {
     display: flex;
@@ -333,7 +341,69 @@ footer {
     font-size: max(1vw, 3.5vh);
 }
 
-/* Home Page Styles End */
+/* Innovation Lab Description Styles End */
+
+
+/* sections footer styles start */
+
+.tab-content .tab-pane .go-to-sections-homepage-container-area {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tab-pane .go-to-sections-homepage-container-area .go-to-ideas-homepage-container,
+.tab-pane .go-to-sections-homepage-container-area .go-to-consultancies-homepage-container,
+.tab-pane .go-to-sections-homepage-container-area .go-to-projects-homepage-container,
+.tab-pane .go-to-sections-homepage-container-area .go-to-events-homepage-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.go-to-sections-homepage-container-area .go-to-ideas-homepage-container .go-to-ideas-homepage {
+    font-size: max(1vw, 3vh);
+    color: var(--Purple-Mountain-Majesty);
+}
+
+.go-to-sections-homepage-container-area .go-to-consultancies-homepage-container .go-to-consultancies-homepage {
+    font-size: max(1vw, 3vh);
+    color: var(--Lavender-Floral);
+}
+
+.go-to-sections-homepage-container-area .go-to-projects-homepage-container .go-to-projects-homepage {
+    font-size: max(1vw, 3vh);
+    color: var(--French-Pink);
+}
+
+.go-to-sections-homepage-container-area .go-to-events-homepage-container .go-to-events-homepage {
+    font-size: max(1vw, 3vh);
+    color: var(--Melon);
+}
+
+.go-to-sections-homepage-container-area .go-to-ideas-homepage-container .fa-arrow-left-long {
+    font-size: max(1vw, 3vh);
+    color: var(--Purple-Mountain-Majesty);
+}
+
+.go-to-sections-homepage-container-area .go-to-consultancies-homepage-container .fa-arrow-left-long {
+    font-size: max(1vw, 3vh);
+    color: var(--Lavender-Floral);
+}
+
+.go-to-sections-homepage-container-area .go-to-projects-homepage-container .fa-arrow-left-long {
+    font-size: max(1vw, 3vh);
+    color: var(--French-Pink);
+}
+
+.go-to-sections-homepage-container-area .go-to-events-homepage-container .fa-arrow-left-long {
+    font-size: max(1vw, 3vh);
+    color: var(--Melon);
+}
+
+/* sections footer styles end */
+
+/**************************************Home Page Styles End*************************************/
+
 
 /**************************************Ideas, Consultations, & Project Pages Styles Start*************************************/
 /**************************************Events, Participations, & Achievements Pages Styles Start*************************************/
@@ -619,7 +689,6 @@ footer {
     color: #000;
 }
 
-
 /* كود مؤقت */
 
 .page-link {
@@ -631,9 +700,8 @@ footer {
 /**************************************Ideas, Consultations, & Project Pages Styles End*************************************/
 /**************************************Events, Participations, & Achievements Pages Styles End*************************************/
 
-/* Tabs Sections Styles Start */
 
-/* Tabs Styles */
+/**************************************Tabs General Styles Start*****************************************/
 
 .sections-tabs {
     display: flex;
@@ -646,23 +714,23 @@ footer {
         justify-content: center;
     }
 
-.nav-tabs .nav-item .nav-link,
-.log-in-form .question .forget {
+.nav-tabs .nav-item .nav-link {
     text-decoration: none;
+    font-size: max(1vw, 3vh);
     color: #000;
+    box-shadow: inset 0px -2px 4px #BEC3CC;
+    border-radius: 5px 5px 0px 0px;
+    background: #F6F9FF;
 }
 
     .nav-tabs .nav-item .nav-link.active {
-        background-color: #F6F9FF;
-        box-shadow: inset 0px 1px 2px #BEC3CC;
-        border-radius: 3px 3px 0px 0px;
+        font-weight: bold;
+        box-shadow: inset 0px 2px 4px #BEC3CC;
+        border-radius: 5px 5px 0px 0px;
+        background: #F6F9FF;
     }
 
-.nav-tabs .nav-item .nav-link {
-    background-color: #F6F9FF;
-    box-shadow: inset 0px -1px 2px #BEC3CC;
-    border-radius: 3px 3px 0px 0px;
-}
+/**************************************Tabs General Styles End*****************************************/
 
 
 /* General Styles for Cards Start*/
@@ -942,7 +1010,7 @@ footer {
         /* Tabs Style */
 
         .signUp-logIn-page-content .signUp-logIn-content-container .nav-tabs {
-            width: 40vh;
+            width: 65vh;
             display: flex;
             justify-content: center;
         }
@@ -954,7 +1022,7 @@ footer {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 50vh;
+            width: 70vh;
             box-shadow: -4px 0px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
             border-radius: 10px;
             background-color: var(--Ghost-White);
@@ -991,8 +1059,8 @@ footer {
 .logIn-form .data .inputPlace,
 .signUp-form .data .inputPlace,
 .user-type-container .stu-dr-yes .inputPlace {
-    width: 30vh;
-    height: 4.5vh;
+    width: 50vh;
+    height: 5vh;
     border-radius: 5px;
     border: none;
     box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
@@ -1010,7 +1078,7 @@ input:checked + .inputPlace  {
 
 .logIn-form .data .error-msg-place,
 .signUp-form .data .error-msg-place {
-    width: 40vh;
+    width: 60vh;
     height: 3vh;
     display: block;
     white-space: nowrap;
@@ -1024,7 +1092,7 @@ input:checked + .inputPlace  {
 
 /* Form Second Section */
 .signUp-content-container .signUp-form .user-type-container {
-    width: 30vh;
+    width: 45vh;
     display: flex;
     flex-direction: column;
 }
