@@ -467,7 +467,9 @@
               <div class="project-name-container row mt-3">
                 <h3>
                     <asp:Label ID="ProjName" runat="server" Text=""></asp:Label>
-                </h3>
+             <!--   This will make error
+                 <asp:Label ID="ProjName" runat="server" Text="<%# Eval("projectName") %>"></asp:Label> -->
+                    </h3>
               </div>
 
               <!-- Third Section of the card -->
