@@ -9,6 +9,7 @@
 
     <div class="add-idea-page-content row mt-xl-1 ps-xl-5 pe-xl-5 mt-lg-1 ps-lg-4 pe-lg-4 mt-md-5 ps-md-4 pe-md-4 ">
 
+                   
         <div class="add-idea-links-container pe-xl-5 pt-xl-3 pe-lg-4 pt-lg-2 pe-md-3 pt-md-3">
             <a class="m-0 p-0" href="Home.aspx">الرئيسية</a>
             <span class="m-0 p-0">/</span>
@@ -18,7 +19,6 @@
             <span class="m-0 p-0">/</span>
             <a class="m-0 p-0 active-link" href="AddIdea.aspx">إضافة فكرة</a>
         </div>
-
         <div class="idea-name-container p-xl-5 p-lg-4 pt-md-5">
             <h4 class="idea-name">اسم الفكرة</h4>
             <input type="text" class="idea-name-field" id="ideaNameField" runat="server">
