@@ -20,8 +20,6 @@ namespace EstashirEbtakir {
                 con.Open();
 
                 // get the session id ( user id )
-                //string sessionIDstr = HttpContext.Current.Session["id"];
-                //int sessionID = int.Parse( (string) Session["id"]);
 
                 // get admin info from DB
                 SqlCommand cmd = new SqlCommand("select * from OurUser where User_ID='" + Session["id"] + "'", con);
@@ -58,7 +56,6 @@ namespace EstashirEbtakir {
                     con.Open();
 
                     // get the session id ( user id )
-                    //int sessionID = int.Parse( (string) Session["id"]);
 
                     // get admin info from DB
                     SqlCommand cmd = new SqlCommand("UPDATE OurUser SET Phone=" + phoneNum + " WHERE User_ID='" + Session["id"] + "'", con);
