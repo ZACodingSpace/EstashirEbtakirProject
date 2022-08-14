@@ -42,13 +42,13 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div3;
 
         /// <summary>
-        /// nameP control.
+        /// ProjName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl nameP;
+        protected global::System.Web.UI.WebControls.Label ProjName;
 
         /// <summary>
         /// collegeP control.
@@ -60,6 +60,15 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl collegeP;
 
         /// <summary>
+        /// CollegeName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label CollegeName;
+
+        /// <summary>
         /// majorP control.
         /// </summary>
         /// <remarks>
@@ -67,6 +76,15 @@ namespace EstashirEbtakir
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl majorP;
+
+        /// <summary>
+        /// MajorName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label MajorName;
 
         /// <summary>
         /// H1 control.
