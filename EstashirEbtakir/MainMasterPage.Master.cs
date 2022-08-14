@@ -15,7 +15,7 @@ namespace EstashirEbtakir
 {
     public partial class MainMasterPage : System.Web.UI.MasterPage
     {
-        SqlConnection con;
+        //SqlConnection con;
         public string getConstring()
         {
             string constr = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;

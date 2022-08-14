@@ -33,7 +33,7 @@ namespace EstashirEbtakir
             return constr;
         }
 
-        protected void login_Click(object sender, EventArgs e, Window window)
+        protected void login_Click(object sender, EventArgs e)
         {
             string email = emailInputPlace.Value;
             string pass = passwordInputPlace.Value;
