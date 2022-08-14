@@ -75,7 +75,7 @@
             <div class="data m-0 p-0 pt-3">
 
               <div class="general-msg-error-container">
-                <asp:Label id="Label1" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
+                <asp:Label id="generalErorrMsg" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
               </div>
 
               <div class="signUp-Fname-container">

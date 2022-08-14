@@ -21,10 +21,10 @@ namespace EstashirEbtakir {
 
                 // get the session id ( user id )
                 //string sessionIDstr = HttpContext.Current.Session["id"];
-                int sessionID = int.Parse( (string) Session["id"]);
+                //int sessionID = int.Parse( (string) Session["id"]);
 
                 // get admin info from DB
-                SqlCommand cmd = new SqlCommand("select * from OurUser where User_ID='" + sessionID + "'", con);
+                SqlCommand cmd = new SqlCommand("select * from OurUser where User_ID='" + Session["id"] + "'", con);
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 if (reader.Read()) {
@@ -60,7 +60,7 @@ namespace EstashirEbtakir {
                     int sessionID = int.Parse( (string) Session["id"]);
 
                     // get admin info from DB
-                    SqlCommand cmd = new SqlCommand("UPDATE OurUser SET Phone='" + phoneNum + "' WHERE User_ID='" + sessionID + "'", con);
+                    SqlCommand cmd = new SqlCommand("UPDATE OurUser SET Phone='" + phoneNum + "' WHERE User_ID='" + Session["id"] + "'", con);
                     cmd.ExecuteNonQuery();
 
                     //for test
