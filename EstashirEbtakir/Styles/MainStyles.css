@@ -1146,21 +1146,34 @@ input:checked + .inputPlace  {
     text-align: justify-all;
 }
 
-.Accept .accepBtn {
+.accepBtns-container{
+    
     display: flex;
-    width: 100px;
-    height: 40px;
-    border: none;
-    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
-    border-radius: 10px;
-    background-color: #FE799D;
-    text-align: center;
+    justify-content:flex-end;
 }
 
-.Accept h1 {
-    color: #8378A8;
-    font-weight: bold;
-}
+    .accepBtns-container .accepBtn-container {
+       
+        font-weight: bold;
+        font-size: max(1vw, 2vh);
+        border: none;
+        box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+        border-radius: 5px;
+        background-color: #FE799D;
+    }
+        .accepBtns-container .accepBtn-container .accepBtn {
+           
+            font-weight: bold;
+            font-size: max(1vw, 2vh);
+            border: none;
+            background-color: #FE799D;
+        }
+
+
+        .Accept h1 {
+            color: #8378A8;
+            font-weight: bold;
+        }
 
 /*.accepForm input {
     width: 300px;
