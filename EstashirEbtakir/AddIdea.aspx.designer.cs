@@ -24,6 +24,15 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlInputText ideaNameField;
 
         /// <summary>
+        /// done control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label done;
+
+        /// <summary>
         /// ideaDescriptionTextarea control.
         /// </summary>
         /// <remarks>
@@ -132,13 +141,13 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox eyeTrack;
 
         /// <summary>
-        /// addIdeaButton control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton addIdeaButton;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
         /// cancelIdeaButton control.
