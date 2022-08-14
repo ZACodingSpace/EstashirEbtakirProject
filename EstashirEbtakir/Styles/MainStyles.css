@@ -2491,6 +2491,7 @@ div.card-header {
 
     .add-project-page-content .project-name-container .project-name,
     .add-project-page-content .project-description-container .project-description-label,
+    .add-project-page-content .project-members-container .project-members-label,
     .add-project-page-content .project-college-container .project-college,
     .add-project-page-content .project-pic-container .project-pic,
     .add-project-page-content .project-major-container .project-major,
@@ -2523,6 +2524,13 @@ div.card-header {
     box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
     background-color: var(--Ghost-White);
 }
+    .add-project-page-content .project-members-container .project-members-textarea {
+        width: 50vw;
+        border-radius: 5px;
+        border: none;
+        box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+        background-color: var(--Ghost-White);
+    }
 
 .project-project-page-content .innovation-lab-technologies-project {
     display: flex;
