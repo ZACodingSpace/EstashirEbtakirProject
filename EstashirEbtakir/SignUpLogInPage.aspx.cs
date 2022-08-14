@@ -63,19 +63,22 @@ namespace EstashirEbtakir
 
                 SqlDataAdapter sda = new SqlDataAdapter("select * from OurUser where Email='" + email.Trim() + "'" , con);
                 SqlDataAdapter sda2 = new SqlDataAdapter("select * from OurAdmin where Email='" + email.Trim() + "'", con);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                sda2.Fill(dt);
-
-                if (dt.Rows.Count == 1)
+                DataTable dtU = new DataTable();
+                sda.Fill(dtU);
+                DataTable dtA = new DataTable();
+                sda2.Fill(dtA);
+                //MessageBox.Show(dtA.Rows.ToString());
+                //generalEmsg.Text = dtA.Rows.ToString();
+                if (dtU.Rows.Count == 1)
                 {
-                    string userEmail = (string)dt.Rows[0].ItemArray[4];
-                    string username = (string)dt.Rows[0].ItemArray[1] + " " + (string)dt.Rows[0].ItemArray[2];
-                    string userpassword = (string)dt.Rows[0].ItemArray[3];
+                    string userEmail = (string)dtU.Rows[0].ItemArray[4];
+                    string username = (string)dtU.Rows[0].ItemArray[1] + " " + (string)dtU.Rows[0].ItemArray[2];
+                    string userpassword = (string)dtU.Rows[0].ItemArray[3];
                     if (userEmail == email && userpassword == pass)
                     {
-                        Session["id"] = dt.Rows[0].ItemArray[0];
+                        Session["id"] = dtU.Rows[0].ItemArray[0];
                         Session["name"] = username;
+                        Session["Type"] = "User";
                         Response.Redirect("Home.aspx");
 
                     }
@@ -84,6 +87,26 @@ namespace EstashirEbtakir
                         logInPasswordEmsg.Text = "كلمة المرور غير صحيحة";
 
                     }
+                }
+                else if (dtA.Rows.Count == 1)
+                {
+                    string AdminEmail = (string)dtA.Rows[0].ItemArray[4];
+                    string Adminname = (string)dtA.Rows[0].ItemArray[1] + " " + (string)dtA.Rows[0].ItemArray[2];
+                    string Adminpassword = (string)dtA.Rows[0].ItemArray[3];
+                    if (AdminEmail == email && Adminpassword == pass)
+                    {
+                        Session["id"] = dtA.Rows[0].ItemArray[0];
+                        Session["name"] = Adminname;
+                        Session["Type"] = "Admin";
+                        Response.Redirect("Home.aspx");
+
+                    }
+                    else
+                    {
+                        logInPasswordEmsg.Text = "كلمة المرور غير صحيحة";
+
+                    }
+
                 }
                 else
                 {
