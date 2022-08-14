@@ -134,16 +134,20 @@ namespace EstashirEbtakir
                 signUpConfPasswordEmsg.Text = "لم يتم تأكيد كلمة المرور";
                 generalErorrMsg.Text = "الرجاء تعبئة جميع الحقول";
             }
-            else if (stuDrYesRadioButton.Value == "yes")
-            {
-                universityid = stuDrNoLabel.Text;
-                if (universityid.Length < 1)
-                {
-                    generalErorrMsg.Text = "الرجاء تعبئة جميع الحقول";
-                }
-            }
             else
             {
+                if (stuDrYesRadioButton.Value == "yes")
+                {
+
+                    universityid = stuDrNoLabel.Text;
+                    if (universityid.Length < 1)
+                    {
+                        generalErorrMsg.Text = stuDrYesRadioButton.Value;
+                        //generalErorrMsg.Text = "الرجاء تعبئة جميع الحقول";
+                        //Page_Load(sender, e);
+                    }
+                }
+
                 string str = getConstring();
                 con = new SqlConnection(str);
                 con.Open();
