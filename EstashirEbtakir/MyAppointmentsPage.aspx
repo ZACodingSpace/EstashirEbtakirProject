@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="MyAppointmentsPage.aspx.cs" Inherits="EstashirEbtakir.MyAppointmentsPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ProfileMasterPage.Master" AutoEventWireup="true" CodeBehind="MyAppointmentsPage.aspx.cs" Inherits="EstashirEbtakir.MyAppointmentsPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -6,141 +6,79 @@
         <div class="side-bar col-3 m-0">
             <div class="title">
                 <div class="logo">
-                    <img src="Images/ProfileIcon.png" alt="..." />
-                    <input id="Text1" type="text" class="text-field1" placeholder="الاسم الثنائي" readonly />
-                    <input id="Text2" type="text" class="text-field1" placeholder="نوع المستخدم" readonly />
+                    <img class="img-fluid" src="Images/Profile_Icon.png" alt="..." />
+                    <input id="name" runat="server" type="text" class="text-field1" placeholder="الاسم الثنائي" readonly />
+                    <input id="job" runat="server" type="text" class="text-field1" placeholder="نوع المستخدم" readonly />
                 </div>
             </div>
             <ul>
-                <li><a href="#"><i class="fas fa-id-card"></i> معلومات الحساب </a></li>
-                <li><a href="#"><i class="fas fa-lightbulb"></i> أفكاري </a></li>
-                <li><a class="active" href="#"><i class="fas fa-calendar-check"></i> مواعيدي </a></li>
-                <li><a href="#"><i class="fas fa-file-alt"></i> مشاريعي </a></li>
-                <li><a href="#"><i class="fas fa-award"></i> الترقية لمستشار </a></li>
+                <li><a href="UserProfile.aspx"><i class="fas fa-id-card"></i>معلومات الحساب </a></li>
+                <li><a href="MyIdeasPage.aspx"><i class="fas fa-lightbulb"></i>أفكاري </a></li>
+                <li><a class="active" href="MyAppointmentsPage.aspx"><i class="fas fa-calendar-check"></i>مواعيدي </a></li>
+                <li><a href="MyProjectsPage.aspx"><i class="fas fa-file-alt"></i>مشاريعي </a></li>
             </ul>
         </div>
 
         <div class="left-side col-9 m-0">
 
+            <div class="row behined-navbar-profile"></div>
+
             <div class="profile-path">الرئيسية/ الملف الشخصي/ مواعيدي</div>
-           <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5 ps-lg-5 pe-lg-5">
 
-          <!-- Cards -->
+            <div class="tabs-content-container row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 mt-lg-5 p-5">
 
-          <!-- Project Card -->
-          <div class="idea-card-container col p-xl-4 p-lg-3">
-            <div class="idea-card p-lg-1">
+                <!-- Cards -->
 
-              <!-- First Section of the card -->
-              <div class="idea-logo-container row m-0 p-3 ps-5 pe-5">
-                <img src="Images/lightbulb.png" alt="Logo">
-              </div>
+                <!-- Idea Card -->
+                <div class="idea-card-container col p-xl-3 p-lg-2">
+                    <div class="idea-card">
 
-              <!-- Second Section of the card -->
-              <div class="idea-name-container row">
-                <h5>الموعد</h5>
-              </div>
+                         <!-- First Section of the card -->
+                        <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
+                            <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png" alt="Logo">
+                        </div>
+                        <!-- Second Section of the card -->
+                        <div class="idea-name-container row">
+                            <h4 class="idea-name">الموعد</h4>
+                        </div>
+                        <!-- Third Section of the card -->
+                        <div class="idea-description-container">
+                            <p class="idea-description m-0 col-8">تفاصيل الموعد </p>
+                        </div>
+                        <!-- Last Section of the card -->
+                        <div class="idea-description-container">
+                            <p class="idea-description m-0 col-8">تفاصيل الموعد </p>
+                        </div>
+                    </div>
+                  </div>
+
+                <!-- Idea Card -->
+                <div class="idea-card-container col p-xl-3 p-lg-2">
+                    <div class="idea-card">
+
+                        <!-- First Section of the card -->
+                        <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
+                            <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png" alt="Logo">
+                        </div>
+                        <!-- Second Section of the card -->
+                        <div class="idea-name-container row">
+                            <h4 class="idea-name">الموعد</h4>
+                        </div>
+                        <!-- Third Section of the card -->
+                        <div class="idea-description-container">
+                            <p class="idea-description m-0 col-8">تفاصيل الموعد </p>
+                        </div>
+                        <!-- Last Section of the card -->
+                        <div class="idea-description-container">
+                            <p class="idea-description m-0 col-8">تفاصيل الموعد </p>
+                        </div>
+
+                    </div>
+                </div>
 
 
-              <!-- Third Section of the card -->
-              <div class="idea-description-container">
-                <p class="idea-description m-0 col-8">  تفاصيل الموعد  </p>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="crad-button-container row mt-4 mb-3">
-                <button class="details-button" formaction="#">تفاصيل الموعد</button>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Project Card -->
-          <div class="idea-card-container col p-xl-4 p-lg-6">
-            <div class="idea-card p-lg-1">
-
-              <!-- First Section of the card -->
-              <div class="idea-logo-container row m-0 p-3 ps-5 pe-5">
-                <img src="Images/lightbulb.png" alt="Logo">
-              </div>
-
-              <!-- Second Section of the card -->
-              <div class="idea-name-container row">
-                <h5>الموعد</h5>
-              </div>
-
-
-              <!-- Third Section of the card -->
-              <div class="idea-description-container">
-                <p class="idea-description m-0 col-8">  تفاصيل الموعد </p>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="crad-button-container row mt-4 mb-3">
-                <button class="details-button" formaction="#">تفاصيل الموعد</button>
-              </div>
 
             </div>
-          </div>
-
-          <!-- Project Card -->
-          <div class="idea-card-container col p-xl-4 p-lg-3">
-            <div class="idea-card p-lg-1">
-
-              <!-- First Section of the card -->
-              <div class="idea-logo-container row m-0 p-3 ps-5 pe-5">
-                <img src="Images/lightbulb.png" alt="Logo">
-              </div>
-
-              <!-- Second Section of the card -->
-              <div class="idea-name-container row">
-                <h5>الموعد</h5>
-              </div>
-
-
-              <!-- Third Section of the card -->
-              <div class="idea-description-container">
-                <p class="idea-description m-0 col-8">  تفاصيل الموعد  </p>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="crad-button-container row mt-4 mb-3">
-                <button class="details-button" formaction="#">تفاصيل الموعد</button>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Project Card -->
-          <div class="idea-card-container col p-xl-4 p-lg-3">
-            <div class="idea-card p-lg-1">
-
-              <!-- First Section of the card -->
-              <div class="idea-logo-container row m-0 p-3 ps-5 pe-5">
-                <img src="Images/lightbulb.png" alt="Logo">
-              </div>
-
-              <!-- Second Section of the card -->
-              <div class="idea-name-container row">
-                <h5>الموعد</h5>
-              </div>
-
-
-              <!-- Third Section of the card -->
-              <div class="idea-description-container">
-                <p class="idea-description m-0 col-8">  تفاصيل الموعد  </p>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="crad-button-container row mt-4 mb-3">
-                <button class="details-button" formaction="#">تفاصيل الموعد</button>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
         </div>
     </div>
 </asp:Content>
