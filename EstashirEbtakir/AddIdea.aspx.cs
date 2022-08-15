@@ -43,7 +43,6 @@ namespace EstashirEbtakir
             cmd.Parameters.AddWithValue("@IdeaBrief", brief);
             cmd.Parameters.AddWithValue("@State", 0);
             cmd.ExecuteNonQuery();
-            done.Text = "تمت إضافة الفكرة بنجاح";
             
             SqlDataAdapter sda = new SqlDataAdapter("select @@IDENTITY from OurIdea", con);
             DataTable dt = new DataTable();
@@ -109,6 +108,9 @@ namespace EstashirEbtakir
                 cmdTech.Parameters["@TechName"].Value = "جهاز تعقب حركة العين";
                 cmdTech.ExecuteNonQuery();
             }
+
+
+            done.Text = "تمت إضافة الفكرة بنجاح";
 
         }
         
