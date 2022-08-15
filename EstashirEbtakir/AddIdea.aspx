@@ -19,6 +19,7 @@
             <span class="m-0 p-0">/</span>
             <a class="m-0 p-0 active-link" href="AddIdea.aspx">إضافة فكرة</a>
         </div>
+
         <div class="idea-name-container p-xl-5 p-lg-4 pt-md-5">
             <h4 class="idea-name">اسم الفكرة</h4>
             <input type="text" class="idea-name-field" id="ideaNameField" runat="server">
