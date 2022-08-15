@@ -90,7 +90,17 @@
                                     <label for="abstrac">نبذة عن المشروع</label>
                                 </div>
                             </div>
+                            <div class="accepForm row ">
 
+                                <div class="col-6">
+
+                                    <label for="major">الكلية:</label>
+                                </div>
+                                <div class="col-6">
+
+                                    <label for="major">الكلية</label>
+                                </div>
+                            </div>
                             <div class="accepForm row ">
 
                                 <div class="col-6">
