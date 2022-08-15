@@ -27,15 +27,61 @@
 
 </head>
 <body dir="rtl">
+       <form id="form1" runat="server">
     <nav>
         <div class="nav-sections-container">
             <div class="row nav-rows-container">
 
                 <!-- Nav. bar first line -->
                 <div class="nav-line1">
-                    <div class="sign-up-container p-lg-2">
-                        <a href="signIn.aspx" class="sign-up-button btn  ps-lg-5 pe-lg-5">تسجيل الدخول </a>
+
+                    <div id="signUpContainer" runat="server" class="sign-up-container p-lg-2">
+                        <a href="SignUpLogInPage.aspx" class="sign-up-button btn  ps-lg-5 pe-lg-5">تسجيل الدخول </a>
                     </div>
+
+                    <div id="userInformationContainer" runat="server" class="user-information-container row p-lg-2">
+
+                        <div class="notification-icon-container col-1"><i class="fa-solid fa-bell"></i></div>
+
+                        <div class="profile-user-name-container p-0 ps-1 col-6">
+                            <asp:LinkButton ID="profileUserLinkButton" runat="server" class="profile-user-name m-0 p-0">رغد العتيبي</asp:LinkButton>
+                        </div>
+
+                        <div class="user-profile-img-container p-0 col-2">
+                            <img class="user-profile-img" src="Images/Profile_Icon.png" alt="profile img">
+                        </div>
+
+                        <div class="user-dropdown-container col-2">
+                            <div class="btn-group m-0 p-0">
+                                <button type="button" class="btn btn-secondary dropdown-toggle m-0 ps-2" data-bs-toggle="dropdown"
+                                    data-bs-display="static" aria-expanded="false">
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+
+                                    <li class="dropdown-item-container">
+                                        <asp:Button ID="Button2" class="dropdown-item" runat="server" OnClick="profile_Click" Text="معلومات الحساب" />
+                                        <!-- <a href="UserProfile.aspx" class="dropdown-item">معلومات الحساب</a> -->
+                                    </li>
+
+                                    <li class="dropdown-item-container">
+                                        <asp:Button ID="Button3" class="dropdown-item" runat="server" OnClick="MyIdea_Click" Text="أفكاري" />
+                                    </li>
+                                    <li class="dropdown-item-container">
+                                        <asp:Button ID="Button4" class="dropdown-item" runat="server" OnClick="MyProject_Click" Text="مشاريعي" /></li>
+                                    <li class="dropdown-item-container">
+                                        <asp:Button ID="Button5" class="dropdown-item" runat="server" OnClick="Myappointment_Click" Text="مواعيدي" />
+                                    </li>
+
+                                    <li class="dropdown-item-container">
+                                        <asp:Button ID="Button1" class="dropdown-item" runat="server" OnClick="logout_Click" Text="تسجيل خروج" />
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
 
                 <!-- Nav. bar second line -->
@@ -83,7 +129,7 @@
         </div>
     </nav>
 
-    <form id="form1" runat="server">
+ 
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
     </form>
