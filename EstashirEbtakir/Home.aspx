@@ -31,7 +31,7 @@
     <!-- Slides -->
     <div class="carousel-inner">
 
-      <!-- Statistics Slides -->
+      <!-- Statistics Slides 
       <div class="carousel-item active d-block w-100" id="Div1" runat="server" style="height: 70vh;">
   
       </div>
@@ -42,7 +42,7 @@
 
       <div class="carousel-item active d-block w-100" id="Div3" runat="server" style="height: 70vh;">
 
-      </div>
+      </div>-->
 
       <!-- Ideas Section Slide -->
       <div class="carousel-item">
