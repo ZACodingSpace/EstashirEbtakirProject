@@ -13,10 +13,10 @@
                 </div>
             </div>
             <ul>
-                <li><a href="UserProfile.aspx"><i class="fas fa-id-card"></i>معلومات الحساب </a></li>
-                <li><a class="active" href="MyIdeasPage.aspx"><i class="fas fa-lightbulb"></i>أفكاري </a></li>
-                <li><a href="MyAppointmentsPage.aspx"><i class="fas fa-calendar-check"></i>مواعيدي </a></li>
-                <li><a href="MyProjectsPage.aspx"><i class="fas fa-file-alt"></i>مشاريعي </a></li>
+                <li><a href="UserProfile.aspx"><i class="fas fa-id-card"></i> معلومات الحساب </a></li>
+                <li><a class="active" href="MyIdeasPage.aspx"><i class="fas fa-lightbulb"></i> أفكاري </a></li>
+                <li><a href="MyAppointmentsPage.aspx"><i class="fas fa-calendar-check"></i> مواعيدي </a></li>
+                <li><a href="MyProjectsPage.aspx"><i class="fas fa-file-alt"></i> مشاريعي </a></li>
             </ul>
         </div>
 
