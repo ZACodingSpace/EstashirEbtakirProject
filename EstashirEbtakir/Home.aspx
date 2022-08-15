@@ -20,18 +20,18 @@
       </button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4">
       </button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5">
+      <!--<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5">
       </button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6">
       </button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7">
-      </button>
+      </button>-->
     </div>
 
     <!-- Slides -->
     <div class="carousel-inner">
 
-      <!-- Statistics Slides -->
+      <!-- Statistics Slides 
       <div class="carousel-item active d-block w-100" id="Div1" runat="server" style="height: 70vh;">
   
       </div>
@@ -42,10 +42,10 @@
 
       <div class="carousel-item active d-block w-100" id="Div3" runat="server" style="height: 70vh;">
 
-      </div>
+      </div>-->
 
       <!-- Ideas Section Slide -->
-      <div class="carousel-item">
+      <div class="carousel-item active">
         <img src="Images/Ideas.jpg" class="d-block w-100" style="height: 70vh;" alt="ideas">
         <div class="overlay"></div>
         <div class="carousel-caption d-none d-md-flex flex-column h-50 align-items-start">
