@@ -21,7 +21,7 @@ namespace EstashirEbtakir
             con = new SqlConnection(GetConstring());
             con.Open();
 
-            var data = 
+            /*var data =*/ 
         }
 
 
