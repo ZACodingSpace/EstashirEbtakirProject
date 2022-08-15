@@ -16,10 +16,10 @@
                 </div>
             </div>
             <ul>
-                <li><a class="active" href="#"><i class="fas fa-id-card"></i> معلومات الحساب </a></li>
-                <li><a href="#"><i class="fa fa-line-chart"></i> الإحصائيات </a></li>
-                <li><a href="#"><i class="fas fa-lightbulb"></i> الأفكار </a></li>
-                <li><a href="#"><i class="fas fa-file-alt"></i> المشاريع </a></li>
+                <li><a class="active" href="AdminProfile.aspx"><i class="fas fa-id-card"></i> معلومات الحساب </a></li>
+                <li><a href="StatisticsPage.aspx"><i class="fa fa-line-chart"></i> الإحصائيات </a></li>
+                <li><a href="AcceptIdeas.aspx"><i class="fas fa-lightbulb"></i> الأفكار </a></li>
+                <li><a href="AcceptProjects.aspx"><i class="fas fa-file-alt"></i> المشاريع </a></li>
                 <li><a href="#"><i class="fas fa-comments"></i> الاستشارات </a></li>
             </ul>
         </div>
