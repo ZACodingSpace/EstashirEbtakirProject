@@ -73,8 +73,8 @@
                         <label class="technology-checkbox-label" for="VRtech">
                             <input class="technology-checkbox" type="checkbox" id="VRtech" runat="server" checked="checkBox1_Checked">
                             <span class="technology-inner-container">
-                                <span class="tickmark"></span>
-                                <span class="technology-name">نظارات الواقع الافتراضي</span>
+                                <span class="tickmarkP"></span>
+                                <span class="technology-nameP">نظارات الواقع الافتراضي</span>
                             </span>
                         </label>
 
@@ -90,8 +90,8 @@
                         <label class="technology-checkbox-label" for="ARtech">
                             <input class="technology-checkbox" type="checkbox" id="ARtech"  runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmark"></span>
-                                <span class="technology-name">تقنية الواقع المعزز</span>
+                                <span class="tickmarkP"></span>
+                                <span class="technology-nameP">تقنية الواقع المعزز</span>
                             </span>
                         </label>
 
@@ -108,8 +108,8 @@
                         <label class="technology-checkbox-label" for="Leaptech">
                             <input class="technology-checkbox" type="checkbox" id="Leaptech"  runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmark"></span>
-                                <span class="technology-name">واجهات التفاعل الطبيعية</span>
+                                <span class="tickmarkP"></span>
+                                <span class="technology-nameP">واجهات التفاعل الطبيعية</span>
                             </span>
                         </label>
 
@@ -126,8 +126,8 @@
                         <label class="technology-checkbox-label" for="secondlifetech">
                             <input class="technology-checkbox" type="checkbox" id="secondlifetech" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmark"></span>
-                                <span class="technology-name">العوالم الافتراضية</span>
+                                <span class="tickmarkP"></span>
+                                <span class="technology-nameP">العوالم الافتراضية</span>
                             </span>
                         </label>
 
@@ -144,8 +144,8 @@
                         <label class="technology-checkbox-label" for="AItech">
                             <input class="technology-checkbox" type="checkbox" id="AItech" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmark"></span>
-                                <span class="technology-name">الذكاء الاصطناعي وتحليل البيانات</span>
+                                <span class="tickmarkP"></span>
+                                <span class="technology-nameP">الذكاء الاصطناعي وتحليل البيانات</span>
                             </span>
                         </label>
 
@@ -163,8 +163,8 @@
                         <label class="technology-checkbox-label" for="robottech">
                             <input class="technology-checkbox" type="checkbox" id="robottech" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmark"></span>
-                                <span class="technology-name">الروبوتيك</span>
+                                <span class="tickmarkP"></span>
+                                <span class="technology-nameP">الروبوتيك</span>
                             </span>
                         </label>
 
@@ -182,8 +182,8 @@
                         <label class="technology-checkbox-label" for="hologramtech">
                             <input class="technology-checkbox" type="checkbox" id="hologramtech" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmark"></span>
-                                <span class="technology-name">منصة العرض ثلاثية الأبعاد</span>
+                                <span class="tickmarkP"></span>
+                                <span class="technology-nameP">منصة العرض ثلاثية الأبعاد</span>
                             </span>
                         </label>
 
@@ -200,8 +200,8 @@
                         <label class="technology-checkbox-label" for="soundstudio">
                             <input class="technology-checkbox" type="checkbox" id="soundstudio" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmark"></span>
-                                <span class="technology-name">استديو انتاج الصوت</span>
+                                <span class="tickmarkP"></span>
+                                <span class="technology-nameP">استديو انتاج الصوت</span>
                             </span>
                         </label>
 
@@ -218,8 +218,8 @@
                         <label class="technology-checkbox-label" for="threeDprinttech">
                             <input class="technology-checkbox" type="checkbox" id="threeDprinttech" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmark"></span>
-                                <span class="technology-name">طابعة ثلاثية الأبعاد</span>
+                                <span class="tickmarkP"></span>
+                                <span class="technology-nameP">طابعة ثلاثية الأبعاد</span>
                             </span>
                         </label>
 
@@ -238,8 +238,8 @@
                         <label class="technology-checkbox-label" for="virtualTours">
                             <input class="technology-checkbox" type="checkbox" id="virtualTours" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmark"></span>
-                                <span class="technology-name">الجولات الافتراضية والمشاهد البانورامية</span>
+                                <span class="tickmarkP"></span>
+                                <span class="technology-nameP">الجولات الافتراضية والمشاهد البانورامية</span>
                             </span>
                         </label>
 
@@ -257,8 +257,8 @@
                         <label class="technology-checkbox-label" for="eyeTrack">
                             <input class="technology-checkbox" type="checkbox" id="eyeTrack" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmark"></span>
-                                <span class="technology-name">جهاز تعقب حركة العين</span>
+                                <span class="tickmarkP"></span>
+                                <span class="technology-nameP">جهاز تعقب حركة العين</span>
                             </span>
                         </label>
 

@@ -2035,6 +2035,118 @@ body .about-logo {
 /* My Project Pages Styles Start */
 
 
+
+.tabs-content-container .project-card-container .project-card,
+.tabs-content-container .idea-card-container .idea-card,
+.tabs-content-container .consultation-card-container .consultation-card,
+.tabs-content-container .event-card-container .event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--Ghost-White);
+}
+
+.project-card-container .project-card .project-name-container,
+.idea-card-container .idea-card .idea-name-container,
+.consultation-card-container .consultation-card .counselor-name-container,
+.event-img-container .overlay-content-container .event-name-container {
+    width: 100%;
+}
+
+.project-card .project-name-container .project-name,
+.idea-card .idea-name-container .idea-name,
+.consultation-card .counselor-name-container .counselor-name,
+.event-img-container .overlay-content-container .event-name {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: max(2vw, 3vh);
+}
+
+.project-card .card-button-container .project-details-button,
+.idea-card .card-button-container .idea-details-button,
+.consultation-card .card-button-container .consultation-details-button,
+.consultation-card .card-button-container .consultation-booking-button,
+.event-img-container .overlay-content-container .event-details-button {
+    font-weight: bold;
+    font-size: max(1vw, 2vh);
+}
+
+
+.project-card-container .project-card .card-button-container,
+.idea-card-container .idea-card .card-button-container,
+.event-card .event-img-container .overlay-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card .card-button-container .project-details-button,
+.idea-card .card-button-container .idea-details-button,
+.consultation-card .card-button-container .consultation-details-button,
+.consultation-card .card-button-container .consultation-booking-button {
+    height: 2.5vw;
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+}
+
+/* General Styles for Cards End*/
+
+
+
+/* Specific Styles for Each Section Start*/
+
+/* Project */
+.project-card-container .project-card .project-logo-container {
+    border-radius: 5px 5px 0 0;
+}
+
+.project-card .project-logo-container .Project-logo {
+    height: 25vh;
+    width: 100vh;
+    border-radius: 5px 5px 0 0;
+}
+
+.project-card-container .project-card .project-information-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card .project-information-container .college-name-container,
+.project-card .project-information-container .major-information-container {
+    width: 90%;
+    display: flex;
+}
+
+.project-information-container .college-name-container .college-label,
+.project-information-container .major-information-container .major-label {
+    text-align: right;
+    font-weight: bold;
+    font-size: max(1.2vw, 2vh);
+}
+
+.project-information-container .college-name-container .college-name,
+.project-information-container .major-information-container .major-name {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+
+.project-card .card-button-container .project-details-button {
+    background-color: var(--French-Pink);
+}
+
+
 /* My Project Pages Styles End */
 
 
@@ -2582,16 +2694,16 @@ div.card-header {
     border-radius: 5px 5px 0px 0px;
 }
 
-.technology-checkbox-label .technology-inner-container .technology-name {
+.technology-checkbox-label .technology-inner-container .technology-nameP {
     font-size: max(1vw, 2vh);
     user-select: none;
 }
 
-.technology-checkbox-label .technology-checkbox:checked ~ .technology-inner-container .technology-name {
+.technology-checkbox-label .technology-checkbox:checked ~ .technology-inner-container .technology-nameP {
     color: var(--French-Pink);
 }
 
-.technology-checkbox-label .technology-inner-container .tickmark {
+.technology-checkbox-label .technology-inner-container .tickmarkP {
     position: absolute;
     top: 0;
     left: 0;
@@ -2600,7 +2712,7 @@ div.card-header {
     display: none;
 }
 
-    .technology-checkbox-label .technology-inner-container .tickmark:before {
+    .technology-checkbox-label .technology-inner-container .tickmarkP:before {
         content: "";
         position: absolute;
         top: -10px;
@@ -2608,11 +2720,11 @@ div.card-header {
         width: 20px;
         height: 10px;
         border: 3px solid;
-        border-color: transparent transparent #8378A8 #8378A8;
+        border-color: transparent transparent #FE799D #FE799D;
         transform: rotate(-45deg);
     }
 
-.technology-checkbox-label .technology-checkbox:checked ~ .technology-inner-container .tickmark {
+.technology-checkbox-label .technology-checkbox:checked ~ .technology-inner-container .tickmarkP {
     display: block;
 }
 
