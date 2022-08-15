@@ -21,7 +21,13 @@ namespace EstashirEbtakir
             con = new SqlConnection(GetConstring());
             con.Open();
 
-            /*var data =*/ 
+            
+
+            SqlCommand cmd = new SqlCommand("SELECT COUNT(User_Id), Job_Position FROM OurUser GROUP BY Job_Position", con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            
+            DataTable table = new DataTable("usersTable");
+            sda.Fill(table);
         }
 
 
