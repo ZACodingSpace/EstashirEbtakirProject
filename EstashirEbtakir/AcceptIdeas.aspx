@@ -10,7 +10,7 @@
         <div class="side-bar col-3 m-0">
             <div class="title">
                 <div class="logo">
-                    <img src="Images/ProfileIcon.png" alt="..." />
+                    <img src="Images/Profile_Icon.png" alt="..." />
                     <input id="Text1" type="text" class="text-field1" placeholder="الاسم الثنائي" readonly />
                     <input id="Text2" type="text" class="text-field1" placeholder="نوع المستخدم" readonly />
                 </div>
