@@ -58,7 +58,7 @@
         <img src="Images/Consultancy.jpg" class="d-block w-100" style="height: 70vh;" alt="consultations">
         <div class="overlay"></div>
         <div class="carousel-caption d-none d-md-flex flex-column h-50 align-items-start">
-          <a href="ConsultingSectionHomePage.aspx" class="slide-button p-lg-2">الاستشارات</a>
+          <a href="ConsultationsSectionHomePage.aspx" class="slide-button p-lg-2">الاستشارات</a>
         </div>
       </div>
 
