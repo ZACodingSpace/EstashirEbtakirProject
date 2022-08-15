@@ -112,8 +112,7 @@ namespace EstashirEbtakir
 
             done.Text = "تمت إضافة الفكرة بنجاح";
 
-        }
-        
+        }     
         
     }
 }
