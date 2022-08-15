@@ -15,7 +15,7 @@ namespace EstashirEbtakir
 {
     public partial class MainMasterPage : System.Web.UI.MasterPage
     {
-        SqlConnection con;
+        //SqlConnection con;
         public string getConstring()
         {
             string constr = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
@@ -30,19 +30,71 @@ namespace EstashirEbtakir
             }
             else
             {
-                //MessageBox.Show(Session["id"]+" ");
                 userInformationContainer.Visible = true;
-                profileUserLinkButton.Text = "   "+(string)Session["name"]+"  ";
+                profileUserLinkButton.Text = "   " + (string)Session["name"] + "  ";
                 signUpContainer.Visible = false;
             }
         }
+
         protected void logout_Click(object sender, EventArgs e)
         {
             Session.Clear();
-            //MessageBox.Show( "تم تسجيل خروجك بنجاح ");
-            //Page_Load(sender,e);
             Response.Redirect("Home.aspx");
         }
+        protected void profile_Click(object sender, EventArgs e)
+        {
+            string type = (string)Session["Type"];
+            if (type == "User")
+            {
+                Response.Redirect("UserProfile.aspx");
+            }
+            else
+            {
+                Response.Redirect("AdminProfile.aspx");
+            }
+            
+        }
+
+        protected void MyIdea_Click(object sender, EventArgs e)
+        {
+            string type = (string)Session["Type"];
+            if (type == "User")
+            {
+                Response.Redirect("MyIdeasPage.aspx");
+            }
+            else
+            {
+                Response.Redirect("AdminProfile.aspx");
+            }
 
         }
+
+        protected void MyProject_Click(object sender, EventArgs e)
+        {
+            string type = (string)Session["Type"];
+            if (type == "User")
+            {
+                Response.Redirect("MyProjectsPage.aspx");
+            }
+            else
+            {
+                Response.Redirect("AdminProfile.aspx");
+            }
+
+        }
+
+        protected void Myappointment_Click(object sender, EventArgs e)
+        {
+            string type = (string)Session["Type"];
+            if (type == "User")
+            {
+                Response.Redirect("MyAppointmentsPage.aspx");
+            }
+            else
+            {
+                Response.Redirect("AdminProfile.aspx");
+            }
+
+        }
+    }    
 }

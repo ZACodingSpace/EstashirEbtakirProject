@@ -21,24 +21,22 @@ namespace EstashirEbtakir {
                 con.Open();
 
                 // get the session id ( user id )
-                //string sessionIDstr = HttpContext.Current.Session["id"];
-                int sessionID = int.Parse((string)Session["id"]);
 
                 // get admin info from DB
-                SqlCommand cmd = new SqlCommand("select * from OurAdmin where Admin_ID='" + sessionID + "'", con);
+                SqlCommand cmd = new SqlCommand("select * from OurAdmin where Admin_ID='" + Session["id"] + "'", con);
                 SqlDataReader reader = cmd.ExecuteReader();
 
-                if (reader.Read())
-                {
+                if (reader.Read()) {
                     // display user info
-                    uniID.Attributes.Add("placeholder", reader["University_ID"].ToString());
+                    //uniID.Attributes.Add("placeholder", reader["University_ID"].ToString());
                     name.Attributes.Add("placeholder", reader.GetString(1) + " " + reader.GetString(2));
                     name2.Attributes.Add("placeholder", reader.GetString(1) + " " + reader.GetString(2));
                     email.Attributes.Add("placeholder", reader.GetString(4));
-                    phone.Attributes.Add("placeholder", reader["Phone"].ToString());
-                    job.Attributes.Add("placeholder", reader.GetString(7));
+                    //phone.Attributes.Add("placeholder", reader["Phone"].ToString());
+                    job.Attributes.Add("placeholder", "Admin");
 
                 }
+                con.Close();
             }
             catch (Exception ex)
             {
@@ -50,39 +48,29 @@ namespace EstashirEbtakir {
         protected void EditPhone_Click(object sender, EventArgs e)
         {
 
-            try
-            {
-                testchange.Text = "";
-                string phoneNum = phone.Value;
+            //try
+            //{
+                
+            //    string phoneNum = phone.Value;
 
-                // check from phone number format
-                if (Regex.Match(phoneNum, @"^[0-9]{ 10}$").Success)
-                {
-                    // set database connection
-                    con = new SqlConnection(GetConstring());
-                    con.Open();
+            //    // check from phone number format
 
-                    // get the session id ( user id )
-                    int sessionID = int.Parse((string)Session["id"]);
+            //        // set database connection
+            //        con = new SqlConnection(GetConstring());
+            //        con.Open();
 
-                    // get admin info from DB
-                    SqlCommand cmd = new SqlCommand("UPDATE OurAdmin SET Phone='" + phoneNum + "' WHERE Admin_ID='" + sessionID + "'", con);
-                    cmd.ExecuteNonQuery();
 
-                    //for test
-                    testchange.Text = phoneNum + " - " + sessionID;
-                }
-                else
-                {
-                    testchange.Text = "رقم جوال غير صحيح";
-                }
+            //        // get admin info from DB
+            //        SqlCommand cmd = new SqlCommand("UPDATE OurAdmin SET Phone=" + phoneNum + " WHERE Admin_ID='" + Session["id"] + "'", con);
+            //        cmd.ExecuteNonQuery();
 
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                con.Close();
-            }
+            //    con.Close();
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //    con.Close();
+            //}
 
         }
 

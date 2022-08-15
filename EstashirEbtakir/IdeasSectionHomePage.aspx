@@ -14,7 +14,7 @@
             <span class="m-0 p-0">/</span>
             <span class="m-0 p-0">الأقسام</span>
             <span class="m-0 p-0">/</span>
-            <a class="m-0 p-0 active-link" href="">الأفكار</a>
+            <a class="m-0 p-0 active-link" href="IdeasSectionHomePage.aspx">الأفكار</a>
         </div>
 
         <div class="ideas-description-container row pe-lg-4 mt-lg-5">
@@ -34,7 +34,7 @@
         <div class="search-bar-and-buttons-container row mt-lg-5">
 
             <div class="add-idea-button-container col-6">
-                <button class="add-idea-button ps-lg-3 pe-lg-3 pt-1 pb-1">إضافة فكرة</button>
+                <button class="add-idea-button ps-lg-3 pe-lg-3 pt-1 pb-1" formaction="AddIdea.aspx">إضافة فكرة</button>
             </div>
 
             <div class="ideas-search-bar-container col-6">

@@ -9,6 +9,7 @@
 
     <div class="add-idea-page-content row mt-xl-1 ps-xl-5 pe-xl-5 mt-lg-1 ps-lg-4 pe-lg-4 mt-md-5 ps-md-4 pe-md-4 ">
 
+                   
         <div class="add-idea-links-container pe-xl-5 pt-xl-3 pe-lg-4 pt-lg-2 pe-md-3 pt-md-3">
             <a class="m-0 p-0" href="Home.aspx">الرئيسية</a>
             <span class="m-0 p-0">/</span>
@@ -18,10 +19,10 @@
             <span class="m-0 p-0">/</span>
             <a class="m-0 p-0 active-link" href="AddIdea.aspx">إضافة فكرة</a>
         </div>
-
         <div class="idea-name-container p-xl-5 p-lg-4 pt-md-5">
             <h4 class="idea-name">اسم الفكرة</h4>
             <input type="text" class="idea-name-field" id="ideaNameField" runat="server">
+            <asp:Label ID="done" class="idea-name" runat="server" Text=" "></asp:Label>
         </div>
 
         <div class="idea-description-container p-xl-5 p-lg-4 pt-md-5">
@@ -39,7 +40,7 @@
                     <div class="technology-container col-lg-10 col-md-11 m-0 p-0">
 
                         <label class="technology-checkbox-label" for="VRtech">
-                            <input class="technology-checkbox" type="checkbox" id="VRtech" runat="server" checked="checkBox1_Checked">
+                            <input class="technology-checkbox" type="checkbox" id="VRtech" runat="server">
                             <span class="technology-inner-container">
                                 <span class="tickmark"></span>
                                 <span class="technology-name">نظارات الواقع الافتراضي</span>
@@ -241,7 +242,7 @@
         </div>
 
         <div class="add-idea-page-buttons-container m-lg-0 mt-md-5">
-            <button class="add-idea-button m-1 me-xl-4 me-lg-3" id="addIdeaButton" onclick="add_Click" runat="server">إضافة</button>
+            <asp:Button ID="Button1" class="add-idea-button m-1 me-xl-4 me-lg-3" onclick="add_Click" runat="server" Text="إضافة" />
             <button formaction="" class="cancel-idea-button m-1 ms-xl-4 ms-lg-3" id="cancelIdeaButton" runat="server">إلغاء</button>
         </div>
 

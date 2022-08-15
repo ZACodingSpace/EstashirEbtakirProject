@@ -10,7 +10,7 @@
         <div class="side-bar col-3 m-0">
             <div class="title">
                 <div class="logo">
-                    <img src="Images/ProfileIcon.png" alt="..." />
+                    <img class="img-fluid" src="Images/Profile_Icon.png" alt="..." />
                     <input id="name" runat="server" type="text" class="text-field1" placeholder="الاسم الثنائي" readonly />
                     <input id="job" runat="server" type="text" class="text-field1" placeholder="نوع المستخدم" readonly />
                 </div>
@@ -21,11 +21,12 @@
                 <li><a href="#"><i class="fas fa-lightbulb"></i> الأفكار </a></li>
                 <li><a href="#"><i class="fas fa-file-alt"></i> المشاريع </a></li>
                 <li><a href="#"><i class="fas fa-comments"></i> الاستشارات </a></li>
-                <li><a href="#"><i class="fas fa-check-square"></i> طلبات الترقية </a></li>
             </ul>
         </div>
 
         <div class="left-side col-9 m-0">
+
+              <div class="row behined-navbar-profile"></div>
 
             <div class="profile-path">الرئيسية/ الملف الشخصي/ معلومات الحساب</div>
 

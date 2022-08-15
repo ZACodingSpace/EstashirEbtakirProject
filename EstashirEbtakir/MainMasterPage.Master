@@ -52,9 +52,7 @@
                             </div>
 
                             <div class="user-profile-img-container p-0 col-2">
-                                <a href="UserProfile.aspx">
-                                    <img class="user-profile-img" src="Images/Profile_Icon.png" alt="profile img">
-                                </a>
+                                 <img class="user-profile-img" src="Images/Profile_Icon.png" alt="profile img">
                             </div>
 
                             <div class="user-dropdown-container col-2">
@@ -65,12 +63,13 @@
                                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
 
                                         <li class="dropdown-item-container">
-                                            <a href="UserProfile.aspx" class="dropdown-item">معلومات الحساب</a>
+                                            <asp:Button ID="Button2"  class="dropdown-item" runat="server" onclick="profile_Click" Text="معلومات الحساب" />
+                                            <!-- <a href="UserProfile.aspx" class="dropdown-item">معلومات الحساب</a> -->
                                         </li>
 
-                                        <li class="dropdown-item-container"><a href="MyIdeasPage.aspx" class="dropdown-item">الأفكار</a></li>
-                                        <li class="dropdown-item-container"><a href="MyProjectsPage.aspx" class="dropdown-item">المشاريع</a></li>
-                                        <li class="dropdown-item-container"><a href="MyAppointmentsPage.aspx" class="dropdown-item">الاستشارت</a></li>
+                                        <li class="dropdown-item-container"> <asp:Button ID="Button3"  class="dropdown-item" runat="server" onclick="MyIdea_Click" Text="أفكاري" /> </li>
+                                        <li class="dropdown-item-container"> <asp:Button ID="Button4"  class="dropdown-item" runat="server" onclick="MyProject_Click" Text="مشاريعي" /></li>
+                                        <li class="dropdown-item-container"> <asp:Button ID="Button5"  class="dropdown-item" runat="server" onclick="Myappointment_Click" Text="مواعيدي" /> </li>
 
                                         <li class="dropdown-item-container">
                                             <asp:Button ID="Button1" class="dropdown-item" runat="server" onclick="logout_Click" Text="تسجيل خروج" /> 
@@ -169,7 +168,7 @@
     <!-- Bootstrap v5.2.0 - JavaScript -->
     <script src="Scripts/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome v6.1.2 - JavaScript -->
-    <script src="Scripts/all.min.js"></script>
+    <!-- <script src="Scripts/all.min.js"></script> -->
     <!-- Main Java Script File -->
     <script src="Scripts/MainScripts.js"></script>
 </body>

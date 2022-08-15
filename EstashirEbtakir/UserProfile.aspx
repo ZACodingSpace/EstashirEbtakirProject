@@ -10,21 +10,22 @@
         <div class="side-bar col-3 m-0">
             <div class="title">
                 <div class="logo">
-                    <img src="Images/ProfileIcon.png" alt="..." />
+                    <img class="img-fluid" src="Images/Profile_Icon.png" alt="..." />
                     <input id="name" runat="server" type="text" class="text-field1" placeholder="الاسم الثنائي" readonly />
                     <input id="job" runat="server" type="text" class="text-field1" placeholder="نوع المستخدم" readonly />
                 </div>
             </div>
             <ul>
-                <li><a class="active" href="#"><i class="fas fa-id-card"></i> معلومات الحساب </a></li>
-                <li><a href="#"><i class="fas fa-lightbulb"></i> أفكاري </a></li>
-                <li><a href="#"><i class="fas fa-calendar-check"></i> مواعيدي </a></li>
-                <li><a href="#"><i class="fas fa-file-alt"></i> مشاريعي </a></li>
-                <li><a href="#"><i class="fas fa-award"></i> الترقية لمستشار </a></li>
+                <li><a class="active" href="UserProfile.aspx"><i class="fas fa-id-card"></i> معلومات الحساب </a></li>
+                <li><a href="MyIdeasPage.aspx"><i class="fas fa-lightbulb"></i> أفكاري </a></li>
+                <li><a href="MyAppointmentsPage.aspx"><i class="fas fa-calendar-check"></i> مواعيدي </a></li>
+                <li><a href="MyProjectsPage.aspx"><i class="fas fa-file-alt"></i> مشاريعي </a></li>
             </ul>
         </div>
 
         <div class="left-side col-9 m-0">
+
+              <div class="row behined-navbar-profile"></div>
 
             <div class="profile-path">الرئيسية/ الملف الشخصي/ معلومات الحساب</div>
 
