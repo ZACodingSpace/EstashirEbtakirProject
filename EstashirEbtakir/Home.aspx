@@ -20,18 +20,18 @@
       </button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4">
       </button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5">
+      <!--<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5">
       </button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6">
       </button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7">
-      </button>
+      </button>-->
     </div>
 
     <!-- Slides -->
     <div class="carousel-inner">
 
-      <!-- Statistics Slides -->
+      <!-- Statistics Slides 
       <div class="carousel-item active d-block w-100" id="Div1" runat="server" style="height: 70vh;">
   
       </div>
@@ -42,10 +42,10 @@
 
       <div class="carousel-item active d-block w-100" id="Div3" runat="server" style="height: 70vh;">
 
-      </div>
+      </div>-->
 
       <!-- Ideas Section Slide -->
-      <div class="carousel-item">
+      <div class="carousel-item active">
         <img src="Images/Ideas.jpg" class="d-block w-100" style="height: 70vh;" alt="ideas">
         <div class="overlay"></div>
         <div class="carousel-caption d-none d-md-flex flex-column h-50 align-items-start">
@@ -466,10 +466,8 @@
               <!-- Second Section of the card -->
               <div class="project-name-container row mt-3">
                 <h3>
-                    <asp:Label ID="ProjName" runat="server" Text=""></asp:Label>
-             <!--   This will make error
-                 <asp:Label ID="ProjName" runat="server" Text="<%# Eval("projectName") %>"></asp:Label> -->
-                    </h3>
+                 <!--   <asp:Label ID="ProjName" runat="server" Text=""></asp:Label>
+              -->   </h3>
               </div>
 
               <!-- Third Section of the card -->
@@ -478,8 +476,8 @@
                   <h6 class="college-label col-4 p-0">الكلية</h6>
                   <h6 class="college-name col-8" id="collegeP" runat="server">
                     
-                      <asp:Label ID="CollegeName" runat="server" Text="Remove This Text" ></asp:Label>
-                
+                     <!-- <asp:Label ID="CollegeName" runat="server" Text="Remove This Text" ></asp:Label>
+                -->
                   </h6>
                 </div>
 
@@ -488,8 +486,8 @@
                   <h6 class="major-label col-4 p-0">التخصص</h6>
                   <h6 class="major-name col-8" id="majorP" runat="server">
                       
-                      <asp:Label ID="MajorName" runat="server" Text="" ></asp:Label>
-                
+                 <!--     <asp:Label ID="MajorName" runat="server" Text="" ></asp:Label>
+                -->
                   </h6>
                 </div>
               </div>
