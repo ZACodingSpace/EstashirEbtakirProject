@@ -1,9 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ProfileMasterPage.Master" AutoEventWireup="true" CodeBehind="consultantProfilePage.aspx.cs" Inherits="EstashirEbtakir.consultantProfilePage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="ConsultantProfile.aspx.cs" Inherits="EstashirEbtakir.ConsultantProfile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <div class="profile-page-content-container row p-0 m-0">
+       <div class="profile-page-content-container row p-0 m-0">
         <div class="side-bar col-3 m-0">
             <div class="title">
                 <div class="logo">
@@ -57,5 +56,4 @@
 
         </div>
     </div>
-
 </asp:Content>
