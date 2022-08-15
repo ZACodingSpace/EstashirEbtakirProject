@@ -3082,7 +3082,9 @@ div.card-header {
 }
 
     .add-idea-page-content .add-idea-page-buttons-container .add-idea-button,
-    .add-idea-page-content .add-idea-page-buttons-container .cancel-idea-button {
+    .add-idea-page-content .add-idea-page-buttons-container .cancel-idea-button,
+    .add-idea-page-content .add-idea-page-buttons-container .save-idea-button,
+    .add-idea-page-content .add-idea-page-buttons-container .delete-idea-button {
         height: 4vh;
         width: 10vh;
         text-decoration: none;
