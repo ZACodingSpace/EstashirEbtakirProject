@@ -555,6 +555,7 @@ footer {
 }
 
 .ideas-page-description-area .search-bar-and-buttons-container .add-idea-button-container,
+.Edit-idea-page-buttons-container,
 .consultations-page-description-area .search-bar-and-buttons-container .book-consultation-button-container,
 .projects-page-description-area .search-bar-and-buttons-container .add-project-button-container {
     display: flex;
@@ -562,6 +563,7 @@ footer {
 }
 
 .search-bar-and-buttons-container .add-idea-button-container .add-idea-button,
+.save-idea-button,
 .search-bar-and-buttons-container .book-consultation-button-container .book-consultation-button,
 .search-bar-and-buttons-container .add-project-button-container .add-project-button {
     font-weight: bold;

@@ -234,12 +234,10 @@
             </div>
         </div>
 
-
-            <div class="buttons">
-                <input type="submit" onclick="alert(' تم حفظ التعديلات')"  class="buttonl" name="submitInfo" value="حفظ">
-
-                <input  type="submit"  formaction="UserProfile.aspx" class="buttonl" name="submitInfo" value="إلغاء">
-
+        <div class="Edit-idea-page-buttons-container m-lg-0 mt-md-5">
+            <Button type="submit"  class="save-idea-button m-1 ms-xl-4 ms-lg-3" onclick="save_Click" runat="server" >حفظ</Button>
+            <button formaction="" class="cancel-idea-button m-1 ms-xl-4 ms-lg-3" id="cancelIdeaButton" runat="server">إلغاء</button>
+        
          
 
                  <div class="delete">
@@ -252,7 +250,7 @@
 
 
 
-        </div>
+     
     
         
 </asp:Content>
