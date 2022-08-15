@@ -26,8 +26,7 @@ namespace EstashirEbtakir {
                 SqlCommand cmd = new SqlCommand("select * from OurAdmin where Admin_ID='" + Session["id"] + "'", con);
                 SqlDataReader reader = cmd.ExecuteReader();
 
-                if (reader.Read())
-                {
+                if (reader.Read()) {
                     // display user info
                     //uniID.Attributes.Add("placeholder", reader["University_ID"].ToString());
                     name.Attributes.Add("placeholder", reader.GetString(1) + " " + reader.GetString(2));

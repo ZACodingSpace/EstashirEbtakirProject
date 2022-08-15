@@ -21,7 +21,6 @@
                 <li><a href="#"><i class="fas fa-lightbulb"></i> الأفكار </a></li>
                 <li><a href="#"><i class="fas fa-file-alt"></i> المشاريع </a></li>
                 <li><a href="#"><i class="fas fa-comments"></i> الاستشارات </a></li>
-                <li><a href="#"><i class="fas fa-check-square"></i> طلبات الترقية </a></li>
             </ul>
         </div>
 

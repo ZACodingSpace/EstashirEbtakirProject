@@ -48,10 +48,14 @@
          <div class="project-supervisor-container col p-xl-5 p-lg-4 pt-md-5">
             <h4  class="project-supervisor">المشرف</h4>
             <input type="text"  class="projectSupervisor" id="supervisorP" runat="server"/> </div>
-
          </div>
 
-         <div class="grade-file-container row m-0 pt-4">
+        <div class="project-members-container p-xl-5 p-lg-4 pt-md-5">
+            <h4 class="project-members-label">الأعضاء</h4>
+            <textarea class="project-members-textarea" id="Textarea1" rows="10" runat="server"></textarea>
+        </div>
+
+        <div class="grade-file-container row m-0 pt-4">
          <div class="project-grade-container col p-xl-5 p-lg-4 pt-md-5">
             <h4  class="project-grade">الدرجة</h4>
             <input type="text"  class="projectGrade" id="gradeP" runat="server"/> </div>
