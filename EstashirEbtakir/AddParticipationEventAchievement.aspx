@@ -43,8 +43,17 @@
 
         </div>
 
-        <button>اضافة</button>
-        <button>الغاء</button>
+        
 
+        <div class="accepBtns-container">
+                        <div class="accepBtn-container m-1 me-xl-4 me-lg-3 p-lg-2">
+
+                            <asp:Button class="accepBtn p-0 ps-2 pe-2" ID="Button3" runat="server" Text="اضافة" />
+                        </div>
+                        <div class="accepBtn-container m-1 me-xl-4 me-lg-3 p-lg-2">
+
+                            <asp:Button class="accepBtn p-0 ps-2 pe-2" ID="Button4" runat="server" Text="الغاء" />
+                        </div>
+                    </div>
     </div>
 </asp:Content>
