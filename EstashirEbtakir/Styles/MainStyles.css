@@ -555,6 +555,7 @@ footer {
 }
 
 .ideas-page-description-area .search-bar-and-buttons-container .add-idea-button-container,
+.Edit-idea-page-buttons-container,
 .consultations-page-description-area .search-bar-and-buttons-container .book-consultation-button-container,
 .projects-page-description-area .search-bar-and-buttons-container .add-project-button-container {
     display: flex;
@@ -562,6 +563,7 @@ footer {
 }
 
 .search-bar-and-buttons-container .add-idea-button-container .add-idea-button,
+.save-idea-button,
 .search-bar-and-buttons-container .book-consultation-button-container .book-consultation-button,
 .search-bar-and-buttons-container .add-project-button-container .add-project-button {
     font-weight: bold;
@@ -2056,6 +2058,12 @@ body .about-logo {
     text-align: right;
 }
 
+.text-field3 {
+    background: #EEF3FC;
+    border-color: #dfe7f7;
+    text-align: right;
+}
+
 .profile-tab-content-container {
     display: flex;
     justify-content: center;
@@ -2074,21 +2082,23 @@ body .about-logo {
         border-radius: 20px;
     }
 
+.change-pass-button {
+    background-color: #8378A8;
+    border: #8378A8;
+}
+
 
 /* Profile Pages Styles End */
 
 /*******************************************************************************/
 
 
-/*رهف*/
+/*رهف و مريم*/
 /* My Project Pages Styles Start */
 
 
 
-.tabs-content-container .project-card-container .project-card,
-.tabs-content-container .idea-card-container .idea-card,
-.tabs-content-container .consultation-card-container .consultation-card,
-.tabs-content-container .event-card-container .event-card {
+.tabs-content-containerP .project-card-containerP .project-cardP {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2099,17 +2109,14 @@ body .about-logo {
     background-color: var(--Ghost-White);
 }
 
-.project-card-container .project-card .project-name-container,
-.idea-card-container .idea-card .idea-name-container,
-.consultation-card-container .consultation-card .counselor-name-container,
-.event-img-container .overlay-content-container .event-name-container {
+.tabs-content-containerP {
+    width: 80vw;
+}
+.project-card-containerP .project-cardP .project-name-containerP {
     width: 100%;
 }
 
-.project-card .project-name-container .project-name,
-.idea-card .idea-name-container .idea-name,
-.consultation-card .counselor-name-container .counselor-name,
-.event-img-container .overlay-content-container .event-name {
+.project-cardP .project-name-containerP .project-nameP {
     display: block;
     white-space: nowrap;
     overflow: hidden;
@@ -2117,73 +2124,69 @@ body .about-logo {
     font-size: max(2vw, 3vh);
 }
 
-.project-card .card-button-container .project-details-button,
-.idea-card .card-button-container .idea-details-button,
-.consultation-card .card-button-container .consultation-details-button,
-.consultation-card .card-button-container .consultation-booking-button,
-.event-img-container .overlay-content-container .event-details-button {
+.project-cardP .card-button-containerP .project-details-buttonP {
     font-weight: bold;
     font-size: max(1vw, 2vh);
 }
 
 
-.project-card-container .project-card .card-button-container,
-.idea-card-container .idea-card .card-button-container,
-.event-card .event-img-container .overlay-content-container {
+.project-card-containerP .project-cardP .card-button-containerP{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.project-card .card-button-container .project-details-button,
-.idea-card .card-button-container .idea-details-button,
-.consultation-card .card-button-container .consultation-details-button,
-.consultation-card .card-button-container .consultation-booking-button {
+.project-cardP .card-button-containerP .project-details-buttonP {
     height: 2.5vw;
+    width:8vw;
     border: none;
     box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
     border-radius: 5px;
 }
+.card-button-containerP {
+ 
+}
 
+.buttinDivider{
+    width:2vh;
+    height:auto;
+    display:inline-block;
+}
 /* General Styles for Cards End*/
-
-
-
 /* Specific Styles for Each Section Start*/
-
 /* Project */
-.project-card-container .project-card .project-logo-container {
+.project-card-containerP .project-cardP .project-logo-containerP {
     border-radius: 5px 5px 0 0;
 }
 
-.project-card .project-logo-container .Project-logo {
+.project-cardP .project-logo-containerP .Project-logoP {
     height: 25vh;
     width: 100vh;
     border-radius: 5px 5px 0 0;
 }
 
-.project-card-container .project-card .project-information-container {
+.project-card-containerP .project-cardP .project-information-containerP {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.project-card .project-information-container .college-name-container,
-.project-card .project-information-container .major-information-container {
+.project-cardP .project-information-containerP .college-name-containerP,
+.project-cardP .project-information-containerP .major-information-containerP {
     width: 90%;
     display: flex;
 }
 
-.project-information-container .college-name-container .college-label,
-.project-information-container .major-information-container .major-label {
+.project-information-containerP .college-name-containerP .college-labelP,
+.project-information-containerP .major-information-containerP .major-labelP {
     text-align: right;
     font-weight: bold;
     font-size: max(1.2vw, 2vh);
 }
 
-.project-information-container .college-name-container .college-name,
-.project-information-container .major-information-container .major-name {
+.project-information-containerP .college-name-containerP .college-nameP,
+.project-information-containerP .major-information-containerP .major-nameP {
     display: block;
     white-space: nowrap;
     overflow: hidden;
@@ -2191,23 +2194,12 @@ body .about-logo {
     text-align: right;
 }
 
-.project-card .card-button-container .project-details-button {
+.project-cardP .card-button-containerP .project-details-buttonP {
     background-color: var(--French-Pink);
 }
 
 
 /* My Project Pages Styles End */
-
-
-/*******************************************************************************/
-
-
-/*رهف*/
-/* Promoting to consaltant Pages Styles Start */
-
-
-
-/* Promoting to consaltant Pages Styles End */
 
 
 /*******************************************************************************/
@@ -3080,7 +3072,9 @@ div.card-header {
 }
 
     .add-idea-page-content .add-idea-page-buttons-container .add-idea-button,
-    .add-idea-page-content .add-idea-page-buttons-container .cancel-idea-button {
+    .add-idea-page-content .add-idea-page-buttons-container .cancel-idea-button,
+    .add-idea-page-content .add-idea-page-buttons-container .save-idea-button,
+    .add-idea-page-content .add-idea-page-buttons-container .delete-idea-button {
         height: 4vh;
         width: 10vh;
         text-decoration: none;
