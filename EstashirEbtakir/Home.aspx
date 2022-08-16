@@ -46,7 +46,7 @@
 
       <!-- Ideas Section Slide -->
       <div class="carousel-item active">
-        <img src="Images/Ideas.jpg" class="d-block w-100" style="height: 70vh;" alt="ideas">
+        <img src="Images/Ideas_Img.jpg" class="d-block w-100" style="height: 70vh;" alt="ideas">
         <div class="overlay"></div>
         <div class="carousel-caption d-none d-md-flex flex-column h-50 align-items-start">
           <a href="IdeasSectionHomePage.aspx" class="slide-button p-lg-2">الأفكار المقترحة</a>
