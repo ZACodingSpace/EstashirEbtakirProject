@@ -1277,7 +1277,31 @@ input:checked + .inputPlace  {
     border-radius: 20px;
 }
 /*******************************************************************************/
+/* consultant profile page */
+.accepBtns-containers {
+    font-weight: bold;
+    font-size: max(1vw, 2vh);
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+    background-color: #FE799D;
+}
+   .accepBtns-containers.accepBtn-containers {
+        display: flex;
+        justify-content: flex-end;
+    }
 
+
+       .accepBtns-containers.accepBtn-containers.accepBtnn {
+            font-weight: bold;
+            font-size: max(1vw, 2vh);
+            border: none;
+            background-color: #FE799D;
+        }
+
+
+
+/*******************************************************************************/
 /*سارة والجوهرة*/
 /* Sign-Up/Log-In Page Styles Start */
 /* Sign-Up */
@@ -1955,6 +1979,7 @@ body .about-logo {
 
     .side-bar .title .logo {
         display: flex;
+        width:100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -2049,13 +2074,22 @@ body .about-logo {
     background: #EEF3FC;
     border: #EEF3FC;
     text-align: center;
+
 }
 
 .text-field2 {
+
     background: #EEF3FC;
     border: #EEF3FC;
     text-align: right;
 }
+
+.text-field3 {
+    background: #EEF3FC;
+    border-color: #dfe7f7;
+    text-align: right;
+}
+
 
 .profile-tab-content-container {
     display: flex;
@@ -2074,6 +2108,11 @@ body .about-logo {
         box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
         border-radius: 20px;
     }
+
+.change-pass-button {
+    background-color: #8378A8;
+    border: #8378A8;
+}
 
 
 /* Profile Pages Styles End */
