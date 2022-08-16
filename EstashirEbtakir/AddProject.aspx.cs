@@ -13,6 +13,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows;
 
+
 namespace EstashirEbtakir
 {
     public partial class AddProject : System.Web.UI.Page
@@ -33,12 +34,35 @@ namespace EstashirEbtakir
             string brief = projectDescriptionTextarea.Value;
             //string projectimage= Pimg.Value;
             string collegePro = collegeP.Value;
-            //string majorP
+            string majorPro = majorP.Value;
+            string supervisorPro = supervisorP.Value;
+            string TeamMembers = Textarea1.Value;
+            string Grade = gradeP.Value;
+
 
             string str = getConstring();
             con = new SqlConnection(str);
             con.Open();
 
+            //Upload File
+            string filename = Path.GetFileName(fileP.PostedFile.FileName);
+            string contentType = fileP.PostedFile.ContentType;
+            using (Stream fs= fileP.PostedFile.InputStream)
+            {
+                using (BinaryReader br= new BinaryReader(fs))
+                {
+                    byte[] bytes = br.ReadBytes((Int32)fs.Length);
+                    SqlCommand cmd = new SqlCommand("insert into File values (@Name, @ContentType, @Data)",con);
+                    cmd.Parameters.AddWithValue("@Name", filename);
+                    cmd.Parameters.AddWithValue("@ContentType", contentType);
+                    cmd.Parameters.AddWithValue("@Data", bytes);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("تمت إضافة الملف");
+
+                }
+            }
+            Response.Redirect(Request.Url.AbsoluteUri);
+            con.Close();
         }
     }
 }

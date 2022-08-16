@@ -12,13 +12,13 @@
         <br><br><br>
         <div class="new-password">
             <label>  كلمة المرور الجديدة</label> <br>
-            <input class="place" type="password" name="new-password" required>
+            <input class="place" type="password" runat="server" id="NewPassword" name="new-password" required >
         </div>
         <br>
 
         <div class="confirm-password">
             <label>  تأكيد كلمة المرور </label> <br>
-            <input class="place" type="password" name="confirm-password" required>
+            <input class="place" type="password" runat="server" id="ConfirmPassword" name="confirm-password" required >
         </div>
        
         
