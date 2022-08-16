@@ -449,173 +449,45 @@
 
 
       <!------------------------------------------ Projects Section ------------------------------------>
-      <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
-        <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5">
+    
 
-          <!-- Cards -->
+             
+                <asp:DataList ID="DataList1" runat="server" RepeatColumns="4" >
+                    <ItemTemplate>
+                        <table class= "tableAsp" >
 
-          <!-- Project Card -->
-          <div class="project-card-container col p-xl-3 p-lg-2">
-            <div class="project-card">
+                            <tr>
+                                <td class="imageTable"></td>
+                                 <td> </td>
+                            </tr>
+                            
+                            <tr >
+                             
+                                <td class="projectName"> <%#Eval("ProjectName") %>  </td>
+                                <td>  <br /> </td>
+                            </tr>
 
-              <!-- First Section of the card -->
-              <div class="project-logo-container row m-0">
-                <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_1.jpg" alt="Logo">
-              </div>
-
-              <!-- Second Section of the card -->
-              <div class="project-name-container row mt-3">
-                <h3>
-                 <!--   <asp:Label ID="ProjName" runat="server" Text=""></asp:Label>
-              -->   </h3>
-              </div>
-
-              <!-- Third Section of the card -->
-              <div class="project-information-container row mt-3 p-0">
-                <div class="college-name-container row p-0">
-                  <h6 class="college-label col-4 p-0">الكلية</h6>
-                  <h6 class="college-name col-8" id="collegeP" runat="server">
+                            <tr>
+                                <td class="college">الكلية</td>
+                                <td class="collegeDB"> <%#Eval("college") %> </td>
+                            </tr>
+                             <tr>
+                                <td class="major">التخصص</td>
+                                <td class="majorDB"> <%#Eval("major") %> </td>
+                            </tr>
+                           
+                            
+                             <tr>
+                        <td class="projectButton">  <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
+                  formaction="ProjectDetails.aspx"">تفاصيل</button> </td>    
+                            </tr>
+                        </table>
+                    </ItemTemplate>
+                </asp:DataList>
                     
-                     <!-- <asp:Label ID="CollegeName" runat="server" Text="Remove This Text" ></asp:Label>
-                -->
-                  </h6>
-                </div>
-
-                <!-- Forth Section of the card -->
-                <div class="major-information-container row p-0">
-                  <h6 class="major-label col-4 p-0">التخصص</h6>
-                  <h6 class="major-name col-8" id="majorP" runat="server">
-                      
-                 <!--     <asp:Label ID="MajorName" runat="server" Text="" ></asp:Label>
-                -->
-                  </h6>
-                </div>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="card-button-container row mt-4 mb-3">
-                <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
-                  formaction="ProjectDetails.aspx">تفاصيل</button>
-              </div>
-
-            </div>
-          </div>
-
-
-          <!-- Project Card -->
-          <div class="project-card-container col p-xl-3 p-lg-2">
-            <div class="project-card">
-
-              <!-- First Section of the card -->
-              <div class="project-logo-container row m-0">
-                <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_6.jpg" alt="Logo">
-              </div>
-
-              <!-- Second Section of the card -->
-              <div class="project-name-container row mt-3">
-                <h3 class="project-name" id="H1" runat="server">اسم المشروع</h3>
-              </div>
-
-              <!-- Third Section of the card -->
-              <div class="project-information-container row mt-3 p-0">
-                <div class="college-name-container row p-0">
-                  <h6 class="college-label col-4 p-0">الكلية</h6>
-                  <h6 class="college-name col-8" id="H2" runat="server">كلية الحاسبات وتقنية المعلومات</h6>
-                </div>
-
-                <!-- Forth Section of the card -->
-                <div class="major-information-container row p-0">
-                  <h6 class="major-label col-4 p-0">التخصص</h6>
-                  <h6 class="major-name col-8" id="H3" runat="server">تقنية المعلومات</h6>
-                </div>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="card-button-container row mt-4 mb-3">
-                <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
-                  formaction="ProjectDetails.aspx">تفاصيل</button>
-              </div>
-
-            </div>
-          </div>
-
-
-          <!-- Project Card -->
-          <div class="project-card-container col p-xl-3 p-lg-2">
-            <div class="project-card">
-
-              <!-- First Section of the card -->
-              <div class="project-logo-container row m-0">
-                <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_3.jpg" alt="Logo">
-              </div>
-
-              <!-- Second Section of the card -->
-              <div class="project-name-container row mt-3">
-                <h3 class="project-name" id="H4" runat="server">اسم المشروع</h3>
-              </div>
-
-              <!-- Third Section of the card -->
-              <div class="project-information-container row mt-3 p-0">
-                <div class="college-name-container row p-0">
-                  <h6 class="college-label col-4 p-0">الكلية</h6>
-                  <h6 class="college-name col-8" id="H5" runat="server">كلية الحاسبات وتقنية المعلومات</h6>
-                </div>
-
-                <!-- Forth Section of the card -->
-                <div class="major-information-container row p-0">
-                  <h6 class="major-label col-4 p-0">التخصص</h6>
-                  <h6 class="major-name col-8" id="H6" runat="server">تقنية المعلومات</h6>
-                </div>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="card-button-container row mt-4 mb-3">
-                <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
-                  formaction="ProjectDetails.aspx">تفاصيل</button>
-              </div>
-
-            </div>
-          </div>
-
-
-          <!-- Project Card -->
-          <div class="project-card-container col p-xl-3 p-lg-2">
-            <div class="project-card">
-
-              <!-- First Section of the card -->
-              <div class="project-logo-container row m-0">
-                <img class="Project-logo img-fluid p-0" src="Images/Project_Logo_5.jpg" alt="Logo">
-              </div>
-
-              <!-- Second Section of the card -->
-              <div class="project-name-container row mt-3">
-                <h3 class="project-name" id="H7" runat="server">اسم المشروع</h3>
-              </div>
-
-              <!-- Third Section of the card -->
-              <div class="project-information-container row mt-3 p-0">
-                <div class="college-name-container row p-0">
-                  <h6 class="college-label col-4 p-0">الكلية</h6>
-                  <h6 class="college-name col-8" id="H8" runat="server">كلية الحاسبات وتقنية المعلومات</h6>
-                </div>
-
-                <!-- Forth Section of the card -->
-                <div class="major-information-container row p-0">
-                  <h6 class="major-label col-4 p-0">التخصص</h6>
-                  <h6 class="major-name col-8" id="H9" runat="server">تقنية المعلومات</h6>
-                </div>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="card-button-container row mt-4 mb-3">
-                <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
-                  formaction="ProjectDetails.aspx">تفاصيل</button>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
+           
+        
+        <!------------------>   
 
         <div class="go-to-sections-homepage-container-area row mt-lg-5">
           <div class="go-to-projects-homepage-container col-6 ps-lg-3">
@@ -626,7 +498,7 @@
           </div>
         </div>
 
-      </div>
+      
 
 
       <!------------------------------------------ Events & Activities Section ------------------------------------>

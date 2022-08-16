@@ -1,0 +1,5 @@
+﻿INSERT INTO [dbo].[OurProjects] ([Id], [ProjectName], [TechniqueUsed], [Brief], [college], [major], [picture]) VALUES (2, N'pro', N'tec', N'br', N'coll', N'maj', (Select * from Openrowset (BULK 'C:\Users\96654\Desktop\Github summer project\EstashirEbtakirProject\EstashirEbtakir\Images\Consultancy.jpg', Single_Blob)))
+INSERT INTO [dbo].[OurProjects] ([Id], [ProjectName], [TechniqueUsed], [Brief], [college], [major], [picture]) VALUES (4, N'pro3', N'tec4', N'br3', N'coll3', N'maj3', <SQLVARIANT>)
+INSERT INTO [dbo].[OurProjects] ([Id], [ProjectName], [TechniqueUsed], [Brief], [college], [major], [picture]) VALUES (5, N'pro4', N'tec4', N'br4', N'coll4', N'maj4', <SQLVARIANT>)
+INSERT INTO [dbo].[OurProjects] ([Id], [ProjectName], [TechniqueUsed], [Brief], [college], [major], [picture]) VALUES (7, N'pro7', N'tech7', N'br7', N'coll7', N'maj7', <SQLVARIANT>)
+INSERT INTO [dbo].[OurProjects] ([Id], [ProjectName], [TechniqueUsed], [Brief], [college], [major], [picture]) VALUES (9, N'pro9', N'tec9', N'br9', N'coll9', N'maj9', <SQLVARIANT>)
