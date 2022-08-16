@@ -58,11 +58,12 @@ namespace EstashirEbtakir
                     cmd.Parameters.AddWithValue("@Data", bytes);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("تمت إضافة الملف");
+                    con.Close();
 
                 }
             }
             Response.Redirect(Request.Url.AbsoluteUri);
-            con.Close();
+            
         }
     }
 }
