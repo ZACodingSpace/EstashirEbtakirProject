@@ -90,6 +90,8 @@
     <Content Include="GetPassword.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
+    <Content Include="Icons\appointment.png" />
+    <Content Include="Icons\calender.png" />
     <Content Include="Icons\instagram.png" />
     <Content Include="Icons\Lightbulb.png" />
     <Content Include="Icons\snapchat.png" />
