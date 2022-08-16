@@ -2058,6 +2058,12 @@ body .about-logo {
     text-align: right;
 }
 
+.text-field3 {
+    background: #EEF3FC;
+    border-color: #dfe7f7;
+    text-align: right;
+}
+
 .profile-tab-content-container {
     display: flex;
     justify-content: center;
@@ -2075,6 +2081,11 @@ body .about-logo {
         box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
         border-radius: 20px;
     }
+
+.change-pass-button {
+    background-color: #8378A8;
+    border: #8378A8;
+}
 
 
 /* Profile Pages Styles End */
