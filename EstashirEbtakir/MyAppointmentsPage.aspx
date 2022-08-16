@@ -33,21 +33,25 @@
                 <div class="idea-card-container col p-xl-3 p-lg-2">
                     <div class="idea-card">
 
-                         <!-- First Section of the card -->
+                        <!-- First Section of the card -->
                         <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
-                            <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png" alt="Logo">
+                            <img class="idea-logo img-fluid p-xl-4 p-lg-4"  src="Icons/Appointment" alt="Logo">
                         </div>
-                        <!-- Second Section of the card -->
+                         <!-- Second Section of the card -->
                         <div class="idea-name-container row">
-                            <h4 class="idea-name">الموعد</h4>
+                            <h3 class="idea-name">الموعد الاول</h3>
                         </div>
                         <!-- Third Section of the card -->
                         <div class="idea-description-container">
-                            <p class="idea-description m-0 col-8">تفاصيل الموعد </p>
+                            <p class="idea-description m-0 col-8">التاريخ: </p>
+                        </div>
+                        <!-- Third Section of the card -->
+                        <div class="idea-description-container">
+                            <p class="idea-description m-0 col-8">الوقت: </p>
                         </div>
                         <!-- Last Section of the card -->
                         <div class="idea-description-container">
-                            <p class="idea-description m-0 col-8">تفاصيل الموعد </p>
+                            <p class="idea-description m-0 col-8">اسم المستشار: </p>
                         </div>
                     </div>
                   </div>
@@ -58,26 +62,28 @@
 
                         <!-- First Section of the card -->
                         <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
-                            <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png" alt="Logo">
+                            <img class="idea-logo img-fluid p-xl-4 p-lg-4"  src="Icons/Appointment" alt="Logo">
                         </div>
-                        <!-- Second Section of the card -->
+                         <!-- Second Section of the card -->
                         <div class="idea-name-container row">
-                            <h4 class="idea-name">الموعد</h4>
+                            <h3 class="idea-name">الموعد الثاني</h3>
                         </div>
                         <!-- Third Section of the card -->
                         <div class="idea-description-container">
-                            <p class="idea-description m-0 col-8">تفاصيل الموعد </p>
+                            <p class="idea-description m-0 col-8">التاريخ: </p>
+                        </div>
+                        <!-- Third Section of the card -->
+                        <div class="idea-description-container">
+                            <p class="idea-description m-0 col-8">الوقت: </p>
                         </div>
                         <!-- Last Section of the card -->
                         <div class="idea-description-container">
-                            <p class="idea-description m-0 col-8">تفاصيل الموعد </p>
+                            <p class="idea-description m-0 col-8">اسم المستشار: </p>
                         </div>
-
                     </div>
-                </div>
+                  </div>
 
-
-
+    
             </div>
         </div>
     </div>
