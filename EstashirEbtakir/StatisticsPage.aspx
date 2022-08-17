@@ -53,13 +53,12 @@
                     </select>
                 </div>
                 <div class="charts-container">
-                    <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" BackColor="Transparent" BorderlineColor="Transparent">
+                    <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" BackColor="Transparent" BorderlineColor="Transparent" Height="397px" Width="521px">
                         <Series>
                             <asp:Series Name="Series1" XValueMember="Job_Position" YValueMembers="Column1" ChartType="Bar"></asp:Series>
                         </Series>
                         <ChartAreas>
-                            <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
-                                
+                            <asp:ChartArea Name="ChartArea1" BackColor="Transparent">         
                                 <AxisX>
                                     <MajorGrid Enabled="false" />
                                 </AxisX>
@@ -72,6 +71,30 @@
                     </asp:Chart>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT COUNT(User_Id), Job_Position FROM OurUser GROUP BY Job_Position"></asp:SqlDataSource>
                 </div>
+                
+
+                <!-- هذي تحت في الافكار -->
+                <div class="charts-container">
+                    <asp:Chart runat="server" ID="ctl03" DataSourceID="SqlDataSource2" BackColor="Transparent" BorderlineColor="Transparent" Height="388px" Width="535px">
+                        <series>
+                            <asp:Series Name="Series1" XValueMember="tech_name" YValueMembers="idea_num" ChartType="Pie" ></asp:Series>
+                        </series>
+                        <chartareas>
+                            <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
+                                <axisx>
+                                    <majorgrid enabled="false" />
+                                </axisx>
+
+                                <axisy interlacedcolor="#ffccff">
+                                    <majorgrid enabled="false" />
+                                </axisy>
+                            </asp:ChartArea>
+                        </chartareas>
+                    </asp:Chart>
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT COUNT(tec.Idea_ID) AS idea_num, tec.tech_name FROM (SELECT Idea_ID, tech_name From OurIdea, Technologies WHERE Technologies.type ='I' AND OurIdea.Idea_ID = Technologies.ID) AS tec GROUP BY tec.tech_name;"></asp:SqlDataSource>
+                </div>
+
+
             </div>
 
             <!------------------------------------------ Ideas Section ------------------------------------>
@@ -88,7 +111,7 @@
                     </select>
 
                 </div>
-                <div class="charts-container"></div>
+                
             </div>
 
 
