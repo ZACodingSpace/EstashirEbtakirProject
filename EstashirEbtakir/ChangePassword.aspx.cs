@@ -10,7 +10,6 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.IO;
 using System.Text;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows;
 
@@ -67,7 +66,7 @@ namespace EstashirEbtakir
                             {
                                 if ((Regex.Match(pass, @"(?=.[!@#$%^&])").Success))
                                 {
-                                    SqlCommand cmd = new SqlCommand("UPDATE OurUser SET Password=" + pass + " WHERE User_ID='" + Session["id"] + "'", con);
+                                    SqlCommand cmd = new SqlCommand("UPDATE OurUser SET Password='" + pass + "' WHERE User_ID='" + Session["id"] + "'", con);
                                     cmd.ExecuteNonQuery();
 
                                     MessageBox.Show("تم تغيير كلمة المرور بنجاح");
@@ -90,6 +89,14 @@ namespace EstashirEbtakir
                         }
                         
                     }
+                    else
+                    {
+                        generalEmsg.Text = "كلمة المرور يجب أن تحتوي على 8 أحرف على الأقل";
+                    }
+                }
+                else
+                {
+                    generalEmsg.Text = "كلمتين المرور غير متطابقتين";
                 }
                 con.Close();
             }

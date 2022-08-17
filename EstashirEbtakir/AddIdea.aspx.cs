@@ -108,8 +108,20 @@ namespace EstashirEbtakir
                 cmdTech.Parameters["@TechName"].Value = "جهاز تعقب حركة العين";
                 cmdTech.ExecuteNonQuery();
             }
-
-
+            
+            ideaNameField.Value = null;
+            ideaDescriptionTextarea.Value = null;
+            VRtech.Checked = false;
+            ARtech.Checked = false;
+            Leaptech.Checked = false;
+            secondlifetech.Checked = false;
+            AItech.Checked = false;
+            robottech.Checked = false;
+            hologramtech.Checked = false;
+            soundstudio.Checked = false;
+            threeDprinttech.Checked = false;
+            virtualTours.Checked = false;
+            eyeTrack.Checked = false;
             done.Text = "تمت إضافة الفكرة بنجاح";
 
         }     
