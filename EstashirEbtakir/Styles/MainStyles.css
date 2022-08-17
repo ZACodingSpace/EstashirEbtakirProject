@@ -3171,3 +3171,74 @@ div.card-header {
 }
 
 /*******************************************************************************/
+
+
+/* Ideas details page Styles Start */
+.add-idea-page-contentD {
+    min-height: 100vh;
+}
+
+    .add-idea-page-contentD .add-idea-links-containerD {
+        display: flex;
+    }
+
+        .add-idea-page-contentD .add-idea-links-containerD > * {
+            text-decoration: none;
+            color: var(--Silver-Sand);
+            font-size: max(1vw, 2vh);
+        }
+
+        .add-idea-page-contentD .add-idea-links-containerD .active-linkD {
+            color: var(--Purple-Mountain-Majesty)
+        }
+
+
+    .add-idea-page-contentD .idea-name-containerD .idea-nameD,
+    .add-idea-page-contentD .idea-description-containerD .idea-description-labelD,
+    .add-idea-page-contentD .innovation-containerD .innovationD {
+        font-size: max(1vw, 3.5vh);
+    }
+
+    .add-idea-page-contentD .idea-name-containerD .idea-name-fieldD,
+    .add-idea-page-contentD .innovation-containerD .innovationD {
+        width: 50vh;
+        height: 5vh;
+        border-radius: 5px;
+        border: none;
+        box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+        background-color: var(--Ghost-White);
+    }
+
+    .add-idea-page-contentD .idea-description-containerD .idea-description-textareaD {
+        width: 90vw;
+        border-radius: 5px;
+        border: none;
+        box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+        background-color: var(--Ghost-White);
+    }
+
+    .add-idea-page-contentD .innovation-lab-technologiesD {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .add-idea-page-contentD .add-idea-page-buttons-containerD .edit-idea-buttonD,
+    .add-idea-page-contentD .add-idea-page-buttons-containerD .cancel-idea-buttonD {
+        height: 4vh;
+        width: 10vh;
+        text-decoration: none;
+        text-align: center;
+        font-size: max(1vw, 2vh);
+        color: #000;
+        font-weight: bold;
+        border: none;
+        box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+        border-radius: 5px;
+        background-color: var(--Purple-Mountain-Majesty);
+    }
+
+/*  Ideas details  page Styles End */
+
+
+/*******************************************************************************/
