@@ -20,7 +20,7 @@ namespace EstashirEbtakir
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
-            string sqlqueryIdea = "Select Top 4 * from [dbo].[OurIdea] ";
+            string sqlqueryIdea = "Select Top 4 * from [dbo].[OurIdea] order by Idea_ID desc";
             SqlCommand sqlcommIdea = new SqlCommand(sqlqueryIdea, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaIdea = new SqlDataAdapter();
@@ -56,7 +56,7 @@ namespace EstashirEbtakir
             sqlconn = new SqlConnection(mainconn);
 
 
-            string sqlqueryPro = "Select Top 4 * from [dbo].[OurProject]";
+            string sqlqueryPro = "Select Top 4 * from [dbo].[OurProject] order by Project_ID desc";
             SqlCommand sqlcommPro = new SqlCommand(sqlqueryPro, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaPro = new SqlDataAdapter();
