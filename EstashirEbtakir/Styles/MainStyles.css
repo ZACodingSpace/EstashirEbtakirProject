@@ -1278,7 +1278,31 @@ input:checked + .inputPlace  {
     border-radius: 20px;
 }
 /*******************************************************************************/
+/* consultant profile page */
+.accepBtns-containers {
+    font-weight: bold;
+    font-size: max(1vw, 2vh);
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
+    background-color: #FE799D;
+}
+   .accepBtns-containers.accepBtn-containers {
+        display: flex;
+        justify-content: flex-end;
+    }
 
+
+       .accepBtns-containers.accepBtn-containers.accepBtnn {
+            font-weight: bold;
+            font-size: max(1vw, 2vh);
+            border: none;
+            background-color: #FE799D;
+        }
+
+
+
+/*******************************************************************************/
 /*سارة والجوهرة*/
 /* Sign-Up/Log-In Page Styles Start */
 /* Sign-Up */
@@ -1956,6 +1980,7 @@ body .about-logo {
 
     .side-bar .title .logo {
         display: flex;
+        width:100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -2050,11 +2075,19 @@ body .about-logo {
     background: #EEF3FC;
     border: #EEF3FC;
     text-align: center;
+
 }
 
 .text-field2 {
+
     background: #EEF3FC;
     border: #EEF3FC;
+    text-align: right;
+}
+
+.text-field3 {
+    background: #EEF3FC;
+    border-color: #dfe7f7;
     text-align: right;
 }
 
@@ -2075,6 +2108,11 @@ body .about-logo {
         box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
         border-radius: 20px;
     }
+
+.change-pass-button {
+    background-color: #8378A8;
+    border: #8378A8;
+}
 
 
 /* Profile Pages Styles End */
@@ -3061,7 +3099,9 @@ div.card-header {
 }
 
     .add-idea-page-content .add-idea-page-buttons-container .add-idea-button,
-    .add-idea-page-content .add-idea-page-buttons-container .cancel-idea-button {
+    .add-idea-page-content .add-idea-page-buttons-container .cancel-idea-button,
+    .add-idea-page-content .add-idea-page-buttons-container .save-idea-button,
+    .add-idea-page-content .add-idea-page-buttons-container .delete-idea-button {
         height: 4vh;
         width: 10vh;
         text-decoration: none;
@@ -3163,57 +3203,81 @@ div.card-header {
 
 /*******************************************************************************/
 
-/****Cards***/
+/******IdeasCards********/
+.IdeaTable .IdeaImage {
+    min-width: 15vw ;
+    max-width: 15vw ;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0px 50px 0 0 !important;
+    
+    box-shadow: inset -5px -5px 10px #ffffff, inset 5px 5px 10px #8378a8;
+    
+}
 
-.tableAsp {
 
+.IdeaTable, .ConsTable, .ProjectTable {
     box-sizing: border-box;
     background-color: var(--Ghost-White);
-    margin: 30px 10px;
-    height: 300px;
+    margin: 10px 10px;
+    height: 400px;
     max-width: 21vw;
     min-width: 21vw;
     line-height: 30px;
     position: relative;
     box-shadow: -4px -4px 8px #ffffff, 4px 4px 8px #bec3cc;
     overflow: hidden;
-   
+    padding: 20px;
 }
 
+    .ProjectTable .projectName{
+        position: absolute;
+        top: 90px;
+        right: 30%;
+        font-size: 25px;
+        font-weight: 500;
+    }
 
-.tableAsp .projectName {
-    position: absolute;
-    top: 90px;
-    right: 30%;
-    font-size: 25px ;
-    font-weight: 500;
-}
-.tableAsp .college, .tableAsp .major{
+    .IdeaTable .IdeaName {
+        position: absolute;
+        top: 65%;
+        right: 43%;
+        font-size: 25px;
+        font-weight: 500;
+    }
 
-    font-weight: bold;
-    padding-right: 20px;
-    position: absolute;
-}
-.tableAsp .college{
-    top: 45%;
+    .ProjectTable .college, .ProjectTable .major, .IdeaTable .college, .IdeaTable .major{
+        font-weight: bold;
+        padding-right: 20px;
+        position: absolute;
+    }
 
-}
-.tableAsp .collegeDB {
+    .IdeaTable .BriefDB {
+        position: absolute;
+        font-weight: bold;
+        padding-right: 20px;
+        
+    }
+
+    .ProjectTable .college, .IdeaTable .college {
+        top: 45%;
+    }
+.ProjectTable .collegeDB, .IdeaTable .collegeDB {
     position: absolute;
     top: 45%;
     right: 42%;
     font-weight: 500;
 }
-.tableAsp .major{
+.ProjectTable .major, .IdeaTable .major {
     top: 65%;
 }
-.tableAsp .majorDB {
+.ProjectTable .majorDB, .IdeaTable .majorDB {
     position: absolute;
     top: 65%;
     right: 42%;
     font-weight: 500;
 }
- .tableAsp .project-details-button {
+.ProjectTable .project-details-button {
     position: absolute;
     bottom: 10px;
     right: 35%;
@@ -3223,9 +3287,18 @@ div.card-header {
     border: none;
 }
 
-    .tableAsp .imageTable {
+    .IdeaTable .ideas-details-button {
         position: absolute;
-        width: 100%;
-        height: 85px;
-        background: var(--French-Pink);
+        bottom: 10px;
+        right: 35%;
+        background-color: var(--Purple-Mountain-Majesty);
+        border-radius: 5px;
+        font-weight: bold;
+        border: none;
     }
+.ProjectTable .imageTable {
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    background: var(--French-Pink);
+}

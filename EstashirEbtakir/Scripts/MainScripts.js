@@ -84,12 +84,15 @@ remove_fields.onclick = function () {
 function myFunction() {
     let text = "هل أنت متأكد من حذف هذة الفكرة نهائيا ؟ ";
     if (confirm(text) == true) {
-        text = "نعم";
+       return true;
     } else {
-        text = "لا";
+        return false;
     }
     document.getElementById("demo").innerHTML = text;
 }
+
+
+
 
 /*******************************************************************************/
 

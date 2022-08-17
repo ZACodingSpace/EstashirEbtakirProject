@@ -181,7 +181,7 @@ namespace EstashirEbtakir
                         if (pass.Length >= 8)
                         {
                             if (Regex.Match(pass, @"(?=.*[0-9])").Success)
-                            {
+                            { 
                                 if (Regex.Match(pass, @"(?=.*[A-Z])").Success &&
                                      Regex.Match(pass, @"(?=.*[a-z])").Success)
                                 {
