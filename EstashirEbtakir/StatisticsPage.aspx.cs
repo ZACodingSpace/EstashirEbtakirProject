@@ -26,6 +26,8 @@ namespace EstashirEbtakir
                 ColorTranslator.FromHtml("#FBA1A1"),
                 ColorTranslator.FromHtml("#8879B0")
             };
+            //Chart1.ChartAreas[0].AxisX.LabelStyle.Font = new System.Drawing.Font("Arial", 14f);
+            //Chart1.AntiAliasing = AntiAliasingStyles.All;
         }
 
     }
