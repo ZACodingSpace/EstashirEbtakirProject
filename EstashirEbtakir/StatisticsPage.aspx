@@ -55,10 +55,11 @@
                 <div class="charts-container">
                     <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" BackColor="Transparent" BorderlineColor="Transparent">
                         <Series>
-                            <asp:Series Name="Series1" XValueMember="Job_Position" YValueMembers="Column1" ChartType="Doughnut"></asp:Series>
+                            <asp:Series Name="Series1" XValueMember="Job_Position" YValueMembers="Column1" ChartType="Bar"></asp:Series>
                         </Series>
                         <ChartAreas>
                             <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
+                                
                                 <AxisX>
                                     <MajorGrid Enabled="false" />
                                 </AxisX>

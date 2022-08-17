@@ -16,18 +16,24 @@ namespace EstashirEbtakir
         protected void Page_Load(object sender, EventArgs e)
         {
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
-            SqlConnection sqlconn=new SqlConnection(mainconn);
-            string sqlquery = "Select * from [dbo].[OurProjects]";
-            SqlCommand sqlcomm=new SqlCommand(sqlquery, sqlconn);
+            SqlConnection sqlconn = new SqlConnection(mainconn);
             sqlconn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter();
-            sda.SelectCommand = sqlcomm;
-            DataSet ds = new DataSet();
-            sda.Fill(ds);
-            DataList1.DataSource = ds;
-            DataList1.DataBind();
-            sqlconn.Close();
+        
+            sqlconn = new SqlConnection(mainconn);
 
+
+            string sqlqueryPro = "Select * from [dbo].[OurProjects] where id=this.id";
+            SqlCommand sqlcommPro = new SqlCommand(sqlqueryPro, sqlconn);
+            sqlconn.Open();
+            SqlDataAdapter sdaPro = new SqlDataAdapter();
+            sdaPro.SelectCommand = sqlcommPro;
+            DataSet dsPro = new DataSet();
+
+            sdaPro.Fill(dsPro);
+            DataList1.DataSource = dsPro;
+            DataList1.DataBind();
+
+            sqlconn.Close();
 
         }
     }
