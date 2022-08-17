@@ -105,7 +105,6 @@ nav .nav-sections-container .nav-rows-container {
 
 .user-information-container .notification-icon-container .fa-bell {
     font-size: max(0.5vw, 3vh);
-    color: var(--Bright-Lilac);
 }
 
 
@@ -1074,7 +1073,7 @@ footer {
     visibility: hidden;
 }
 
-input:checked + .inputPlace  {
+input:checked + .inputPlace {
     visibility: visible;
 }
 
@@ -1216,14 +1215,12 @@ input:checked + .inputPlace  {
     text-align: justify-all;
 }
 
-.accepBtns-container{
-    
+.accepBtns-container {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
 }
 
     .accepBtns-container .accepBtn-container {
-       
         font-weight: bold;
         font-size: max(1vw, 2vh);
         border: none;
@@ -1231,8 +1228,8 @@ input:checked + .inputPlace  {
         border-radius: 5px;
         background-color: #FE799D;
     }
+
         .accepBtns-container .accepBtn-container .accepBtn {
-           
             font-weight: bold;
             font-size: max(1vw, 2vh);
             border: none;
@@ -1240,10 +1237,10 @@ input:checked + .inputPlace  {
         }
 
 
-        .Accept h1 {
-            color: #8378A8;
-            font-weight: bold;
-        }
+.Accept h1 {
+    color: #8378A8;
+    font-weight: bold;
+}
 
 /*.accepForm input {
     width: 300px;
@@ -1272,11 +1269,11 @@ input:checked + .inputPlace  {
         left: -400px;
         width: 100vh;
         /*height: 70vh;*/
-    background: #EEF3FC;
-    padding: 12px;
-    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
-    border-radius: 20px;
-}
+        background: #EEF3FC;
+        padding: 12px;
+        box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px #BEC3CC;
+        border-radius: 20px;
+    }
 /*******************************************************************************/
 /* consultant profile page */
 .accepBtns-containers {
@@ -1287,13 +1284,14 @@ input:checked + .inputPlace  {
     border-radius: 5px;
     background-color: #FE799D;
 }
-   .accepBtns-containers.accepBtn-containers {
+
+    .accepBtns-containers.accepBtn-containers {
         display: flex;
         justify-content: flex-end;
     }
 
 
-       .accepBtns-containers.accepBtn-containers.accepBtnn {
+        .accepBtns-containers.accepBtn-containers.accepBtnn {
             font-weight: bold;
             font-size: max(1vw, 2vh);
             border: none;
@@ -1463,7 +1461,7 @@ input:checked + .inputPlace  {
     text-align: center;
     width: 75vh;
     margin-right: 50vh;
-    margin-top:9vh;
+    margin-top: 9vh;
     border-radius: 4vh;
 }
 
@@ -1487,7 +1485,7 @@ input:checked + .inputPlace  {
         margin-bottom: 7vh;
         background-color: #8378A8;
         border: none;
-        border-radius:1vw;
+        border-radius: 1vw;
         padding: 1vh 3vh;
         width: fit-content;
     }
@@ -1542,9 +1540,10 @@ input:checked + .inputPlace  {
 /*Password-changed*/
 
 .passwordChanged-container {
-    margin-top:20vh;
-    min-height:50vh;
+    margin-top: 20vh;
+    min-height: 50vh;
 }
+
 .password-changed {
     text-align: center;
 }
@@ -1556,7 +1555,6 @@ input:checked + .inputPlace  {
 
     .password-changed .send {
         font-size: 3vh;
-       
         margin-right: 1vh;
         padding: 0.5vh 3vh;
         background-color: #8378A8;
@@ -1966,7 +1964,6 @@ body .about-logo {
 }
 
     .profile-page-content-container .side-bar {
-  
         height: 100%;
         background: #EEF3FC;
         transition: all 0.3s ease;
@@ -1980,7 +1977,7 @@ body .about-logo {
 
     .side-bar .title .logo {
         display: flex;
-        width:100%;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -1989,8 +1986,7 @@ body .about-logo {
         color: #31344b;
     }
 
-.title .logo img{
-
+.title .logo img {
     height: 30vh;
 }
 
@@ -2019,28 +2015,28 @@ body .about-logo {
     transition: all 0.2s ease;
 }
 
-    .side-bar ul i {
-        margin-right: 10px;
-    }
+.side-bar ul i {
+    margin-right: 10px;
+}
 
-    .side-bar ul a:hover:before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        box-shadow: inset -2px -2px 7px #ffffff, inset 3px 3px 5px #ceced1;
-    }
+.side-bar ul a:hover:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset -2px -2px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
 
-    .side-bar ul a:hover:before {
-        border-radius: 4px;
-    }
+.side-bar ul a:hover:before {
+    border-radius: 4px;
+}
 
 
-    .side-bar ul a:hover {
-        color: #000;
-    }
+.side-bar ul a:hover {
+    color: #000;
+}
 
 /*.active {
     background-color: #8378A8;
@@ -2075,11 +2071,9 @@ body .about-logo {
     background: #EEF3FC;
     border: #EEF3FC;
     text-align: center;
-
 }
 
 .text-field2 {
-
     background: #EEF3FC;
     border: #EEF3FC;
     text-align: right;
@@ -2090,6 +2084,7 @@ body .about-logo {
     border-color: #dfe7f7;
     text-align: right;
 }
+
 
 .profile-tab-content-container {
     display: flex;
@@ -2139,6 +2134,7 @@ body .about-logo {
 .tabs-content-containerP {
     width: 80vw;
 }
+
 .project-card-containerP .project-cardP .project-name-containerP {
     width: 100%;
 }
@@ -2157,7 +2153,7 @@ body .about-logo {
 }
 
 
-.project-card-containerP .project-cardP .card-button-containerP{
+.project-card-containerP .project-cardP .card-button-containerP {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2165,19 +2161,19 @@ body .about-logo {
 
 .project-cardP .card-button-containerP .project-details-buttonP {
     height: 2.5vw;
-    width:8vw;
+    width: 8vw;
     border: none;
     box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
     border-radius: 5px;
 }
+
 .card-button-containerP {
- 
 }
 
-.buttinDivider{
-    width:2vh;
-    height:auto;
-    display:inline-block;
+.buttinDivider {
+    width: 2vh;
+    height: auto;
+    display: inline-block;
 }
 /* General Styles for Cards End*/
 /* Specific Styles for Each Section Start*/
@@ -2294,9 +2290,10 @@ body .about-logo {
 
 /*أفنان*/
 /*Statistic page Styles Start */
-statidticsPage-container{
+statidticsPage-container {
     min-height: 100vh;
 }
+
 .sections-tabs-stat {
     display: flex;
     align-items: center;
@@ -2309,9 +2306,9 @@ statidticsPage-container{
     border-radius: 0.5vh;
     width: 19vw;
     height: 4.6vh;
-    margin-left:10vh;
-
+    margin-left: 10vh;
 }
+
 .SecondQuestion-list {
     background: #FFFFFF;
     box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
@@ -2320,9 +2317,11 @@ statidticsPage-container{
     height: 4.6vh;
     margin-bottom: 5vh;
 }
+
 .section-heading {
-    margin-top:3vh;
+    margin-top: 3vh;
 }
+
 .charts-container {
     position: relative;
     top: -80px;
@@ -2332,6 +2331,7 @@ statidticsPage-container{
     height: 70vh;
     border-radius: 4vh;
 }
+
 .project-stat {
     margin-top: 3vh;
     text-align: center;
@@ -2345,28 +2345,32 @@ statidticsPage-container{
     align-items: center;
     justify-content: center;
 }
+
 .admin-label {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .admin-data-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .admin-controls-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.save-adminData-container{
-display: flex;
+.save-adminData-container {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.save-adminData { 
+
+.save-adminData {
     width: 7vw;
     height: 5vh;
     border: none;
@@ -2379,7 +2383,6 @@ display: flex;
 .admin-controls {
     margin-bottom: 2vh;
     margin-right: 2vh;
-   
 }
 
 .select-division {
@@ -2391,6 +2394,7 @@ display: flex;
     margin-bottom: 2vh;
     margin-top: 2vh;
 }
+
 .admin_data {
     background: #FFFFFF;
     box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
@@ -2400,6 +2404,7 @@ display: flex;
     margin-bottom: 1vh;
     display: block;
 }
+
     .admin_data[type=number] {
         background: #FFFFFF;
         box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #BEC3CC;
@@ -2418,6 +2423,7 @@ display: flex;
 .consultingPage-container {
     min-height: 100vh;
 }
+
 .consultingPage {
     padding: 2vh;
     background-color: #F6F9FF;
@@ -2548,6 +2554,7 @@ div.card-header {
     border-radius: 4vh;
     min-height: 100vh;
 }
+
 .consultantDetails {
     padding: 3%;
 }
@@ -2573,12 +2580,13 @@ div.card-header {
     margin-right: 3%;
     top: -133px;
 }
+
 .consultantDate-container {
     display: inline-block;
     margin-top: 11%;
     margin-right: 9%;
-
 }
+
 .consultantTime-container {
     display: inline-block;
     box-shadow: 5px 5px 10px #BEC3CC;
@@ -2654,9 +2662,10 @@ div.card-header {
 .add-project-page-content {
     min-height: 100vh;
 }
-.add-project-page-content .add-project-links-container {
-    display: flex;
-}
+
+    .add-project-page-content .add-project-links-container {
+        display: flex;
+    }
 
         .add-project-page-content .add-project-links-container > * {
             text-decoration: none;
@@ -2682,28 +2691,29 @@ div.card-header {
         font-size: max(1vw, 3.5vh);
     }
 
-.add-project-page-content .project-name-container .project-name-field,
-.add-project-page-content .project-major-container .projectMajor,
-.add-project-page-content .project-college-container .projectCollege,
-.add-project-page-content .project-supervisor-container .projectSupervisor,
-.add-project-page-content .project-grade-container .projectGrade,
-.add-project-page-content .project-file-container .projectFile,
-.add-project-page-content .project-pic-container .Porjectimg {
-    width: 50vh;
-    height: 5vh;
-    border-radius: 5px;
-    border: none;
-    box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
-    background-color: var(--Ghost-White);
-}
+    .add-project-page-content .project-name-container .project-name-field,
+    .add-project-page-content .project-major-container .projectMajor,
+    .add-project-page-content .project-college-container .projectCollege,
+    .add-project-page-content .project-supervisor-container .projectSupervisor,
+    .add-project-page-content .project-grade-container .projectGrade,
+    .add-project-page-content .project-file-container .projectFile,
+    .add-project-page-content .project-pic-container .Porjectimg {
+        width: 50vh;
+        height: 5vh;
+        border-radius: 5px;
+        border: none;
+        box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+        background-color: var(--Ghost-White);
+    }
 
-.add-project-page-content .project-description-container .project-description-textarea {
-    width: 90vw;
-    border-radius: 5px;
-    border: none;
-    box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
-    background-color: var(--Ghost-White);
-}
+    .add-project-page-content .project-description-container .project-description-textarea {
+        width: 90vw;
+        border-radius: 5px;
+        border: none;
+        box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+        background-color: var(--Ghost-White);
+    }
+
     .add-project-page-content .project-members-container .project-members-textarea {
         width: 50vw;
         border-radius: 5px;
@@ -3138,14 +3148,14 @@ div.card-header {
     border-radius: 1vw;
     border: none;
     width: 12vh;
-    height:7vh;
+    height: 7vh;
     margin-right: 2vh;
 }
 
 .buttons {
     margin-right: 55vh;
     position: relative;
-    margin-top:10vh;
+    margin-top: 10vh;
 }
 
 
@@ -3174,6 +3184,7 @@ div.card-header {
 .Editdelete-Idea-container {
     min-height: 85vh;
 }
+
 .Editdelete-idea {
     padding-right: 10vh;
     position: relative;
@@ -3181,9 +3192,10 @@ div.card-header {
 
 
 .delete {
-    margin-right:4%;
+    margin-right: 4%;
     margin-top: -7vh;
 }
+
 .deleteButton {
     background-color: #8378A8;
     color: black;

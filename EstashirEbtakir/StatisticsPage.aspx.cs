@@ -9,32 +9,26 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Text.RegularExpressions;
+using System.Web.UI.DataVisualization.Charting;
+using System.Drawing;
 
 namespace EstashirEbtakir
 {
     public partial class WebForm2 : System.Web.UI.Page
     {
-        SqlConnection con;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            // set database connection
-            con = new SqlConnection(GetConstring());
-            con.Open();
-
-            
-
-            SqlCommand cmd = new SqlCommand("SELECT COUNT(User_Id), Job_Position FROM OurUser GROUP BY Job_Position", con);
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            
-            DataTable table = new DataTable("usersTable");
-            sda.Fill(table);
+            Chart1.Palette = ChartColorPalette.None;
+            Chart1.PaletteCustomColors = new Color[] {
+                ColorTranslator.FromHtml("#377D71"),
+                ColorTranslator.FromHtml("#FBC5C5"),
+                ColorTranslator.FromHtml("#FBA1A1"),
+                ColorTranslator.FromHtml("#8879B0")
+            };
+            //Chart1.ChartAreas[0].AxisX.LabelStyle.Font = new System.Drawing.Font("Arial", 14f);
+            //Chart1.AntiAliasing = AntiAliasingStyles.All;
         }
 
-
-        public string GetConstring()
-        {
-            string constr = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
-            return constr;
-        }
     }
 }

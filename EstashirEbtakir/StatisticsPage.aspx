@@ -1,4 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="StatisticsPage.aspx.cs" Inherits="EstashirEbtakir.WebForm2" %>
+
+<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -51,9 +53,24 @@
                     </select>
                 </div>
                 <div class="charts-container">
-                    <canvas id="projectChart">
+                    <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" BackColor="Transparent" BorderlineColor="Transparent">
+                        <Series>
+                            <asp:Series Name="Series1" XValueMember="Job_Position" YValueMembers="Column1" ChartType="Bar"></asp:Series>
+                        </Series>
+                        <ChartAreas>
+                            <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
+                                
+                                <AxisX>
+                                    <MajorGrid Enabled="false" />
+                                </AxisX>
 
-                    </canvas>
+                                <AxisY InterlacedColor="#ffccff">
+                                    <MajorGrid Enabled="false" />
+                                </AxisY>
+                            </asp:ChartArea>
+                        </ChartAreas>
+                    </asp:Chart>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT COUNT(User_Id), Job_Position FROM OurUser GROUP BY Job_Position"></asp:SqlDataSource>
                 </div>
             </div>
 
@@ -112,41 +129,5 @@
     </div>
 
         </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-  const labels = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-  ];
-
-  const data = {
-    labels: labels,
-    datasets: [{
-      label: 'My First dataset',
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgb(255, 99, 132)',
-      data: [0, 10, 5, 2, 20, 30, 45],
-    }]
-  };
-
-  const config = {
-    type: 'line',
-    data: data,
-    options: {}
-  };
-    </script>
-
-    <script>
-        const myChart = new Chart(
-            document.getElementById('projectChart'),
-            config
-        );
-    </script>
- 
 
 </asp:Content>
