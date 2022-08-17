@@ -178,13 +178,110 @@
                   </asp:DataList>
 
 
+              <!-- First Section of the card -->
+              <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
+                <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png" alt="Logo">
+              </div>
+              <!-- ps-xl-4 pe-xl-4  ps-lg-3 pe-lg-3 -->
+
+              <!-- Second Section of the card -->
+              <div class="idea-name-container row">
+                <h3 class="idea-name">الفكرة الثانية</h3>
+              </div>
+
+
+              <!-- Third Section of the card -->
+              <div class="idea-description-container">
+                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة هنا تتم كتابة نبذة
+                  مختصرة عن الفكرة المضافة </p>
+              </div>
+
+              <!-- Last Section of the card -->
+              <div class="card-button-container row mt-4 mb-3">
+                <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">عرض
+                  الفكرة</button>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Idea Card -->
+          <div class="idea-card-container col p-xl-3 p-lg-2">
+            <div class="idea-card p-lg-1">
+
+              <!-- First Section of the card -->
+              <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
+                <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png" alt="Logo">
+              </div>
+              <!-- ps-xl-4 pe-xl-4  ps-lg-3 pe-lg-3 -->
+
+              <!-- Second Section of the card -->
+              <div class="idea-name-container row">
+                <h3 class="idea-name">الفكرة الثالثة</h3>
+              </div>
+
+
+              <!-- Third Section of the card -->
+              <div class="idea-description-container">
+                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة هنا تتم كتابة نبذة
+                  مختصرة عن الفكرة المضافة </p>
+              </div>
+
+              <!-- Last Section of the card -->
+              <div class="card-button-container row mt-4 mb-3">
+                <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">عرض
+                  الفكرة</button>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Idea Card -->
+          <div class="idea-card-container col p-xl-3 p-lg-2">
+            <div class="idea-card p-lg-1">
+
+              <!-- First Section of the card -->
+              <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
+                <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png" alt="Logo">
+              </div>
+              <!-- ps-xl-4 pe-xl-4  ps-lg-3 pe-lg-3 -->
+
+              <!-- Second Section of the card -->
+              <div class="idea-name-container row">
+                <h3 class="idea-name">الفكرة الرابعة</h3>
+              </div>
+
+
+              <!-- Third Section of the card -->
+              <div class="idea-description-container">
+                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة هنا تتم كتابة نبذة
+                  مختصرة عن الفكرة المضافة </p>
+              </div>
+
+              <!-- Last Section of the card -->
+              <div class="card-button-container row mt-4 mb-3">
+                <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">عرض
+                  الفكرة</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
        
             </div>
         <div class="go-to-sections-homepage-container-area row mt-lg-5">
           <div class="go-to-ideas-homepage-container col-6 ps-lg-3">
             <h3 class="go-to-ideas-homepage">
-              الانتقال إلى القسم
-            </h3>
+              
+         <a href="IdeasSectionHomePage.aspx" >الانتقال إلى القسم</a>
+
+                </h3>
             <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
           </div>
         </div>
@@ -243,7 +340,10 @@
         <div class="go-to-sections-homepage-container-area row mt-lg-5">
           <div class="go-to-consultancies-homepage-container col-6 ps-lg-3">
             <h3 class="go-to-consultancies-homepage">
-              الانتقال إلى القسم
+           
+                          <a href="ConsultationsSectionHomePage.aspx">الانتقال إلى القسم</a>
+
+                
             </h3>
             <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
           </div>
@@ -297,7 +397,10 @@
         <div class="go-to-sections-homepage-container-area row mt-lg-5">
           <div class="go-to-projects-homepage-container col-6 ps-lg-3">
             <h3 class="go-to-projects-homepage">
-              الانتقال إلى القسم
+              
+
+                <a href="ProjectsSectionHomePage.aspx" >الانتقال إلى القسم</a>
+
             </h3>
             <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
           </div>
@@ -397,7 +500,8 @@
         <div class="go-to-sections-homepage-container-area row mt-lg-5">
           <div class="go-to-events-homepage-container col-6 ps-lg-3">
             <h3 class="go-to-events-homepage">
-              الانتقال إلى القسم
+              
+                <a href="EventsHomePage.aspx" >الانتقال إلى القسم</a>
             </h3>
             <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
           </div>
