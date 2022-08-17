@@ -171,7 +171,7 @@
                             
                              <tr>
                         <td class="IdeasButton">  <button class="ideas-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
-                  formaction="IdeasDetails.aspx"">تفاصيل</button> </td>    
+                  formaction="IdeasDetails.aspx">تفاصيل</button> </td>    
                             </tr>
                         </table>
                     </ItemTemplate>
@@ -309,8 +309,8 @@
                             </tr>
 
                             <tr>
-                                <td class="ConsSpecialityDB"> <%#Eval("Counseling_Speciality") %> </td>
-                            </tr>
+                                <td class="ConsSpecialityDB"> <%#Eval("Counseling_Specialty") %> </td>
+                            </tr>   
                              <tr>
                                 <td class="ConsUniversity"> <%#Eval("University_ID") %> </td>
                             </tr>
@@ -319,7 +319,7 @@
                              <tr>
                         <td class="ConsDetailsButton">  
                             <button class="consultation-details-button col-4 p-0 ps-2 pe-2"
-                  formaction="BrowsProject.aspx"">تفاصيل</button> </td>    
+                  formaction="BrowsProject.aspx">تفاصيل</button> </td>    
                             </tr>
 
                            <tr>
@@ -384,7 +384,7 @@
                             
                              <tr>
                         <td class="projectButton">  <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
-                  formaction="ProjectDetails.aspx"">تفاصيل</button> </td>    
+                  formaction="ProjectDetails.aspx">تفاصيل</button> </td>    
                             </tr>
                         </table>
                     </ItemTemplate>
@@ -511,6 +511,5 @@
 
 
     </div>
-  </div>
-
+      </div>
 </asp:Content>
