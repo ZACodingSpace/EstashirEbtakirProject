@@ -2111,8 +2111,8 @@ body .about-logo {
     }
 
 .change-pass-button {
-    background-color: #8378A8;
-    border: #8378A8;
+    background-color: #D08DEE;
+    border: #D08DEE;
     font-weight: bold;
     font-size: max(1vw, 2vh);
     height: 1.8vw;
@@ -2144,7 +2144,7 @@ body .about-logo {
 }
 
 .tabs-content-containerP {
-    width: 80vw;
+    width: 160vh;
 }
 
 .project-card-containerP .project-cardP .project-name-containerP {
