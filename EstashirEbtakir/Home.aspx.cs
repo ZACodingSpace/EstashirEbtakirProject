@@ -67,7 +67,23 @@ namespace EstashirEbtakir
             sdaPro.Fill(dsPro);
             DataListProject.DataSource = dsPro;
             DataListProject.DataBind();
-            
+
+            //////////////////////////////
+
+
+            sqlconn = new SqlConnection(mainconn);
+
+
+            string sqlqueryEvent = "Select Top 4 * from [dbo].[EventsAndParticipation]";
+            SqlCommand sqlcommEvent = new SqlCommand(sqlqueryEvent, sqlconn);
+            sqlconn.Open();
+            SqlDataAdapter sdaEvent = new SqlDataAdapter();
+            sdaEvent.SelectCommand = sqlcommEvent;
+            DataSet dsEvent = new DataSet();
+
+            sdaEvent.Fill(dsEvent);
+            DataListEvent.DataSource = dsEvent;
+            DataListEvent.DataBind();
 
             sqlconn.Close();
 

@@ -337,14 +337,31 @@
 
                     <!-- Cards -->
 
+                    <asp:DataList ID="DataListEvent" runat="server" RepeatColumns="4">
+                        <ItemTemplate>
+                            <table class="EventTable">
 
+                                <tr>
+                                    <td class="imageTable">
+                                        <img src="Images/Event_Img_1.jpg" />
+                                    </td>
 
+                                </tr>
 
+                                <tr>
+                                    <td> <h3 class="eventDB">  <%#Eval("Name") %>  </h3> </td>
+                                </tr>
 
+                                <tr>
+                                    <td class = "eventButton">
+                                          <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="EventsHomePage.aspx">تفاصيل</button>
+                                    </td>
+                                </tr>
 
-
-
-
+                              
+                            </table>
+                        </ItemTemplate>
+                    </asp:DataList>
 
                 </div>
 
