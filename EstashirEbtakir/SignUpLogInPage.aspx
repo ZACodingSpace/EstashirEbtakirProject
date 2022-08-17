@@ -40,6 +40,8 @@
               </div>
 
               <div class="logIn-email-container">
+
+
                 <asp:Label id="logInEmail" class="logIn-email" runat="server">البريد الالكتروني</asp:Label>
                 <input id="emailInputPlace" class="inputPlace mt-1" runat="server" type="email" name="logInEmail" />
                 <asp:Label id="logInEmailEmsg" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
