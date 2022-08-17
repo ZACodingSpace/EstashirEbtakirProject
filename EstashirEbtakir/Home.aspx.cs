@@ -21,7 +21,7 @@ namespace EstashirEbtakir
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
-            string sqlqueryIdea = "Select Top 4 * from [dbo].[OurIdeas] ";
+            string sqlqueryIdea = "Select Top 4 * from [dbo].[OurIdea] ";
             SqlCommand sqlcommIdea = new SqlCommand(sqlqueryIdea, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaIdea = new SqlDataAdapter();
@@ -57,7 +57,7 @@ namespace EstashirEbtakir
             sqlconn = new SqlConnection(mainconn);
 
 
-            string sqlqueryPro = "Select Top 4 * from [dbo].[OurProjects]";
+            string sqlqueryPro = "Select Top 4 * from [dbo].[OurProject]";
             SqlCommand sqlcommPro = new SqlCommand(sqlqueryPro, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaPro = new SqlDataAdapter();
@@ -74,15 +74,6 @@ namespace EstashirEbtakir
 
         }
 
-        protected void DataList3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string rollno = Request.Form["ID"];
-            Response.Redirect("ProjectDetails.aspx?rollno= " + rollno);
-            //sqlquery = "Select Top 4 * from [dbo].[OurProjects] where ID=rollno";
-
-            
-
-
-        }
+       
     }
 }

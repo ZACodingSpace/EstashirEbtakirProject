@@ -70,18 +70,17 @@
                             </tr>
                             
                             <tr >
-                             <input type="hidden" value="<%#Eval("ID") %>" />
-                                <td class="projectName"> <%#Eval("ProjectName") %>  </td>
+                                <td class="projectName"> <%#Eval("Project_Name") %>  </td>
                                 <td>  <br /> </td>
                             </tr>
 
                             <tr>
                                 <td class="college">الكلية</td>
-                                <td class="collegeDB"> <%#Eval("college") %> </td>
+                                <td class="collegeDB"> <%#Eval("Faculty") %> </td>
                             </tr>
                              <tr>
                                 <td class="major">التخصص</td>
-                                <td class="majorDB"> <%#Eval("major") %> </td>
+                                <td class="majorDB"> <%#Eval("Degree") %> </td>
                             </tr>
                            
                             
