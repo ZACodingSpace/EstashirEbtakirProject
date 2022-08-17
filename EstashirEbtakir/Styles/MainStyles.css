@@ -2085,6 +2085,12 @@ body .about-logo {
     text-align: right;
 }
 
+.text-field4 {
+    background-color: ghostwhite;
+    border: ghostwhite;
+    text-align: right;
+}
+
 
 .profile-tab-content-container {
     display: flex;
@@ -2105,8 +2111,14 @@ body .about-logo {
     }
 
 .change-pass-button {
-    background-color: #8378A8;
-    border: #8378A8;
+    background-color: #D08DEE;
+    border: #D08DEE;
+    font-weight: bold;
+    font-size: max(1vw, 2vh);
+    height: 1.8vw;
+    border: none;
+    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+    border-radius: 5px;
 }
 
 
@@ -2132,7 +2144,7 @@ body .about-logo {
 }
 
 .tabs-content-containerP {
-    width: 80vw;
+    width: 160vh;
 }
 
 .project-card-containerP .project-cardP .project-name-containerP {
