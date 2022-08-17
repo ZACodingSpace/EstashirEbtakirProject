@@ -14,20 +14,73 @@ namespace EstashirEbtakir
 {
     public partial class Home : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
+           
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
-            string sqlquery = "Select * from [dbo].[OurProjects]";
-            SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn);
+
+            string sqlqueryIdea = "Select Top 4 * from [dbo].[OurIdeas] ";
+            SqlCommand sqlcommIdea = new SqlCommand(sqlqueryIdea, sqlconn);
             sqlconn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter();
-            sda.SelectCommand = sqlcomm;
-            DataSet ds = new DataSet();
-            sda.Fill(ds);
-            DataList1.DataSource = ds;
-            DataList1.DataBind();
+            SqlDataAdapter sdaIdea = new SqlDataAdapter();
+            sdaIdea.SelectCommand = sqlcommIdea;
+            DataSet dsIdea = new DataSet();
+
+            sdaIdea.Fill(dsIdea);
+            DataListIdea.DataSource = dsIdea;
+            DataListIdea.DataBind();
+            /////////////////////////////////////
+
+
+
+            sqlconn = new SqlConnection(mainconn);
+
+
+            string sqlqueryCons = "Select Top 4 * from [dbo].[OurCounselor] " +
+                "inner Join [dbo].[OurUser] ON Counselor_ID=User_ID";
+            SqlCommand sqlcommCons = new SqlCommand(sqlqueryCons, sqlconn);
+            sqlconn.Open();
+            SqlDataAdapter sdaCons = new SqlDataAdapter();
+            sdaCons.SelectCommand = sqlcommCons;
+            DataSet dsCons = new DataSet();
+
+            sdaCons.Fill(dsCons);
+            DataListCons.DataSource = dsCons;
+            DataListCons.DataBind();
+
+
+
+            ///////////////////////////////////
+
+            sqlconn = new SqlConnection(mainconn);
+
+
+            string sqlqueryPro = "Select Top 4 * from [dbo].[OurProjects]";
+            SqlCommand sqlcommPro = new SqlCommand(sqlqueryPro, sqlconn);
+            sqlconn.Open();
+            SqlDataAdapter sdaPro = new SqlDataAdapter();
+            sdaPro.SelectCommand = sqlcommPro;
+            DataSet dsPro = new DataSet();
+           
+            sdaPro.Fill(dsPro);
+            DataListProject.DataSource = dsPro;
+            DataListProject.DataBind();
+            
+
             sqlconn.Close();
+
+
+        }
+
+        protected void DataList3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string rollno = Request.Form["ID"];
+            Response.Redirect("ProjectDetails.aspx?rollno= " + rollno);
+            //sqlquery = "Select Top 4 * from [dbo].[OurProjects] where ID=rollno";
+
+            
 
 
         }

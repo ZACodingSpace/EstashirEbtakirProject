@@ -28,6 +28,7 @@
       </button>-->
     </div>
 
+
     <!-- Slides -->
     <div class="carousel-inner">
 
@@ -144,137 +145,41 @@
     <div class="tab-content" id="myTabContent">
 
       <!------------------------------------------ Ideas Section ------------------------------------>
-      <div class="tab-pane fade  show active" id="ideas" role="tabpanel" aria-labelledby="ideas-tab">
+        <div class="tab-pane fade" id="ideas" role="tabpanel" aria-labelledby="consultancies-tab">
         <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5">
-
+       
           <!-- Cards -->
+              <asp:DataList ID="DataListIdea" runat="server" RepeatColumns="4" >
+                   <ItemTemplate>
+                        <table class= "IdeaTable" >
 
-          <!-- Idea Card -->
-          <div class="idea-card-container col p-xl-3 p-lg-2">
-            <div class="idea-card p-lg-1">
+                            <tr>
+                                <td><img class="IdeaImage" src="Icons/Lightbulb.png"> </td>
+                                 <td><br /><br /> </td>
+                            </tr>
+                            
+                            <tr >
+                             <td class="IdeaName" > <%#Eval("IdeaName") %> </td>
+                                <td> </td>
+                            
+                            </tr>
 
-              <!-- First Section of the card -->
-              <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
-                <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png" alt="Logo">
-              </div>
+                            <tr>
+                                <td class="BriefDB"> <%#Eval("Brief") %> </td>
+                            </tr>
+                             
+                            
+                             <tr>
+                        <td class="IdeasButton">  <button class="ideas-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
+                  formaction="IdeasDetails.aspx"">تفاصيل</button> </td>    
+                            </tr>
+                        </table>
+                    </ItemTemplate>
+                  </asp:DataList>
 
-              <!-- Second Section of the card -->
-              <div class="idea-name-container row">
-                <h3 class="idea-name">الفكرة الأولى</h3>
-              </div>
 
-              <!-- Third Section of the card -->
-              <div class="idea-description-container">
-                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة هنا تتم كتابة نبذة
-                  مختصرة عن الفكرة المضافة </p>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="card-button-container row mt-4 mb-3">
-                <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">عرض
-                  الفكرة</button>
-              </div>
-
+       
             </div>
-          </div>
-
-          <!-- Idea Card -->
-          <div class="idea-card-container col p-xl-3 p-lg-2">
-            <div class="idea-card p-lg-1">
-
-              <!-- First Section of the card -->
-              <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
-                <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png" alt="Logo">
-              </div>
-              <!-- ps-xl-4 pe-xl-4  ps-lg-3 pe-lg-3 -->
-
-              <!-- Second Section of the card -->
-              <div class="idea-name-container row">
-                <h3 class="idea-name">الفكرة الثانية</h3>
-              </div>
-
-
-              <!-- Third Section of the card -->
-              <div class="idea-description-container">
-                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة هنا تتم كتابة نبذة
-                  مختصرة عن الفكرة المضافة </p>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="card-button-container row mt-4 mb-3">
-                <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">عرض
-                  الفكرة</button>
-              </div>
-
-            </div>
-          </div>
-
-
-          <!-- Idea Card -->
-          <div class="idea-card-container col p-xl-3 p-lg-2">
-            <div class="idea-card p-lg-1">
-
-              <!-- First Section of the card -->
-              <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
-                <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png" alt="Logo">
-              </div>
-              <!-- ps-xl-4 pe-xl-4  ps-lg-3 pe-lg-3 -->
-
-              <!-- Second Section of the card -->
-              <div class="idea-name-container row">
-                <h3 class="idea-name">الفكرة الثالثة</h3>
-              </div>
-
-
-              <!-- Third Section of the card -->
-              <div class="idea-description-container">
-                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة هنا تتم كتابة نبذة
-                  مختصرة عن الفكرة المضافة </p>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="card-button-container row mt-4 mb-3">
-                <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">عرض
-                  الفكرة</button>
-              </div>
-
-            </div>
-          </div>
-
-
-          <!-- Idea Card -->
-          <div class="idea-card-container col p-xl-3 p-lg-2">
-            <div class="idea-card p-lg-1">
-
-              <!-- First Section of the card -->
-              <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
-                <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png" alt="Logo">
-              </div>
-              <!-- ps-xl-4 pe-xl-4  ps-lg-3 pe-lg-3 -->
-
-              <!-- Second Section of the card -->
-              <div class="idea-name-container row">
-                <h3 class="idea-name">الفكرة الرابعة</h3>
-              </div>
-
-
-              <!-- Third Section of the card -->
-              <div class="idea-description-container">
-                <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة هنا تتم كتابة نبذة
-                  مختصرة عن الفكرة المضافة </p>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="card-button-container row mt-4 mb-3">
-                <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">عرض
-                  الفكرة</button>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
         <div class="go-to-sections-homepage-container-area row mt-lg-5">
           <div class="go-to-ideas-homepage-container col-6 ps-lg-3">
             <h3 class="go-to-ideas-homepage">
@@ -283,159 +188,58 @@
             <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
           </div>
         </div>
-
-      </div>
+        </div>
 
 
       <!------------------------------------------ Consultancies Section ------------------------------------>
       <div class="tab-pane fade" id="consultancies" role="tabpanel" aria-labelledby="consultancies-tab">
         <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5">
+            <!----------->
 
-          <!-- Cards -->
+             <asp:DataList ID="DataListCons" runat="server" RepeatColumns="4" >
+                    <ItemTemplate>
+                        <table class= "ConsTable" >
 
-          <!-- Consultation Card -->
-          <div class="consultation-card-container col p-xl-3 p-lg-2">
+                            <tr>
+                                <td> <img  class="ConsImage" src="Images/Profile_Icon.png" /> </td>
+                                 
+                            </tr>
+                            
+                            <tr >
+                             
+                                <td class="ConsName"> <%#Eval("Fname") %>  <%#Eval("Lname") %> </td>
+                                <td>  <br /> </td>
+                            </tr>
 
-            <div class="consultation-card">
+                            <tr>
+                                <td class="ConsSpecialityDB"> <%#Eval("Counseling_Speciality") %> </td>
+                            </tr>
+                             <tr>
+                                <td class="ConsUniversity"> <%#Eval("University_ID") %> </td>
+                            </tr>
+                           
+                            
+                             <tr>
+                        <td class="ConsDetailsButton">  
+                            <button class="consultation-details-button col-4 p-0 ps-2 pe-2"
+                  formaction="BrowsProject.aspx"">تفاصيل</button> </td>    
+                            </tr>
 
-              <!-- First Section of the card -->
-              <div class="counselor-img-container row m-0 pt-xl-4 ps-xl-4 pe-xl-4 pt-lg-3 ps-lg-3 pe-lg-3">
-                <img class="counselor-img img-fluid p-3" src="Images/Profile_Icon.png" alt="Logo">
-              </div>
-
-              <!-- Second Section of the card -->
-              <div class="counselor-name-container row mt-5">
-                <h3 class="counselor-name mt-xl-4 mt-lg-3">د. عفراء عطية</h3>
-              </div>
-
-
-              <!-- Third Section of the card -->
-              <div class="counselor-information-container p-0 m-0">
-                <p class="counselor-information m-0 p-0">أستاذ مساعد - قسم تقنية المعلومات</p>
-                <p class="counselor-information m-0 p-0">كلية الحاسبات وتقنيةالمعلومات</p>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="card-button-container row m-0 p-0 mt-4 mb-3">
-                <button class="consultation-details-button col-4 p-0 ps-2 pe-2"
-                  formaction="BrowsProject.aspx">تفاصيل</button>
+                           <tr>
+                               <td class="ConsBookingButton">
                 <button class="consultation-booking-button col-4 p-0 ps-2 pe-2"
-                  formaction="BrowsProject.aspx">احجز</button>
-              </div>
+                  formaction="BrowsProject.aspx">احجز</button></td>
+                           </tr>
 
+                        </table>
+                    </ItemTemplate>
+                </asp:DataList>
+                    
+         
+
+
+            <!--------------->
             </div>
-
-          </div>
-
-
-          <!-- Consultation Card -->
-          <div class="consultation-card-container col p-xl-3 p-lg-2">
-
-            <div class="consultation-card">
-
-              <!-- First Section of the card -->
-              <div class="counselor-img-container row m-0 pt-xl-4 ps-xl-4 pe-xl-4 pt-lg-3 ps-lg-3 pe-lg-3">
-                <img class="counselor-img img-fluid p-3" src="Images/Profile_Icon.png" alt="Logo">
-              </div>
-
-
-              <!-- Second Section of the card -->
-              <div class="counselor-name-container row mt-5">
-                <h3 class="counselor-name mt-xl-4 mt-lg-3">د. منار سلامة</h3>
-              </div>
-
-
-              <!-- Third Section of the card -->
-              <div class="counselor-information-container p-0 m-0">
-                <p class="counselor-information m-0 p-0">أستاذ مشارك - قسم علوم الحاسب</p>
-                <p class="counselor-information m-0 p-0">كلية الحاسبات وتقنيةالمعلومات</p>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="card-button-container row m-0 p-0 mt-4 mb-3">
-                <button class="consultation-details-button col-4 p-0 ps-2 pe-2"
-                  formaction="BrowsProject.aspx">تفاصيل</button>
-                <button class="consultation-booking-button col-4 p-0 ps-2 pe-2"
-                  formaction="BrowsProject.aspx">احجز</button>
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <!-- Consultation Card -->
-          <div class="consultation-card-container col p-xl-3 p-lg-2">
-
-            <div class="consultation-card">
-
-              <!-- First Section of the card -->
-              <div class="counselor-img-container row m-0 pt-xl-4 ps-xl-4 pe-xl-4 pt-lg-3 ps-lg-3 pe-lg-3">
-                <img class="counselor-img img-fluid p-3" src="Images/Profile_Icon.png" alt="Logo">
-              </div>
-
-
-              <!-- Second Section of the card -->
-              <div class="counselor-name-container row mt-5">
-                <h3 class="counselor-name mt-xl-4 mt-lg-3">أ. حنان الأحمدي</h3>
-              </div>
-
-
-              <!-- Third Section of the card -->
-              <div class="counselor-information-container p-0 m-0">
-                <p class="counselor-information m-0 p-0">محاضر - قسم علوم الحاسب</p>
-                <p class="counselor-information m-0 p-0">كلية الحاسبات وتقنيةالمعلومات</p>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="card-button-container row m-0 p-0 mt-4 mb-3">
-                <button class="consultation-details-button col-4 p-0 ps-2 pe-2"
-                  formaction="BrowsProject.aspx">تفاصيل</button>
-                <button class="consultation-booking-button col-4 p-0 ps-2 pe-2"
-                  formaction="BrowsProject.aspx">احجز</button>
-              </div>
-
-            </div>
-
-          </div>
-
-          <!-- Consultation Card -->
-          <div class="consultation-card-container col p-xl-3 p-lg-2">
-
-            <div class="consultation-card">
-
-              <!-- First Section of the card -->
-              <div class="counselor-img-container row m-0 pt-xl-4 ps-xl-4 pe-xl-4 pt-lg-3 ps-lg-3 pe-lg-3">
-                <img class="counselor-img img-fluid p-3" src="Images/Profile_Icon.png" alt="Logo">
-              </div>
-
-
-              <!-- Second Section of the card -->
-              <div class="counselor-name-container row mt-5">
-                <h3 class="counselor-name mt-xl-4 mt-lg-3">د. هند بيطار</h3>
-              </div>
-
-
-              <!-- Third Section of the card -->
-              <div class="counselor-information-container p-0 m-0">
-                <p class="counselor-information m-0 p-0">أستاذ مساعد - قسم نظم معلومات</p>
-                <p class="counselor-information m-0 p-0">كلية الحاسبات وتقنيةالمعلومات</p>
-              </div>
-
-              <!-- Last Section of the card -->
-              <div class="card-button-container row m-0 p-0 mt-4 mb-3">
-                <button class="consultation-details-button col-4 p-0 ps-2 pe-2"
-                  formaction="BrowsProject.aspx">تفاصيل</button>
-                <button class="consultation-booking-button col-4 p-0 ps-2 pe-2"
-                  formaction="BrowsProject.aspx">احجز</button>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
         <div class="go-to-sections-homepage-container-area row mt-lg-5">
           <div class="go-to-consultancies-homepage-container col-6 ps-lg-3">
             <h3 class="go-to-consultancies-homepage">
@@ -450,19 +254,21 @@
 
       <!------------------------------------------ Projects Section ------------------------------------>
     
-
+         <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="consultancies-tab">
+        <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5">
+       
              
-                <asp:DataList ID="DataList1" runat="server" RepeatColumns="4" >
+                <asp:DataList ID="DataListProject" runat="server" RepeatColumns="4" >
                     <ItemTemplate>
-                        <table class= "tableAsp" >
+                        <table class= "ProjectTable" >
 
                             <tr>
                                 <td class="imageTable"></td>
-                                 <td> </td>
+                                 
                             </tr>
                             
                             <tr >
-                             
+                             <input type="hidden" value="<%#Eval("ID") %>" />
                                 <td class="projectName"> <%#Eval("ProjectName") %>  </td>
                                 <td>  <br /> </td>
                             </tr>
@@ -488,7 +294,7 @@
            
         
         <!------------------>   
-
+            </div>
         <div class="go-to-sections-homepage-container-area row mt-lg-5">
           <div class="go-to-projects-homepage-container col-6 ps-lg-3">
             <h3 class="go-to-projects-homepage">
@@ -497,6 +303,7 @@
             <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
           </div>
         </div>
+       </div>
 
       
 
