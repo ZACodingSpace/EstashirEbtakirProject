@@ -33,6 +33,7 @@ namespace EstashirEbtakir
             string projectName = projectNameField.Value;
             string brief = projectDescriptionTextarea.Value;
             string collegePro = collegeP.Value;
+            string major = majorP.Value;
             string supervisorPro = supervisorP.Value;
             string TeamMembers = Textarea1.Value;
             string Grade = gradeP.Value;
@@ -70,8 +71,8 @@ namespace EstashirEbtakir
 
             int UserID = (int)Session["id"];
             SqlCommand cmd2 = new SqlCommand("INSERT INTO OurProject (User_ID, Project_Name, Supervisor, " +
-                "Team_Members, Brief, Faculty, Degree, Project_State, image, File_ID)" +
-                " VALUES(@User_ID, @Project_Name, @Supervisor,@Team_Members, @Brief, @Faculty," +
+                "Team_Members, Brief, Faculty, Major,Degree, Project_State, image, File_ID)" +
+                " VALUES(@User_ID, @Project_Name, @Supervisor,@Team_Members, @Brief, @Faculty, @Major" +
                 " @Degree, @Project_State, @image, @File_ID)", con);
             cmd2.Parameters.AddWithValue("@User_ID", UserID);
             cmd2.Parameters.AddWithValue("@Project_Name", projectName);
@@ -79,6 +80,7 @@ namespace EstashirEbtakir
             cmd2.Parameters.AddWithValue("@Team_Members", TeamMembers);
             cmd2.Parameters.AddWithValue("@Brief", brief);
             cmd2.Parameters.AddWithValue("@Faculty", collegePro);
+            cmd2.Parameters.AddWithValue("@Major", major);
             cmd2.Parameters.AddWithValue("@Degree", Grade);
             cmd2.Parameters.AddWithValue("@Project_State", 0);
             cmd2.Parameters.AddWithValue("@image", bytesIMG);
