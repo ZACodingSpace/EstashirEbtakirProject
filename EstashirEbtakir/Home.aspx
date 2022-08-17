@@ -275,11 +275,15 @@
 
         </div>
 
+
+
         <div class="go-to-sections-homepage-container-area row mt-lg-5">
           <div class="go-to-ideas-homepage-container col-6 ps-lg-3">
             <h3 class="go-to-ideas-homepage">
-              الانتقال إلى القسم
-            </h3>
+              
+         <a href="IdeasSectionHomePage.aspx" >الانتقال إلى القسم</a>
+
+                </h3>
             <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
           </div>
         </div>
@@ -439,7 +443,10 @@
         <div class="go-to-sections-homepage-container-area row mt-lg-5">
           <div class="go-to-consultancies-homepage-container col-6 ps-lg-3">
             <h3 class="go-to-consultancies-homepage">
-              الانتقال إلى القسم
+           
+                          <a href="ConsultationsSectionHomePage.aspx">الانتقال إلى القسم</a>
+
+                
             </h3>
             <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
           </div>
@@ -492,7 +499,10 @@
         <div class="go-to-sections-homepage-container-area row mt-lg-5">
           <div class="go-to-projects-homepage-container col-6 ps-lg-3">
             <h3 class="go-to-projects-homepage">
-              الانتقال إلى القسم
+              
+
+                <a href="ProjectsSectionHomePage.aspx" >الانتقال إلى القسم</a>
+
             </h3>
             <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
           </div>
@@ -591,7 +601,8 @@
         <div class="go-to-sections-homepage-container-area row mt-lg-5">
           <div class="go-to-events-homepage-container col-6 ps-lg-3">
             <h3 class="go-to-events-homepage">
-              الانتقال إلى القسم
+              
+                <a href="EventsHomePage.aspx" >الانتقال إلى القسم</a>
             </h3>
             <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
           </div>
