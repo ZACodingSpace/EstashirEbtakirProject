@@ -16,7 +16,7 @@
                             </tr>
                             
                             <tr >
-                             
+                                <td>هنا اسم المشروع: </td>
                                 <td class="projectName"> <%#Eval("ProjectName") %>  </td>
                                 <td>  <br /> </td>
                             </tr>
