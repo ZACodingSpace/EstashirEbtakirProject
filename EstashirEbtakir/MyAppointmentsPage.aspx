@@ -33,10 +33,6 @@
                 <div class="idea-card-container col p-xl-3 p-lg-2">
                     <div class="idea-card">
 
-                        <!-- First Section of the card -->
-                        <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
-                            <img class="idea-logo img-fluid p-xl-4 p-lg-4"  src="Icons/appointment.png" alt="Logo">
-                        </div>
                          <!-- Second Section of the card -->
                         <div class="idea-name-container row">
                             <h3 class="idea-name">الموعد الاول</h3>
@@ -45,21 +41,21 @@
                         <div class="idea-description-container">
                             <p class="idea-description m-0 col-8">
                                 التاريخ: 
-                                <input id="date1" type="text" class="text-field2" placeholder="02/05/2022" readonly/>
+                                <input id="date1" type="text" class="text-field4" placeholder="02/05/2022" readonly/>
                             </p>
                         </div>
                         <!-- Third Section of the card -->
                         <div class="idea-description-container">
                             <p class="idea-description m-0 col-8">
                                 الوقت: 
-                                <input id="time1" type="text" class="text-field2" placeholder="10:30" readonly/>
+                                <input id="time1" type="text" class="text-field4" placeholder="10:30" readonly/>
                             </p>
                         </div>
                         <!-- Last Section of the card -->
                         <div class="idea-description-container">
                             <p class="idea-description m-0 col-8">اسم المستشار
                                 : 
-                                <input id="consultantname1" type="text" class="text-field2" placeholder="د.هند بيطار" readonly/>
+                                <input id="consultantname1" type="text" class="text-field4" placeholder="د.هند بيطار" readonly/>
                             </p>
                         </div>
                     </div>
@@ -81,21 +77,21 @@
                         <div class="idea-description-container">
                             <p class="idea-description m-0 col-8">
                                 التاريخ: 
-                                <input id="date2" type="text" class="text-field2" placeholder="02/05/2022" readonly/>
+                                <input id="date2" type="text" class="text-field4" placeholder="05/08/2022" readonly/>
                             </p>
                         </div>
                         <!-- Third Section of the card -->
                         <div class="idea-description-container">
                             <p class="idea-description m-0 col-8">
                                 الوقت: 
-                                <input id="time2" type="text" class="text-field2" placeholder="10:30" readonly/>
+                                <input id="time2" type="text" class="text-field4" placeholder="1:00" readonly/>
                             </p>
                         </div>
                         <!-- Last Section of the card -->
                         <div class="idea-description-container">
                             <p class="idea-description m-0 col-8">
                                 اسم المستشار: 
-                                <input id="consultantname2" type="text" class="text-field2" placeholder="د.هند بيطار" readonly/>
+                                <input id="consultantname2" type="text" class="text-field4" placeholder="د. منار سلامة" readonly/>
                             </p>
                         </div>
                     </div>
