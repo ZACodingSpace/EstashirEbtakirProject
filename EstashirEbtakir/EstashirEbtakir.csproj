@@ -79,7 +79,6 @@
     <Content Include="AddParticipationEventAchievement.aspx" />
     <Content Include="AddProject.aspx" />
     <Content Include="AdminProfile.aspx" />
-    <Content Include="AdminProjectIdeasList.aspx" />
     <Content Include="App_Data\EstashirEbtakirDatabase.mdf" />
     <Content Include="App_Data\EstashirEbtakirDatabase_log.ldf">
       <DependentUpon>EstashirEbtakirDatabase.mdf</DependentUpon>
@@ -218,13 +217,6 @@
     </Compile>
     <Compile Include="AdminProfile.aspx.designer.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AdminProjectIdeasList.aspx.cs">
-      <DependentUpon>AdminProjectIdeasList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AdminProjectIdeasList.aspx.designer.cs">
-      <DependentUpon>AdminProjectIdeasList.aspx</DependentUpon>
     </Compile>
     <Compile Include="ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>

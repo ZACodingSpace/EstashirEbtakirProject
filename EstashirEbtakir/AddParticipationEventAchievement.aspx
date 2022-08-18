@@ -31,19 +31,23 @@
                 <input type="text" runat="server" id="pabout" />
 
 
-
-                <label for="p-department">التاريخ</label>
-                <input type="text" runat="server" id="date" />
-
                 <label for="p-supervisor">المشرف</label>
                 <input type="text" runat="server" id="psupervisor" />
 
                 <label for="p-file">إرفاق صور</label>
-                <input type="file" runat="server" id="imgfile" />
+                <input  type="file" accept="image/png,image/gif,image/jpeg" runat="server" id="imgfile" />
 
                 <label for="p-file">إرفاق ملفات</label>
                 <input type="file" runat="server" id="pfile" />
+
+                <label for="p-department">التاريخ</label>
+
+                 
+                <input type="date" runat="server" id="date" />
+
+                                    
                 
+
             </div>
 
 
