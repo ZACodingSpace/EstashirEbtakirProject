@@ -6,14 +6,28 @@ SELECT
   tec.tech_name 
 FROM 
   (SELECT Idea_ID, tech_name FROM OurIdea, Technologies WHERE Technologies.type ='I' AND OurIdea.Idea_ID = Technologies.ID) AS tec
-GROUP BY tec.tech_name;
+GROUP BY tec.tech_name ORDER BY idea_num;
 
-/* عدد الافكار خلال سنوات , و واحد ثاني لاخر 6 اشهر */
+/* عدد الافكار خلال سنوات */
 SELECT
   YEAR(Date) AS year,
   COUNT(Idea_ID) AS ideas
 FROM OurIdea
 GROUP BY YEAR(Date);
+
+SELECT
+  MONTH(Date) AS m,
+  COUNT(Idea_ID) AS ideas
+FROM OurIdea
+GROUP BY MONTH(Date);
+
+/* عدد الافكار لاخر 6 اشهر */
+SELECT TOP(6)
+  MONTH(Date) AS m, YEAR(Date) AS y,
+  COUNT(Idea_ID) AS ideas
+FROM OurIdea
+GROUP BY MONTH(Date), YEAR(Date)
+ORDER BY y DESC, m DESC;
 
 /* الافكار المأخوذة */
 SELECT 
@@ -26,4 +40,5 @@ FROM
   FROM OurIdea) as ideaT
 GROUP BY taken_stat;
 
+/* استعراض جميع الأفكار */
 SELECT * FROM OurIdea;
