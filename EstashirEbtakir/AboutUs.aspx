@@ -63,7 +63,7 @@
 
                             <div class="stu-contact-info-container row p-0">
                                 <div class="stu-contact p-0">
-                                    <i class="fa-solid fa-square-envelope  ms-lg-1"></i>
+                                    <i class="fa-solid fa-square-envelope  ms-lg-1" ></i>
                                     <i class="fa-brands fa-linkedin"></i>
                                     <i class="fa-brands fa-square-twitter me-lg-1"></i>
                                 </div>
