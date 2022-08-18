@@ -112,7 +112,7 @@ namespace EstashirEbtakir
                 {
                     logInEmailEmsg.Text = "البريد الإلكتروني غير صحيح";
                 }
-
+                
                 con.Close();
             }
         }
@@ -195,6 +195,9 @@ namespace EstashirEbtakir
                                         cmd2.Parameters.AddWithValue("uniID", universityid);
                                         cmd2.ExecuteNonQuery();
                                         generalErorrMsg.Text = "تم تسجيلك بنجاح";
+                                        /*ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
+                                         "swal('أهلا بك', 'تم تسجيلك بنجاح', 'success').then(function() {window.location = 'SignUpLogInPage.aspx'})", true);*/
+                                        ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", "swal({title: 'أهلا بك', text: 'تم تسجيلك بنجاح',type: 'success', showConfirmButton: true, confirmButtonColor: '#8378A8', confirmButtonText:'الانتقال لصفحة تسجيل الدخول'}).then(function() {window.location = 'SignUpLogInPage.aspx'})", true);
                                     }
                                     else
                                     {
