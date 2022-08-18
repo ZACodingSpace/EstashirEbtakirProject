@@ -1301,8 +1301,16 @@ input:checked + .inputPlace {
             background-color: #FE799D;
         }
 
+.profilo {
 
-
+    align-items:center;
+}
+.text-fi {
+    background: #EEF3FC;
+    border: #EEF3FC;
+    text-align: right;
+    width:100%;
+}
 /*******************************************************************************/
 /*سارة والجوهرة*/
 /* Sign-Up/Log-In Page Styles Start */
