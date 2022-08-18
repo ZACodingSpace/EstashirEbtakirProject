@@ -3228,18 +3228,6 @@ div.card-header {
 /*******************************************************************************/
 
 /******IdeasCards********/
-.IdeaTable .IdeaImage {
-    min-width: 15vw ;
-    max-width: 15vw ;
-    height: 180px;
-    border-radius: 50%;
-    margin: 0px 50px 0 0 !important;
-    
-    box-shadow: inset -5px -5px 10px #ffffff, inset 5px 5px 10px #8378a8;
-    
-}
-
-
 .IdeaTable, .ConsTable, .ProjectTable, .EventTable {
     box-sizing: border-box;
     background-color: var(--Ghost-White);
@@ -3254,6 +3242,85 @@ div.card-header {
     padding: 20px;
 }
 
+
+.IdeaTable .IdeaImage {
+    min-width: 15vw ;
+    max-width: 15vw ;
+    height: 180px;
+    border-radius: 50%;    
+    box-shadow: inset -5px -5px 10px #ffffff, inset 5px 5px 10px #8378a8;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+
+}
+
+.IdeaTable .IdeaName {
+    position: absolute;
+    top: 55%;
+    right: 43%;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.IdeaTable .BriefDB {
+    position: absolute;
+    top: 65%;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.IdeaTable .ideas-details-button {
+    position: absolute;
+    bottom: 10px;
+    right: 35%;
+    background-color: var(--Purple-Mountain-Majesty);
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+/**********/
+.ConsTable .ConsImage {
+    min-width: 15vw;
+    max-width: 15vw;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0px 50px 0 0 !important;
+    background-color: var(--Purple-Mountain-Majesty);
+    position: absolute;
+    top: 20px;
+}
+.ConsTable .ConsName{
+    position: absolute;
+    top: 55%;
+    right: 20%;
+}
+
+
+.ConsTable .ConsCollegeMajorDB{
+    position: absolute;
+    top: 65%;
+    right: 5%;
+}
+
+.ConsTable .consultation-details-button, .ConsTable .consultation-booking-button {
+    background-color: var(--Purple-Mountain-Majesty);
+    border: none;
+  
+}
+.ConsTable .consultation-details-button {
+    position: absolute;
+    bottom: 10px;
+    right: 60%;
+}
+
+.ConsTable .consultation-booking-button {
+    position: absolute;
+    bottom: 10px;
+    right: 8%;
+}
+
+/*******/
     .ProjectTable .projectName{
         position: absolute;
         top: 90px;
@@ -3262,40 +3329,28 @@ div.card-header {
         font-weight: 500;
     }
 
-    .IdeaTable .IdeaName {
-        position: absolute;
-        top: 65%;
-        right: 43%;
-        font-size: 25px;
-        font-weight: 500;
-    }
+   
 
-    .ProjectTable .college, .ProjectTable .major, .IdeaTable .college, .IdeaTable .major{
+    .ProjectTable .college, .ProjectTable .major{
         font-weight: bold;
         padding-right: 20px;
         position: absolute;
     }
 
-    .IdeaTable .BriefDB {
-        position: absolute;
-        font-weight: bold;
-        padding-right: 20px;
-        
-    }
 
-    .ProjectTable .college, .IdeaTable .college {
+    .ProjectTable .college {
         top: 45%;
     }
-.ProjectTable .collegeDB, .IdeaTable .collegeDB {
+.ProjectTable .collegeDB {
     position: absolute;
     top: 45%;
     right: 42%;
     font-weight: 500;
 }
-.ProjectTable .major, .IdeaTable .major {
+.ProjectTable .major {
     top: 65%;
 }
-.ProjectTable .majorDB, .IdeaTable .majorDB {
+.ProjectTable .majorDB {
     position: absolute;
     top: 65%;
     right: 42%;
@@ -3311,15 +3366,7 @@ div.card-header {
     border: none;
 }
 
-    .IdeaTable .ideas-details-button {
-        position: absolute;
-        bottom: 10px;
-        right: 35%;
-        background-color: var(--Purple-Mountain-Majesty);
-        border-radius: 5px;
-        font-weight: bold;
-        border: none;
-    }
+    
 .ProjectTable .imageTable {
     position: absolute;
     width: 100%;
@@ -3327,6 +3374,7 @@ div.card-header {
     background: var(--French-Pink);
 }
 
+/*********/
 .EventTable .eventDB, .EventTable .eventButton{
     display: none;
 }

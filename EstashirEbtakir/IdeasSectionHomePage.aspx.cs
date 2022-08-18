@@ -17,7 +17,7 @@ namespace EstashirEbtakir
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
-            string sqlqueryIdea = "Select * from [dbo].[OurIdea] order by Idea_ID desc";
+            string sqlqueryIdea = "Select * from [dbo].[OurIdeas] order by Idea_ID desc";
             SqlCommand sqlcommIdea = new SqlCommand(sqlqueryIdea, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaIdea = new SqlDataAdapter();
