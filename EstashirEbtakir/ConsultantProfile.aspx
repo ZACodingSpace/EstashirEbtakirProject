@@ -32,32 +32,42 @@
                     <p>
                         الاسم:
                         <input id="name2" runat="server" type="text" class="text-field2" placeholder="الاسم الثنائي" readonly />
-                    </p><br/>
-                    <p>
-                        البريد الإلكتروني:
-                        <input id="email" runat="server" type="text" class="text-field2" placeholder="example@gmail.com"
-                            readonly />
                     </p>
-                    <br/>
-                        <!-- placeholder="05xxxxxxxx" -->
-                        <div class="profilo row"><div class="col-6">
-                     <label for="fil">رقم الجوال:</label>
-                        
-                        <input id="phone" runat="server" type="text" class="text-field2" placeholder="05xxxxxxxx" readonly />
-                        </div>
-                            <div class="col-2">
-                                <div class="accepBtns-container">
-                            <div class="accepBtn-container m-1 me-xl-4 me-lg-3 p-lg-2">
+                    <br />
 
-                                <asp:Button class="accepBtn " ID="editPhone" runat="server" Text="تعديل" OnClick="EditPhone_Click" />
-                            </div></div>
-                        </div> 
+                    <div class="profilo row">
+                        <div class="col-3">
+                            <label for="fil">البريد الإلكتروني:</label>
+                                                    </div>
+
+                                                    <div class="col-8">
+
+                            <input id="email" runat="server" type="text" class="text-fi" placeholder="example@gmail.com" readonly />
+                        </div>
+                    </div>
+
+                    <br />
+                    <!-- placeholder="05xxxxxxxx" -->
+                    <div class="profilo row">
+                        <div class="col-6">
+                            <label for="fil">رقم الجوال:</label>
+
+                            <input id="phone" runat="server" type="text" class="text-field2" placeholder="05xxxxxxxx" readonly />
+                        </div>
+                        <div class="col-2">
+                            <div class="accepBtns-container">
+                                <div class="accepBtn-container m-1 me-xl-4 me-lg-3 p-lg-2">
+
+                                    <asp:Button class="accepBtn " ID="editPhone" runat="server" Text="تعديل" OnClick="EditPhone_Click" />
+                                </div>
+                            </div>
+                        </div>
                         <asp:Label ID="testchange" runat="server" Text="" ForeColor="Red"></asp:Label>
                     </div>
 
-                    <br/>
+                    <br />
                     <p>
-                       الرقم الجامعي/الرقم الوظيفي:
+                        الرقم الجامعي/الرقم الوظيفي:
                         <input id="uniID" runat="server" type="text" class="text-field2" placeholder="2220000" readonly />
                     </p>
                     <a href="ChangePassword.aspx"><i class="fas fa-lock"></i>تغيير كلمة المرور </a>
