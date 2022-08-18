@@ -6,8 +6,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <div class="add-idea-page-content row mt-xl-1 ps-xl-5 pe-xl-5 mt-lg-1 ps-lg-4 pe-lg-4 mt-md-5 ps-md-4 pe-md-4 ">
+<div class="add-idea-page-content row mt-xl-1 ps-xl-5 pe-xl-5 mt-lg-1 ps-lg-4 pe-lg-4 mt-md-5 ps-md-4 pe-md-4 ">
 
                    
         <div class="add-idea-links-container pe-xl-5 pt-xl-3 pe-lg-4 pt-lg-2 pe-md-3 pt-md-3">
@@ -20,20 +19,30 @@
             <a class="m-0 p-0 active-link" href="AddIdea.aspx">إضافة فكرة</a>
         </div>
 
-        <div class="idea-name-container p-xl-5 p-lg-4 pt-md-5">
+        <div class="ideaName-ideaLabel-container row">
+        <div class="idea-name-container col p-xl-5 p-lg-4 pt-md-5">
             <h4 class="idea-name">اسم الفكرة</h4>
-            <input type="text" class="idea-name-field" id="ideaNameField" runat="server">
+            <input type="text" class="idea-name-field" id="ideaNameField" runat="server"  >
             <asp:Label ID="done" class="idea-name" runat="server" Text=" "></asp:Label>
+             <asp:Label id="projectNameMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
         </div>
+
+            <div class="idea-message col p-xl-5 p-lg-4 pt-md-5">
+            </div>
+
+        </div>
+
+
 
         <div class="idea-description-container p-xl-5 p-lg-4 pt-md-5">
             <h4 class="idea-description-label">نبذة عن الفكرة</h4>
             <textarea class="idea-description-textarea" id="ideaDescriptionTextarea" rows="10" runat="server"></textarea>
+             <asp:Label id="projectDescriptionMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
         </div>
 
         <div class="innovation-lab-technologies p-xl-5 p-lg-4 pt-md-5">
 
-            <h4 class="innovation-lab-technologies-header">التقنيات الممكن استخدامها لتنفيذ الفكرة</h4>
+            <h4 class="innovation-lab-technologies-header"> اختر التقنيات الممكن استخدامها لتنفيذ الفكرة</h4>
 
             <div class="idea-checkbox-list-container row row-cols-lg-4 row-cols-md-2">
 
@@ -47,11 +56,12 @@
                                 <span class="technology-name">نظارات الواقع الافتراضي</span>
                             </span>
                         </label>
-
+                    </div>
+               
                         <div class="technology-details-button-container">
                             <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-VRtech.aspx" target="_blank">تفاصيل</a>
                         </div>
-                    </div>
+
                 </div>
 
                 <div class="technology-list-item-container row m-0 pt-4">
@@ -65,11 +75,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
+                        
+                    </div>
+                       <div class="technology-details-button-container">
                             <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-ARtech.aspx" target="_blank">تفاصيل</a>
                         </div>
 
-                    </div>
                 </div>
 
                 <div class="technology-list-item-container row m-0 pt-4">
@@ -83,11 +94,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
+
+
+                    </div> 
+                    <div class="technology-details-button-container">
                             <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-Leaptech.aspx" target="_blank">تفاصيل</a>
                         </div>
-
-                    </div>
                 </div>
 
                 <div class="technology-list-item-container row m-0 pt-4">
@@ -101,11 +113,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
-                            <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-secondlifetech.aspx" target="_blank">تفاصيل</a>
-                        </div>
+                        
 
                     </div>
+                    <div class="technology-details-button-container">
+                            <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-secondlifetech.aspx" target="_blank">تفاصيل</a>
+                        </div>
                 </div>
 
                 <div class="technology-list-item-container row m-0 pt-4">
@@ -119,11 +132,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
+                        
+
+                    </div> 
+                    <div class="technology-details-button-container">
                             <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-AItech.aspx" target="_blank">تفاصيل</a>
                         </div>
-
-                    </div>
                 </div>
 
 
@@ -138,11 +152,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
-                            <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-robottech.aspx" target="_blank">تفاصيل</a>
-                        </div>
+                        
 
                     </div>
+                    <div class="technology-details-button-container">
+                            <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-robottech.aspx" target="_blank">تفاصيل</a>
+                        </div>
                 </div>
 
 
@@ -157,11 +172,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
-                            <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-hologramtech.aspx" target="_blank">تفاصيل</a>
-                        </div>
+                        
 
                     </div>
+                    <div class="technology-details-button-container">
+                            <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-hologramtech.aspx" target="_blank">تفاصيل</a>
+                        </div>
                 </div>
 
                 <div class="technology-list-item-container row m-0 pt-4">
@@ -175,11 +191,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
-                            <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-soundstudio.aspx" target="_blank">تفاصيل</a>
-                        </div>
+                        
 
                     </div>
+                    <div class="technology-details-button-container">
+                            <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-soundstudio.aspx" target="_blank">تفاصيل</a>
+                        </div>
                 </div>
 
                 <div class="technology-list-item-container row m-0 pt-4">
@@ -193,11 +210,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
+                       
+                    </div>
+                    <div class="technology-details-button-container">
                             <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-3dprinttech.aspx" target="_blank">تفاصيل</a>
                         </div>
 
-                    </div>
                 </div>
 
 
@@ -213,11 +231,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
-                            <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-Virtual-tours.aspx" target="_blank">تفاصيل</a>
-                        </div>
+                        
 
                     </div>
+                    <div class="technology-details-button-container">
+                            <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-Virtual-tours.aspx" target="_blank">تفاصيل</a>
+                        </div>
                 </div>
 
 
@@ -232,11 +251,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
-                            <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-eyetrack.aspx" target="_blank">تفاصيل</a>
-                        </div>
+                        
 
                     </div>
+                    <div class="technology-details-button-container">
+                            <a class="technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-eyetrack.aspx" target="_blank">تفاصيل</a>
+                        </div>
                 </div>
 
             </div>
@@ -248,6 +268,4 @@
         </div>
 
     </div>
-
-
 </asp:Content>
