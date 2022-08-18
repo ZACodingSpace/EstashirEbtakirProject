@@ -4,7 +4,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-
+        <style>
+table, th, td {
+  border:1px solid black;
+}
+th, td {
+  text-align: center;
+}
+</style>
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1">
@@ -64,14 +71,53 @@
 
             <!------------------------------------------ Ideas Section ------------------------------------>
             <div class="tab-pane fade" id="ideas" role="tabpanel" aria-labelledby="ideas-tab">
-                <div class="tabs-content-container row">
-
-                    <!-- Cards -->
-                    <asp:DataList ID="DataListIdea" runat="server" RepeatColumns="4">
-                        <ItemTemplate>
-                            <table class="IdeaTable">
+               <!-- <div class="tabs-content-container row"> class="IdeaTable" -->
+ <table style="width:100%">
 
                                 <tr>
+
+                                    <th>اسم الفكرة</th>
+                                    <th>التاريخ</th>
+                                    <th>الحالة</th>
+                                    <th>عرض</th>
+                                </tr>
+                                <tr>
+                                    <td>اسم الفكرة</td>
+
+                                    <td></td>
+                                    <td>نشر</td>
+                                
+                                <td><a href="AcceptIdeas.aspx">التفاصيل</a></td>
+                            
+                            
+                                </tr>
+
+                            </table>
+                     <!-- Cards 
+                   <asp:DataList ID="DataListIdea" runat="server" RepeatColumns="4">
+                        <ItemTemplate>
+                           
+                        </ItemTemplate>
+                    </asp:DataList>
+
+                </div>-->
+
+            </div>
+
+
+
+
+            <!------------------------------------------ project Section ------------------------------------>
+            <div class="tab-pane fade" id="consultancies" role="tabpanel" aria-labelledby="consultancies-tab">
+                <div class="tabs-content-container row">
+                    
+                    
+                    <!-- Cards class="ConsTable"-->
+                        
+                      
+                            <table >
+
+                                 <tr>
 
                                     <th>اسم المشروع</th>
                                     <th>التاريخ</th>
@@ -83,54 +129,19 @@
 
                                     <td></td>
                                     <td>نشر</td>
-                                    <div class="go-to-sections-homepage-container-area row mt-lg-5">
-                        <div class="go-to-ideas-homepage-container col-6 ps-lg-3">
-                            <h3 class="go-to-ideas-homepage">
-                                <td><a href="IdeasSectionHomePage.aspx">الانتقال إلى القسم</a></td>
-                            </h3>
-                            <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
+                                
+                                <td><a href="AcceptProjects.aspx">التفاصيل</a></td>
+                            
+                            
                                 </tr>
 
                             </table>
-                        </ItemTemplate>
-                    </asp:DataList>
-
-                </div>
-
-            </div>
-
-
-
-
-            <!------------------------------------------ Consultancies Section ------------------------------------>
-            <div class="tab-pane fade" id="consultancies" role="tabpanel" aria-labelledby="consultancies-tab">
-                <div class="tabs-content-container row">
-
-                    <h3> Ideas Section</h3>
-                    <!-- Cards -->
-                    <asp:DataList ID="DataListCons" runat="server" RepeatColumns="4">
-                        <ItemTemplate>
-                            <table class="ConsTable">
-
-
-                            </table>
-                        </ItemTemplate>
-                    </asp:DataList>
+                       
 
                 </div>
                 <!--------------->
 
-                <div class="go-to-sections-homepage-container-area row mt-lg-5">
-                    <div class="go-to-consultancies-homepage-container col-6 ps-lg-3">
-                        <h3 class="go-to-consultancies-homepage">
-
-                            <a href="ConsultationsSectionHomePage.aspx">الانتقال إلى القسم</a>
-
-
-                        </h3>
-                        <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
-                    </div>
-                </div>
+                
 
             </div>
 

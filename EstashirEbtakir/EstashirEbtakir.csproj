@@ -70,7 +70,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
+    <Content Include="AcceptIdeaList.aspx" />
     <Content Include="AcceptIdeas.aspx" />
+    <Content Include="AcceptProjectList.aspx" />
     <Content Include="AcceptProjects.aspx" />
     <Content Include="AchievementsHomePage.aspx" />
     <Content Include="AddIdea.aspx" />
@@ -154,12 +156,26 @@
     <Compile Include="AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AcceptIdeaList.aspx.cs">
+      <DependentUpon>AcceptIdeaList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcceptIdeaList.aspx.designer.cs">
+      <DependentUpon>AcceptIdeaList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AcceptIdeas.aspx.cs">
       <DependentUpon>AcceptIdeas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AcceptIdeas.aspx.designer.cs">
       <DependentUpon>AcceptIdeas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptProjectList.aspx.cs">
+      <DependentUpon>AcceptProjectList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcceptProjectList.aspx.designer.cs">
+      <DependentUpon>AcceptProjectList.aspx</DependentUpon>
     </Compile>
     <Compile Include="AcceptProjects.aspx.cs">
       <DependentUpon>AcceptProjects.aspx</DependentUpon>
