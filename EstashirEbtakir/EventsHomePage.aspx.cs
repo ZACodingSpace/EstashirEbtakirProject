@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Data.SqlClient;
-using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -14,23 +11,6 @@ namespace EstashirEbtakir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
-            SqlConnection sqlconn = new SqlConnection(mainconn);
-
-            string sqlqueryEvent = "Select * from [dbo].[EventsAndParticipation] where Type = 1 ";
-            SqlCommand sqlcommEvent = new SqlCommand(sqlqueryEvent, sqlconn);
-            sqlconn.Open();
-            SqlDataAdapter sdaEvent = new SqlDataAdapter();
-            sdaEvent.SelectCommand = sqlcommEvent;
-            DataSet dsEvent = new DataSet();
-
-            sdaEvent.Fill(dsEvent);
-            DataListEvent.DataSource = dsEvent;
-            DataListEvent.DataBind();
-
-
-            sqlconn.Close();
 
         }
     }

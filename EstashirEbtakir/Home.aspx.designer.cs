@@ -42,39 +42,12 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div3;
 
         /// <summary>
-        /// DataListIdea control.
+        /// DataList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList DataListIdea;
-
-        /// <summary>
-        /// DataListCons control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList DataListCons;
-
-        /// <summary>
-        /// DataListProject control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList DataListProject;
-
-        /// <summary>
-        /// DataListEvent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList DataListEvent;
+        protected global::System.Web.UI.WebControls.DataList DataList1;
     }
 }
