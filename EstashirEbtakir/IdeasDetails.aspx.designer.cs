@@ -15,49 +15,49 @@ namespace EstashirEbtakir
     {
 
         /// <summary>
-        /// ideaNameFieldD control.
+        /// ideaDetailsNameField control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText ideaNameFieldD;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText ideaDetailsNameField;
 
         /// <summary>
-        /// doneD control.
+        /// done control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label doneD;
+        protected global::System.Web.UI.WebControls.Label done;
 
         /// <summary>
-        /// ideaDescriptionTextareaD control.
+        /// ideaDetailsDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea ideaDescriptionTextareaD;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea ideaDetailsDescription;
 
         /// <summary>
-        /// Text2 control.
+        /// Text1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text2;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Text1;
 
         /// <summary>
-        /// Label2 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
         /// cancelIdeaButton control.

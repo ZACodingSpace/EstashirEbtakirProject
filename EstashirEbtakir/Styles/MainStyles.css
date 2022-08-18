@@ -2838,14 +2838,14 @@ div.card-header {
 }
 
 
-.technology-list-item-container .technology-container .technology-details-button-container {
+.technology-details-button-container {
     height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.technology-container .technology-details-button-container .technology-details-button-project {
+ .technology-details-button-container .technology-details-button-project {
     width: 10vh;
     text-decoration: none;
     text-align: center;
@@ -2881,7 +2881,6 @@ div.card-header {
     }
 
 
-
 /* Add Project section page Styles End */
 
 
@@ -2890,30 +2889,69 @@ div.card-header {
 
 /*ريناد*/
 /* Browse Project section page Styles Start */
-
 .browse-project-area {
     margin: 5% 10%;
     padding: 2vh;
     width: 80%;
-    box-shadow: 5px 5px 10px #BEC3CC;
+    box-shadow: inset -5px -5px 3px #FFFFFF, 5px 5px 3px #BEC3CC;
+    border-radius: 3vh;
 }
 
-.browse-project-info {
-    margin: 2vh;
-    padding: 2vh;
-    width: 100%;
+
+
+.project-nameDetails, .projectDetails-pic, .projectDetails-description-label, .projectDetails-college, .projectDetails-major,
+.projectDetails-supervisor, .projectDetails-members-label, .projectDetails-grade, .projectDetails-file {
+    font-size: max(1vw, 3.5vh);
 }
 
-.browse-project-area h1 {
-    text-align: center;
-    color: #8378A8;
-    font-weight: bold;
+.projectDetails-name-field, .Porject-Details-img, .projectDetails-CollegeI, .projectDetails-Major, .projectDetails-Supervisor,
+.projectDetails-Grade, .projectDetails-File {
+    width: 50vh;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    background-color: var(--Ghost-White);
 }
 
-.browse-project-info h4 {
-    font-size: 16px;
-    font-weight: bold;
+.projectDetails-technology-field {
+    width: 55vh;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    background-color: var(--Ghost-White);
 }
+
+.projectDetails-description-textarea, .projectDetails-members-textarea {
+    width: 60vw;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    background-color: var(--Ghost-White);
+}
+
+.add-projectDetails-page-buttons-container {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+    .add-projectDetails-page-buttons-container .delete-projectDetails-button,
+    .add-projectDetails-page-buttons-container .edit-projectDetails-button {
+        height: 4vh;
+        width: 10vh;
+        text-decoration: none;
+        text-align: center;
+        font-size: max(1vw, 2vh);
+        color: #000;
+        font-weight: bold;
+        border: none;
+        box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+        border-radius: 5px;
+        background-color: var(--French-Pink);
+    }
 
 
 /* Browse Project section page Styles End */
@@ -2921,9 +2959,70 @@ div.card-header {
 
 /*******************************************************************************/
 
+/* ideas details */
+.browse-ideas-area {
+    margin: 5% 10%;
+    padding: 2vh;
+    width: 80%;
+    box-shadow: inset -5px -5px 3px #FFFFFF, 5px 5px 3px #BEC3CC;
+    border-radius: 3vh;
+}
+
+
+
+.idea-nameDetails, idea-technologyDetails {
+    font-size: max(1vw, 3.5vh);
+}
+
+.ideaDetails-name-field, ideaDetails-description-label {
+    width: 50vh;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    background-color: var(--Ghost-White);
+}
+.ideaDetails-technology-field {
+    width: 55vh;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    background-color: var(--Ghost-White);
+}
+.ideaDetails-description-textarea {
+    width: 60vw;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    background-color: var(--Ghost-White);
+}
+.add-ideaDetails-page-buttons-container {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+    .add-ideaDetails-page-buttons-container .delete-ideaDetails-button,
+    .add-ideaDetails-page-buttons-container .edit-ideaDetails-button {
+        height: 4vh;
+        width: 10vh;
+        text-decoration: none;
+        text-align: center;
+        font-size: max(1vw, 2vh);
+        color: #000;
+        font-weight: bold;
+        border: none;
+        box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+        border-radius: 5px;
+        background-color: var(--Purple-Mountain-Majesty);
+    }
+
+
+/*******************************************************************************/
 /*ريناد*/
 /* Edit/Delet Project section page Styles Start */
-
 .edit-delete-project-area {
     margin: 5% 10%;
     padding: 2vh;
@@ -3105,14 +3204,14 @@ div.card-header {
 }
 
 
-.technology-list-item-container .technology-container .technology-details-button-container {
+.technology-details-button-container {
     height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.technology-container .technology-details-button-container .technology-details-button {
+ .technology-details-button-container .technology-details-button {
     width: 10vh;
     text-decoration: none;
     text-align: center;
