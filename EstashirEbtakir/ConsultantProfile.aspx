@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="ConsultantProfile.aspx.cs" Inherits="EstashirEbtakir.ConsultantProfile" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ProfileMasterPage.Master" AutoEventWireup="true" CodeBehind="ConsultantProfile.aspx.cs" Inherits="EstashirEbtakir.ConsultantProfile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -19,10 +19,9 @@
                 <li><a href="MyProjectsPage.aspx"><i class="fas fa-file-alt"></i> مشاريعي </a></li>
             </ul>
         </div>
-
         <div class="left-side col-9 m-0">
 
-            <div class="row behined-navbar-profile"></div>
+              <div class="row behined-navbar-profile"></div>
 
             <div class="profile-path">الرئيسية/ الملف الشخصي/ معلومات الحساب</div>
 
@@ -31,6 +30,19 @@
                 <div class="profile-container">
                     <p>
                         الاسم:
+                        <input id="Text1" runat="server" type="text" class="text-field2" placeholder="الاسم الثنائي" readonly />
+                    </p>
+                    <p>
+                        البريد الإلكتروني:
+                        <input id="Text2" runat="server" type="text" class="text-field2 col-5" placeholder="example@gmail.com"
+                            readonly />
+                    </p>
+                    <p>
+                        <!-- placeholder="05xxxxxxxx" -->
+                        رقم الجوال:
+                        <input id="Text3" runat="server" type="text" class="text-field3" placeholder="05xxxxxxxx" readonly/>
+                        <asp:Button class="change-pass-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" ID="Button1" runat="server" Text="تعديل" onclick="EditPhone_Click"/>
+                        <asp:Label ID="Label1" runat="server" Text="" ForeColor="Red"></asp:Label>
                         <input id="name2" runat="server" type="text" class="text-field2" placeholder="الاسم الثنائي" readonly />
                     </p>
                     <br />
@@ -70,7 +82,13 @@
                         الرقم الجامعي/الرقم الوظيفي:
                         <input id="uniID" runat="server" type="text" class="text-field2" placeholder="2220000" readonly />
                     </p>
-                    <a href="ChangePassword.aspx"><i class="fas fa-lock"></i>تغيير كلمة المرور </a>
+                    
+                    
+                    <p>
+                        الرقم الجامعي/الرقم الوظيفي:
+                        <input id="Text4" runat="server" type="text" class="text-field2" placeholder="2220000" readonly />
+                    </p>
+                    <a href="ChangePassword.aspx"><i class="fas fa-lock"></i> تغيير كلمة المرور </a>
                 </div>
             </div>
 
