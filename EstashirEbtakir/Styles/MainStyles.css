@@ -10,7 +10,6 @@
     --Ghost-White: #F6F9FF;
     --generatedCardsWidth: 21vw;
     --generatedCardsHeight: 25vw;
-    
 }
 
 * {
@@ -1302,14 +1301,14 @@ input:checked + .inputPlace {
         }
 
 .profilo {
-
-    align-items:center;
+    align-items: center;
 }
+
 .text-fi {
     background: #EEF3FC;
     border: #EEF3FC;
     text-align: right;
-    width:100%;
+    width: 100%;
 }
 /*******************************************************************************/
 /*سارة والجوهرة*/
@@ -2969,187 +2968,125 @@ div.card-header {
 /* Edit/Delete Project section page Styles End */
 /*******************************************************************************/
 
-/**************************************Add Idea Page Styles Start*************************************/
-.add-idea-page-content {
+
+/**************************************About Us Page Styles Start*************************************/
+
+
+.about-us-page-content {
     min-height: 100vh;
+    justify-content: center;
 }
 
-    .add-idea-page-content .add-idea-links-container {
-        display: flex;
-    }
+.about-us-content-container {
+    justify-content: center;
+}
 
-        .add-idea-page-content .add-idea-links-container > * {
-            text-decoration: none;
-            color: var(--Silver-Sand);
-            font-size: max(1vw, 2vh);
-        }
+/* First Row */
+.about-us-page-content .about-us-content-container .about-us-first-line-content {
+    align-items: center;
+    justify-content: center;
+}
 
-        .add-idea-page-content .add-idea-links-container .active-link {
-            color: var(--Purple-Mountain-Majesty)
-        }
+.about-us-content-container .about-us-first-line-content .about-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.about-us-first-line-content .about-us-container .about-us-logo-container {
+    justify-content: center;
+}
 
-    .add-idea-page-content .idea-name-container .idea-name,
-    .add-idea-page-content .idea-description-container .idea-description-label,
-    .add-idea-page-content .innovation-lab-technologies .innovation-lab-technologies-header {
-        font-size: max(1vw, 3.5vh);
-    }
+.about-us-container .about-us-logo-container .about-us-logo {
+    width: 80vh;
+}
 
-    .add-idea-page-content .idea-name-container .idea-name-field {
-        width: 50vh;
-        height: 5vh;
-        border-radius: 5px;
-        border: none;
-        box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
-        background-color: var(--Ghost-White);
-    }
+.about-us-txt-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .add-idea-page-content .idea-description-container .idea-description-textarea {
-        width: 90vw;
-        border-radius: 5px;
-        border: none;
-        box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
-        background-color: var(--Ghost-White);
-    }
+.about-us-container .about-us-txt-container .about-us-text {
+    text-align: justify;
+    font-size: max(1.5vw, 3vh);
+}
 
-    .add-idea-page-content .innovation-lab-technologies {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+/* Second Row */
+.about-us-page-content .about-us-content-container .about-us-second-line-content {
+    justify-content: center;
+}
 
-.innovation-lab-technologies .idea-checkbox-list-container {
+.about-us-content-container .about-us-second-line-content .work-team-label-container {
     display: flex;
     justify-content: center;
 }
 
-    .innovation-lab-technologies .idea-checkbox-list-container .technology-list-item-container {
-        justify-content: center;
-    }
+.about-us-second-line-content .work-team-label-container .work-team-label {
+    font-size: max(2vw, 3vh);
+    border-radius: 20px;
+    background-color: var(--Alice-Blue);
+}
 
-.idea-checkbox-list-container .technology-list-item-container .technology-container {
-    height: 15vh;
+.about-us-second-line-content .stu-cards-container .stu-card-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stu-cards-container .stu-card-area .stu-card {
+    display: flex;
+    justify-content: center;
     border: none;
     box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
     border-radius: 5px;
     background-color: var(--Ghost-White);
 }
 
-
-.technology-list-item-container .technology-container .technology-checkbox-label {
-    width: 100%;
-    display: block;
-    position: relative;
-}
-
-.technology-container .technology-checkbox-label .technology-checkbox {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.technology-checkbox-label .technology-inner-container {
-    height: 10vh;
+.stu-card-area .stu-card .stu-information-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
 }
 
-.technology-checkbox-label .technology-checkbox:checked ~ .technology-inner-container {
-    border: none;
-    box-shadow: inset 0px 2px 4px #BEC3CC;
-    border-radius: 5px 5px 0px 0px;
+.stu-information-container .stu-img-container .about-us-profile-img {
+    height: 7vh;
+    width: 7vh;
 }
 
-.technology-checkbox-label .technology-inner-container .technology-name {
-    font-size: max(1vw, 2vh);
-    user-select: none;
-}
-
-.technology-checkbox-label .technology-checkbox:checked ~ .technology-inner-container .technology-name {
-    color: var(--Purple-Mountain-Majesty);
-}
-
-.technology-checkbox-label .technology-inner-container .tickmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 20px solid;
-    border-color: transparent;
-    display: none;
-}
-
-    .technology-checkbox-label .technology-inner-container .tickmark:before {
-        content: "";
-        position: absolute;
-        top: -10px;
-        left: -10px;
-        width: 20px;
-        height: 10px;
-        border: 3px solid;
-        border-color: transparent transparent #8378A8 #8378A8;
-        transform: rotate(-45deg);
-    }
-
-.technology-checkbox-label .technology-checkbox:checked ~ .technology-inner-container .tickmark {
-    display: block;
-}
-
-
-.technology-list-item-container .technology-container .technology-details-button-container {
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.technology-container .technology-details-button-container .technology-details-button {
-    width: 10vh;
-    text-decoration: none;
-    text-align: center;
-    font-size: max(1vw, 2vh);
+.stu-information-container .stu-name-container .stu-name {
+    font-size: max(1vw, 2.5vh);
     color: #000;
-    font-weight: bold;
-    border: none;
-    box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BEC3CC;
-    border-radius: 3px;
-    background-color: var(--Purple-Mountain-Majesty);
 }
 
-.add-idea-page-content .add-idea-page-buttons-container {
-    height: 10vh;
+.stu-information-container .stu-name-container .stu-major {
+    font-size: max(0.5vw, 1.5vh);
+    color: var(--Silver-Sand);
+}
+
+.stu-card .stu-description-container .stu-description {
+    font-size: max(0.8vw, 1vh);
+}
+
+.stu-card-area .stu-card .stu-contact-info-container {
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: flex-end;
 }
 
-    .add-idea-page-content .add-idea-page-buttons-container .add-idea-button,
-    .add-idea-page-content .add-idea-page-buttons-container .cancel-idea-button,
-    .add-idea-page-content .add-idea-page-buttons-container .save-idea-button,
-    .add-idea-page-content .add-idea-page-buttons-container .delete-idea-button {
-        height: 4vh;
-        width: 10vh;
-        text-decoration: none;
-        text-align: center;
-        font-size: max(1vw, 2vh);
-        color: #000;
-        font-weight: bold;
-        border: none;
-        box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BEC3CC;
-        border-radius: 5px;
-        background-color: var(--Purple-Mountain-Majesty);
-    }
+.stu-card .stu-contact-info-container .stu-contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
-/**************************************Add Idea Page Styles End*************************************/
+.stu-contact-info-container .stu-contact > * {
+    font-size: max(1.3vw, 2vh);
+}
+
+/**************************************About Us Page Styles End*************************************/
+
+
 
 /* Shahad */
 
@@ -3253,86 +3190,86 @@ div.card-header {
     padding: 20px;
 }
 
-/******IdeasCards********/
-.IdeaTable .IdeaImage {
-    min-width: 15vw ;
-    max-width: 15vw ;
-    height: 180px;
-    border-radius: 50%;    
-    box-shadow: inset -5px -5px 10px #ffffff, inset 5px 5px 10px #8378a8;
-    position: absolute;
-    top: 20px;
-    right: 50px;
+    /******IdeasCards********/
+    .IdeaTable .IdeaImage {
+        min-width: 15vw;
+        max-width: 15vw;
+        height: 180px;
+        border-radius: 50%;
+        box-shadow: inset -5px -5px 10px #ffffff, inset 5px 5px 10px #8378a8;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+    }
 
-}
+    .IdeaTable .IdeaName {
+        position: absolute;
+        top: 55%;
+        right: 43%;
+        font-size: 25px;
+        font-weight: 500;
+    }
 
-.IdeaTable .IdeaName {
-    position: absolute;
-    top: 55%;
-    right: 43%;
-    font-size: 25px;
-    font-weight: 500;
-}
+    .IdeaTable .BriefDB {
+        position: absolute;
+        top: 65%;
+        font-weight: bold;
+        padding-right: 20px;
+    }
 
-.IdeaTable .BriefDB {
-    position: absolute;
-    top: 65%;
-    font-weight: bold;
-    padding-right: 20px;
-}
+    .IdeaTable .ideas-details-button {
+        position: absolute;
+        bottom: 10px;
+        right: 35%;
+        background-color: var(--Purple-Mountain-Majesty);
+        border-radius: 5px;
+        font-weight: bold;
+        border: none;
+    }
+    /**********/
+    .ConsTable .ConsImage {
+        min-width: 15vw;
+        max-width: 15vw;
+        height: 180px;
+        border-radius: 50%;
+        margin: 0px 50px 0 0 !important;
+        background-color: var(--Purple-Mountain-Majesty);
+        position: absolute;
+        top: 20px;
+    }
 
-.IdeaTable .ideas-details-button {
-    position: absolute;
-    bottom: 10px;
-    right: 35%;
-    background-color: var(--Purple-Mountain-Majesty);
-    border-radius: 5px;
-    font-weight: bold;
-    border: none;
-}
-/**********/
-.ConsTable .ConsImage {
-    min-width: 15vw;
-    max-width: 15vw;
-    height: 180px;
-    border-radius: 50%;
-    margin: 0px 50px 0 0 !important;
-    background-color: var(--Purple-Mountain-Majesty);
-    position: absolute;
-    top: 20px;
-}
-.ConsTable .ConsName{
-    position: absolute;
-    top: 55%;
-    right: 20%;
-}
+    .ConsTable .ConsName {
+        position: absolute;
+        top: 55%;
+        right: 20%;
+    }
 
 
-.ConsTable .ConsCollegeMajorDB{
-    position: absolute;
-    top: 65%;
-    right: 5%;
-}
+    .ConsTable .ConsCollegeMajorDB {
+        position: absolute;
+        top: 65%;
+        right: 5%;
+    }
 
-.ConsTable .consultation-details-button, .ConsTable .consultation-booking-button {
-    background-color: var(--Purple-Mountain-Majesty);
-    border: none;
-  
-}
-.ConsTable .consultation-details-button {
-    position: absolute;
-    bottom: 10px;
-    right: 60%;
-}
+    .ConsTable .consultation-details-button, .ConsTable .consultation-booking-button {
+        background-color: var(--Purple-Mountain-Majesty);
+        border: none;
+    }
 
-.ConsTable .consultation-booking-button {
-    position: absolute;
-    bottom: 10px;
-    right: 8%;
-}
+    .ConsTable .consultation-details-button {
+        position: absolute;
+        bottom: 10px;
+        right: 60%;
+    }
 
-/*******/
-    .ProjectTable .projectName{
+    .ConsTable .consultation-booking-button {
+        position: absolute;
+        bottom: 10px;
+        right: 8%;
+    }
+
+    /*******/
+    .ProjectTable .projectName {
         position: absolute;
         top: 90px;
         right: 30%;
@@ -3340,9 +3277,9 @@ div.card-header {
         font-weight: 500;
     }
 
-   
 
-    .ProjectTable .college, .ProjectTable .major{
+
+    .ProjectTable .college, .ProjectTable .major {
         font-weight: bold;
         padding-right: 20px;
         position: absolute;
@@ -3352,57 +3289,57 @@ div.card-header {
     .ProjectTable .college {
         top: 45%;
     }
-.ProjectTable .collegeDB {
-    position: absolute;
-    top: 45%;
-    right: 42%;
-    font-weight: 500;
-}
-.ProjectTable .major {
-    top: 65%;
-}
-.ProjectTable .majorDB {
-    position: absolute;
-    top: 65%;
-    right: 42%;
-    font-weight: 500;
-}
-.ProjectTable .project-details-button {
-    position: absolute;
-    bottom: 10px;
-    right: 35%;
-    background-color: var(--French-Pink);
-    border-radius: 5px;
-    font-weight: bold;
-    border: none;
-}
 
-    
-.ProjectTable .imageTable {
-    position: absolute;
-    width: 100%;
-    height: 85px;
-    background: var(--French-Pink);
-}
+    .ProjectTable .collegeDB {
+        position: absolute;
+        top: 45%;
+        right: 42%;
+        font-weight: 500;
+    }
 
-/*********/
-.EventTable .eventImage{
+    .ProjectTable .major {
+        top: 65%;
+    }
 
-    width: var(--generatedCardsWidth);
-    height: var(--generatedCardsHeight);
-}
+    .ProjectTable .majorDB {
+        position: absolute;
+        top: 65%;
+        right: 42%;
+        font-weight: 500;
+    }
 
-.EventTable .eventDB, .EventTable .eventButton{
-    display: none;
+    .ProjectTable .project-details-button {
+        position: absolute;
+        bottom: 10px;
+        right: 35%;
+        background-color: var(--French-Pink);
+        border-radius: 5px;
+        font-weight: bold;
+        border: none;
+    }
 
-}
 
-  
+    .ProjectTable .imageTable {
+        position: absolute;
+        width: 100%;
+        height: 85px;
+        background: var(--French-Pink);
+    }
 
-.EventTable:hover .eventDB, .EventTable:hover .eventButton {
+    /*********/
+    .EventTable .eventImage {
+        width: var(--generatedCardsWidth);
+        height: var(--generatedCardsHeight);
+    }
+
+    .EventTable .eventDB, .EventTable .eventButton {
+        display: none;
+    }
+
+
+
+    .EventTable:hover .eventDB, .EventTable:hover .eventButton {
         display: inline-block;
-        
-
     }
 
 
@@ -3422,8 +3359,6 @@ div.card-header {
         right: 35%;
     }
 
-.EventTable:hover {
-    opacity: 0.4;
-}
-
-
+    .EventTable:hover {
+        opacity: 0.4;
+    }
