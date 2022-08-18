@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title></title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- Bootstrap v5.2.0 - CSS -->
     <link href="Styles/bootstrap.min.css" rel="stylesheet" />
