@@ -7,7 +7,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="add-Participation-Even row " style="min-height: 100vh;">
+   
 
         <div class="add-Participation-Event ">
             <h1>إضافة فعاليات ومشاركات
@@ -63,7 +63,7 @@
                 </div>
             </div>
         </div>
-    </div>
+   
 
 
 </asp:Content>
