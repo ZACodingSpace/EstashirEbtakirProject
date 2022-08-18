@@ -44,7 +44,7 @@
 
             <div class="participations-page-description-container">
                 <p class="participations-page-description mt-lg-2">
-                    نبذة عن قسم المشاركات
+                    مساحة لاستعراض المشاركات التي شارك بها معمل الابتكارات
                 </p>
             </div>
 
