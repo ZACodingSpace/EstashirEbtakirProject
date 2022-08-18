@@ -76,103 +76,35 @@
     <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5 p-5 ">
 
         <!-- Cards -->
+         <asp:DataList ID="DataListEvent" runat="server" RepeatColumns="4">
+                        <ItemTemplate>
+                            <table class="EventTable">
 
-        <!-- Event Card -->
-        <div class="event-card-container col p-xl-3 p-lg-2">
-            <div class="event-card p-lg-1 p-0 m-0">
+                                <tr>
+                                    <td class="imageTable">
+                                        <img src="Images/Event_Img_1.jpg" />
+                                    </td>
 
-                <div class="event-img-container row m-0 p-0">
-                    <img class="event-img p-0 m-0" src="Images/Event_Img_2.jpg" alt="Logo">
+                                </tr>
 
-                    <div class="overlay-content-container">
-                        <div class="event-name-container">
-                            <h3 class="event-name">اسم الفعالية</h3>
-                        </div>
-                        <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
-                    </div>
+                                <tr>
+                                    <td> <h3 class="eventDB">  <%#Eval("Name") %>  </h3> </td>
+                                </tr>
 
-                </div>
-            </div>
+                                <tr>
+                                    <td class = "eventButton">
+                                          <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="EventsHomePage.aspx">تفاصيل</button>
+                                    </td>
+                                </tr>
+
+                              
+                            </table>
+                        </ItemTemplate>
+                    </asp:DataList>
         </div>
 
 
-        <!-- Event Card -->
-        <div class="event-card-container col p-xl-3 p-lg-2">
-            <div class="event-card p-lg-1 p-0 m-0">
 
-                <div class="event-img-container row m-0 p-0">
-                    <img class="event-img p-0 m-0" src="Images/Event_Img_4.jpg" alt="Logo">
-
-                    <div class="overlay-content-container">
-                        <div class="event-name-container">
-                            <h3 class="event-name">اسم الفعالية</h3>
-                        </div>
-                        <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Event Card -->
-        <div class="event-card-container col p-xl-3 p-lg-2">
-            <div class="event-card p-lg-1 p-0 m-0">
-
-                <div class="event-img-container row m-0 p-0">
-                    <img class="event-img p-0 m-0" src="Images/Event_Img_2.jpg" alt="Logo">
-
-                    <div class="overlay-content-container">
-                        <div class="event-name-container">
-                            <h3 class="event-name">اسم الفعالية</h3>
-                        </div>
-                        <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Event Card -->
-        <div class="event-card-container col p-xl-3 p-lg-2">
-            <div class="event-card p-lg-1 p-0 m-0">
-
-                <div class="event-img-container row m-0 p-0">
-                    <img class="event-img p-0 m-0" src="Images/Event_Img_4.jpg" alt="Logo">
-
-                    <div class="overlay-content-container">
-                        <div class="event-name-container">
-                            <h3 class="event-name">اسم الفعالية</h3>
-                        </div>
-                        <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Event Card -->
-        <div class="event-card-container col p-xl-3 p-lg-2">
-            <div class="event-card p-lg-1 p-0 m-0">
-
-                <div class="event-img-container row m-0 p-0">
-                    <img class="event-img p-0 m-0" src="Images/Event_Img_2.jpg" alt="Logo">
-
-                    <div class="overlay-content-container">
-                        <div class="event-name-container">
-                            <h3 class="event-name">اسم الفعالية</h3>
-                        </div>
-                        <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-    </div>
 
 
     <div class="d-flex justify-content-center">
