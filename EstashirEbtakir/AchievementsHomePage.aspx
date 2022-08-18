@@ -44,7 +44,7 @@
 
             <div class="achievements-page-description-container">
                 <p class="achievements-page-description mt-lg-2">
-                    نبذة عن قسم الإنجازات
+                    مساحة لاستعراض إنجازات معمل الابتكارات
                 </p>
             </div>
 

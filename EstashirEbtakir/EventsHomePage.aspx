@@ -44,7 +44,7 @@
 
             <div class="events-page-description-container">
                 <p class="events-page-description mt-lg-2">
-                    نبذة عن قسم الفعاليات
+                    مساحة لاستعراض الفعاليات التي قدمها معمل الابتكارات
                 </p>
             </div>
 

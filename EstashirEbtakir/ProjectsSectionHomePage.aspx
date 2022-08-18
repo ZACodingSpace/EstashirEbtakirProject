@@ -25,7 +25,7 @@
 
             <div class="projects-page-description-container">
                 <p class="projects-page-description mt-xl-2">
-                    نبذة عن قسم المشاريع
+                    مساحة لمشاركة المشاريع التي تم تنفيذها
                 </p>
             </div>
 
