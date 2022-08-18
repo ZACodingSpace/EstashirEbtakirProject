@@ -2681,6 +2681,18 @@ div.card-header {
 
 /*ريناد*/
 /* Add Project section page Styles Start */
+.question-circle {
+    color: gray;
+}
+
+    .question-circle:hover:after {
+        color: black;
+        content: "حجم الملف يجب ان لايكون اكبر من";
+        display: block;
+        position: relative;
+        font-size: small;
+    }
+
 .add-project-page-content {
     min-height: 100vh;
 }

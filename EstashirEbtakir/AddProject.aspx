@@ -86,19 +86,7 @@
          <div class="project-file-container col p-xl-5 p-lg-4 pt-md-5">
              <h4  class="project-file">الملف</h4>
               <input type="file" class="projectFile" id="fileP" accept="application/pdf" runat="server"/>
-                           <i class='fa fa-exclamation-circle blue-color'></i>
-
-              <p class="twitterText">Twitter</p>
-             <style>
-    .blue-color {
-        color:gray;
-    }
-    .blue-color:hover:after {
-  color: black;
-  content:"kkkk";
-}
-     </style>
-
+              <i class='fa fa-question-circle question-circle'></i>
             <asp:Label id="projectFileMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
          </div>
        </div>
