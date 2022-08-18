@@ -8,6 +8,9 @@
     --Silver-Sand: #BEC3CC;
     --Alice-Blue: #EEF3FC;
     --Ghost-White: #F6F9FF;
+    --generatedCardsWidth: 21vw;
+    --generatedCardsHeight: 25vw;
+    
 }
 
 * {
@@ -3227,14 +3230,13 @@ div.card-header {
 
 /*******************************************************************************/
 
-/******IdeasCards********/
 .IdeaTable, .ConsTable, .ProjectTable, .EventTable {
     box-sizing: border-box;
     background-color: var(--Ghost-White);
     margin: 10px 10px;
-    height: 400px;
-    max-width: 21vw;
-    min-width: 21vw;
+    max-width: var(--generatedCardsWidth);
+    min-width: var(--generatedCardsWidth);
+    height: var(--generatedCardsHeight);
     line-height: 30px;
     position: relative;
     box-shadow: -4px -4px 8px #ffffff, 4px 4px 8px #bec3cc;
@@ -3242,7 +3244,7 @@ div.card-header {
     padding: 20px;
 }
 
-
+/******IdeasCards********/
 .IdeaTable .IdeaImage {
     min-width: 15vw ;
     max-width: 15vw ;
@@ -3375,14 +3377,44 @@ div.card-header {
 }
 
 /*********/
+.EventTable .eventImage{
+
+    width: var(--generatedCardsWidth);
+    height: var(--generatedCardsHeight);
+}
+
 .EventTable .eventDB, .EventTable .eventButton{
     display: none;
+
 }
+
+  
 
 .EventTable:hover .eventDB, .EventTable:hover .eventButton {
         display: inline-block;
+        
+
+    }
+
+
+    .EventTable .eventDB {
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: white;
+        position: absolute;
+        top: 35%;
+        right: 30%;
+    }
+
+    .EventTable .eventButton {
+        position: absolute;
+        border: none;
+        top: 50%;
+        right: 35%;
     }
 
 .EventTable:hover {
     opacity: 0.4;
 }
+
+
