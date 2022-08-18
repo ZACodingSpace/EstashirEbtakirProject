@@ -86,6 +86,23 @@
          <div class="project-file-container col p-xl-5 p-lg-4 pt-md-5">
              <h4  class="project-file">الملف</h4>
               <input type="file" class="projectFile" id="fileP" runat="server"/>
+                           <i class='fa fa-exclamation-circle blue-color'></i>
+              <p class="twitterText">Twitter</p>
+             <style>
+    .blue-color {
+        color:gray;
+    }.blue-color:hover  ~ .twitterText{
+  color: black;display: block;
+}
+     
+#twitterText{
+  display: none;
+}
+.blue-color: hover .twitterText {
+  
+}
+
+     </style>
             <asp:Label id="projectFileMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
          </div>
        </div>
