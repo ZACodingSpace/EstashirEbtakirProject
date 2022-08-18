@@ -108,13 +108,13 @@
                         </Series>
                         <ChartAreas>
                             <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
-                                <axisx>
-                                    <majorgrid enabled="false" />
-                                </axisx>
+                                <AxisX>
+                                    <MajorGrid Enabled="false" />
+                                </AxisX>
 
-                                <axisy interlacedcolor="#ffccff">
-                                    <majorgrid enabled="false" />
-                                    </axisy>
+                                <AxisY InterlacedColor="#ffccff">
+                                    <MajorGrid Enabled="false" />
+                                </AxisY>
                             </asp:ChartArea>
                         </ChartAreas>
                     </asp:Chart>
@@ -130,14 +130,30 @@
                             FROM OurIdea) as ideaT
                         GROUP BY taken_stat;"></asp:SqlDataSource>
 
-                    <asp:Chart ID="Chart4" runat="server">
+                    <asp:Chart ID="Chart4" runat="server" DataSourceID="SqlDataSource4" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
                         <Series>
-                            <asp:Series Name="Series1"></asp:Series>
+                            <asp:Series Name="Series1" XValueMember="m" YValueMembers="ideas"></asp:Series>
                         </Series>
                         <ChartAreas>
-                            <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+                            <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
+                                <AxisX>
+                                    <MajorGrid Enabled="false" />
+                                </AxisX>
+
+                                <AxisY InterlacedColor="#ffccff">
+                                    <MajorGrid Enabled="false" />
+                                </AxisY>
+                            </asp:ChartArea>
                         </ChartAreas>
                     </asp:Chart>
+
+                    <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="
+                        SELECT TOP(6)
+                      MONTH(Date) AS m, YEAR(Date) AS y,
+                      COUNT(Idea_ID) AS ideas
+                    FROM OurIdea
+                    GROUP BY MONTH(Date), YEAR(Date)
+                    ORDER BY y DESC, m DESC;"></asp:SqlDataSource>
 
                 </div>
 

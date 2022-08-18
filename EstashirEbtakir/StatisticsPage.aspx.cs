@@ -44,6 +44,15 @@ namespace EstashirEbtakir
                 ColorTranslator.FromHtml("#377D71"),
                 ColorTranslator.FromHtml("#8879B0")
             };
+
+            Chart4.Palette = ChartColorPalette.None;
+            Chart4.PaletteCustomColors = new Color[] {
+                ColorTranslator.FromHtml("#8879B0"),
+                ColorTranslator.FromHtml("#FBC5C5"),
+                ColorTranslator.FromHtml("#377D71"),
+                ColorTranslator.FromHtml("#FBA1A1")
+            };
+
         }
 
     }
