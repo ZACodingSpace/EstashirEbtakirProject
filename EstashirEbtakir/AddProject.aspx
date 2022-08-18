@@ -42,7 +42,7 @@
         <div class="pic-college-container row m-0 pt-4">
         <div class="project-pic-container col p-xl-5 p-lg-4 pt-md-5">
             <h4 class="project-pic">صورة</h4>
-            <input type="file" class="Porjectimg" id="Pimg" runat="server"/>
+            <input type="file" class="Porjectimg" id="Pimg" accept="image/png, image/gif, image/jpeg" runat="server"/>
             <asp:Label id="projectImgMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
        </div>
 
@@ -84,10 +84,9 @@
          </div>
 
          <div class="project-file-container col p-xl-5 p-lg-4 pt-md-5">
-            <h4  class="project-file">الملف</h4>
-            <input type="file"  class="projectFile" id="fileP"  runat="server"/>
+             <h4  class="project-file">الملف</h4>
+              <input type="file" class="projectFile" id="fileP" runat="server"/>
             <asp:Label id="projectFileMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
-
          </div>
        </div>
 
