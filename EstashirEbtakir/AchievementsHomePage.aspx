@@ -71,121 +71,36 @@
 
     <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5 p-5 ">
 
+  <!------------------------------------------------------------------------->
         <!-- Cards -->
 
-        <!-- Achievement Card -->
-        <div class="event-card-container col p-xl-3 p-lg-2">
-            <div class="event-card p-lg-1 p-0 m-0">
+        <asp:DataList ID="DataListAchievement" runat="server" RepeatColumns="4">
+                        <ItemTemplate>
+                            <table class="AchievementTable">
 
-                <div class="event-img-container row m-0 p-0">
-                    <img class="event-img p-0 m-0" src="Images/Event_Img_6.jpg" alt="Logo">
+                                <tr>
+                                    <td class="imageTable">
+                                        <img src="Images/Event_Img_3.jpg" />
+                                    </td>
 
-                    <div class="overlay-content-container">
-                        <div class="event-name-container">
-                            <h3 class="event-name">الإنجاز الأول</h3>
-                        </div>
-                        <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
-                    </div>
+                                </tr>
 
-                </div>
-            </div>
-        </div>
+                                <tr>
+                                    <td> <h3 class="AchievementDB">  <%#Eval("Name") %>  </h3> </td>
+                                </tr>
 
+                                <tr>
+                                    <td class = "AchievementButton">
+                                          <button class="Achievement-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="EventsHomePage.aspx">تفاصيل</button>
+                                    </td>
+                                </tr>
 
-        <!-- Achievement Card -->
-        <div class="event-card-container col p-xl-3 p-lg-2">
-            <div class="event-card p-lg-1 p-0 m-0">
+                              
+                            </table>
+                        </ItemTemplate>
+                    </asp:DataList>
 
-                <div class="event-img-container row m-0 p-0">
-                    <img class="event-img p-0 m-0" src="Images/Event_Img_1.jpg" alt="Logo">
-
-                    <div class="overlay-content-container">
-                        <div class="event-name-container">
-                            <h3 class="event-name">الإنجاز الثاني</h3>
-                        </div>
-                        <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Achievement Card -->
-        <div class="event-card-container col p-xl-3 p-lg-2">
-            <div class="event-card p-lg-1 p-0 m-0">
-
-                <div class="event-img-container row m-0 p-0">
-                    <img class="event-img p-0 m-0" src="Images/Event_Img_6.jpg" alt="Logo">
-
-                    <div class="overlay-content-container">
-                        <div class="event-name-container">
-                            <h3 class="event-name">الإنجاز الثالث</h3>
-                        </div>
-                        <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Achievement Card -->
-        <div class="event-card-container col p-xl-3 p-lg-2">
-            <div class="event-card p-lg-1 p-0 m-0">
-
-                <div class="event-img-container row m-0 p-0">
-                    <img class="event-img p-0 m-0" src="Images/Event_Img_1.jpg" alt="Logo">
-
-                    <div class="overlay-content-container">
-                        <div class="event-name-container">
-                            <h3 class="event-name">الإنجاز الرابع</h3>
-                        </div>
-                        <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Achievement Card -->
-        <div class="event-card-container col p-xl-3 p-lg-2">
-            <div class="event-card p-lg-1 p-0 m-0">
-
-                <div class="event-img-container row m-0 p-0">
-                    <img class="event-img p-0 m-0" src="Images/Event_Img_6.jpg" alt="Logo">
-
-                    <div class="overlay-content-container">
-                        <div class="event-name-container">
-                            <h3 class="event-name">الإنجاز الخامس</h3>
-                        </div>
-                        <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Achievement Card -->
-        <div class="event-card-container col p-xl-3 p-lg-2">
-            <div class="event-card p-lg-1 p-0 m-0">
-
-                <div class="event-img-container row m-0 p-0">
-                    <img class="event-img p-0 m-0" src="Images/Event_Img_1.jpg" alt="Logo">
-
-                    <div class="overlay-content-container">
-                        <div class="event-name-container">
-                            <h3 class="event-name">الإنجاز السادس</h3>
-                        </div>
-                        <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="#">تفاصيل</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
+        <!------------------------------------------------------------------------->
 
 
 

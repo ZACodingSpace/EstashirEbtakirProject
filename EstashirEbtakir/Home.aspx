@@ -218,34 +218,35 @@
 
                                 <tr>
 
-                                    <td class="ConsName"><%#Eval("Fname") %>  <%#Eval("Lname") %> </td>
-                                    <td>
-                                        <br />
+                                    <td class="ConsName"><%#Eval("Fname") %>  <%#Eval("Lname") %>  - 
+                                        
+                                        <%#Eval("Counseling_Specialty") %>
                                     </td>
+                                   
                                 </tr>
 
+                                
                                 <tr>
-                                    <td class="ConsSpecialityDB"><%#Eval("Counseling_Specialty") %> </td>
-                                </tr>
-                                <tr>
-                                    <td class="ConsUniversity"><%#Eval("University_ID") %> </td>
+                                    <td class="ConsCollegeMajorDB"><%#Eval("College") %> - <%#Eval("major") %> </td>
                                 </tr>
 
+                                
 
                                 <tr>
-                                    <td class="ConsDetailsButton">
+                                    <td class="ConsDetailsBookButton">
+
                                         <button class="consultation-details-button col-4 p-0 ps-2 pe-2"
                                             formaction="BrowsProject.aspx">
                                             تفاصيل</button>
-                                    </td>
-                                </tr>
 
-                                <tr>
-                                    <td class="ConsBookingButton">
                                         <button class="consultation-booking-button col-4 p-0 ps-2 pe-2"
                                             formaction="BrowsProject.aspx">
-                                            احجز</button></td>
-                                </tr>
+                                            احجز</button>
+
+                                    </td>
+                               </tr>
+
+                                
 
                             </table>
                         </ItemTemplate>
