@@ -3080,7 +3080,7 @@ div.card-header {
     justify-content: flex-end;
 }
 
-.stu-contact-info-container .stu-contact > * {
+.stu-contact-info-container .stu-contact .contact-link > * {
     font-size: max(1.3vw, 2vh);
 }
 
