@@ -62,6 +62,7 @@
     <center>
     <asp:DataList ID="DataListProject" runat="server" RepeatColumns="4" >
                     <ItemTemplate>
+                        
                         <table class= "ProjectTable" >
 
                             <tr>

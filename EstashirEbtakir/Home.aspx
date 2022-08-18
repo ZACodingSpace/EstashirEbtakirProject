@@ -218,34 +218,35 @@
 
                                 <tr>
 
-                                    <td class="ConsName"><%#Eval("Fname") %>  <%#Eval("Lname") %> </td>
-                                    <td>
-                                        <br />
+                                    <td class="ConsName"><%#Eval("Fname") %>  <%#Eval("Lname") %>  - 
+                                        
+                                        <%#Eval("Counseling_Specialty") %>
                                     </td>
+                                   
                                 </tr>
 
+                                
                                 <tr>
-                                    <td class="ConsSpecialityDB"><%#Eval("Counseling_Specialty") %> </td>
-                                </tr>
-                                <tr>
-                                    <td class="ConsUniversity"><%#Eval("University_ID") %> </td>
+                                    <td class="ConsCollegeMajorDB"><%#Eval("College") %> - <%#Eval("major") %> </td>
                                 </tr>
 
+                                
 
                                 <tr>
-                                    <td class="ConsDetailsButton">
+                                    <td class="ConsDetailsBookButton">
+
                                         <button class="consultation-details-button col-4 p-0 ps-2 pe-2"
                                             formaction="BrowsProject.aspx">
                                             تفاصيل</button>
-                                    </td>
-                                </tr>
 
-                                <tr>
-                                    <td class="ConsBookingButton">
                                         <button class="consultation-booking-button col-4 p-0 ps-2 pe-2"
                                             formaction="BrowsProject.aspx">
-                                            احجز</button></td>
-                                </tr>
+                                            احجز</button>
+
+                                    </td>
+                               </tr>
+
+                                
 
                             </table>
                         </ItemTemplate>
@@ -337,14 +338,31 @@
 
                     <!-- Cards -->
 
+                    <asp:DataList ID="DataListEvent" runat="server" RepeatColumns="4">
+                        <ItemTemplate>
+                            <table class="EventTable">
 
+                                <tr>
+                                    <td class="imageTable">
+                                        <img src="Images/Event_Img_1.jpg" />
+                                    </td>
 
+                                </tr>
 
+                                <tr>
+                                    <td> <h3 class="eventDB">  <%#Eval("Name") %>  </h3> </td>
+                                </tr>
 
+                                <tr>
+                                    <td class = "eventButton">
+                                          <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="EventsHomePage.aspx">تفاصيل</button>
+                                    </td>
+                                </tr>
 
-
-
-
+                              
+                            </table>
+                        </ItemTemplate>
+                    </asp:DataList>
 
                 </div>
 
