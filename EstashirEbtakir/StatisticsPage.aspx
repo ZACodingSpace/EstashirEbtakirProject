@@ -78,18 +78,10 @@
 
                     <asp:Chart runat="server" ID="Chart2" DataSourceID="SqlDataSource2" BackColor="Transparent" BorderlineColor="Transparent" Height="380px" Width="540px">
                         <series>
-                            <asp:Series Name="Series1" XValueMember="tech_name" YValueMembers="idea_num" ChartType="Pie" ></asp:Series>
+                            <asp:Series Name="Series1" XValueMember="tech_name" YValueMembers="idea_num" ChartType="Bar" ></asp:Series>
                         </series>
                         <chartareas>
-                            <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
-                                <axisx>
-                                    <majorgrid enabled="false" />
-                                </axisx>
-
-                                <axisy interlacedcolor="#ffccff">
-                                    <majorgrid enabled="false" />
-                                </axisy>
-                            </asp:ChartArea>
+                            <asp:ChartArea Name="ChartArea1" BackColor="Transparent"></asp:ChartArea>
                         </chartareas>
                     </asp:Chart>
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT 
@@ -104,7 +96,7 @@
                     <!-- Number if taken and not taken ideas -->
                     <asp:Chart ID="Chart3" runat="server" DataSourceID="SqlDataSource3" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
                         <Series>
-                            <asp:Series Name="Series1" XValueMember="taken_stat" YValueMembers="Column1" YValuesPerPoint="2"></asp:Series>
+                            <asp:Series Name="Series1" XValueMember="taken_stat" YValueMembers="Column1" YValuesPerPoint="2" ChartType="Doughnut"></asp:Series>
                         </Series>
                         <ChartAreas>
                             <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
