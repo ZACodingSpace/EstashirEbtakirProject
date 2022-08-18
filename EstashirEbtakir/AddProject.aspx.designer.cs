@@ -24,6 +24,15 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlInputText projectNameField;
 
         /// <summary>
+        /// projectNameMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label projectNameMsg;
+
+        /// <summary>
         /// projectDescriptionTextarea control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace EstashirEbtakir
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTextArea projectDescriptionTextarea;
+
+        /// <summary>
+        /// projectDescriptionMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label projectDescriptionMsg;
 
         /// <summary>
         /// Pimg control.
@@ -42,6 +60,15 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlInputFile Pimg;
 
         /// <summary>
+        /// projectImgMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label projectImgMsg;
+
+        /// <summary>
         /// collegeP control.
         /// </summary>
         /// <remarks>
@@ -49,6 +76,15 @@ namespace EstashirEbtakir
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText collegeP;
+
+        /// <summary>
+        /// projectCollegeMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label projectCollegeMsg;
 
         /// <summary>
         /// majorP control.
@@ -60,6 +96,15 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlInputText majorP;
 
         /// <summary>
+        /// projectMajorMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label projectMajorMsg;
+
+        /// <summary>
         /// supervisorP control.
         /// </summary>
         /// <remarks>
@@ -67,6 +112,15 @@ namespace EstashirEbtakir
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText supervisorP;
+
+        /// <summary>
+        /// projectSupervisorMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label projectSupervisorMsg;
 
         /// <summary>
         /// Textarea1 control.
@@ -78,6 +132,15 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlTextArea Textarea1;
 
         /// <summary>
+        /// projectMembersMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label projectMembersMsg;
+
+        /// <summary>
         /// gradeP control.
         /// </summary>
         /// <remarks>
@@ -87,6 +150,15 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlInputText gradeP;
 
         /// <summary>
+        /// projectGradeMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label projectGradeMsg;
+
+        /// <summary>
         /// fileP control.
         /// </summary>
         /// <remarks>
@@ -94,6 +166,15 @@ namespace EstashirEbtakir
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputFile fileP;
+
+        /// <summary>
+        /// projectFileMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label projectFileMsg;
 
         /// <summary>
         /// VRtech control.
