@@ -25,7 +25,7 @@
 
             <div class="consultations-page-description-container">
                 <p class="consultations-page-description mt-xl-2">
-                    نبذة عن قسم الاستشارات
+                    مساحة لحجز موعد استشارة مع خبراء جامعة المؤسس
                 </p>
             </div>
 

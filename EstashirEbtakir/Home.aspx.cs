@@ -71,7 +71,7 @@ namespace EstashirEbtakir
             //Events, participation and achievements
             sqlconn = new SqlConnection(mainconn);
 
-            string sqlqueryEvent = "Select Top 4 * from [dbo].[EventsAndParticipation]";
+            string sqlqueryEvent = "Select Top 4 * from [dbo].[EventsAndParticipation2]";
             SqlCommand sqlcommEvent = new SqlCommand(sqlqueryEvent, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaEvent = new SqlDataAdapter();

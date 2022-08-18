@@ -6,7 +6,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-  
+
     <div class="add-project-page-content row mt-xl-1 ps-xl-5 pe-xl-5 mt-lg-1 ps-lg-4 pe-lg-4 mt-md-5 ps-md-4 pe-md-4 ">
 
                    
@@ -20,54 +20,80 @@
             <a class="m-0 p-0 active-link" href="AddProject.aspx">إضافة مشروع</a>
         </div>
         
+        <div class="ideaName-ideaLabel-container row">
+
+
+
+        </div>
+
         <div class="project-name-container p-xl-5 p-lg-4 pt-md-5">
             <h4 class="project-name">اسم المشروع</h4>
             <input type="text" class="project-name-field" id="projectNameField" runat="server">
+            <asp:Label id="projectNameMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
         </div>
 
         <div class="project-description-container p-xl-5 p-lg-4 pt-md-5">
             <h4 class="project-description-label">نبذة عن المشروع</h4>
             <textarea class="project-description-textarea" id="projectDescriptionTextarea" rows="10" runat="server"></textarea>
+            <asp:Label id="projectDescriptionMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
+
         </div>
 
         <div class="pic-college-container row m-0 pt-4">
         <div class="project-pic-container col p-xl-5 p-lg-4 pt-md-5">
             <h4 class="project-pic">صورة</h4>
-            <input type="file" class="Porjectimg" id="Pimg" runat="server"/>
+            <input type="file" class="Porjectimg" id="Pimg" accept="image/png, image/gif, image/jpeg" runat="server"/>
+            <asp:Label id="projectImgMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
        </div>
 
          <div class="project-college-container col p-xl-5 p-lg-4 pt-md-5">
             <h4 class="project-college">الكلية</h4>
-            <input type="text" class="projectCollege" id="collegeP" runat="server"/> </div></div>
+            <input type="text" class="projectCollege" id="collegeP" runat="server"/> </div>
+            <asp:Label id="projectCollegeMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
+        </div>
 
          <div class="major-supervisor-container row m-0 pt-4">
          <div class="project-major-container col p-xl-5 p-lg-4 pt-md-5">
             <h4 class="project-major">التخصص</h4>
-            <input type="text" class="projectMajor" id="majorP" runat="server"/> </div>
+            <input type="text" class="projectMajor" id="majorP" runat="server"/>
+             <asp:Label id="projectMajorMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
+         </div>
 
          <div class="project-supervisor-container col p-xl-5 p-lg-4 pt-md-5">
             <h4  class="project-supervisor">المشرف</h4>
-            <input type="text"  class="projectSupervisor" id="supervisorP" runat="server"/> </div>
+            <input type="text"  class="projectSupervisor" id="supervisorP" runat="server"/> 
+            <asp:Label id="projectSupervisorMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
+
+         </div>
          </div>
 
         <div class="project-members-container p-xl-5 p-lg-4 pt-md-5">
             <h4 class="project-members-label">الأعضاء</h4>
-            <textarea class="project-members-textarea" id="Textarea1" rows="10" runat="server"></textarea>
+            <textarea class="project-members-textarea" id="Textarea1" rows="10" runat="server">   </textarea>
+           <asp:Label id="projectMembersMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
+
+         
         </div>
 
         <div class="grade-file-container row m-0 pt-4">
          <div class="project-grade-container col p-xl-5 p-lg-4 pt-md-5">
             <h4  class="project-grade">الدرجة</h4>
-            <input type="text"  class="projectGrade" id="gradeP" runat="server"/> </div>
+            <input type="text"  class="projectGrade" id="gradeP" runat="server"/>
+            <asp:Label id="projectGradeMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
+
+         </div>
 
          <div class="project-file-container col p-xl-5 p-lg-4 pt-md-5">
-            <h4  class="project-file">الملف</h4>
-            <input type="file"  class="projectFile" id="fileP"  runat="server"/></div>
+             <h4  class="project-file">الملف</h4>
+              <input type="file" class="projectFile" id="fileP" accept="application/pdf" runat="server"/>
+              <i class='fa fa-question-circle question-circle'></i>
+            <asp:Label id="projectFileMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
+         </div>
        </div>
 
         <div class="innovation-lab-technologies-project p-xl-5 p-lg-4 pt-md-5">
 
-            <h4 class="innovation-lab-technologies-header">التقنيات الممكن استخدامها لتنفيذ المشروع</h4>
+            <h4 class="innovation-lab-technologies-header">اختر التقنيات الممكن استخدامها لتنفيذ المشروع</h4>
 
             <div class="project-checkbox-list-container row row-cols-lg-4 row-cols-md-2">
 
@@ -80,12 +106,12 @@
                                 <span class="tickmarkP"></span>
                                 <span class="technology-nameP">نظارات الواقع الافتراضي</span>
                             </span>
-                        </label>
+                        </label> 
 
+                    </div>
                         <div class="technology-details-button-container">
                             <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-VRtech.aspx" target="_blank">تفاصيل</a>
                         </div>
-                    </div>
                 </div>
 
                 <div class="technology-list-item-container row m-0 pt-4">
@@ -99,11 +125,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
+                       
+
+                    </div> 
+                    <div class="technology-details-button-container">
                             <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-ARtech.aspx" target="_blank">تفاصيل</a>
                         </div>
-
-                    </div>
                 </div>
 
                 <div class="technology-list-item-container row m-0 pt-4">
@@ -117,11 +144,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-Leaptech.aspx" target="_blank">تفاصيل</a>
-                        </div>
+                       
 
                     </div>
+                    <div class="technology-details-button-container">
+                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-Leaptech.aspx" target="_blank">تفاصيل</a>
+                        </div>
                 </div>
 
                 <div class="technology-list-item-container row m-0 pt-4">
@@ -135,11 +163,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
+                       
+
+                    </div> 
+                    <div class="technology-details-button-container">
                             <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-secondlifetech.aspx" target="_blank">تفاصيل</a>
                         </div>
-
-                    </div>
                 </div>
 
                 <div class="technology-list-item-container row m-0 pt-4">
@@ -153,11 +182,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-AItech.aspx" target="_blank">تفاصيل</a>
-                        </div>
+                      
 
                     </div>
+                    <div class="technology-details-button-container">
+                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-AItech.aspx" target="_blank">تفاصيل</a>
+                        </div>
                 </div>
 
 
@@ -172,11 +202,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-robottech.aspx" target="_blank">تفاصيل</a>
-                        </div>
+                        
 
                     </div>
+                    <div class="technology-details-button-container">
+                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-robottech.aspx" target="_blank">تفاصيل</a>
+                        </div>
                 </div>
 
 
@@ -191,11 +222,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
+                     
+
+                    </div> 
+                    <div class="technology-details-button-container">
                             <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-hologramtech.aspx" target="_blank">تفاصيل</a>
                         </div>
-
-                    </div>
                 </div>
 
                 <div class="technology-list-item-container row m-0 pt-4">
@@ -209,11 +241,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
+                       
+
+                    </div> 
+                    <div class="technology-details-button-container">
                             <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-soundstudio.aspx" target="_blank">تفاصيل</a>
                         </div>
-
-                    </div>
                 </div>
 
                 <div class="technology-list-item-container row m-0 pt-4">
@@ -227,11 +260,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-3dprinttech.aspx" target="_blank">تفاصيل</a>
-                        </div>
+                        
 
                     </div>
+                    <div class="technology-details-button-container">
+                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-3dprinttech.aspx" target="_blank">تفاصيل</a>
+                        </div>
                 </div>
 
 
@@ -247,11 +281,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-Virtual-tours.aspx" target="_blank">تفاصيل</a>
-                        </div>
+                        
 
                     </div>
+                    <div class="technology-details-button-container">
+                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-Virtual-tours.aspx" target="_blank">تفاصيل</a>
+                        </div>
                 </div>
 
 
@@ -266,11 +301,12 @@
                             </span>
                         </label>
 
-                        <div class="technology-details-button-container">
+                      
+
+                    </div> 
+                    <div class="technology-details-button-container">
                             <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-eyetrack.aspx" target="_blank">تفاصيل</a>
                         </div>
-
-                    </div>
                 </div>
 
             </div>
@@ -283,5 +319,6 @@
         </div>
 
     </div>
+
 
 </asp:Content>

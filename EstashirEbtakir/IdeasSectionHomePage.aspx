@@ -25,7 +25,7 @@
 
             <div class="ideas-page-description-container">
                 <p class="ideas-page-description mt-xl-2">
-                    نبذة عن قسم الأفكار
+                   مساحة لمشاركة الأفكار وطلب تنفيذها مع مراعاة حقوق الملكية
                 </p>
             </div>
 
