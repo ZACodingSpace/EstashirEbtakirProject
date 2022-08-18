@@ -53,6 +53,8 @@
 
 
     </div>
+    
+    <!-------------------------------------------------------------------------->
         <!-- Cards -->
     <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5 p-5">
 
@@ -97,6 +99,7 @@
 
     </div>
             <!-- Cards End -->
+    <!-------------------------------------------------------------------------->
     <div class="d-flex justify-content-center">
 
         <ul class="pagination">

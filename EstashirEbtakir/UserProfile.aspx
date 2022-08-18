@@ -44,7 +44,7 @@
                     <p>
                         <!-- placeholder="05xxxxxxxx" -->
                         رقم الجوال:
-                        <input id="phone" runat="server" type="text" class="text-field3"/>
+                        <input id="phone" runat="server" type="text" class="text-field3" placeholder="05xxxxxxxx"/>
                         <asp:Button class="change-pass-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" ID="editPhone" runat="server" Text="تعديل" onclick="EditPhone_Click"/>
                         <asp:Label ID="testchange" runat="server" Text="" ForeColor="Red"></asp:Label>
                     </p>

@@ -14,7 +14,24 @@ namespace EstashirEbtakir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
+            string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
+            SqlConnection sqlconn = new SqlConnection(mainconn);
+
+            string sqlqueryParticipation = "Select * from [dbo].[EventsAndParticipation] where Type = 2 ";
+            SqlCommand sqlcommParticipation = new SqlCommand(sqlqueryParticipation, sqlconn);
+            sqlconn.Open();
+            SqlDataAdapter sdaParticipation = new SqlDataAdapter();
+            sdaParticipation.SelectCommand = sqlcommParticipation;
+            DataSet dsParticipation = new DataSet();
+
+            sdaParticipation.Fill(dsParticipation);
+            DataListParticipation.DataSource = dsParticipation;
+            DataListParticipation.DataBind();
+
+
+            sqlconn.Close();
+
 
 
 
