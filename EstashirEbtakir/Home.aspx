@@ -344,7 +344,7 @@
 
                                 <tr>
                                     <td class="imageTable">
-                                        <img src="Images/Event_Img_1.jpg" />
+                                        <img class="eventImage" src="Images/Event_Img_1.jpg" />
                                     </td>
 
                                 </tr>
