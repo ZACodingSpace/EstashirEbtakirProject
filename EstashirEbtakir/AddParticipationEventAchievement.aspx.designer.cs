@@ -51,15 +51,6 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlInputText pabout;
 
         /// <summary>
-        /// date control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText date;
-
-        /// <summary>
         /// psupervisor control.
         /// </summary>
         /// <remarks>
@@ -85,6 +76,15 @@ namespace EstashirEbtakir
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputFile pfile;
+
+        /// <summary>
+        /// date control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl date;
 
         /// <summary>
         /// Button3 control.

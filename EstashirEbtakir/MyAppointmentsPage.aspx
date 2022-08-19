@@ -33,11 +33,11 @@
                 <div class="idea-card-container col p-xl-3 p-lg-2">
                     <div class="idea-card">
 
-                         <!-- Second Section of the card -->
+                         <!-- First Section of the card -->
                         <div class="idea-name-container row">
-                            <h3 class="idea-name">الموعد الاول</h3>
+                            <h3 class="idea-name">الموعد الاول</h3> 
                         </div>
-                        <!-- Third Section of the card -->
+                        <!-- Second Section of the card -->
                         <div class="idea-description-container">
                             <p class="idea-description m-0 col-8">
                                 التاريخ: 
@@ -53,9 +53,18 @@
                         </div>
                         <!-- Last Section of the card -->
                         <div class="idea-description-container">
-                            <p class="idea-description m-0 col-8">اسم المستشار
-                                : 
+                            <p class="idea-description m-0 col-8">اسم المستشار:
                                 <input id="consultantname1" type="text" class="text-field4" placeholder="د.هند بيطار" readonly/>
+                            </p>
+                        </div>
+                        <div class="idea-description-container">
+                            <p class="idea-description m-0 col-8">نوع الاستشارة:
+                                <input id="consultationtype1" type="text" class="text-field4" placeholder="الذكاء الاصطناعي" readonly/>
+                            </p>
+                        </div>
+                        <div class="idea-description-container">
+                            <p class="idea-description m-0 col-8">طريقة الاستشارة:
+                                 <input id="consultationtype2" type="text" class="text-field4" placeholder="حضوري" readonly/>
                             </p>
                         </div>
                     </div>
@@ -65,15 +74,11 @@
                 <div class="idea-card-container col p-xl-3 p-lg-2">
                     <div class="idea-card">
 
-                        <!-- First Section of the card -->
-                        <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
-                            <img class="idea-logo img-fluid p-xl-4 p-lg-4"  src="Icons/appointment.png" alt="Logo">
-                        </div>
-                         <!-- Second Section of the card -->
+                         <!-- First Section of the card -->
                         <div class="idea-name-container row">
                             <h3 class="idea-name">الموعد الثاني</h3>
                         </div>
-                        <!-- Third Section of the card -->
+                        <!-- Second Section of the card -->
                         <div class="idea-description-container">
                             <p class="idea-description m-0 col-8">
                                 التاريخ: 
@@ -91,7 +96,17 @@
                         <div class="idea-description-container">
                             <p class="idea-description m-0 col-8">
                                 اسم المستشار: 
-                                <input id="consultantname2" type="text" class="text-field4" placeholder="د. منار سلامة" readonly/>
+                                <input id="consultantname3" type="text" class="text-field4" placeholder="د. منار سلامة" readonly/>
+                            </p>
+                        </div>
+                         <div class="idea-description-container">
+                            <p class="idea-description m-0 col-8">نوع الاستشارة:
+                                <input id="consultationtype3" type="text" class="text-field4" placeholder="انترنت الأشياء" readonly/>
+                            </p>
+                        </div>
+                        <div class="idea-description-container">
+                            <p class="idea-description m-0 col-8">طريقة الاستشارة:
+                                 <input id="consultationtype4" type="text" class="text-field4" placeholder="أونلاين" readonly/>
                             </p>
                         </div>
                     </div>
