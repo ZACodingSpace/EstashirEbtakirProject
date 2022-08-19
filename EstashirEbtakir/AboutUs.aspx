@@ -59,12 +59,12 @@
 
               <div class="stu-description-container row">
                 <hr>
-                <p class="stu-description p-0"> هنا كل بنت تحط أي معلومة تبغى</p>
+                <p class="stu-description p-0"> تقنية المعلومات  - قواعد البيانات</p>
               </div>
 
               <div class="stu-contact-info-container row p-0">
                 <div class="stu-contact p-0">
-                  <a class="contact-link ms-lg-1" href=""><i class="fa-solid fa-square-envelope"></i></a>
+                  <a class="contact-link ms-lg-1" href="mailto: aalzahrani3374@stu.kau.edu.sa"><i class="fa-solid fa-square-envelope"></i></a>
                   <a class="contact-link bg-white" href=""><i class="fa-brands fa-linkedin"></i></a>
                   <a class="contact-link me-lg-1" href=""><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
@@ -91,13 +91,13 @@
 
               <div class="stu-description-container row">
                 <hr>
-                <p class="stu-description p-0"> هنا كل بنت تحط أي معلومة تبغى</p>
+                <p class="stu-description p-0"> قواعد البيانات - تطوير الويب</p>
               </div>
 
               <div class="stu-contact-info-container row p-0">
                 <div class="stu-contact p-0">
-                  <a class="contact-link ms-lg-1" href=""><i class="fa-solid fa-square-envelope"></i></a>
-                  <a class="contact-link bg-white" href=""><i class="fa-brands fa-linkedin"></i></a>
+                  <a class="contact-link ms-lg-1" href="mailto: Afnan.khalafAlsulami@gmail.com"><i class="fa-solid fa-square-envelope"></i></a>
+                  <a class="contact-link bg-white" href="https://www.linkedin.com/in/afnan-alsulami-860548236"><i class="fa-brands fa-linkedin"></i></a>
                   <a class="contact-link me-lg-1" href=""><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
               </div>
@@ -123,14 +123,14 @@
 
               <div class="stu-description-container row">
                 <hr>
-                <p class="stu-description p-0"> هنا كل بنت تحط أي معلومة تبغى</p>
+                <p class="stu-description p-0">ذكاء اصطناعي</p>
               </div>
 
               <div class="stu-contact-info-container row p-0">
                 <div class="stu-contact p-0">
-                  <a class="contact-link ms-lg-1" href=""><i class="fa-solid fa-square-envelope"></i></a>
-                  <a class="contact-link bg-white" href=""><i class="fa-brands fa-linkedin"></i></a>
-                  <a class="contact-link me-lg-1" href=""><i class="fa-brands fa-square-twitter"></i></a>
+                  <a class="contact-link ms-lg-1" href="mailto: balamri0087@stu.kau.edu.sa"><i class="fa-solid fa-square-envelope"></i></a>
+                  <a class="contact-link bg-white" href="https://www.linkedin.com/in/بدور-العمري-518251214"><i class="fa-brands fa-linkedin"></i></a>
+                  <a class="contact-link me-lg-1" href="https://twitter.com/11________111?t=lWh91Nc835Pf-zktT5ZnHQ&s=09"><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
               </div>
 
@@ -155,14 +155,14 @@
 
               <div class="stu-description-container row">
                 <hr>
-                <p class="stu-description p-0"> هنا كل بنت تحط أي معلومة تبغى</p>
+                <p class="stu-description p-0"> تطوير تطبيقات - ذكاء اصطناعي</p>
               </div>
 
               <div class="stu-contact-info-container row p-0">
                 <div class="stu-contact p-0">
-                  <a class="contact-link ms-lg-1" href=""><i class="fa-solid fa-square-envelope"></i></a>
+                  <a class="contact-link ms-lg-1" href="mailto: duaaaloufii@gmail.com"><i class="fa-solid fa-square-envelope"></i></a>
                   <a class="contact-link bg-white" href=""><i class="fa-brands fa-linkedin"></i></a>
-                  <a class="contact-link me-lg-1" href=""><i class="fa-brands fa-square-twitter"></i></a>
+                  <a class="contact-link me-lg-1" href="https://twitter.com/1duao"><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
               </div>
 
@@ -187,12 +187,12 @@
 
               <div class="stu-description-container row">
                 <hr>
-                <p class="stu-description p-0"> هنا كل بنت تحط أي معلومة تبغى</p>
+                <p class="stu-description p-0"> أمن سيبراني - ذكاء اصطناعي </p>
               </div>
 
               <div class="stu-contact-info-container row p-0">
                 <div class="stu-contact p-0">
-                  <a class="contact-link ms-lg-1" href=""><i class="fa-solid fa-square-envelope"></i></a>
+                  <a class="contact-link ms-lg-1" href="mailto: ralsubey@stu.kau.edu.sa"><i class="fa-solid fa-square-envelope"></i></a>
                   <a class="contact-link bg-white" href=""><i class="fa-brands fa-linkedin"></i></a>
                   <a class="contact-link me-lg-1" href=""><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
@@ -219,13 +219,13 @@
 
               <div class="stu-description-container row">
                 <hr>
-                <p class="stu-description p-0"> هنا كل بنت تحط أي معلومة تبغى</p>
+                <p class="stu-description p-0"> تطوير التطبيقات - قواعد البيانات</p>
               </div>
 
               <div class="stu-contact-info-container row p-0">
                 <div class="stu-contact p-0">
-                  <a class="contact-link ms-lg-1" href=""><i class="fa-solid fa-square-envelope"></i></a>
-                  <a class="contact-link bg-white" href=""><i class="fa-brands fa-linkedin"></i></a>
+                  <a class="contact-link ms-lg-1" href="mailto: RALQARNI0145@stu.kau.edu.sa"><i class="fa-solid fa-square-envelope"></i></a>
+                  <a class="contact-link bg-white" href="https://www.linkedin.com/in/renadalqarni"><i class="fa-brands fa-linkedin"></i></a>
                   <a class="contact-link me-lg-1" href=""><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
               </div>
@@ -251,12 +251,12 @@
 
               <div class="stu-description-container row">
                 <hr>
-                <p class="stu-description p-0"> هنا كل بنت تحط أي معلومة تبغى</p>
+                <p class="stu-description p-0"> هندسة برمجيات - تطوير ويب</p>
               </div>
 
               <div class="stu-contact-info-container row p-0">
                 <div class="stu-contact p-0">
-                  <a class="contact-link ms-lg-1" href=""><i class="fa-solid fa-square-envelope"></i></a>
+                  <a class="contact-link ms-lg-1" href="mailto: "><i class="fa-solid fa-square-envelope"></i></a>
                   <a class="contact-link bg-white" href=""><i class="fa-brands fa-linkedin"></i></a>
                   <a class="contact-link me-lg-1" href=""><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
@@ -288,7 +288,7 @@
 
               <div class="stu-contact-info-container row p-0">
                 <div class="stu-contact p-0">
-                  <a class="contact-link ms-lg-1" href=""><i class="fa-solid fa-square-envelope"></i></a>
+                  <a class="contact-link ms-lg-1" href="mailto: "><i class="fa-solid fa-square-envelope"></i></a>
                   <a class="contact-link bg-white" href=""><i class="fa-brands fa-linkedin"></i></a>
                   <a class="contact-link me-lg-1" href=""><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
@@ -315,14 +315,14 @@
 
               <div class="stu-description-container row">
                 <hr>
-                <p class="stu-description p-0"> هنا كل بنت تحط أي معلومة تبغى</p>
+                <p class="stu-description p-0"> أمن المعلومات - تطوير التطبيقات</p>
               </div>
 
               <div class="stu-contact-info-container row p-0">
                 <div class="stu-contact p-0">
-                  <a class="contact-link ms-lg-1" href=""><i class="fa-solid fa-square-envelope"></i></a>
-                  <a class="contact-link bg-white" href=""><i class="fa-brands fa-linkedin"></i></a>
-                  <a class="contact-link me-lg-1" href=""><i class="fa-brands fa-square-twitter"></i></a>
+                  <a class="contact-link ms-lg-1" href="mailto: saljehani0091@stu.kau.edu.sa"><i class="fa-solid fa-square-envelope"></i></a>
+                  <a class="contact-link bg-white" href="https://www.linkedin.com/in/shahad-aljehani-ba2066249"><i class="fa-brands fa-linkedin"></i></a>
+                  <a class="contact-link me-lg-1" href="saljehani0091@stu.kau.edu.sa"><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
               </div>
 
@@ -347,13 +347,13 @@
 
               <div class="stu-description-container row">
                 <hr>
-                <p class="stu-description p-0"> هنا كل بنت تحط أي معلومة تبغى</p>
+                <p class="stu-description p-0">  تطوير تطبيقات - هندسة برمجيات</p>
               </div>
 
               <div class="stu-contact-info-container row p-0">
                 <div class="stu-contact p-0">
-                  <a class="contact-link ms-lg-1" href=""><i class="fa-solid fa-square-envelope"></i></a>
-                  <a class="contact-link bg-white" href=""><i class="fa-brands fa-linkedin"></i></a>
+                  <a class="contact-link ms-lg-1" href="mailto: mkhan0061@stu.kau.edu.sa"><i class="fa-solid fa-square-envelope"></i></a>
+                  <a class="contact-link bg-white" href="https://www.linkedin.com/in/mariam-k-676b96231"><i class="fa-brands fa-linkedin"></i></a>
                   <a class="contact-link me-lg-1" href=""><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
               </div>
