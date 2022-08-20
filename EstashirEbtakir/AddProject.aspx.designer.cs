@@ -147,7 +147,7 @@ namespace EstashirEbtakir
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText gradeP;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl gradeP;
 
         /// <summary>
         /// projectGradeMsg control.
