@@ -21,7 +21,7 @@
                 <div class="data pt-3">
 
                     <div class="general-msg-error-container">
-                        <asp:Label ID="Label2" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
+                        <asp:Label ID="npassEmsg" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
 
                     </div>
 
@@ -37,8 +37,8 @@
 
                     <div class="logIn-password-container mt-3">
                         <asp:Label ID="logInPassword" class="logIn-password" runat="server">تأكيد كلمة المرور</asp:Label>
-                        <input id="passwordInputPlace" class="inputPlace mt-1" runat="server" type="password" name="logInPassword" />
-                        <asp:Label ID="Label1" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
+                        <input id="Password2" class="inputPlace mt-1" runat="server" type="password" name="logInPassword" />
+                        <asp:Label ID="cpassEmsg" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
                     </div>
 
                 </div>
@@ -55,41 +55,4 @@
         </div>
 
     </div>
-
-
-
-
-    <!--  <div class="logIn-password-container mt-3">
-       
-            <asp:Label id="npassEmsg" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
-           
-         <asp:Label  class="logIn-email" runat="server">كلمة المرور الجديدة</asp:Label>
-<br>
-
-            <input class="place" type="password" runat="server" id="newPassword" name="new-password" required >
-        </div>
-        </div>
-            <div class="logIn-password-container mt-3">
-
-        <div class="confirm-password">
-            <asp:Label id="cpassEmsg" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
-            <asp:Label  class="logIn-email" runat="server">تأكيد كلمة المرور</asp:Label>
-
-             <br>
-            <input class="place" type="password" runat="server" id="confirmPassword" name="confirm-password" required >
-        </div>
-               </div>
-
-        
-       <input class="send-password" type="submit" value="تأكيد"> 
-        <asp:Button ID="Button1" runat="server" Text="تغيير"  onclick="ChangePass_Click"/>
-        Redirect to "Password-changed.aspx"
-       
-
-    </div> -->
-
-
-
-
-
 </asp:Content>

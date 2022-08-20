@@ -24,7 +24,7 @@
             <h4 class="idea-name">اسم الفكرة</h4>
             <input type="text" class="idea-name-field" id="ideaNameField" runat="server"  >
             <asp:Label ID="done" class="idea-name" runat="server" Text=" "></asp:Label>
-             <asp:Label id="projectNameMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
+             <asp:Label id="IdeaNameMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
         </div>
 
             <div class="idea-message col p-xl-5 p-lg-4 pt-md-5">
@@ -37,7 +37,7 @@
         <div class="idea-description-container p-xl-5 p-lg-4 pt-md-5">
             <h4 class="idea-description-label">نبذة عن الفكرة</h4>
             <textarea class="idea-description-textarea" id="ideaDescriptionTextarea" rows="10" runat="server"></textarea>
-             <asp:Label id="projectDescriptionMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
+             <asp:Label id="IdeaDescriptionMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
         </div>
 
         <div class="innovation-lab-technologies p-xl-5 p-lg-4 pt-md-5">
@@ -264,7 +264,7 @@
 
         <div class="add-idea-page-buttons-container m-lg-0 mt-md-5">
             <asp:Button ID="Button1" class="add-idea-button m-1 me-xl-4 me-lg-3" onclick="add_Click" runat="server" Text="إضافة" />
-            <button formaction="" class="cancel-idea-button m-1 ms-xl-4 ms-lg-3" id="cancelIdeaButton" runat="server">إلغاء</button>
+            <button formaction="IdeasSectionHomePage.aspx" class="cancel-idea-button m-1 ms-xl-4 ms-lg-3" id="cancelIdeaButton" runat="server">إلغاء</button>
         </div>
 
     </div>

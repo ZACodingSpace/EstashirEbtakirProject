@@ -33,13 +33,13 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.WebControls.Label done;
 
         /// <summary>
-        /// projectNameMsg control.
+        /// IdeaNameMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label projectNameMsg;
+        protected global::System.Web.UI.WebControls.Label IdeaNameMsg;
 
         /// <summary>
         /// ideaDescriptionTextarea control.
@@ -51,13 +51,13 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlTextArea ideaDescriptionTextarea;
 
         /// <summary>
-        /// projectDescriptionMsg control.
+        /// IdeaDescriptionMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label projectDescriptionMsg;
+        protected global::System.Web.UI.WebControls.Label IdeaDescriptionMsg;
 
         /// <summary>
         /// VRtech control.
