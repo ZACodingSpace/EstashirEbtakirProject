@@ -57,7 +57,7 @@
             </div>
 
             <div class="logIn-button-container mt-5">
-                <asp:Button id="logInButton" onclick="login_Click" class="logIn-button p-0 ps-xl-5 pe-xl-5 ps-lg-4 pe-lg-4" runat="server" Text="تسجيل الدخول" /> 
+                <asp:Button id="logInButton" OnClick="login_Click" class="logIn-button p-0 ps-xl-5 pe-xl-5 ps-lg-4 pe-lg-4" runat="server" Text="تسجيل الدخول" /> 
                
               </div>
 
@@ -133,7 +133,7 @@
 
                 <div class="user-type-details-container pe-3">
                   <input id="idNumber" class="inputPlace me-3" runat="server" type="text" name="idNumber"
-                    placeholder="الرقم الوظيفي/الجامعي" required />
+                    placeholder="الرقم الوظيفي/الجامعي" />
 
                   <div class="user-position-container">
 

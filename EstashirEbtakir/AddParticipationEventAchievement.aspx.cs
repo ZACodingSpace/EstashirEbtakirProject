@@ -39,7 +39,6 @@ namespace EstashirEbtakir
             {
                 type = 1;
             }
-
             string Name = pname.Value;
             string brief = pabout.Value;
             string date2 = date.Value;
@@ -54,7 +53,6 @@ namespace EstashirEbtakir
 
             //Upload File
             string filename = Path.GetFileName(pfile.PostedFile.FileName);
-            MessageBox.Show(filename);
             string contentType = pfile.PostedFile.ContentType;
             using (Stream fs = pfile.PostedFile.InputStream)
             {
@@ -66,9 +64,6 @@ namespace EstashirEbtakir
                     cmd.Parameters.AddWithValue("@ContentType", contentType);
                     cmd.Parameters.AddWithValue("@Data", bytes);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("تمت إضافة الملف");
-
-
                 }
             }
 
@@ -90,11 +85,16 @@ namespace EstashirEbtakir
             cmd2.Parameters.AddWithValue("@File_ID", dt.Rows[0].ItemArray[0]);
             cmd2.ExecuteNonQuery();
 
-            SqlDataAdapter sda2 = new SqlDataAdapter("select @@IDENTITY from OurProject", con);
-            DataTable dt2 = new DataTable();
-            sda2.Fill(dt2);
-            
-            MessageBox.Show("تمت إضافة الفعالية");
+            if (type == 0)
+            {
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
+                      "Swal.fire({title: 'تم إضافة الفعالية بنجاح',icon: 'success', confirmButtonText: 'موافق'}).then(function() { window.location = 'EventsHomePage.aspx'})", true);
+            }
+            else
+            {
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
+                                      "Swal.fire({title: 'تم إضافة المشاركة بنجاح',icon: 'success', confirmButtonText: 'موافق'}).then(function() { window.location = 'ParticipationsHomePage.aspx'})", true);
+            }
             con.Close();
         }
     }
