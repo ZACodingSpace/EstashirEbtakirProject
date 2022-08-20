@@ -83,6 +83,7 @@
     <Content Include="App_Data\EstashirEbtakirDatabase_log.ldf">
       <DependentUpon>EstashirEbtakirDatabase.mdf</DependentUpon>
     </Content>
+    <Content Include="BookConsultation.aspx" />
     <Content Include="ChangePassword.aspx" />
     <Content Include="ConsultantDetails.aspx" />
     <Content Include="ConsultantProfile.aspx" />
@@ -217,6 +218,13 @@
     </Compile>
     <Compile Include="AdminProfile.aspx.designer.cs">
       <DependentUpon>AdminProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookConsultation.aspx.cs">
+      <DependentUpon>BookConsultation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookConsultation.aspx.designer.cs">
+      <DependentUpon>BookConsultation.aspx</DependentUpon>
     </Compile>
     <Compile Include="ChangePassword.aspx.cs">
       <DependentUpon>ChangePassword.aspx</DependentUpon>
