@@ -35,11 +35,11 @@ namespace EstashirEbtakir
 
             if (ideaName.Length < 0)
             {
-
+                IdeaNameMsg.Text = "لم يتم إدخال اسم الفكرة";
             }
             else if (brief.Length < 0)
             {
-
+                IdeaDescriptionMsg.Text = "لم يتم إدخال نبذة عن الفكرة";
             }
             else
             {
@@ -119,7 +119,7 @@ namespace EstashirEbtakir
                     cmdTech.ExecuteNonQuery();
                 }
 
-                ideaNameField.Value = null;
+                /*ideaNameField.Value = null;
                 ideaDescriptionTextarea.Value = null;
                 VRtech.Checked = false;
                 ARtech.Checked = false;
@@ -133,6 +133,9 @@ namespace EstashirEbtakir
                 virtualTours.Checked = false;
                 eyeTrack.Checked = false;
                 done.Text = "تمت إضافة الفكرة بنجاح";
+                */
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
+               "Swal.fire({title: 'تمت إضافة الفكرة بنجاح',icon: 'success', confirmButtonText: 'موافق'}).then(function() { window.location = 'WebForm1.aspx'})", true);
                 con.Close();
             }
         }     
