@@ -45,12 +45,13 @@
                     <h2 class="section-heading">احصائيات المشاريع</h2>
                 </div>
                 <div class="project-stat">
-                    <select class="SecondQuestion-list">
-                        <option vaule="option1">خلال السنة الماضية</option>
-                        <option vaule="option1">اخر ستة اشهر</option>
-                        <option vaule="option1">اخر شهر</option>
-                        <option vaule="option1">جميعها</option>
+                    <select class="SecondQuestion-list" id="range" runat="server" >
+                        <option vaule="year">خلال السنة الماضية</option>
+                        <option vaule="month">اخر ستة اشهر</option>
+                        <option vaule="all">جميعها</option>
                     </select>
+                    <asp:Button ID="Button1" runat="server" Text="Button" onclick="getCharts"/>
+
                 </div>
                 <div class="charts-container">
                     <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" BackColor="Transparent" BorderlineColor="Transparent" Height="200px" Width="200px">
@@ -84,17 +85,14 @@
                             <asp:ChartArea Name="ChartArea1" BackColor="Transparent"></asp:ChartArea>
                         </chartareas>
                     </asp:Chart>
-                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT 
-                        COUNT(tec.Idea_ID) AS idea_num, tec.tech_name 
-                        FROM 
-                            (SELECT Idea_ID, tech_name 
-                            From OurIdea, Technologies 
-                            WHERE Technologies.type ='I' AND OurIdea.Idea_ID = Technologies.ID) AS tec 
-                        GROUP BY tec.tech_name
-                        ORDER BY idea_num;"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
                 
                     <!-- Number if taken and not taken ideas -->
                     <asp:Chart ID="Chart3" runat="server" DataSourceID="SqlDataSource3" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
+                       <Legends>
+        <asp:Legend Alignment="Center" Docking="Bottom" IsTextAutoFit="False" Name="Default" LegendStyle="Column" >
+        </asp:Legend>
+    </Legends>
                         <Series>
                             <asp:Series Name="Series1" XValueMember="taken_stat" YValueMembers="Column1" YValuesPerPoint="2" ChartType="Doughnut"></asp:Series>
                         </Series>
@@ -124,7 +122,7 @@
 
                     <asp:Chart ID="Chart4" runat="server" DataSourceID="SqlDataSource4" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
                         <Series>
-                            <asp:Series Name="Series1" XValueMember="m" YValueMembers="ideas"></asp:Series>
+                            <asp:Series Name="Series1"></asp:Series>
                         </Series>
                         <ChartAreas>
                             <asp:ChartArea Name="ChartArea1" BackColor="Transparent">

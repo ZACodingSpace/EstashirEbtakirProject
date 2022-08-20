@@ -258,6 +258,42 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlInputText idNumber;
 
         /// <summary>
+        /// profUser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label profUser;
+
+        /// <summary>
+        /// profRadioButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton profRadioButton;
+
+        /// <summary>
+        /// studentUser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label studentUser;
+
+        /// <summary>
+        /// studentRadioButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton studentRadioButton;
+
+        /// <summary>
         /// stuDrNoLabel control.
         /// </summary>
         /// <remarks>
