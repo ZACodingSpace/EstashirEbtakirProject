@@ -32,8 +32,8 @@ namespace EstashirEbtakir
         }
         protected void ChangePass_Click(object sender, EventArgs e)
         {
-            string pass = newPassword.Value;
-            string pass2 = confirmPassword.Value;
+            string pass = Password1.Value;
+            string pass2 = Password2.Value;
 
             generalEmsg.Text = "";
             npassEmsg.Text = "";
@@ -66,12 +66,22 @@ namespace EstashirEbtakir
                             {
                                 if ((Regex.Match(pass, @"(?=.[!@#$%^&])").Success))
                                 {
-                                    SqlCommand cmd = new SqlCommand("UPDATE OurUser SET Password='" + pass + "' WHERE User_ID='" + Session["id"] + "'", con);
-                                    cmd.ExecuteNonQuery();
-
-                                    MessageBox.Show("تم تغيير كلمة المرور بنجاح");
+                                    string type = (string)Session["Type"];
+                                    if (type == "User")
+                                    {
+                                        SqlCommand cmd = new SqlCommand("UPDATE OurUser SET Password='" + pass + "' WHERE User_ID='" + Session["id"] + "'", con);
+                                        cmd.ExecuteNonQuery();
+                                    }
+                                    else
+                                    {
+                                        SqlCommand cmd = new SqlCommand("UPDATE OurAdmin SET Password='" + pass + "' WHERE Admin_ID='" + Session["id"] + "'", con);
+                                        cmd.ExecuteNonQuery();
+                                    }
+                                    
                                     Session.Clear();
-                                    Response.Redirect("SignUpLogInPage.aspx");
+                                    ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
+                                    "Swal.fire({title: 'تم تغيير كلمة المرور بنجاح',icon: 'success', confirmButtonText: 'موافق'}).then(function() { window.location = 'SignUpLogInPage.aspx'})", true);
+
                                 }
                                 else
                                 {
