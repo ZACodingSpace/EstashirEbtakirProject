@@ -32,12 +32,14 @@ namespace EstashirEbtakir
         {
             string ideaName = ideaNameField.Value;
             string brief = ideaDescriptionTextarea.Value;
+            IdeaNameMsg.Text = "";
+            IdeaDescriptionMsg.Text = "";
 
-            if (ideaName.Length < 0)
+            if (ideaName.Length < 1)
             {
                 IdeaNameMsg.Text = "لم يتم إدخال اسم الفكرة";
             }
-            else if (brief.Length < 0)
+            else if (brief.Length < 1)
             {
                 IdeaDescriptionMsg.Text = "لم يتم إدخال نبذة عن الفكرة";
             }
@@ -135,7 +137,7 @@ namespace EstashirEbtakir
                 done.Text = "تمت إضافة الفكرة بنجاح";
                 */
                 ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
-               "Swal.fire({title: 'تمت إضافة الفكرة بنجاح',icon: 'success', confirmButtonText: 'موافق'}).then(function() { window.location = 'WebForm1.aspx'})", true);
+               "Swal.fire({title: 'تمت إضافة الفكرة بنجاح',icon: 'success', confirmButtonText: 'موافق'}).then(function() { window.location = 'MyIdeasPage.aspx'})", true);
                 con.Close();
             }
         }     

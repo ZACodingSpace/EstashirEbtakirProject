@@ -264,7 +264,7 @@
 
         <div class="add-idea-page-buttons-container m-lg-0 mt-md-5">
             <asp:Button ID="Button1" class="add-idea-button m-1 me-xl-4 me-lg-3" onclick="add_Click" runat="server" Text="إضافة" />
-            <button formaction="" class="cancel-idea-button m-1 ms-xl-4 ms-lg-3" id="cancelIdeaButton" runat="server">إلغاء</button>
+            <button formaction="IdeasSectionHomePage.aspx" class="cancel-idea-button m-1 ms-xl-4 ms-lg-3" id="cancelIdeaButton" runat="server">إلغاء</button>
         </div>
 
     </div>
