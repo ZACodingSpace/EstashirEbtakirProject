@@ -36,6 +36,7 @@ namespace EstashirEbtakir
         protected void login_Click(object sender, EventArgs e)
         {
             string email = emailInputPlace.Value;
+            email = email.ToLower();
             string pass = passwordInputPlace.Value;
             logInEmailEmsg.Text = "";
             logInPasswordEmsg.Text = "";
@@ -122,12 +123,22 @@ namespace EstashirEbtakir
             string Fname = fNameInputPlace.Value;
             string Lname = lNameInputPlace.Value;
             string email = email1.Value;
+            email = email.ToLower();
             string pass = password1.Value;
             string pass2 = confPasswordInputPlace.Value;
             string universityid = "";
+            string jobPosition = "";
             if (stuDrYesRadioButton.Checked == true)
             {
                 universityid = idNumber.Value;
+                if (profRadioButton.Checked==true)
+                {
+                    jobPosition = "عضو هيئة تدريس";
+                }
+                if (studentRadioButton.Checked==true)
+                {
+                    jobPosition = "طالب";
+                }
             }
             signUpFnameEmsg.Text = "";
             signUpLnameEmsg.Text = "";
@@ -160,7 +171,7 @@ namespace EstashirEbtakir
                 signUpConfPasswordEmsg.Text = "لم يتم تأكيد كلمة المرور";
                 generalErorrMsg.Text = "الرجاء تعبئة جميع الحقول";
             }
-            else if(stuDrYesRadioButton.Checked == true && universityid.Length < 1)
+            else if(stuDrYesRadioButton.Checked == true && (universityid.Length < 1 || (profRadioButton.Checked == false && studentRadioButton.Checked == false)))
             {
                 generalErorrMsg.Text = "الرجاء تعبئة جميع الحقول";
             }
@@ -173,8 +184,11 @@ namespace EstashirEbtakir
                 SqlDataAdapter sda = new SqlDataAdapter("select * from OurUser where Email='" + email.Trim() + "'", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
-                SqlCommand cmd2 = new SqlCommand("INSERT INTO OurUser(Fname, Lname,Password,Email,University_ID) VALUES(@FirstName, @LastName, @Pass, @Email,@uniID)", con);
-                if (dt.Rows.Count == 0)
+                SqlDataAdapter sda2 = new SqlDataAdapter("select * from OurAdmin where Email='" + email.Trim() + "'", con);
+                DataTable dt2 = new DataTable();
+                sda2.Fill(dt2);
+                SqlCommand cmd2 = new SqlCommand("INSERT INTO OurUser(Fname, Lname,Password,Email,University_ID, Job_Position) VALUES(@FirstName, @LastName, @Pass, @Email,@uniID, @jobPosition)", con);
+                if (dt.Rows.Count == 0 && dt2.Rows.Count==0)
                 {
                     if (pass == pass2)
                     {
@@ -185,20 +199,19 @@ namespace EstashirEbtakir
                                 if (Regex.Match(pass, @"(?=.*[A-Z])").Success &&
                                      Regex.Match(pass, @"(?=.*[a-z])").Success)
                                 {
-                                    if ((Regex.Match(pass, @"(?=.[!@#$%^&])").Success))
-                                    {
-                                        //cmd2.Parameters.AddWithValue("@ID", 7);
+                                    if ((Regex.Match(pass, @"(?=.*[!@#$%^&])").Success))
+                                    {                        
                                         cmd2.Parameters.AddWithValue("@FirstName", Fname);
                                         cmd2.Parameters.AddWithValue("@LastName", Lname);
                                         cmd2.Parameters.AddWithValue("@Pass", pass);
                                         cmd2.Parameters.AddWithValue("@Email", email);
-                                        cmd2.Parameters.AddWithValue("uniID", universityid);
+                                        cmd2.Parameters.AddWithValue("@uniID", universityid);
+                                        cmd2.Parameters.AddWithValue("@jobPosition", jobPosition);
                                         cmd2.ExecuteNonQuery();
-                                        generalErorrMsg.Text = "تم تسجيلك بنجاح";
-                                        /*ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
-                                         "swal('أهلا بك', 'تم تسجيلك بنجاح', 'success').then(function() {window.location = 'SignUpLogInPage.aspx'})", true);*/
-                                        ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", "swal({title: 'أهلا بك', text: 'تم تسجيلك بنجاح',type: 'success', showConfirmButton: true, confirmButtonColor: '#8378A8', confirmButtonText:'الانتقال لصفحة تسجيل الدخول'}).then(function() {window.location = 'SignUpLogInPage.aspx'})", true);
-                                    }
+                                        ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
+                                        "Swal.fire({title: 'تم تسجيلك بنجاح',icon: 'success', confirmButtonText: 'موافق'}).then(function() { window.location = 'SignUpLogInPage.aspx'})", true);
+
+                                       }
                                     else
                                     {
                                         signUpPasswordEmsg.Text = "كلمة المرور يجب أن تحتوي على رموز";
