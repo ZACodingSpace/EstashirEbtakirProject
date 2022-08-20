@@ -131,14 +131,12 @@
     <Content Include="MyProjectsPage.aspx" />
     <Content Include="ParticipationsHomePage.aspx" />
     <Content Include="PromotingToConsaltantPage.aspx" />
-    <Content Include="SignIn.aspx" />
     <Content Include="PasswordChanged.aspx" />
     <Content Include="ProjectDetails.aspx" />
     <Content Include="ProjectsSectionHomePage.aspx" />
     <Content Include="Scripts\all.min.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\MainScripts.js" />
-    <Content Include="SignUp.aspx" />
     <Content Include="SignUpLogInPage.aspx" />
     <Content Include="Styles\all.min.css" />
     <Content Include="Styles\bootstrap.min.css" />
@@ -341,13 +339,6 @@
     <Compile Include="PromotingToConsaltantPage.aspx.designer.cs">
       <DependentUpon>PromotingToConsaltantPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SignIn.aspx.cs">
-      <DependentUpon>SignIn.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SignIn.aspx.designer.cs">
-      <DependentUpon>SignIn.aspx</DependentUpon>
-    </Compile>
     <Compile Include="MainMasterPage.Master.cs">
       <DependentUpon>MainMasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -384,13 +375,6 @@
       <DependentUpon>ProjectsSectionHomePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SignUp.aspx.cs">
-      <DependentUpon>SignUp.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SignUp.aspx.designer.cs">
-      <DependentUpon>SignUp.aspx</DependentUpon>
-    </Compile>
     <Compile Include="SignUpLogInPage.aspx.cs">
       <DependentUpon>SignUpLogInPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

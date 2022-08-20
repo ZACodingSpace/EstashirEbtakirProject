@@ -127,11 +127,30 @@
               <p class="stu-dr-question mt-2">هل أنت منسوب في جامعة الملك عبدالعزيز؟</p>
 
               <asp:Label id="stuDrYesLabel" class="stu-dr-yes" runat="server">
-                <input id="stuDrYesRadioButton" class="stuDr-RadioButton ms-2" runat="server" type="radio"
-                  name="stuDrRadioButton" value="yes" />
-                نعم
-                <input id="idNumber" class="inputPlace me-3" runat="server" type="text" name="idNumber"
-                  placeholder="الرقم الوظيفي/الجامعي"  />
+               
+                  <input id="stuDrYesRadioButton" class="stuDr-RadioButton ms-2" runat="server" type="radio"
+                  name="stuDrRadioButton" value="yes" /> نعم
+
+                <div class="user-type-details-container pe-3">
+                  <input id="idNumber" class="inputPlace me-3" runat="server" type="text" name="idNumber"
+                    placeholder="الرقم الوظيفي/الجامعي" required />
+
+                  <div class="user-position-container">
+
+                    <asp:Label id="profUser" class="prof-user mt-3" runat="server">
+                      <input id="profRadioButton" class="stuDr-RadioButton ms-2" runat="server" type="radio"
+                        name="userPosition" value="prof" />
+                      عضو هيئة تدريس
+                    </asp:Label>
+
+                    <asp:Label id="studentUser" class="student-user mt-3" runat="server">
+                      <input id="studentRadioButton" class="stuDr-RadioButton ms-2" runat="server" type="radio"
+                        name="userPosition" value="stu" />
+                      طالب
+                    </asp:Label>
+
+                  </div>
+                </div>
               </asp:Label>
 
               <asp:Label id="stuDrNoLabel" class="stu-dr-no mt-3" runat="server">
