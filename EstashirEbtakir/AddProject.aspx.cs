@@ -47,7 +47,6 @@ namespace EstashirEbtakir
 
             //Upload File
             string filename = Path.GetFileName(fileP.PostedFile.FileName);
-            MessageBox.Show(filename);
             string contentType = fileP.PostedFile.ContentType;
             using (Stream fs= fileP.PostedFile.InputStream)
             {
@@ -58,10 +57,7 @@ namespace EstashirEbtakir
                     cmd.Parameters.AddWithValue("@Name", filename);
                     cmd.Parameters.AddWithValue("@ContentType", contentType);
                     cmd.Parameters.AddWithValue("@Data", bytes);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("تمت إضافة الملف");
-                    
-
+                    cmd.ExecuteNonQuery();                  
                 }
             }
 
@@ -150,7 +146,8 @@ namespace EstashirEbtakir
                 cmdTech.Parameters["@TechName"].Value = "جهاز تعقب حركة العين";
                 cmdTech.ExecuteNonQuery();
             }
-            MessageBox.Show("تمت إضافة المشروع");
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
+               "Swal.fire({title: 'تم إضافة المشروع بنجاح',icon: 'success', confirmButtonText: 'موافق'}).then(function() { window.location = 'MyProjectsPage.aspx'})", true);
             con.Close();
         }
     }
