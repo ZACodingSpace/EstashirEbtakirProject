@@ -59,7 +59,7 @@ namespace EstashirEbtakir
                 using (BinaryReader br = new BinaryReader(fs))
                 {
                     byte[] bytes = br.ReadBytes((Int32)fs.Length);
-                    SqlCommand cmd = new SqlCommand("INSERT INTO OurFile (Name, ContentType, Data) VALUES(@Name, @ContentType, @Data)", con);
+                    SqlCommand cmd = new SqlCommand("INSERT INTO EEFile (Name, ContentType, Data) VALUES(@Name, @ContentType, @Data)", con);
                     cmd.Parameters.AddWithValue("@Name", filename);
                     cmd.Parameters.AddWithValue("@ContentType", contentType);
                     cmd.Parameters.AddWithValue("@Data", bytes);
@@ -67,7 +67,7 @@ namespace EstashirEbtakir
                 }
             }
 
-            SqlDataAdapter sda = new SqlDataAdapter("select @@IDENTITY from OurFile", con);
+            SqlDataAdapter sda = new SqlDataAdapter("select @@IDENTITY from EEFile", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
 

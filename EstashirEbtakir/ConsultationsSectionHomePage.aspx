@@ -63,25 +63,38 @@
                         <ItemTemplate>
                             <table class="ConsTable">
 
-                                <tr>
+                                <tr class="table-header-cons">
                                     <td>
-                                        <img class="ConsImage" src="Images/Profile_Icon.png" />
+                                        <tr class="table-bottom-row-cons">
+                                            <tr class="table-row-cons">
+                                                <td>
+                                                    <img class="ConsImage" src="Images/Profile_Icon.png" />
+                                                </td>
+                                            </tr>
+                                        </tr>
                                     </td>
-
+                                    <td>
+                                        <br />
+                                        <br />
+                                    </td>
                                 </tr>
 
                                 <tr>
 
-                                    <td class="ConsName"><%#Eval("Fname") %>  <%#Eval("Lname") %>  - 
+                                    <td class="ConsName"><%#Eval("Fname") %>  <%#Eval("Lname") %> 
+                                        <br />
                                         
-                                        <%#Eval("Counseling_Specialty") %>
+                                      
                                     </td>
                                    
                                 </tr>
 
                                 
                                 <tr>
-                                    <td class="ConsCollegeMajorDB"><%#Eval("College") %> - <%#Eval("major") %> </td>
+
+                                    <td class="ConsCollegeMajorDB">  <%#Eval("Counseling_Specialty") %>  - <%#Eval("major") %> 
+                                        <br />
+                                            <%#Eval("College") %></td>
                                 </tr>
 
                                 

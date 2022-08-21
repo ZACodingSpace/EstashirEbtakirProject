@@ -64,7 +64,11 @@
 
                                 <tr>
                                     <td>
-                                        <img class="IdeaImage" src="Icons/Lightbulb.png">
+                                        <tr class="table-row">
+                                            <td>
+                                                <img class="IdeaImage" src="Icons/Lightbulb.png">
+                                            </td>
+                                        </tr>
                                     </td>
                                     <td>
                                         <br />
@@ -87,7 +91,7 @@
                                     <td class="IdeasButton">
                                         <button class="ideas-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
                                             formaction="IdeasDetails.aspx">
-                                            تفاصيل</button>
+                                           عرض الفكرة</button>
                                     </td>
                                 </tr>
                             </table>
