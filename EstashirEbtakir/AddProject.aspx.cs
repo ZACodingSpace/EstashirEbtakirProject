@@ -110,9 +110,9 @@ namespace EstashirEbtakir
                 {
                     int UserID = (int)Session["id"];
                     SqlCommand cmd2 = new SqlCommand("INSERT INTO OurProject (User_ID, Project_Name, Supervisor, " +
-                        "Team_Members, Brief, Faculty, Major,Degree, Project_State, image, File_ID)" +
-                        " VALUES(@User_ID, @Project_Name, @Supervisor,@Team_Members, @Brief, @Faculty, @Major" +
-                        " @Degree, @Project_State, @image, @File_ID)", con);
+                        "Team_Members, Brief, Faculty, Degree, Major, Project_State, image, File_ID)" +
+                        " VALUES(@User_ID, @Project_Name, @Supervisor, @Team_Members, @Brief, @Faculty, " +
+                        "@Degree, @Major, @Project_State, @image, @File_ID)", con);
                     cmd2.Parameters.AddWithValue("@User_ID", UserID);
                     cmd2.Parameters.AddWithValue("@Project_Name", projectName);
                     cmd2.Parameters.AddWithValue("@Supervisor", supervisorPro);
@@ -130,9 +130,9 @@ namespace EstashirEbtakir
                 {
                     int adminId = (int)Session["id"];
                     SqlCommand cmd2 = new SqlCommand("INSERT INTO OurProject (Admin_ID, Project_Name, Supervisor, " +
-                        "Team_Members, Brief, Faculty, Major,Degree, Project_State, image, File_ID)" +
-                        " VALUES(@admin_ID, @Project_Name, @Supervisor,@Team_Members, @Brief, @Faculty, @Major" +
-                        " @Degree, @Project_State, @image, @File_ID)", con);
+                        "Team_Members, Brief, Faculty, Major, Degree, Project_State, image, File_ID)" +
+                        " VALUES(@admin_ID, @Project_Name, @Supervisor, @Team_Members, @Brief, @Faculty, " +
+                        "@Major, @Degree, @Project_State, @image, @File_ID)", con);
                     cmd2.Parameters.AddWithValue("@admin_ID", adminId);
                     cmd2.Parameters.AddWithValue("@Project_Name", projectName);
                     cmd2.Parameters.AddWithValue("@Supervisor", supervisorPro);

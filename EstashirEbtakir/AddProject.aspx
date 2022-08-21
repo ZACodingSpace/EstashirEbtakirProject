@@ -78,7 +78,7 @@
         <div class="grade-file-container row m-0 pt-4">
          <div class="project-grade-container col p-xl-5 p-lg-4 pt-md-5">
             <h4  class="project-grade">الدرجة</h4>
-            <input type="number"  class="projectGrade" id="gradeP" runat="server"/>
+            <input type="text"  class="projectGrade" id="gradeP" runat="server"/>
             <asp:Label id="projectGradeMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
 
          </div>
