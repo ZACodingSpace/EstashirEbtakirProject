@@ -18,8 +18,9 @@ namespace EstashirEbtakir
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
-            string sqlqueryCons = "Select Top 4 * from [dbo].[OurCounselors] " +
-               "inner Join [dbo].[OurUsers] ON Counselor_ID=User_ID";
+            string sqlqueryCons = "Select * from [dbo].[EECounselor] " +
+               "inner Join [dbo].[EEUser] ON Counselor_ID=User_ID";
+
             SqlCommand sqlcommCons = new SqlCommand(sqlqueryCons, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaCons = new SqlDataAdapter();
