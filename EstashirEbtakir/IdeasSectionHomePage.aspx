@@ -7,7 +7,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="ideas-page-header-container row row ps-lg-5 pe-lg-5 mt-lg-3 mb-lg-3">
+    <div class="ideas-page-header-container row ps-lg-5 pe-lg-5 mt-lg-3 mb-lg-3">
 
         <div class="ideas-links-container pe-lg-4 pt-lg-2 ">
             <a class="m-0 p-0" href="Home.aspx">الرئيسية</a>
@@ -60,7 +60,7 @@
 
         <asp:DataList ID="DataListIdea" class="page-data-container" runat="server" RepeatColumns="4">
             <ItemTemplate>
-                <table class="idea-table">
+                <table class="idea-table mt-4">
 
                     <%--First Section of the card--%>
                     <tr class="idea-logo-area">
