@@ -62,8 +62,8 @@ namespace EstashirEbtakir
                 con.Open();
 
 
-                SqlDataAdapter sda = new SqlDataAdapter("select * from OurUser where Email='" + email.Trim() + "'" , con);
-                SqlDataAdapter sda2 = new SqlDataAdapter("select * from OurAdmin where Email='" + email.Trim() + "'", con);
+                SqlDataAdapter sda = new SqlDataAdapter("select * from EEUser where Email='" + email.Trim() + "'" , con);
+                SqlDataAdapter sda2 = new SqlDataAdapter("select * from EEAdmin where Email='" + email.Trim() + "'", con);
                 DataTable dtU = new DataTable();
                 sda.Fill(dtU);
                 DataTable dtA = new DataTable();
@@ -181,13 +181,13 @@ namespace EstashirEbtakir
                 string str = getConstring();
                 con = new SqlConnection(str);
                 con.Open();
-                SqlDataAdapter sda = new SqlDataAdapter("select * from OurUser where Email='" + email.Trim() + "'", con);
+                SqlDataAdapter sda = new SqlDataAdapter("select * from EEUser where Email='" + email.Trim() + "'", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
-                SqlDataAdapter sda2 = new SqlDataAdapter("select * from OurAdmin where Email='" + email.Trim() + "'", con);
+                SqlDataAdapter sda2 = new SqlDataAdapter("select * from EEAdmin where Email='" + email.Trim() + "'", con);
                 DataTable dt2 = new DataTable();
                 sda2.Fill(dt2);
-                SqlCommand cmd2 = new SqlCommand("INSERT INTO OurUser(Fname, Lname,Password,Email,University_ID, Job_Position) VALUES(@FirstName, @LastName, @Pass, @Email,@uniID, @jobPosition)", con);
+                SqlCommand cmd2 = new SqlCommand("INSERT INTO EEUser(Fname, Lname,Password,Email,University_ID, Job_Position) VALUES(@FirstName, @LastName, @Pass, @Email,@uniID, @jobPosition)", con);
                 if (dt.Rows.Count == 0 && dt2.Rows.Count==0)
                 {
                     if (pass == pass2)
