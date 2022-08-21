@@ -50,7 +50,7 @@
                         <option vaule="month">اخر ستة اشهر</option>
                         <option vaule="all">جميعها</option>
                     </select>
-                    <asp:Button ID="Button1" runat="server" Text="Button" onclick="getCharts"/>
+                    <asp:Button ID="Button1" runat="server" Text="أظهر" onclick="getCharts"/>
 
                 </div>
                 <div class="charts-container">
