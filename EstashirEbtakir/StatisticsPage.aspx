@@ -78,6 +78,10 @@
                 <div class="charts-container">
 
                     <asp:Chart runat="server" ID="Chart2" DataSourceID="SqlDataSource2" BackColor="Transparent" BorderlineColor="Transparent" Height="380px" Width="540px">
+                            <Titles>
+        <asp:Title Font="Times New Roman, 12pt, style=Bold, Italic" Name="Title1" 
+            Text="Hello World">
+        </asp:Title>
                         <series>
                             <asp:Series Name="Series1" XValueMember="tech_name" YValueMembers="idea_num" ChartType="Bar" ></asp:Series>
                         </series>
