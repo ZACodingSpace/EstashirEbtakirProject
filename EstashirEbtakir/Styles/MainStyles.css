@@ -3182,6 +3182,8 @@ div.card-header {
 
 .technology-details-button-container {
     height: 5vh;
+}
+
 .stu-card-area .stu-card .stu-contact-info-container {
     display: flex;
     align-items: center;
@@ -3304,7 +3306,7 @@ div.card-header {
 
 /*******************************************************************************/
 
-.IdeaTable, .ConsTable, .ProjectTable, .EventTable {
+.IdeaTable, .ConsTable, .ProjectTable, .EventTable, .ParticipationTable, .AchievementTable {
     box-sizing: border-box;
     background-color: var(--Ghost-White);
     margin: 10px 10px;
@@ -3490,3 +3492,60 @@ div.card-header {
     .EventTable:hover {
         opacity: 0.4;
     }
+
+.grid {
+    width: 96%;
+    line-height: 60px;
+    margin: 50px 2px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+    .grid th {
+        background-color: #C1AAEF;
+        border: 1px solid black;
+        padding: 10px 50px 10px 0;
+        
+    }
+
+        .grid td {
+            border: 1px solid black;
+            padding: 0 20px;
+            
+        }
+
+        .grid .even {
+            background-color: #d08deecc;
+        } 
+
+        /***************/
+
+.gridAcceptIdeas {
+    border: none;
+}
+
+.ButtonSelect{
+  padding: 5px;
+}
+
+.accepBtns-containerDisplayIdeas, .g {
+    display: flex;
+    justify-content: center;
+}
+
+    .accepBtns-containerDisplayIdeas .accepBtn-containerDisplayIdeas, .ButtonSelect {
+        font-weight: bold;
+        font-size: max(1vw, 2vh);
+        border: none;
+        box-shadow: -2px -2px 1px #FFFFFF;
+        border-radius: 5px;
+        background-color: var(--Purple-Mountain-Majesty);
+    }
+
+        .accepBtns-containerDisplayIdeas .accepBtn-containerDisplayIdeas .accepBtn, .ButtonSelect {
+            font-weight: bold;
+            font-size: max(1vw, 2vh);
+            border: none;
+            background-color: var(--Purple-Mountain-Majesty);
+        }
