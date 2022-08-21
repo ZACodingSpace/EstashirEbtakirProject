@@ -314,8 +314,7 @@
 
         <div class="add-project-page-buttons-container m-lg-0 mt-md-5">
             <asp:Button ID="Button1" class="add-project-button m-1 me-xl-4 me-lg-3" onclick="add_Click" runat="server" Text="إضافة" />
-            <!--<button class="add-project-button m-1 me-xl-4 me-lg-3" id="addProjectButton" onclick="add_Click" runat="server">إضافة</button>-->
-            <button formaction="" class="cancel-project-button m-1 ms-xl-4 ms-lg-3" id="cancelProjectButton" runat="server">إلغاء</button>
+            <button formaction="ProjectsSectionHomePage.aspx" class="cancel-project-button m-1 ms-xl-4 ms-lg-3" id="cancelProjectButton" runat="server">إلغاء</button>
         </div>
 
     </div>

@@ -16,12 +16,12 @@ namespace EstashirEbtakir
 {
     public partial class WebForm2 : System.Web.UI.Page
     {
-
+        SqlConnection con;
         protected void Page_Load(object sender, EventArgs e)
         {
             var chart = new List<Chart>();
             // Colors
-            var c = new String[] {"#9C7C9E", "#FF7F82", "#596482", "#50D1CD"};
+            var c = new String[] { "#9C7C9E", "#FF7F82", "#596482", "#50D1CD" };
             var sectionColor = new String[] { "#", "#", "#", "#" }; // logo colors here
 
             // Fonts
@@ -38,14 +38,18 @@ namespace EstashirEbtakir
             };
 
             // ------------------- Ideas -------------------
-
+            if (range.Value == "all")
+            {
+                SqlDataSource2.SelectCommand = "SELECT COUNT(tec.Idea_ID) AS idea_num, tec.tech_name FROM (SELECT Idea_ID, tech_name From OurIdea, Technologies WHERE Technologies.type ='I' AND OurIdea.Idea_ID = Technologies.ID) AS tec GROUP BY tec.tech_name ORDER BY idea_num";
+            }
+            
             Chart2.DataBind(); //must use to override the colors of bar
 
             // coloring
             int count = 0;
             foreach (var p in Chart2.Series["Series1"].Points)
             {
-                
+
                 p.Color = ColorTranslator.FromHtml(c[count]);
                 count++;
 
@@ -77,6 +81,9 @@ namespace EstashirEbtakir
                 ColorTranslator.FromHtml(c[3])
             };
 
+            Chart3.Series[0].Label = "#PERCENT{P2}";
+
+            Chart3.Series[0].LegendText ="#VALX";
 
             chart.Add(Chart1);
             chart.Add(Chart2);
@@ -93,5 +100,30 @@ namespace EstashirEbtakir
             }
         }
 
+        protected void getCharts(object sender, EventArgs e)
+        {
+            // الأفكار ---------------------------------- في السنة
+            if (range.SelectedIndex == 0)
+            {
+                // 
+                SqlDataSource2.SelectCommand = "SELECT COUNT(tec.Idea_ID) AS idea_num, tec.tech_name FROM (SELECT Idea_ID, tech_name From OurIdea, Technologies WHERE Technologies.type ='I' AND OurIdea.Idea_ID = Technologies.ID) AS tec GROUP BY tec.tech_name ORDER BY idea_num";
+                // عدد الافكار المأخوذة وغير مأخوذة في آخر سنة
+                SqlDataSource3.SelectCommand = "SELECT TOP(2) COUNT(Idea_ID), taken_stat, y FROM (SELECT Idea_ID, YEAR(Date) AS y, Is_Taken, CASE WHEN Is_Taken = 0 THEN N'غير مأخوذة' WHEN Is_Taken = 1 THEN N'مأخوذة' END AS taken_stat FROM OurIdea) as ideaT GROUP BY taken_stat, y ORDER BY y DESC";
+                // عدد الافكار في كل سنة
+                SqlDataSource4.SelectCommand = "SELECT YEAR(Date) AS year, COUNT(Idea_ID) AS ideas FROM OurIdea GROUP BY YEAR(Date) ORDER BY YEAR(Date) DESC";
+                Chart4.Series[0].XValueMember = "year";
+                Chart4.Series[0].YValueMembers = "ideas";
+
+            }
+
+            //Chart2.DataBind(); //must use to override the colors of bar
+        }
+
+            public string GetConstring()
+        {
+            string constr = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
+            return constr;
+
+        }
     }
 }

@@ -1068,15 +1068,14 @@ footer {
     border: none;
     box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
     font-weight: lighter;
+    padding: 0 1rem;
     background-color: var(--Ghost-White);
 }
 
-.user-type-container .inputPlace {
-    visibility: hidden;
-}
-
-input:checked + .inputPlace {
-    visibility: visible;
+.data .inputPlace:focus,
+.data .inputPlace:valid {
+    outline-width: 2px;
+    outline-color: var(--Bright-Lilac);
 }
 
 .logIn-form .data .error-msg-place,
@@ -1101,14 +1100,38 @@ input:checked + .inputPlace {
 }
 
 .signUp-form .user-type-container .stu-dr-yes,
-.signUp-form .user-type-container .stu-dr-no {
+.signUp-form .user-type-container .stu-dr-no,
+.user-position-container .prof-user,
+.user-position-container .student-user {
     display: flex;
+    align-items: center;
     font-weight: bold;
 }
 
+.user-type-container .stu-dr-yes .user-type-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-position-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
 .user-type-container .stu-dr-yes .inputPlace {
     height: 3vh;
+    width: 35vh;
     border-radius: 3px;
+}
+
+.user-type-details-container {
+    visibility: hidden;
+}
+
+input:checked + .user-type-details-container {
+    visibility: visible;
 }
 
 .logIn-form .logIn-button-container .logIn-button,
@@ -1117,18 +1140,22 @@ input:checked + .inputPlace {
     border: none;
     box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
     border-radius: 5px;
-    background-color: var(--Purple-Mountain-Majesty);
+    background-color: var(--Bright-Lilac);
     color: var(--Ghost-White);
 }
 
     .logIn-form .logIn-button-container .logIn-button:hover,
     .signUp-form .signUp-button-container .signUp-button:hover {
-        background-color: #958cb1;
+        background-color: #b37fcb;
         transition: width 10s;
     }
 
+.question .forget {
+    font-size: max(1vw, 2vh);
+    text-decoration: none;
+    color: #000;
+}
 /*************************************SignUP/LogIn Page Styles End ******************************************/
-
 /*الجوهرة*/
 /* Add Participation and Event */
 /*******************************************************************************/
@@ -2856,18 +2883,18 @@ div.card-header {
     justify-content: center;
 }
 
- .technology-details-button-container .technology-details-button-project {
-    width: 10vh;
-    text-decoration: none;
-    text-align: center;
-    font-size: max(1vw, 2vh);
-    color: #000;
-    font-weight: bold;
-    border: none;
-    box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BEC3CC;
-    border-radius: 3px;
-    background-color: var(--French-Pink);
-}
+    .technology-details-button-container .technology-details-button-project {
+        width: 10vh;
+        text-decoration: none;
+        text-align: center;
+        font-size: max(1vw, 2vh);
+        color: #000;
+        font-weight: bold;
+        border: none;
+        box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BEC3CC;
+        border-radius: 3px;
+        background-color: var(--French-Pink);
+    }
 
 .add-project-page-content .add-project-page-buttons-container {
     height: 10vh;
@@ -2993,6 +3020,7 @@ div.card-header {
     box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
     background-color: var(--Ghost-White);
 }
+
 .ideaDetails-technology-field {
     width: 55vh;
     height: 5vh;
@@ -3001,6 +3029,7 @@ div.card-header {
     box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
     background-color: var(--Ghost-White);
 }
+
 .ideaDetails-description-textarea {
     width: 60vw;
     border-radius: 5px;
@@ -3008,6 +3037,7 @@ div.card-header {
     box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
     background-color: var(--Ghost-White);
 }
+
 .add-ideaDetails-page-buttons-container {
     height: 10vh;
     display: flex;
@@ -3182,27 +3212,24 @@ div.card-header {
 
 .technology-details-button-container {
     height: 5vh;
-}
-
-.stu-card-area .stu-card .stu-contact-info-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
- .technology-details-button-container .technology-details-button {
-    width: 10vh;
-    text-decoration: none;
-    text-align: center;
-    font-size: max(1vw, 2vh);
-    color: #000;
-    font-weight: bold;
-    border: none;
-    box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BEC3CC;
-    border-radius: 3px;
-    background-color: var(--Purple-Mountain-Majesty);
-    justify-content: flex-end;
-}
+    .technology-details-button-container .technology-details-button {
+        width: 10vh;
+        text-decoration: none;
+        text-align: center;
+        font-size: max(1vw, 2vh);
+        color: #000;
+        font-weight: bold;
+        border: none;
+        box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BEC3CC;
+        border-radius: 3px;
+        background-color: var(--Purple-Mountain-Majesty);
+        justify-content: flex-end;
+    }
 
 .stu-card .stu-contact-info-container .stu-contact {
     display: flex;
@@ -3306,7 +3333,7 @@ div.card-header {
 
 /*******************************************************************************/
 
-.IdeaTable, .ConsTable, .ProjectTable, .EventTable, .ParticipationTable, .AchievementTable {
+.IdeaTable, .ConsTable, .ProjectTable, .EventTable {
     box-sizing: border-box;
     background-color: var(--Ghost-White);
     margin: 10px 10px;
@@ -3492,60 +3519,3 @@ div.card-header {
     .EventTable:hover {
         opacity: 0.4;
     }
-
-.grid {
-    width: 96%;
-    line-height: 60px;
-    margin: 50px 2px;
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-
-    .grid th {
-        background-color: #C1AAEF;
-        border: 1px solid black;
-        padding: 10px 50px 10px 0;
-        
-    }
-
-        .grid td {
-            border: 1px solid black;
-            padding: 0 20px;
-            
-        }
-
-        .grid .even {
-            background-color: #d08deecc;
-        } 
-
-        /***************/
-
-.gridAcceptIdeas {
-    border: none;
-}
-
-.ButtonSelect{
-  padding: 5px;
-}
-
-.accepBtns-containerDisplayIdeas, .g {
-    display: flex;
-    justify-content: center;
-}
-
-    .accepBtns-containerDisplayIdeas .accepBtn-containerDisplayIdeas, .ButtonSelect {
-        font-weight: bold;
-        font-size: max(1vw, 2vh);
-        border: none;
-        box-shadow: -2px -2px 1px #FFFFFF;
-        border-radius: 5px;
-        background-color: var(--Purple-Mountain-Majesty);
-    }
-
-        .accepBtns-containerDisplayIdeas .accepBtn-containerDisplayIdeas .accepBtn, .ButtonSelect {
-            font-weight: bold;
-            font-size: max(1vw, 2vh);
-            border: none;
-            background-color: var(--Purple-Mountain-Majesty);
-        }

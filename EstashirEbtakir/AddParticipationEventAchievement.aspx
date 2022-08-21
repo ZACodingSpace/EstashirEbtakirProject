@@ -25,25 +25,25 @@
             <div class="add-form">
 
                 <label for="p-name">اسم الفعالية/المشاركة</label>
-                <input type="text" runat="server" id="pname" />
+                <input type="text" runat="server" id="pname" required />
 
                 <label for="p-about">إضافة نبذة</label>
-                <input type="text" runat="server" id="pabout" />
+                <input type="text" runat="server" id="pabout" required />
 
 
                 <label for="p-supervisor">المشرف</label>
-                <input type="text" runat="server" id="psupervisor" />
+                <input type="text" runat="server" id="psupervisor" required />
 
                 <label for="p-file">إرفاق صور</label>
-                <input  type="file" accept="image/png,image/gif,image/jpeg" runat="server" id="imgfile" />
+                <input  type="file" accept="image/png,image/gif,image/jpeg" runat="server" id="imgfile" required />
 
                 <label for="p-file">إرفاق ملفات</label>
-                <input type="file" runat="server" id="pfile" />
+                <input type="file" runat="server" accept="application/pdf" id="pfile" required />
 
                 <label for="p-department">التاريخ</label>
 
                  
-                <input type="date" runat="server" id="date" />
+                <input type="date" runat="server" id="date" required />
 
                                     
                 
@@ -59,7 +59,7 @@
                 </div>
                 <div class="accepBtn-container m-1 me-xl-4 me-lg-3 p-lg-2">
 
-                    <asp:Button class="accepBtn p-0 ps-2 pe-2" ID="Button4" runat="server" Text="الغاء" />
+                    <asp:Button formaction="ParticipationsHomePage.aspx" class="accepBtn p-0 ps-2 pe-2" ID="Button4" runat="server" Text="الغاء" />
                 </div>
             </div>
         </div>

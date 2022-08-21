@@ -32,28 +32,43 @@ namespace EstashirEbtakir
         {
             string ideaName = ideaNameField.Value;
             string brief = ideaDescriptionTextarea.Value;
+            IdeaNameMsg.Text = "";
+            IdeaDescriptionMsg.Text = "";
 
-            if (ideaName.Length < 0)
+            if (ideaName.Length < 1)
             {
-
+                IdeaNameMsg.Text = "لم يتم إدخال اسم الفكرة";
             }
-            else if (brief.Length < 0)
+            else if (brief.Length < 1)
             {
-
+                IdeaDescriptionMsg.Text = "لم يتم إدخال نبذة عن الفكرة";
             }
             else
             {
                 string str = getConstring();
                 con = new SqlConnection(str);
                 con.Open();
-                SqlCommand cmd = new SqlCommand("INSERT INTO OurIdea(User_ID, Idea_Name, Brief,Idea_State) VALUES(@userID,@IdeaName, @IdeaBrief, @State)", con);
-                int UserID = (int)Session["id"];
-                cmd.Parameters.AddWithValue("@userID", UserID);
-                cmd.Parameters.AddWithValue("@IdeaName", ideaName);
-                cmd.Parameters.AddWithValue("@IdeaBrief", brief);
-                cmd.Parameters.AddWithValue("@State", 0);
-                cmd.ExecuteNonQuery();
-
+                string type = (string)Session["Type"];
+                if (type == "User")
+                {
+                    SqlCommand cmd = new SqlCommand("INSERT INTO OurIdea(User_ID, Idea_Name, Brief,Idea_State) VALUES(@userID,@IdeaName, @IdeaBrief, @State)", con);
+                    int UserID = (int)Session["id"];
+                    cmd.Parameters.AddWithValue("@userID", UserID);
+                    cmd.Parameters.AddWithValue("@IdeaName", ideaName);
+                    cmd.Parameters.AddWithValue("@IdeaBrief", brief);
+                    cmd.Parameters.AddWithValue("@State", 0);
+                    cmd.ExecuteNonQuery();
+                }
+                else
+                {
+                    SqlCommand cmd = new SqlCommand("INSERT INTO OurIdea(Admin_ID, Idea_Name, Brief,Idea_State) VALUES(@adminID,@IdeaName, @IdeaBrief, @State)", con);
+                    int adminID = (int)Session["id"];
+                    cmd.Parameters.AddWithValue("@adminID", adminID);
+                    cmd.Parameters.AddWithValue("@IdeaName", ideaName);
+                    cmd.Parameters.AddWithValue("@IdeaBrief", brief);
+                    cmd.Parameters.AddWithValue("@State", 1);
+                    cmd.ExecuteNonQuery();
+                }
                 SqlDataAdapter sda = new SqlDataAdapter("select @@IDENTITY from OurIdea", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
@@ -119,20 +134,17 @@ namespace EstashirEbtakir
                     cmdTech.ExecuteNonQuery();
                 }
 
-                ideaNameField.Value = null;
-                ideaDescriptionTextarea.Value = null;
-                VRtech.Checked = false;
-                ARtech.Checked = false;
-                Leaptech.Checked = false;
-                secondlifetech.Checked = false;
-                AItech.Checked = false;
-                robottech.Checked = false;
-                hologramtech.Checked = false;
-                soundstudio.Checked = false;
-                threeDprinttech.Checked = false;
-                virtualTours.Checked = false;
-                eyeTrack.Checked = false;
-                done.Text = "تمت إضافة الفكرة بنجاح";
+                if (type == "User")
+                {
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
+               "Swal.fire({title: 'تم إضافة الفكرة بنجاح',icon: 'success', confirmButtonText: 'موافق'}).then(function() { window.location = 'MyIdeasPage.aspx'})", true);
+                }
+                else
+                {
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
+               "Swal.fire({title: 'تم إضافة الفكرة بنجاح',icon: 'success', confirmButtonText: 'موافق'}).then(function() { window.location = 'AcceptIdeas.aspx'})", true);
+
+                }
                 con.Close();
             }
         }     
