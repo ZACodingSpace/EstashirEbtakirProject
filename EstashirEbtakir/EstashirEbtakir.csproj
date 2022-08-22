@@ -88,6 +88,7 @@
     <Content Include="ConsultantDetails.aspx" />
     <Content Include="ConsultantProfile.aspx" />
     <Content Include="ConsultationsSectionHomePage.aspx" />
+    <Content Include="editDeleteEvent.aspx" />
     <Content Include="EditDeleteProject.aspx" />
     <Content Include="EventsHomePage.aspx" />
     <Content Include="GetPassword.aspx" />
@@ -141,6 +142,7 @@
     <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\MainStyles.css" />
     <Content Include="UserProfile.aspx" />
+    <Content Include="UserViewEvent.aspx" />
     <Content Include="Web.config" />
     <Content Include="AdminData.aspx" />
     <Content Include="StatisticsPage.aspx" />
@@ -251,6 +253,13 @@
     </Compile>
     <Compile Include="ConsultationsSectionHomePage.aspx.designer.cs">
       <DependentUpon>ConsultationsSectionHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editDeleteEvent.aspx.cs">
+      <DependentUpon>editDeleteEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editDeleteEvent.aspx.designer.cs">
+      <DependentUpon>editDeleteEvent.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditDeleteProject.aspx.cs">
       <DependentUpon>EditDeleteProject.aspx</DependentUpon>
@@ -402,6 +411,13 @@
     </Compile>
     <Compile Include="StatisticsPage.aspx.designer.cs">
       <DependentUpon>StatisticsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserViewEvent.aspx.cs">
+      <DependentUpon>UserViewEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserViewEvent.aspx.designer.cs">
+      <DependentUpon>UserViewEvent.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm3.aspx.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>

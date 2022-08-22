@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
            <div class="event-view-areaU">
          
         <div class="event-name-containerU p-xl-5 p-lg-4 pt-md-5">
@@ -16,6 +17,4 @@
             <button formaction="IdeasSectionHomePage.aspx" class="return-event-buttonU m-1 ms-xl-4 ms-lg-3" id="returnEventButtonU" runat="server">رجوع</button>
         </div>
         </div>
-
-
 </asp:Content>
