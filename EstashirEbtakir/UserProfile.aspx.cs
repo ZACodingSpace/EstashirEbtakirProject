@@ -22,7 +22,7 @@ namespace EstashirEbtakir {
                 // get the session id ( user id )
 
                 // get admin info from DB
-                SqlCommand cmd = new SqlCommand("select * from OurUser where User_ID='" + Session["id"] + "'", con);
+                SqlCommand cmd = new SqlCommand("select * from EEUser where User_ID='" + Session["id"] + "'", con);
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 if (reader.Read()) {
@@ -58,7 +58,7 @@ namespace EstashirEbtakir {
                     // get the session id ( user id )
 
                     // get admin info from DB
-                    SqlCommand cmd = new SqlCommand("UPDATE OurUser SET Phone=" + phoneNum + " WHERE User_ID='" + Session["id"] + "'", con);
+                    SqlCommand cmd = new SqlCommand("UPDATE EEUser SET Phone=" + phoneNum + " WHERE User_ID='" + Session["id"] + "'", con);
                     cmd.ExecuteNonQuery();
 
                 con.Close();
