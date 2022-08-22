@@ -28,6 +28,14 @@ namespace EstashirEbtakir
             DataListProject.DataSource = dsPro;
             DataListProject.DataBind();
 
+            SqlDataReader reader3 = sqlcommPro.ExecuteReader();
+
+            while (reader3.Read())
+            {
+
+                ListBox3.Items.Add(reader3["Project_Id"].ToString());
+
+            }
 
             sqlconn.Close();
 
