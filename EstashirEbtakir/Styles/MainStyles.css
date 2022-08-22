@@ -286,7 +286,7 @@ footer {
     left: 0;
     bottom: 0;
     opacity: 0;
-    transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
     background-color: #000;
 }
 
@@ -3605,3 +3605,69 @@ div.card-header {
     .EventTable:hover {
         opacity: 0.4;
     }
+
+
+
+.grid {
+    width: 96%;
+    line-height: 60px;
+    margin: 50px 2px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+    .grid th {
+        background-color: #C1AAEF;
+        border: 1px solid black;
+        padding: 10px 50px 10px 0;
+    }
+
+    .grid td {
+        border: 1px solid black;
+        padding: 0 20px;
+    }
+
+    .grid .even {
+        background-color: #d08deecc;
+    }
+
+/***************/
+
+.gridAcceptIdeas {
+    border: none;
+}
+
+
+
+.accepBtns-containerDisplayIdeas {
+    display: flex;
+    justify-content: center;
+
+}
+    .accepBtns-containerDisplayIdeas .accepBtn-containerDisplayIdeas .accepBtn {
+        font-weight: bold;
+        border: none;
+        background: none;
+        color: green;
+        border: none;
+        text-decoration: underline;
+    }
+  
+
+.ButtonSelectDetails1, .ButtonSelectDetails2 {
+    background: none;
+    font-weight: bold;
+    color: blue;
+    border: none;
+    text-decoration: underline;
+}
+
+.ButtonSelectDelete, .accepBtns-containerDisplayIdeas .accepBtn-containerDisplayIdeas .declineBtn 
+{
+    background: none;
+    font-weight: bold;
+    color: red;
+    border: none;
+    text-decoration: underline;
+}

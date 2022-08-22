@@ -51,6 +51,15 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.WebControls.DataList DataListIdea;
 
         /// <summary>
+        /// ListBox1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ListBox1;
+
+        /// <summary>
         /// DataListCons control.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,24 @@ namespace EstashirEbtakir
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DataList DataListCons;
+
+        /// <summary>
+        /// ListBoxConsDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ListBoxConsDetails;
+
+        /// <summary>
+        /// ListBoxConsBooking control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ListBoxConsBooking;
 
         /// <summary>
         /// DataListProject control.
@@ -69,6 +96,15 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.WebControls.DataList DataListProject;
 
         /// <summary>
+        /// ListBox3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ListBox3;
+
+        /// <summary>
         /// DataListEvent control.
         /// </summary>
         /// <remarks>
@@ -76,5 +112,14 @@ namespace EstashirEbtakir
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DataList DataListEvent;
+
+        /// <summary>
+        /// ListBox4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ListBox4;
     }
 }

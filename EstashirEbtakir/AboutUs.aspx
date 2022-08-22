@@ -283,13 +283,13 @@
 
               <div class="stu-description-container row">
                 <hr>
-                <p class="stu-description p-0"> هنا كل بنت تحط أي معلومة تبغى</p>
+                <p class="stu-description p-0"> هندسة برمجيات - تطوير ويب</p>
               </div>
 
               <div class="stu-contact-info-container row p-0">
                 <div class="stu-contact p-0">
-                  <a class="contact-link ms-lg-1" href="mailto: "><i class="fa-solid fa-square-envelope"></i></a>
-                  <a class="contact-link bg-white" href=""><i class="fa-brands fa-linkedin"></i></a>
+                  <a class="contact-link ms-lg-1" href="mailto: sibrahimabdellatifsakr@stu.kau.edu.sa"><i class="fa-solid fa-square-envelope"></i></a>
+                  <a class="contact-link bg-white" href="https://www.linkedin.com/in/%D8%B3%D8%A7%D8%B1%D8%A9-%D9%85%D8%AD%D9%85%D8%AF-8b71431a0"><i class="fa-brands fa-linkedin"></i></a>
                   <a class="contact-link me-lg-1" href=""><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
               </div>

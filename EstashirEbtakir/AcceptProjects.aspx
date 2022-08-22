@@ -35,124 +35,33 @@
                         <h1>قبول المشاريع
        
                         </h1>
-                        <div class="accepForm ">
 
-                            <div class="accepForm row ">
+                        <!----------------------->
+                       <asp:GridView ID="GridViewAcceptIdeas" runat="server" AutoGenerateColumns="False" CssClass="gridAcceptIdeas">
 
+        <Columns>
+     
+                <asp:BoundField DataField="Project_Name" runat="server"/>
 
-                                <div class="col-6">
-                                    <label for="proname">اسم المشروع:</label>
-                                </div>
-                                <div class="col-6">
-                                    <label for="proname">المشروع</label>
-                                </div>
-
-                            </div>
-
-                            <div class="accepForm row ">
-                                <div class="col-6">
-                                    <label for="supe">المشرف:</label>
-                                </div>
-
-                                <div class="col-6">
-                                    <label for="supe">اسم المشرف</label>
-                                </div>
-                            </div>
-
-                            <div class="accepForm row ">
-                                <div class="col-6">
-
-                                    <label for="particit">الأعضاء المشاركين:</label>
-                                </div>
-                                <div class="col-6">
-                                    <label for="particit">اسماء الأعضاء المشاركين</label>
-                                </div>
-                            </div>
-                            <div class="accepForm row ">
-
-                                <div class="col-6">
-                                    <label for="coll">التقنية المستخدمة:</label>
-                                </div>
-
-                                <div class="col-6">
-                                    <label for="coll">التقنية المستخدمة</label>
-                                </div>
-                            </div>
-                            <div class="accepForm row ">
-
-                                <div class="col-6">
+       </Columns>
+       </asp:GridView>
 
 
-                                    <label for="abstrac">نبذة عن المشروع:</label>
-                                </div>
-                                <div class="col-6">
 
-                                    <label for="abstrac">نبذة عن المشروع</label>
-                                </div>
-                            </div>
-                            <div class="accepForm row ">
+                    <!-------------------->
 
-                                <div class="col-6">
+                    <div class="accepBtns-container">
+                        <div class="accepBtn-container m-1 me-xl-4 me-lg-3 p-lg-2">
 
-                                    <label for="major">الكلية:</label>
-                                </div>
-                                <div class="col-6">
-
-                                    <label for="major">الكلية</label>
-                                </div>
-                            </div>
-                            <div class="accepForm row ">
-
-                                <div class="col-6">
-
-                                    <label for="major">التخصص:</label>
-                                </div>
-                                <div class="col-6">
-
-                                    <label for="major">اسم التخصص</label>
-                                </div>
-                            </div>
-                            <div class="accepForm row ">
-
-                                <div class="col-6">
-
-
-                                    <label for="degree">الدرجة:</label>
-                                </div>
-
-                                <div class="col-6">
-
-                                    <label for="degree">الدرجة</label>
-                                </div>
-                            </div>
-                            <div class="accepForm row ">
-
-                                <div class="col-6">
-
-                                    <label for="fil">تحميل المرفقات</label>
-                                </div>
-                                <div class="col-6">
-
-                                    <a href="file.zip" download="تحميل">تحميل</a>
-
-
-                                </div>
-                            </div>
-
-
-                            <div class="accepBtns-container">
-
-                                <div class="accepBtn-container m-1 me-xl-4 me-lg-3 p-lg-2">
-                                    <asp:Button class="accepBtn m-1" ID="Button2" runat="server" Text="رفض المشروع" />
-                                </div>
-
-                                <div class="accepBtn-container m-1 me-xl-4 me-lg-3 p-lg-2">
-                                    <asp:Button class="accepBtn m-1" ID="Button1" runat="server" Text="قبول المشروع" />
-                                </div>
-
-                            </div>
-
+                            <asp:Button class="accepBtn p-0 ps-2 pe-2" ID="Button3" runat="server" Text="قبول المشروع" />
                         </div>
+                        <div class="accepBtn-container m-1 me-xl-4 me-lg-3 p-lg-2">
+
+                            <asp:Button class="accepBtn p-0 ps-2 pe-2" ID="Button4" runat="server" Text="رفض المشروع" />
+                        </div>
+                    </div>
+
+
                     </div>
 
                 </div>
