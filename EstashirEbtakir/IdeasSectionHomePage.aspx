@@ -84,10 +84,10 @@
                         </td>
                     </tr>
 
-
+                    <%-- Last Section of the card --%>
                     <tr class="card-button-area">
                         <td class="card-button-container row mt-4 mb-3">
-                            <button class="ideas-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">عرض الفكرة</button>
+                            <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">عرض الفكرة</button>
                         </td>            
                     </tr>
 
@@ -95,38 +95,16 @@
             </ItemTemplate>
         </asp:DataList>
 
-         <asp:ListBox id="ListBox1" runat="server" style="display:none">
-
-            </asp:ListBox>
-
-
-
+         
+        <asp:ListBox id="ListBox1" runat="server" style="display:none"></asp:ListBox>
 
     </div>
     <!-- Cards End -->
     <!-------------------------------------------------------------------------->
-    <div class="d-flex justify-content-center">
-
-        <ul class="pagination">
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
-
-    </div>
-
 
     <script>
         //Ideas
-        var b1 = document.getElementsByClassName("ideas-details-button");
+        var b1 = document.getElementsByClassName("idea-details-button");
         var b2 = document.getElementById("ContentPlaceHolder1_ListBox1").children;
 
         var lst2 = []
@@ -139,9 +117,5 @@
             b1[z].addEventListener('click', function special() { window.open(`IdeasDetails.aspx?id=${this.id}`) })
         }
     </script>
-
-
-
-
 
 </asp:Content>
