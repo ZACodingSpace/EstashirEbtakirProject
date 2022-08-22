@@ -32,7 +32,21 @@ namespace EstashirEbtakir
 
         protected void Search_Click(object sender, EventArgs e)
         {
+           /*string text= searchText.Value ;
+           string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
+           SqlConnection sqlconn = new SqlConnection(mainconn);
 
+           string sqlqueryIdea = "Select * from [dbo].[EEIdea] WHERE IdeaNme LIKE %@CourseName% order by Idea_ID desc";
+           SqlCommand sqlcommIdea = new SqlCommand(sqlqueryIdea, sqlconn);
+           sqlconn.Open();
+           SqlDataAdapter sdaIdea = new SqlDataAdapter();
+           sdaIdea.SelectCommand = sqlcommIdea;
+           DataSet dsIdea = new DataSet();
+
+           sdaIdea.Fill(dsIdea);
+           DataListIdea.DataSource = dsIdea;
+           DataListIdea.DataBind();
+           */
         }
     }
 }
