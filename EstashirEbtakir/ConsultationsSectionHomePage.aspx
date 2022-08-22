@@ -34,7 +34,7 @@
         <div class="search-bar-and-buttons-container row mt-lg-5">
 
             <div class="book-consultation-button-container col-6">
-                <button class="book-consultation-button ps-lg-3 pe-lg-3 pt-1 pb-1">حجز استشارة</button>
+                <button class="book-consultation-button ps-lg-3 pe-lg-3 pt-1 pb-1" formaction="BookConsultation.aspx">حجز استشارة</button>
             </div>
 
             <div class="consultations-search-bar-container col-6">
@@ -89,14 +89,21 @@
                     <!-- Last Section of the card -->
                     <tr class="card-button-area">
                         <td class="card-button-container row m-0 p-0 mt-4 mb-3">
-                            <button class="consultation-details-button col-4 p-0 ps-2 pe-2" formaction="BrowsProject.aspx">تفاصيل</button>
-                            <button class="consultation-booking-button col-4 p-0 ps-2 pe-2" formaction="BrowsProject.aspx">احجز</button>
-                        </td>
+                            <button class="consultation-details-button col-4 p-0 ps-2 pe-2" >تفاصيل</button>
+                            <button class="consultation-booking-button col-4 p-0 ps-2 pe-2" >احجز</button>
+                            </td>
+
                     </tr>
 
                 </table>
             </ItemTemplate>
         </asp:DataList>
+          <asp:ListBox id="ListBoxConsDetails" runat="server" style="display:none">
+
+            </asp:ListBox>
+          <asp:ListBox id="ListBoxConsBooking" runat="server" style="display:none">
+
+            </asp:ListBox>
 
     </div>
     <!-- Cards End -->
@@ -118,4 +125,40 @@
         </ul>
 
     </div>
+
+<script>
+     var b1 = document.getElementsByClassName("consultation-details-button");
+    var b2 = document.getElementById("ContentPlaceHolder1_ListBoxConsDetails").children;
+
+    var lst2 = []
+    for (var y = 0; y < b2.length; y++) {
+        lst2.push(b2[y].value)
+    }
+
+    for (var z = 0; z < lst2.length; z++) {
+        b1[z].id = lst2[z]
+       
+        b1[z].addEventListener('click', function special() { window.open(`ConsultantDetails.aspx?id=${this.id}`) })
+
+    }
+
+
+    //Consultant-booking
+
+    var b1 = document.getElementsByClassName("consultation-booking-button");
+    var b2 = document.getElementById("ContentPlaceHolder1_ListBoxConsBooking").children;
+
+    var lst2 = []
+    for (var y = 0; y < b2.length; y++) {
+        lst2.push(b2[y].value)
+    }
+
+    for (var z = 0; z < lst2.length; z++) {
+        b1[z].id = lst2[z]
+
+        b1[z].addEventListener('click', function special() { window.open(`BookConsultation.aspx?id=${this.id}`) })
+
+    } 
+</script>
+
 </asp:Content>

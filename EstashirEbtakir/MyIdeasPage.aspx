@@ -49,6 +49,8 @@
                         <td class="idea-name-container row p-1">
                             <h3 class="idea-name p-1"><%#Eval("Idea_Name") %></h3>
                         </td>        
+                        <td>حالة الفكرة</td>
+                        <td> <%#Eval("State") %> </td>
                     </tr>
 
                     <%--Third Section of the card--%>
@@ -61,15 +63,17 @@
 
                     <tr class="card-button-area">
                         <td class="card-button-container row mt-4 mb-3">
-                            <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
-                                formaction="IdeasDetails.aspx">عرض الفكرة</button>
+                            <button class="ideas-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
+                               >عرض الفكرة</button>
                         </td>
                     </tr>
 
                 </table>
             </ItemTemplate>
         </asp:DataList>
+                    <asp:ListBox id="ListBox1" runat="server" style="display:none">
 
+            </asp:ListBox>
 
 
 
@@ -83,4 +87,20 @@
                <!------------------------------------------------------------------------------------->
           </div>
         </div>
+
+
+          <script>
+       var p1 = document.getElementsByClassName("ideas-details-button");
+       var p2 = document.getElementById("ContentPlaceHolder1_ListBox1").children;
+
+       var lstp2 = []
+       for (var y = 0; y < p2.length; y++) {
+           lstp2.push(p2[y].value)
+       }
+
+       for (var z = 0; z < lstp2.length; z++) {
+           p1[z].id = lstp2[z]
+           p1[z].addEventListener('click', function special() { window.open(`IdeasDetails.aspx?id=${this.id}`) })
+       }
+          </script>
 </asp:Content>

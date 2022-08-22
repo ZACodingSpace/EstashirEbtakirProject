@@ -33,57 +33,30 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlInputText job;
 
         /// <summary>
-        /// nameP control.
+        /// DataListProject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl nameP;
+        protected global::System.Web.UI.WebControls.DataList DataListProject;
 
         /// <summary>
-        /// majorP control.
+        /// ListBoxEditDeleteProject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl majorP;
+        protected global::System.Web.UI.WebControls.ListBox ListBoxEditDeleteProject;
 
         /// <summary>
-        /// H1 control.
+        /// ListBox3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl H1;
-
-        /// <summary>
-        /// H3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl H3;
-
-        /// <summary>
-        /// H4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl H4;
-
-        /// <summary>
-        /// H6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl H6;
+        protected global::System.Web.UI.WebControls.ListBox ListBox3;
     }
 }
