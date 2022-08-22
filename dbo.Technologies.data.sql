@@ -1,0 +1,16 @@
+﻿INSERT INTO [dbo].[Technologies] ([tech_name], [type], [ID]) VALUES (N'الجولات الافتراضية والمشاهد البانورامية', N'I         ', 1)
+INSERT INTO [dbo].[Technologies] ([tech_name], [type], [ID]) VALUES (N'الذكاء الاصطناعي وتحليل البيانات', N'I         ', 13)
+INSERT INTO [dbo].[Technologies] ([tech_name], [type], [ID]) VALUES (N'تقنية الواقع المعزز', N'I         ', 1)
+INSERT INTO [dbo].[Technologies] ([tech_name], [type], [ID]) VALUES (N'تقنية الواقع المعزز', N'I         ', 4)
+INSERT INTO [dbo].[Technologies] ([tech_name], [type], [ID]) VALUES (N'تقنية الواقع المعزز', N'I         ', 5)
+INSERT INTO [dbo].[Technologies] ([tech_name], [type], [ID]) VALUES (N'جهاز تعقب حركة العين', N'I         ', 2)
+INSERT INTO [dbo].[Technologies] ([tech_name], [type], [ID]) VALUES (N'منصة العرض ثلاثية الأبعاد', N'I         ', 2)
+INSERT INTO [dbo].[Technologies] ([tech_name], [type], [ID]) VALUES (N'منصة العرض ثلاثية الأبعاد', N'P         ', 5)
+INSERT INTO [dbo].[Technologies] ([tech_name], [type], [ID]) VALUES (N'نظارات الواقع الافتراضي', N'I         ', 1)
+INSERT INTO [dbo].[Technologies] ([tech_name], [type], [ID]) VALUES (N'نظارات الواقع الافتراضي', N'I         ', 2)
+INSERT INTO [dbo].[Technologies] ([tech_name], [type], [ID]) VALUES (N'نظارات الواقع الافتراضي', N'I         ', 7)
+INSERT INTO [dbo].[Technologies] ([tech_name], [type], [ID]) VALUES (N'نظارات الواقع الافتراضي', N'I         ', 13)
+INSERT INTO [dbo].[Technologies] ([tech_name], [type], [ID]) VALUES (N'واجهات التفاعل الطبيعية', N'I         ', 3)
+INSERT INTO [dbo].[Technologies] ([tech_name], [type], [ID]) VALUES (N'واجهات التفاعل الطبيعية', N'P         ', 6)
+
+DELETE FROM Technologies;
