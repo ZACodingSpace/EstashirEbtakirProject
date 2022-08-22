@@ -18,7 +18,7 @@ namespace EstashirEbtakir
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
-            string sqlqueryParticipation = "Select * from [dbo].[EventsAndParticipation] where Type = '2' ";
+            string sqlqueryParticipation = "Select * from [dbo].[EventsAndParticipation] where Type = '1' ";
             SqlCommand sqlcommParticipation = new SqlCommand(sqlqueryParticipation, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaParticipation = new SqlDataAdapter();
@@ -40,6 +40,18 @@ namespace EstashirEbtakir
 
         protected void Search_Click(object sender, EventArgs e)
         {
+            string text = searchText.Value;
+            string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
+            SqlConnection sqlconn = new SqlConnection(mainconn);
+            sqlconn.Open();
+            string sqlqueryPar = "Select * from [dbo].[EventsAndParticipation] WHERE (Name LIKE '%' + @PName +'%' And Type= 1 )";
+            SqlCommand sqlcommPar = new SqlCommand(sqlqueryPar, sqlconn);
+            sqlcommPar.Parameters.AddWithValue("@PName", text);
+            SqlDataAdapter sdaPar2 = new SqlDataAdapter(sqlcommPar);
+            DataSet dsPar2 = new DataSet();
+            sdaPar2.Fill(dsPar2);
+            DataListParticipation.DataSource = dsPar2;
+            DataListParticipation.DataBind();
 
         }
     }
