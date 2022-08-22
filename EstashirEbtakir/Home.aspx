@@ -234,14 +234,10 @@
 
                                 <tr>
                                     <td class="ConsDetailsBookButton">
-
-                                        <button class="consultation-details-button col-4 p-0 ps-2 pe-2">
-                                            تفاصيل</button>
-
-                                        <button class="consultation-booking-button col-4 p-0 ps-2 pe-2"> 
-                                            احجز</button>
-
+                                        <button class="consultation-details-button col-4 p-0 ps-2 pe-2"> تفاصيل</button>
+                                        <button class="consultation-booking-button col-4 p-0 ps-2 pe-2">  احجز</button>
                                     </td>
+
                                </tr>
 
                                 
@@ -250,13 +246,9 @@
                         </ItemTemplate>
                     </asp:DataList>
 
-                    <asp:ListBox id="ListBoxConsDetails" runat="server" style="display:none">
-
-            </asp:ListBox>
-                    <!--
-                     <asp:ListBox id="ListBoxConsBooking" runat="server" style="display:none">
-
-            </asp:ListBox>  -->
+                    <asp:ListBox id="ListBoxConsDetails" runat="server" style="display:none"> </asp:ListBox>
+                    
+                    <asp:ListBox id="ListBoxConsBooking" runat="server" style="display:none"> </asp:ListBox>
 
                 </div>
                 <!--------------->
@@ -363,7 +355,7 @@
 
                                 <tr>
                                     <td class = "eventButton">
-                                          <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="EventsHomePage.aspx">تفاصيل</button>
+                                          <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" >تفاصيل</button>
                                     </td>
                                 </tr>
 
@@ -392,7 +384,7 @@
 
         </div>
     </div>
-
+<!--------------------------------------------------------->
 <script>
     //Ideas
     var b1 = document.getElementsByClassName("ideas-details-button");
@@ -407,6 +399,8 @@
              b1[z].id = lst2[z]
              b1[z].addEventListener('click', function special() { window.open(`IdeasDetails.aspx?id=${this.id}`) })
     }
+
+        //---------------------------
 
     //Consultant-details
     var b1 = document.getElementsByClassName("consultation-details-button");
@@ -423,6 +417,9 @@
         b1[z].addEventListener('click', function special() { window.open(`ConsultantDetails.aspx?id=${this.id}`) })
 
     }
+
+        //---------------------------
+
     //Consultant-booking
     
     var b1 = document.getElementsByClassName("consultation-booking-button");
@@ -440,6 +437,8 @@
 
     } 
 
+        //---------------------------
+
     //Projects
     var p1 = document.getElementsByClassName("project-details-button");
     var p2 = document.getElementById("ContentPlaceHolder1_ListBox3").children;
@@ -453,6 +452,8 @@
         p1[z].id = lstp2[z]
         p1[z].addEventListener('click', function special() { window.open(`ProjectDetails.aspx?id=${this.id}`) })
     }
+
+        //---------------------------
 
     //Events and participation
     var e1 = document.getElementsByClassName("event-details-button");
