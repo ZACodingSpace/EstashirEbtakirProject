@@ -28,100 +28,59 @@
 
             <div class="tabs-content-container row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-lg-5 p-5">
 
-                <!-- Cards -->
+                <!----------------------------------------------------------------------------------->
+                <!-- Idea Cards -->
 
-                <!-- Idea Card -->
-                <div class="idea-card-container col p-xl-3 p-lg-2">
-                    <div class="idea-card">
+                <div class="tabs-content-container row mt-lg-5 p-5">
 
-                        <!-- First Section of the card -->
-                        <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
-                            <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png" alt="Logo">
-                        </div>
+        <asp:DataList ID="DataListIdea" class="page-data-container" runat="server" RepeatColumns="4">
+            <ItemTemplate>
+                <table class="idea-table mt-4">
 
-                        <!-- Second Section of the card -->
-                        <div class="idea-name-container row">
-                            <h4 class="idea-name">عنوان الفكرة</h4>
-                        </div>
+                    <%--First Section of the card--%>
+                    <tr class="idea-logo-area">
+                        <td class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4 ps-lg-2 pe-lg-2">
+                            <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png">
+                        </td>
+                    </tr>
 
-                        <!-- Third Section of the card -->
-                        <div class="idea-description-container">
-                            <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة </p>
-                        </div>
+                    <%--Second Section of the card--%>
+                    <tr class="idea-name-area">
+                        <td class="idea-name-container row p-1">
+                            <h3 class="idea-name p-1"><%#Eval("Idea_Name") %></h3>
+                        </td>        
+                    </tr>
 
-                        <!-- Last Section of the card -->
-                        <div class="card-button-container row mt-4 mb-3">
-                            <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="IdeasEditdelete.aspx">تعديل/حذف</button>
-                            <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="IdeasDetails.aspx">تفاصيل</button>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Idea Card -->
-                <div class="idea-card-container col p-xl-3 p-lg-2">
-                    <div class="idea-card">
-
-                        <!-- First Section of the card -->
-                        <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
-                            <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png" alt="Logo">
-                        </div>
-                        <!-- ps-xl-4 pe-xl-4  ps-lg-3 pe-lg-3 -->
-
-                        <!-- Second Section of the card -->
-                        <div class="idea-name-container row">
-                            <h4 class="idea-name">عنوان الفكرة</h4>
-                        </div>
+                    <%--Third Section of the card--%>
+                    <tr class="idea-descroption-area">
+                        <td class="idea-description-container">
+                            <p class="idea-description m-0 col-8"><%#Eval("Brief") %></p>
+                        </td>
+                    </tr>
 
 
-                        <!-- Third Section of the card -->
-                        <div class="idea-description-container">
-                            <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة </p>
-                        </div>
+                    <tr class="card-button-area">
+                        <td class="card-button-container row mt-4 mb-3">
+                            <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
+                                formaction="IdeasDetails.aspx">عرض الفكرة</button>
+                        </td>
+                    </tr>
 
-                        <!-- Last Section of the card -->
-                        <div class="card-button-container row mt-4 mb-3">
-                            <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="IdeasEditdelete.aspx">تعديل/حذف</button>
-                            <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="IdeasDetails.aspx">تفاصيل</button>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <!-- Idea Card -->
-                <div class="idea-card-container col p-xl-3 p-lg-2">
-                    <div class="idea-card">
-
-                        <!-- First Section of the card -->
-                        <div class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4  ps-lg-2 pe-lg-2">
-                            <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png" alt="Logo">
-                        </div>
-                        <!-- ps-xl-4 pe-xl-4  ps-lg-3 pe-lg-3 -->
-
-                        <!-- Second Section of the card -->
-                        <div class="idea-name-container row">
-                            <h4 class="idea-name">عنوان الفكرة</h4>
-                        </div>
-
-
-                        <!-- Third Section of the card -->
-                        <div class="idea-description-container">
-                            <p class="idea-description m-0 col-8">هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة هنا تتم كتابة نبذة مختصرة عن الفكرة المضافة </p>
-                        </div>
-
-                        <!-- Last Section of the card -->
-                        <div class="card-button-container row mt-4 mb-3">
-                            <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="IdeasEditdelete.aspx">تعديل/حذف</button>
-                            <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="IdeasDetails.aspx">تفاصيل</button>
-                        </div>
-
-                    </div>
-                </div>
+                </table>
+            </ItemTemplate>
+        </asp:DataList>
 
 
 
-            </div>
-        </div>
+
     </div>
+                 
+
+
+               
+
+
+               <!------------------------------------------------------------------------------------->
+          </div>
+        </div>
 </asp:Content>
