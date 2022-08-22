@@ -20,6 +20,7 @@ namespace EstashirEbtakir
 
             string sqlqueryCons = "Select * from [dbo].[EECounselor] " +
                "inner Join [dbo].[EEUser] ON Counselor_ID=User_ID";
+
             SqlCommand sqlcommCons = new SqlCommand(sqlqueryCons, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaCons = new SqlDataAdapter();

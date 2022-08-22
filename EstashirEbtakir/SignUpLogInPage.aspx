@@ -51,6 +51,8 @@
                 <asp:Label id="logInPassword" class="logIn-password" runat="server">كلمة المرور</asp:Label>
                 <input id="passwordInputPlace" class="inputPlace mt-1" runat="server" type="password" name="logInPassword"
                    />
+               <i class='fa fa-question-circle question-circle-signup'></i>
+
                 <asp:Label id="logInPasswordEmsg" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
               </div>
 

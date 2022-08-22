@@ -69,12 +69,12 @@ namespace EstashirEbtakir
                                     string type = (string)Session["Type"];
                                     if (type == "User")
                                     {
-                                        SqlCommand cmd = new SqlCommand("UPDATE OurUser SET Password='" + pass + "' WHERE User_ID='" + Session["id"] + "'", con);
+                                        SqlCommand cmd = new SqlCommand("UPDATE EEUser SET Password='" + pass + "' WHERE User_ID='" + Session["id"] + "'", con);
                                         cmd.ExecuteNonQuery();
                                     }
                                     else
                                     {
-                                        SqlCommand cmd = new SqlCommand("UPDATE OurAdmin SET Password='" + pass + "' WHERE Admin_ID='" + Session["id"] + "'", con);
+                                        SqlCommand cmd = new SqlCommand("UPDATE EEAdmin SET Password='" + pass + "' WHERE Admin_ID='" + Session["id"] + "'", con);
                                         cmd.ExecuteNonQuery();
                                     }
                                     
