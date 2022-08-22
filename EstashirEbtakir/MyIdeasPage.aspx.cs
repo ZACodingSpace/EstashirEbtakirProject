@@ -17,7 +17,7 @@ namespace EstashirEbtakir
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
             //order by Idea_ID desc
-            string sqlqueryIdea = "Select * from [dbo].[EEIdea] inner join [dbo].[EEUser] On EEIdea.User_ID=EEUSer.User_ID where Idea.User_ID=" + Session["id"];
+            string sqlqueryIdea = "Select * from [dbo].[EEIdea] inner join [dbo].[EEUser] On EEIdea.User_ID=EEUser.User_ID where EEIdea.User_ID='" + Session["id"] +"'";
             SqlCommand sqlcommIdea = new SqlCommand(sqlqueryIdea, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaIdea = new SqlDataAdapter();
