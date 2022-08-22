@@ -96,27 +96,17 @@
                             <a class="nav-link ps-lg-3 pe-lg-3 pt-xl-3 pb-xl-3 pt-lg-2 pb-lg-2 ms-lg-5 me-lg-3" href="AboutUs.aspx">من نحن</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link dropdown-menu-button ps-lg-3 pe-lg-3 pt-xl-3 pb-xl-3 pt-lg-2 pb-lg-2 ms-lg-3" href="#">الأقسام
-                <i class="fa-solid fa-caret-down pe-lg-3"></i>
-                            </a>
-                            <ul class="dropdown-item-container" style="display: none;">
-                                <li class="dropdown-items p-lg-2">
-                                    <a class="dropdown-link" href="ProjectsSectionHomePage.aspx">قسم المشاريع</a>
-                                </li>
-                                <li class="dropdown-items p-lg-2">
-                                    <a class="dropdown-link" href="#">قسم المشاركات والإنجازات</a>
-                                </li>
-                                <li class="dropdown-items p-lg-2">
-                                    <a class="dropdown-link" href="IdeasSectionHomePage.aspx">قسم الأفكار</a>
-                                </li>
-                                <li class="dropdown-items p-lg-2">
-                                    <a class="dropdown-link" href="ConsultingSectionHomePage.aspx">قسم الاستشارات</a>
-                                </li>
-                            </ul>
-
-                        </li>
-
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle dropdown-menu-button ps-lg-3 pe-lg-3 pt-xl-3 pb-xl-3 pt-lg-2 pb-lg-2 ms-lg-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">الأقسام
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="IdeasSectionHomePage.aspx">الأفكار المقترحة</a></li>
+                                    <li><a class="dropdown-item" href="ConsultationsSectionHomePage.aspx">الاستشارات</a></li>
+                                    <li><a class="dropdown-item" href="ProjectsSectionHomePage.aspx">المشاريع</a></li>
+                                    <li><a class="dropdown-item" href="EventsHomePage.aspx">الفعاليات والمشاركات</a></li>
+                                    <li><a class="dropdown-item" href="StatisticsPage.aspx">الإحصائيات</a></li>
+                                </ul>
+                            </li>
                     </ul>
                 </div>
             </div>

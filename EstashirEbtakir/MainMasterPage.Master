@@ -49,11 +49,11 @@
                             <div class="notification-icon-container col-1"><i class="fa-solid fa-bell"></i></div>
 
                             <div class="profile-user-name-container p-0 ps-1 col-6">
-                                <asp:LinkButton id="profileUserLinkButton" runat="server" class="profile-user-name m-0 p-0">رغد العتيبي</asp:LinkButton>
+                                <asp:LinkButton ID="profileUserLinkButton" runat="server" class="profile-user-name m-0 p-0">رغد العتيبي</asp:LinkButton>
                             </div>
 
                             <div class="user-profile-img-container p-0 col-2">
-                                 <img class="user-profile-img" src="Images/Profile_Icon.png" alt="profile img">
+                                <img class="user-profile-img" src="Images/Profile_Icon.png" alt="profile img">
                             </div>
 
                             <div class="user-dropdown-container col-2">
@@ -64,16 +64,21 @@
                                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
 
                                         <li class="dropdown-item-container">
-                                            <asp:Button ID="Button2"  class="dropdown-item" runat="server" onclick="profile_Click" Text="معلومات الحساب" />
+                                            <asp:Button ID="Button2" class="dropdown-item" runat="server" OnClick="profile_Click" Text="معلومات الحساب" />
                                             <!-- <a href="UserProfile.aspx" class="dropdown-item">معلومات الحساب</a> -->
                                         </li>
 
-                                        <li class="dropdown-item-container"> <asp:Button ID="Button3"  class="dropdown-item" runat="server" onclick="MyIdea_Click" Text="أفكاري" /> </li>
-                                        <li class="dropdown-item-container"> <asp:Button ID="Button4"  class="dropdown-item" runat="server" onclick="MyProject_Click" Text="مشاريعي" /></li>
-                                        <li class="dropdown-item-container"> <asp:Button ID="Button5"  class="dropdown-item" runat="server" onclick="Myappointment_Click" Text="مواعيدي" /> </li>
+                                        <li class="dropdown-item-container">
+                                            <asp:Button ID="Button3" class="dropdown-item" runat="server" OnClick="MyIdea_Click" Text="أفكاري" />
+                                        </li>
+                                        <li class="dropdown-item-container">
+                                            <asp:Button ID="Button4" class="dropdown-item" runat="server" OnClick="MyProject_Click" Text="مشاريعي" /></li>
+                                        <li class="dropdown-item-container">
+                                            <asp:Button ID="Button5" class="dropdown-item" runat="server" OnClick="Myappointment_Click" Text="مواعيدي" />
+                                        </li>
 
                                         <li class="dropdown-item-container">
-                                            <asp:Button ID="Button1" class="dropdown-item" runat="server" onclick="logout_Click" Text="تسجيل خروج" /> 
+                                            <asp:Button ID="Button1" class="dropdown-item" runat="server" OnClick="logout_Click" Text="تسجيل خروج" />
                                         </li>
 
                                     </ul>
@@ -96,28 +101,16 @@
                                 <a class="nav-link ps-lg-3 pe-lg-3 pt-xl-3 pb-xl-3 pt-lg-2 pb-lg-2 ms-lg-5 me-lg-3" href="AboutUs.aspx">من نحن</a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link dropdown-menu-button ps-lg-3 pe-lg-3 pt-xl-3 pb-xl-3 pt-lg-2 pb-lg-2 ms-lg-3" href="#">الأقسام
-                <i class="fa-solid fa-caret-down pe-lg-3"></i>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle dropdown-menu-button ps-lg-3 pe-lg-3 pt-xl-3 pb-xl-3 pt-lg-2 pb-lg-2 ms-lg-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">الأقسام
                                 </a>
-                                <ul class="dropdown-item-container" style="display: none;">
-
-                                    <li class="dropdown-items p-lg-2">
-                                        <a class="dropdown-link" href="ProjectsSectionHomePage.aspx">المشاريع</a>
-                                    </li>
-
-                                    <li class="dropdown-items p-lg-2">
-                                        <a class="dropdown-link" href="IdeasSectionHomePage.aspx">الأفكار المقترحة</a>
-                                    </li>
-
-                                    <li class="dropdown-items p-lg-2">
-                                        <a class="dropdown-link" href="ConsultationsSectionHomePage.aspx">الاستشارات</a>
-                                    </li>
-
-                                    <li class="dropdown-items p-lg-2">
-                                        <a class="dropdown-link" href="EventsHomePage.aspx">الفعاليات والإنجازات</a>
-                                    </li>
-
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="IdeasSectionHomePage.aspx">الأفكار المقترحة</a></li>
+                                    <li><a class="dropdown-item" href="ConsultationsSectionHomePage.aspx">الاستشارات</a></li>
+                                    <li><a class="dropdown-item" href="ProjectsSectionHomePage.aspx">المشاريع</a></li>
+                                    <li><a class="dropdown-item" href="EventsHomePage.aspx">الفعاليات والمشاركات</a></li>
+                                    <li><a class="dropdown-item" href="StatisticsPage.aspx">الإحصائيات</a></li>
                                 </ul>
                             </li>
 
