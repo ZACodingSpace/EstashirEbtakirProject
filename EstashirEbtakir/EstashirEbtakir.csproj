@@ -88,6 +88,7 @@
     <Content Include="ConsultantDetails.aspx" />
     <Content Include="ConsultantProfile.aspx" />
     <Content Include="ConsultationsSectionHomePage.aspx" />
+    <Content Include="DisplayIdeas.aspx" />
     <Content Include="EditDeleteProject.aspx" />
     <Content Include="EventsHomePage.aspx" />
     <Content Include="GetPassword.aspx" />
@@ -115,8 +116,7 @@
     <Content Include="Images\FilterList.png" />
     <Content Include="Images\Ideas_Img.jpg" />
     <Content Include="Images\Innovation_Lab_Logo.png" />
-    <Content Include="Images\Logo.jpg" />
-    <Content Include="Images\Logo2.png" />
+    <Content Include="Images\logo.jpg" />
     <Content Include="Images\Profile_Icon.png" />
     <Content Include="Images\Projects.jpg" />
     <Content Include="Images\Project_Logo_1.jpg" />
@@ -145,6 +145,7 @@
     <Content Include="Web.config" />
     <Content Include="AdminData.aspx" />
     <Content Include="StatisticsPage.aspx" />
+    <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutUs.aspx.cs">
@@ -251,6 +252,13 @@
     </Compile>
     <Compile Include="ConsultationsSectionHomePage.aspx.designer.cs">
       <DependentUpon>ConsultationsSectionHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayIdeas.aspx.cs">
+      <DependentUpon>DisplayIdeas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisplayIdeas.aspx.designer.cs">
+      <DependentUpon>DisplayIdeas.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditDeleteProject.aspx.cs">
       <DependentUpon>EditDeleteProject.aspx</DependentUpon>
@@ -402,6 +410,13 @@
     </Compile>
     <Compile Include="StatisticsPage.aspx.designer.cs">
       <DependentUpon>StatisticsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

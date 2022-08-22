@@ -38,59 +38,20 @@
        
                     </h1>
 
-                    <div class="accepForm ">
-                        <div class="accepForm row ">
+                    <!------------>
 
-                            <div class="col-6">
-                                <label for="proname">عنوان الفكرة: </label>
-                            </div>
-                            <div class="col-6">
-                                <label for="proname">الفكرة</label>
-                            </div>
-                        </div>
+                     <asp:GridView ID="GridViewAcceptIdeas" runat="server" AutoGenerateColumns="False" CssClass="gridAcceptIdeas">
 
-                        <div class="accepForm row ">
+        <Columns>
+     
+                <asp:BoundField DataField="Idea_Name" runat="server" HeaderText="nn"/>
 
-                            <div class="col-6">
-                                <label for="particit">الأعضاء المشاركين:</label>
-                            </div>
-                            <div class="col-6">
-                                <label for="particit">اسماء الأعضاء المشاركين</label>
-                            </div>
-                        </div>
-                        <div class="accepForm row">
-
-                            <div class="col-6">
-
-                                <label for="degree">الدرجة:</label>
-                            </div>
-                            <div class="col-6">
-                                <label for="degree">الدرجة</label>
-                            </div>
-                        </div>
-                        <div class="accepForm row ">
-
-                            <div class="col-6">
-                                <label for="coll">التقنية المستخدمة:</label>
-                            </div>
-
-                            <div class="col-6">
-                                <label for="coll">التقنية المستخدمة</label>
-                            </div>
-                        </div>
-
-                        <div class="accepForm row ">
-
-                            <div class="col-6">
-                                <label for="abstrac">نبذة عن الفكرة:</label>
-                            </div>
-                            <div class="col-6">
-                                <label for="abstrac">نبذة عن الفكرة</label>
+       </Columns>
+       </asp:GridView>
 
 
-                            </div>
-                        </div>
-                    </div>
+
+                    <!-------------------->
 
                     <div class="accepBtns-container">
                         <div class="accepBtn-container m-1 me-xl-4 me-lg-3 p-lg-2">

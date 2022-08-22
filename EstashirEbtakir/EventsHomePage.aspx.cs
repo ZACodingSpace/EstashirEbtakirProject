@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
@@ -18,7 +19,7 @@ namespace EstashirEbtakir
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
-            string sqlqueryEvent = "Select * from [dbo].[EventsAndParticipation2] ";
+            string sqlqueryEvent = "Select * from [dbo].[EventsAndParticipation] where Type='1'";
             SqlCommand sqlcommEvent = new SqlCommand(sqlqueryEvent, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaEvent = new SqlDataAdapter();
