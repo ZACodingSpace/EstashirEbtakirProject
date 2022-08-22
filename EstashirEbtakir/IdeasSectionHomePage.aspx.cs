@@ -17,7 +17,7 @@ namespace EstashirEbtakir
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
-            string sqlqueryIdea = "Select * from [dbo].[EEIdea] order by Idea_ID desc";
+            string sqlqueryIdea = "Select * from [dbo].[EEIdea] where Idea_State='1' order by Idea_ID desc";
             SqlCommand sqlcommIdea = new SqlCommand(sqlqueryIdea, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaIdea = new SqlDataAdapter();
@@ -27,6 +27,15 @@ namespace EstashirEbtakir
             sdaIdea.Fill(dsIdea);
             DataListIdea.DataSource = dsIdea;
             DataListIdea.DataBind();
+            SqlDataReader reader = sqlcommIdea.ExecuteReader();
+
+            while (reader.Read())
+            {
+
+                ListBox1.Items.Add(reader["Idea_Id"].ToString());
+
+            }
+            sqlconn.Close();
 
         }
 
