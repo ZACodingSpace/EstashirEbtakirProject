@@ -25,7 +25,6 @@ namespace EstashirEbtakir
             SqlDataAdapter sdaEvent = new SqlDataAdapter();
             sdaEvent.SelectCommand = sqlcommEvent;
             DataSet dsEvent = new DataSet();
-
             sdaEvent.Fill(dsEvent);
             DataListEvent.DataSource = dsEvent;
             DataListEvent.DataBind();
