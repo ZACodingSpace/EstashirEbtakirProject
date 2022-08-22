@@ -15,66 +15,174 @@ namespace EstashirEbtakir
     {
 
         /// <summary>
-        /// nameP control.
+        /// projectDescriptionTextareaED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl nameP;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea projectDescriptionTextareaED;
 
         /// <summary>
-        /// aboutP control.
+        /// projectDescriptionMsgED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea aboutP;
+        protected global::System.Web.UI.WebControls.Label projectDescriptionMsgED;
 
         /// <summary>
-        /// img control.
+        /// PimgED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputFile img;
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile PimgED;
 
         /// <summary>
-        /// collegeP control.
+        /// projectImgMsgED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText collegeP;
+        protected global::System.Web.UI.WebControls.Label projectImgMsgED;
 
         /// <summary>
-        /// majorP control.
+        /// collegePED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText majorP;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText collegePED;
 
         /// <summary>
-        /// supervisorP control.
+        /// projectCollegeMsgED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText supervisorP;
+        protected global::System.Web.UI.WebControls.Label projectCollegeMsgED;
 
         /// <summary>
-        /// gradeP control.
+        /// majorPED control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText gradeP;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText majorPED;
+
+        /// <summary>
+        /// projectMajorMsgED control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label projectMajorMsgED;
+
+        /// <summary>
+        /// supervisorPED control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText supervisorPED;
+
+        /// <summary>
+        /// projectSupervisorMsgED control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label projectSupervisorMsgED;
+
+        /// <summary>
+        /// TextareaED control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextareaED;
+
+        /// <summary>
+        /// projectMembersMsgED control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label projectMembersMsgED;
+
+        /// <summary>
+        /// gradePED control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText gradePED;
+
+        /// <summary>
+        /// projectGradeMsgED control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label projectGradeMsgED;
+
+        /// <summary>
+        /// fileP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile fileP;
+
+        /// <summary>
+        /// projectFileMsgED control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label projectFileMsgED;
+
+        /// <summary>
+        /// deleteButtonED control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton deleteButtonED;
+
+        /// <summary>
+        /// editButtionED control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton editButtionED;
+
+        /// <summary>
+        /// returnButtonED control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton returnButtonED;
     }
 }

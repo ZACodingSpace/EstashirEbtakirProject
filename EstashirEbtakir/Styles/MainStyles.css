@@ -3074,7 +3074,114 @@ div.card-header {
 
 
 /*******************************************************************************/
-/*ريناد*/
+/* user view section page Styles Start */
+.event-view-areaU {
+    margin: 5% 10%;
+    padding: 2vh;
+    width: 80%;
+    box-shadow: 5px 5px 10px #BEC3CC;
+}
+
+.event-description-containerU .event-description-labelU {
+    font-size: max(1vw, 3.5vh);
+}
+
+.event-name-containerU .event-nameU {
+    font-size: max(2vw, 4.5vh);
+    color: var(--Melon);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.event-description-containerU .event-description-textareaU {
+    width: 50vw;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+    background-color: var(--Ghost-White);
+}
+
+.eventButtonsU {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+    .eventButtonsU .return-event-buttonU,
+    .eventButtonsU .delete-event-buttonU,
+    .eventButtonsU .edit-event-buttonU {
+        height: 4vh;
+        width: 10vh;
+        text-decoration: none;
+        text-align: center;
+        font-size: max(1vw, 2vh);
+        color: #000;
+        font-weight: bold;
+        border: none;
+        box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BEC3CC;
+        border-radius: 5px;
+        background-color: var(--Melon)
+    }
+
+
+
+/* Edit/Delet idea section page Styles Start */
+.edit-delete-idea-areaED {
+    margin: 5% 10%;
+    padding: 2vh;
+    width: 80%;
+    box-shadow: 5px 5px 10px #BEC3CC;
+}
+
+.idea-description-containerED .idea-description-labelED {
+    font-size: max(1vw, 3.5vh);
+}
+
+.idea-name-containerED .idea-nameED {
+    font-size: max(2vw, 4.5vh);
+    color: var(--Purple-Mountain-Majesty);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.idea-description-containerED .idea-description-textareaED {
+    width: 50vw;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+    background-color: var(--Ghost-White);
+}
+
+.ideaButtonsED {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+    .ideaButtonsED .delete-idea-buttonED,
+    .ideaButtonsED .edit-idea-buttonED,
+    .ideaButtonsED .return-idea-buttonED {
+        height: 4vh;
+        width: 10vh;
+        text-decoration: none;
+        text-align: center;
+        font-size: max(1vw, 2vh);
+        color: #000;
+        font-weight: bold;
+        border: none;
+        box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BEC3CC;
+        border-radius: 5px;
+        background-color: var(--Purple-Mountain-Majesty);
+    }
+
+
+
 /* Edit/Delet Project section page Styles Start */
 .edit-delete-project-area {
     margin: 5% 10%;
@@ -3083,40 +3190,72 @@ div.card-header {
     box-shadow: 5px 5px 10px #BEC3CC;
 }
 
-.edit-delete-project-info {
-    margin: 2vh;
-    padding: 2vh;
-    width: 100%;
-}
 
-.edit-delete-project-area h1 {
+
+  
+    .project-description-containerED .project-description-labelED,
+    .project-members-containerED .project-members-labelED,
+     .project-college-containerED .project-collegeED,
+   .project-pic-containerED .project-picED,
+   .project-major-containerED .project-majorED,
+     .project-supervisor-containerED .project-supervisorED,
+    .project-grade-containerED .project-gradeED,
+     .project-file-containerED .project-fileED {
+        font-size: max(1vw, 3.5vh);
+    }
+
+.project-name-containerED .project-nameED {
+    font-size: max(2vw, 4.5vh);
+    color: var(--French-Pink);
     text-align: center;
-    color: #8378A8;
     font-weight: bold;
 }
 
-.edit-delete-project-info h4 {
-    padding: 1vh;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.edit-delete-project-info input {
-    width: 17vw;
+.project-major-containerED .projectMajorED,
+.project-college-containerED .projectCollegeED,
+.project-supervisor-containerED .projectSupervisorED,
+.project-grade-containerED .projectGradeED,
+.project-file-containerED .projectFileED,
+.project-pic-containerED .PorjectimgED {
+    width: 50vh;
     height: 5vh;
-    border: none;
-    box-shadow: inset 4px 4px 8px #BEC3CC;
     border-radius: 5px;
+    border: none;
+    box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+    background-color: var(--Ghost-White);
 }
 
-.about-project {
-    width: 30vw;
-    height: 20vh;
-    border: none;
-    box-shadow: inset 4px 4px 8px #BEC3CC;
+
+.project-description-containerED .project-description-textareaED,
+.project-members-containerED .project-members-textareaED {
+    width: 50vw;
     border-radius: 5px;
+    border: none;
+    box-shadow: inset -2px -2px 4px #FFFFFF, inset 2px 2px 4px #BEC3CC;
+    background-color: var(--Ghost-White);
+}
+.projectButtonsED {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
+    .projectButtonsED .delete-project-buttonED,
+    .projectButtonsED .edit-project-buttonED,
+    .projectButtonsED .return-project-buttonED {
+        height: 4vh;
+        width: 10vh;
+        text-decoration: none;
+        text-align: center;
+        font-size: max(1vw, 2vh);
+        color: #000;
+        font-weight: bold;
+        border: none;
+        box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BEC3CC;
+        border-radius: 5px;
+        background-color: var(--French-Pink);
+    }
 
 /* Edit/Delete Project section page Styles End */
 /*******************************************************************************/
