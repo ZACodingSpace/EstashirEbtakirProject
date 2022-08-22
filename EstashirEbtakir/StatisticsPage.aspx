@@ -45,8 +45,8 @@
                     <h2 class="section-heading">احصائيات المشاريع</h2>
                 </div>
                 <div class="project-stat">
-                    <select class="SecondQuestion-list" id="range" runat="server" >
-                        <option vaule="year">خلال السنة الماضية</option>
+                    <select class="SecondQuestion-list" id="range1" runat="server" >
+                        <option vaule="year">خلال السنة </option>
                         <option vaule="month">اخر ستة اشهر</option>
                         <option vaule="all">جميعها</option>
                     </select>
@@ -70,18 +70,37 @@
                             </asp:ChartArea>
                         </ChartAreas>
                     </asp:Chart>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT COUNT(User_Id), Job_Position FROM OurUser GROUP BY Job_Position"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT COUNT(User_Id), Job_Position FROM EEUser GROUP BY Job_Position"></asp:SqlDataSource>
                 </div>
                 
 
                 <!-- هذي تحت في الافكار -->
+                
+
+            </div>
+
+            <!------------------------------------------ Ideas Section ------------------------------------>
+            <div class="tab-pane fade" id="ideas" role="tabpanel" aria-labelledby="ideas-tab">
+                <div class="statistics-header">
+                    <h2 class="section-heading">احصائيات الأفكار</h2>
+                </div>
+                <div class="project-stat">
+
+                    <select class="SecondQuestion-list" id="range2" runat="server">
+                        <option vaule="option1">خلال السنة </option>
+                        <option vaule="option1">خلال الستة اشهر الماضية</option>
+                        <option vaule="option1">جميعها</option>
+                    </select>
+
+                </div>
+                
                 <div class="charts-container">
 
                     <asp:Chart runat="server" ID="Chart2" DataSourceID="SqlDataSource2" BackColor="Transparent" BorderlineColor="Transparent" Height="380px" Width="540px">
                             <Titles>
         <asp:Title Font="Times New Roman, 12pt, style=Bold, Italic" Name="Title1" 
             Text="Hello World">
-        </asp:Title>
+        </asp:Title> </Titles>
                         <series>
                             <asp:Series Name="Series1" XValueMember="tech_name" YValueMembers="idea_num" ChartType="Bar" ></asp:Series>
                         </series>
@@ -113,16 +132,7 @@
                         </ChartAreas>
                     </asp:Chart>
 
-                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT 
-                        COUNT(Idea_ID), taken_stat
-                        FROM 
-                            (SELECT Idea_ID, Is_Taken, 
-                            CASE 
-                            WHEN Is_Taken = 0 THEN N'غير مأخوذة'
-                            WHEN Is_Taken = 1 THEN N'مأخوذة'
-                            END AS taken_stat 
-                            FROM OurIdea) as ideaT
-                        GROUP BY taken_stat;"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
 
                     <asp:Chart ID="Chart4" runat="server" DataSourceID="SqlDataSource4" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
                         <Series>
@@ -141,33 +151,10 @@
                         </ChartAreas>
                     </asp:Chart>
 
-                    <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="
-                        SELECT TOP(6)
-                      MONTH(Date) AS m, YEAR(Date) AS y,
-                      COUNT(Idea_ID) AS ideas
-                    FROM OurIdea
-                    GROUP BY MONTH(Date), YEAR(Date)
-                    ORDER BY y DESC, m DESC;"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
 
                 </div>
 
-            </div>
-
-            <!------------------------------------------ Ideas Section ------------------------------------>
-            <div class="tab-pane fade" id="ideas" role="tabpanel" aria-labelledby="ideas-tab">
-                <div class="statistics-header">
-                    <h2 class="section-heading">احصائيات الأفكار</h2>
-                </div>
-                <div class="project-stat">
-
-                    <select class="SecondQuestion-list">
-                        <option vaule="option1">خلال السنة الماضية</option>
-                        <option vaule="option1">خلال الستة اشهر الماضية</option>
-                        <option vaule="option1">خلال الشهر الماضي</option>
-                    </select>
-
-                </div>
-                
             </div>
 
 
@@ -179,10 +166,10 @@
                 </div>
                 <div class="project-stat">
 
-                    <select class="SecondQuestion-list">
-                        <option vaule="option1">خلال السنة الماضية</option>
+                    <select class="SecondQuestion-list"  id="range3" runat="server">
+                        <option vaule="option1">خلال السنة </option>
                         <option vaule="option1">خلال الستة اشهر الماضية</option>
-                        <option vaule="option1">خلال الشهر الماضي</option>
+                        <option vaule="option1">جميعها</option>
                     </select>
                 </div>
                 <div class="charts-container"></div>
@@ -194,11 +181,11 @@
                 <div class="statistics-header">
                     <h2 class="section-heading">احصائيات الفعاليات والمشاركات</h2>
                 </div>
-                <div class="project-stat">
+                <div class="project-stat" id="range4" runat="server">
                     <select class="SecondQuestion-list">
                         <option vaule="option1">خلال السنة الماضية</option>
                         <option vaule="option1">خلال الستة اشهر الماضية</option>
-                        <option vaule="option1">خلال الشهر الماضي</option>
+                        <option vaule="option1">جميعها</option>
                     </select>
                 </div>
                 <div class="charts-container"></div>
