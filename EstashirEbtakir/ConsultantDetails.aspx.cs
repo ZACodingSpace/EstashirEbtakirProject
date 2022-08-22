@@ -20,7 +20,7 @@ namespace EstashirEbtakir
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
             string sqlqueryCons = "Select Top 4 * from [dbo].[EECounselor]" +
-                " inner join [dbo].[EEUser] On Counselor_ID=User_ID where Counselor_ID="+Id;
+                " inner join [dbo].[EEUser] On Counselor_ID=User_ID where Counselor_ID="+Id; 
             SqlCommand sqlcommCons = new SqlCommand(sqlqueryCons, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaCons = new SqlDataAdapter();
