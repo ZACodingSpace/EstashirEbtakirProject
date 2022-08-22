@@ -6,6 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="statidticsPage-container">
+        <asp:Label ID="test" runat="server" Text="Label"></asp:Label>
     <div class="sections-tabs row p-lg-5">
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -76,46 +77,23 @@
 
                 <!-- هذي تحت في الافكار -->
                 
-
-            </div>
-
-            <!------------------------------------------ Ideas Section ------------------------------------>
-            <div class="tab-pane fade" id="ideas" role="tabpanel" aria-labelledby="ideas-tab">
-                <div class="statistics-header">
-                    <h2 class="section-heading">احصائيات الأفكار</h2>
-                </div>
-                <div class="project-stat">
-
-                    <select class="SecondQuestion-list" id="range2" runat="server">
-                        <option vaule="option1">خلال السنة </option>
-                        <option vaule="option1">خلال الستة اشهر الماضية</option>
-                        <option vaule="option1">جميعها</option>
-                    </select>
-
-                </div>
-                
-                <div class="charts-container">
-
                     <asp:Chart runat="server" ID="Chart2" DataSourceID="SqlDataSource2" BackColor="Transparent" BorderlineColor="Transparent" Height="380px" Width="540px">
-                            <Titles>
-        <asp:Title Font="Times New Roman, 12pt, style=Bold, Italic" Name="Title1" 
-            Text="Hello World">
-        </asp:Title> </Titles>
-                        <series>
-                            <asp:Series Name="Series1" XValueMember="tech_name" YValueMembers="idea_num" ChartType="Bar" ></asp:Series>
-                        </series>
-                        <chartareas>
+
+                        <Series>
+                            <asp:Series Name="Series1" XValueMember="tech_name" YValueMembers="num" ChartType="Bar"></asp:Series>
+                        </Series>
+                        <ChartAreas>
                             <asp:ChartArea Name="ChartArea1" BackColor="Transparent"></asp:ChartArea>
-                        </chartareas>
+                        </ChartAreas>
                     </asp:Chart>
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
-                
+
                     <!-- Number if taken and not taken ideas -->
                     <asp:Chart ID="Chart3" runat="server" DataSourceID="SqlDataSource3" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
-                       <Legends>
-        <asp:Legend Alignment="Center" Docking="Bottom" IsTextAutoFit="False" Name="Default" LegendStyle="Column" >
-        </asp:Legend>
-    </Legends>
+                        <Legends>
+                            <asp:Legend Alignment="Center" Docking="Bottom" IsTextAutoFit="False" Name="Default" LegendStyle="Column" BackColor="Transparent" Font="Calibri, 10">
+                            </asp:Legend>
+                        </Legends>
                         <Series>
                             <asp:Series Name="Series1" XValueMember="taken_stat" YValueMembers="Column1" YValuesPerPoint="2" ChartType="Doughnut"></asp:Series>
                         </Series>
@@ -136,7 +114,7 @@
 
                     <asp:Chart ID="Chart4" runat="server" DataSourceID="SqlDataSource4" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
                         <Series>
-                            <asp:Series Name="Series1"></asp:Series>
+                            <asp:Series Name="Series1" ChartType="Line"></asp:Series>
                         </Series>
                         <ChartAreas>
                             <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
@@ -152,6 +130,135 @@
                     </asp:Chart>
 
                     <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
+
+                                <!-- هذي فةق في المشاريع -->
+                
+                    <asp:Chart runat="server" ID="Chart5" DataSourceID="SqlDataSource2" BackColor="Transparent" BorderlineColor="Transparent" Height="380px" Width="540px">
+
+                        <Series>
+                            <asp:Series Name="Series1" XValueMember="tech_name" YValueMembers="num" ChartType="Bar"></asp:Series>
+                        </Series>
+                        <ChartAreas>
+                            <asp:ChartArea Name="ChartArea1" BackColor="Transparent"></asp:ChartArea>
+                        </ChartAreas>
+                    </asp:Chart>
+                    <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
+
+                    <!-- Number if taken and not taken ideas -->
+                    <asp:Chart ID="Chart6" runat="server" DataSourceID="SqlDataSource3" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
+                        <Legends>
+                            <asp:Legend Alignment="Center" Docking="Bottom" IsTextAutoFit="False" Name="Default" LegendStyle="Column" BackColor="Transparent" Font="Calibri, 10">
+                            </asp:Legend>
+                        </Legends>
+                        <Series>
+                            <asp:Series Name="Series1" XValueMember="taken_stat" YValueMembers="Column1" YValuesPerPoint="2" ChartType="Doughnut"></asp:Series>
+                        </Series>
+                        <ChartAreas>
+                            <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
+                                <AxisX>
+                                    <MajorGrid Enabled="false" />
+                                </AxisX>
+
+                                <AxisY InterlacedColor="#ffccff">
+                                    <MajorGrid Enabled="false" />
+                                </AxisY>
+                            </asp:ChartArea>
+                        </ChartAreas>
+                    </asp:Chart>
+
+                    <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
+
+                    <asp:Chart ID="Chart7" runat="server" DataSourceID="SqlDataSource4" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
+                        <Series>
+                            <asp:Series Name="Series1" ChartType="Line"></asp:Series>
+                        </Series>
+                        <ChartAreas>
+                            <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
+                                <AxisX>
+                                    <MajorGrid Enabled="false" />
+                                </AxisX>
+
+                                <AxisY InterlacedColor="#ffccff">
+                                    <MajorGrid Enabled="false" />
+                                </AxisY>
+                            </asp:ChartArea>
+                        </ChartAreas>
+                    </asp:Chart>
+
+                    <asp:SqlDataSource ID="SqlDataSource7" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
+
+            </div>
+
+            <!------------------------------------------ Ideas Section ------------------------------------>
+            <div class="tab-pane fade" id="ideas" role="tabpanel" aria-labelledby="ideas-tab">
+                <div class="statistics-header">
+                    <h2 class="section-heading">احصائيات الأفكار</h2>
+                </div>
+                <div class="project-stat">
+
+                    <select class="SecondQuestion-list" id="range2" runat="server">
+                        <option vaule="option1">خلال السنة </option>
+                        <option vaule="option1">خلال الستة اشهر الماضية</option>
+                        <option vaule="option1">جميعها</option>
+                    </select>
+
+                </div>
+                
+                <div class="charts-container">
+
+<%--                    <asp:Chart runat="server" ID="Chart2" DataSourceID="SqlDataSource2" BackColor="Transparent" BorderlineColor="Transparent" Height="380px" Width="540px">
+
+                        <Series>
+                            <asp:Series Name="Series1" XValueMember="tech_name" YValueMembers="idea_num" ChartType="Bar"></asp:Series>
+                        </Series>
+                        <ChartAreas>
+                            <asp:ChartArea Name="ChartArea1" BackColor="Transparent"></asp:ChartArea>
+                        </ChartAreas>
+                    </asp:Chart>
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
+
+                    <!-- Number if taken and not taken ideas -->
+                    <asp:Chart ID="Chart3" runat="server" DataSourceID="SqlDataSource3" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
+                        <Legends>
+                            <asp:Legend Alignment="Center" Docking="Bottom" IsTextAutoFit="False" Name="Default" LegendStyle="Column">
+                            </asp:Legend>
+                        </Legends>
+                        <Series>
+                            <asp:Series Name="Series1" XValueMember="taken_stat" YValueMembers="Column1" YValuesPerPoint="2" ChartType="Doughnut"></asp:Series>
+                        </Series>
+                        <ChartAreas>
+                            <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
+                                <AxisX>
+                                    <MajorGrid Enabled="false" />
+                                </AxisX>
+
+                                <AxisY InterlacedColor="#ffccff">
+                                    <MajorGrid Enabled="false" />
+                                </AxisY>
+                            </asp:ChartArea>
+                        </ChartAreas>
+                    </asp:Chart>
+
+                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
+
+                    <asp:Chart ID="Chart4" runat="server" DataSourceID="SqlDataSource4" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
+                        <Series>
+                            <asp:Series Name="Series1" ChartType="Line"></asp:Series>
+                        </Series>
+                        <ChartAreas>
+                            <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
+                                <AxisX>
+                                    <MajorGrid Enabled="false" />
+                                </AxisX>
+
+                                <AxisY InterlacedColor="#ffccff">
+                                    <MajorGrid Enabled="false" />
+                                </AxisY>
+                            </asp:ChartArea>
+                        </ChartAreas>
+                    </asp:Chart>
+
+                    <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>--%>
 
                 </div>
 

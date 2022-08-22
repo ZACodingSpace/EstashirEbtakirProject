@@ -30,124 +30,63 @@
 
             <div class="tabs-content-containerP row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-lg-5 p-5">
 
+        <!------------------------------------------------------->
                 <!-- Cards -->
 
-                <!-- Project Card -->
-                <div class="project-card-containerP col p-xl-3 p-lg-2">
-                    <div class="project-cardP">
+               <div class="tabs-content-container row">
 
-                        <!-- First Section of the card -->
-                        <div class="project-logo-containerP row m-0">
-                            <img class="Project-logoP img-fluid p-0" src="Images/Project_Logo_1.jpg" alt="Logo">
-                        </div>
+                    <!-- Cards -->
 
-                        <!-- Second Section of the card -->
-                        <div class="project-name-containerP row mt-3">
-                            <h3 class="project-nameP" id="nameP" runat="server">اسم المشروع</h3>
-                        </div>
+                    <asp:DataList ID="DataListProject" runat="server" RepeatColumns="4">
+                        <ItemTemplate>
+                            <table class="ProjectTable">
 
-                        <!-- Third Section of the card -->
-                        <div class="project-information-containerP row mt-3 p-0">
-                            <div class="college-name-containerP row p-0">
-                                <h6 class="college-labelP col-4 p-0">حالة المشروع</h6>
-                                <h6 class="college-nameP col-8">مقبول/مرفوص</h6>
-                            </div>
+                                <tr>
+                                    <td class="imageTable">
+                                         <img class="projectImage" src="Images/Project_Logo_2.jpg" alt="Logo">
+                                    </td>
 
-                            <!-- Forth Section of the card -->
-                            <div class="major-information-containerP row p-0">
-                                <h6 class="major-labelP col-4 p-0">التخصص</h6>
-                                <h6 class="major-nameP col-8" id="majorP" runat="server">تقنية المعلومات</h6>
-                            </div>
-                        </div>
+                                </tr>
+
+                                <tr>
+                                    <td class="projectName"><%#Eval("Project_Name") %>  </td>
+                                    
+                                </tr>
+
+                                <tr>
+                                    <td class="college">حالة المشروع</td>
+                                    <td class="collegeDB"><%#Eval("State") %> </td>
+                                </tr>
+                                <tr>
+                                    <td class="major">التخصص</td>
+                                    <td class="majorDB"><%#Eval("Major") %> </td>
+                                </tr>
 
 
-                        <!-- Last Section of the card -->
-                        <div class="card-button-containerP row mt-4 mb-3">
-                            <button class="project-details-buttonP p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="EditDeleteProject.aspx">تعديل/حذف</button>
-                            <div class="buttinDivider"></div>
-                            <button class="project-details-buttonP p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="ProjectDetails.aspx">تفاصيل</button>
-                        </div>
+                                <tr>
+                                    <td>
+                                        <button class="project-details-buttonP1 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
+                                          >تعديل/حذف</button>
+                                        <button class="project-details-buttonP2 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
+                                           >تفاصيل</button>
+                      
+                                    </td>
+                                </tr>
+                            </table>
+                        </ItemTemplate>
+                    </asp:DataList>
 
-                    </div>
+                     <asp:ListBox id="ListBoxEditDeleteProject" runat="server" style="display:none">
+
+            </asp:ListBox>
+
+                       <asp:ListBox id="ListBox3" runat="server" style="display:none">
+
+            </asp:ListBox>
+
                 </div>
+                <!-------------------------------------------------------------------->
 
-
-                <!-- Project Card -->
-                <div class="project-card-containerP col p-xl-3 p-lg-2">
-                    <div class="project-cardP">
-
-                        <!-- First Section of the card -->
-                        <div class="project-logo-containerP row m-0">
-                            <img class="Project-logoP img-fluid p-0" src="Images/Project_Logo_2.jpg" alt="Logo">
-                        </div>
-
-                        <!-- Second Section of the card -->
-                        <div class="project-name-containerP row mt-3">
-                            <h3 class="project-nameP" id="H1" runat="server">اسم المشروع</h3>
-                        </div>
-
-                        <!-- Third Section of the card -->
-                        <div class="project-information-containerP row mt-3 p-0">
-                            <div class="college-name-containerP row p-0">
-                                <h6 class="college-labelP col-4 p-0">حالة المشروع</h6>
-                                <h6 class="college-nameP col-8">مقبول/مرفوص</h6>
-                            </div>
-
-                            <!-- Forth Section of the card -->
-                            <div class="major-information-containerP row p-0">
-                                <h6 class="major-labelP col-4 p-0">التخصص</h6>
-                                <h6 class="major-nameP col-8" id="H3" runat="server">تقنية المعلومات</h6>
-                            </div>
-                        </div>
-
-                        <!-- Last Section of the card -->
-                        <div class="card-button-containerP row mt-4 mb-3">
-                            <button class="project-details-buttonP p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="EditDeleteProject.aspx">تعديل/حذف</button>
-                            <div class="buttinDivider"></div>
-                            <button class="project-details-buttonP p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="ProjectDetails.aspx">تفاصيل</button>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <!-- Project Card -->
-                <div class="project-card-containerP col p-xl-3 p-lg-2">
-                    <div class="project-cardP">
-
-                        <!-- First Section of the card -->
-                        <div class="project-logo-containerP row m-0">
-                            <img class="Project-logoP img-fluid p-0" src="Images/Project_Logo_3.jpg" alt="Logo">
-                        </div>
-
-                        <!-- Second Section of the card -->
-                        <div class="project-name-containerP row mt-3">
-                            <h3 class="project-nameP" id="H4" runat="server">اسم المشروع</h3>
-                        </div>
-
-                        <!-- Third Section of the card -->
-                        <div class="project-information-containerP row mt-3 p-0">
-                            <div class="college-name-containerP row p-0">
-                                <h6 class="college-labelP col-4 p-0">حالة المشروع</h6>
-                                <h6 class="college-nameP col-8">مقبول/مرفوص</h6>
-                            </div>
-
-                            <!-- Forth Section of the card -->
-                            <div class="major-information-containerP row p-0">
-                                <h6 class="major-labelP col-4 p-0">التخصص</h6>
-                                <h6 class="major-nameP col-8" id="H6" runat="server">تقنية المعلومات</h6>
-                            </div>
-                        </div>
-
-                        <!-- Last Section of the card -->
-                        <div class="card-button-containerP row mt-4 mb-3">
-                            <button class="project-details-buttonP p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="EditDeleteProject.aspx">تعديل/حذف</button>
-                            <div class="buttinDivider"></div>
-                            <button class="project-details-buttonP p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="ProjectDetails.aspx">تفاصيل</button>
-                        </div>
-
-                    </div>
-                </div>
 
 
             </div>
@@ -156,7 +95,35 @@
 
 
     </div>
-   
+
+   <script>
+       var p1 = document.getElementsByClassName("project-details-buttonP1");
+       var p2 = document.getElementById("ContentPlaceHolder1_ListBoxEditDeleteProject").children;
+
+       var lstp2 = []
+       for (var y = 0; y < p2.length; y++) {
+           lstp2.push(p2[y].value)
+       }
+
+       for (var z = 0; z < lstp2.length; z++) {
+           p1[z].id = lstp2[z]
+           p1[z].addEventListener('click', function special() { window.open(`EditDeleteProject.aspx?id=${this.id}`) })
+       }
+
+       //---------------------------------------------------------------
+       var p1 = document.getElementsByClassName("project-details-buttonP2");
+       var p2 = document.getElementById("ContentPlaceHolder1_ListBox3").children;
+
+       var lstp2 = []
+       for (var y = 0; y < p2.length; y++) {
+           lstp2.push(p2[y].value)
+       }
+
+       for (var z = 0; z < lstp2.length; z++) {
+           p1[z].id = lstp2[z]
+           p1[z].addEventListener('click', function special() { window.open(`ProjectDetails.aspx?id=${this.id}`) })
+       }
+   </script>
 
 
 </asp:Content>

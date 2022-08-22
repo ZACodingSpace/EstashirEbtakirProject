@@ -87,14 +87,17 @@
 
                     <tr class="card-button-area">
                         <td class="card-button-container row mt-4 mb-3">
-                            <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
-                                formaction="IdeasDetails.aspx">عرض الفكرة</button>
-                        </td>
+                            <button class="ideas-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">عرض الفكرة</button>
+                        </td>            
                     </tr>
 
                 </table>
             </ItemTemplate>
         </asp:DataList>
+
+         <asp:ListBox id="ListBox1" runat="server" style="display:none">
+
+            </asp:ListBox>
 
 
 
@@ -119,5 +122,26 @@
         </ul>
 
     </div>
+
+
+    <script>
+        //Ideas
+        var b1 = document.getElementsByClassName("ideas-details-button");
+        var b2 = document.getElementById("ContentPlaceHolder1_ListBox1").children;
+
+        var lst2 = []
+        for (var y = 0; y < b2.length; y++) {
+            lst2.push(b2[y].value)
+        }
+
+        for (var z = 0; z < lst2.length; z++) {
+            b1[z].id = lst2[z]
+            b1[z].addEventListener('click', function special() { window.open(`IdeasDetails.aspx?id=${this.id}`) })
+        }
+    </script>
+
+
+
+
 
 </asp:Content>

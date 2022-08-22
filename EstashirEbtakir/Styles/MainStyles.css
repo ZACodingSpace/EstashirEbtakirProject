@@ -190,9 +190,7 @@ nav .nav-sections-container .nav-rows-container {
         background-color: var(--Ghost-White);
     }
 
-.nav-item-container .nav-item .dropdown-item-container {
-    position: absolute;
-    display: none;
+.nav-item-container .dropdown .dropdown-menu {
     flex-direction: column;
     justify-content: center;
     border: none;
@@ -203,17 +201,14 @@ nav .nav-sections-container .nav-rows-container {
     background-color: var(--Ghost-White);
 }
 
-.nav-item .dropdown-item-container .dropdown-items:hover {
-    background-color: var(--Alice-Blue);
-    border-radius: 5px;
+.dropdown .dropdown-menu .dropdown-item {
+    text-align: right;
+    font-size: max(1.3vw, 2.5vh);
 }
 
-.dropdown-item-container .dropdown-items .dropdown-link {
-    text-decoration: none;
-    list-style: none;
-    color: #000;
-    font-size: max(0.5vw, 3vh);
-}
+    .dropdown .dropdown-menu .dropdown-item:hover {
+        border-radius: 0px 0px 5px 5px;
+    }
 
 /* Nav. Bar Styles End */
 
@@ -3326,7 +3321,7 @@ div.card-header {
         justify-content: center;
     }
 
-    .card-button-area .card-button-container .idea-details-button {
+    .card-button-area .card-button-container .ideas-details-button {
         
         height: 2.5vw;
         border: none;

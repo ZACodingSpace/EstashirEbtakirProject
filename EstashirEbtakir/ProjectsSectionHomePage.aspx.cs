@@ -17,7 +17,7 @@ namespace EstashirEbtakir
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
-            string sqlqueryPro = "Select * from [dbo].[EEProject] order by Project_ID desc";
+            string sqlqueryPro = "Select * from [dbo].[EEProject] where Project_State='1' order by Project_ID desc";
             SqlCommand sqlcommPro = new SqlCommand(sqlqueryPro, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaPro = new SqlDataAdapter();
@@ -28,6 +28,14 @@ namespace EstashirEbtakir
             DataListProject.DataSource = dsPro;
             DataListProject.DataBind();
 
+            SqlDataReader reader3 = sqlcommPro.ExecuteReader();
+
+            while (reader3.Read())
+            {
+
+                ListBox3.Items.Add(reader3["Project_Id"].ToString());
+
+            }
 
             sqlconn.Close();
 

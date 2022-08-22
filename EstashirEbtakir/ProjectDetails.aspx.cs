@@ -22,7 +22,7 @@ namespace EstashirEbtakir
 
                 sqlconn.Open();
 
-            string sqlquery = "Select * from [dbo].[EEProject] where Project_Id="+Id;
+            string sqlquery = "Select * from [dbo].[EEProject] where Project_Id=" + Id;
             SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn);
 
             SqlDataAdapter da = new SqlDataAdapter();
