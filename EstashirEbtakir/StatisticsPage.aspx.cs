@@ -38,10 +38,6 @@ namespace EstashirEbtakir
             };
 
             // ------------------- Ideas -------------------
-            if (range.Value == "all")
-            {
-                SqlDataSource2.SelectCommand = "SELECT COUNT(tec.Idea_ID) AS idea_num, tec.tech_name FROM (SELECT Idea_ID, tech_name From OurIdea, Technologies WHERE Technologies.type ='I' AND OurIdea.Idea_ID = Technologies.ID) AS tec GROUP BY tec.tech_name ORDER BY idea_num";
-            }
             
             Chart2.DataBind(); //must use to override the colors of bar
 
@@ -82,7 +78,6 @@ namespace EstashirEbtakir
             };
 
             Chart3.Series[0].Label = "#PERCENT{P2}";
-
             Chart3.Series[0].LegendText ="#VALX";
 
             chart.Add(Chart1);
@@ -105,10 +100,17 @@ namespace EstashirEbtakir
             // الأفكار ---------------------------------- في السنة
             if (range.SelectedIndex == 0)
             {
-                // 
-                SqlDataSource2.SelectCommand = "SELECT COUNT(tec.Idea_ID) AS idea_num, tec.tech_name FROM (SELECT Idea_ID, tech_name From OurIdea, Technologies WHERE Technologies.type ='I' AND OurIdea.Idea_ID = Technologies.ID) AS tec GROUP BY tec.tech_name ORDER BY idea_num";
+                // التقنيات المستخدمة في الافكار خلال سنة
+                SqlDataSource2.SelectCommand = "SELECT COUNT(tec.Idea_ID) AS idea_num, tec.tech_name, tec.y FROM (SELECT Idea_ID, tech_name, YEAR(Date) AS y FROM OurIdea, Technologies WHERE Technologies.type ='I' AND OurIdea.Idea_ID = Technologies.ID AND YEAR(Date) = YEAR(GETDATE()) ) AS tec GROUP BY tec.tech_name, y ORDER BY y DESC";
+                Chart2.Titles.Add( new Title("الأفكار المضافة خلال السنة حسب التقنيات", Docking.Top, new Font("Calibri", 14f), Color.Black) );
+
                 // عدد الافكار المأخوذة وغير مأخوذة في آخر سنة
-                SqlDataSource3.SelectCommand = "SELECT TOP(2) COUNT(Idea_ID), taken_stat, y FROM (SELECT Idea_ID, YEAR(Date) AS y, Is_Taken, CASE WHEN Is_Taken = 0 THEN N'غير مأخوذة' WHEN Is_Taken = 1 THEN N'مأخوذة' END AS taken_stat FROM OurIdea) as ideaT GROUP BY taken_stat, y ORDER BY y DESC";
+                SqlDataSource3.SelectCommand = "SELECT TOP(2) COUNT(Idea_ID), taken_stat, dates FROM (SELECT Idea_ID, YEAR(Date) AS dates, Is_Taken, CASE WHEN Is_Taken = 0 THEN N'غير مأخوذة' WHEN Is_Taken = 1 THEN N'مأخوذة' END AS taken_stat FROM OurIdea) as ideaT GROUP BY taken_stat, dates ORDER BY dates DESC";
+                Chart3.Series[0].XValueMember = "taken_stat";
+                Chart3.Series[0].YValueMembers = "dates";
+                Chart3.Series[0].Label = "#PERCENT{P0}";
+                Chart3.Series[0].LegendText ="#VALX";
+
                 // عدد الافكار في كل سنة
                 SqlDataSource4.SelectCommand = "SELECT YEAR(Date) AS year, COUNT(Idea_ID) AS ideas FROM OurIdea GROUP BY YEAR(Date) ORDER BY YEAR(Date) DESC";
                 Chart4.Series[0].XValueMember = "year";

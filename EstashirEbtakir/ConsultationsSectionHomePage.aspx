@@ -54,72 +54,52 @@
 
     </div>
 
+    <!------------------------------------------------------------------------------>
+    <!-- Cards -->
+    <div class="tabs-content-container row mt-lg-5 p-5">
 
-    <div class="tabs-content-container row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 mt-lg-5 p-5 ">
-    <!------------------------------------------------------------------------------>  
-        <!-----Cards---->
-    
-        <asp:DataList ID="DataListCons" runat="server" RepeatColumns="4">
-                        <ItemTemplate>
-                            <table class="ConsTable">
+        <asp:DataList ID="DataListCons" class="page-data-container" runat="server" RepeatColumns="4">
+            <ItemTemplate>
+                <table class="counselor-table mt-4 p-0">
 
-                                <tr class="table-header-cons">
-                                    <td>
-                                        <tr class="table-bottom-row-cons">
-                                            <tr class="table-row-cons">
-                                                <td>
-                                                    <img class="ConsImage" src="Images/Profile_Icon.png" />
-                                                </td>
-                                            </tr>
-                                        </tr>
-                                    </td>
-                                    <td>
-                                        <br />
-                                        <br />
-                                    </td>
-                                </tr>
+                    <%--First Section of the card--%>
+                    <tr class="counselor-img-area m-0 p-0">
+                        <td class="counselor-img-container row m-0 p-0 pt-xl-4 ps-xl-4 pe-xl-4 pt-lg-3 ps-lg-3 pe-lg-3">
+                            <img class="counselor-img img-fluid p-3" src="Images/Profile_Icon.png">
+                        </td>
+                    </tr>
 
-                                <tr>
+                    <%--Second Section of the card--%>
+                    <tr class="counselor-name-area">
+                        <td class="counselor-name-container row mt-5 p-1">
+                            <h3 class="counselor-name mt-xl-4 mt-lg-3 p-1"><%#Eval("Fname") %>  <%#Eval("Lname") %></h3>
+                        </td>
+                    </tr>
 
-                                    <td class="ConsName"><%#Eval("Fname") %>  <%#Eval("Lname") %> 
-                                        <br />
-                                        
-                                      
-                                    </td>
-                                   
-                                </tr>
+                    <%--Third Section of the card--%>
+                    <tr class="counselor-information-area">
+                        <td class="counselor-information-container p-0 m-0">
+                            <h3 class="counselor-information m-0 p-1"><%#Eval("Position") %> - <%#Eval("Department") %></h3>
+                            <h3 class="counselor-information m-0 p-1"><%#Eval("Faculty") %></h3>
+                        </td>
+                    </tr>
 
-                                
-                                <tr>
 
-                                    <td class="ConsCollegeMajorDB">  <%#Eval("Counseling_Specialty") %>  - <%#Eval("major") %> 
-                                        <br />
-                                            <%#Eval("College") %></td>
-                                </tr>
 
-                                
+                    <!-- Last Section of the card -->
+                    <tr class="card-button-area">
+                        <td class="card-button-container row m-0 p-0 mt-4 mb-3">
+                            <button class="consultation-details-button col-4 p-0 ps-2 pe-2" formaction="BrowsProject.aspx">تفاصيل</button>
+                            <button class="consultation-booking-button col-4 p-0 ps-2 pe-2" formaction="BrowsProject.aspx">احجز</button>
+                        </td>
+                    </tr>
 
-                                <tr>
-                                    <td class="ConsDetailsBookButton">
+                </table>
+            </ItemTemplate>
+        </asp:DataList>
 
-                                        <button class="consultation-details-button col-4 p-0 ps-2 pe-2"
-                                            formaction="BrowsProject.aspx">
-                                            تفاصيل</button>
-
-                                        <button class="consultation-booking-button col-4 p-0 ps-2 pe-2"
-                                            formaction="BrowsProject.aspx">
-                                            احجز</button>
-
-                                    </td>
-                               </tr>
-
-                                
-
-                            </table>
-                        </ItemTemplate>
-                    </asp:DataList>
-                           
     </div>
+    <!-- Cards End -->
     <!------------------------------------------------------------------------------>
     <div class="d-flex justify-content-center">
 
@@ -138,5 +118,4 @@
         </ul>
 
     </div>
-
 </asp:Content>

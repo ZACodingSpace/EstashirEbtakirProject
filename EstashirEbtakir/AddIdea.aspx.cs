@@ -51,7 +51,7 @@ namespace EstashirEbtakir
                 string type = (string)Session["Type"];
                 if (type == "User")
                 {
-                    SqlCommand cmd = new SqlCommand("INSERT INTO OurIdea(User_ID, Idea_Name, Brief,Idea_State) VALUES(@userID,@IdeaName, @IdeaBrief, @State)", con);
+                    SqlCommand cmd = new SqlCommand("INSERT INTO EEIdea(User_ID, Idea_Name, Brief,Idea_State) VALUES(@userID,@IdeaName, @IdeaBrief, @State)", con);
                     int UserID = (int)Session["id"];
                     cmd.Parameters.AddWithValue("@userID", UserID);
                     cmd.Parameters.AddWithValue("@IdeaName", ideaName);
@@ -61,7 +61,7 @@ namespace EstashirEbtakir
                 }
                 else
                 {
-                    SqlCommand cmd = new SqlCommand("INSERT INTO OurIdea(Admin_ID, Idea_Name, Brief,Idea_State) VALUES(@adminID,@IdeaName, @IdeaBrief, @State)", con);
+                    SqlCommand cmd = new SqlCommand("INSERT INTO EEIdea(Admin_ID, Idea_Name, Brief,Idea_State) VALUES(@adminID,@IdeaName, @IdeaBrief, @State)", con);
                     int adminID = (int)Session["id"];
                     cmd.Parameters.AddWithValue("@adminID", adminID);
                     cmd.Parameters.AddWithValue("@IdeaName", ideaName);
@@ -69,7 +69,7 @@ namespace EstashirEbtakir
                     cmd.Parameters.AddWithValue("@State", 1);
                     cmd.ExecuteNonQuery();
                 }
-                SqlDataAdapter sda = new SqlDataAdapter("select @@IDENTITY from OurIdea", con);
+                SqlDataAdapter sda = new SqlDataAdapter("select @@IDENTITY from EEIdea", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
 
