@@ -51,7 +51,6 @@
                 <asp:Label id="logInPassword" class="logIn-password" runat="server">كلمة المرور</asp:Label>
                 <input id="passwordInputPlace" class="inputPlace mt-1" runat="server" type="password" name="logInPassword"
                    />
-               <i class='fa fa-question-circle question-circle-signup'></i>
 
                 <asp:Label id="logInPasswordEmsg" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
               </div>
@@ -100,13 +99,15 @@
                 <asp:Label id="signUpEmail" class="signUp-email" runat="server">البريد الالكتروني</asp:Label>
                 <input id="email1" class="inputPlace mt-1" runat="server" type="email" name="signUpEmail"
                    />
-                <asp:Label id="signUpEmailEmsg" class="error-msg-place mt-1" runat="server" ForeColor="Red"></asp:Label>
+                  <asp:Label id="signUpEmailEmsg" class="error-msg-place mt-1" runat="server" ForeColor="Red"></asp:Label>
               </div>
 
               <div class="signUp-password-container mt-3">
                 <asp:Label id="signUpPassword" class="signUp-password" runat="server">كلمة المرور</asp:Label>
                 <input id="password1" class="inputPlace mt-1 mt-1" runat="server" type="password"
                   name="signUpPassword"  />
+                  <i class='fa fa-question-circle question-circle-signup'></i>
+
                 <asp:Label id="signUpPasswordEmsg" class="error-msg-place" runat="server" ForeColor="Red"></asp:Label>
               </div>
 
