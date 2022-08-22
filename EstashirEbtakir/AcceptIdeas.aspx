@@ -37,8 +37,56 @@
                     <h1>قبول الأفكار
        
                     </h1>
+                    <!----------------------->
 
-                    <!------------>
+                    <!---
+
+
+                        <div class="accepForm ">
+                        <div class="accepForm row ">
+
+                            <div class="col-6">
+                                <label for="proname">عنوان الفكرة: </label>
+                            </div>
+                            <div class="col-6">
+                                <label for="proname">الفكرة</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                                <label for="abstrac">نبذة عن الفكرة:</label>
+                            </div>
+                            <div class="col-6">
+                                <label for="abstrac">نبذة عن الفكرة</label>
+
+                        <div class="accepForm row ">
+
+                            <div class="col-6">
+                                <label for="particit">الأعضاء المشاركين:</label>
+                            </div>
+                            <div class="col-6">
+                                <label for="particit">اسماء الأعضاء المشاركين</label>
+                            </div>
+                        </div>
+                        <div class="accepForm row">
+
+                            <div class="col-6">
+                   
+
+                                <label for="degree">الدرجة:</label>
+                            </div>
+                            <div class="col-6">
+                                <label for="degree">الدرجة</label>
+                            </div>
+                        </div>
+                        <div class="accepForm row ">
+
+                            <div class="col-6">
+                                <label for="coll">التقنية المستخدمة:</label>
+                            </div>
+
+                        -->
+
+                    <!------------------------>
 
                      <asp:GridView ID="GridViewAcceptIdeas" runat="server" AutoGenerateColumns="False" CssClass="gridAcceptIdeas">
 

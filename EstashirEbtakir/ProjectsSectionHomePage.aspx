@@ -60,7 +60,7 @@
   
         <!-- Cards -->
     <!---------------------------->
-    <center>
+    
     <asp:DataList ID="DataListProject" runat="server" RepeatColumns="4" >
                     <ItemTemplate>
                         
@@ -87,13 +87,19 @@
                            
                             
                              <tr>
-                        <td class="projectButton">  <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
-                  formaction="ProjectDetails.aspx"">تفاصيل</button> </td>    
+                                 <td class="projectButton">  <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">
+                                    تفاصيل </button>
+
+                                 </td>    
                             </tr>
                         </table>
                     </ItemTemplate>
                 </asp:DataList>
-        </center>
+
+    <asp:ListBox id="ListBox3" runat="server" style="display:none">
+
+            </asp:ListBox>
+        
 
     <!---------------------------->    
 

@@ -82,5 +82,21 @@
             <button formaction="" class="delete-projectDetails-button m-1 ms-xl-4 ms-lg-3" id="Button1" runat="server">حذف</button>
 
     </div>
+
+        <script>
+     var p1 = document.getElementsByClassName("project-details-button");
+    var p2 = document.getElementById("ContentPlaceHolder1_ListBox3").children;
+
+    var lstp2 = []
+    for (var y = 0; y < p2.length; y++) {
+        lstp2.push(p2[y].value)
+    }
+
+    for (var z = 0; z < lstp2.length; z++) {
+        p1[z].id = lstp2[z]
+        p1[z].addEventListener('click', function special() { window.open(`ProjectDetails.aspx?id=${this.id}`) })
+    }
+        </script>
+
                
 </asp:Content>
