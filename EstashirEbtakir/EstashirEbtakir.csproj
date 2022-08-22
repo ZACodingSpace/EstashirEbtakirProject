@@ -89,6 +89,7 @@
     <Content Include="ConsultantProfile.aspx" />
     <Content Include="ConsultationsSectionHomePage.aspx" />
     <Content Include="editDeleteEvent.aspx" />
+    <Content Include="EditDeleteIdea.aspx" />
     <Content Include="EditDeleteProject.aspx" />
     <Content Include="EventsHomePage.aspx" />
     <Content Include="GetPassword.aspx" />
@@ -260,6 +261,13 @@
     </Compile>
     <Compile Include="editDeleteEvent.aspx.designer.cs">
       <DependentUpon>editDeleteEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditDeleteIdea.aspx.cs">
+      <DependentUpon>EditDeleteIdea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditDeleteIdea.aspx.designer.cs">
+      <DependentUpon>EditDeleteIdea.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditDeleteProject.aspx.cs">
       <DependentUpon>EditDeleteProject.aspx</DependentUpon>

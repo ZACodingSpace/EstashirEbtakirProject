@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    
        <div class="edit-delete-idea-areaED">
          
         <div class="idea-name-containerED p-xl-5 p-lg-4 pt-md-5">
@@ -22,7 +22,6 @@
             <button formaction="IdeasSectionHomePage.aspx" class="return-idea-buttonED m-1 ms-xl-4 ms-lg-3" id="returnIdeaButtonED" runat="server">رجوع</button>
         </div>
         </div>
-
 
 
 </asp:Content>
