@@ -16,13 +16,13 @@ namespace EstashirEbtakir
         SqlConnection sqlconn;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            var Id = Request.QueryString["id"];
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
              sqlconn = new SqlConnection(mainconn);
 
                 sqlconn.Open();
 
-            string sqlquery = "Select * from [dbo].[OurProjects] ";
+            string sqlquery = "Select * from [dbo].[EEProject] where Project_Id="+Id;
             SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn);
 
             SqlDataAdapter da = new SqlDataAdapter();
@@ -31,24 +31,11 @@ namespace EstashirEbtakir
             da.Fill(ds);
 
 
-             SqlDataReader reader = sqlcomm.ExecuteReader();
-
-                if (reader.Read())
-                {
-                //projectDetail.Text = ds.Tables[0].Rows[0]["ID"].ToString();
-
-
-                    sqlconn.Close();
-
-                
-            }
+            sqlconn.Close();
            
         }
-            public string GetConstring()
-            {
-                string constr = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
-                return constr;
-            }
+
+
 
         }
     }

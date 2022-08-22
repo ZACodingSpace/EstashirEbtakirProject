@@ -66,59 +66,87 @@ th, td {
         <div class="tab-content" id="myTabContent">
 
             <!------------------------------------------ Ideas Section ------------------------------------>
-            <div class="tab-pane fade" id="ideas" role="tabpanel" aria-labelledby="ideas-tab">
+            <div class="tab-pane fade  show active" id="ideas" role="tabpanel" aria-labelledby="ideas-tab">
 
- <table style="width:100%">
 
-                                <tr>
+                  <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false"
+            CssClass="grid"  AlternatingRowStyle-cssclass="even"  >
 
-                                    <th>اسم الفكرة</th>
-                                    <th>التاريخ</th>
-                                    <th>الحالة</th>
-                                    <th>عرض</th>
-                                </tr>
-                                <tr>
-                                    <td>اسم الفكرة</td>
+        <Columns>
 
-                                    <td></td>
-                                    <td>نشر</td>
-                                
-                                <td><a href="AcceptIdeas.aspx">التفاصيل</a></td>
-                            
-                            
-                                </tr>
+            <asp:BoundField DataField="Idea_Name" HeaderText="اسم الفكرة" />
+            <asp:BoundField DataField="Date" HeaderText="التاريخ" />
 
-                            </table>
+
+        <asp:TemplateField >
+            <ItemTemplate>
+             <button class="ButtonSelectDetails1" runat="server" > التفاصيل</button>
+
+
+            </ItemTemplate>
+        </asp:TemplateField>
+
+            <asp:TemplateField >
+            <ItemTemplate>
+  <div class="accepBtns-containerDisplayIdeas">
+                        <div class="accepBtn-containerDisplayIdeas m-1 me-xl-4 me-lg-3 p-lg-2">
+
+                            <asp:Button class="accepBtn p-0 ps-2 pe-2" ID="Button3" runat="server" Text="قبول الفكرة" />
+                        </div>
+                        <div class="accepBtn-containerDisplayIdeas m-1 me-xl-4 me-lg-3 p-lg-2">
+
+                            <asp:Button class="declineBtn p-0 ps-2 pe-2" ID="Button4" runat="server" Text="رفض الفكرة" />
+                        </div>
+                    </div>
+                 </ItemTemplate>
+        </asp:TemplateField>
+       </Columns>
+       </asp:GridView>
+                  <asp:ListBox id="ListBox1" runat="server" style="display:none">
+
+            </asp:ListBox>
                     
 
             </div>
-
+<!----------------------------------------------------------->
 
             <div class="tab-pane fade"  id="consultancies" role="tabpanel" aria-labelledby="consultancies-tab">
                 <div class="tabs-content-container row">
                     
-                            <table >
+                   
+                    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="false"
+            CssClass="grid"  AlternatingRowStyle-cssclass="even"  >
 
-                                 <tr>
+        <Columns>
 
-                                    <th>اسم الفكرة</th>
-                                    <th>التاريخ</th>
-                                    <th>الحالة</th>
-                                    <th>عرض</th>
-                                </tr>
-                                <tr>
-                                    <td>اسم الفكرة</td>
+            <asp:BoundField DataField="Idea_Name" HeaderText="اسم الفكرة" />
+            <asp:BoundField DataField="Date" HeaderText="التاريخ" />
+           
 
-                                    <td></td>
-                                    <td>نشر</td>
-                                
-                                <td><a href="AcceptIdeas.aspx">التفاصيل</a></td>
-                            
-                            
-                                </tr>
+        <asp:TemplateField >
+            <ItemTemplate>
+             <button class="ButtonSelectDetails2" runat="server" > التفاصيل</button>
 
-                            </table>
-                       
+
+            </ItemTemplate>
+        </asp:TemplateField>
+
+             <asp:TemplateField >
+            <ItemTemplate>
+             <button class="ButtonSelectDelete" runat="server" > حذف الفكرة</button>
+
+
+            </ItemTemplate>
+        </asp:TemplateField>
+
+          </Columns>
+                        </asp:GridView>
+                       <asp:ListBox id="ListBox2" runat="server" style="display:none">
+
+            </asp:ListBox>
+
+
+
                 </div>
              
 
@@ -128,6 +156,42 @@ th, td {
         </div>
 
     </div>
+    <!--------------------->
+
+       <script>
+
+          //List1
+         var b1 = document.getElementsByClassName("ButtonSelectDetails1");
+         var b2 = document.getElementById("ContentPlaceHolder1_ListBox1").children;
+
+         var lst2 = []
+         for (var y = 0; y < b2.length; y++) {
+             lst2.push(b2[y].value)
+         }
+
+         for (var z = 0; z < lst2.length; z++) {
+             b1[z].id = lst2[z]
+             b1[z].addEventListener('click', function special() { window.open(`AcceptIdeas.aspx?id=${this.id}`) })
+         }
+
+         //List2
+           var b1 = document.getElementsByClassName("ButtonSelectDetails2");
+           var b2 = document.getElementById("ContentPlaceHolder1_ListBox2").children;
+
+           var lst2 = []
+           for (var y = 0; y < b2.length; y++) {
+               lst2.push(b2[y].value)
+           }
+
+           for (var z = 0; z < lst2.length; z++) {
+               b1[z].id = lst2[z]
+               b1[z].addEventListener('click', function special() { window.open(`AcceptIdeas.aspx?id=${this.id}`) })
+           }
+
+
+
+       </script>
+
 
 
 </asp:Content>
