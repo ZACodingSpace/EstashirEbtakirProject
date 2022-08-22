@@ -21,7 +21,8 @@ namespace EstashirEbtakir
         {
             // عناوين الرسومات
             Chart2.Titles.Add(new Title("الأفكار المضافة خلال السنة حسب التقنيات", Docking.Top, new Font("Calibri", 14f), Color.Black));
-
+            Chart3.Titles.Add(new Title("نسبة الأفكار المأخوذة وغير المأخوذة خلال السنة", Docking.Top, new Font("Calibri", 14f), Color.Black));
+            Chart4.Titles.Add(new Title("الأفكار المضافة خلال اخر ثلاث سنوات", Docking.Top, new Font("Calibri", 14f), Color.Black));
             drawCharts();
 
             var chart = new List<Chart>();
@@ -44,7 +45,7 @@ namespace EstashirEbtakir
 
             // ------------------- Ideas -------------------
 
-            Chart2.DataBind(); //must use to override the colors of bar
+            //Chart2.DataBind(); //must use to override the colors of bar
 
             // coloring
             //int count = 0;
@@ -82,9 +83,6 @@ namespace EstashirEbtakir
                 ColorTranslator.FromHtml(c[3])
             };
 
-            Chart3.Series[0].Label = "#PERCENT{P2}";
-            Chart3.Series[0].LegendText ="#VALX";
-
             chart.Add(Chart1);
             chart.Add(Chart2);
             chart.Add(Chart3);
@@ -92,8 +90,10 @@ namespace EstashirEbtakir
 
             foreach (var ch in chart)
             {
-                if (ch.GetType().Name == "Bar")
+                ch.DataBind();
+                if (ch.Series[0].ChartType.ToString() == "Bar" || ch.Series[0].ChartType.ToString() == "Column")
                 {
+                    test.Text += "in-if";
                     // coloring
                     int count = 0;
                     foreach (var p in ch.Series["Series1"].Points)
@@ -107,7 +107,17 @@ namespace EstashirEbtakir
                             count = 0;
                         }
                     }
+                } else
+                {
+                    ch.PaletteCustomColors = new Color[] {
+                ColorTranslator.FromHtml(c[3]),
+                ColorTranslator.FromHtml(c[1]),
+                ColorTranslator.FromHtml(c[2]),
+                ColorTranslator.FromHtml(c[0])
+            };
                 }
+
+                
 
                 ch.ChartAreas["ChartArea1"].AxisX = new Axis { LabelStyle = new LabelStyle() { Font = new Font("Calibri", 30f) } };
                 ch.ChartAreas["ChartArea1"].AxisY = new Axis { LabelStyle = new LabelStyle() { Font = new Font("Calibri", 20f) } };
@@ -138,7 +148,7 @@ namespace EstashirEbtakir
                 Chart3.Series[0].LegendText ="#VALX";
 
                 // عدد الافكار في كل سنة
-                SqlDataSource4.SelectCommand = "SELECT YEAR(Date) AS year, COUNT(Idea_ID) AS ideas FROM EEIdea GROUP BY YEAR(Date) ORDER BY YEAR(Date) DESC";
+                SqlDataSource4.SelectCommand = "SELECT TOP(3) YEAR(Date) AS year, COUNT(Idea_ID) AS ideas FROM EEIdea GROUP BY YEAR(Date) ORDER BY YEAR(Date) DESC";
                 Chart4.Series[0].XValueMember = "year";
                 Chart4.Series[0].YValueMembers = "ideas";
             }
@@ -170,7 +180,7 @@ namespace EstashirEbtakir
                 // عدد الافكار المأخوذة وغير مأخوذة 
                 SqlDataSource3.SelectCommand = "SELECT COUNT(Idea_ID), taken_stat FROM (SELECT Idea_ID, Is_Taken, CASE WHEN Is_Taken = 0 THEN N'غير مأخوذة' WHEN Is_Taken = 1 THEN N'مأخوذة' END AS taken_stat FROM EEIdea) as ideaT GROUP BY taken_stat";
                 Chart3.Series[0].XValueMember = "taken_stat";
-                Chart3.Series[0].YValueMembers = "dates";
+                //Chart3.Series[0].YValueMembers = "dates";
                 Chart3.Series[0].Label = "#PERCENT{P0}";
                 Chart3.Series[0].LegendText ="#VALX";
 
@@ -182,7 +192,23 @@ namespace EstashirEbtakir
 
 
 
-            //Chart2.DataBind(); //must use to override the colors of bar
+            Chart2.DataBind(); //must use to override the colors of bar
+
+            // ******************************************** الافضل اسوي ميثود تلون ويكون الاستدعاء هنا عشان يتسوى لها رن سواء من البوتون او لما تفتح الصفحة اول مرة ********************************************
+            var c = new String[] { "#9C7C9E", "#FF7F82", "#596482", "#50D1CD" };
+            // coloring
+            int count = 0;
+            foreach (var p in Chart2.Series["Series1"].Points)
+            {
+
+                p.Color = ColorTranslator.FromHtml(c[count]);
+                count++;
+
+                if (count > 3)
+                {
+                    count = 0;
+                }
+            }
         }
 
         public string GetConstring()
