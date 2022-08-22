@@ -43,7 +43,8 @@
 
                 <div class="projects-serach-bar ms-lg-1 me-lg-1">
                     <input class="projects-form-control form-control " type="search" placeholder="البحث" aria-label="Search">
-                    <button class="projects-search-button ps-lg-3 pe-lg-3 pt-1 pb-1" type="submit">ابحث</button>
+                    <!--<button class="projects-search-button ps-lg-3 pe-lg-3 pt-1 pb-1" type="submit">ابحث</button>-->
+                    <asp:Button ID="Search" class="projects-search-button ps-lg-3 pe-lg-3 pt-1 pb-1" runat="server" OnClick="Search_Click" Text="ابحث" />
                 </div>
 
                 <div class="sort-projects ms-lg-1 me-lg-1"><i class="fa-solid fa-sort"></i></div>

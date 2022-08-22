@@ -34,5 +34,10 @@ namespace EstashirEbtakir
             sqlconn.Close();
 
         }
+
+        protected void Search_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

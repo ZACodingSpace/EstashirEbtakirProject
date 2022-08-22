@@ -29,5 +29,10 @@ namespace EstashirEbtakir
             DataListIdea.DataBind();
 
         }
+
+        protected void Search_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
