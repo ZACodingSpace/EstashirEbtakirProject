@@ -35,14 +35,14 @@
 
             <div class="add-project-button-container col-6">
                 <button class="add-project-button ps-lg-3 pe-lg-3 pt-1 pb-1" formaction="AddProject.aspx">إضافة مشروع</button>
-            
-            
+
+
             </div>
 
             <div class="projects-search-bar-container col-6">
 
                 <div class="projects-serach-bar ms-lg-1 me-lg-1">
-                    <input class="projects-form-control form-control " type="search" placeholder="البحث" aria-label="Search">
+                    <input class="projects-form-control form-control " id="searchText" runat="server" type="search" placeholder="البحث" aria-label="Search">
                     <!--<button class="projects-search-button ps-lg-3 pe-lg-3 pt-1 pb-1" type="submit">ابحث</button>-->
                     <asp:Button ID="Search" class="projects-search-button ps-lg-3 pe-lg-3 pt-1 pb-1" runat="server" OnClick="Search_Click" Text="ابحث" />
                 </div>
@@ -57,51 +57,62 @@
 
     </div>
 
-  
-        <!-- Cards -->
+    <!-- Cards -->
+    <div class="tabs-content-container row mt-lg-5 p-5">
+
+        <asp:DataList ID="DataListProject" class="page-data-container" runat="server" RepeatColumns="4">
+            <ItemTemplate>
+                <table class="project-table mt-4 p-0">
+
+                    <%--First Section of the card--%>
+                    <tr class="project-logo-area m-0 p-0">
+                        <td class="project-logo-container row m-0">
+                            <img class="project-logo img-fluid p-0" src="Images/Project_Logo_3.jpg">
+                        </td>
+                    </tr>
+
+
+                    <%--Second Section of the card--%>
+                    <tr class="project-name-area">
+                        <td class="project-name-container row mt-3 p-1">
+                            <h3 class="project-name p-1"><%#Eval("Project_Name") %></h3>
+                        </td>
+                    </tr>
+
+                   
+                    <tr class="project-information-area">
+                        <td class="project-information-container row mt-3 p-0">
+                             
+                            <%--Third Section of the card--%>
+                            <div class="college-name-container row p-0">
+                                <h6 class="college-label col-4 p-0">الكلية</h6>
+                                <h6 class="college-name col-8" id="H1" runat="server"><%#Eval("Faculty") %></h6>
+                            </div>
+
+                            <!-- Forth Section of the card -->
+                            <div class="major-information-container row p-0">
+                                <h6 class="major-label col-4 p-0">التخصص</h6>
+                                <h6 class="major-name col-8" id="H2" runat="server"><%#Eval("Major") %></h6>
+                            </div>
+
+                        </td>
+                    </tr>
+
+                    <%-- Last Section of the card --%>
+                    <tr class="card-button-area">
+                        <td class="card-button-container row mt-4 mb-3">
+                            <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">تفاصيل</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </ItemTemplate>
+        </asp:DataList>
+
+        <asp:ListBox ID="ListBox3" runat="server" Style="display: none"></asp:ListBox>
+
+    </div>
     <!---------------------------->
-    
-    <asp:DataList ID="DataListProject" runat="server" RepeatColumns="4" >
-                    <ItemTemplate>
-                        
-                        <table class= "ProjectTable" >
-
-                            <tr>
-                                <td class="imageTable"></td>
-                                 
-                            </tr>
-                            
-                            <tr >
-                                <td class="projectName"> <%#Eval("Project_Name") %>  </td>
-                                <td>  <br /> </td>
-                            </tr>
-
-                            <tr>
-                                <td class="college">الكلية</td>
-                                <td class="collegeDB"> <%#Eval("Faculty") %> </td>
-                            </tr>
-                             <tr>
-                                <td class="major">التخصص</td>
-                                <td class="majorDB"> <%#Eval("Major") %> </td>
-                            </tr>
-                           
-                            
-                             <tr>
-                                 <td class="projectButton">  <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">
-                                    تفاصيل </button>
-
-                                 </td>    
-                            </tr>
-                        </table>
-                    </ItemTemplate>
-                </asp:DataList>
-
-    <asp:ListBox id="ListBox3" runat="server" style="display:none">
-
-            </asp:ListBox>
-        
-
-    <!---------------------------->    
 
     <div class="d-flex justify-content-center">
 
@@ -123,19 +134,19 @@
 
 
     <script>
-     var p1 = document.getElementsByClassName("project-details-button");
-    var p2 = document.getElementById("ContentPlaceHolder1_ListBox3").children;
+        var p1 = document.getElementsByClassName("project-details-button");
+        var p2 = document.getElementById("ContentPlaceHolder1_ListBox3").children;
 
-    var lstp2 = []
-    for (var y = 0; y < p2.length; y++) {
-        lstp2.push(p2[y].value)
-    }
+        var lstp2 = []
+        for (var y = 0; y < p2.length; y++) {
+            lstp2.push(p2[y].value)
+        }
 
-    for (var z = 0; z < lstp2.length; z++) {
-        p1[z].id = lstp2[z]
-        p1[z].addEventListener('click', function special() { window.open(`ProjectDetails.aspx?id=${this.id}`) })
-    }
-</script>
+        for (var z = 0; z < lstp2.length; z++) {
+            p1[z].id = lstp2[z]
+            p1[z].addEventListener('click', function special() { window.open(`ProjectDetails.aspx?id=${this.id}`) })
+        }
+    </script>
 
 
 </asp:Content>
