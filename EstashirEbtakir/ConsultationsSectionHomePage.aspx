@@ -74,14 +74,14 @@
 
                                     <td class="ConsName"><%#Eval("Fname") %>  <%#Eval("Lname") %>  - 
                                         
-                                        <%#Eval("Counseling_Specialty") %>
+                                        <%#Eval("Position") %>
                                     </td>
                                    
                                 </tr>
 
                                 
                                 <tr>
-                                    <td class="ConsCollegeMajorDB"><%#Eval("College") %> - <%#Eval("major") %> </td>
+                                    <td class="ConsCollegeMajorDB"><%#Eval("Department") %> - <%#Eval("Faculty") %> </td>
                                 </tr>
 
                                 

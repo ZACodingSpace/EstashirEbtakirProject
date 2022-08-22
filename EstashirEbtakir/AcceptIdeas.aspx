@@ -44,7 +44,7 @@
 
         <Columns>
      
-                <asp:BoundField DataField="Idea_Name" runat="server" HeaderText="nn"/>
+                <asp:BoundField DataField="Idea_Name" runat="server"/>
 
        </Columns>
        </asp:GridView>

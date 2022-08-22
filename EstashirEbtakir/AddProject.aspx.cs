@@ -93,7 +93,7 @@ namespace EstashirEbtakir
                     using (BinaryReader br = new BinaryReader(fs))
                     {
                         byte[] bytes = br.ReadBytes((Int32)fs.Length);
-                        SqlCommand cmd = new SqlCommand("INSERT INTO OurFile (Name, ContentType, Data) VALUES(@Name, @ContentType, @Data)", con);
+                        SqlCommand cmd = new SqlCommand("INSERT INTO EEFile (Name, ContentType, Data) VALUES(@Name, @ContentType, @Data)", con);
                         cmd.Parameters.AddWithValue("@Name", filename);
                         cmd.Parameters.AddWithValue("@ContentType", contentType);
                         cmd.Parameters.AddWithValue("@Data", bytes);
@@ -101,7 +101,7 @@ namespace EstashirEbtakir
                     }
                 }
 
-                SqlDataAdapter sda = new SqlDataAdapter("select @@IDENTITY from OurFile", con);
+                SqlDataAdapter sda = new SqlDataAdapter("select @@IDENTITY from EEFile", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 
@@ -109,7 +109,7 @@ namespace EstashirEbtakir
                 if (type == "User")
                 {
                     int UserID = (int)Session["id"];
-                    SqlCommand cmd2 = new SqlCommand("INSERT INTO OurProject (User_ID, Project_Name, Supervisor, " +
+                    SqlCommand cmd2 = new SqlCommand("INSERT INTO EEProject (User_ID, Project_Name, Supervisor, " +
                         "Team_Members, Brief, Faculty, Degree, Major, Project_State, image, File_ID)" +
                         " VALUES(@User_ID, @Project_Name, @Supervisor, @Team_Members, @Brief, @Faculty, " +
                         "@Degree, @Major, @Project_State, @image, @File_ID)", con);
@@ -129,7 +129,7 @@ namespace EstashirEbtakir
                 else
                 {
                     int adminId = (int)Session["id"];
-                    SqlCommand cmd2 = new SqlCommand("INSERT INTO OurProject (Admin_ID, Project_Name, Supervisor, " +
+                    SqlCommand cmd2 = new SqlCommand("INSERT INTO EEProject (Admin_ID, Project_Name, Supervisor, " +
                         "Team_Members, Brief, Faculty, Major, Degree, Project_State, image, File_ID)" +
                         " VALUES(@admin_ID, @Project_Name, @Supervisor, @Team_Members, @Brief, @Faculty, " +
                         "@Major, @Degree, @Project_State, @image, @File_ID)", con);
@@ -148,7 +148,7 @@ namespace EstashirEbtakir
                 }
                 
 
-                SqlDataAdapter sda2 = new SqlDataAdapter("select @@IDENTITY from OurProject", con);
+                SqlDataAdapter sda2 = new SqlDataAdapter("select @@IDENTITY from EEProject", con);
                 DataTable dt2 = new DataTable();
                 sda2.Fill(dt2);
                 SqlCommand cmdTech = new SqlCommand("INSERT INTO Technologies(tech_name, type, ID) VALUES(@TechName,@Type, @Pro_ID)", con);

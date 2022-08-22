@@ -22,7 +22,7 @@ namespace EstashirEbtakir
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
             
-            string sqlqueryIdea = "Select * from [dbo].[OurIdeas] where Idea_ID=" + Id;
+            string sqlqueryIdea = "Select * from [dbo].[EEIdea] where Idea_ID=" + Id;
             SqlCommand sqlcommIdea = new SqlCommand(sqlqueryIdea, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaIdea = new SqlDataAdapter();

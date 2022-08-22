@@ -13,5 +13,23 @@ namespace EstashirEbtakir
 
     public partial class consultantDetailes
     {
+
+        /// <summary>
+        /// DataListCons control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataList DataListCons;
+
+        /// <summary>
+        /// ListBox2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ListBox2;
     }
 }

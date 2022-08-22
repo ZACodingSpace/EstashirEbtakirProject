@@ -17,7 +17,7 @@ namespace EstashirEbtakir
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
-            string sqlqueryPro = "Select * from [dbo].[OurProjects] order by Project_ID desc";
+            string sqlqueryPro = "Select * from [dbo].[EEProject] order by Project_ID desc";
             SqlCommand sqlcommPro = new SqlCommand(sqlqueryPro, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaPro = new SqlDataAdapter();
