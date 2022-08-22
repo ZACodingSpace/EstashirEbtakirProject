@@ -60,7 +60,8 @@
 
                 <div class="events-serach-bar ms-lg-1 me-lg-1">
                     <input class="events-form-control form-control " type="search" placeholder="البحث" aria-label="Search">
-                    <button class="events-search-button ps-lg-3 pe-lg-3 pt-1 pb-1" type="submit">ابحث</button>
+                    <!-- <button class="events-search-button ps-lg-3 pe-lg-3 pt-1 pb-1" type="submit">ابحث</button> -->
+                    <asp:Button ID="Search" class="events-search-button ps-lg-3 pe-lg-3 pt-1 pb-1" OnClick="Search_Click" runat="server" Text="ابحث" />
                 </div>
 
                 <div class="sort-events ms-lg-1 me-lg-1"><i class="fa-solid fa-sort"></i></div>
