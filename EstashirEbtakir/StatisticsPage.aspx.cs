@@ -88,6 +88,10 @@ namespace EstashirEbtakir
             chart.Add(Chart3);
             chart.Add(Chart4);
 
+            chart.Add(Chart5);
+            chart.Add(Chart6);
+            chart.Add(Chart7);
+
             foreach (var ch in chart)
             {
                 ch.DataBind();
@@ -109,6 +113,7 @@ namespace EstashirEbtakir
                     }
                 } else
                 {
+                    // ممكن اخليه يختار عشوائي عشان ما يكون نفسها كل مرة
                     ch.PaletteCustomColors = new Color[] {
                 ColorTranslator.FromHtml(c[3]),
                 ColorTranslator.FromHtml(c[1]),
@@ -137,8 +142,9 @@ namespace EstashirEbtakir
         {
             if (range2.SelectedIndex == 0) // سنة
             {
+                //***************************************************** الأفكار
                 // التقنيات المستخدمة في الافكار خلال سنة
-                SqlDataSource2.SelectCommand = "SELECT COUNT(tec.Idea_ID) AS idea_num, tec.tech_name, tec.y FROM (SELECT Idea_ID, tech_name, YEAR(Date) AS y FROM EEIdea, Technologies WHERE Technologies.type ='I' AND EEIdea.Idea_ID = Technologies.ID AND YEAR(Date) = YEAR(GETDATE()) ) AS tec GROUP BY tec.tech_name, y ORDER BY y DESC";
+                SqlDataSource2.SelectCommand = "SELECT COUNT(tec.Idea_ID) AS num, tec.tech_name, tec.y FROM (SELECT Idea_ID, tech_name, YEAR(Date) AS y FROM EEIdea, Technologies WHERE Technologies.type ='I' AND EEIdea.Idea_ID = Technologies.ID AND YEAR(Date) = YEAR(GETDATE()) ) AS tec GROUP BY tec.tech_name, y ORDER BY y DESC";
 
                 // عدد الافكار المأخوذة وغير مأخوذة في آخر سنة
                 SqlDataSource3.SelectCommand = "SELECT TOP(2) COUNT(Idea_ID), taken_stat, dates FROM (SELECT Idea_ID, YEAR(Date) AS dates, Is_Taken, CASE WHEN Is_Taken = 0 THEN N'غير مأخوذة' WHEN Is_Taken = 1 THEN N'مأخوذة' END AS taken_stat FROM EEIdea) as ideaT GROUP BY taken_stat, dates ORDER BY dates DESC";
@@ -151,12 +157,32 @@ namespace EstashirEbtakir
                 SqlDataSource4.SelectCommand = "SELECT TOP(3) YEAR(Date) AS year, COUNT(Idea_ID) AS ideas FROM EEIdea GROUP BY YEAR(Date) ORDER BY YEAR(Date) DESC";
                 Chart4.Series[0].XValueMember = "year";
                 Chart4.Series[0].YValueMembers = "ideas";
+
+                //***************************************************** المشاريع
+
+                // التقنيات المستخدمة في المشاريع خلال سنة
+                SqlDataSource5.SelectCommand = "SELECT COUNT(tec.Project_ID) AS num, tec.tech_name, tec.y FROM (SELECT Project_ID, tech_name, YEAR(Date) AS y FROM EEProject, Technologies WHERE Technologies.type ='P' AND EEProject.Project_ID = Technologies.ID AND YEAR(Date) = YEAR(GETDATE()) ) AS tec GROUP BY tec.tech_name, y ORDER BY y DESC";
+
+                // عدد المشاريع المأخوذة وغير مأخوذة في آخر سنة
+                SqlDataSource6.SelectCommand = "SELECT TOP(2) COUNT(Project_ID), taken_stat, dates FROM (SELECT Project_ID, YEAR(Date) AS dates, Is_Taken, CASE WHEN Is_Taken = 0 THEN N'غير مأخوذة' WHEN Is_Taken = 1 THEN N'مأخوذة' END AS taken_stat FROM EEProject) as projectT GROUP BY taken_stat, dates ORDER BY dates DESC";
+                Chart6.Series[0].XValueMember = "taken_stat";
+                Chart6.Series[0].YValueMembers = "dates";
+                Chart6.Series[0].Label = "#PERCENT{P0}";
+                Chart6.Series[0].LegendText ="#VALX";
+
+                // عدد المشاريع في كل سنة
+                SqlDataSource7.SelectCommand = "SELECT TOP(3) YEAR(Date) AS year, COUNT(Project_ID) AS project FROM EEProject GROUP BY YEAR(Date) ORDER BY YEAR(Date) DESC";
+                Chart7.Series[0].XValueMember = "year";
+                Chart7.Series[0].YValueMembers = "project";
             }
             else if (range2.SelectedIndex == 1)
             {
                 // ستة اشهر
+                //***************************************************** الأفكار
+
                 // التقنيات المستخدمة في الافكار خلال اخر ستة اشهر
                 SqlDataSource2.SelectCommand = "SELECT COUNT(tec.Idea_ID) AS idea_num, tec.tech_name, tec.y, tec.m FROM (SELECT Idea_ID, tech_name, MONTH(Date) AS m, YEAR(Date) AS y FROM EEIdea, Technologies WHERE Technologies.type ='I' AND EEIdea.Idea_ID = Technologies.ID AND YEAR(Date) = YEAR(GETDATE())) AS tec GROUP BY tec.tech_name, y, m ORDER BY y DESC, m DESC";
+               
                 // عدد الافكار المأخوذة وغير مأخوذة في اخر ستة اشهر
                 SqlDataSource3.SelectCommand = "SELECT TOP(6) COUNT(Idea_ID), taken_stat, y, m FROM (SELECT Idea_ID, YEAR(Date) AS y, MONTH(Date) AS m, Is_Taken, CASE WHEN Is_Taken = 0 THEN N'غير مأخوذة' WHEN Is_Taken = 1 THEN N'مأخوذة' END AS taken_stat FROM EEIdea WHERE YEAR(Date) = YEAR(GETDATE())) as ideaT GROUP BY taken_stat, y, m ORDER BY y DESC, m DESC";
                 Chart3.Series[0].XValueMember = "taken_stat";
@@ -168,11 +194,14 @@ namespace EstashirEbtakir
                 SqlDataSource4.SelectCommand = "SELECT TOP(6) MONTH(Date) AS m, YEAR(Date) AS y, COUNT(Idea_ID) AS ideas FROM EEIdea GROUP BY MONTH(Date), YEAR(Date) ORDER BY y DESC, m DESC";
                 Chart4.Series[0].XValueMember = "m";
                 Chart4.Series[0].YValueMembers = "ideas";
+
+                //***************************************************** المشاريع
+
             }
             else
             {
                 // جميعها 
-                // التقنيات المستخدمة في الافكار
+                //***************************************************** الأفكار
 
                 // التقنيات المستخدمة في الافكار
                 SqlDataSource2.SelectCommand = "SELECT COUNT(tec.Idea_ID) AS idea_num, tec.tech_name FROM (SELECT Idea_ID, tech_name FROM EEIdea, Technologies WHERE Technologies.type ='I' AND EEIdea.Idea_ID = Technologies.ID) AS tec GROUP BY tec.tech_name ORDER BY idea_num";
@@ -185,9 +214,12 @@ namespace EstashirEbtakir
                 Chart3.Series[0].LegendText ="#VALX";
 
                 // عدد الافكار المضافة 
-                SqlDataSource4.SelectCommand = "";
-                Chart4.Series[0].XValueMember = "m";
+                SqlDataSource4.SelectCommand = "SELECT YEAR(Date) AS year, COUNT(Idea_ID) AS ideas FROM EEIdea GROUP BY YEAR(Date) ORDER BY YEAR(Date) DESC";
+                Chart4.Series[0].XValueMember = "year";
                 Chart4.Series[0].YValueMembers = "ideas";
+
+                //***************************************************** المشاريع
+
             }
 
 
@@ -195,20 +227,20 @@ namespace EstashirEbtakir
             Chart2.DataBind(); //must use to override the colors of bar
 
             // ******************************************** الافضل اسوي ميثود تلون ويكون الاستدعاء هنا عشان يتسوى لها رن سواء من البوتون او لما تفتح الصفحة اول مرة ********************************************
-            var c = new String[] { "#9C7C9E", "#FF7F82", "#596482", "#50D1CD" };
-            // coloring
-            int count = 0;
-            foreach (var p in Chart2.Series["Series1"].Points)
-            {
+            //var c = new String[] { "#9C7C9E", "#FF7F82", "#596482", "#50D1CD" };
+            //// coloring
+            //int count = 0;
+            //foreach (var p in Chart2.Series["Series1"].Points)
+            //{
 
-                p.Color = ColorTranslator.FromHtml(c[count]);
-                count++;
+            //    p.Color = ColorTranslator.FromHtml(c[count]);
+            //    count++;
 
-                if (count > 3)
-                {
-                    count = 0;
-                }
-            }
+            //    if (count > 3)
+            //    {
+            //        count = 0;
+            //    }
+            //}
         }
 
         public string GetConstring()
