@@ -20,10 +20,6 @@ namespace EstashirEbtakir
            
             string mainconn= ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
-
-            
-            string sqlqueryIdea = "Select * from [dbo].[EEIdea] where Idea_ID=" + Id;
-            SqlCommand sqlcommIdea = new SqlCommand(sqlqueryIdea, sqlconn);
             sqlconn.Open(); 
             string sqlquery = "Select * from [dbo].[EEIdea] where Idea_Id='" + Id + "'";
             SqlDataAdapter da = new SqlDataAdapter(sqlquery, sqlconn);
