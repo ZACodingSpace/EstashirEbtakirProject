@@ -146,47 +146,50 @@
 
             <!------------------------------------------ Ideas Section ------------------------------------>
             <div class="tab-pane fade show active" id="ideas" role="tabpanel" aria-labelledby="consultancies-tab">
-                <div class="tabs-content-container row">
+                <!-- Cards -->
+                <div class="tabs-content-container row mt-lg-5 p-5">
 
-                    <!-- Cards -->
-                    <asp:DataList ID="DataListIdea" runat="server" RepeatColumns="4">
+                    <asp:DataList ID="DataListIdea" class="page-data-container" runat="server" RepeatColumns="4">
                         <ItemTemplate>
-                            <table class="IdeaTable">
+                            <table class="ideas-table mt-4">
 
-                                <tr>
-                                    <td>
-                                        <img class="IdeaImage" src="Icons/Lightbulb.png">
-                                    </td>
-                                    <td>
-                                        <br />
-                                        <br />
+                                <%--First Section of the card--%>
+                                <tr class="idea-logo-area">
+                                    <td class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4 ps-lg-2 pe-lg-2">
+                                        <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png">
                                     </td>
                                 </tr>
 
-                                <tr>
-                                    <td class="IdeaName"><%#Eval("Idea_Name") %> </td>
-                                    <td></td>
-
-                                </tr>
-
-                                <tr>
-                                    <td class="BriefDB"><%#Eval("Brief") %> </td>
-                                </tr>
-
-
-                                <tr>
-                                    <td class="IdeasButton">
-                                        <button class="ideas-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" >
-                                            تفاصيل</button>
+                                <%--Second Section of the card--%>
+                                <tr class="idea-name-area">
+                                    <td class="idea-name-container row p-1">
+                                        <h3 class="idea-name p-1"><%#Eval("Idea_Name") %></h3>
                                     </td>
                                 </tr>
+
+                                <%--Third Section of the card--%>
+                                <tr class="idea-descroption-area">
+                                    <td class="idea-description-container">
+                                        <p class="idea-description m-0 col-8"><%#Eval("Brief") %></p>
+                                    </td>
+                                </tr>
+
+                                <%-- Last Section of the card --%>
+                                <tr class="card-button-area">
+                                    <td class="card-button-container row mt-4 mb-3">
+                                        <button class="idea-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">عرض الفكرة</button>
+                                    </td>
+                                </tr>
+
                             </table>
                         </ItemTemplate>
                     </asp:DataList>
-                    <asp:ListBox id="ListBox1" runat="server" style="display:none">
 
-            </asp:ListBox>
+
+                    <asp:ListBox ID="ListBox1" runat="server" Style="display: none"></asp:ListBox>
+
                 </div>
+
                 <div class="go-to-sections-homepage-container-area row mt-lg-5">
                     <div class="go-to-ideas-homepage-container col-6 ps-lg-3">
                         <h3 class="go-to-ideas-homepage">
@@ -223,10 +226,10 @@
                                         
                                         <%#Eval("Position") %>
                                     </td>
-                                   
+
                                 </tr>
 
-                                
+
                                 <tr>
                                     <td class="ConsCollegeMajorDB"><%#Eval("Department") %> - <%#Eval("Faculty") %> </td>
                                 </tr>
@@ -234,21 +237,21 @@
 
                                 <tr>
                                     <td class="ConsDetailsBookButton">
-                                        <button class="consultation-details-button col-4 p-0 ps-2 pe-2"> تفاصيل</button>
-                                        <button class="consultation-booking-button col-4 p-0 ps-2 pe-2">  احجز</button>
+                                        <button class="consultation-details-button col-4 p-0 ps-2 pe-2">تفاصيل</button>
+                                        <button class="consultation-booking-button col-4 p-0 ps-2 pe-2">احجز</button>
                                     </td>
 
-                               </tr>
+                                </tr>
 
-                                
+
 
                             </table>
                         </ItemTemplate>
                     </asp:DataList>
 
-                    <asp:ListBox id="ListBoxConsDetails" runat="server" style="display:none"> </asp:ListBox>
-                    
-                    <asp:ListBox id="ListBoxConsBooking" runat="server" style="display:none"> </asp:ListBox>
+                    <asp:ListBox ID="ListBoxConsDetails" runat="server" Style="display: none"></asp:ListBox>
+
+                    <asp:ListBox ID="ListBoxConsBooking" runat="server" Style="display: none"></asp:ListBox>
 
                 </div>
                 <!--------------->
@@ -310,9 +313,7 @@
                             </table>
                         </ItemTemplate>
                     </asp:DataList>
-                       <asp:ListBox id="ListBox3" runat="server" style="display:none">
-
-            </asp:ListBox>
+                    <asp:ListBox ID="ListBox3" runat="server" Style="display: none"></asp:ListBox>
 
                 </div>
                 <!------------------>
@@ -350,22 +351,22 @@
                                 </tr>
 
                                 <tr>
-                                    <td> <h3 class="eventDB">  <%#Eval("Name") %>  </h3> </td>
-                                </tr>
-
-                                <tr>
-                                    <td class = "eventButton">
-                                          <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" >تفاصيل</button>
+                                    <td>
+                                        <h3 class="eventDB"><%#Eval("Name") %>  </h3>
                                     </td>
                                 </tr>
 
-                              
+                                <tr>
+                                    <td class="eventButton">
+                                        <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">تفاصيل</button>
+                                    </td>
+                                </tr>
+
+
                             </table>
                         </ItemTemplate>
                     </asp:DataList>
-                    <asp:ListBox id="ListBox4" runat="server" style="display:none">
-
-            </asp:ListBox>
+                    <asp:ListBox ID="ListBox4" runat="server" Style="display: none"></asp:ListBox>
 
                 </div>
 
@@ -384,91 +385,91 @@
 
         </div>
     </div>
-<!--------------------------------------------------------->
-<script>
-    //Ideas
-    var b1 = document.getElementsByClassName("ideas-details-button");
-         var b2 = document.getElementById("ContentPlaceHolder1_ListBox1").children;
+    <!--------------------------------------------------------->
+    <script>
+        //Ideas
+        var b1 = document.getElementsByClassName("idea-details-button");
+        var b2 = document.getElementById("ContentPlaceHolder1_ListBox1").children;
 
-         var lst2 = []
-         for (var y = 0; y < b2.length; y++) {
-             lst2.push(b2[y].value)
-         }
+        var lst2 = []
+        for (var y = 0; y < b2.length; y++) {
+            lst2.push(b2[y].value)
+        }
 
-         for (var z = 0; z < lst2.length; z++) {
-             b1[z].id = lst2[z]
-             b1[z].addEventListener('click', function special() { window.open(`IdeasDetails.aspx?id=${this.id}`) })
-    }
-
-        //---------------------------
-
-    //Consultant-details
-    var b1 = document.getElementsByClassName("consultation-details-button");
-    var b2 = document.getElementById("ContentPlaceHolder1_ListBoxConsDetails").children;
-
-    var lst2 = []
-    for (var y = 0; y < b2.length; y++) {
-        lst2.push(b2[y].value)
-    }
-
-    for (var z = 0; z < lst2.length; z++) {
-        b1[z].id = lst2[z]
-       
-        b1[z].addEventListener('click', function special() { window.open(`ConsultantDetails.aspx?id=${this.id}`) })
-
-    }
+        for (var z = 0; z < lst2.length; z++) {
+            b1[z].id = lst2[z]
+            b1[z].addEventListener('click', function special() { window.open(`IdeasDetails.aspx?id=${this.id}`) })
+        }
 
         //---------------------------
 
-    //Consultant-booking
-    
-    var b1 = document.getElementsByClassName("consultation-booking-button");
-    var b2 = document.getElementById("ContentPlaceHolder1_ListBoxConsBooking").children;
+        //Consultant-details
+        var b1 = document.getElementsByClassName("consultation-details-button");
+        var b2 = document.getElementById("ContentPlaceHolder1_ListBoxConsDetails").children;
 
-    var lst2 = []
-    for (var y = 0; y < b2.length; y++) {
-        lst2.push(b2[y].value)
-    }
+        var lst2 = []
+        for (var y = 0; y < b2.length; y++) {
+            lst2.push(b2[y].value)
+        }
 
-    for (var z = 0; z < lst2.length; z++) {
-        b1[z].id = lst2[z]
+        for (var z = 0; z < lst2.length; z++) {
+            b1[z].id = lst2[z]
 
-        b1[z].addEventListener('click', function special() { window.open(`BookConsultation.aspx?id=${this.id}`) })
+            b1[z].addEventListener('click', function special() { window.open(`ConsultantDetails.aspx?id=${this.id}`) })
 
-    } 
-
-        //---------------------------
-
-    //Projects
-    var p1 = document.getElementsByClassName("project-details-button");
-    var p2 = document.getElementById("ContentPlaceHolder1_ListBox3").children;
-
-    var lstp2 = []
-    for (var y = 0; y < p2.length; y++) {
-        lstp2.push(p2[y].value)
-    }
-
-    for (var z = 0; z < lstp2.length; z++) {
-        p1[z].id = lstp2[z]
-        p1[z].addEventListener('click', function special() { window.open(`ProjectDetails.aspx?id=${this.id}`) })
-    }
+        }
 
         //---------------------------
 
-    //Events and participation
-    var e1 = document.getElementsByClassName("event-details-button");
-    var e2 = document.getElementById("ContentPlaceHolder1_ListBox4").children;
+        //Consultant-booking
 
-    var lstp2 = []
-    for (var y = 0; y < p2.length; y++) {
-        lstp2.push(p2[y].value)
-    }
+        var b1 = document.getElementsByClassName("consultation-booking-button");
+        var b2 = document.getElementById("ContentPlaceHolder1_ListBoxConsBooking").children;
 
-    for (var z = 0; z < lstp2.length; z++) {
-        p1[z].id = lstp2[z]
-        p1[z].addEventListener('click', function special() { window.open(`EventsHomePage.aspx?id=${this.id}`) })
-    }
+        var lst2 = []
+        for (var y = 0; y < b2.length; y++) {
+            lst2.push(b2[y].value)
+        }
 
-</script>
+        for (var z = 0; z < lst2.length; z++) {
+            b1[z].id = lst2[z]
+
+            b1[z].addEventListener('click', function special() { window.open(`BookConsultation.aspx?id=${this.id}`) })
+
+        }
+
+        //---------------------------
+
+        //Projects
+        var p1 = document.getElementsByClassName("project-details-button");
+        var p2 = document.getElementById("ContentPlaceHolder1_ListBox3").children;
+
+        var lstp2 = []
+        for (var y = 0; y < p2.length; y++) {
+            lstp2.push(p2[y].value)
+        }
+
+        for (var z = 0; z < lstp2.length; z++) {
+            p1[z].id = lstp2[z]
+            p1[z].addEventListener('click', function special() { window.open(`ProjectDetails.aspx?id=${this.id}`) })
+        }
+
+        //---------------------------
+
+        //Events and participation
+        var e1 = document.getElementsByClassName("event-details-button");
+        var e2 = document.getElementById("ContentPlaceHolder1_ListBox4").children;
+
+        var lstp2 = []
+        for (var y = 0; y < p2.length; y++) {
+            lstp2.push(p2[y].value)
+        }
+
+        for (var z = 0; z < lstp2.length; z++) {
+            p1[z].id = lstp2[z]
+            p1[z].addEventListener('click', function special() { window.open(`EventsHomePage.aspx?id=${this.id}`) })
+        }
+
+    </script>
 
 </asp:Content>
