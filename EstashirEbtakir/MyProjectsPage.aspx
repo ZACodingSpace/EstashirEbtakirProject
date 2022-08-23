@@ -33,48 +33,63 @@
         <!------------------------------------------------------->
                 <!-- Cards -->
 
-               <div class="tabs-content-container row">
 
-                    <!-- Cards -->
+        <asp:DataList ID="DataListProject" class="page-data-container" runat="server" RepeatColumns="4">
+            <ItemTemplate>
+                <table class="projects-table mt-4 p-0">
 
-                    <asp:DataList ID="DataListProject" runat="server" RepeatColumns="4">
-                        <ItemTemplate>
-                            <table class="ProjectTable">
+                    <%--First Section of the card--%>
+                    <tr class="project-logo-area m-0 p-0">
+                        <td class="project-logo-container row m-0">
+                            <img class="project-logo img-fluid p-0" src="Images/Project_Logo_3.jpg">
+                        </td>
+                    </tr>
 
-                                <tr>
-                                    <td class="imageTable">
-                                         <img class="projectImage" src="Images/Project_Logo_2.jpg" alt="Logo">
-                                    </td>
+                    <%--Second Section of the card--%>
+                    <tr class="project-name-area">
+                        <td class="project-name-container row mt-3 p-1">
+                            <h3 class="project-name p-1"><%#Eval("Project_Name") %></h3>
+                            <p class="project-state">حالة المشروع: <%#Eval("State") %>  </p>
+                        </td>
+                    </tr>
+                    
 
-                                </tr>
+                    <tr class="project-information-area">
+                        <td class="project-information-container row mt-3 p-0">
 
-                                <tr>
-                                    <td class="projectName"><%#Eval("Project_Name") %>  </td>
-                                    
-                                </tr>
+                            <%--Third Section of the card--%>
+                            <div class="college-name-container row p-0">
+                                <h6 class="college-label col-4 p-0">الكلية</h6>
+                                <h6 class="college-name col-8" id="H1" runat="server"><%#Eval("Faculty") %></h6>
+                            </div>
 
-                                <tr>
-                                    <td class="college">حالة المشروع</td>
-                                    <td class="collegeDB"><%#Eval("State") %> </td>
-                                </tr>
-                                <tr>
-                                    <td class="major">التخصص</td>
-                                    <td class="majorDB"><%#Eval("Major") %> </td>
-                                </tr>
+                            <!-- Forth Section of the card -->
+                            <div class="major-information-container row p-0">
+                                <h6 class="major-label col-4 p-0">التخصص</h6>
+                                <h6 class="major-name col-8" id="H2" runat="server"><%#Eval("Major") %></h6>
+                            </div>
 
+                        </td>
+                    </tr>
 
-                                <tr>
-                                    <td>
-                                        <button class="project-details-buttonP1 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
+                    <%-- Last Section of the card --%>
+                    <tr class="card-button-area">
+                        <td class="card-button-container row mt-4 mb-3">
+                              <button class="project-details-buttonP1 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
                                           >تعديل/حذف</button>
-                                        <button class="project-details-buttonP2 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
-                                           >تفاصيل</button>
-                      
-                                    </td>
-                                </tr>
-                            </table>
-                        </ItemTemplate>
-                    </asp:DataList>
+                            <button class="project-details-buttonP2 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">تفاصيل</button>
+                            
+
+                        </td>
+                    </tr>
+
+                </table>
+            </ItemTemplate>
+        </asp:DataList>
+
+
+                <!---->
+                           
 
                      <asp:ListBox id="ListBoxEditDeleteProject" runat="server" style="display:none">
 
@@ -84,8 +99,7 @@
 
             </asp:ListBox>
 
-                </div>
-                <!-------------------------------------------------------------------->
+                 <!-------------------------------------------------------------------->
 
 
 
