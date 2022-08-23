@@ -33,13 +33,13 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.WebControls.Label done;
 
         /// <summary>
-        /// ideaDetailsDescription control.
+        /// ProjectDetailsDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea ideaDetailsDescription;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea ProjectDetailsDescription;
 
         /// <summary>
         /// Pimg control.

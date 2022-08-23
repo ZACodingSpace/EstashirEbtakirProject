@@ -22,7 +22,7 @@
 
         <div class="projectDetails-description-container p-xl-5 p-lg-4 pt-md-5">
             <h4 class="projectDetails-description-label">نبذة عن الفكرة</h4>
-            <textarea class="projectDetails-description-textarea" id="ideaDetailsDescription" rows="10" runat="server"></textarea>
+            <textarea class="projectDetails-description-textarea" id="ProjectDetailsDescription" rows="10" runat="server"></textarea>
         </div>
 
 
