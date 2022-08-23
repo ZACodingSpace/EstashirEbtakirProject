@@ -40,8 +40,9 @@
             <div class="consultations-search-bar-container col-6">
 
                 <div class="consultations-serach-bar ms-lg-1 me-lg-1">
-                    <input class="consultations-form-control form-control " type="search" placeholder="البحث" aria-label="Search">
-                    <button class="consultations-search-button ps-lg-3 pe-lg-3 pt-1 pb-1" type="submit">ابحث</button>
+                    <input class="consultations-form-control form-control " id="searchText" runat="server" type="search" placeholder="البحث" aria-label="Search">
+                    <!-- <button class="consultations-search-button ps-lg-3 pe-lg-3 pt-1 pb-1" type="submit">ابحث</button> -->
+                     <asp:Button ID="Search" class="consultations-search-button ps-lg-3 pe-lg-3 pt-1 pb-1" runat="server" OnClick="Search_Click" Text="ابحث" />
                 </div>
 
                 <div class="sort-consultations ms-lg-1 me-lg-1"><i class="fa-solid fa-sort"></i></div>
