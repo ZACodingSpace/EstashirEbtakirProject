@@ -278,13 +278,12 @@
                                         <img class="project-logo img-fluid p-0" src="Images/Project_Logo_3.jpg">
                                     </td>
                                 </tr>
-                                <div class="pic-collegeDetails-container row m-0 pt-4">
+<%--                                <div class="pic-collegeDetails-container row m-0 pt-4">
                                     <div class="project-picDetails-container col p-xl-5 p-lg-4 pt-md-5">
                                         <h4 class="projectDetails-pic">صورة</h4>
                                         <asp:Image ID="Image1" runat="server" />
                                     </div>
-                                </div>
-
+                                </div>--%>
 
                                 <%--Second Section of the card--%>
                                 <tr class="project-name-area">

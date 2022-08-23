@@ -3291,10 +3291,6 @@ div.card-header {
 .ideas-details-content-container .idea-description-details-container .idea-details-description,
 .ideas-details-content-container .idea-technology-details-container .idea-details-technology {
    
-    display: block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     font-size: max(1.5vw, 2.5vh);
     border: none;
     background: none;
@@ -3316,16 +3312,9 @@ div.card-header {
     font-weight: bold;
     border: none;
     box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: var(--Purple-Mountain-Majesty);
 }
-
-    .add-ideaDetails-page-buttons-container .delete-ideaDetails-button,
-    .add-ideaDetails-page-buttons-container .edit-ideaDetails-button {
-        height: 4vh;
-        width: 10vh;
-
-    }
 
 
 /*******************************************************************************/
