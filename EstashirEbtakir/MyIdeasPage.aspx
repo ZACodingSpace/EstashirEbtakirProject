@@ -31,47 +31,49 @@
                 <!----------------------------------------------------------------------------------->
                 <!-- Idea Cards -->
 
-                <div class="tabs-content-container row mt-lg-5 p-5">
+              <div class="tabs-content-container row mt-lg-5 p-5">
 
-        <asp:DataList ID="DataListIdea" class="page-data-container" runat="server" RepeatColumns="4">
-            <ItemTemplate>
-                <table class="idea-table mt-4">
+                    <asp:DataList ID="DataListIdea" class="page-data-container" runat="server" RepeatColumns="4">
+                        <ItemTemplate>
+                            <table class="ideas-table mt-4">
 
-                    <%--First Section of the card--%>
-                    <tr class="idea-logo-area">
-                        <td class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4 ps-lg-2 pe-lg-2">
-                            <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png">
-                        </td>
-                    </tr>
+                                <%--First Section of the card--%>
+                                <tr class="idea-logo-area">
+                                    <td class="idea-logo-container row m-0 ms-2 me-2 p-3 ps-xl-4 pe-xl-4 ps-lg-2 pe-lg-2">
+                                        <img class="idea-logo img-fluid p-xl-4 p-lg-4" src="Icons/Lightbulb.png">
+                                    </td>
+                                </tr>
 
-                    <%--Second Section of the card--%>
-                    <tr class="idea-name-area">
-                        <td class="idea-name-container row p-1">
-                            <h3 class="idea-name p-1"><%#Eval("Idea_Name") %></h3>
-                        </td>        
-                        <td>حالة الفكرة</td>
-                        <td> <%#Eval("State") %> </td>
-                    </tr>
+                                <%--Second Section of the card--%>
+                                <tr class="idea-name-area">
+                                    <td class="idea-name-container row p-1">
+                                        <h3 class="idea-name p-1"><%#Eval("Idea_Name") %></h3>
+                                        <p class="idea-state "> حالة الفكرة:  <%#Eval("State") %> <br /></p>
 
-                    <%--Third Section of the card--%>
-                    <tr class="idea-descroption-area">
-                        <td class="idea-description-container">
-                            <p class="idea-description m-0 col-8"><%#Eval("Brief") %></p>
-                        </td>
-                    </tr>
+                                    </td>
+                                </tr>
 
+                                <%--Third Section of the card--%>
+                                <tr class="idea-descroption-area">
+                                    <td class="idea-description-container">
+                                        <p class="idea-description m-0 col-8"><%#Eval("Brief") %></p>
+                                    </td>
+                                </tr>
 
-                    <tr class="card-button-area">
-                        <td class="card-button-container row mt-4 mb-3">
-                            <button class="ideas-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2"
-                               >عرض الفكرة</button>
-                        </td>
-                    </tr>
+                                <%-- Last Section of the card --%>
+                                <tr class="card-button-area">
+                                    <td class="card-button-container row mt-4 mb-3">
+                                        <button class="idea-details-buttonI1 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" >تعديل/حذف</button>
+                                        <button class="idea-details-buttonI2 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">تفاصيل</button> </td>
+                                </tr>
 
-                </table>
-            </ItemTemplate>
-        </asp:DataList>
-                    <asp:ListBox id="ListBox1" runat="server" style="display:none">
+                            </table>
+                        </ItemTemplate>
+                    </asp:DataList>
+                    <asp:ListBox id="ListBoxEditDeleteIdea" runat="server" style="display:none">
+
+            </asp:ListBox>
+                     <asp:ListBox id="ListBoxDetails" runat="server" style="display:none">
 
             </asp:ListBox>
 
@@ -90,17 +92,32 @@
 
 
           <script>
-       var p1 = document.getElementsByClassName("ideas-details-button");
-       var p2 = document.getElementById("ContentPlaceHolder1_ListBox1").children;
+              //Edit-Delete
+              var p1 = document.getElementsByClassName("idea-details-buttonI1");
+              var p2 = document.getElementById("ContentPlaceHolder1_ListBoxEditDeleteIdea").children;
 
-       var lstp2 = []
-       for (var y = 0; y < p2.length; y++) {
-           lstp2.push(p2[y].value)
-       }
+              var lstp2 = []
+              for (var y = 0; y < p2.length; y++) {
+                  lstp2.push(p2[y].value)
+              }
 
-       for (var z = 0; z < lstp2.length; z++) {
-           p1[z].id = lstp2[z]
-           p1[z].addEventListener('click', function special() { window.open(`IdeasDetails.aspx?id=${this.id}`) })
-       }
+              for (var z = 0; z < lstp2.length; z++) {
+                  p1[z].id = lstp2[z]
+                  p1[z].addEventListener('click', function special() { window.open(`EditDeleteIdea.aspx?id=${this.id}`) })
+              }
+
+              //Details
+               var p1 = document.getElementsByClassName("idea-details-buttonI2");
+               var p2 = document.getElementById("ContentPlaceHolder1_ListBoxDetails").children;
+
+               var lstp2 = []
+               for (var y = 0; y < p2.length; y++) {
+                   lstp2.push(p2[y].value)
+               }
+
+               for (var z = 0; z < lstp2.length; z++) {
+                   p1[z].id = lstp2[z]
+                   p1[z].addEventListener('click', function special() { window.open(`IdeasDetails.aspx?id=${this.id}`) })
+               }
           </script>
 </asp:Content>

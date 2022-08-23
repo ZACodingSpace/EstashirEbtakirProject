@@ -46,7 +46,7 @@ namespace EstashirEbtakir
 
                 sqlconn = new SqlConnection(mainconn);
 
-                string sqlqueryCons2 = "Select Top 4 * from [dbo].[EECounselor] " +
+                string sqlqueryCons2 = "Select * from [dbo].[EECounselor] " +
                     "inner Join [dbo].[EEUser] ON Counselor_ID=User_ID";
                 SqlCommand sqlcommCons2 = new SqlCommand(sqlqueryCons2, sqlconn);
                 sqlconn.Open();
