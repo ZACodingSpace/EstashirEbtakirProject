@@ -27,8 +27,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7">
             </button>
         </div>
-
-
+        
         <!-- Slides -->
         <div class="carousel-inner">
 
@@ -75,7 +74,7 @@
             <!-- Events & Activities Section Slide -->
             <div class="carousel-item">
                 <img src="Images/EventsActivities.jpg" class="d-block w-100" style="height: 70vh;" alt="events & activities">
-          <div class="overlay"></div>
+                <div class="overlay"></div>
                 <div class="carousel-caption d-none d-md-flex flex-column h-50 align-items-start">
                     <a href="EventsHomePage.aspx" class="slide-button p-lg-2">الفعاليات والمشاركات</a>
                 </div>
@@ -92,7 +91,7 @@
     </div>
 
     <!-- *********************** Innovation Lab Description ************************** -->
-
+    
     <div class="description-container m-5">
         <div class="row">
             <div class="logo-section col-3 p-0 m-0">
@@ -278,18 +277,21 @@
                             <table class="projects-table mt-4 p-0">
 
                                 <%--First Section of the card--%>
+                                
                                 <tr class="project-logo-area m-0 p-0">
-                                    <td class="project-logo-container row m-0">
-                                        <img class="project-logo img-fluid p-0" src="Images/Project_Logo_3.jpg">
+                                    <td class="project-logo-container row m-0">                    
+                                        <img ID="image2" runat="server" class="project-logo img-fluid p-0" src="Images/Project_Logo_3.jpg">
+                                        <asp:Image ID="Image1" runat="server" />
                                     </td>
                                 </tr>
-       <div class="pic-collegeDetails-container row m-0 pt-4">
-        <div class="project-picDetails-container col p-xl-5 p-lg-4 pt-md-5">
-            <h4 class="projectDetails-pic">صورة</h4>
-            <asp:Image ID="Image1" runat="server" />
-       </div>
-                                              </div>
+                                <div class="pic-collegeDetails-container row m-0 pt-4">
+                                    <div class="project-picDetails-container col p-xl-5 p-lg-4 pt-md-5">
+                                        <h4 class="projectDetails-pic">صورة</h4>
+                                        <asp:Image ID="Image4" runat="server" />
+                                    </div>
                                     
+                                </div>
+
 
                                 <%--Second Section of the card--%>
                                 <tr class="project-name-area">
@@ -351,7 +353,7 @@
 
             <!------------------------------------------ Events & Activities Section ------------------------------------>
             <div class="tab-pane fade" id="events-activities" role="tabpanel" aria-labelledby="events-activities-tab">
-                
+
                 <!-- Cards -->
                 <div class="tabs-content-container row mt-lg-5 p-5">
 
@@ -366,7 +368,7 @@
                                             <div class="event-name-container">
                                                 <h3 class="event-name"><%#Eval("Name") %></h3>
                                             </div>
-                                            <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" >تفاصيل</button>
+                                            <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">تفاصيل</button>
                                         </div>
 
                                     </td>

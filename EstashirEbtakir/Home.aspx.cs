@@ -114,7 +114,8 @@ namespace EstashirEbtakir
 
                 byte[] bytes = (byte[])dsPro.Rows[0].ItemArray[12];
                 string base64String = Convert.ToBase64String(bytes);
-              //  Image2.ImageUrl = "data:image/png;base64," + base64String;
+                //Image4.ImageUrl = "data:image/png;base64," + base64String;
+                //  Image2.ImageUrl = "data:image/png;base64," + base64String;
                 //   DataSet dsPro = new DataSet();
 
                 // sdaPro.Fill(dsPro);
