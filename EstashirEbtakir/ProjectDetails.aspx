@@ -5,14 +5,12 @@
 </asp:Content>
 
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <a class="project-btn" href="ProjectsSectionHomePage.aspx">رجوع</a>
-    
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">    
     <div class="browse-project-area">
        
          <div class="projectDetails-ideaLabel-container row">
         <div class="projectDetails-name-container col p-xl-5 p-lg-4 pt-md-5">
-            <h4 class="project-nameDetails">اسم الفكرة</h4>
+            <h4 class="project-nameDetails">اسم المشروع</h4>
             <input type="text" class="projectDetails-name-field" id="projectDetailsNameField" runat="server"  >
             <asp:Label ID="done" class="projectDetails-name" runat="server" Text=" "></asp:Label>
         </div>
@@ -21,7 +19,7 @@
 
 
         <div class="projectDetails-description-container p-xl-5 p-lg-4 pt-md-5">
-            <h4 class="projectDetails-description-label">نبذة عن الفكرة</h4>
+            <h4 class="projectDetails-description-label">نبذة عن المشروع</h4>
             <textarea class="projectDetails-description-textarea" id="ideaDetailsDescription" rows="10" runat="server"></textarea>
         </div>
 
@@ -29,7 +27,7 @@
          <div class="pic-collegeDetails-container row m-0 pt-4">
         <div class="project-picDetails-container col p-xl-5 p-lg-4 pt-md-5">
             <h4 class="projectDetails-pic">صورة</h4>
-            <input type="file" class="Porject-Details-img" id="Pimg" accept="image/png, image/gif, image/jpeg" runat="server"/>
+            <button formaction="" class="download-projectDetails-button m-1 ms-xl-4 ms-lg-3" id="Button2" runat="server">تنزيل</button>
        </div>
 
          <div class="projectDetails-college-container col p-xl-5 p-lg-4 pt-md-5">
@@ -62,7 +60,7 @@
 
          <div class="projectDetails-file-container col p-xl-5 p-lg-4 pt-md-5">
              <h4  class="projectDetails-file">الملف</h4>
-              <input type="file" class="projectDetails-File" id="fileProjectDetails" accept="application/pdf" runat="server"/>
+            <button formaction="" class="downloadFile-projectDetails-button m-1 ms-xl-4 ms-lg-3" id="Button3" runat="server">تنزيل</button>
          </div>
        </div>
 
