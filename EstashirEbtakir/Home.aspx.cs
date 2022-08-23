@@ -24,7 +24,7 @@ namespace EstashirEbtakir
 
 
                 //Ideas
-                string sqlqueryIdea = "Select Top 4 * from [dbo].[EEIdea] where Idea_ID='1' order by Idea_ID desc";
+                string sqlqueryIdea = "Select Top 4 * from [dbo].[EEIdea] where Idea_State='0' order by Idea_ID desc";
                 SqlCommand sqlcommIdea = new SqlCommand(sqlqueryIdea, sqlconn);
                 sqlconn.Open();
                 SqlDataAdapter sdaIdea = new SqlDataAdapter();
@@ -103,7 +103,7 @@ namespace EstashirEbtakir
                 //Projects
                 sqlconn = new SqlConnection(mainconn);
 
-                string sqlqueryPro = "Select Top 4 * from [dbo].[EEProject] where Project_ID='1' order by Project_ID desc";
+                string sqlqueryPro = "Select Top 4 * from [dbo].[EEProject] where Project_State='0' order by Project_ID desc";
                 SqlCommand sqlcommPro = new SqlCommand(sqlqueryPro, sqlconn);
                 sqlconn.Open();
                 SqlDataAdapter sdaPro = new SqlDataAdapter();
