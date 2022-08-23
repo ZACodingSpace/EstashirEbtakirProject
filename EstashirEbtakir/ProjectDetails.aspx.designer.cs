@@ -42,13 +42,13 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlTextArea ProjectDetailsDescription;
 
         /// <summary>
-        /// Button2 control.
+        /// Image1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton Button2;
+        protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
         /// collegeProjectDetails control.
@@ -96,13 +96,13 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.HtmlControls.HtmlInputText gradeP;
 
         /// <summary>
-        /// Button3 control.
+        /// downloadFile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton Button3;
+        protected global::System.Web.UI.WebControls.Button downloadFile;
 
         /// <summary>
         /// Text1 control.

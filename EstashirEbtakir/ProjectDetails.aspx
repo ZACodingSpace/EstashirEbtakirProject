@@ -20,14 +20,14 @@
 
         <div class="projectDetails-description-container p-xl-5 p-lg-4 pt-md-5">
             <h4 class="projectDetails-description-label">نبذة عن المشروع</h4>
-            <textarea class="projectDetails-description-textarea" id="ideaDetailsDescription" rows="10" runat="server"></textarea>
+            <textarea class="projectDetails-description-textarea" id="ProjectDetailsDescription" rows="10" runat="server"></textarea>
         </div>
 
 
          <div class="pic-collegeDetails-container row m-0 pt-4">
         <div class="project-picDetails-container col p-xl-5 p-lg-4 pt-md-5">
             <h4 class="projectDetails-pic">صورة</h4>
-            <button formaction="" class="download-projectDetails-button m-1 ms-xl-4 ms-lg-3" id="Button2" runat="server">تنزيل</button>
+            <asp:Image ID="Image1" runat="server" />
        </div>
 
          <div class="projectDetails-college-container col p-xl-5 p-lg-4 pt-md-5">
@@ -60,7 +60,7 @@
 
          <div class="projectDetails-file-container col p-xl-5 p-lg-4 pt-md-5">
              <h4  class="projectDetails-file">الملف</h4>
-            <button formaction="" class="downloadFile-projectDetails-button m-1 ms-xl-4 ms-lg-3" id="Button3" runat="server">تنزيل</button>
+             <asp:Button ID="downloadFile" class="downloadFile-projectDetails-button m-1 ms-xl-4 ms-lg-3" OnClick="downloadFile_Click" runat="server" Text="تنزيل" />
          </div>
        </div>
 
