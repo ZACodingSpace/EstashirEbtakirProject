@@ -133,7 +133,7 @@
 
                                 <!-- هذي فةق في المشاريع -->
                 
-                    <asp:Chart runat="server" ID="Chart5" DataSourceID="SqlDataSource2" BackColor="Transparent" BorderlineColor="Transparent" Height="380px" Width="540px">
+                    <asp:Chart runat="server" ID="Chart5" DataSourceID="SqlDataSource5" BackColor="Transparent" BorderlineColor="Transparent" Height="380px" Width="540px">
 
                         <Series>
                             <asp:Series Name="Series1" XValueMember="tech_name" YValueMembers="num" ChartType="Bar"></asp:Series>
@@ -145,13 +145,13 @@
                     <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
 
                     <!-- Number if taken and not taken ideas -->
-                    <asp:Chart ID="Chart6" runat="server" DataSourceID="SqlDataSource3" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
+                    <asp:Chart ID="Chart6" runat="server" DataSourceID="SqlDataSource6" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
                         <Legends>
                             <asp:Legend Alignment="Center" Docking="Bottom" IsTextAutoFit="False" Name="Default" LegendStyle="Column" BackColor="Transparent" Font="Calibri, 10">
                             </asp:Legend>
                         </Legends>
                         <Series>
-                            <asp:Series Name="Series1" XValueMember="taken_stat" YValueMembers="Column1" YValuesPerPoint="2" ChartType="Doughnut"></asp:Series>
+                            <asp:Series Name="Series1" YValuesPerPoint="2" ChartType="Doughnut"></asp:Series>
                         </Series>
                         <ChartAreas>
                             <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
@@ -168,7 +168,7 @@
 
                     <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>"></asp:SqlDataSource>
 
-                    <asp:Chart ID="Chart7" runat="server" DataSourceID="SqlDataSource4" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
+                    <asp:Chart ID="Chart7" runat="server" DataSourceID="SqlDataSource7" BackColor="Transparent" BorderlineColor="Transparent" Height="350px" Width="500px">
                         <Series>
                             <asp:Series Name="Series1" ChartType="Line"></asp:Series>
                         </Series>
