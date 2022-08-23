@@ -8,6 +8,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Reflection;
+using System.Drawing;
+using System.Security.Policy;
+using System.Runtime.Remoting.Messaging;
 
 
 namespace EstashirEbtakir
@@ -20,13 +23,26 @@ namespace EstashirEbtakir
             {
                 string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
                 SqlConnection sqlconn = new SqlConnection(mainconn);
+                sqlconn.Open();
+                SqlCommand cmdProfile = new SqlCommand("select * from EEUser where User_ID='" + Session["id"] + "'", sqlconn);
+                SqlDataReader readerProfile = cmdProfile.ExecuteReader();
 
+                if (readerProfile.Read())
+                {
+                    // display user info
+                   
+                    name.Attributes.Add("placeholder", readerProfile.GetString(1) + " " + readerProfile.GetString(2));
+                    job.Attributes.Add("placeholder", readerProfile.GetString(7));
+
+                }
+                sqlconn.Close();
+                sqlconn = new SqlConnection(mainconn);
                 string sqlqueryPro = "Select Faculty, Project_Name, Project_ID, Degree, Major, Case" +
                     " when Project_State = 0 then N'قيد المراجعة' when Project_State=1 then N'مقبول' else N'مرفوض' end as State " +
                     "from[dbo].[EEProject] inner join[dbo].[EEUser] On EEProject.User_ID = EEUSer.User_ID where EEProject.User_ID=" + Session["id"];
-
-                SqlCommand sqlcommPro = new SqlCommand(sqlqueryPro, sqlconn);
                 sqlconn.Open();
+                SqlCommand sqlcommPro = new SqlCommand(sqlqueryPro, sqlconn);
+                
                 SqlDataAdapter sdaPro = new SqlDataAdapter();
                 sdaPro.SelectCommand = sqlcommPro;
                 DataSet dsPro = new DataSet();
