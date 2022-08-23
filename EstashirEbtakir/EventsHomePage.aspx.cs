@@ -40,7 +40,7 @@ namespace EstashirEbtakir
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
             sqlconn.Open();
-            string sqlqueryEvent = "Select * from [dbo].[EventsAndParticipation] WHERE (Name LIKE '%' + @EName +'%' And Type= 0 )";
+            string sqlqueryEvent = "Select * from [dbo].[EventsAndParticipation] WHERE Type= 0 And (Name LIKE '%' + @EName +'%' )";
             SqlCommand sqlcommEvent = new SqlCommand(sqlqueryEvent, sqlconn);
             sqlcommEvent.Parameters.AddWithValue("@EName", text);
             SqlDataAdapter sdaEvent2 = new SqlDataAdapter(sqlcommEvent);
