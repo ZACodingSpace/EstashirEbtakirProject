@@ -283,6 +283,13 @@
                                         <img class="project-logo img-fluid p-0" src="Images/Project_Logo_3.jpg">
                                     </td>
                                 </tr>
+       <div class="pic-collegeDetails-container row m-0 pt-4">
+        <div class="project-picDetails-container col p-xl-5 p-lg-4 pt-md-5">
+            <h4 class="projectDetails-pic">صورة</h4>
+            <asp:Image ID="Image1" runat="server" />
+       </div>
+                                              </div>
+                                    
 
                                 <%--Second Section of the card--%>
                                 <tr class="project-name-area">
@@ -359,7 +366,7 @@
                                             <div class="event-name-container">
                                                 <h3 class="event-name"><%#Eval("Name") %></h3>
                                             </div>
-                                            <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="EventsHomePage.aspx">تفاصيل</button>
+                                            <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" >تفاصيل</button>
                                         </div>
 
                                     </td>
@@ -464,14 +471,14 @@
         var e1 = document.getElementsByClassName("event-details-button");
         var e2 = document.getElementById("ContentPlaceHolder1_ListBox4").children;
 
-        var lstp2 = []
-        for (var y = 0; y < p2.length; y++) {
-            lstp2.push(p2[y].value)
+        var lste2 = []
+        for (var y = 0; y < e2.length; y++) {
+            lste2.push(e2[y].value)
         }
 
-        for (var z = 0; z < lstp2.length; z++) {
-            p1[z].id = lstp2[z]
-            p1[z].addEventListener('click', function special() { window.open(`EventsHomePage.aspx?id=${this.id}`) })
+        for (var z = 0; z < lste2.length; z++) {
+            e1[z].id = lste2[z]
+            e1[z].addEventListener('click', function special() { window.open(`UserViewEvent.aspx?id=${this.id}`) })
         }
 
     </script>

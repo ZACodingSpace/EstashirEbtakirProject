@@ -24,7 +24,7 @@ namespace EstashirEbtakir
 
 
                 //Ideas
-                string sqlqueryIdea = "Select Top 4 * from [dbo].[EEIdea] where Idea_State='0' order by Idea_ID desc";
+                string sqlqueryIdea = "Select Top 4 * from [dbo].[EEIdea] where Idea_State='1' order by Idea_ID desc";
                 SqlCommand sqlcommIdea = new SqlCommand(sqlqueryIdea, sqlconn);
                 sqlconn.Open();
                 SqlDataAdapter sdaIdea = new SqlDataAdapter();
@@ -103,14 +103,21 @@ namespace EstashirEbtakir
                 //Projects
                 sqlconn = new SqlConnection(mainconn);
 
-                string sqlqueryPro = "Select Top 4 * from [dbo].[EEProject] where Project_State='0' order by Project_ID desc";
+                string sqlqueryPro = "Select Top 4 * from [dbo].[EEProject] where Project_State='1' order by Project_ID desc";
                 SqlCommand sqlcommPro = new SqlCommand(sqlqueryPro, sqlconn);
                 sqlconn.Open();
                 SqlDataAdapter sdaPro = new SqlDataAdapter();
                 sdaPro.SelectCommand = sqlcommPro;
-                DataSet dsPro = new DataSet();
-
+                DataTable dsPro = new DataTable();
                 sdaPro.Fill(dsPro);
+
+
+                byte[] bytes = (byte[])dsPro.Rows[0].ItemArray[12];
+                string base64String = Convert.ToBase64String(bytes);
+              //  Image2.ImageUrl = "data:image/png;base64," + base64String;
+                //   DataSet dsPro = new DataSet();
+
+                // sdaPro.Fill(dsPro);
                 DataListProject.DataSource = dsPro;
                 DataListProject.DataBind();
                 SqlDataReader reader3 = sqlcommPro.ExecuteReader();

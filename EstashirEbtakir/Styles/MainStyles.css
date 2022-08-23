@@ -795,6 +795,15 @@ footer {
     text-overflow: ellipsis;
     font-size: max(2vw, 3vh);
 }
+.idea-name-area .idea-name-container .idea-state {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: max(1.2vw, 2vh);
+    color: var(--Purple-Mountain-Majesty);
+    te
+}
 
 .ideas-table .idea-descroption-area .idea-description-container {
     width: 100%;
@@ -821,11 +830,14 @@ footer {
     .ideas-table .card-button-area .card-button-container {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
     }
 
-.card-button-area .card-button-container .idea-details-button {
+.card-button-area .card-button-container .idea-details-button,
+.card-button-area .card-button-container .idea-details-buttonI1,
+.card-button-area .card-button-container .idea-details-buttonI2 {
     height: 30px;
+    margin-top:2px;
     border: none;
     box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
     border-radius: 5px;
@@ -883,6 +895,15 @@ footer {
     text-overflow: ellipsis;
     font-size: max(2vw, 3vh);
 }
+.project-name-area .project-name-container .project-state {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: max(1.2vw, 2vh);
+    color: var(--French-Pink);
+}
+
 
 .projects-table .project-information-area {
     width: calc(100vw / 4 - 30px);
@@ -927,17 +948,22 @@ footer {
     .projects-table .card-button-area .card-button-container {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
+        
     }
 
-.card-button-area .card-button-container .project-details-button {
+.card-button-area .card-button-container .project-details-button,
+.card-button-area .card-button-container .project-details-buttonP1,
+.card-button-area .card-button-container .project-details-buttonP2 {
     height: 30px;
+    margin-top:2px;
     border: none;
     box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
     border-radius: 5px;
     font-weight: bold;
     font-size: max(1vw, 2vh);
     background-color: var(--French-Pink);
+   
 }
 
 
@@ -3694,3 +3720,5 @@ div.card-header {
     border: none;
     text-decoration: underline;
 }
+
+

@@ -97,7 +97,7 @@
                     <%-- Last Section of the card --%>
                     <tr class="card-button-area">
                         <td class="card-button-container row mt-4 mb-3">
-                            <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">تفاصيل</button>
+                            <button class="project-details-buttonP2 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">تفاصيل</button>
                         </td>
                     </tr>
 
@@ -112,7 +112,7 @@
     <%-------------------- Scripts --------------------%>
 
     <script>
-        var p1 = document.getElementsByClassName("project-details-button");
+        var p1 = document.getElementsByClassName("project-details-buttonP2");
         var p2 = document.getElementById("ContentPlaceHolder1_ListBox3").children;
 
         var lstp2 = []
