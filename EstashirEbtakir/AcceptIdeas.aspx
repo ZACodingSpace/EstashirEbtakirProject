@@ -16,86 +16,62 @@
                 </div>
             </div>
             <ul>
-                <li><a href="AdminProfile.aspx"><i class="fas fa-id-card"></i> معلومات الحساب </a></li>
-                <li><a href="StatisticsPage.aspx"><i class="fa fa-line-chart"></i> الإحصائيات </a></li>
-                <li><a class="active" href="AcceptIdeas.aspx"><i class="fas fa-lightbulb"></i> الأفكار </a></li>
-                <li><a href="AcceptProjects.aspx"><i class="fas fa-file-alt"></i> المشاريع </a></li>
-                <li><a href="#"><i class="fas fa-comments"></i> الاستشارات </a></li>
+                <li><a href="AdminProfile.aspx"><i class="fas fa-id-card"></i>معلومات الحساب </a></li>
+                <li><a href="StatisticsPage.aspx"><i class="fa fa-line-chart"></i>الإحصائيات </a></li>
+                <li><a class="active" href="AcceptIdeas.aspx"><i class="fas fa-lightbulb"></i>الأفكار </a></li>
+                <li><a href="AcceptProjects.aspx"><i class="fas fa-file-alt"></i>المشاريع </a></li>
+                <li><a href="#"><i class="fas fa-comments"></i>الاستشارات </a></li>
             </ul>
 
         </div>
 
-    <div class="left-content-container col-9">
-        <div class="row behined-navbar-profile"></div>
+        <div class="left-content-container col-9">
+            <div class="row behined-navbar-profile"></div>
 
-        <div class="profile-path">الرئيسية/ الملف الشخصي/ معلومات الحساب</div>
+            <div class="profile-path">الرئيسية/ الملف الشخصي/ معلومات الحساب</div>
 
-        <div class="profileAccept">
+            <div class="profileAccept">
 
-            <div class="profileAcceptcontainer">
-                <div class="Accept">
-                    <h1>قبول الأفكار
+                <div class="profileAcceptcontainer">
+                    <div class="Accept">
+                        <h1>قبول الأفكار
        
-                    </h1>
-                    <!----------------------->
+                        </h1>
+                        
 
-                    <!---
-
-
-                        <div class="accepForm ">
-                        <div class="accepForm row ">
-
-                            <div class="col-6">
-                                <label for="proname">عنوان الفكرة: </label>
+                            <div class="ideaDetails-ideaLabel-container row">
+                                <div class="ideaDetails-name-container col p-xl-5 p-lg-4 pt-md-5">
+                                    <h4 class="idea-nameDetails">اسم الفكرة</h4>
+                                    <input type="text" class="ideaDetails-name-field" id="ideaDetailsNameField" runat="server">
+                                    <asp:Label ID="done" class="ideaDetails-name" runat="server" Text=" "></asp:Label>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <label for="proname">الفكرة</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                                <label for="abstrac">نبذة عن الفكرة:</label>
-                            </div>
-                            <div class="col-6">
-                                <label for="abstrac">نبذة عن الفكرة</label>
 
-                        <div class="accepForm row ">
 
-                            <div class="col-6">
-                                <label for="particit">الأعضاء المشاركين:</label>
+
+                            <div class="ideaDetails-description-container p-xl-5 p-lg-4 pt-md-5">
+                                <h4 class="ideaDetails-description-label">نبذة عن الفكرة</h4>
+                                <textarea class="ideaDetails-description-textarea" id="ideaDetailsDescription" rows="10" runat="server"></textarea>
                             </div>
-                            <div class="col-6">
-                                <label for="particit">اسماء الأعضاء المشاركين</label>
+
+                            <div class="ideaDetails-technology-container row">
+                                <div class="ideaDetails-technology-container col p-xl-5 p-lg-4 pt-md-5">
+                                    <h4 class="idea-technologyDetails">التقنيات الممكن استخدامها لتنفيذ المشروع</h4>
+                                    <input type="text" class="ideaDetails-technology-field" id="Text3" runat="server">
+                                    <asp:Label ID="Label1" class="ideaDetails-technology" runat="server" Text=" "></asp:Label>
+                                </div>
                             </div>
                         </div>
-                        <div class="accepForm row">
 
-                            <div class="col-6">
-                   
+                    
+                    <asp:GridView ID="GridViewAcceptIdeas" runat="server" AutoGenerateColumns="False" CssClass="gridAcceptIdeas">
 
-                                <label for="degree">الدرجة:</label>
-                            </div>
-                            <div class="col-6">
-                                <label for="degree">الدرجة</label>
-                            </div>
-                        </div>
-                        <div class="accepForm row ">
+                        <Columns>
 
-                            <div class="col-6">
-                                <label for="coll">التقنية المستخدمة:</label>
-                            </div>
+                            <asp:BoundField DataField="Idea_Name" runat="server" />
 
-                        -->
-
-                    <!------------------------>
-
-                     <asp:GridView ID="GridViewAcceptIdeas" runat="server" AutoGenerateColumns="False" CssClass="gridAcceptIdeas">
-
-        <Columns>
-     
-                <asp:BoundField DataField="Idea_Name" runat="server"/>
-
-       </Columns>
-       </asp:GridView>
+                        </Columns>
+                    </asp:GridView>
 
 
 
@@ -104,11 +80,11 @@
                     <div class="accepBtns-container">
                         <div class="accepBtn-container m-1 me-xl-4 me-lg-3 p-lg-2">
 
-                            <asp:Button class="accepBtn p-0 ps-2 pe-2" ID="Button3" runat="server" Text="قبول الفكرة" />
+                            <asp:Button class="accepBtn p-0 ps-2 pe-2" ID="AcceptB" OnClick="AcceptB_Click" runat="server" Text="قبول الفكرة" />
                         </div>
                         <div class="accepBtn-container m-1 me-xl-4 me-lg-3 p-lg-2">
 
-                            <asp:Button class="accepBtn p-0 ps-2 pe-2" ID="Button4" runat="server" Text="رفض الفكرة" />
+                            <asp:Button class="accepBtn p-0 ps-2 pe-2" ID="RejectB" OnClick="RejectB_Click" runat="server" Text="رفض الفكرة" />
                         </div>
                     </div>
 
