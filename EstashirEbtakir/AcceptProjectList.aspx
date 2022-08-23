@@ -139,7 +139,7 @@
 
         <Columns>
 
-            <asp:BoundField DataField="Idea_Name" HeaderText="اسم الفكرة" />
+            <asp:BoundField DataField="Project_Name" HeaderText="اسم المشروع" />
             <asp:BoundField DataField="Date" HeaderText="التاريخ" />
            
 
@@ -153,7 +153,7 @@
 
              <asp:TemplateField >
             <ItemTemplate>
-             <button class="ButtonSelectDelete" runat="server" > حذف الفكرة</button>
+             <button class="ButtonSelectDelete" runat="server" >حذف المشروع</button>
 
 
             </ItemTemplate>
