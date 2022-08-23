@@ -85,7 +85,7 @@ namespace EstashirEbtakir
             Chart7.Titles.Add(new Title());
 
 
-            if (range2.SelectedIndex == 0) // سنة
+            if (range1.SelectedIndex == 0) // سنة
             {
                 //***************************************************** الأفكار
 
@@ -129,7 +129,7 @@ namespace EstashirEbtakir
                 Chart7.Series[0].XValueMember = "year";
                 Chart7.Series[0].YValueMembers = "projects";
             }
-            else if (range2.SelectedIndex == 1)
+            else if (range1.SelectedIndex == 1)
             {
                 // ستة اشهر
                 //***************************************************** الأفكار
@@ -229,7 +229,6 @@ namespace EstashirEbtakir
                 ch.DataBind();
                 if (ch.Series[0].ChartType.ToString() == "Bar" || ch.Series[0].ChartType.ToString() == "Column")
                 {
-                    test.Text += "in-if";
                     // coloring
                     int count = 0;
                     foreach (var p in ch.Series["Series1"].Points)
