@@ -3138,13 +3138,22 @@ div.card-header {
         border-radius: 5px;
         background-color: var(--French-Pink);
     }
-
-
+.download-projectDetails-button,
+.downloadFile-projectDetails-button {
+    height: 4vh;
+    width: 10vh;
+    text-decoration: none;
+    text-align: center;
+    font-size: max(1vw, 2vh);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    border-radius: 5px;
+    background-color: var(--French-Pink);
+}
 /* Browse Project section page Styles End */
-
-
 /*******************************************************************************/
-
 /* ideas details */
 .browse-ideas-area {
     margin: 5% 10%;
