@@ -15,6 +15,15 @@ namespace EstashirEbtakir
     {
 
         /// <summary>
+        /// ideaDetailsNameField control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ideaDetailsNameField;
+
+        /// <summary>
         /// ideaDescriptionTextareaED control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,24 @@ namespace EstashirEbtakir
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlButton deleteIdeaButtonED;
+
+        /// <summary>
+        /// DeleteB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button DeleteB;
+
+        /// <summary>
+        /// EditB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button EditB;
 
         /// <summary>
         /// editIdeaButtionED control.
