@@ -143,7 +143,7 @@
                     <asp:Chart runat="server" ID="Chart5" DataSourceID="SqlDataSource5" BackColor="Transparent" BorderlineColor="Transparent" Height="380px" Width="540px">
 
                         <Series>
-                            <asp:Series Name="Series1" XValueMember="tech_name" YValueMembers="num" ChartType="Bar"></asp:Series>
+                            <asp:Series Name="Series1" ChartType="Bar"></asp:Series>
                         </Series>
                         <ChartAreas>
                             <asp:ChartArea Name="ChartArea1" BackColor="Transparent"></asp:ChartArea>
@@ -158,7 +158,7 @@
                             </asp:Legend>
                         </Legends>
                         <Series>
-                            <asp:Series Name="Series1" YValuesPerPoint="2" ChartType="Doughnut"></asp:Series>
+                            <asp:Series Name="Series1" YValueMembers="Column1" YValuesPerPoint="2" ChartType="Doughnut"></asp:Series>
                         </Series>
                         <ChartAreas>
                             <asp:ChartArea Name="ChartArea1" BackColor="Transparent">
