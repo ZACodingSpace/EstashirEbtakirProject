@@ -75,7 +75,7 @@
             <!-- Events & Activities Section Slide -->
             <div class="carousel-item">
                 <img src="Images/EventsActivities.jpg" class="d-block w-100" style="height: 70vh;" alt="events & activities">
-          <div class="overlay"></div>
+                <div class="overlay"></div>
                 <div class="carousel-caption d-none d-md-flex flex-column h-50 align-items-start">
                     <a href="EventsHomePage.aspx" class="slide-button p-lg-2">الفعاليات والمشاركات</a>
                 </div>
@@ -192,11 +192,9 @@
 
                 <div class="go-to-sections-homepage-container-area row mt-lg-5">
                     <div class="go-to-ideas-homepage-container col-6 ps-lg-3">
-                        <h3 class="go-to-ideas-homepage">
 
-                            <a href="IdeasSectionHomePage.aspx">الانتقال إلى القسم</a>
+                        <a class="go-to-ideas-homepage" href="IdeasSectionHomePage.aspx">الانتقال إلى القسم</a>
 
-                        </h3>
                         <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
                     </div>
                 </div>
@@ -254,12 +252,9 @@
 
                 <div class="go-to-sections-homepage-container-area row mt-lg-5">
                     <div class="go-to-consultancies-homepage-container col-6 ps-lg-3">
-                        <h3 class="go-to-consultancies-homepage">
 
-                            <a href="ConsultationsSectionHomePage.aspx">الانتقال إلى القسم</a>
+                        <a class="go-to-consultancies-homepage" href="ConsultationsSectionHomePage.aspx">الانتقال إلى القسم</a>
 
-
-                        </h3>
                         <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
                     </div>
                 </div>
@@ -283,13 +278,13 @@
                                         <img class="project-logo img-fluid p-0" src="Images/Project_Logo_3.jpg">
                                     </td>
                                 </tr>
-       <div class="pic-collegeDetails-container row m-0 pt-4">
-        <div class="project-picDetails-container col p-xl-5 p-lg-4 pt-md-5">
-            <h4 class="projectDetails-pic">صورة</h4>
-            <asp:Image ID="Image1" runat="server" />
-       </div>
-                                              </div>
-                                    
+                                <div class="pic-collegeDetails-container row m-0 pt-4">
+                                    <div class="project-picDetails-container col p-xl-5 p-lg-4 pt-md-5">
+                                        <h4 class="projectDetails-pic">صورة</h4>
+                                        <asp:Image ID="Image1" runat="server" />
+                                    </div>
+                                </div>
+
 
                                 <%--Second Section of the card--%>
                                 <tr class="project-name-area">
@@ -334,12 +329,9 @@
                 <!------------------>
                 <div class="go-to-sections-homepage-container-area row mt-lg-5">
                     <div class="go-to-projects-homepage-container col-6 ps-lg-3">
-                        <h3 class="go-to-projects-homepage">
 
+                        <a class="go-to-projects-homepage" href="ProjectsSectionHomePage.aspx">الانتقال إلى القسم</a>
 
-                            <a href="ProjectsSectionHomePage.aspx">الانتقال إلى القسم</a>
-
-                        </h3>
                         <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
                     </div>
                 </div>
@@ -351,7 +343,7 @@
 
             <!------------------------------------------ Events & Activities Section ------------------------------------>
             <div class="tab-pane fade" id="events-activities" role="tabpanel" aria-labelledby="events-activities-tab">
-                
+
                 <!-- Cards -->
                 <div class="tabs-content-container row mt-lg-5 p-5">
 
@@ -366,7 +358,7 @@
                                             <div class="event-name-container">
                                                 <h3 class="event-name"><%#Eval("Name") %></h3>
                                             </div>
-                                            <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" >تفاصيل</button>
+                                            <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">تفاصيل</button>
                                         </div>
 
                                     </td>
@@ -383,10 +375,9 @@
                 <!------------------>
                 <div class="go-to-sections-homepage-container-area row mt-lg-5">
                     <div class="go-to-events-homepage-container col-6 ps-lg-3">
-                        <h3 class="go-to-events-homepage">
 
-                            <a href="EventsHomePage.aspx">الانتقال إلى القسم</a>
-                        </h3>
+                        <a class="go-to-events-homepage" href="EventsHomePage.aspx">الانتقال إلى القسم</a>
+
                         <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
                     </div>
                 </div>

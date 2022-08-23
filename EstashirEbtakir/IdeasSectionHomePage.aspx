@@ -34,7 +34,7 @@
         <div class="search-bar-and-buttons-container row mt-lg-5">
 
             <div class="add-idea-button-container col-6">
-                <button class="add-idea-button ps-lg-3 pe-lg-3 pt-1 pb-1" formaction="AddIdea.aspx">إضافة فكرة</button>
+                <button id="addIdeaButton" runat="server" class="add-idea-button ps-lg-3 pe-lg-3 pt-1 pb-1" formaction="AddIdea.aspx">إضافة فكرة</button>
             </div>
 
             <div class="ideas-search-bar-container col-6">

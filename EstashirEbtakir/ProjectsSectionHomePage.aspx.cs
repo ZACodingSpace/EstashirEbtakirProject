@@ -14,6 +14,24 @@ namespace EstashirEbtakir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (Session["id"] == null)
+            {
+                addProjectButton.Visible = false;
+            }
+            else
+            {
+                if (Session["University_ID"] == null)
+                {
+                    addProjectButton.Visible = false;
+
+                }
+                else
+                {
+                    addProjectButton.Visible = true;
+                }
+            }
+
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
