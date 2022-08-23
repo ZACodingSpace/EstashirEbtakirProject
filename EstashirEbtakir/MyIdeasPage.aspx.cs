@@ -19,7 +19,21 @@ namespace EstashirEbtakir
             {
                 string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
                 SqlConnection sqlconn = new SqlConnection(mainconn);
+                sqlconn.Open();
+                SqlCommand cmdProfile = new SqlCommand("select * from EEUser where User_ID='" + Session["id"] + "'", sqlconn);
+                SqlDataReader readerProfile = cmdProfile.ExecuteReader();
 
+                if (readerProfile.Read())
+                {
+                    // display user info
+
+                    name.Attributes.Add("placeholder", readerProfile.GetString(1) + " " + readerProfile.GetString(2));
+                    job.Attributes.Add("placeholder", readerProfile.GetString(7));
+
+                }
+                sqlconn.Close();
+                
+                sqlconn = new SqlConnection(mainconn);
                 string sqlqueryIdea = "Select *, Case when Idea_State = 0 then N'قيد المراجعة' when Idea_State=1 then N'مقبول' else N'مرفوض' end as State  " +
                     "from [dbo].[EEIdea] inner join [dbo].[EEUser] On EEIdea.User_ID=EEUSer.User_ID where EEIdea.User_ID=" + Session["id"] + " order by Idea_ID desc";
 
