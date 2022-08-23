@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="EstashirEbtakir.Home" %>
+﻿<%@ Page Title="الصفحة الرئيسية" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="EstashirEbtakir.Home" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -136,7 +136,7 @@
                 <button class="nav-link m-0 ps-lg-3 pe-lg-3 pt-lg-2 pb-lg-2" id="events-activities-tab" data-bs-toggle="tab"
                     data-bs-target="#events-activities" type="button" role="tab" aria-controls="events-activities"
                     aria-selected="false">
-                    الفعاليات والإنجازات</button>
+                    الفعاليات والمشاركات</button>
             </li>
 
         </ul>
