@@ -14,7 +14,7 @@
             <span class="m-0 p-0">/</span>
             <span class="m-0 p-0">الأقسام</span>
             <span class="m-0 p-0">/</span>
-            <a class="m-0 p-0 active-link" href="">المشاريع</a>
+            <a class="m-0 p-0 active-link" href="ProjectsSectionHomePage.aspx">المشاريع</a>
         </div>
 
         <div class="projects-description-container row pe-lg-4 mt-lg-5">
@@ -43,26 +43,24 @@
 
                 <div class="projects-serach-bar ms-lg-1 me-lg-1">
                     <input class="projects-form-control form-control " id="searchText" runat="server" type="search" placeholder="البحث" aria-label="Search">
-                    <!--<button class="projects-search-button ps-lg-3 pe-lg-3 pt-1 pb-1" type="submit">ابحث</button>-->
                     <asp:Button ID="Search" class="projects-search-button ps-lg-3 pe-lg-3 pt-1 pb-1" runat="server" OnClick="Search_Click" Text="ابحث" />
                 </div>
 
                 <div class="sort-projects ms-lg-1 me-lg-1"><i class="fa-solid fa-sort"></i></div>
                 <div class="filter-projects ms-lg-1 me-lg-1"><i class="fa-solid fa-filter"></i></div>
 
-
             </div>
         </div>
 
-
     </div>
 
-    <!-- Cards -->
+    <%-------------------- Cards --------------------%>
+
     <div class="tabs-content-container row mt-lg-5 p-5">
 
         <asp:DataList ID="DataListProject" class="page-data-container" runat="server" RepeatColumns="4">
             <ItemTemplate>
-                <table class="project-table mt-4 p-0">
+                <table class="projects-table mt-4 p-0">
 
                     <%--First Section of the card--%>
                     <tr class="project-logo-area m-0 p-0">
@@ -71,7 +69,6 @@
                         </td>
                     </tr>
 
-
                     <%--Second Section of the card--%>
                     <tr class="project-name-area">
                         <td class="project-name-container row mt-3 p-1">
@@ -79,10 +76,9 @@
                         </td>
                     </tr>
 
-                   
                     <tr class="project-information-area">
                         <td class="project-information-container row mt-3 p-0">
-                             
+
                             <%--Third Section of the card--%>
                             <div class="college-name-container row p-0">
                                 <h6 class="college-label col-4 p-0">الكلية</h6>
@@ -112,26 +108,8 @@
         <asp:ListBox ID="ListBox3" runat="server" Style="display: none"></asp:ListBox>
 
     </div>
-    <!---------------------------->
 
-    <div class="d-flex justify-content-center">
-
-        <ul class="pagination">
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
-
-    </div>
-
+    <%-------------------- Scripts --------------------%>
 
     <script>
         var p1 = document.getElementsByClassName("project-details-button");

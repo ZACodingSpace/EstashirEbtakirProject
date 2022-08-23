@@ -60,7 +60,7 @@
 
         <asp:DataList ID="DataListCons" class="page-data-container" runat="server" RepeatColumns="4">
             <ItemTemplate>
-                <table class="counselor-table mt-4 p-0">
+                <table class="counselors-table mt-4 p-0">
 
                     <%--First Section of the card--%>
                     <tr class="counselor-img-area m-0 p-0">

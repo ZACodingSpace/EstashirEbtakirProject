@@ -61,7 +61,7 @@
 
         <asp:DataList ID="DataListIdea" class="page-data-container" runat="server" RepeatColumns="4">
             <ItemTemplate>
-                <table class="idea-table mt-4">
+                <table class="ideas-table mt-4">
 
                     <%--First Section of the card--%>
                     <tr class="idea-logo-area">
