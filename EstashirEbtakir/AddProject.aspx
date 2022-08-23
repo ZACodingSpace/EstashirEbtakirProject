@@ -32,11 +32,18 @@
             <asp:Label id="projectNameMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
         </div>
 
-        <div class="project-description-container p-xl-5 p-lg-4 pt-md-5">
-            <h4 class="project-description-label">نبذة عن المشروع</h4>
-            <textarea class="project-description-textarea" id="projectDescriptionTextarea" rows="10" runat="server"></textarea>
-            <asp:Label id="projectDescriptionMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
+        <div class="description-members-container row">
+            <div class="project-description-container col p-xl-5 p-lg-4 pt-md-5">
+                <h4 class="project-description-label">نبذة عن المشروع</h4>
+                <textarea class="project-description-textarea" id="projectDescriptionTextarea" rows="10" runat="server"></textarea>
+                <asp:Label ID="projectDescriptionMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
+            </div>
 
+            <div class="project-members-container col p-xl-5 p-lg-4 pt-md-5">
+                <h4 class="project-members-label">الأعضاء</h4>
+                <textarea class="project-members-textarea" id="Textarea1" rows="10" runat="server">   </textarea>
+                <asp:Label ID="projectMembersMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
+            </div>
         </div>
 
         <div class="pic-college-container row m-0 pt-4">
@@ -67,14 +74,6 @@
          </div>
          </div>
 
-        <div class="project-members-container p-xl-5 p-lg-4 pt-md-5">
-            <h4 class="project-members-label">الأعضاء</h4>
-            <textarea class="project-members-textarea" id="Textarea1" rows="10" runat="server">   </textarea>
-           <asp:Label id="projectMembersMsg" class="error-msg-project" runat="server" ForeColor="Red"></asp:Label>
-
-         
-        </div>
-
         <div class="grade-file-container row m-0 pt-4">
          <div class="project-grade-container col p-xl-5 p-lg-4 pt-md-5">
             <h4  class="project-grade">الدرجة</h4>
@@ -91,11 +90,11 @@
          </div>
        </div>
 
-        <div class="innovation-lab-technologies-project p-xl-5 p-lg-4 pt-md-5">
+        <div class="innovation-lab-technologies p-xl-5 p-lg-4 pt-md-5">
 
             <h4 class="innovation-lab-technologies-header">اختر التقنيات الممكن استخدامها لتنفيذ المشروع</h4>
 
-            <div class="project-checkbox-list-container row row-cols-lg-4 row-cols-md-2">
+            <div class="project-checkbox-list-container row row-cols-lg-5 row-cols-md-2">
 
                 <div class="technology-list-item-container row m-0 pt-4">
                     <div class="technology-container col-lg-10 col-md-11 m-0 p-0">
@@ -103,14 +102,14 @@
                         <label class="technology-checkbox-label" for="VRtech">
                             <input class="technology-checkbox" type="checkbox" id="VRtech" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmarkP"></span>
-                                <span class="technology-nameP">نظارات الواقع الافتراضي</span>
+                                <span class="project-tickmark"></span>
+                                <span class="project-technology-name">نظارات الواقع الافتراضي</span>
                             </span>
                         </label> 
 
                     </div>
                         <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-VRtech.aspx" target="_blank">تفاصيل</a>
+                            <a class="project-technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-VRtech.aspx" target="_blank">تفاصيل</a>
                         </div>
                 </div>
 
@@ -120,8 +119,8 @@
                         <label class="technology-checkbox-label" for="ARtech">
                             <input class="technology-checkbox" type="checkbox" id="ARtech"  runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmarkP"></span>
-                                <span class="technology-nameP">تقنية الواقع المعزز</span>
+                                <span class="project-tickmark"></span>
+                                <span class="project-technology-name">تقنية الواقع المعزز</span>
                             </span>
                         </label>
 
@@ -129,7 +128,7 @@
 
                     </div> 
                     <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-ARtech.aspx" target="_blank">تفاصيل</a>
+                            <a class="project-technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-ARtech.aspx" target="_blank">تفاصيل</a>
                         </div>
                 </div>
 
@@ -139,8 +138,8 @@
                         <label class="technology-checkbox-label" for="Leaptech">
                             <input class="technology-checkbox" type="checkbox" id="Leaptech"  runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmarkP"></span>
-                                <span class="technology-nameP">واجهات التفاعل الطبيعية</span>
+                                <span class="project-tickmark"></span>
+                                <span class="project-technology-name">واجهات التفاعل الطبيعية</span>
                             </span>
                         </label>
 
@@ -148,7 +147,7 @@
 
                     </div>
                     <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-Leaptech.aspx" target="_blank">تفاصيل</a>
+                            <a class="project-technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-Leaptech.aspx" target="_blank">تفاصيل</a>
                         </div>
                 </div>
 
@@ -158,8 +157,8 @@
                         <label class="technology-checkbox-label" for="secondlifetech">
                             <input class="technology-checkbox" type="checkbox" id="secondlifetech" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmarkP"></span>
-                                <span class="technology-nameP">العوالم الافتراضية</span>
+                                <span class="project-tickmark"></span>
+                                <span class="project-technology-name">العوالم الافتراضية</span>
                             </span>
                         </label>
 
@@ -167,7 +166,7 @@
 
                     </div> 
                     <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-secondlifetech.aspx" target="_blank">تفاصيل</a>
+                            <a class="project-technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-secondlifetech.aspx" target="_blank">تفاصيل</a>
                         </div>
                 </div>
 
@@ -177,8 +176,8 @@
                         <label class="technology-checkbox-label" for="AItech">
                             <input class="technology-checkbox" type="checkbox" id="AItech" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmarkP"></span>
-                                <span class="technology-nameP">الذكاء الاصطناعي وتحليل البيانات</span>
+                                <span class="project-tickmark"></span>
+                                <span class="project-technology-name">الذكاء الاصطناعي وتحليل البيانات</span>
                             </span>
                         </label>
 
@@ -186,7 +185,7 @@
 
                     </div>
                     <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-AItech.aspx" target="_blank">تفاصيل</a>
+                            <a class="project-technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-AItech.aspx" target="_blank">تفاصيل</a>
                         </div>
                 </div>
 
@@ -197,8 +196,8 @@
                         <label class="technology-checkbox-label" for="robottech">
                             <input class="technology-checkbox" type="checkbox" id="robottech" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmarkP"></span>
-                                <span class="technology-nameP">الروبوتيك</span>
+                                <span class="project-tickmark"></span>
+                                <span class="project-technology-name">الروبوتيك</span>
                             </span>
                         </label>
 
@@ -206,7 +205,7 @@
 
                     </div>
                     <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-robottech.aspx" target="_blank">تفاصيل</a>
+                            <a class="project-technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-robottech.aspx" target="_blank">تفاصيل</a>
                         </div>
                 </div>
 
@@ -217,8 +216,8 @@
                         <label class="technology-checkbox-label" for="hologramtech">
                             <input class="technology-checkbox" type="checkbox" id="hologramtech" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmarkP"></span>
-                                <span class="technology-nameP">منصة العرض ثلاثية الأبعاد</span>
+                                <span class="project-tickmark"></span>
+                                <span class="project-technology-name">منصة العرض ثلاثية الأبعاد</span>
                             </span>
                         </label>
 
@@ -226,7 +225,7 @@
 
                     </div> 
                     <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-hologramtech.aspx" target="_blank">تفاصيل</a>
+                            <a class="project-technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-hologramtech.aspx" target="_blank">تفاصيل</a>
                         </div>
                 </div>
 
@@ -236,8 +235,8 @@
                         <label class="technology-checkbox-label" for="soundstudio">
                             <input class="technology-checkbox" type="checkbox" id="soundstudio" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmarkP"></span>
-                                <span class="technology-nameP">استديو انتاج الصوت</span>
+                                <span class="project-tickmark"></span>
+                                <span class="project-technology-name">استديو انتاج الصوت</span>
                             </span>
                         </label>
 
@@ -245,7 +244,7 @@
 
                     </div> 
                     <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-soundstudio.aspx" target="_blank">تفاصيل</a>
+                            <a class="project-technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-soundstudio.aspx" target="_blank">تفاصيل</a>
                         </div>
                 </div>
 
@@ -255,8 +254,8 @@
                         <label class="technology-checkbox-label" for="threeDprinttech">
                             <input class="technology-checkbox" type="checkbox" id="threeDprinttech" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmarkP"></span>
-                                <span class="technology-nameP">طابعة ثلاثية الأبعاد</span>
+                                <span class="project-tickmark"></span>
+                                <span class="project-technology-name">طابعة ثلاثية الأبعاد</span>
                             </span>
                         </label>
 
@@ -264,7 +263,7 @@
 
                     </div>
                     <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-3dprinttech.aspx" target="_blank">تفاصيل</a>
+                            <a class="project-technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-3dprinttech.aspx" target="_blank">تفاصيل</a>
                         </div>
                 </div>
 
@@ -276,8 +275,8 @@
                         <label class="technology-checkbox-label" for="virtualTours">
                             <input class="technology-checkbox" type="checkbox" id="virtualTours" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmarkP"></span>
-                                <span class="technology-nameP">الجولات الافتراضية والمشاهد البانورامية</span>
+                                <span class="project-tickmark"></span>
+                                <span class="project-technology-name">الجولات الافتراضية والمشاهد البانورامية</span>
                             </span>
                         </label>
 
@@ -285,7 +284,7 @@
 
                     </div>
                     <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-Virtual-tours.aspx" target="_blank">تفاصيل</a>
+                            <a class="project-technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-Virtual-tours.aspx" target="_blank">تفاصيل</a>
                         </div>
                 </div>
 
@@ -296,8 +295,8 @@
                         <label class="technology-checkbox-label" for="eyeTrack">
                             <input class="technology-checkbox" type="checkbox" id="eyeTrack" runat="server">
                             <span class="technology-inner-container">
-                                <span class="tickmarkP"></span>
-                                <span class="technology-nameP">جهاز تعقب حركة العين</span>
+                                <span class="project-tickmark"></span>
+                                <span class="project-technology-name">جهاز تعقب حركة العين</span>
                             </span>
                         </label>
 
@@ -305,7 +304,7 @@
 
                     </div> 
                     <div class="technology-details-button-container">
-                            <a class="technology-details-button-project" href="https://ddlg-elil.kau.edu.sa/Pages-eyetrack.aspx" target="_blank">تفاصيل</a>
+                            <a class="project-technology-details-button" href="https://ddlg-elil.kau.edu.sa/Pages-eyetrack.aspx" target="_blank">تفاصيل</a>
                         </div>
                 </div>
 
@@ -318,6 +317,25 @@
         </div>
 
     </div>
+
+        <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+        function initLandbot() {
+            if (!myLandbot) {
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                s.addEventListener('load', function () {
+                    myLandbot = new Landbot.Popup({
+                        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1341966-LKN6SZ66YOT8PGB6/index.json',
+                    });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+        }
+        </script>
 
 
 </asp:Content>
