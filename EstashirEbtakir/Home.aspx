@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="EstashirEbtakir.Home" %>
+﻿<%@ Page Title="الصفحة الرئيسية" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="EstashirEbtakir.Home" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -135,7 +135,7 @@
                 <button class="nav-link m-0 ps-lg-3 pe-lg-3 pt-lg-2 pb-lg-2" id="events-activities-tab" data-bs-toggle="tab"
                     data-bs-target="#events-activities" type="button" role="tab" aria-controls="events-activities"
                     aria-selected="false">
-                    الفعاليات والإنجازات</button>
+                    الفعاليات والمشاركات</button>
             </li>
 
         </ul>
@@ -191,11 +191,9 @@
 
                 <div class="go-to-sections-homepage-container-area row mt-lg-5">
                     <div class="go-to-ideas-homepage-container col-6 ps-lg-3">
-                        <h3 class="go-to-ideas-homepage">
 
-                            <a href="IdeasSectionHomePage.aspx">الانتقال إلى القسم</a>
+                        <a class="go-to-ideas-homepage" href="IdeasSectionHomePage.aspx">الانتقال إلى القسم</a>
 
-                        </h3>
                         <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
                     </div>
                 </div>
@@ -253,12 +251,9 @@
 
                 <div class="go-to-sections-homepage-container-area row mt-lg-5">
                     <div class="go-to-consultancies-homepage-container col-6 ps-lg-3">
-                        <h3 class="go-to-consultancies-homepage">
 
-                            <a href="ConsultationsSectionHomePage.aspx">الانتقال إلى القسم</a>
+                        <a class="go-to-consultancies-homepage" href="ConsultationsSectionHomePage.aspx">الانتقال إلى القسم</a>
 
-
-                        </h3>
                         <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
                     </div>
                 </div>
@@ -284,13 +279,13 @@
                                         <asp:Image ID="Image1" runat="server" />
                                     </td>
                                 </tr>
-                                <div class="pic-collegeDetails-container row m-0 pt-4">
+
+<%--                                <div class="pic-collegeDetails-container row m-0 pt-4">
                                     <div class="project-picDetails-container col p-xl-5 p-lg-4 pt-md-5">
                                         <h4 class="projectDetails-pic">صورة</h4>
-                                        <asp:Image ID="Image4" runat="server" />
+                                        <asp:Image ID="Image1" runat="server" />
                                     </div>
-                                    
-                                </div>
+                                </div>--%>
 
 
                                 <%--Second Section of the card--%>
@@ -336,12 +331,9 @@
                 <!------------------>
                 <div class="go-to-sections-homepage-container-area row mt-lg-5">
                     <div class="go-to-projects-homepage-container col-6 ps-lg-3">
-                        <h3 class="go-to-projects-homepage">
 
+                        <a class="go-to-projects-homepage" href="ProjectsSectionHomePage.aspx">الانتقال إلى القسم</a>
 
-                            <a href="ProjectsSectionHomePage.aspx">الانتقال إلى القسم</a>
-
-                        </h3>
                         <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
                     </div>
                 </div>
@@ -385,10 +377,9 @@
                 <!------------------>
                 <div class="go-to-sections-homepage-container-area row mt-lg-5">
                     <div class="go-to-events-homepage-container col-6 ps-lg-3">
-                        <h3 class="go-to-events-homepage">
 
-                            <a href="EventsHomePage.aspx">الانتقال إلى القسم</a>
-                        </h3>
+                        <a class="go-to-events-homepage" href="EventsHomePage.aspx">الانتقال إلى القسم</a>
+
                         <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
                     </div>
                 </div>

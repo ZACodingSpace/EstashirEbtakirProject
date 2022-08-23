@@ -34,7 +34,7 @@
         <div class="search-bar-and-buttons-container row mt-lg-5">
 
             <div class="book-consultation-button-container col-6">
-                <button class="book-consultation-button ps-lg-3 pe-lg-3 pt-1 pb-1" formaction="BookConsultation.aspx">حجز استشارة</button>
+                <button id="bookConsultationButton" runat="server" class="book-consultation-button ps-lg-3 pe-lg-3 pt-1 pb-1" formaction="BookConsultation.aspx">حجز استشارة</button>
             </div>
 
             <div class="consultations-search-bar-container col-6">

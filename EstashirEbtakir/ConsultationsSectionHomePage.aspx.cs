@@ -15,6 +15,15 @@ namespace EstashirEbtakir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["id"] == null)
+            {
+                bookConsultationButton.Visible= false;  
+            }
+            else
+            {
+               bookConsultationButton.Visible = true;
+            }
+
             if (!IsPostBack)
             {
                 string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;

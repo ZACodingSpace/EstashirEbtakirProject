@@ -14,6 +14,24 @@ namespace EstashirEbtakir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (Session["id"] == null)
+            {
+                addParticipationEventAchievementButton.Visible = false;
+            }
+            else
+            {
+                string type = (string)Session["Type"];
+                if (type == "User")
+                {
+                    addParticipationEventAchievementButton.Visible = false;
+                }
+                else
+                {
+                    addParticipationEventAchievementButton.Visible = true;
+                }
+            }
+
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
