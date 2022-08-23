@@ -206,51 +206,47 @@
 
             <!------------------------------------------ Consultancies Section ------------------------------------>
             <div class="tab-pane fade" id="consultancies" role="tabpanel" aria-labelledby="consultancies-tab">
-                <div class="tabs-content-container row">
+                <div class="tabs-content-container row mt-lg-5 p-5">
 
-                    <!-- Cards -->
-                    <asp:DataList ID="DataListCons" runat="server" RepeatColumns="4">
+                    <asp:DataList ID="DataListCons" class="page-data-container" runat="server" RepeatColumns="4">
                         <ItemTemplate>
-                            <table class="ConsTable">
+                            <table class="counselors-table mt-4 p-0">
 
-                                <tr>
-                                    <td>
-                                        <img class="ConsImage" src="Images/Profile_Icon.png" />
+                                <%--First Section of the card--%>
+                                <tr class="counselor-img-area m-0 p-0">
+                                    <td class="counselor-img-container row m-0 p-0 pt-xl-4 ps-xl-4 pe-xl-4 pt-lg-3 ps-lg-3 pe-lg-3">
+                                        <img class="counselor-img img-fluid p-3" src="Images/Profile_Icon.png">
                                     </td>
-
                                 </tr>
 
-                                <tr>
-
-                                    <td class="ConsName"><%#Eval("Fname") %>  <%#Eval("Lname") %>  - 
-                                        
-                                        <%#Eval("Position") %>
+                                <%--Second Section of the card--%>
+                                <tr class="counselor-name-area">
+                                    <td class="counselor-name-container row mt-5 p-1">
+                                        <h3 class="counselor-name mt-xl-4 mt-lg-3 p-1"><%#Eval("Fname") %>  <%#Eval("Lname") %></h3>
                                     </td>
-
                                 </tr>
 
-
-                                <tr>
-                                    <td class="ConsCollegeMajorDB"><%#Eval("Department") %> - <%#Eval("Faculty") %> </td>
+                                <%--Third Section of the card--%>
+                                <tr class="counselor-information-area">
+                                    <td class="counselor-information-container p-0 m-0">
+                                        <h3 class="counselor-information m-0 p-1"><%#Eval("Position") %> - <%#Eval("Department") %></h3>
+                                        <h3 class="counselor-information m-0 p-1"><%#Eval("Faculty") %></h3>
+                                    </td>
                                 </tr>
 
-
-                                <tr>
-                                    <td class="ConsDetailsBookButton">
+                                <!-- Last Section of the card -->
+                                <tr class="card-button-area">
+                                    <td class="card-button-container row m-0 p-0 mt-4 mb-3">
                                         <button class="consultation-details-button col-4 p-0 ps-2 pe-2">تفاصيل</button>
                                         <button class="consultation-booking-button col-4 p-0 ps-2 pe-2">احجز</button>
                                     </td>
-
                                 </tr>
-
-
 
                             </table>
                         </ItemTemplate>
                     </asp:DataList>
 
                     <asp:ListBox ID="ListBoxConsDetails" runat="server" Style="display: none"></asp:ListBox>
-
                     <asp:ListBox ID="ListBoxConsBooking" runat="server" Style="display: none"></asp:ListBox>
 
                 </div>
@@ -274,48 +270,60 @@
             <!------------------------------------------ Projects Section ------------------------------------>
 
             <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="consultancies-tab">
-                <div class="tabs-content-container row">
 
-                    <!-- Cards -->
+                <div class="tabs-content-container row mt-lg-5 p-5">
 
-                    <asp:DataList ID="DataListProject" runat="server" RepeatColumns="4">
+                    <asp:DataList ID="DataListProject" class="page-data-container" runat="server" RepeatColumns="4">
                         <ItemTemplate>
-                            <table class="ProjectTable">
+                            <table class="projects-table mt-4 p-0">
 
-                                <tr>
-                                    <td class="imageTable"></td>
-
-                                </tr>
-
-                                <tr>
-                                    <td class="projectName"><%#Eval("Project_Name") %>  </td>
-                                    <td>
-                                        <br />
+                                <%--First Section of the card--%>
+                                <tr class="project-logo-area m-0 p-0">
+                                    <td class="project-logo-container row m-0">
+                                        <img class="project-logo img-fluid p-0" src="Images/Project_Logo_3.jpg">
                                     </td>
                                 </tr>
 
-                                <tr>
-                                    <td class="college">الكلية</td>
-                                    <td class="collegeDB"><%#Eval("Faculty") %> </td>
-                                </tr>
-                                <tr>
-                                    <td class="major">التخصص</td>
-                                    <td class="majorDB"><%#Eval("Major") %> </td>
-                                </tr>
-
-
-                                <tr>
-                                    <td class="projectButton">
-                                        <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">
-                                            تفاصيل</button>
+                                <%--Second Section of the card--%>
+                                <tr class="project-name-area">
+                                    <td class="project-name-container row mt-3 p-1">
+                                        <h3 class="project-name p-1"><%#Eval("Project_Name") %></h3>
                                     </td>
                                 </tr>
+
+                                <tr class="project-information-area">
+                                    <td class="project-information-container row mt-3 p-0">
+
+                                        <%--Third Section of the card--%>
+                                        <div class="college-name-container row p-0">
+                                            <h6 class="college-label col-4 p-0">الكلية</h6>
+                                            <h6 class="college-name col-8" id="H1" runat="server"><%#Eval("Faculty") %></h6>
+                                        </div>
+
+                                        <!-- Forth Section of the card -->
+                                        <div class="major-information-container row p-0">
+                                            <h6 class="major-label col-4 p-0">التخصص</h6>
+                                            <h6 class="major-name col-8" id="H2" runat="server"><%#Eval("Major") %></h6>
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <%-- Last Section of the card --%>
+                                <tr class="card-button-area">
+                                    <td class="card-button-container row mt-4 mb-3">
+                                        <button class="project-details-button p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">تفاصيل</button>
+                                    </td>
+                                </tr>
+
                             </table>
                         </ItemTemplate>
                     </asp:DataList>
+
                     <asp:ListBox ID="ListBox3" runat="server" Style="display: none"></asp:ListBox>
 
                 </div>
+
                 <!------------------>
                 <div class="go-to-sections-homepage-container-area row mt-lg-5">
                     <div class="go-to-projects-homepage-container col-6 ps-lg-3">
@@ -328,6 +336,7 @@
                         <i class="fa-solid fa-arrow-left-long me-lg-3"></i>
                     </div>
                 </div>
+
             </div>
 
 
@@ -335,41 +344,36 @@
 
             <!------------------------------------------ Events & Activities Section ------------------------------------>
             <div class="tab-pane fade" id="events-activities" role="tabpanel" aria-labelledby="events-activities-tab">
-                <div class="tabs-content-container row">
+                
+                <!-- Cards -->
+                <div class="tabs-content-container row mt-lg-5 p-5">
 
-                    <!-- Cards -->
-
-                    <asp:DataList ID="DataListEvent" runat="server" RepeatColumns="4">
+                    <asp:DataList ID="DataListEvent" class="page-data-container" runat="server" RepeatColumns="4">
                         <ItemTemplate>
-                            <table class="EventTable">
+                            <table class="events-table mt-4">
+                                <tr class="event-img-area">
+                                    <td class="event-img-container row m-0 p-0">
+                                        <img class="event-img p-0 m-0" src="Images/Event_Img_2.jpg" alt="Logo">
 
-                                <tr>
-                                    <td class="imageTable">
-                                        <img class="eventImage" src="Images/Event_Img_1.jpg" />
-                                    </td>
+                                        <div class="overlay-content-container">
+                                            <div class="event-name-container">
+                                                <h3 class="event-name"><%#Eval("Name") %></h3>
+                                            </div>
+                                            <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2" formaction="EventsHomePage.aspx">تفاصيل</button>
+                                        </div>
 
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <h3 class="eventDB"><%#Eval("Name") %>  </h3>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td class="eventButton">
-                                        <button class="event-details-button mt-5 p-0 ps-xl-3 pe-xl-3 ps-lg-2 pe-lg-2">تفاصيل</button>
                                     </td>
                                 </tr>
-
 
                             </table>
                         </ItemTemplate>
                     </asp:DataList>
+
                     <asp:ListBox ID="ListBox4" runat="server" Style="display: none"></asp:ListBox>
 
                 </div>
 
+                <!------------------>
                 <div class="go-to-sections-homepage-container-area row mt-lg-5">
                     <div class="go-to-events-homepage-container col-6 ps-lg-3">
                         <h3 class="go-to-events-homepage">

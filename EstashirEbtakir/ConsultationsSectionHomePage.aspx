@@ -84,81 +84,57 @@
                         </td>
                     </tr>
 
-
-
                     <!-- Last Section of the card -->
                     <tr class="card-button-area">
                         <td class="card-button-container row m-0 p-0 mt-4 mb-3">
-                            <button class="consultation-details-button col-4 p-0 ps-2 pe-2" >تفاصيل</button>
-                            <button class="consultation-booking-button col-4 p-0 ps-2 pe-2" >احجز</button>
-                            </td>
-
+                            <button class="consultation-details-button col-4 p-0 ps-2 pe-2">تفاصيل</button>
+                            <button class="consultation-booking-button col-4 p-0 ps-2 pe-2">احجز</button>
+                        </td>
                     </tr>
 
                 </table>
             </ItemTemplate>
         </asp:DataList>
-          <asp:ListBox id="ListBoxConsDetails" runat="server" style="display:none">
 
-            </asp:ListBox>
-          <asp:ListBox id="ListBoxConsBooking" runat="server" style="display:none">
-
-            </asp:ListBox>
+        <asp:ListBox ID="ListBoxConsDetails" runat="server" Style="display: none"></asp:ListBox>
+        <asp:ListBox ID="ListBoxConsBooking" runat="server" Style="display: none"></asp:ListBox>
 
     </div>
-    <!-- Cards End -->
-    <!------------------------------------------------------------------------------>
-    <div class="d-flex justify-content-center">
+    <%-------------------- Scripts --------------------%>
 
-        <ul class="pagination">
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
+    <script>
+        var b1 = document.getElementsByClassName("consultation-details-button");
+        var b2 = document.getElementById("ContentPlaceHolder1_ListBoxConsDetails").children;
 
-    </div>
+        var lst2 = []
+        for (var y = 0; y < b2.length; y++) {
+            lst2.push(b2[y].value)
+        }
 
-<script>
-     var b1 = document.getElementsByClassName("consultation-details-button");
-    var b2 = document.getElementById("ContentPlaceHolder1_ListBoxConsDetails").children;
+        for (var z = 0; z < lst2.length; z++) {
+            b1[z].id = lst2[z]
 
-    var lst2 = []
-    for (var y = 0; y < b2.length; y++) {
-        lst2.push(b2[y].value)
-    }
+            b1[z].addEventListener('click', function special() { window.open(`ConsultantDetails.aspx?id=${this.id}`) })
 
-    for (var z = 0; z < lst2.length; z++) {
-        b1[z].id = lst2[z]
-       
-        b1[z].addEventListener('click', function special() { window.open(`ConsultantDetails.aspx?id=${this.id}`) })
-
-    }
+        }
 
 
-    //Consultant-booking
+        //Consultant-booking
 
-    var b1 = document.getElementsByClassName("consultation-booking-button");
-    var b2 = document.getElementById("ContentPlaceHolder1_ListBoxConsBooking").children;
+        var b1 = document.getElementsByClassName("consultation-booking-button");
+        var b2 = document.getElementById("ContentPlaceHolder1_ListBoxConsBooking").children;
 
-    var lst2 = []
-    for (var y = 0; y < b2.length; y++) {
-        lst2.push(b2[y].value)
-    }
+        var lst2 = []
+        for (var y = 0; y < b2.length; y++) {
+            lst2.push(b2[y].value)
+        }
 
-    for (var z = 0; z < lst2.length; z++) {
-        b1[z].id = lst2[z]
+        for (var z = 0; z < lst2.length; z++) {
+            b1[z].id = lst2[z]
 
-        b1[z].addEventListener('click', function special() { window.open(`BookConsultation.aspx?id=${this.id}`) })
+            b1[z].addEventListener('click', function special() { window.open(`BookConsultation.aspx?id=${this.id}`) })
 
-    } 
-</script>
+        }
+    </script>
 
 </asp:Content>
