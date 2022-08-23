@@ -74,8 +74,8 @@
 
             <!-- Events & Activities Section Slide -->
             <div class="carousel-item">
-                <img src="Images/Events & Activities.jpg" class="d-block w-100" style="height: 70vh;" alt="events & activities">
-                <div class="overlay"></div>
+                <img src="Images/EventsActivities.jpg" class="d-block w-100" style="height: 70vh;" alt="events & activities">
+          <div class="overlay"></div>
                 <div class="carousel-caption d-none d-md-flex flex-column h-50 align-items-start">
                     <a href="EventsHomePage.aspx" class="slide-button p-lg-2">الفعاليات والمشاركات</a>
                 </div>
