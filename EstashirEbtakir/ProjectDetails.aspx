@@ -1,100 +1,99 @@
-﻿<%@ Page Title="اسم المشروع" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="ProjectDetails.aspx.cs" Inherits="EstashirEbtakir.ProjectDetails" %>
+﻿<%@ Page Title="تفاصيل المشروع" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="ProjectDetails.aspx.cs" Inherits="EstashirEbtakir.ProjectDetails" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">    
-    <div class="browse-project-area">
-       
-         <div class="projectDetails-ideaLabel-container row">
-        <div class="projectDetails-name-container col p-xl-5 p-lg-4 pt-md-5">
-            <h4 class="project-nameDetails">اسم المشروع</h4>
-            <input type="text" class="projectDetails-name-field" id="projectDetailsNameField" runat="server" disabled  >
-            <asp:Label ID="done" class="projectDetails-name" runat="server" Text=" "></asp:Label>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <div class="project-details-page-container p-5">
+        <div class="project-details-content-container row p-5">
+
+            <div class="project-first-row-details-container row mt-3">
+
+                <div class="project-img-details-container col-6">
+                    <asp:Image ID="Image1" runat="server" class="project-img-details" />
+                    <h4 class="project-img-details-label">شعار المشروع</h4>
+                </div>
+
+                <div class="project-name-grade-file-container col-6">
+
+                    <div class="project-name-details-container row mt-3">
+                        <h4 class="project-name-details-label col">اسم المشروع</h4>
+                        <input type="text" class="project-name-details col" id="projectDetailsNameField" runat="server" disabled>
+                    </div>
+
+                    <div class="project-grade-details-container  row mt-3">
+                        <h4 class="project-grade-details-label col">الدرجة</h4>
+                        <input type="text" class="project-grade-details col" id="gradeP" runat="server" disabled />
+                    </div>
+
+                    <div class="project-file-details-container  row mt-3">
+                        <h4 class="project-file-details-label col-6">الملف</h4>
+                        <asp:Button ID="downloadFile" class="downloadFile-projectDetails-button p-1" OnClick="downloadFile_Click" runat="server" Text="تنزيل" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-description-details-container row mt-5">
+                <h4 class="project-description-details-label">نبذة عن المشروع</h4>
+                <textarea class="project-description-details" id="ProjectDetailsDescription" runat="server" disabled></textarea>
+            </div>
+
+            <div class="project-third-row-details-container row mt-3">
+                <div class="project-faculty-details-container col-6">
+                    <h4 class="project-faculty-details-label">الكلية</h4>
+                    <input type="text" class="project-faculty-details" id="collegeProjectDetails" runat="server" disabled />
+                </div>
+
+                <div class="project-major-details-container col-6">
+                    <h4 class="project-major-details-label">التخصص</h4>
+                    <input type="text" class="project-major-details" id="majorProjectDetails" runat="server" disabled />
+                </div>
+            </div>
+
+            <div class="project-fourt-row-details-container row mt-3">
+                <div class="project-members-details-container col-6">
+                    <h4 class="project-members-details-label">الأعضاء</h4>
+                    <textarea class="project-members-details" id="TextareaProjectDetails" runat="server" disabled>   </textarea>
+                </div>
+
+                <div class="project-supervisor-details-container col-6">
+                    <h4 class="project-supervisor-details-label">المشرف</h4>
+                    <input type="text" class="project-supervisor-details" id="supervisorP" runat="server" disabled />
+                </div>
+
+
+            </div>
+            <div class="project-technology-details-container row mt-3">
+                <h4 class="project-technology-details-label">التقنيات التي تم استخدامها لتنفيذ المشروع</h4>
+                <input type="text" class="project-technology-details" id="Text1" runat="server" disabled>
+            </div>
+
+            <div class="project-details-back-button-container row mt-3">
+                <button formaction="IdeasSectionHomePage.aspx" class="project-dtails-back-button p-1">رجوع</button>
+            </div>
+
         </div>
-        </div>
-
-
-
-        <div class="projectDetails-description-container p-xl-5 p-lg-4 pt-md-5">
-            <h4 class="projectDetails-description-label">نبذة عن المشروع</h4>
-            <textarea class="projectDetails-description-textarea" id="ProjectDetailsDescription" rows="10" runat="server" disabled></textarea>
-        </div>
-
-
-         <div class="pic-collegeDetails-container row m-0 pt-4">
-        <div class="project-picDetails-container col p-xl-5 p-lg-4 pt-md-5">
-            <h4 class="projectDetails-pic">صورة</h4>
-            <asp:Image ID="Image1" runat="server" />
-       </div>
-
-         <div class="projectDetails-college-container col p-xl-5 p-lg-4 pt-md-5">
-            <h4 class="projectDetails-college">الكلية</h4>
-            <input type="text" class="projectDetails-CollegeI" id="collegeProjectDetails" runat="server" disabled/> </div>
-        </div>
-
-         <div class="major-supervisorDetails-container row m-0 pt-4">
-         <div class="projectDetails-major-container col p-xl-5 p-lg-4 pt-md-5">
-            <h4 class="projectDetails-major">التخصص</h4>
-            <input type="text" class="projectDetails-Major" id="majorProjectDetails" runat="server" disabled />
-         </div>
-
-         <div class="projectDetails-supervisor-container col p-xl-5 p-lg-4 pt-md-5">
-            <h4  class="projectDetails-supervisor">المشرف</h4>
-            <input type="text"  class="projectDetails-Supervisor" id="supervisorP" runat="server" disabled /> 
-         </div>
-         </div>
-
-        <div class="projectDetails-members-container p-xl-5 p-lg-4 pt-md-5">
-            <h4 class="projectDetails-members-label">الأعضاء</h4>
-            <textarea class="projectDetails-members-textarea" id="TextareaProjectDetails" rows="10" runat="server" disabled >   </textarea>       
-        </div>
-
-        <div class="gradeDetails-file-container row m-0 pt-4">
-         <div class="projectDetails-grade-container col p-xl-5 p-lg-4 pt-md-5">
-            <h4  class="projectDetails-grade">الدرجة</h4>
-            <input type="text"  class="projectDetails-Grade" id="gradeP" runat="server" disabled/>
-         </div>
-
-         <div class="projectDetails-file-container col p-xl-5 p-lg-4 pt-md-5">
-             <h4  class="projectDetails-file">الملف</h4>
-             <asp:Button ID="downloadFile" class="downloadFile-projectDetails-button m-1 ms-xl-4 ms-lg-3" OnClick="downloadFile_Click" runat="server" Text="تنزيل" />
-         </div>
-       </div>
-
-
-        <div class="projectDetails-technology-container row">
-        <div class="projectDetails-technology-container col p-xl-5 p-lg-4 pt-md-5">
-            <h4 class="project-technologyDetails">التقنيات الممكن استخدامها لتنفيذ المشروع</h4>
-            <input type="text" class="projectDetails-technology-field" id="Text1" runat="server" disabled >
-            <asp:Label ID="Label1" class="projectDetails-technology" runat="server" Text=" "></asp:Label>
-        </div>
-        </div>
-
-
-        </div>
-               <div class="add-projectDetails-page-buttons-container m-lg-0 mt-md-5">
-            <button formaction="" class="edit-projectDetails-button m-1 ms-xl-4 ms-lg-3" id="cancelIdeaButton" runat="server">تعديل</button>
-            <button formaction="" class="delete-projectDetails-button m-1 ms-xl-4 ms-lg-3" id="Button1" runat="server">حذف</button>
-
     </div>
 
-        <script>
-     var p1 = document.getElementsByClassName("project-details-button");
-    var p2 = document.getElementById("ContentPlaceHolder1_ListBox3").children;
 
-    var lstp2 = []
-    for (var y = 0; y < p2.length; y++) {
-        lstp2.push(p2[y].value)
-    }
+    <%-----------------------Script------------------------%>
+    <script>
+        var p1 = document.getElementsByClassName("project-details-button");
+        var p2 = document.getElementById("ContentPlaceHolder1_ListBox3").children;
 
-    for (var z = 0; z < lstp2.length; z++) {
-        p1[z].id = lstp2[z]
-        p1[z].addEventListener('click', function special() { window.open(`ProjectDetails.aspx?id=${this.id}`) })
-    }
-        </script>
+        var lstp2 = []
+        for (var y = 0; y < p2.length; y++) {
+            lstp2.push(p2[y].value)
+        }
 
-               
+        for (var z = 0; z < lstp2.length; z++) {
+            p1[z].id = lstp2[z]
+            p1[z].addEventListener('click', function special() { window.open(`ProjectDetails.aspx?id=${this.id}`) })
+        }
+    </script>
+
 </asp:Content>

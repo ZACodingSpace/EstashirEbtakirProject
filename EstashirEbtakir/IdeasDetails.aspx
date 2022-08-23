@@ -23,8 +23,8 @@
                 <input type="text" class="idea-details-technology" id="Text1" runat="server" disabled>
             </div>
 
-            <div class="idea-etails-back-button-container row mt-3">
-                <button formaction="IdeasSectionHomePage.aspx" class="idea-etails-back-button p-1">رجوع</button>
+            <div class="idea-details-back-button-container row mt-3">
+                <button formaction="IdeasSectionHomePage.aspx" class="idea-details-back-button p-1">رجوع</button>
             </div>
 
         </div>
