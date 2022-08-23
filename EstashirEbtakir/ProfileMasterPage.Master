@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title></title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Bootstrap v5.2.0 - CSS -->
     <link href="Styles/bootstrap.min.css" rel="stylesheet" />
