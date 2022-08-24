@@ -36,15 +36,14 @@ namespace EstashirEbtakir
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
             sqlconn.Open();
-            SqlCommand cmd = new SqlCommand("DELETE FROM EEIdea WHERE WHERE Idea_ID='" + Id + "'", sqlconn);
+            SqlCommand cmd = new SqlCommand("DELETE FROM EEIdea WHERE Idea_ID='" + Id + "'", sqlconn);
             cmd.ExecuteNonQuery();
 
             SqlCommand cmd2 = new SqlCommand("DELETE FROM Technologies where ID='" + Id + "' And type= 'I'", sqlconn);
             cmd2.ExecuteNonQuery();
 
             ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
-                                    "Swal.fire({title: 'تم حذف الفكرة بنجاح',icon: 'success', confirmButtonText: 'موافق'}).then(function() { window.location = 'MyIdeasPage.aspx.aspx'})", true);
-
+                                    "Swal.fire({title: 'تم حذف الفكرة بنجاح',icon: 'success', confirmButtonText: 'موافق'}).then(function() { window.location = 'MyIdeasPage.aspx'})", true);
 
 
         }
@@ -57,10 +56,14 @@ namespace EstashirEbtakir
             SqlConnection sqlconn = new SqlConnection(mainconn);
             sqlconn.Open();
 
-            SqlCommand cmd = new SqlCommand("UPDATE EEIdea SET Idea_Name= '"+ ideaDetailsNameField.InnerText + "' And Brief='"+ ideaDescriptionTextareaED.Value + "'WHERE Idea_ID='" + Id + "'", sqlconn);
+            SqlCommand cmd = new SqlCommand("UPDATE EEIdea SET Brief= N'"+ ideaDescriptionTextareaED.Value + "' COLLATE Arabic_CI_AS WHERE Idea_ID='" + Id + "'", sqlconn);
             cmd.ExecuteNonQuery();
+
+            SqlCommand cmd2 = new SqlCommand("UPDATE EEIdea SET Idea_State='0' WHERE Idea_ID = '" + Id + "'", sqlconn);
+            cmd2.ExecuteNonQuery();
+
             ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
-                                    "Swal.fire({title: 'تم تعديل الفكرة بنجاح',icon: 'success', confirmButtonText: 'موافق'}).then(function() { window.location = 'MyIdeasPage.aspx.aspx'})", true);
+                                    "Swal.fire({title: 'تم تعديل الفكرة بنجاح',icon: 'success', confirmButtonText: 'موافق'}).then(function() { window.location = 'MyIdeasPage.aspx'})", true);
 
         }
     }

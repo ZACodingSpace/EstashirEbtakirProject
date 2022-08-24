@@ -357,21 +357,25 @@ footer {
 }
 
 .go-to-sections-homepage-container-area .go-to-ideas-homepage-container .go-to-ideas-homepage {
+    text-decoration:none;
     font-size: max(1vw, 3vh);
     color: var(--Purple-Mountain-Majesty);
 }
 
 .go-to-sections-homepage-container-area .go-to-consultancies-homepage-container .go-to-consultancies-homepage {
+    text-decoration: none;
     font-size: max(1vw, 3vh);
     color: var(--Lavender-Floral);
 }
 
 .go-to-sections-homepage-container-area .go-to-projects-homepage-container .go-to-projects-homepage {
+    text-decoration: none;
     font-size: max(1vw, 3vh);
     color: var(--French-Pink);
 }
 
 .go-to-sections-homepage-container-area .go-to-events-homepage-container .go-to-events-homepage {
+    text-decoration: none;
     font-size: max(1vw, 3vh);
     color: var(--Melon);
 }
@@ -550,23 +554,24 @@ footer {
     justify-content: flex-end;
 }
 
-.ideas-page-description-area .search-bar-and-buttons-container .add-idea-button-container,
-.Edit-idea-page-buttons-container,
-.consultations-page-description-area .search-bar-and-buttons-container .book-consultation-button-container,
-.projects-page-description-area .search-bar-and-buttons-container .add-project-button-container {
-    display: flex;
-    align-items: center;
-}
+    .ideas-page-description-area .search-bar-and-buttons-container .add-idea-button-container,
+    .consultations-page-description-area .search-bar-and-buttons-container .book-consultation-button-container,
+    .projects-page-description-area .search-bar-and-buttons-container .add-project-button-container,
+    .events-page-header-container .search-bar-and-buttons-container .add-participation-event-achievement-button-container{
+        display: flex;
+        align-items: center;
+    }
 
-.search-bar-and-buttons-container .add-idea-button-container .add-idea-button,
-.search-bar-and-buttons-container .book-consultation-button-container .book-consultation-button,
-.search-bar-and-buttons-container .add-project-button-container .add-project-button {
-    font-weight: bold;
-    font-size: max(1vw, 2vh);
-    border: none;
-    box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
-    border-radius: 5px;
-}
+    .search-bar-and-buttons-container .add-idea-button-container .add-idea-button,
+    .search-bar-and-buttons-container .book-consultation-button-container .book-consultation-button,
+    .search-bar-and-buttons-container .add-project-button-container .add-project-button,
+    .search-bar-and-buttons-container .add-participation-event-achievement-button-container .add-participation-event-achievement-button {
+        font-weight: bold;
+        font-size: max(1vw, 2vh);
+        border: none;
+        box-shadow: -2px -2px 4px #FFFFFF, 2px 2px 4px #BEC3CC;
+        border-radius: 5px;
+    }
 
 .search-bar-and-buttons-container .add-idea-button-container .add-idea-button,
 .ideas-search-bar-container .ideas-serach-bar .ideas-search-button,
@@ -589,6 +594,7 @@ footer {
     background-color: var(--French-Pink);
 }
 
+.add-participation-event-achievement-button-container .add-participation-event-achievement-button,
 .events-search-bar-container .events-serach-bar .events-search-button,
 .search-bar-and-buttons-container .events-search-bar-container .sort-events,
 .search-bar-and-buttons-container .events-search-bar-container .filter-events,
@@ -3177,74 +3183,70 @@ div.card-header {
 
 /*ريناد*/
 /* Browse Project section page Styles Start */
-.browse-project-area {
-    margin: 5% 10%;
-    padding: 2vh;
-    width: 80%;
-    box-shadow: inset -5px -5px 3px #FFFFFF, 5px 5px 3px #BEC3CC;
-    border-radius: 3vh;
+
+.project-details-page-container {
+    min-height: 100vh;
+    justify-content: center;
 }
-
-
-
-.project-nameDetails, .projectDetails-pic, .projectDetails-description-label, .projectDetails-college, .projectDetails-major,
-.projectDetails-supervisor, .projectDetails-members-label, .projectDetails-grade, .projectDetails-file {
-    font-size: max(1vw, 3.5vh);
-}
-
-.projectDetails-name-field, .Porject-Details-img, .projectDetails-CollegeI, .projectDetails-Major, .projectDetails-Supervisor,
-.projectDetails-Grade, .projectDetails-File {
-    width: 50vh;
-    height: 5vh;
-    border-radius: 5px;
-    border: none;
-    box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-    background-color: var(--Ghost-White);
-}
-
-.projectDetails-technology-field {
-    width: 55vh;
-    height: 5vh;
-    border-radius: 5px;
-    border: none;
-    box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-    background-color: var(--Ghost-White);
-}
-
-.projectDetails-description-textarea, .projectDetails-members-textarea {
-    width: 60vw;
-    border-radius: 5px;
-    border: none;
-    box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-    background-color: var(--Ghost-White);
-}
-
-.add-projectDetails-page-buttons-container {
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-    .add-projectDetails-page-buttons-container .delete-projectDetails-button,
-    .add-projectDetails-page-buttons-container .edit-projectDetails-button {
-        height: 4vh;
-        width: 10vh;
-        text-decoration: none;
-        text-align: center;
-        font-size: max(1vw, 2vh);
-        color: #000;
-        font-weight: bold;
+    .project-details-page-container .project-details-content-container {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
         border: none;
         box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-        border-radius: 5px;
-        background-color: var(--French-Pink);
+        background-color: var(--Ghost-White);
     }
 
-.download-projectDetails-button,
+.project-img-details-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+}
+
+.project-details-content-container .project-img-details-container .project-img-details {
+    width: 200px;
+    height: 200px;
+}
+
+
+.project-img-details-label,
+.project-name-details-label,
+.project-grade-details-label,
+.project-file-details-label,
+.project-description-details-label,
+.project-faculty-details-label,
+.project-major-details-label,
+.project-supervisor-details-label,
+.project-members-details-label,
+.project-technology-details-label {
+    font-size: max(2vw, 3vh);
+    color: var(--Purple-Mountain-Majesty);
+}
+
+.project-name-details,
+.project-grade-details,
+.project-description-details,
+.project-faculty-details,
+.project-major-details,
+.project-supervisor-details,
+.project-members-details,
+.project-technology-details {
+    font-size: max(1.5vw, 2.5vh);
+    border: none;
+    background: none;
+}
+
+.project-details-back-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-dtails-back-button,
 .downloadFile-projectDetails-button {
-    height: 4vh;
-    width: 10vh;
+    width: 100px;
+    height: 40px;
     text-decoration: none;
     text-align: center;
     font-size: max(1vw, 2vh);
@@ -3252,73 +3254,64 @@ div.card-header {
     font-weight: bold;
     border: none;
     box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: var(--French-Pink);
 }
+
 /* Browse Project section page Styles End */
+
+
 /*******************************************************************************/
 /* ideas details */
-.browse-ideas-area {
-    margin: 5% 10%;
-    padding: 2vh;
-    width: 80%;
-    box-shadow: inset -5px -5px 3px #FFFFFF, 5px 5px 3px #BEC3CC;
-    border-radius: 3vh;
+.ideas-details-page-container {
+    min-height: 100vh;
+    justify-content: center;
 }
-
-
-
-.idea-nameDetails, idea-technologyDetails {
-    font-size: max(1vw, 3.5vh);
-}
-
-.ideaDetails-name-field, ideaDetails-description-label {
-    width: 50vh;
-    height: 5vh;
-    border-radius: 5px;
-    border: none;
-    box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-    background-color: var(--Ghost-White);
-}
-
-.ideaDetails-technology-field {
-    width: 55vh;
-    height: 5vh;
-    border-radius: 5px;
-    border: none;
-    box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-    background-color: var(--Ghost-White);
-}
-
-.ideaDetails-description-textarea {
-    width: 60vw;
-    border-radius: 5px;
-    border: none;
-    box-shadow: inset -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-    background-color: var(--Ghost-White);
-}
-
-.add-ideaDetails-page-buttons-container {
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-    .add-ideaDetails-page-buttons-container .delete-ideaDetails-button,
-    .add-ideaDetails-page-buttons-container .edit-ideaDetails-button {
-        height: 4vh;
-        width: 10vh;
-        text-decoration: none;
-        text-align: center;
-        font-size: max(1vw, 2vh);
-        color: #000;
-        font-weight: bold;
+    .ideas-details-page-container .ideas-details-content-container {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
         border: none;
         box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
-        border-radius: 5px;
-        background-color: var(--Purple-Mountain-Majesty);
+        background-color: var(--Ghost-White);
     }
+
+.ideas-details-content-container .idea-name-details-container .idea-name-details-label,
+.ideas-details-content-container .idea-description-details-container .idea-description-details-label,
+.ideas-details-content-container .idea-technology-details-container .idea-technology-details-label {
+    font-size: max(2vw, 3vh);
+    color: var(--Purple-Mountain-Majesty);
+}
+
+.ideas-details-content-container .idea-name-details-container .idea-details-name,
+.ideas-details-content-container .idea-description-details-container .idea-details-description,
+.ideas-details-content-container .idea-technology-details-container .idea-details-technology {
+   
+    font-size: max(1.5vw, 2.5vh);
+    border: none;
+    background: none;
+    
+}
+
+.ideas-details-page-container .ideas-details-content-container .idea-details-back-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ideas-details-content-container .idea-details-back-button-container .idea-details-back-button {
+    width: 100px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    font-size: max(1vw, 2vh);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px #BEC3CC;
+    border-radius: 3px;
+    background-color: var(--Purple-Mountain-Majesty);
+}
 
 
 /*******************************************************************************/

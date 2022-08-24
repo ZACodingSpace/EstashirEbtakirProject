@@ -52,8 +52,8 @@
 
         <div class="search-bar-and-buttons-container row mt-lg-5">
 
-            <div class="add-idea-button-container col-6">
-                <button class="add-idea-button ps-lg-3 pe-lg-3 pt-1 pb-1" formaction="AddParticipationEventAchievement.aspx">إضافة فعالية</button>
+            <div class="add-participation-event-achievement-button-container col-6">
+                <button id="addParticipationEventAchievementButton" runat="server" class="add-participation-event-achievement-button ps-lg-3 pe-lg-3 pt-1 pb-1" formaction="AddParticipationEventAchievement.aspx">إضافة فعالية</button>
             </div>
 
             <div class="events-search-bar-container col-6">

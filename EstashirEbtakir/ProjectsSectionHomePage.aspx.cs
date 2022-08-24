@@ -14,10 +14,28 @@ namespace EstashirEbtakir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (Session["id"] == null)
+            {
+                addProjectButton.Visible = false;
+            }
+            else
+            {
+                if (Session["University_ID"] == null)
+                {
+                    addProjectButton.Visible = false;
+
+                }
+                else
+                {
+                    addProjectButton.Visible = true;
+                }
+            }
+
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
 
-            string sqlqueryPro = "Select * from [dbo].[EEProject] where Project_State='0' order by Project_ID desc";
+            string sqlqueryPro = "Select * from [dbo].[EEProject] where Project_State='1' order by Project_ID desc";
             SqlCommand sqlcommPro = new SqlCommand(sqlqueryPro, sqlconn);
             sqlconn.Open();
             SqlDataAdapter sdaPro = new SqlDataAdapter();

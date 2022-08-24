@@ -14,6 +14,16 @@ namespace EstashirEbtakir
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (Session["id"] == null)
+            {
+                addIdeaButton.Visible = false;
+            }
+            else
+            {
+                addIdeaButton.Visible=true; 
+            }
+
             string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
             SqlConnection sqlconn = new SqlConnection(mainconn);
 

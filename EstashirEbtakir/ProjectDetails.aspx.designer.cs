@@ -15,33 +15,6 @@ namespace EstashirEbtakir
     {
 
         /// <summary>
-        /// projectDetailsNameField control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText projectDetailsNameField;
-
-        /// <summary>
-        /// done control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label done;
-
-        /// <summary>
-        /// ProjectDetailsDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea ProjectDetailsDescription;
-
-        /// <summary>
         /// Image1 control.
         /// </summary>
         /// <remarks>
@@ -51,40 +24,13 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
-        /// collegeProjectDetails control.
+        /// projectDetailsNameField control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText collegeProjectDetails;
-
-        /// <summary>
-        /// majorProjectDetails control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText majorProjectDetails;
-
-        /// <summary>
-        /// supervisorP control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText supervisorP;
-
-        /// <summary>
-        /// TextareaProjectDetails control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextareaProjectDetails;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText projectDetailsNameField;
 
         /// <summary>
         /// gradeP control.
@@ -105,6 +51,51 @@ namespace EstashirEbtakir
         protected global::System.Web.UI.WebControls.Button downloadFile;
 
         /// <summary>
+        /// ProjectDetailsDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea ProjectDetailsDescription;
+
+        /// <summary>
+        /// collegeProjectDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText collegeProjectDetails;
+
+        /// <summary>
+        /// majorProjectDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText majorProjectDetails;
+
+        /// <summary>
+        /// TextareaProjectDetails control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextareaProjectDetails;
+
+        /// <summary>
+        /// supervisorP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText supervisorP;
+
+        /// <summary>
         /// Text1 control.
         /// </summary>
         /// <remarks>
@@ -112,32 +103,5 @@ namespace EstashirEbtakir
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText Text1;
-
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-
-        /// <summary>
-        /// cancelIdeaButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton cancelIdeaButton;
-
-        /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton Button1;
     }
 }

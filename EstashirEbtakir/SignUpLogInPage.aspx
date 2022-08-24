@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="SignUpLogInPage.aspx.cs" Inherits="EstashirEbtakir.SignUpLogInPage" %>
+﻿<%@ Page Title="تسجيل الدخول/إنشاء حساب" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="SignUpLogInPage.aspx.cs" Inherits="EstashirEbtakir.SignUpLogInPage" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
