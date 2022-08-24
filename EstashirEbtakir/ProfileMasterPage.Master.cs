@@ -21,12 +21,22 @@ namespace EstashirEbtakir
             {
                 userInformationContainer.Visible = false;
                 signUpContainer.Visible = true;
+                staticsItem.Visible = false;
             }
             else
             {
                 userInformationContainer.Visible = true;
                 profileUserLinkButton.Text = "   " + (string)Session["name"] + "  ";
                 signUpContainer.Visible = false;
+                string type = (string)Session["Type"];
+                if (type == "User")
+                {
+                    staticsItem.Visible = false;
+                }
+                else
+                {
+                    staticsItem.Visible = true;
+                }
             }
         }
 

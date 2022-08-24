@@ -110,7 +110,7 @@
                                     <li><a class="dropdown-item" href="ConsultationsSectionHomePage.aspx">الاستشارات</a></li>
                                     <li><a class="dropdown-item" href="ProjectsSectionHomePage.aspx">المشاريع</a></li>
                                     <li><a class="dropdown-item" href="EventsHomePage.aspx">الفعاليات والمشاركات</a></li>
-                                    <li><a class="dropdown-item" href="StatisticsPage.aspx">الإحصائيات</a></li>
+                                    <li id="staticsItem" runat="server"><a class="dropdown-item" href="StatisticsPage.aspx">الإحصائيات</a></li>
                                 </ul>
                             </li>
 

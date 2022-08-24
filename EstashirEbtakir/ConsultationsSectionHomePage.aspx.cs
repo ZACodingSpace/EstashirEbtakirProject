@@ -69,5 +69,22 @@ namespace EstashirEbtakir
             }
 
         }
+
+        protected void Search_Click(object sender, EventArgs e)
+        {
+            string text = searchText.Value;
+            string mainconn = ConfigurationManager.ConnectionStrings["constring"].ConnectionString;
+            SqlConnection sqlconn = new SqlConnection(mainconn);
+            sqlconn.Open();
+            string sqlqueryCounselor = "Select * from[dbo].[EECounselor] " +
+                    "inner Join [dbo].[EEUser] ON Counselor_ID=User_ID WHERE (Fname LIKE '%' + @Name +'%' OR Lname LIKE '%' + @Name +'%')";
+            SqlCommand sqlcommCounselor = new SqlCommand(sqlqueryCounselor, sqlconn);
+            sqlcommCounselor.Parameters.AddWithValue("@Name", text);
+            SqlDataAdapter sdaCounselor2 = new SqlDataAdapter(sqlcommCounselor);
+            DataSet dsCounselor2 = new DataSet();
+            sdaCounselor2.Fill(dsCounselor2);
+            DataListCons.DataSource = dsCounselor2;
+            DataListCons.DataBind();
+        }
     }
 }

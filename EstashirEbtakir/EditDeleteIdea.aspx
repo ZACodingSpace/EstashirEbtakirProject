@@ -6,7 +6,7 @@
        <div class="edit-delete-idea-areaED">
          
         <div class="idea-name-containerED p-xl-5 p-lg-4 pt-md-5">
-            <h4 class="idea-nameED">اسم الفكرة</h4>
+            <h4 class="idea-nameED" id="ideaDetailsNameField" runat="server">اسم الفكرة</h4>
         </div>
 
         <div class="idea-description-containerED p-xl-5 p-lg-4 pt-md-5">
@@ -17,9 +17,11 @@
         </div>
 
         <div class="ideaButtonsED m-lg-0 mt-md-5">
-            <button formaction="IdeasSectionHomePage.aspx" class="delete-idea-buttonED m-1 ms-xl-4 ms-lg-3" id="deleteIdeaButtonED" runat="server">حذف</button>
-            <button formaction="IdeasSectionHomePage.aspx" class="edit-idea-buttonED m-1 ms-xl-4 ms-lg-3" id="editIdeaButtionED" runat="server">تعديل</button>
-            <button formaction="IdeasSectionHomePage.aspx" class="return-idea-buttonED m-1 ms-xl-4 ms-lg-3" id="returnIdeaButtonED" runat="server">رجوع</button>
+           <!-- <button formaction="MyIdeasPage.aspx" class="delete-idea-buttonED m-1 ms-xl-4 ms-lg-3" id="deleteIdeaButtonED" runat="server">حذف</button> -->
+            <asp:Button ID="DeleteB" class="delete-idea-buttonED m-1 ms-xl-4 ms-lg-3" OnClick="DeleteB_Click" runat="server" Text="حذف" />
+            <asp:Button ID="EditB" class="edit-idea-buttonED m-1 ms-xl-4 ms-lg-3" OnClick="EditB_Click" runat="server" Text="تعديل" />
+            <!-- <button formaction="IdeasSectionHomePage.aspx" class="edit-idea-buttonED m-1 ms-xl-4 ms-lg-3" id="editIdeaButtionED" runat="server">تعديل</button> -->
+            <button formaction="MyIdeasPage.aspx" class="return-idea-buttonED m-1 ms-xl-4 ms-lg-3" id="returnIdeaButtonED" runat="server">رجوع</button>
         </div>
         </div>
 
